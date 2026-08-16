@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(primary biliary cholangitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(primary biliary cholangitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(primary biliary cholangitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(primary biliary cholangitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(primary biliary cholangitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(primary biliary cholangitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(primary biliary cholangitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(primary biliary cholangitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -157,8 +157,7 @@ DRUG_SAFETY_RISK = {
         "ursodiol",
         "zidovudine",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -116,6 +116,7 @@ def test_openfda_adapter_parse_and_import(tmp_path: Path, repository: Biomedical
     assert treated_claims[0].object_curie == "PUBCHEM.COMPOUND:3652"
 
     # Check adverse event claim
-    adverse_claims = repository.list_claims("MONDO:0005359", predicate=Predicate.ASSOCIATED_WITH_EXPOSURE)
+    adverse_claims = repository.list_claims(
+        "MONDO:0005359", predicate=Predicate.ASSOCIATED_WITH_EXPOSURE
+    )
     assert len(adverse_claims) == 1
-

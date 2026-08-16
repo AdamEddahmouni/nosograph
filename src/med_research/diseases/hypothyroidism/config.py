@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Hypothyroidism[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Hypothyroidism[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Hypothyroidism[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Hypothyroidism[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Hypothyroidism[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Hypothyroidism[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Hypothyroidism[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Hypothyroidism[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -150,8 +150,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "ascorbic acid",
         "dexamethasone",

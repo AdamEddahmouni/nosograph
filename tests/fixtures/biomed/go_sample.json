@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "http://purl.obolibrary.org/obo/GO_0006954",
+      "lbl": "inflammatory response",
+      "meta": {
+        "definition": {
+          "val": "The complex biological response of body tissues to harmful stimuli."
+        },
+        "synonyms": [
+          {"val": "inflammation"}
+        ],
+        "aspect": "biological_process",
+        "xrefs": [
+          {"val": "Wikipedia:Inflammation"}
+        ]
+      }
+    },
+    {
+      "id": "http://purl.obolibrary.org/obo/GO_0002376",
+      "lbl": "immune system process",
+      "meta": {
+        "definition": {
+          "val": "Any process that can occur as part of immune system function."
+        },
+        "aspect": "biological_process"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "sub": "http://purl.obolibrary.org/obo/GO_0006954",
+      "pred": "is_a",
+      "obj": "http://purl.obolibrary.org/obo/GO_0002376"
+    }
+  ],
+  "gene_associations": [
+    {
+      "gene": "HGNC:TNF",
+      "go_id": "GO:0006954",
+      "pmid": "PMID:1234567",
+      "confidence": 0.95
+    }
+  ]
+}

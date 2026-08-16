@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Oral lichen planus[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Oral lichen planus[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Oral lichen planus[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Oral lichen planus[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Oral lichen planus[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Oral lichen planus[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Oral lichen planus[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Oral lichen planus[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

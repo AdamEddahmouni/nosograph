@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Atrial fibrillation[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Atrial fibrillation[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Atrial fibrillation[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Atrial fibrillation[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Atrial fibrillation[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Atrial fibrillation[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Atrial fibrillation[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Atrial fibrillation[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

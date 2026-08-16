@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Angelman syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Angelman syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Angelman syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Angelman syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Angelman syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Angelman syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Angelman syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Angelman syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -160,8 +160,7 @@ DRUG_SAFETY_RISK = {
         "levomefolic acid",
         "nnz-2591",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

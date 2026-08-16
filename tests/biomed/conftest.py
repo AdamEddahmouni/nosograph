@@ -108,9 +108,7 @@ def support(mondo_snapshot: ResourceSnapshot, claim: Claim) -> ClaimEvidence:
     from med_research.biomed.identifiers import claim_evidence_uuid
 
     return ClaimEvidence(
-        id=claim_evidence_uuid(
-            claim.id, mondo_snapshot.id, EvidenceDirection.SUPPORTING, "hpoa-1"
-        ),
+        id=claim_evidence_uuid(claim.id, mondo_snapshot.id, EvidenceDirection.SUPPORTING, "hpoa-1"),
         claim_id=claim.id,
         snapshot_id=mondo_snapshot.id,
         direction=EvidenceDirection.SUPPORTING,

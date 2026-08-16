@@ -120,8 +120,7 @@ DRUG_SAFETY_RISK = {
         "vincristine",
         "vincristine sulfate",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

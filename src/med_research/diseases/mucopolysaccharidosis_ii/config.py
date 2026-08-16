@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Mucopolysaccharidosis type II[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Mucopolysaccharidosis type II[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Mucopolysaccharidosis type II[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Mucopolysaccharidosis type II[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Mucopolysaccharidosis type II[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Mucopolysaccharidosis type II[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Mucopolysaccharidosis type II[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Mucopolysaccharidosis type II[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -154,8 +154,7 @@ DRUG_SAFETY_RISK = {
         "azathioprine",
         "cyclosporine",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

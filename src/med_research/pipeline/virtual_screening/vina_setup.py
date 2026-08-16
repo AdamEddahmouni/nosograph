@@ -203,4 +203,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

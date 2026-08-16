@@ -19,11 +19,10 @@ pytestmark = pytest.mark.unit
 class TestExtractFeatures:
     """Tests for extract_features()."""
 
-    def test_extracts_features_from_real_graph(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_extracts_features_from_real_graph(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import extract_features
 
-        G = build_graph()
+        G = sample_graph
         X, gene_ids, labels = extract_features(G)
         assert len(gene_ids) > 0
         assert len(X) == len(gene_ids)
@@ -31,21 +30,19 @@ class TestExtractFeatures:
         # 9 base features + 16 category features = 25
         assert X.shape[1] >= 20
 
-    def test_labels_contain_targeting_info(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_labels_contain_targeting_info(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import extract_features
 
-        G = build_graph()
+        G = sample_graph
         _, gene_ids, labels = extract_features(G)
         for _, (is_targeted, drugs) in zip(gene_ids, labels, strict=True):
             assert isinstance(is_targeted, int)
             assert isinstance(drugs, list)
 
-    def test_targeted_genes_identified(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_targeted_genes_identified(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import extract_features
 
-        G = build_graph()
+        G = sample_graph
         _, gene_ids, labels = extract_features(G)
         targeted = [g for g, (t, _) in zip(gene_ids, labels, strict=True) if t]
         # Known targeted genes: BAFF, IFNAR1, Calcineurin, JAK1, TYK2, CD20, IMPDH,
@@ -65,11 +62,10 @@ class TestExtractFeatures:
         }
         assert known.intersection(set(targeted)) == known
 
-    def test_features_are_numeric(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_features_are_numeric(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import extract_features
 
-        G = build_graph()
+        G = sample_graph
         X, _, _ = extract_features(G)
         import numpy as np
 
@@ -79,29 +75,26 @@ class TestExtractFeatures:
 class TestCountPathways:
     """Tests for _count_pathways()."""
 
-    def test_returns_integer(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_returns_integer(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import _count_pathways
 
-        G = build_graph()
+        G = sample_graph
         count = _count_pathways(G, "BTK")
         assert isinstance(count, int)
         assert count >= 0
 
-    def test_known_pathway_gene(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_known_pathway_gene(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import _count_pathways
 
-        G = build_graph()
+        G = sample_graph
         # BTK participates in bcell-signaling
         count = _count_pathways(G, "BTK")
         assert count >= 1
 
-    def test_untargeted_gene_has_zero(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_untargeted_gene_has_zero(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import _count_pathways
 
-        G = build_graph()
+        G = sample_graph
         # HLA-DRB1 may or may not be in pathways
         count = _count_pathways(G, "HLA-DRB1")
         assert isinstance(count, int)
@@ -158,60 +151,54 @@ class TestTrainAndPredict:
         with pytest.raises(ConfigurationError, match="ML predictor dependencies"):
             ml_module.require_ml_dependencies()
 
-    def test_returns_valid_structure(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_returns_valid_structure(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import train_and_predict
 
-        G = build_graph()
+        G = sample_graph
         results = train_and_predict(G, top_n=10)
         assert "predictions" in results
         assert "top_untargeted" in results
         assert "feature_importance" in results
         assert "model_metrics" in results
 
-    def test_top_untargeted_are_untargeted(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_top_untargeted_are_untargeted(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import train_and_predict
 
-        G = build_graph()
+        G = sample_graph
         results = train_and_predict(G, top_n=5)
         for p in results["top_untargeted"]:
             assert not p["is_targeted"]
 
-    def test_predictions_sorted_descending(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_predictions_sorted_descending(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import train_and_predict
 
-        G = build_graph()
+        G = sample_graph
         results = train_and_predict(G, top_n=5)
         scores = [p["druggability_score"] for p in results["predictions"]]
         assert scores == sorted(scores, reverse=True)
 
-    def test_druggability_score_in_range(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_druggability_score_in_range(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import train_and_predict
 
-        G = build_graph()
+        G = sample_graph
         results = train_and_predict(G, top_n=5)
         for p in results["predictions"]:
             assert 0.0 <= p["druggability_score"] <= 1.0
 
-    def test_metrics_are_sensible(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_metrics_are_sensible(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import train_and_predict
 
-        G = build_graph()
+        G = sample_graph
         results = train_and_predict(G, top_n=5)
         m = results["model_metrics"]
         assert m["n_genes"] >= 30
         assert m["n_targeted"] >= 8
         assert m["n_untargeted"] >= 15
 
-    def test_feature_importance_is_dict(self):
-        from med_research.pipeline.knowledge_graph.builder import build_graph
+    def test_feature_importance_is_dict(self, sample_graph):
         from med_research.pipeline.ml_predictor.predictor import train_and_predict
 
-        G = build_graph()
+        G = sample_graph
         results = train_and_predict(G, top_n=5)
         assert isinstance(results["feature_importance"], dict)
         assert len(results["feature_importance"]) > 5

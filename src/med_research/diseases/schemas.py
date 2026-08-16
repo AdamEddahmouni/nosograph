@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from enum import Enum
 from pathlib import Path
-from typing import Any, TypedDict, TypeVar
+from typing import Any, TypedDict, TypeVar, cast
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
@@ -202,11 +202,35 @@ KG_FILE_MODELS: dict[str, type[BaseModel]] = {
 _ModelT = TypeVar("_ModelT", bound=BaseModel)
 
 
+try:
+    import orjson
+
+    def _parse_json(raw: bytes | str) -> dict[str, Any]:
+        if isinstance(raw, str):
+            raw = raw.encode("utf-8")
+        return cast(dict[str, Any], orjson.loads(raw))
+except ImportError:
+
+    def _parse_json(raw: bytes | str) -> dict[str, Any]:
+        if isinstance(raw, bytes):
+            raw = raw.decode("utf-8")
+        return cast(dict[str, Any], json.loads(raw))
+
+
+_VALIDATED_CACHE: dict[tuple[str, type], tuple[float, dict[str, Any]]] = {}
+
+
+def invalidate_schemas_cache() -> None:
+    _VALIDATED_CACHE.clear()
+
+
 def load_validated_json(path: Path | str, model_class: type[_ModelT]) -> dict[str, Any]:
     """Load a JSON file and validate it against a Pydantic model.
 
     Returns the validated JSON payload as a plain dict so existing
     dict-based callers keep receiving the same shape they do today.
+    Results are cached by (path, model_class, mtime) to eliminate redundant
+    CPU-intensive Pydantic validations on unchanged files.
 
     Raises:
         MissingDataError: when the file does not exist.
@@ -215,21 +239,29 @@ def load_validated_json(path: Path | str, model_class: type[_ModelT]) -> dict[st
     """
     path = Path(path)
     try:
-        text = path.read_text(encoding="utf-8")
+        mtime = path.stat().st_mtime
     except FileNotFoundError as exc:
         error = MissingDataError(f"Data file not found: {path}")
         error.filename = str(path)
         raise error from exc
 
+    cache_key = (str(path.resolve()), model_class)
+    cached = _VALIDATED_CACHE.get(cache_key)
+    if cached is not None and cached[0] == mtime:
+        return cached[1]
+
+    raw_bytes = path.read_bytes()
     try:
-        parsed: dict[str, Any] = json.loads(text)
-    except json.JSONDecodeError as exc:
+        parsed: dict[str, Any] = _parse_json(raw_bytes)
+    except (json.JSONDecodeError, ValueError) as exc:
         raise SchemaValidationError(f"Invalid JSON in {path}: {exc}") from exc
 
     try:
         model_class.model_validate(parsed)
     except ValidationError as exc:
         raise SchemaValidationError(f"Schema validation failed for {path}: {exc}") from exc
+
+    _VALIDATED_CACHE[cache_key] = (mtime, parsed)
     return parsed
 
 

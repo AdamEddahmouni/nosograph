@@ -21,17 +21,10 @@ Usage:
 
 import argparse
 import json
+import logging
 import os
-import sys
 from pathlib import Path
 from typing import Any, cast
-
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
-
-import logging
 
 from med_research.pipeline.knowledge_graph.builder import build_graph
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
@@ -530,4 +523,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

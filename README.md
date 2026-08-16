@@ -10,12 +10,16 @@
 
 ## What is implemented
 
-- **10,405 disease modules** in the registry — 18 hand-curated modules (`sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, `ibd`, `ad`, `als`, `as`, `asthma`, `atopic_dermatitis`, `copd`, `gout`, `pd`, `psa`, `pso`, `t2d`) plus 10,387 auto-generated OpenTargets knowledge-graph scaffolds.
-- Disease-specific JSON knowledge-graph data and pipeline configuration under `src/med_research/diseases/`. Scaffolded modules carry OpenTargets-derived genes/drugs/pathways/relationships and generated configs; curated modules add hand-reviewed symptoms, expression consensus, CAR-T tiers, safety tiers, and screening profiles.
-- **Universal Biomedical Schema v1**: a canonical SQLite store (`med_research.biomed`) with versioned MONDO/HPO/HPOA snapshots, entities, claims, evidence, research runs, legacy-disease migration, HPO-aware condition comparison, graph analytics, and read-only `/api/v1` endpoints.
+- **10,403+ disease modules** in the registry — with **45+ Tier-1 (L2) fully curated modules** across Solid Oncology (NSCLC, Colorectal, TNBC, PDAC, GBM, Melanoma, AML), Rare Neuromuscular & Metabolic (Cystic Fibrosis, Sickle Cell, Huntington's, SMA, Gaucher, Fabry, PKU, Wilson), Psychiatric & CNS (MDD, Schizophrenia, Bipolar, Epilepsy), Cardiovascular, Respiratory, Autoimmune, and Infectious indications.
+- Disease-specific JSON knowledge-graph data and pipeline configuration under `src/med_research/diseases/`. Curated modules carry verified symptoms, expression consensus, CAR-T tiers, safety tiers, and GTEx baseline tissue profiles.
+- **Interactive 3D Molecular / AlphaFold Visualizer**: Embedded `3Dmol.js` in the dashboard with per-residue pLDDT confidence spectrum color ramps and AutoDock Vina search grid bounding boxes.
+- **Interactive Cytoscape.js Multi-Disease Network Topology Explorer**: Real-time multi-disease graph topology analysis identifying shared target hubs, drug repurposing bridges, and degree centrality sizing.
+- **Single-Cell RNA-seq (scRNA-seq) Deconvolution & Specificity**: Yanai Tau ($\tau$) cell-type specificity index calculation and cellular composition deconvolution across immune, stromal, epithelial, and tumor microenvironment populations.
+- **In Silico Lead Optimization & Synergy**: Quantitative Clark-Pickett BBB permeability, CYP450 5-isozyme profile predictions, hERG cardiotoxicity liability, Loewe Combination Index ($CI$), and Bliss Independence excess synergy ($\Delta \text{Bliss}$).
+- **Universal Biomedical Schema v1**: a canonical SQLite store (`med_research.biomed`) with versioned ontology and evidence snapshots (MONDO, HPO, HPOA, GO, Reactome, Uberon, ClinVar, openFDA), entities, claims, evidence, research runs, legacy-disease migration, HPO-aware condition comparison, DuckDB-accelerated graph analytics, and read-only `/api/v1` endpoints.
 - Knowledge-graph construction and export, drug repurposing, bioinformatics, literature mining, virtual screening, clinical-trial tracking, ML target prediction, synergy, safety, ADMET, CRISPR, multi-omics, structure 3D, network pharmacology, expression, CAR-T, biomarker, semantic search, evidence gathering, extraction, monitoring, and cross-disease analysis.
 - Live external data connectors (Open Targets, GTEx, ChEMBL, UniProt, bioRxiv) usable from the CLI (`live`) and as evidence-workspace sources.
-- Evidence-to-Hypothesis Workspace with PubMed, ClinicalTrials.gov, GWAS, FDA-label, Open Targets, GTEx, bioRxiv, and ChEMBL adapters, deterministic claims, optional LLM enrichment, explainable drug/target rankings, graph explanations, provenance fingerprints, saved history, comparison, trends, alerts, weekly digests, and JSON/HTML exports.
+- Evidence-to-Hypothesis Workspace with PubMed, ClinicalTrials.gov API v2, GWAS, FDA-label, Open Targets, GTEx, bioRxiv, and ChEMBL adapters, deterministic claims, optional LLM enrichment, explainable drug/target rankings, graph explanations, provenance fingerprints, saved history, comparison, trends, alerts, weekly digests, and JSON/HTML exports.
 - FastAPI web API and vanilla JavaScript dashboard with asynchronous Celery jobs, WebSocket **and SSE** progress, HTTP polling fallback, source-level status, keyboard support, reduced-motion styles, and terminal failure recovery.
 
 ## Repository layout
@@ -25,9 +29,10 @@
 ├── src/med_research/
 │   ├── cli.py                         # Unified `med-research` CLI
 │   ├── biomed/                        # Universal Biomedical Schema v1 store
-│   │   ├── imports/                   # MONDO, HPO, HPOA + live API adapters
-│   │   ├── legacy/                    # Curated-disease → canonical claims migration
-│   │   └── comparison/                # HPO-aware condition comparison
+│   │   ├── imports/                   # MONDO, HPO, HPOA, GO, Reactome, Uberon, ClinVar, openFDA adapters
+│   │   ├── analytics/                 # DuckDB-accelerated biomedical graph analytics engine
+│   │   ├── comparison/                # HPO-aware condition comparison
+│   │   └── legacy/                    # Curated-disease → canonical claims migration
 │   ├── diseases/{id}/                 # Profiles, configs, and KG JSON data
 │   ├── pipeline/                      # Analysis modules (incl. admet, crispr,
 │   │   │                              #  multi_omics, structure_3d, external/)
@@ -134,7 +139,7 @@ python -m med_research.cli run-all --disease ra --full --parallel --export-html 
 
 `run-all` uses the same `execute_module()` dispatch primitive as the web API and Celery `run_module` task. Evidence and semantic modules are optional and excluded from the default step list; use individual CLI commands or `POST /api/jobs/{module_id}` when needed.
 
-Virtual screening is strategy-driven for all seven curated diseases. Each run reports a strategy ID, deterministic fingerprint, coverage status, curated/inferred inputs, and limitations. A ready/full strategy means disease-specific pathway and drug inputs are present for this transparent property-based prioritization heuristic; it does not establish experimental binding, efficacy, or safety.
+Virtual screening is strategy-driven for all 18 curated diseases. Each run reports a strategy ID, deterministic fingerprint, coverage status, curated/inferred inputs, and limitations. A ready/full strategy means disease-specific pathway and drug inputs are present for this transparent property-based prioritization heuristic; it does not establish experimental binding, efficacy, or safety.
 
 ### Disease data management
 
@@ -173,6 +178,28 @@ python -m med_research.cli live --source biorxiv --disease ra
 ```
 
 `live` queries Open Targets, GTEx, ChEMBL, UniProt, and bioRxiv through the `pipeline.external` connectors and prints normalized records.
+
+### Universal biomedical store CLI
+
+```bash
+# Initialize the canonical store
+python -m med_research.cli biomed init
+
+# Import pinned ontology or evidence artifacts (mondo, hp, hpoa, clinvar, openfda, go, reactome, uberon)
+python -m med_research.cli biomed import mondo --artifact data/biomed/mondo.json
+python -m med_research.cli biomed import hp --artifact data/biomed/hp.json
+python -m med_research.cli biomed import hpoa --artifact data/biomed/phenotype.hpoa.tsv
+
+# List imported snapshots
+python -m med_research.cli biomed snapshots list
+
+# Compare conditions with HPO-aware similarity
+python -m med_research.cli biomed compare --left MONDO:0007915 --right MONDO:0008390
+
+# Run DuckDB-accelerated graph analytics
+python -m med_research.cli biomed analytics --disease MONDO:0007915 --top 20
+python -m med_research.cli biomed analytics --stats
+```
 
 ## Evidence-to-Hypothesis Workspace
 
@@ -238,6 +265,10 @@ The canonical biomedical store (see `med_research.biomed`) backs versioned read-
 | `GET` | `/api/v1/snapshots/{snapshot_id}/report` | Import report metadata |
 | `POST` | `/api/v1/comparisons` | Compare two condition CURIEs; persist a research run |
 | `GET` | `/api/v1/comparisons/{run_id}` | Fetch a persisted comparison run |
+| `GET` | `/api/v1/analytics/stats` | Summary statistics and distributions across canonical entities and claims |
+| `GET` | `/api/v1/analytics/targets/{curie}` | Vectorized target prioritization based on claim evidence |
+| `GET` | `/api/v1/analytics/shared-mechanisms` | Shared pathways, genes, and Jaccard similarity between conditions |
+| `GET` | `/api/v1/analytics/subgraph/{curie}` | Multi-hop subgraph traversal around an entity CURIE |
 | `GET` | `/api/v1/biomed/pathways` | Find claim paths between two CURIEs |
 | `GET` | `/api/v1/biomed/target-prioritization/{disease_curie}` | Rank targets by evidence + vulnerability |
 

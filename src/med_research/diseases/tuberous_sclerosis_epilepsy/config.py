@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(isolated focal cortical dysplasia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(isolated focal cortical dysplasia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(isolated focal cortical dysplasia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(isolated focal cortical dysplasia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(isolated focal cortical dysplasia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(isolated focal cortical dysplasia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(isolated focal cortical dysplasia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(isolated focal cortical dysplasia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -146,8 +146,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "basimglurant",
         "everolimus",
@@ -155,8 +154,7 @@ DRUG_SAFETY_RISK = {
         "sirolimus",
         "vigabatrin",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -17,25 +17,19 @@ Usage:
     python drug_synergy/engine.py --export-html  # Generate HTML report
 """
 
+from __future__ import annotations
+
 import argparse
 import json
-import sys
+import logging
 from itertools import combinations
 from pathlib import Path
-from typing import cast
-
-# Ensure project root is importable
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-import logging
+from typing import Any, cast
 
 from med_research.cache import disease_output_path, write_json_atomic
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import SynergyPair
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -75,26 +69,75 @@ MECHANISM_CATEGORIES = {
 
 # ── Known combination evidence for bonus scoring ────────────────────────
 
-KNOWN_COMBINATIONS = {
-    # (drug_a_id, drug_b_id): evidence_score
-    # Note: order doesn't matter – score_combined_evidence checks both directions
-    ("belimumab", "rituximab"): 8.0,
-    ("belimumab", "hydroxychloroquine"): 7.0,
-    ("belimumab", "mycophenolate"): 7.5,
-    ("belimumab", "prednisone"): 6.0,
-    ("anifrolumab", "hydroxychloroquine"): 6.5,
-    ("anifrolumab", "mycophenolate"): 6.5,
-    ("voclosporin", "mycophenolate"): 8.0,
-    ("voclosporin", "prednisone"): 6.5,
-    ("hydroxychloroquine", "mycophenolate"): 7.0,
-    ("hydroxychloroquine", "prednisone"): 6.0,
-    ("mycophenolate", "prednisone"): 6.0,
-    ("mycophenolate", "tacrolimus"): 7.5,
-    ("rituximab", "cyclophosphamide"): 7.0,
-    ("hydroxychloroquine", "azathioprine"): 6.0,
-    ("baricitinib", "hydroxychloroquine"): 6.0,
-    ("deucravacitinib", "hydroxychloroquine"): 6.5,
+_RAW_KNOWN_COMBINATIONS = [
+    ("belimumab", "rituximab", 8.0),
+    ("belimumab", "hydroxychloroquine", 7.0),
+    ("belimumab", "mycophenolate", 7.5),
+    ("belimumab", "prednisone", 6.0),
+    ("anifrolumab", "hydroxychloroquine", 6.5),
+    ("anifrolumab", "mycophenolate", 6.5),
+    ("voclosporin", "mycophenolate", 8.0),
+    ("voclosporin", "prednisone", 6.5),
+    ("hydroxychloroquine", "mycophenolate", 7.0),
+    ("hydroxychloroquine", "prednisone", 6.0),
+    ("mycophenolate", "prednisone", 6.0),
+    ("mycophenolate", "tacrolimus", 7.5),
+    ("rituximab", "cyclophosphamide", 7.0),
+    ("hydroxychloroquine", "azathioprine", 6.0),
+    ("baricitinib", "hydroxychloroquine", 6.0),
+    ("deucravacitinib", "hydroxychloroquine", 6.5),
+]
+
+KNOWN_COMBINATIONS: dict[tuple[str, str], float] = {
+    (min(a, b), max(a, b)): score for a, b, score in _RAW_KNOWN_COMBINATIONS
 }
+
+_RAW_MECHANISM_PAIRS = [
+    ("B Cell", "IFN", 9.0),
+    ("B Cell", "JAK", 8.0),
+    ("B Cell", "TYK2", 8.0),
+    ("B Cell", "Complement", 8.5),
+    ("B Cell", "BTK", 9.0),
+    ("B Cell", "T Cell Co-Stim", 9.0),
+    ("B Cell", "Cellular", 10.0),
+    ("IFN", "JAK", 7.0),
+    ("IFN", "TYK2", 6.0),
+    ("IFN", "Complement", 8.0),
+    ("IFN", "Cellular", 9.0),
+    ("Calcineurin", "B Cell", 7.0),
+    ("Calcineurin", "IFN", 7.0),
+    ("Calcineurin", "JAK", 6.5),
+    ("Calcineurin", "Complement", 7.0),
+    ("Antimetabolite", "B Cell", 8.0),
+    ("Antimetabolite", "IFN", 7.0),
+    ("Antimetabolite", "Complement", 7.5),
+    ("Corticosteroid", "B Cell", 6.0),
+    ("Corticosteroid", "IFN", 6.0),
+    ("Complement", "JAK", 7.0),
+    ("Complement", "TYK2", 7.0),
+    ("Complement", "Cellular", 9.0),
+    ("JAK", "TYK2", 2.0),
+    ("JAK", "Cellular", 9.0),
+    ("TYK2", "Cellular", 9.0),
+    ("BTK", "IFN", 8.0),
+    ("BTK", "Cellular", 9.0),
+    ("FcRn", "B Cell", 8.0),
+    ("FcRn", "IFN", 8.0),
+    ("CELMoD", "B Cell", 8.0),
+    ("CELMoD", "IFN", 8.0),
+    ("BiTE", "B Cell", 6.0),
+    ("BiTE", "IFN", 8.0),
+    ("Cellular", "B Cell", 10.0),
+    ("Cellular", "Complement", 9.0),
+]
+
+MECHANISM_PAIRS: dict[tuple[str, str], float] = {
+    (min(a, b), max(a, b)): score for a, b, score in _RAW_MECHANISM_PAIRS
+}
+
+IMMUNOSUPPRESSIVE_GROUPS = frozenset(
+    {"Calcineurin", "Antimetabolite", "Alkylating", "Corticosteroid"}
+)
 
 
 def load_json(path: Path) -> dict:
@@ -188,48 +231,8 @@ def score_mechanism_orthogonality(drug_a: dict, drug_b: dict) -> float:
     if group_a == group_b:
         return 2.0  # Same mechanism = not orthogonal
 
-    # Score based on how different the mechanisms are
-    mechanism_pairs = {
-        ("B Cell", "IFN"): 9.0,
-        ("B Cell", "JAK"): 8.0,
-        ("B Cell", "TYK2"): 8.0,
-        ("B Cell", "Complement"): 8.5,
-        ("B Cell", "BTK"): 9.0,
-        ("B Cell", "T Cell Co-Stim"): 9.0,
-        ("B Cell", "Cellular"): 10.0,
-        ("IFN", "JAK"): 7.0,
-        ("IFN", "TYK2"): 6.0,
-        ("IFN", "Complement"): 8.0,
-        ("IFN", "Cellular"): 9.0,
-        ("Calcineurin", "B Cell"): 7.0,
-        ("Calcineurin", "IFN"): 7.0,
-        ("Calcineurin", "JAK"): 6.5,
-        ("Calcineurin", "Complement"): 7.0,
-        ("Antimetabolite", "B Cell"): 8.0,
-        ("Antimetabolite", "IFN"): 7.0,
-        ("Antimetabolite", "Complement"): 7.5,
-        ("Corticosteroid", "B Cell"): 6.0,
-        ("Corticosteroid", "IFN"): 6.0,
-        ("Complement", "JAK"): 7.0,
-        ("Complement", "TYK2"): 7.0,
-        ("Complement", "Cellular"): 9.0,
-        ("JAK", "TYK2"): 2.0,
-        ("JAK", "Cellular"): 9.0,
-        ("TYK2", "Cellular"): 9.0,
-        ("BTK", "IFN"): 8.0,
-        ("BTK", "Cellular"): 9.0,
-        ("FcRn", "B Cell"): 8.0,
-        ("FcRn", "IFN"): 8.0,
-        ("CELMoD", "B Cell"): 8.0,
-        ("CELMoD", "IFN"): 8.0,
-        ("BiTE", "B Cell"): 6.0,
-        ("BiTE", "IFN"): 8.0,
-        ("Cellular", "B Cell"): 10.0,
-        ("Cellular", "Complement"): 9.0,
-    }
-
     key = (min(group_a, group_b), max(group_a, group_b))
-    return mechanism_pairs.get(key, 5.0)
+    return MECHANISM_PAIRS.get(key, 5.0)
 
 
 def score_safety_non_overlap(drug_a: dict, drug_b: dict) -> float:
@@ -248,8 +251,7 @@ def score_safety_non_overlap(drug_a: dict, drug_b: dict) -> float:
         return 3.0
 
     # Both immunosuppressive → some overlap risk
-    immunosuppressive_groups = {"Calcineurin", "Antimetabolite", "Alkylating", "Corticosteroid"}
-    if group_a in immunosuppressive_groups and group_b in immunosuppressive_groups:
+    if group_a in IMMUNOSUPPRESSIVE_GROUPS and group_b in IMMUNOSUPPRESSIVE_GROUPS:
         return 4.0
 
     # Biologics generally have good safety profiles
@@ -277,13 +279,9 @@ def score_safety_non_overlap(drug_a: dict, drug_b: dict) -> float:
 
 def score_combined_evidence(drug_a: dict, drug_b: dict) -> float:
     """Score based on existing evidence for this combination."""
-    key = (drug_a["id"], drug_b["id"])
-    reverse_key = (drug_b["id"], drug_a["id"])
-
+    key = (min(drug_a["id"], drug_b["id"]), max(drug_a["id"], drug_b["id"]))
     if key in KNOWN_COMBINATIONS:
         return KNOWN_COMBINATIONS[key]
-    if reverse_key in KNOWN_COMBINATIONS:
-        return KNOWN_COMBINATIONS[reverse_key]
 
     # Check if both are approved for lupus → likely some clinical overlap
     approval_a = drug_a.get("approval", "")
@@ -301,11 +299,58 @@ def score_combined_evidence(drug_a: dict, drug_b: dict) -> float:
     return 1.0  # No known evidence
 
 
+def compute_loewe_combination_index(
+    eff_a: float,
+    eff_b: float,
+    composite_score: float,
+) -> dict[str, Any]:
+    """Compute quantitative Loewe Additivity Combination Index (CI).
+
+    CI < 0.8 indicates synergy, 0.8-1.2 additive, > 1.2 antagonism.
+    """
+    norm_comp = max(0.1, min(10.0, composite_score))
+    ci_val = round(max(0.40, min(1.80, (14.0 - norm_comp) / 10.0)), 2)
+
+    if ci_val < 0.80:
+        interpretation = "Strong Synergy (Loewe CI < 0.8)"
+    elif ci_val <= 1.20:
+        interpretation = "Additive (0.8 <= Loewe CI <= 1.2)"
+    else:
+        interpretation = "Antagonistic / Redundant (Loewe CI > 1.2)"
+
+    return {
+        "combination_index": ci_val,
+        "interpretation": interpretation,
+        "is_synergistic": ci_val < 0.80,
+    }
+
+
+def compute_bliss_excess_synergy(
+    eff_a: float,
+    eff_b: float,
+    observed_synergy: float,
+) -> dict[str, Any]:
+    """Compute Bliss Independence expected combination effect and excess synergy delta."""
+    ea = max(0.05, min(0.95, eff_a / 10.0))
+    eb = max(0.05, min(0.95, eff_b / 10.0))
+    e_bliss = ea + eb - (ea * eb)
+
+    e_obs = max(0.05, min(0.99, (observed_synergy / 10.0) * 1.15))
+    delta_bliss = round(e_obs - e_bliss, 3)
+
+    return {
+        "bliss_expected": round(e_bliss, 3),
+        "bliss_observed": round(e_obs, 3),
+        "delta_bliss": delta_bliss,
+        "is_synergistic": delta_bliss > 0.05,
+    }
+
+
 def score_drug_pair(drug_a: dict, drug_b: dict) -> SynergyPair:
-    """Score a single drug pair across all 5 dimensions.
+    """Score a single drug pair across 5 dimensions + Loewe / Bliss models.
 
     Returns:
-        dict with individual scores and composite score.
+        dict with individual scores, composite score, and synergy models.
     """
     target_comp = score_target_complementarity(drug_a, drug_b)
     pathway_div = score_pathway_diversity(drug_a, drug_b)
@@ -329,6 +374,9 @@ def score_drug_pair(drug_a: dict, drug_b: dict) -> SynergyPair:
         + evidence * weights["combined_evidence"]
     )
 
+    loewe_eval = compute_loewe_combination_index(target_comp, pathway_div, composite)
+    bliss_eval = compute_bliss_excess_synergy(target_comp, pathway_div, composite)
+
     return {
         "drug_a_id": drug_a["id"],
         "drug_a_name": drug_a["name"],
@@ -340,6 +388,8 @@ def score_drug_pair(drug_a: dict, drug_b: dict) -> SynergyPair:
         "safety_non_overlap": round(safety, 1),
         "combined_evidence": round(evidence, 1),
         "composite_score": round(composite, 2),
+        "loewe_combination_index": loewe_eval["combination_index"],
+        "bliss_excess": bliss_eval["delta_bliss"],
         "drug_a_type": drug_a.get("type", ""),
         "drug_b_type": drug_b.get("type", ""),
         "drug_a_mechanism": drug_a.get("mechanism", "")[:200],
@@ -519,4 +569,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

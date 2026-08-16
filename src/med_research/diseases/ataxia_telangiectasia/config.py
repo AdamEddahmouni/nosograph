@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Ataxia-telangiectasia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Ataxia-telangiectasia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Ataxia-telangiectasia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Ataxia-telangiectasia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Ataxia-telangiectasia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Ataxia-telangiectasia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Ataxia-telangiectasia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Ataxia-telangiectasia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -203,8 +203,7 @@ DRUG_SAFETY_RISK = {
         "upadacitinib",
         "vedolizumab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

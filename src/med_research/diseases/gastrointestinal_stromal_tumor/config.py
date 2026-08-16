@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(genotype[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(genotype[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(genotype[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(genotype[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(genotype[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(genotype[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(genotype[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(genotype[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -109,12 +109,9 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
-    "moderate_risk": [
-    ],
-    "low_risk": [
-    ],
+    "high_risk": [],
+    "moderate_risk": [],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
@@ -146,8 +143,7 @@ SCREENING_PROFILE = {
         "pathway",
         "receptor",
     ],
-    "reference_drug_ids": [
-    ],
+    "reference_drug_ids": [],
     "weights": {
         "binding_estimate": 0.25,
         "druglikeness": 0.15,

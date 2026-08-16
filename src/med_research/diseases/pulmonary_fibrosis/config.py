@@ -26,10 +26,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Idiopathic pulmonary fibrosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Idiopathic pulmonary fibrosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Idiopathic pulmonary fibrosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Idiopathic pulmonary fibrosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Idiopathic pulmonary fibrosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Idiopathic pulmonary fibrosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Idiopathic pulmonary fibrosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Idiopathic pulmonary fibrosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

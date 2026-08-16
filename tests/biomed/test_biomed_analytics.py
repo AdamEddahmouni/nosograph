@@ -18,7 +18,9 @@ def test_graph_analytics_pathfinding(repository: BiomedicalRepository) -> None:
     assert paths[0].score == 1.0
 
 
-def test_graph_analytics_prioritize_targets(repository: BiomedicalRepository, mondo_snapshot: Any) -> None:
+def test_graph_analytics_prioritize_targets(
+    repository: BiomedicalRepository, mondo_snapshot: Any
+) -> None:
     repository.upsert_snapshot(mondo_snapshot)
     c_id = claim_uuid("MONDO:0007915", Predicate.TREATED_BY, "UNIPROT:P01375")
     claim = Claim(
@@ -47,4 +49,3 @@ def test_graph_analytics_prioritize_targets(repository: BiomedicalRepository, mo
     assert top.target_curie == "UNIPROT:P01375"
     assert top.supporting_evidence_count >= 1
     assert top.combined_vulnerability_score > 0.0
-

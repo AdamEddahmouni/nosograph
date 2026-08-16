@@ -15,10 +15,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Crohn disease[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Crohn disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Crohn disease[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Crohn disease[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Crohn disease[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Crohn disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Crohn disease[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Crohn disease[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -244,7 +244,7 @@ SCREENING_PROFILE = {
         "similarity_score": 0.15,
         "novelty_score": 0.1,
     },
-    "source": "scaffold_crohns_disease_knowledge_graph",
+    "source": "inferred_scaffold_v1",
     "curated_inputs": [
         "pathways",
         "drugs",

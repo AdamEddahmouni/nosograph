@@ -1,5 +1,3 @@
-
-
 """Contract tests for scientifically reliable multi-disease execution."""
 
 import pytest
@@ -7,8 +5,6 @@ import pytest
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
 
 pytestmark = pytest.mark.unit
-
-
 
 
 @pytest.mark.parametrize("disease_id", DISEASES)

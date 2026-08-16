@@ -1,20 +1,81 @@
 """ASTHMA disease configuration."""
 
-PIPELINE_LABEL = "ASTHMA"
+PIPELINE_LABEL = "Asthma"
 DEFAULT_SAMPLE_SIZE = 50
 
-# Minimal symptom list
+# ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
 SYMPTOMS = [
-    "Autosomal dominant inheritance",
-    "Airway hyperresponsiveness",
-    "Asthma",
-    "Non-Mendelian inheritance",
-    "Bronchoconstriction",
+    "wheezing",
+    "expiratory wheezing",
+    "episodic shortness of breath",
+    "dyspnea",
+    "chest tightness",
+    "chronic dry cough",
+    "nocturnal cough",
+    "exercise-induced bronchospasm",
+    "bronchoconstriction",
+    "airway hyperresponsiveness",
+    "mucus plugging",
+    "tachypnea",
+    "accessory muscle use",
+    "pulsus paradoxus",
+    "nasal congestion",
+    "rhinorrhea",
+    "allergic rhinitis",
+    "atopic dermatitis",
+    "nasal polyps",
+    "aspirin sensitivity",
+    "acute asthma exacerbation",
+    "status asthmaticus",
 ]
 
-PUBMED_QUERIES = []
-TRIAL_QUERY = "ASTHMA"
-GWAS_SEARCH_TERMS = []
+PUBMED_QUERIES = [
+    "(asthma[Title/Abstract] OR bronchial asthma[Title/Abstract]) AND (treatment[Title/Abstract] OR biologics[Title/Abstract])",
+    "(asthma[Title/Abstract]) AND (type 2 inflammation[Title/Abstract] OR eosinophils[Title/Abstract] OR IgE[Title/Abstract])",
+    "(asthma[Title/Abstract]) AND (IL-4[Title/Abstract] OR IL-5[Title/Abstract] OR IL-13[Title/Abstract] OR TSLP[Title/Abstract])",
+    "(asthma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(asthma[Title/Abstract]) AND (airway remodeling[Title/Abstract] OR genetics[Title/Abstract])",
+]
+TRIAL_QUERY = "Asthma OR Allergic Asthma OR Severe Eosinophilic Asthma"
+GWAS_SEARCH_TERMS = [
+    "asthma",
+    "allergic asthma",
+    "childhood onset asthma",
+    "adult onset asthma",
+    "blood eosinophil count",
+]
+
+DRUG_SAFETY_RISK = {
+    "high_risk": [
+        "aspirin",
+        "nsaids",
+        "ibuprofen",
+        "naproxen",
+        "non_selective_beta_blockers",
+        "propranolol",
+        "timolol",
+        "sedatives",
+    ],
+    "moderate_risk": [
+        "cardioselective_beta_blockers",
+        "ace_inhibitors",
+        "theophylline",
+        "oral_corticosteroids_long_term",
+    ],
+    "low_risk": [
+        "albuterol",
+        "salbutamol",
+        "fluticasone",
+        "budesonide",
+        "formoterol",
+        "montelukast",
+        "dupilumab",
+        "mepolizumab",
+        "omalizumab",
+    ],
+}
+DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
+DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 CAR_T_SCORES = {
     "Epidermal Barrier Function": {
@@ -133,8 +194,7 @@ DRUG_SAFETY_RISK = {
         "vilanterol",
         "zileuton",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

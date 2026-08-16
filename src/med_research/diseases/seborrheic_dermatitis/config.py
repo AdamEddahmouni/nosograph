@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Seborrheic dermatitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Seborrheic dermatitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Seborrheic dermatitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Seborrheic dermatitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Seborrheic dermatitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Seborrheic dermatitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Seborrheic dermatitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Seborrheic dermatitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -93,8 +93,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "clobetasol propionate",
         "cortisone acetate",
@@ -111,8 +110,7 @@ DRUG_SAFETY_RISK = {
         "ruxolitinib",
         "tacrolimus anhydrous",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

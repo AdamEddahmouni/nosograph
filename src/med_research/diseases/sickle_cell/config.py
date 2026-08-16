@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Sickle cell disease[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Sickle cell disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Sickle cell disease[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Sickle cell disease[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Sickle cell disease[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Sickle cell disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Sickle cell disease[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Sickle cell disease[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

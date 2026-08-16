@@ -14,16 +14,12 @@ Usage:
 
 import argparse
 import json
+import logging
 import os
-import sys
 from pathlib import Path
+from typing import Any, cast
 
 import networkx as nx
-
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-import logging
-from typing import Any, cast
 
 from med_research.cache import NS_ENRICHMENT, cache_get, cache_set, load_legacy_json
 from med_research.diseases.schemas import GeneDict
@@ -33,8 +29,6 @@ from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import EnrichmentResult
 
 logger = logging.getLogger(__name__)
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 LEGACY_ENRICHMENT_CACHE = DATA_DIR / "enrichment_cache.json"
@@ -499,4 +493,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

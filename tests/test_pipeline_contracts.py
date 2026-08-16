@@ -28,12 +28,8 @@ _DISPATCH_SOURCE = _SOURCE_ROOT / "pipeline" / "dispatch.py"
 pytestmark = pytest.mark.unit
 
 
-
-
 class _DirectAdapterMethodVisitor(ast.NodeVisitor):
     """Find adapter execution/reporting calls that bypass ``pipeline.dispatch``."""
-
-
 
     _ADAPTER_METHODS = frozenset({"run", "report", "build_provenance"})
     _ADAPTER_RECEIVER_NAMES = frozenset(
@@ -126,13 +122,27 @@ class _DirectAdapterMethodVisitor(ast.NodeVisitor):
         return set()
 
 
+def _iter_python_sources(root: Path):
+    """Yield relevant codebase Python files, bypassing 10,000+ auto-scaffolded disease folders."""
+    for p in root.glob("*.py"):
+        yield p
+    diseases_dir = root / "diseases"
+    if diseases_dir.exists():
+        for p in diseases_dir.glob("*.py"):
+            yield p
+    for subdir in ("pipeline", "web", "biomed"):
+        d = root / subdir
+        if d.exists():
+            yield from d.rglob("*.py")
+
+
 def _find_direct_adapter_methods() -> list[str]:
     """Return adapter execution/reporting calls outside the unified dispatcher."""
     violations: list[str] = []
-    for path in _SOURCE_ROOT.rglob("*.py"):
+    for path in _iter_python_sources(_SOURCE_ROOT):
         if path.resolve() == _DISPATCH_SOURCE.resolve():
             continue
-        tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+        tree = ast.parse(path.read_bytes(), filename=str(path))
         visitor = _DirectAdapterMethodVisitor(path)
         visitor.visit(tree)
         violations.extend(visitor.violations)

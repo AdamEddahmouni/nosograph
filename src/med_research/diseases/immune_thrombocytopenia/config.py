@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Immune thrombocytopenic purpura[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Immune thrombocytopenic purpura[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Immune thrombocytopenic purpura[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Immune thrombocytopenic purpura[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Immune thrombocytopenic purpura[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Immune thrombocytopenic purpura[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Immune thrombocytopenic purpura[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Immune thrombocytopenic purpura[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

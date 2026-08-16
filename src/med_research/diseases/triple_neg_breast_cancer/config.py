@@ -8,15 +8,22 @@ PIPELINE_LABEL = "Triple-negative breast cancer (TRIPLE_NEG_BREAST_CANCER)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Triple-negative breast cancer
-SYMPTOMS = []
+SYMPTOMS = [
+    "breast lump or mass",
+    "nipple discharge or inversion",
+    "skin dimpling or peau d'orange",
+    "axillary lymphadenopathy",
+    "breast pain or tenderness",
+    "inflammatory skin redness",
+    "local edema",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Triple-negative breast cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Triple-negative breast cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Triple-negative breast cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Triple-negative breast cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Triple-negative breast cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Triple-negative breast cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Triple-negative breast cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Triple-negative breast cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

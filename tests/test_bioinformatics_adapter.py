@@ -20,8 +20,6 @@ pytestmark = pytest.mark.unit
 class BioinformaticsAdapterContract(ModuleAdapterContract):
     """Shared provenance assertions for bioinformatics adapters."""
 
-
-
     provenance_sources: list[str]
     provenance_scoring: dict
 

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Metachromatic leukodystrophy[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Metachromatic leukodystrophy[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Metachromatic leukodystrophy[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Metachromatic leukodystrophy[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Metachromatic leukodystrophy[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Metachromatic leukodystrophy[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Metachromatic leukodystrophy[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Metachromatic leukodystrophy[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -142,8 +142,7 @@ DRUG_SAFETY_RISK = {
         "mycophenolate mofetil",
         "warfarin",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

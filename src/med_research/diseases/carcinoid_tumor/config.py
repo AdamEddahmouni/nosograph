@@ -15,10 +15,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(carcinoid tumor[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(carcinoid tumor[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(carcinoid tumor[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(carcinoid tumor[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(carcinoid tumor[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(carcinoid tumor[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(carcinoid tumor[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(carcinoid tumor[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

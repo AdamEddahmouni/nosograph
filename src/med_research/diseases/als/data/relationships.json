@@ -6,79 +6,97 @@
       "source": "SOD1",
       "type": "ASSOCIATED_WITH",
       "target": "Amyotrophic Lateral Sclerosis",
-      "evidence": "First identified genetic cause of familial ALS."
+      "description": "Superoxide dismutase 1 mutations cause toxic gain of function in motor neurons."
     },
     {
       "source": "C9orf72",
       "type": "ASSOCIATED_WITH",
       "target": "Amyotrophic Lateral Sclerosis",
-      "evidence": "Most frequent genetic cause of ALS and frontotemporal dementia."
+      "description": "Hexanucleotide repeat expansion is the most common genetic cause of ALS/FTD."
     },
     {
       "source": "TARDBP",
       "type": "ASSOCIATED_WITH",
       "target": "Amyotrophic Lateral Sclerosis",
-      "evidence": "Major component of ubiquitinated protein inclusions in ALS."
+      "description": "TDP-43 cytoplasmic mislocalization and aggregation is the pathological hallmark of 97% of ALS."
     },
     {
       "source": "FUS",
       "type": "ASSOCIATED_WITH",
       "target": "Amyotrophic Lateral Sclerosis",
-      "evidence": "RNA-binding protein implicated in juvenile and familial ALS."
+      "description": "RNA-binding protein causing early-onset and aggressive familial ALS."
+    },
+    {
+      "source": "TBK1",
+      "type": "ASSOCIATED_WITH",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "description": "Autophagy kinase interacting with optineurin in motor neuron survival."
+    },
+    {
+      "source": "VCP",
+      "type": "ASSOCIATED_WITH",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "description": "AAA+ ATPase critical for protein degradation and stress granule clearance."
     },
     {
       "source": "riluzole",
       "type": "TREATS",
       "target": "Amyotrophic Lateral Sclerosis",
-      "evidence": "Approved disease treatment"
+      "description": "Approved disease-modifying treatment"
     },
     {
       "source": "riluzole",
       "type": "TARGETS",
-      "target": "GRIN1",
-      "evidence": "Glutamate neurotransmission inhibitor"
+      "target": "SCN4A",
+      "description": "Glutamate neurotransmission and sodium channel modulator"
     },
     {
       "source": "edaravone",
       "type": "TREATS",
       "target": "Amyotrophic Lateral Sclerosis",
-      "evidence": "Approved disease treatment"
+      "description": "Approved free radical scavenger"
     },
     {
       "source": "edaravone",
       "type": "TARGETS",
       "target": "ROS",
-      "evidence": "Free radical scavenger reducing oxidative stress"
+      "description": "Scavenges reactive oxygen species reducing oxidative stress"
     },
     {
       "source": "tofersen",
       "type": "TREATS",
       "target": "Amyotrophic Lateral Sclerosis",
-      "evidence": "Approved disease treatment"
+      "description": "Approved antisense oligonucleotide for SOD1 mutation carriers"
     },
     {
       "source": "tofersen",
       "type": "TARGETS",
       "target": "SOD1",
-      "evidence": "Antisense oligonucleotide targeting SOD1 mRNA"
+      "description": "Degrades SOD1 mRNA via RNase H"
     },
     {
-      "source": "TARDBP",
-      "type": "PARTICIPATES_IN",
-      "target": "tdp43-proteinopathy",
-      "evidence": "Key component of TDP-43 Proteinopathy"
+      "source": "sodium_phenylbutyrate_taurursodiol",
+      "type": "TREATS",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "description": "Approved ER stress and mitochondrial protector"
     },
     {
-      "source": "C9orf72",
-      "type": "PARTICIPATES_IN",
-      "target": "tdp43-proteinopathy",
-      "evidence": "Key component of TDP-43 Proteinopathy"
+      "source": "sodium_phenylbutyrate_taurursodiol",
+      "type": "TARGETS",
+      "target": "HSPA5",
+      "description": "Reduces neuronal apoptosis and chaperone stress"
     },
     {
-      "source": "SOD1",
-      "type": "PARTICIPATES_IN",
-      "target": "glutamate-excitotoxicity",
-      "evidence": "Key component of Glutamate Excitotoxicity"
+      "source": "masitinib",
+      "type": "TREATS",
+      "target": "Amyotrophic Lateral Sclerosis",
+      "description": "Investigational neuroinflammation inhibitor"
+    },
+    {
+      "source": "masitinib",
+      "type": "TARGETS",
+      "target": "KIT",
+      "description": "CSF1R and tyrosine kinase inhibitor in microglial cells"
     }
   ]
 }

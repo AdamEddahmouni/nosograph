@@ -44,15 +44,30 @@ python -m med_research.cli biomed init --db /path/to/biomedical.sqlite3
 make biomed-init
 ```
 
-Import pinned ontology artifacts (operator-supplied local files; no live network fetch):
+Import pinned ontology or evidence artifacts (operator-supplied local files; choices: `mondo`, `hp`, `hpoa`, `clinvar`, `openfda`, `go`, `reactome`, `uberon`):
 
 ```bash
 python -m med_research.cli biomed import mondo --artifact /path/to/mondo.json
 python -m med_research.cli biomed import hp --artifact /path/to/hp.json
 python -m med_research.cli biomed import hpoa --artifact /path/to/phenotype.hpoa.tsv
+python -m med_research.cli biomed import clinvar --artifact /path/to/clinvar.json
+python -m med_research.cli biomed import openfda --artifact /path/to/openfda.json
+python -m med_research.cli biomed import go --artifact /path/to/go.json
+python -m med_research.cli biomed import reactome --artifact /path/to/reactome.json
+python -m med_research.cli biomed import uberon --artifact /path/to/uberon.json
 python -m med_research.cli biomed snapshots list
 python -m med_research.cli biomed snapshots list --resource mondo
 make biomed-import-fixtures
+```
+
+Download and import the full MONDO/HPO/HPOA artifacts (parallel downloads, slim or full hierarchy, checksum-pinned):
+
+```bash
+python scripts/setup_biomed_imports.py            # slim import (pipeline-focused, default)
+python scripts/setup_biomed_imports.py --full     # full hierarchy import (slower)
+python scripts/setup_biomed_imports.py --from-fixtures  # minimal test fixtures
+python scripts/setup_biomed_imports.py --mondo-only
+make biomed-import
 ```
 
 Migrate curated legacy disease modules into canonical claims (requires an active Mondo snapshot; legacy JSON loaders remain authoritative for existing modules):
@@ -63,16 +78,17 @@ python -m med_research.cli biomed migrate legacy --disease sle --report /tmp/par
 make biomed-migrate-legacy
 ```
 
-Pinned fixture imports and verification:
+Pinned artifact imports and verification:
 
 ```bash
 make biomed-import-fixtures
+make biomed-import
 make biomed-verify
 python scripts/setup_biomed_imports.py --from-fixtures
 python scripts/verify_biomed_imports.py --from-fixtures --check-store
 ```
 
-Checksums for the minimal fixture bundle are recorded in `data/biomed/pinned-artifacts.json`. `setup_biomed_imports.py` verifies fixture checksums before import; `verify_biomed_imports.py` can re-check artifact files and active store snapshots.
+`data/biomed/pinned-artifacts.json` pins both the minimal fixture checksum (`fixture_checksum`) and the full downloaded artifact checksum (`download_checksum`) for MONDO, HPO, and HPOA. `setup_biomed_imports.py` verifies the source artifact against the matching pin before importing; `verify_biomed_imports.py` re-checks the artifact files and active store snapshots, accepting either the fixture or the full-download checksum so both a fixture-backed and a full-import store verify cleanly.
 
 Set `BIOMED_LEGACY_PROJECTION=1` to enable optional read-only canonical claim diagnostics when a `legacy-curated` snapshot is active. Graph construction continues to use the JSON loaders by default.
 
@@ -94,6 +110,10 @@ Versioned read-only condition endpoints backed by the canonical biomedical store
 | GET | `/api/v1/snapshots/{snapshot_id}/report` | Import report metadata for a snapshot |
 | POST | `/api/v1/comparisons` | Compare two condition CURIEs and persist a research run |
 | GET | `/api/v1/comparisons/{run_id}` | Fetch a persisted comparison research run |
+| GET | `/api/v1/analytics/stats` | Overall biomedical store summary statistics and entity/predicate distributions |
+| GET | `/api/v1/analytics/targets/{curie}` | Prioritize disease targets using vectorized evidence and degree scoring (`top_k` 1–100) |
+| GET | `/api/v1/analytics/shared-mechanisms` | Compute shared biological pathways, genes, and Jaccard similarity between two condition CURIEs |
+| GET | `/api/v1/analytics/subgraph/{curie}` | Multi-hop subgraph traversal around an entity CURIE (`max_hops` 1–4, `limit` 1–500) |
 | GET | `/api/v1/biomed/pathways` | Find claim paths between a `start_curie` and `target_curie` (`max_depth` 1–5, `limit` 1–50) |
 | GET | `/api/v1/biomed/target-prioritization/{disease_curie}` | Rank targets for a disease by supporting/contradictory evidence and normalized centrality (`top_k` 1–50) |
 
@@ -111,10 +131,13 @@ curl -X POST "http://127.0.0.1:8000/api/v1/comparisons" \
 curl "http://127.0.0.1:8000/api/v1/comparisons/{run_id}"
 ```
 
-CLI comparison:
+CLI comparison and graph analytics:
 
 ```bash
 python -m med_research.cli biomed compare --left MONDO:0007915 --right MONDO:0008390 --db data/biomedical.sqlite3
+python -m med_research.cli biomed analytics --disease MONDO:0007915 --top 20
+python -m med_research.cli biomed analytics --disease MONDO:0007915 --compare-with MONDO:0008390
+python -m med_research.cli biomed analytics --stats
 ```
 
 Live condition/gene lookups against external providers use the `live` command:
@@ -123,7 +146,9 @@ Live condition/gene lookups against external providers use the `live` command:
 python -m med_research.cli live --target JAK2 --disease ra --source all
 ```
 
-`live` supports `opentargets`, `gtex`, `chembl`, `uniprot`, and `biorxiv` sources through the `pipeline.external` connectors. The biomedical store also ships import adapters for ClinVar (`imports/clinvar_adapter.py`) and openFDA (`imports/openfda_adapter.py`) plus experimental ChEMBL/PubChem adapters; these are not yet exposed through the `biomed import` CLI (which accepts `mondo`, `hp`, and `hpoa`).
+`live` supports `opentargets`, `gtex`, `chembl`, `uniprot`, and `biorxiv` sources through the `pipeline.external` connectors. The biomedical store import CLI accepts `mondo`, `hp`, `hpoa`, `clinvar`, `openfda`, `go`, `reactome`, and `uberon` (ClinVar/openFDA use pinned fixtures by default; see `make biomed-import-clinvar`).
+
+Corpus readiness tiers (L0–L3) are reported by `med-research disease corpus-status` and exposed at `GET /api/system/corpus-status`. Disease list responses include `mondo_curie`, `efo_id`, and `readiness_tier` when available.
 
 Absent imported data is returned as empty lists or `No data imported for this section` placeholders in the dashboard explorer; it is never treated as contradictory evidence. Legacy `/api/*` routes remain unchanged.
 
@@ -261,10 +286,11 @@ All routes below are `GET` unless stated otherwise. Disease-query support is lis
 | `/api/cross-disease/similarity` | — | Disease similarity matrix. |
 | `/api/cross-disease/drugs` | `top` | Multi-disease drug rankings. |
 | `/api/cross-disease/modules` | `top_synergy` | Comparative module results. |
-| `/api/system/diseases` | — | Discovered disease registry and counts (10,405 modules). |
+| `/api/system/diseases` | — | Discovered disease registry and counts (10,403 modules). |
+| `/api/system/corpus-status` | — | Corpus readiness tier aggregate from latest batch report. |
 | `/api/system/modules` | `disease` (default `sle`) | Pipeline module catalog (registry module IDs, aliases, request schemas, contracts). |
 | `/api/ready` | — | Readiness check across Redis, Celery, workspace DB, and KG preload. |
-| `/api/stats` | `disease_id` where supported | Platform summary statistics. |
+| `/api/stats` | `disease_id` where supported | Platform summary statistics (disease, modules, KG counts, coverage summary). |
 
 The exact parameter constraints and response schemas are authoritative in `/api/openapi.json`. Workspace review, alert, notification, digest, graph, history, and export routes use the authenticated session/proxy principal; they no longer accept a researcher identity from dashboard request headers.
 

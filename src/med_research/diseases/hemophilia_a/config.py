@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Hemophilia A[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Hemophilia A[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Hemophilia A[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Hemophilia A[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Hemophilia A[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Hemophilia A[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Hemophilia A[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Hemophilia A[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -172,8 +172,7 @@ DRUG_SAFETY_RISK = {
         "telmisartan",
         "tranexamic acid",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -72,7 +72,7 @@ The request body is the `ResearchRequest` model:
 
 | Field | Type | Default | Description |
 |---|---|---:|---|
-| `disease_id` | string | `sle` | Must be a discovered disease module (any of the 10,405 registry IDs), such as `sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, or `ibd`. |
+| `disease_id` | string | `sle` | Must be a discovered disease module (any of the 10,403 registry IDs), such as `sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, `ibd`, `ad`, `als`, `as`, `asthma`, `atopic_dermatitis`, `copd`, `gout`, `pd`, `psa`, `pso`, or `t2d`. |
 | `question` | string | required | Trimmed natural-language question, 2–500 characters. |
 | `sources` | array/string | `pubmed`, `clinical_trials` | Non-empty supported source names. CLI accepts comma-separated text; API accepts a JSON array or compatible comma-separated string. |
 | `date_from` | ISO date | `null` | Inclusive earliest source date. |

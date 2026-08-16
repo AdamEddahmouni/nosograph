@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Gastric cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Gastric cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Gastric cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Gastric cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Gastric cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Gastric cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Gastric cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Gastric cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -200,8 +200,7 @@ DRUG_SAFETY_RISK = {
         "vonoprazan fumarate",
         "zolbetuximab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

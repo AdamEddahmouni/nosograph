@@ -58,7 +58,9 @@ class ClinicalTrialsModule(BasePipelineModule[TrialRunResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         from med_research.diseases.base import Disease
 
         use_cache = opts.get("use_cache", True)

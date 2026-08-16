@@ -17,7 +17,6 @@ pytestmark = pytest.mark.unit
 def cache_dir(tmp_path, monkeypatch):
     """Point all CacheManager() calls at an isolated temp directory."""
 
-
     path = tmp_path / "cache"
 
     def _manager(*_args, **_kwargs):

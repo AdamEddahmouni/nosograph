@@ -74,7 +74,6 @@ def _stub_semantic_search_empty_path(monkeypatch: pytest.MonkeyPatch) -> None:
     regression that used to skip the tick.
     """
 
-
     import med_research.pipeline.semantic_search.engine as engine_mod
 
     class _FakeEmbedder:

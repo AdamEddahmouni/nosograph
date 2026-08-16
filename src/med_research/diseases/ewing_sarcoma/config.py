@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Ewing sarcoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Ewing sarcoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Ewing sarcoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Ewing sarcoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Ewing sarcoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Ewing sarcoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Ewing sarcoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Ewing sarcoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

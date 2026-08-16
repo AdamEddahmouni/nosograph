@@ -118,25 +118,117 @@ async def ready() -> JSONResponse | dict[str, Any]:
     return JSONResponse(status_code=status_code, content=payload)
 
 
+_DISEASE_REGISTRY_CACHE: dict[str, Any] = {"time": 0.0, "response": None}
+
+
+def invalidate_system_disease_cache() -> None:
+    _DISEASE_REGISTRY_CACHE["time"] = 0.0
+    _DISEASE_REGISTRY_CACHE["response"] = None
+
+
 @router.get("/api/system/diseases", response_model=DiseasesResponse)
 async def disease_registry() -> DiseasesResponse:
-    """List all available diseases (fresh filesystem scan).
+    """List all available diseases (cached with short TTL).
 
-    Scans the diseases/ tree on every request so diseases scaffolded via
-    ``med-research disease add`` appear without restarting the server.
+    Scans the diseases/ tree and caches the result for 60s so diseases scaffolded via
+    ``med-research disease add`` appear promptly without re-scanning thousands of files per request.
     """
     import json
+    import time
+
+    now = time.time()
+    if _DISEASE_REGISTRY_CACHE["response"] is not None and (now - _DISEASE_REGISTRY_CACHE["time"] < 60.0):
+        return _DISEASE_REGISTRY_CACHE["response"]
 
     from med_research.diseases.base import Disease
+    from med_research.diseases.context import (
+        _counts_from_status_report,
+        _gaps_from_status_report,
+        _registry_by_id,
+        _tier_from_status_report,
+    )
     from med_research.diseases.coverage import coverage_for_disease
     from med_research.diseases.coverage_report import DEFAULT_MODULE_INPUTS
+    from med_research.diseases.scaffold import sanitize_id
     from med_research.exceptions import DataValidationError
 
     catalog = pipeline_gateway.catalog()
     coverage_module_ids = {entry["coverage_module"]: entry["module_id"] for entry in catalog}
+    registry_index = _registry_by_id()
+    tier_index = _tier_from_status_report()
+    gap_index = _gaps_from_status_report()
+    counts_index = _counts_from_status_report()
 
+    default_blocked_modules = {
+        module: {
+            "disease_id": "",
+            "module": module,
+            "level": "unsupported",
+            "status": "blocked",
+            "curated_inputs": ["profile", "genes", "drugs", "pathways", "relationships"],
+            "missing_inputs": ["profile", "genes", "drugs", "pathways", "relationships"],
+            "inferred_inputs": [],
+            "warnings": [],
+            "limitations": [
+                "Core disease data is incomplete; run disease scaffolding or refresh before analysis."
+            ],
+        }
+        for module in DEFAULT_MODULE_INPUTS
+    }
+
+    core_diseases = {"sle", "ra", "ms", "ss", "ssc", "t1d", "ibd", "ad"}
     diseases = []
+
     for disease_id in Disease.list_all():
+        reg = registry_index.get(sanitize_id(disease_id), {})
+        if disease_id not in core_diseases:
+            precomputed = counts_index.get(disease_id)
+            name = reg.get("name") or reg.get("label") or disease_id.replace("_", " ").title()
+            g_cnt = precomputed.get("genes", 0) if precomputed else 0
+            d_cnt = precomputed.get("drugs", 0) if precomputed else 0
+            p_cnt = precomputed.get("pathways", 0) if precomputed else 0
+            t_val = tier_index.get(disease_id, "blocked")
+            g_val = gap_index.get(disease_id, [])
+
+            mod_cov = {
+                m: {**data, "disease_id": disease_id}
+                for m, data in default_blocked_modules.items()
+            }
+            core_cov_dict = {
+                "disease_id": disease_id,
+                "module": "core",
+                "level": "unsupported",
+                "status": "blocked",
+                "curated_inputs": ["profile", "genes", "drugs", "pathways", "relationships"],
+                "missing_inputs": ["profile", "genes", "drugs", "pathways", "relationships"],
+                "inferred_inputs": [],
+                "warnings": [],
+                "limitations": [
+                    "Core disease data is incomplete; run disease scaffolding or refresh before analysis."
+                ],
+            }
+
+            diseases.append(
+                DiseaseInfo(
+                    id=disease_id,
+                    name=name,
+                    description=reg.get("description", ""),
+                    prevalence=reg.get("prevalence", ""),
+                    genes=g_cnt,
+                    drugs=d_cnt,
+                    pathways=p_cnt,
+                    mondo_curie=reg.get("mondo_id"),
+                    efo_id=reg.get("efo_id"),
+                    readiness_tier=t_val,
+                    config_gaps=g_val,
+                    coverage={
+                        "core": core_cov_dict,
+                        "modules": mod_cov,
+                    },
+                )
+            )
+            continue
+
         try:
             disease = Disease(disease_id)
             profile = disease.profile
@@ -151,14 +243,39 @@ async def disease_registry() -> DiseasesResponse:
             OSError,
             DataValidationError,
         ):
-            # Keep incomplete modules visible; their coverage is the reason they
-            # belong in the registry and should be reported as blocked.
             try:
                 disease = Disease(disease_id)
                 profile = disease.profile
             except (OSError, ValueError, KeyError, TypeError, AttributeError):
                 continue
             genes = drugs = pathways = {"genes": [], "drugs": [], "pathways": []}
+
+        core_cov = coverage_for_disease(disease_id)
+        if core_cov.is_runnable:
+            modules_cov = {
+                module: pipeline_gateway.coverage(
+                    coverage_module_ids[module],
+                    disease_id,
+                ).to_dict()
+                for module in DEFAULT_MODULE_INPUTS
+            }
+        else:
+            core_dict = core_cov.to_dict()
+            modules_cov = {
+                module: {
+                    "disease_id": disease_id,
+                    "module": module,
+                    "level": "unsupported",
+                    "status": "blocked",
+                    "curated_inputs": [],
+                    "missing_inputs": core_dict.get("missing_inputs", []),
+                    "inferred_inputs": [],
+                    "warnings": core_dict.get("warnings", []),
+                    "limitations": core_dict.get("limitations", []),
+                }
+                for module in DEFAULT_MODULE_INPUTS
+            }
+
         diseases.append(
             DiseaseInfo(
                 id=disease_id,
@@ -168,20 +285,96 @@ async def disease_registry() -> DiseasesResponse:
                 genes=len(genes.get("genes", [])),
                 drugs=len(drugs.get("drugs", [])),
                 pathways=len(pathways.get("pathways", [])),
+                mondo_curie=reg.get("mondo_id"),
+                efo_id=reg.get("efo_id"),
+                readiness_tier=tier_index.get(disease_id),
+                config_gaps=gap_index.get(disease_id, []),
                 coverage={
-                    "core": coverage_for_disease(disease_id).to_dict(),
-                    "modules": {
-                        module: pipeline_gateway.coverage(
-                            coverage_module_ids[module],
-                            disease_id,
-                        ).to_dict()
-                        for module in DEFAULT_MODULE_INPUTS
-                    },
+                    "core": core_cov.to_dict(),
+                    "modules": modules_cov,
                 },
             )
         )
     diseases.sort(key=lambda d: d.id)
-    return DiseasesResponse(count=len(diseases), diseases=diseases)
+    resp = DiseasesResponse(count=len(diseases), diseases=diseases)
+    _DISEASE_REGISTRY_CACHE["time"] = now
+    _DISEASE_REGISTRY_CACHE["response"] = resp
+    return resp
+
+
+@router.get("/api/system/corpus-status")
+async def corpus_status(
+    tier: str | None = Query(None, description="Optional tier filter (L3, L2, L1, L0, blocked)"),
+    gap: str | None = Query(None, description="Optional config gap filter"),
+    search: str | None = Query(None, description="Search by disease ID or name"),
+    limit: int = Query(50, ge=1, le=500),
+    offset: int = Query(0, ge=0),
+    sort_by: str = Query("disease_id", description="Sort field"),
+    sort_desc: bool = Query(False, description="Sort descending"),
+) -> dict[str, Any]:
+    """Return corpus readiness tier aggregate and filterable disease completeness from the batch report."""
+    from med_research.diseases.corpus_status import DEFAULT_STATUS_PATH, load_status_report
+
+    report = load_status_report(DEFAULT_STATUS_PATH)
+    if not report:
+        from med_research.diseases.corpus_status import build_corpus_status
+
+        report = build_corpus_status(limit=50, include_symptom_source=False)
+    aggregate = report.get("aggregate", {})
+    gap_counts: dict[str, int] = {}
+    per_disease = report.get("per_disease", [])
+    for row in per_disease:
+        for g in row.get("config_gaps", []):
+            gap_counts[g] = gap_counts.get(g, 0) + 1
+    top_gaps = sorted(gap_counts.items(), key=lambda item: item[1], reverse=True)[:10]
+
+    filtered = per_disease
+    if tier:
+        target_tier = tier.strip().lower()
+        filtered = [r for r in filtered if str(r.get("tier", "")).lower() == target_tier]
+    if gap:
+        target_gap = gap.strip()
+        filtered = [r for r in filtered if target_gap in r.get("config_gaps", [])]
+    if search:
+        s = search.strip().lower()
+        filtered = [
+            r
+            for r in filtered
+            if s in str(r.get("disease_id", "")).lower() or s in str(r.get("name", "")).lower()
+        ]
+
+    # Sort
+    valid_sort_keys = {
+        "disease_id",
+        "name",
+        "tier",
+        "gene_count",
+        "drug_count",
+        "pathway_count",
+        "symptom_count",
+    }
+    key = sort_by if sort_by in valid_sort_keys else "disease_id"
+
+    def get_sort_val(item: dict[str, Any]) -> Any:
+        val = item.get(key)
+        if val is None:
+            return "" if isinstance(key, str) else 0
+        return val
+
+    filtered.sort(key=get_sort_val, reverse=sort_desc)
+    total_matching = len(filtered)
+    paginated = filtered[offset : offset + limit]
+
+    return {
+        "aggregate": aggregate,
+        "top_config_gaps": [{"field": k, "count": v} for k, v in top_gaps],
+        "report_path": str(DEFAULT_STATUS_PATH),
+        "total_matching": total_matching,
+        "limit": limit,
+        "offset": offset,
+        "diseases": paginated,
+    }
+
 
 
 @router.get("/api/system/modules", response_model=PipelineModulesResponse)

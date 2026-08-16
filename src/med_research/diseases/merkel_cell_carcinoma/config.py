@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Merkel cell skin cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Merkel cell skin cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Merkel cell skin cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Merkel cell skin cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Merkel cell skin cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Merkel cell skin cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Merkel cell skin cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Merkel cell skin cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

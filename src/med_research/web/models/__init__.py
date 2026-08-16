@@ -84,6 +84,10 @@ class DiseaseInfo(BaseModel):
     genes: int = 0
     drugs: int = 0
     pathways: int = 0
+    mondo_curie: str | None = None
+    efo_id: str | None = None
+    readiness_tier: str | None = None
+    config_gaps: list[str] = Field(default_factory=list)
     coverage: dict[str, Any] = Field(default_factory=dict)
 
 

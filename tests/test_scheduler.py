@@ -1,5 +1,3 @@
-
-
 """Tests for the parallel run-all DAG scheduler."""
 
 from __future__ import annotations

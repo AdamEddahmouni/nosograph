@@ -91,10 +91,8 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
-    "moderate_risk": [
-    ],
+    "high_risk": [],
+    "moderate_risk": [],
     "low_risk": [
         "amlodipine besylate",
     ],

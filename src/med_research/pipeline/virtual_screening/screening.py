@@ -34,20 +34,12 @@ try:
 except ImportError:
     NUMPY_AVAILABLE = False
 
-# Add parent to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+import logging
+from typing import Any, Mapping, cast
 
-if sys.platform == "win32":
-    reconfigure = getattr(sys.stdout, "reconfigure", None)
-    if reconfigure is not None:
-        reconfigure(encoding="utf-8", errors="replace")
-
-import logging  # noqa: E402
-from typing import Any, Mapping, cast  # noqa: E402
-
-from med_research.diseases.schemas import DrugDict, GeneDict  # noqa: E402
+from med_research.diseases.schemas import DrugDict, GeneDict
 from med_research.pipeline.knowledge_graph.config import (
-    load_drugs as config_load_drugs,  # noqa: E402
+    load_drugs as config_load_drugs,
 )
 from med_research.pipeline.knowledge_graph.config import (
     load_genes as config_load_genes,  # noqa: E402
@@ -262,8 +254,92 @@ def build_compound_library(disease_id: str = "sle") -> list[ScreeningCompound]:
 
 
 # ═══════════════════════════════════════════════════════════════════════
-#  Scoring Functions
+#  Lipinski, PAINS, and Vina Helpers
 # ═══════════════════════════════════════════════════════════════════════
+
+PAINS_PATTERNS = [
+    ("quinone", "Quinone or quinone-methide substructure"),
+    ("rhodanine", "Rhodanine core / promiscuous chelator"),
+    ("alkyl_halide", "Reactive alkyl halide electrophile"),
+    ("curcumin_analogue", "Curcuminoid conjugated enone"),
+    ("isothiazolone", "Thiol-reactive isothiazolone"),
+]
+
+
+def evaluate_lipinski_rule_of_five(compound: Mapping[str, Any]) -> dict[str, Any]:
+    """Evaluate Lipinski Rule of 5 parameters and return violation breakdown."""
+    mw = float(compound.get("mw", 400.0))
+    logp = float(compound.get("logp", 2.0))
+    hbd = int(compound.get("hbd", 2))
+    hba = int(compound.get("hba", 5))
+    rotatable_bonds = int(compound.get("rotatable_bonds", 5))
+
+    violations: list[str] = []
+    if mw > 500.0:
+        violations.append(f"MW > 500 ({mw:.1f})")
+    if logp > 5.0:
+        violations.append(f"LogP > 5.0 ({logp:.1f})")
+    if hbd > 5:
+        violations.append(f"HBD > 5 ({hbd})")
+    if hba > 10:
+        violations.append(f"HBA > 10 ({hba})")
+    if rotatable_bonds > 10:
+        violations.append(f"Rotatable Bonds > 10 ({rotatable_bonds})")
+
+    return {
+        "mw": mw,
+        "logp": logp,
+        "hbd": hbd,
+        "hba": hba,
+        "rotatable_bonds": rotatable_bonds,
+        "violations": violations,
+        "num_violations": len(violations),
+        "is_drug_like": len(violations) <= 1,
+    }
+
+
+def check_pains_alerts(compound_name: str, smiles: str = "") -> dict[str, Any]:
+    """Check for Pan-Assay Interference Compound (PAINS) flags."""
+    alerts: list[str] = []
+    lower_name = compound_name.lower()
+    lower_smi = smiles.lower()
+    for name_flag, desc in PAINS_PATTERNS:
+        if name_flag in lower_name or name_flag in lower_smi:
+            alerts.append(desc)
+    return {
+        "has_pains_alert": len(alerts) > 0,
+        "pains_alerts": alerts,
+    }
+
+
+def generate_vina_search_box(
+    center: tuple[float, float, float] = (0.0, 0.0, 0.0),
+    size: tuple[float, float, float] = (20.0, 20.0, 20.0),
+    exhaustiveness: int = 8,
+    num_modes: int = 9,
+) -> dict[str, Any]:
+    """Generate AutoDock Vina search bounding box configuration."""
+    config_text = (
+        f"center_x = {center[0]:.1f}\n"
+        f"center_y = {center[1]:.1f}\n"
+        f"center_z = {center[2]:.1f}\n"
+        f"size_x = {size[0]:.1f}\n"
+        f"size_y = {size[1]:.1f}\n"
+        f"size_z = {size[2]:.1f}\n"
+        f"exhaustiveness = {exhaustiveness}\n"
+        f"num_modes = {num_modes}\n"
+    )
+    return {
+        "center_x": center[0],
+        "center_y": center[1],
+        "center_z": center[2],
+        "size_x": size[0],
+        "size_y": size[1],
+        "size_z": size[2],
+        "exhaustiveness": exhaustiveness,
+        "num_modes": num_modes,
+        "config_text": config_text,
+    }
 
 
 def compute_druglikeness(compound: Mapping[str, Any]) -> float:
@@ -297,6 +373,7 @@ def compute_druglikeness(compound: Mapping[str, Any]) -> float:
 
     score = max(0.0, 10.0 - violations * 2.5)
     return round(min(10.0, score), 1)
+
 
 
 def compute_target_complementarity(
@@ -1000,4 +1077,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

@@ -40,7 +40,7 @@ def build_proxy_signature(
 
     mid = max(1, len(scored) // 2)
     up_candidates = scored[:top_n]
-    down_candidates = scored[mid: mid + top_n]
+    down_candidates = scored[mid : mid + top_n]
 
     upregulated: dict[str, dict[str, float]] = {}
     for t in up_candidates:

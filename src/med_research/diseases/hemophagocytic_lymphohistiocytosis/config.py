@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Hemophagocytic lymphohistiocytosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Hemophagocytic lymphohistiocytosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Hemophagocytic lymphohistiocytosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Hemophagocytic lymphohistiocytosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Hemophagocytic lymphohistiocytosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Hemophagocytic lymphohistiocytosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Hemophagocytic lymphohistiocytosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Hemophagocytic lymphohistiocytosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -100,8 +100,7 @@ DRUG_SAFETY_RISK = {
         "itacitinib",
         "tacrolimus anhydrous",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

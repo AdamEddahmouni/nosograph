@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Cervical cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Cervical cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Cervical cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Cervical cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Cervical cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Cervical cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Cervical cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Cervical cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

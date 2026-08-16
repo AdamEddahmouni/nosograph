@@ -300,6 +300,18 @@ biomed-migrate-legacy:  ## Project all seven legacy disease modules into the can
 biomed-verify:  ## Verify pinned fixture checksums and active ontology snapshots
 	python scripts/verify_biomed_imports.py --from-fixtures --check-store
 
+biomed-import-clinvar:  ## Import ClinVar fixture into the biomed store
+	python -m med_research.cli biomed import clinvar --artifact tests/fixtures/biomed/clinvar/minimal.json
+
+biomed-import-openfda:  ## Import openFDA fixture into the biomed store
+	python -m med_research.cli biomed import openfda --artifact tests/fixtures/biomed/openfda/minimal.json
+
+corpus-baseline:  ## Generate corpus baseline metrics report
+	python scripts/generate_corpus_baseline.py
+
+corpus-status:  ## Refresh corpus tier status report
+	python -m med_research.cli disease corpus-status
+
 # ── Cleanup ──────────────────────────────────────────────────────────────
 
 clean:  ## Remove caches, build artifacts, and generated reports

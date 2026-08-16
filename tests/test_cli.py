@@ -14,7 +14,6 @@ pytestmark = pytest.mark.unit
 def test_modules_json_lists_registry_modules(capsys):
     """``modules --json`` must list every registry adapter."""
 
-
     from med_research.cli import cmd_modules
     from med_research.pipeline.registry import list_modules
 

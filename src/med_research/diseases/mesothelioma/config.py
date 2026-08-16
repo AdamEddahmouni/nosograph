@@ -15,10 +15,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Mesothelioma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Mesothelioma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Mesothelioma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Mesothelioma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Mesothelioma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Mesothelioma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Mesothelioma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Mesothelioma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

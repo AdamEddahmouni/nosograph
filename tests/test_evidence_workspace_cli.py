@@ -1,4 +1,4 @@
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 
 import pytest
 
@@ -78,9 +78,7 @@ def test_workspace_cli_wires_cli_progress_through_dispatch(monkeypatch, tmp_path
         started_at="2026-08-06T00:00:00Z",
         completed_at="2026-08-06T00:00:00Z",
     )
-    mock_execute = MagicMock(
-        return_value=PipelineRunResult(success=True, data=dossier)
-    )
+    mock_execute = MagicMock(return_value=PipelineRunResult(success=True, data=dossier))
     monkeypatch.setattr(
         "med_research.pipeline.gateway.pipeline_gateway.execute",
         mock_execute,

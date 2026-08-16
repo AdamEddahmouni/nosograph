@@ -1,6 +1,52 @@
 # Changelog
 
+## [2.1.0] — 2026-08-16
+
+### Added
+
+- **Platform-Wide Disease Catalog Promotion (Waves 3 & 4 — 45+ Tier-1 Curated Indications)**:
+  - **Solid Tumors & Oncology**: `nsclc` (Non-Small Cell Lung Cancer), `colorectal_cancer`, `triple_neg_breast_cancer`, `pancreatic_ductal_adenocarcinoma`, `glioblastoma`, `acute_myeloid_leukemia`, `melanoma`, `breast_cancer`.
+  - **Rare Genetic & Neuromuscular**: `cystic_fibrosis`, `sickle_cell_anemia`, `huntington_disease`, `spinal_muscular_atrophy`, `gaucher_disease`, `fabry_disease`, `phenylketonuria`, `wilson_disease`.
+  - **Psychiatric & CNS (Wave 3)**: `major_depressive_disorder`, `schizophrenia`, `bipolar_disorder`, `epilepsy`.
+  - **Metabolic & Hepatic (Wave 3)**: `non_alcoholic_fatty_liver_disease` (MASH/NASH), `obesity`, `t1d`, `hyperlipidemia`.
+  - **Connective Tissue, Autoimmune & Dermatology (Wave 3)**: `scleroderma`, `systemic_scleroderma`, `alopecia_areata`, `vitiligo`, `celiac_disease`, `lupus_nephritis`, `sjogren_syndrome`.
+  - **Cardiovascular & Respiratory**: `coronary_artery_disease`, `heart_failure`, `dilated_cardiomyopathy`, `essential_hypertension`, `coronary_atherosclerosis`, `atherosclerosis`, `copd`, `asthma`, `t2d`.
+  - Every promoted module has 100% strict schema validation, complete clinical configs (`SYMPTOMS`, `PUBMED_QUERIES`, `TRIAL_QUERY`, `GWAS_SEARCH_TERMS`, `CAR_T_SCORES`, `DRUG_SAFETY_RISK`), and registered GTEx target tissues in `drug_repurposing/engine.py`.
+
+- **Interactive 3D Molecular / AlphaFold Visualizer in Web Dashboard**:
+  - Embedded `3Dmol.js` with AlphaFold PDB coordinate rendering directly inside the web UI.
+  - Per-residue **pLDDT confidence spectrum** color ramps (Dark Blue >90, Cyan 70-90, Yellow 50-70, Orange <50).
+  - AutoDock Vina 3D search box wireframes and interactive pocket residue inspection.
+
+- **Interactive Cytoscape.js Multi-Disease Network Topology Explorer**:
+  - Multi-disease merged subgraph construction in `pipeline/knowledge_graph/network_analytics.py`.
+  - Dynamic force-directed (`cose`), concentric, hierarchical (`breadthfirst`), and circle layouts in the web UI.
+  - Identification of multi-disease shared target hubs, drug repurposing bridges, and degree centrality node scaling.
+  - Real-time `/api/kg/multi-network` endpoint and PNG export functionality.
+
+- **Single-Cell RNA-seq (scRNA-seq) Cell-Type Deconvolution & Specificity Engine**:
+  - Created `pipeline/gene_expression/single_cell.py` providing Yanai Tau ($\tau$) cell-type specificity index computation and marker deconvolution across immune, stromal, epithelial, and tumor microenvironment cell subsets.
+  - Integrated single-cell specificity scoring into `pipeline/gene_expression/correlator.py` (Cell Type Specificity dimension) and `pipeline/biomarker_discovery/discover.py` (biomarker candidate specificity rankings).
+
+- **In Silico Lead Optimization & Synergy Models**:
+  - Quantitative Clark-Pickett BBB permeability, CYP450 5-isozyme metabolism/DDI liability, and hERG cardiotoxicity scoring in `pipeline/admet/engine.py`.
+  - Quantitative Loewe Additivity Combination Index ($CI$) and Bliss Independence excess synergy ($\Delta \text{Bliss}$) in `pipeline/drug_synergy/engine.py`.
+
+- **ClinicalTrials.gov API v2 Live Intelligence**:
+  - Structured eligibility criteria parsing (inclusion/exclusion lists, age bounds, gender), Phase progression duration and PTRS forecasting, and sponsor portfolio analytics in `pipeline/clinical_trials/tracker.py`.
+
+### Verification
+
+- `pytest tests/test_disease_catalog_tier_promotion.py -v` — 90 passed (100% across all 45 promoted disease modules).
+- `pytest tests/pipeline/test_single_cell_deconvolution.py -v` — 4 passed.
+- `pytest tests/biomed/test_network_analytics.py -v` — 3 passed.
+- `pytest tests/test_advanced_pipeline_enhancements.py -v` — 6 passed.
+- `ruff check src tests` — All checks passed (0 errors).
+
+---
+
 ## [Full HPO/HPOA import and registry tooling fixes] — 2026-08-13
+
 
 ### Added
 

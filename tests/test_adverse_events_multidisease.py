@@ -1,5 +1,3 @@
-
-
 """Regression tests for disease-specific adverse-event coverage."""
 
 import pytest
@@ -15,8 +13,6 @@ from med_research.web.services.adverse_events_service import run_safety_profilin
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
 
 pytestmark = pytest.mark.unit
-
-
 
 
 @pytest.mark.parametrize("disease_id", DISEASES)

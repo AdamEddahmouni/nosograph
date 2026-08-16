@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Penile cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Penile cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Penile cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Penile cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Penile cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Penile cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Penile cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Penile cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -155,8 +155,7 @@ DRUG_SAFETY_RISK = {
         "relatlimab",
         "toripalimab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

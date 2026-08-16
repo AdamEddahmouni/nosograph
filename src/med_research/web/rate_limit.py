@@ -161,8 +161,8 @@ def create_rate_limit_store(url: str | None = None) -> RateLimitStore:
     try:
         client = redis.Redis.from_url(
             url or REDIS_RATE_LIMIT_URL,
-            socket_connect_timeout=1.0,
-            socket_timeout=1.0,
+            socket_connect_timeout=0.2,
+            socket_timeout=0.2,
             decode_responses=True,
         )
         client.ping()

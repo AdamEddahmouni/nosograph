@@ -1,0 +1,586 @@
+{
+  "relationships": [
+    {
+      "source": "CHEMBL24",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "ATENOLOL targets ADRB1."
+    },
+    {
+      "source": "CHEMBL1671",
+      "target": "ADRB2",
+      "type": "TARGETS",
+      "description": "PROPRANOLOL HYDROCHLORIDE targets ADRB2."
+    },
+    {
+      "source": "CHEMBL503",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "LOVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL690",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "PRAVASTATIN SODIUM targets HMGCR."
+    },
+    {
+      "source": "CHEMBL1487",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "ATORVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL1496",
+      "target": "HMGCR",
+      "type": "TARGETS",
+      "description": "ROSUVASTATIN targets HMGCR."
+    },
+    {
+      "source": "CHEMBL1671",
+      "target": "ADRB1",
+      "type": "TARGETS",
+      "description": "PROPRANOLOL HYDROCHLORIDE targets ADRB1."
+    },
+    {
+      "source": "CHEMBL24",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "TREATS",
+      "description": "ATENOLOL is phase 4 / marketed for coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)."
+    },
+    {
+      "source": "CHEMBL1671",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "TREATS",
+      "description": "PROPRANOLOL HYDROCHLORIDE is phase 4 / marketed for coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)."
+    },
+    {
+      "source": "CHEMBL503",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "TREATS",
+      "description": "LOVASTATIN is phase 4 / marketed for coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)."
+    },
+    {
+      "source": "CHEMBL690",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "TREATS",
+      "description": "PRAVASTATIN SODIUM is phase 4 / marketed for coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)."
+    },
+    {
+      "source": "CHEMBL1671",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "TREATS",
+      "description": "PROPRANOLOL HYDROCHLORIDE is phase 4 / marketed for coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)."
+    },
+    {
+      "source": "ADRB1",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "ADRB1 is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CDKN1A",
+      "target": "cell-cycle",
+      "type": "PARTICIPATES_IN",
+      "description": "CDKN1A is a component of the Cell Cycle Regulation pathway."
+    },
+    {
+      "source": "CXCL12",
+      "target": "chemokine-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "CXCL12 is a component of the Chemokine Signaling pathway."
+    },
+    {
+      "source": "ARHGEF26",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ARHGEF26 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "IGF2R",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "IGF2R is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "TCF21",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "TCF21 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ZNF827",
+      "target": "coagulation",
+      "type": "PARTICIPATES_IN",
+      "description": "ZNF827 is a component of the Coagulation Cascade pathway."
+    },
+    {
+      "source": "ADAMTS7",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "ADAMTS7 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A1",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A1 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "COL4A2",
+      "target": "ecm-remodeling",
+      "type": "PARTICIPATES_IN",
+      "description": "COL4A2 is a component of the ECM Remodeling pathway."
+    },
+    {
+      "source": "HNF1A",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HNF1A is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "SLC2A12",
+      "target": "glucose-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "SLC2A12 is a component of the Glucose Metabolism / Insulin Secretion pathway."
+    },
+    {
+      "source": "IL6R",
+      "target": "il6-signaling",
+      "type": "PARTICIPATES_IN",
+      "description": "IL6R is a component of the IL-6 Signaling pathway."
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "ANGPTL4 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "APOE is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "CETP",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "CETP is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "HMGCR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "HMGCR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "LDLR",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "LDLR is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "PCSK9",
+      "target": "lipid-metabolism",
+      "type": "PARTICIPATES_IN",
+      "description": "PCSK9 is a component of the Lipid Metabolism pathway."
+    },
+    {
+      "source": "MRAS",
+      "target": "mapk-erk",
+      "type": "PARTICIPATES_IN",
+      "description": "MRAS is a component of the MAPK / ERK Signaling pathway."
+    },
+    {
+      "source": "HTRA1",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "HTRA1 is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "THADA",
+      "target": "serotonin-dopamine",
+      "type": "PARTICIPATES_IN",
+      "description": "THADA is a component of the Serotonin / Dopamine Signaling pathway."
+    },
+    {
+      "source": "SMAD7",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "SMAD7 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "tgf-beta",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the TGF-β Signaling pathway."
+    },
+    {
+      "source": "TGFB1",
+      "target": "thyroid-hormone",
+      "type": "PARTICIPATES_IN",
+      "description": "TGFB1 is a component of the Thyroid Hormone Signaling pathway."
+    },
+    {
+      "source": "APOE",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOE is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.53"
+    },
+    {
+      "source": "HMGCR",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HMGCR is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.51"
+    },
+    {
+      "source": "ADRB1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.50"
+    },
+    {
+      "source": "PCSK9",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PCSK9 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.50"
+    },
+    {
+      "source": "COL4A1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.47"
+    },
+    {
+      "source": "ADRB2",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADRB2 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.46"
+    },
+    {
+      "source": "LPA",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LPA is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.46"
+    },
+    {
+      "source": "SORT1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SORT1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.46"
+    },
+    {
+      "source": "LDLR",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LDLR is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.46"
+    },
+    {
+      "source": "CELSR2",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CELSR2 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.45"
+    },
+    {
+      "source": "HHIPL1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HHIPL1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.44"
+    },
+    {
+      "source": "PLPP3",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PLPP3 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.44"
+    },
+    {
+      "source": "EDNRA",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "EDNRA is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.42"
+    },
+    {
+      "source": "TCF21",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TCF21 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.41"
+    },
+    {
+      "source": "TGFB1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TGFB1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.39"
+    },
+    {
+      "source": "CXCL12",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CXCL12 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.38"
+    },
+    {
+      "source": "ANGPTL4",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ANGPTL4 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "FHL1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FHL1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.37"
+    },
+    {
+      "source": "ARHGEF26",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGEF26 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "ADAMTS7",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ADAMTS7 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "JCAD",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "JCAD is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "COL4A2",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "COL4A2 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "ZC3HC1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZC3HC1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "ARHGAP26",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ARHGAP26 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.36"
+    },
+    {
+      "source": "FN1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FN1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "SLC2A12",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SLC2A12 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "LIPA",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "LIPA is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "HNF1A",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HNF1A is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "MAP1S",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MAP1S is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "MFGE8",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MFGE8 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.35"
+    },
+    {
+      "source": "FES",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "FES is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "CETP",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CETP is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "APOA5",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "APOA5 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZNF32",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF32 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZNF652",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF652 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "SMAD7",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SMAD7 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "ZPR1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZPR1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.34"
+    },
+    {
+      "source": "CCM2",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CCM2 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "IGF2R",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IGF2R is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "TBX5",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "TBX5 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "SH2B3",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "SH2B3 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "PSRC1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PSRC1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.33"
+    },
+    {
+      "source": "MRAS",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MRAS is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "KCNK5",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "KCNK5 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GUCY1B1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GUCY1B1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "RPS19",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RPS19 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "PPP2R2D",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "PPP2R2D is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "GMDS",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GMDS is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.32"
+    },
+    {
+      "source": "STN1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "STN1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "WWP2",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "WWP2 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "RFPL1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "RFPL1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "CDKN1A",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "CDKN1A is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "HTRA1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HTRA1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "ZNF485",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF485 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "HDGFL1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "HDGFL1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "GATB",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "GATB is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.30"
+    },
+    {
+      "source": "MORF4L1",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "MORF4L1 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.29"
+    },
+    {
+      "source": "ZNF827",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "ZNF827 is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "IL6R",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "IL6R is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.28"
+    },
+    {
+      "source": "THADA",
+      "target": "coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS)",
+      "type": "ASSOCIATED_WITH",
+      "description": "THADA is associated with coronary atherosclerosis (CORONARY_ATHEROSCLEROSIS). Open Targets association score 0.28"
+    }
+  ]
+}

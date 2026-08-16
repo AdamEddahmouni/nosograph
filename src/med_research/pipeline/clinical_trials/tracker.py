@@ -15,18 +15,13 @@ Usage:
 
 import argparse
 import json
+import logging
 import sys
 from collections import Counter
 from datetime import datetime
 from functools import partial
 from pathlib import Path
 from typing import Any, cast
-
-from med_research.rate_limiter import rate_limited_sleep
-
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-import logging
 
 from med_research.cache import NS_CLINICAL_TRIALS, cache_get, cache_set, load_legacy_json
 from med_research.exceptions import (
@@ -39,12 +34,9 @@ from med_research.pipeline.knowledge_graph.config import load_drugs as config_lo
 from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import TrialRecord, TrialRunResult
+from med_research.rate_limiter import rate_limited_sleep
 
 logger = logging.getLogger(__name__)
-if sys.platform == "win32":
-    _stdout = sys.stdout
-    if hasattr(_stdout, "reconfigure"):
-        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 try:
     import requests
@@ -263,6 +255,97 @@ def _primary_phase(phases: list) -> str:
         if PHASE_ORDER.get(p, -1) > PHASE_ORDER.get(best, -1):
             best = p
     return best
+
+
+def parse_eligibility_criteria(criteria_text: str) -> dict[str, Any]:
+    """Parse raw clinical trial eligibility text into structured inclusion/exclusion criteria."""
+    import re
+    min_age_match = re.search(r"Minimum Age:\s*(\d+\s*(?:Years|Months|Days)?)", criteria_text, re.IGNORECASE)
+    max_age_match = re.search(r"Maximum Age:\s*(\d+\s*(?:Years|Months|Days)?)", criteria_text, re.IGNORECASE)
+    gender_match = re.search(r"Sex:\s*([A-Za-z]+)", criteria_text, re.IGNORECASE)
+
+    min_age = min_age_match.group(1).strip() if min_age_match else "18 Years"
+    max_age = max_age_match.group(1).strip() if max_age_match else "No Limit"
+    gender = gender_match.group(1).upper() if gender_match else "ALL"
+
+    lines = [line.strip() for line in criteria_text.splitlines() if line.strip()]
+    inclusions: list[str] = []
+    exclusions: list[str] = []
+    current_mode = "inclusion"
+
+    for line in lines:
+        if "exclusion criteria" in line.lower():
+            current_mode = "exclusion"
+            continue
+        elif "inclusion criteria" in line.lower():
+            current_mode = "inclusion"
+            continue
+
+        if line.startswith(("-", "*", "•", "1.", "2.", "3.", "4.", "5.")):
+            cleaned = line.lstrip("-*•0123456789. ").strip()
+            if len(cleaned) > 5:
+                if current_mode == "inclusion":
+                    inclusions.append(cleaned)
+                else:
+                    exclusions.append(cleaned)
+
+    return {
+        "minimum_age": min_age,
+        "maximum_age": max_age,
+        "gender": gender,
+        "inclusion_criteria": inclusions[:10],
+        "exclusion_criteria": exclusions[:10],
+        "total_criteria_rules": len(inclusions) + len(exclusions),
+    }
+
+
+def forecast_trial_progression(primary_phase: str) -> dict[str, Any]:
+    """Forecast clinical phase duration, milestone timeline, and technical success probability (PTRS)."""
+    phase_metrics = {
+        "PHASE1": {"duration_years": 1.5, "transition_prob": 0.60, "ptrs_to_approval": 0.12},
+        "PHASE2": {"duration_years": 2.5, "transition_prob": 0.35, "ptrs_to_approval": 0.20},
+        "PHASE3": {"duration_years": 3.0, "transition_prob": 0.65, "ptrs_to_approval": 0.58},
+        "PHASE4": {"duration_years": 2.0, "transition_prob": 0.95, "ptrs_to_approval": 0.95},
+    }
+    phase_key = primary_phase.upper()
+    info = phase_metrics.get(phase_key, {"duration_years": 2.0, "transition_prob": 0.45, "ptrs_to_approval": 0.15})
+
+    return {
+        "current_phase": primary_phase,
+        "estimated_phase_duration_years": info["duration_years"],
+        "phase_transition_probability": info["transition_prob"],
+        "ptrs_to_approval": info["ptrs_to_approval"],
+        "next_milestone": (
+            "Phase 2 Proof of Concept"
+            if phase_key == "PHASE1"
+            else (
+                "Phase 3 Pivotal Trial"
+                if phase_key == "PHASE2"
+                else (
+                    "BLA / NDA Regulatory Filing"
+                    if phase_key == "PHASE3"
+                    else "Post-Marketing Surveillance"
+                )
+            )
+        ),
+    }
+
+
+def classify_sponsor_portfolio(trials: list[dict[str, Any]]) -> dict[str, Any]:
+    """Aggregate and summarize trial portfolio distribution across sponsor categories."""
+    classes = Counter(t.get("sponsor_class", "UNKNOWN") for t in trials)
+    industry_count = classes.get("INDUSTRY", 0)
+    nih_academic_count = classes.get("NIH", 0) + classes.get("OTHER", 0) + classes.get("FED", 0)
+    total = max(1, len(trials))
+
+    return {
+        "total_trials": len(trials),
+        "industry_sponsored_count": industry_count,
+        "industry_percentage": round((industry_count / total) * 100, 1),
+        "nih_academic_count": nih_academic_count,
+        "nih_academic_percentage": round((nih_academic_count / total) * 100, 1),
+        "sponsor_class_breakdown": dict(classes),
+    }
 
 
 def categorize_moa(trial: dict) -> str:
@@ -693,4 +776,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

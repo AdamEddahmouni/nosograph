@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(alpha thalassemia spectrum[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(alpha thalassemia spectrum[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(alpha thalassemia spectrum[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(alpha thalassemia spectrum[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(alpha thalassemia spectrum[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(alpha thalassemia spectrum[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(alpha thalassemia spectrum[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(alpha thalassemia spectrum[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -151,8 +151,7 @@ DRUG_SAFETY_RISK = {
         "mitapivat",
         "tacrolimus anhydrous",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

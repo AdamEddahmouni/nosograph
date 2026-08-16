@@ -6,103 +6,103 @@
       "source": "SNCA",
       "type": "ASSOCIATED_WITH",
       "target": "Parkinson's Disease",
-      "evidence": "Encodes alpha-synuclein, main constituent of Lewy bodies."
+      "description": "Encodes alpha-synuclein, main constituent of Lewy bodies."
     },
     {
       "source": "LRRK2",
       "type": "ASSOCIATED_WITH",
       "target": "Parkinson's Disease",
-      "evidence": "Most common genetic cause of familial Parkinson's disease."
+      "description": "Most common genetic cause of familial Parkinson's disease."
     },
     {
       "source": "PRKN",
       "type": "ASSOCIATED_WITH",
       "target": "Parkinson's Disease",
-      "evidence": "Drives mitophagy and recessive early-onset PD."
+      "description": "Drives mitophagy and recessive early-onset PD."
     },
     {
       "source": "PINK1",
       "type": "ASSOCIATED_WITH",
       "target": "Parkinson's Disease",
-      "evidence": "Mitochondrial quality control kinase working with Parkin."
+      "description": "Mitochondrial quality control kinase working with Parkin."
     },
     {
       "source": "GBA1",
       "type": "ASSOCIATED_WITH",
       "target": "Parkinson's Disease",
-      "evidence": "Lysosomal enzyme deficit increasing alpha-synuclein accumulation."
+      "description": "Lysosomal enzyme deficit increasing alpha-synuclein accumulation."
     },
     {
       "source": "levodopa",
       "type": "TREATS",
       "target": "Parkinson's Disease",
-      "evidence": "Approved disease treatment"
+      "description": "Approved dopamine replacement therapy"
     },
     {
       "source": "levodopa",
       "type": "TARGETS",
-      "target": "SLC6A3",
-      "evidence": "Dopamine precursor converted by DOPA decarboxylase"
+      "target": "DDC",
+      "description": "Dopamine precursor converted by DOPA decarboxylase"
     },
     {
       "source": "pramipexole",
       "type": "TREATS",
       "target": "Parkinson's Disease",
-      "evidence": "Approved disease treatment"
+      "description": "Approved dopamine agonist"
     },
     {
       "source": "pramipexole",
       "type": "TARGETS",
       "target": "DRD2",
-      "evidence": "Non-ergot dopamine D2/D3 receptor agonist"
+      "description": "Non-ergot dopamine D2/D3 receptor agonist"
     },
     {
       "source": "rasagiline",
       "type": "TREATS",
       "target": "Parkinson's Disease",
-      "evidence": "Approved disease treatment"
+      "description": "Approved MAO-B inhibitor"
     },
     {
       "source": "rasagiline",
       "type": "TARGETS",
       "target": "MAOB",
-      "evidence": "Irreversible monoamine oxidase-B inhibitor"
+      "description": "Irreversible selective monoamine oxidase type B inhibitor"
     },
     {
       "source": "entacapone",
       "type": "TREATS",
       "target": "Parkinson's Disease",
-      "evidence": "Approved disease treatment"
+      "description": "Approved COMT inhibitor"
     },
     {
       "source": "entacapone",
       "type": "TARGETS",
       "target": "COMT",
-      "evidence": "Reversible catechol-O-methyltransferase inhibitor"
+      "description": "Reversible peripheral catechol-O-methyltransferase inhibitor"
     },
     {
-      "source": "SNCA",
-      "type": "PARTICIPATES_IN",
-      "target": "alpha-synuclein-pathway",
-      "evidence": "Key component of Alpha-Synuclein Aggregation"
+      "source": "safinamide",
+      "type": "TREATS",
+      "target": "Parkinson's Disease",
+      "description": "Approved adjunctive therapy for motor fluctuations"
     },
     {
-      "source": "GBA1",
-      "type": "PARTICIPATES_IN",
-      "target": "alpha-synuclein-pathway",
-      "evidence": "Key component of Alpha-Synuclein Aggregation"
+      "source": "safinamide",
+      "type": "TARGETS",
+      "target": "MAOB",
+      "description": "Dual MAO-B inhibitor and glutamate modulator"
     },
     {
-      "source": "PRKN",
-      "type": "PARTICIPATES_IN",
-      "target": "mitophagy-pathway",
-      "evidence": "Key component of Mitochondrial Dysfunction"
+      "source": "amantadine",
+      "type": "TREATS",
+      "target": "Parkinson's Disease",
+      "description": "Approved anti-dyskinetic and motor therapy"
     },
     {
-      "source": "PINK1",
-      "type": "PARTICIPATES_IN",
-      "target": "mitophagy-pathway",
-      "evidence": "Key component of Mitochondrial Dysfunction"
+      "source": "amantadine",
+      "type": "TARGETS",
+      "target": "GRIN1",
+      "description": "NMDA receptor antagonist"
     }
   ]
 }

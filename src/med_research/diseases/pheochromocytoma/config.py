@@ -18,10 +18,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Pheochromocytoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Pheochromocytoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Pheochromocytoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Pheochromocytoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Pheochromocytoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Pheochromocytoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Pheochromocytoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Pheochromocytoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

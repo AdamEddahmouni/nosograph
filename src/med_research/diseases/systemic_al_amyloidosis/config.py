@@ -18,10 +18,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(primary systemic amyloidosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(primary systemic amyloidosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(primary systemic amyloidosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(primary systemic amyloidosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(primary systemic amyloidosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(primary systemic amyloidosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(primary systemic amyloidosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(primary systemic amyloidosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -179,8 +179,7 @@ DRUG_SAFETY_RISK = {
         "thalidomide",
         "venetoclax",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

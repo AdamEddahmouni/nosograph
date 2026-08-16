@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Functional dyspepsia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Functional dyspepsia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Functional dyspepsia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Functional dyspepsia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Functional dyspepsia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Functional dyspepsia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Functional dyspepsia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Functional dyspepsia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -92,8 +92,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "acotiamide",
         "acotiamide hydrochloride",

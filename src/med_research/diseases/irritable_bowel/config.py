@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Irritable bowel syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Irritable bowel syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Irritable bowel syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Irritable bowel syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Irritable bowel syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Irritable bowel syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Irritable bowel syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Irritable bowel syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -118,8 +118,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "alosetron",
         "asimadoline",

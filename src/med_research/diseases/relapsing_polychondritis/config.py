@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Relapsing polychondritis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Relapsing polychondritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Relapsing polychondritis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Relapsing polychondritis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Relapsing polychondritis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Relapsing polychondritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Relapsing polychondritis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Relapsing polychondritis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -144,8 +144,7 @@ DRUG_SAFETY_RISK = {
         "tocilizumab",
         "upadacitinib",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

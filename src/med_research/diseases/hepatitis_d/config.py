@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(hepatitis D virus infection[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(hepatitis D virus infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(hepatitis D virus infection[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(hepatitis D virus infection[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(hepatitis D virus infection[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(hepatitis D virus infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(hepatitis D virus infection[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(hepatitis D virus infection[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -148,8 +148,7 @@ DRUG_SAFETY_RISK = {
         "tobevibart",
         "ursodiol",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Gastroesophageal reflux disease[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Gastroesophageal reflux disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Gastroesophageal reflux disease[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Gastroesophageal reflux disease[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Gastroesophageal reflux disease[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Gastroesophageal reflux disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Gastroesophageal reflux disease[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Gastroesophageal reflux disease[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -231,8 +231,7 @@ DRUG_SAFETY_RISK = {
         "warfarin",
         "warfarin sodium",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

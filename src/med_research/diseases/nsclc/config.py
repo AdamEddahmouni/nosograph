@@ -18,10 +18,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Non-small cell lung cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Non-small cell lung cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Non-small cell lung cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Non-small cell lung cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Non-small cell lung cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Non-small cell lung cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Non-small cell lung cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Non-small cell lung cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

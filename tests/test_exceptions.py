@@ -1,5 +1,3 @@
-
-
 """Error contract tests for typed API exceptions."""
 
 import json

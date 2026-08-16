@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(focal segmental glomerulosclerosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(focal segmental glomerulosclerosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(focal segmental glomerulosclerosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(focal segmental glomerulosclerosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(focal segmental glomerulosclerosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(focal segmental glomerulosclerosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(focal segmental glomerulosclerosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(focal segmental glomerulosclerosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

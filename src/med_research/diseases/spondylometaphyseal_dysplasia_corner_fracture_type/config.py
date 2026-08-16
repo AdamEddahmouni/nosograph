@@ -35,7 +35,7 @@ PUBMED_QUERIES = [
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
 TRIAL_QUERY = "spondylometaphyseal dysplasia, 'corner fracture' type OR spondylometaphyseal"
-GWAS_SEARCH_TERMS = ["spondylometaphyseal dysplasia, 'corner fracture' type", 'spondylometaphyseal']
+GWAS_SEARCH_TERMS = ["spondylometaphyseal dysplasia, 'corner fracture' type", "spondylometaphyseal"]
 
 # ── CAR-T Scoring Tables (used by car_t_predictor/predictor.py) ──────────
 CAR_T_SCORES = {
@@ -105,12 +105,9 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
-    "moderate_risk": [
-    ],
-    "low_risk": [
-    ],
+    "high_risk": [],
+    "moderate_risk": [],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

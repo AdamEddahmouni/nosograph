@@ -1,5 +1,3 @@
-
-
 """Unit tests for CacheManager and cache helper utilities."""
 
 from __future__ import annotations

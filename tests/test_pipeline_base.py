@@ -20,7 +20,6 @@ pytestmark = pytest.mark.unit
 def assert_monotonic_progress(calls: list[tuple[str, int, int]]) -> None:
     """Assert standard progress ticks stay within bounds and advance per step."""
 
-
     assert calls, "expected at least one progress tick"
     prev_by_step: dict[str, int] = {}
     for step, current, total in calls:

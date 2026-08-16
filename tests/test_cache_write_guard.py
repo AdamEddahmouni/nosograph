@@ -16,8 +16,6 @@ LEGACY_CACHE_WRITE = re.compile(
 pytestmark = pytest.mark.unit
 
 
-
-
 def test_pipeline_modules_do_not_write_legacy_cache_files():
     root = Path(__file__).resolve().parents[1] / "src" / "med_research" / "pipeline"
     offenders: list[str] = []

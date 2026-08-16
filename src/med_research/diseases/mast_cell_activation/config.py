@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Mast cell activation syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Mast cell activation syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Mast cell activation syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Mast cell activation syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Mast cell activation syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Mast cell activation syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Mast cell activation syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Mast cell activation syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -149,16 +149,14 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "avapritinib",
         "brentuximab vedotin",
         "ibrutinib",
         "midostaurin",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

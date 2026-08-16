@@ -1534,3 +1534,641 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
     .modal-footer { flex-direction: column-reverse; }
     .modal-footer .btn { width: 100%; justify-content: center; }
 }
+
+/* ── Corpus Health & Tier Browser ────────────────────────────────── */
+.corpus-browser-shell {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+.corpus-tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 12px;
+    padding: 16px 20px;
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+}
+.corpus-tier-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: transform var(--transition), border-color var(--transition), background var(--transition);
+    position: relative;
+    user-select: none;
+}
+.corpus-tier-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: rgba(129, 140, 248, 0.04);
+}
+.corpus-tier-card.active {
+    border-color: var(--accent);
+    background: rgba(129, 140, 248, 0.08);
+    box-shadow: 0 0 12px rgba(129, 140, 248, 0.15);
+}
+.corpus-tier-card .tier-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.corpus-tier-card .tier-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.corpus-tier-card .tier-count {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 4px 0 2px;
+}
+.corpus-tier-card .tier-desc {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+.corpus-tier-card.tier-l3 .tier-label { color: #4ade80; }
+.corpus-tier-card.tier-l3 .tier-count { color: #4ade80; }
+.corpus-tier-card.tier-l2 .tier-label { color: #22d3ee; }
+.corpus-tier-card.tier-l2 .tier-count { color: #22d3ee; }
+.corpus-tier-card.tier-l1 .tier-label { color: #fbbf24; }
+.corpus-tier-card.tier-l1 .tier-count { color: #fbbf24; }
+.corpus-tier-card.tier-l0 .tier-label { color: #c084fc; }
+.corpus-tier-card.tier-l0 .tier-count { color: #c084fc; }
+.corpus-tier-card.tier-blocked .tier-label { color: #f87171; }
+.corpus-tier-card.tier-blocked .tier-count { color: #f87171; }
+.corpus-tier-card.tier-symptoms .tier-label { color: #a7f3d0; }
+.corpus-tier-card.tier-symptoms .tier-count { color: #34d399; }
+.corpus-tier-card.tier-all .tier-label { color: #818cf8; }
+.corpus-tier-card.tier-all .tier-count { color: #818cf8; }
+
+.corpus-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+.tier-pills-group {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.tier-filter-pill {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 5px 11px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+.tier-filter-pill:hover {
+    color: var(--text);
+    border-color: var(--accent);
+}
+.tier-filter-pill.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #ffffff;
+    font-weight: 700;
+}
+.corpus-search-input {
+    flex: 1;
+    min-width: 200px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color var(--transition);
+}
+.corpus-search-input:focus { border-color: var(--accent); }
+.corpus-select {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer;
+}
+.corpus-select:focus { border-color: var(--accent); }
+
+.corpus-table-wrap {
+    overflow-x: auto;
+    max-height: 540px;
+}
+.corpus-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    text-align: left;
+}
+.corpus-table th {
+    background: var(--surface2);
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.corpus-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    vertical-align: middle;
+}
+.corpus-table tr:hover td {
+    background: rgba(129, 140, 248, 0.03);
+}
+.corpus-tier-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.corpus-tier-badge.L3 { background: rgba(74, 222, 128, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); }
+.corpus-tier-badge.L2 { background: rgba(34, 211, 238, 0.15); color: #22d3ee; border: 1px solid rgba(34, 211, 238, 0.3); }
+.corpus-tier-badge.L1 { background: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3); }
+.corpus-tier-badge.L0 { background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.3); }
+.corpus-tier-badge.blocked { background: rgba(248, 113, 113, 0.15); color: #f87171; border: 1px solid rgba(248, 113, 113, 0.3); }
+
+.corpus-gap-tag {
+    display: inline-block;
+    background: rgba(248, 113, 113, 0.08);
+    color: #fca5a5;
+    border: 1px solid rgba(248, 113, 113, 0.2);
+    border-radius: 4px;
+    font-size: 0.65rem;
+    padding: 1px 5px;
+    margin: 1px 2px;
+}
+.corpus-metric-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.corpus-mini-bar {
+    flex: 1;
+    height: 4px;
+    background: var(--bg);
+    border-radius: 2px;
+    overflow: hidden;
+    min-width: 40px;
+    max-width: 80px;
+}
+.corpus-mini-bar > span {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+}
+
+.corpus-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--surface2);
+    border-top: 1px solid var(--border);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+.corpus-pagination-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* ── DuckDB Analytics Visualizer ─────────────────────────────────── */
+.biomed-stats-banner {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+.biomed-stats-banner-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.biomed-stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+}
+.biomed-stat-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+.biomed-stat-box .box-num {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--text);
+}
+.biomed-stat-box .box-label {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+}
+.biomed-dist-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+.biomed-dist-chip {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 0.72rem;
+    color: var(--text);
+}
+.biomed-dist-chip b { color: var(--accent); }
+
+.biomed-preset-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin: 8px 0 14px;
+}
+.biomed-preset-btn {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.74rem;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+.biomed-preset-btn:hover {
+    color: var(--text);
+    border-color: var(--accent);
+    background: rgba(129, 140, 248, 0.08);
+}
+
+.path-step-node {
+    display: inline-flex;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.path-step-pred {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(129, 140, 248, 0.12);
+    color: var(--accent);
+    border: 1px solid rgba(129, 140, 248, 0.25);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    margin: 0 6px;
+}
+
+.vuln-evidence-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.vuln-evidence-pill.pos {
+    background: rgba(74, 222, 128, 0.12);
+    color: #4ade80;
+}
+.vuln-evidence-pill.neg {
+    background: rgba(248, 113, 113, 0.12);
+    color: #f87171;
+}
+
+.vuln-progress-track {
+    height: 8px;
+    background: var(--bg);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.vuln-progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+    transition: width 0.3s ease;
+}
+
+.shared-mech-panel {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    margin-top: 14px;
+}
+.shared-mech-score {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin: 4px 0;
+}
+
+/* ── 3D AlphaFold Structure & Binding Pocket Badges ─────────────────── */
+.plddt-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+}
+.plddt-badge.very-high {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.35);
+}
+.plddt-badge.high {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.plddt-badge.moderate {
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.35);
+}
+.plddt-badge.disordered {
+    background: rgba(244, 63, 94, 0.15);
+    color: #fb7185;
+    border: 1px solid rgba(244, 63, 94, 0.35);
+}
+
+.pocket-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: var(--radius-xs);
+    background: rgba(168, 85, 247, 0.12);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+.druggability-pill {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: var(--radius-xs);
+}
+.druggability-pill.tier1 {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+.druggability-pill.tier2 {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+.druggability-pill.tier3 {
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* 3D Structure Modal Details */
+.structure-modal-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.structure-stat-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    text-align: center;
+}
+.structure-stat-val {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text);
+}
+.structure-stat-lbl {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+}
+
+.plddt-breakdown-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 8px 0 14px;
+    background: rgba(255, 255, 255, 0.08);
+}
+.plddt-bar-vh { background: #10b981; }
+.plddt-bar-h  { background: #38bdf8; }
+.plddt-bar-l  { background: #fbbf24; }
+.plddt-bar-vl { background: #f43f5e; }
+
+.residues-tag-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+.residue-tag {
+    font-size: 0.75rem;
+    font-family: monospace;
+    font-weight: 600;
+    background: rgba(99, 102, 241, 0.12);
+    color: #a5b4fc;
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    padding: 3px 8px;
+    border-radius: var(--radius-xs);
+}
+
+.domain-box {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xs);
+    padding: 8px 12px;
+    font-size: 0.78rem;
+    margin-bottom: 6px;
+    color: var(--text);
+}
+
+/* Multi-Omics Variant & Expression Tags */
+.variant-impact-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: var(--radius-xs);
+    background: rgba(236, 72, 153, 0.12);
+    color: #f472b6;
+    border: 1px solid rgba(236, 72, 153, 0.25);
+}
+.gtex-tpm-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: var(--radius-xs);
+    background: rgba(14, 165, 233, 0.12);
+    color: #38bdf8;
+    border: 1px solid rgba(14, 165, 233, 0.25);
+}
+
+/* ── 3D AlphaFold Molecular Visualizer ───────────────────────────────── */
+.struct-3d-wrapper {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.struct-3d-canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.struct-3d-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 4px;
+    border-radius: var(--radius-xs);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.struct-control-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    padding: 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.struct-control-btn:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.1);
+}
+.struct-control-btn.active {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.15);
+    font-weight: 600;
+}
+.struct-3d-legend {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 4px 10px;
+    border-radius: var(--radius-xs);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.7rem;
+    z-index: 10;
+}
+.struct-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.struct-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.vina-grid-box {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xs);
+    padding: 8px 12px;
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: #38bdf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+.residue-tag.interactive {
+    cursor: pointer;
+    transition: var(--transition);
+}
+.residue-tag.interactive:hover {
+    background: rgba(99, 102, 241, 0.25);
+    color: #c7d2fe;
+    border-color: #818cf8;
+}
+
+
+

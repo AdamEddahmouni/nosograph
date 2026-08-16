@@ -26,8 +26,8 @@ Usage:
 
 import argparse
 import json
+import logging
 import os
-import sys
 import time
 import urllib.error
 import urllib.parse
@@ -36,10 +36,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, cast
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-import logging
-
 from med_research.cache import NS_LLM_EXTRACTOR, cache_get, cache_set, load_legacy_json
 from med_research.exceptions import ExternalAPIError, classify_api_error, retry_with_backoff
 from med_research.pipeline.evidence.gatherer import gather_evidence
@@ -47,10 +43,6 @@ from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import EvidenceExtractionResult
 
 logger = logging.getLogger(__name__)
-if sys.platform == "win32":
-    _stdout = sys.stdout
-    if hasattr(_stdout, "reconfigure"):
-        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
 LEGACY_EXTRACTION_CACHE = DATA_DIR / "extraction_cache.json"
@@ -655,4 +647,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

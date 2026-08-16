@@ -195,6 +195,7 @@ def _proxy_consensus_genes() -> dict[str, dict[str, dict]]:
 
     return PROXY_CONSENSUS_GENES
 
+
 SLE_CONSENSUS_GENES = {
     "upregulated": {
         "IRF5": {"fold_change": 2.5, "confidence": 0.95},

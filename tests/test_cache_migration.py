@@ -37,7 +37,6 @@ def mgr(cache_dir):
 def legacy_dirs(tmp_path, monkeypatch):
     """Point migration source directories at isolated temp paths."""
 
-
     bio = tmp_path / "bioinformatics" / "data"
     lit = tmp_path / "literature_mining" / "data"
     trials = tmp_path / "clinical_trials" / "data"

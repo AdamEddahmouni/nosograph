@@ -14,10 +14,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Mantle cell lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Mantle cell lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Mantle cell lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Mantle cell lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Mantle cell lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Mantle cell lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Mantle cell lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Mantle cell lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -228,8 +228,7 @@ DRUG_SAFETY_RISK = {
         "yttrium y 90 ibritumomab tiuxetan",
         "zanubrutinib",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

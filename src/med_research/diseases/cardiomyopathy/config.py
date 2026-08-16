@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Cardiomyopathy[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Cardiomyopathy[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Cardiomyopathy[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Cardiomyopathy[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Cardiomyopathy[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Cardiomyopathy[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Cardiomyopathy[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Cardiomyopathy[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Systemic mastocytosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Systemic mastocytosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Systemic mastocytosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Systemic mastocytosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Systemic mastocytosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Systemic mastocytosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Systemic mastocytosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Systemic mastocytosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

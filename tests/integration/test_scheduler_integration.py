@@ -12,8 +12,6 @@ DISEASE = "ra"
 pytestmark = [pytest.mark.integration]
 
 
-
-
 class TestSchedulerRegistryIntegration:
     """Real multi-level DAG execution using registry adapters."""
 

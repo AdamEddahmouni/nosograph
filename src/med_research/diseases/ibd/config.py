@@ -1,50 +1,134 @@
-"""IBD disease configuration."""
+"""Autoimmune disease configuration — IBD (Inflammatory Bowel Disease (IBD)).
 
-PIPELINE_LABEL = "IBD"
+Disease-specific parameters used by the research pipeline modules.
+CAR_T_SCORES and DRUG_INDUCED_LUPUS_RISK are derived from the
+disease knowledge graph (genes.json) using a documented rubric; see
+scripts/populate_disease_configs.py for the scoring rules.
+"""
+
+PIPELINE_LABEL = "Inflammatory Bowel Disease (IBD)"
 DEFAULT_SAMPLE_SIZE = 50
 
-# Minimal symptom list
-SYMPTOMS = []
+SYMPTOMS = [
+    "abdominal pain", "diarrhea", "bloody stool",
+    "rectal bleeding", "urgency", "tenesmus",
+    "fatigue", "weight loss", "fever",
+    "anemia", "nausea", "vomiting",
+    "loss of appetite", "malabsorption",
+    "fistulas", "abscesses", "strictures",
+    "bowel obstruction", "extraintestinal manifestations",
+    "arthritis", "uveitis", "erythema nodosum",
+    "pyoderma gangrenosum", "primary sclerosing cholangitis",
+    "growth failure in children",
+]
 
-PUBMED_QUERIES = []
-TRIAL_QUERY = "IBD"
-GWAS_SEARCH_TERMS = []
+PUBMED_QUERIES = [
+    "(inflammatory bowel disease[Title/Abstract] OR Crohn's disease[Title/Abstract] OR ulcerative colitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(inflammatory bowel disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(inflammatory bowel disease[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(inflammatory bowel disease[Title/Abstract]) AND (biomarker[Title/Abstract])",
+]
 
 CAR_T_SCORES = {
-    "ibd_cat1": [
-        "GENE1",
-        "GENE2"
-    ],
-    "ibd_cat2": [
-        "GENE3",
-        "GENE4"
-    ],
-    "ibd_cat3": [
-        "GENE5"
-    ],
-    "ibd_cat4": [
-        "GENE6",
-        "GENE7",
-        "GENE8"
-    ],
-    "ibd_cat5": [
-        "GENE9"
-    ]
+    "Anti-inflammatory / Regulatory Cytokine": {
+        "IL10": 4.0,
+        "IL10RA": 4.0,
+    },
+    "Autophagy / Epithelial Barrier": {
+        "ATG16L1": 4.0,
+        "IRGM": 4.0,
+    },
+    "Autophagy / Innate Immunity": {
+        "LRRK2": 4.5,
+    },
+    "Epithelial Barrier / Microbiome": {
+        "FUT2": 4.0,
+    },
+    "Epithelial Barrier / Tight Junctions": {
+        "HNF4A": 4.0,
+    },
+    "Epithelial Barrier / Wound Healing": {
+        "MST1": 4.0,
+    },
+    "Epithelial Metabolism / IBD5 Locus": {
+        "SLC22A5": 4.0,
+    },
+    "IL-23 / Th17 Axis": {
+        "CCR6": 7.5,
+        "IL12B": 7.5,
+        "IL23R": 7.5,
+    },
+    "JAK-STAT Signaling": {
+        "JAK2": 6.0,
+        "STAT3": 6.0,
+        "TYK2": 6.0,
+    },
+    "Lymphocyte Trafficking / Homing": {
+        "NKX2-3": 4.0,
+    },
+    "Pattern Recognition / Epithelial Barrier": {
+        "NOD2": 4.0,
+    },
+    "Pattern Recognition / Innate Immunity": {
+        "CARD9": 4.5,
+    },
+    "T Cell Costimulation / GALT": {
+        "ICOSLG": 7.0,
+    },
+    "T Cell Signaling / Autoimmunity": {
+        "PTPN22": 7.0,
+    },
+    "TGF-beta Signaling / Fibrosis": {
+        "SMAD3": 4.0,
+    },
+    "TNF Superfamily / Mucosal Inflammation": {
+        "TNFSF15": 5.5,
+    },
+    "Th17 / IL-23 Pathway": {
+        "IL17A": 7.5,
+    },
 }
+
 DRUG_SAFETY_RISK = {
     "high_risk": [
-        "drugA",
-        "drugB"
+        "infliximab",
+        "adalimumab",
+        "certolizumab",
+        "ustekinumab (psoriasiform)",
     ],
     "moderate_risk": [
-        "drugC",
-        "drugD"
+        "azathioprine",
+        "mercaptopurine",
+        "methotrexate",
+        "tofacitinib",
     ],
     "low_risk": [
-        "drugE"
-    ]
+        "mesalamine",
+        "budesonide",
+        "sulfasalazine",
+    ],
 }
+
+# ── Clinical trials / GWAS search terms ────────────────────────────────
+TRIAL_QUERY = "inflammatory bowel disease OR IBD"
+GWAS_SEARCH_TERMS = [
+    "inflammatory bowel disease",
+    "Crohn's disease",
+    "ulcerative colitis",
+    "IBD",
+]
+
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
 DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
-SCREENING_PROFILE = {}
+SCREENING_PROFILE = {
+    "strategy_id": "ibd-screening-v1",
+    "pathway_keywords": ["il-23", "th17", "jak-stat", "leukocyte trafficking", "integrin", "tnf", "epithelial barrier", "autophagy", "s1p"],
+    "mechanism_keywords": ["il-23", "il-12", "th17", "jak", "integrin", "gut", "tnf", "mucosal", "s1p", "autophagy"],
+    "reference_drug_ids": ["infliximab", "vedolizumab", "ustekinumab", "risankizumab", "tofacitinib", "upadacitinib"],
+    "weights": {"binding_estimate": 0.25, "druglikeness": 0.15, "target_complementarity": 0.35, "similarity_score": 0.15, "novelty_score": 0.10},
+    "source": "curated_ibd_knowledge_graph",
+    "curated_inputs": ["pathways", "drugs", "screening_strategy"],
+    "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
+    "limitations": ["Property scores are heuristic prioritization signals and do not establish inflammatory bowel disease efficacy or mucosal healing."],
+}

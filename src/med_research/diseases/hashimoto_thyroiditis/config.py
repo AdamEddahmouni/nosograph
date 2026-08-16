@@ -17,10 +17,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Hashimoto thyroiditis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Hashimoto thyroiditis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Hashimoto thyroiditis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Hashimoto thyroiditis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Hashimoto thyroiditis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Hashimoto thyroiditis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Hashimoto thyroiditis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Hashimoto thyroiditis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

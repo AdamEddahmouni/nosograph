@@ -4,10 +4,10 @@ from med_research.web.routers.adverse_events import router as adverse_events_rou
 from med_research.web.routers.analysis import router as analysis_router
 from med_research.web.routers.auth import router as auth_router
 from med_research.web.routers.bioinformatics import router as bio_router
+from med_research.web.routers.biomarker import router as biomarker_router
 from med_research.web.routers.biomed_analytics import (
     router as biomed_analytics_router,
 )
-from med_research.web.routers.biomarker import router as biomarker_router
 from med_research.web.routers.car_t import router as cart_router
 from med_research.web.routers.cross_disease import router as cross_disease_router
 from med_research.web.routers.disease_admin import router as disease_admin_router
@@ -57,4 +57,3 @@ routers = [
     universal_router,
     biomed_analytics_router,
 ]
-

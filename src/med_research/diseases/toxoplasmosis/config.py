@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(toxoplasmosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(toxoplasmosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(toxoplasmosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(toxoplasmosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(toxoplasmosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(toxoplasmosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(toxoplasmosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(toxoplasmosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

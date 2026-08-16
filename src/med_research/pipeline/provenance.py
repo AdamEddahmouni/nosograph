@@ -30,6 +30,7 @@ class ProvenanceMetadata(TypedDict, total=False):
     fingerprint: str
     generated_at: str
 
+
 SCHEMA_VERSION = "1.0"
 
 
@@ -112,4 +113,6 @@ def build_provenance(
         "fingerprint": reproducibility_fingerprint(stable_inputs),
         "generated_at": utc_now_iso(),
     }
-    return cast(ProvenanceMetadata, {key: value for key, value in payload.items() if value is not None})
+    return cast(
+        ProvenanceMetadata, {key: value for key, value in payload.items() if value is not None}
+    )

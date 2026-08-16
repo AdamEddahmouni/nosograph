@@ -24,10 +24,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Morphea[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Morphea[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Morphea[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Morphea[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Morphea[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Morphea[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Morphea[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Morphea[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -162,8 +162,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "calcipotriene",
         "crisaborole",
@@ -172,8 +171,7 @@ DRUG_SAFETY_RISK = {
         "sarilumab",
         "veledimex",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

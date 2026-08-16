@@ -18,10 +18,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Pancreatic cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Pancreatic cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Pancreatic cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Pancreatic cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Pancreatic cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Pancreatic cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Pancreatic cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Pancreatic cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

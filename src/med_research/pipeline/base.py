@@ -12,7 +12,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Generic, TypeVar
+from typing import Generic, TypeVar
 
 from typing_extensions import Unpack
 
@@ -60,7 +60,9 @@ class BasePipelineModule(ABC, Generic[ResultT]):
         """Render an HTML report from ``run()`` output and return its path."""
 
     @abstractmethod
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         """Build reproducibility metadata for a disease run."""
 
     @property

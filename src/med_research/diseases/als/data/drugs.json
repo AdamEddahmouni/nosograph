@@ -5,32 +5,62 @@
     {
       "id": "riluzole",
       "name": "Riluzole",
-      "targets": [
-        "GRIN1"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Glutamate neurotransmission inhibitor",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "SCN4A",
+      "mechanism": "Inhibits presynaptic glutamate release and blocks voltage-gated sodium channels",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Extends survival and delays tracheostomy in ALS patients",
+      "references": ["PMID:8564032", "PMID:17443500"],
+      "adverse_effects": "Asthenia, nausea, dizziness, elevated liver transaminases"
     },
     {
       "id": "edaravone",
       "name": "Edaravone",
-      "targets": [
-        "ROS"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Free radical scavenger reducing oxidative stress",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "ROS",
+      "mechanism": "Free radical scavenger mitigating oxidative stress and motor neuron injury",
+      "approval": "FDA Approved",
+      "route": "Intravenous / Oral",
+      "efficacy": "Slows functional decline (ALSFRS-R) in early-stage disease",
+      "references": ["PMID:28522181"],
+      "adverse_effects": "Bruising, gait disturbance, headache, allergic reactions"
     },
     {
       "id": "tofersen",
       "name": "Tofersen",
-      "targets": [
-        "SOD1"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Antisense oligonucleotide targeting SOD1 mRNA",
-      "drug_type": "Oligonucleotide"
+      "type": "Antisense oligonucleotide",
+      "target": "SOD1",
+      "mechanism": "Binds SOD1 mRNA causing RNase H-mediated degradation to reduce toxic SOD1 protein",
+      "approval": "FDA Approved",
+      "route": "Intrathecal",
+      "efficacy": "Lowers neurofilament light chain and slows progression in SOD1-ALS",
+      "references": ["PMID:36129998"],
+      "adverse_effects": "Procedural pain, CSF pleocytosis, myelitis, headache"
+    },
+    {
+      "id": "sodium_phenylbutyrate_taurursodiol",
+      "name": "Sodium phenylbutyrate / Taurursodiol",
+      "type": "Small molecule combination",
+      "target": "HSPA5",
+      "mechanism": "Dual ER stress and mitochondrial dysfunction pathway inhibitor",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Mitigates neuronal apoptosis and functional loss",
+      "references": ["PMID:32877582"],
+      "adverse_effects": "Diarrhea, abdominal pain, nausea, fatigue"
+    },
+    {
+      "id": "masitinib",
+      "name": "Masitinib",
+      "type": "Small molecule",
+      "target": "KIT",
+      "mechanism": "Tyrosine kinase inhibitor targeting CSF1R and mast cell/microglial activation",
+      "approval": "Investigational (Phase 3)",
+      "route": "Oral",
+      "efficacy": "Inhibits neuroinflammation and microglial neurotoxicity",
+      "references": ["PMID:31280389"],
+      "adverse_effects": "Rash, peripheral edema, nausea, neutropenia"
     }
   ]
 }

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Acute lymphoblastic leukemia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Acute lymphoblastic leukemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Acute lymphoblastic leukemia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Acute lymphoblastic leukemia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Acute lymphoblastic leukemia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Acute lymphoblastic leukemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Acute lymphoblastic leukemia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Acute lymphoblastic leukemia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

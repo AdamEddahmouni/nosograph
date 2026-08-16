@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(bursitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(bursitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(bursitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(bursitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(bursitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(bursitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(bursitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(bursitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -106,8 +106,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "betamethasone",
         "dexamethasone",
@@ -126,8 +125,7 @@ DRUG_SAFETY_RISK = {
         "sodium chloride",
         "triamcinolone acetonide",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Chronic rhinosinusitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Chronic rhinosinusitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Chronic rhinosinusitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Chronic rhinosinusitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Chronic rhinosinusitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Chronic rhinosinusitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Chronic rhinosinusitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Chronic rhinosinusitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

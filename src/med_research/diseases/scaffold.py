@@ -238,7 +238,7 @@ def fetch_ot_known_drugs(efo_id: str, max_drugs: int = 60) -> list[dict]:
     disease = (data.get("data") or {}).get("disease") or {}
     known_drugs = disease.get("knownDrugs") or {}
     clinical = disease.get("drugAndClinicalCandidates") or {}
-    rows = (known_drugs.get("rows") or clinical.get("rows") or [])
+    rows = known_drugs.get("rows") or clinical.get("rows") or []
     drugs = []
     for row in rows:
         drug = row.get("drug") or {}
@@ -247,16 +247,12 @@ def fetch_ot_known_drugs(efo_id: str, max_drugs: int = 60) -> list[dict]:
             continue
         targets: list[str] = []
         mechanism = ""
-        mechanisms = ((row.get("mechanismsOfAction") or drug.get("mechanismsOfAction") or {}).get(
-            "rows"
-        )) or []
+        mechanisms = (
+            (row.get("mechanismsOfAction") or drug.get("mechanismsOfAction") or {}).get("rows")
+        ) or []
         for m in mechanisms:
             for target_obj in m.get("targets") or []:
-                target = (
-                    target_obj.get("approvedSymbol")
-                    if isinstance(target_obj, dict)
-                    else None
-                )
+                target = target_obj.get("approvedSymbol") if isinstance(target_obj, dict) else None
                 if target and target not in targets:
                     targets.append(target)
             legacy_target = (m.get("target") or {}).get("approvedSymbol")
@@ -1049,8 +1045,8 @@ def _collect_sources(
     the display name, and the freshly-built genes/drugs/pathways JSON.
     """
     if use_bulk and use_opentargets:
-        from med_research.diseases.bulk_store import OpenTargetsBulkStore
         from med_research.diseases.bulk_scaffold import collect_sources_from_bulk
+        from med_research.diseases.bulk_store import OpenTargetsBulkStore
 
         bulk_store = OpenTargetsBulkStore()
         if bulk_store.is_available():
@@ -1212,7 +1208,7 @@ def scaffold_disease(
     except (ConfigurationError, OSError, ValueError, KeyError, TypeError) as exc:
         logger.warning("⚠️  Could not auto-populate config sections for %s: %s", disease_id, exc)
 
-    return {
+    summary = {
         "disease_id": disease_id,
         "name": display_name,
         "efo_id": resolved_efo,
@@ -1244,6 +1240,10 @@ def scaffold_disease(
             ),
         ],
     }
+    from med_research.diseases.base import invalidate_disease_cache
+
+    invalidate_disease_cache()
+    return summary
 
 
 # ── Refresh (merge into an existing module) ─────────────────────────────
@@ -2283,6 +2283,20 @@ def load_disease_registry(
     return data.get("diseases", [])
 
 
+def save_disease_registry(
+    diseases: list[dict],
+    registry_path: Optional[Path] = None,
+) -> Path:
+    """Persist the disease registry JSON."""
+    if registry_path is None:
+        registry_path = _diseases_root() / "disease_registry.json"
+    payload = {"diseases": diseases}
+    registry_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    return registry_path
+
+
 def batch_scaffold(
     *,
     category: Optional[str] = None,
@@ -2428,7 +2442,9 @@ def print_batch_summary(report: dict) -> None:
             logger.info("    %s — %s", f["disease_id"], f["error"][:80])
 
     if report["skipped"]:
-        logger.info("\n  Skipped (already exist): %s", ", ".join(s["disease_id"] for s in report["skipped"]))
+        logger.info(
+            "\n  Skipped (already exist): %s", ", ".join(s["disease_id"] for s in report["skipped"])
+        )
 
     logger.info("\n  Next steps:")
     logger.info("    1. Review scaffolded modules: med-research disease validate --all")

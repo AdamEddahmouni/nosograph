@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Sepsis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Sepsis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Sepsis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Sepsis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Sepsis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Sepsis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Sepsis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Sepsis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -179,8 +179,7 @@ DRUG_SAFETY_RISK = {
         "vaborbactam",
         "vancomycin",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(ductal breast carcinoma in situ[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(ductal breast carcinoma in situ[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(ductal breast carcinoma in situ[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(ductal breast carcinoma in situ[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(ductal breast carcinoma in situ[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(ductal breast carcinoma in situ[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(ductal breast carcinoma in situ[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(ductal breast carcinoma in situ[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

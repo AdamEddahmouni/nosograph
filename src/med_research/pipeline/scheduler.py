@@ -8,6 +8,7 @@ from __future__ import annotations
 import logging
 from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import Any
 
 from med_research.exceptions import MedResearchError, PipelineExecutionError
 from med_research.pipeline.registry import get_module, list_modules
@@ -125,7 +126,7 @@ async def run_levels_async(
                 *(async_runner(mod_id) for mod_id in level),
                 return_exceptions=True,
             )
-            for module_id, res in zip(level, results):
+            for module_id, res in zip(level, results, strict=False):
                 if isinstance(res, Exception):
                     errors += 1
                     logger.error("  %s (async): %s", module_id, res)
@@ -137,4 +138,3 @@ async def run_levels_async(
                     errors += 1
                     logger.error("  %s (async): %s", module_id, exc)
     return errors
-

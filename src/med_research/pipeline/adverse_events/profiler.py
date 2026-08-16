@@ -17,18 +17,12 @@ Usage:
 import argparse
 import functools
 import logging
-import sys
 from pathlib import Path
 
+from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
+from med_research.pipeline.results import AdverseEventScore
+
 logger = logging.getLogger(__name__)
-# Ensure project root is importable
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from med_research.pipeline.progress import StandardProgress, _tick, cli_progress  # noqa: E402
-from med_research.pipeline.results import AdverseEventScore  # noqa: E402
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 PROFILES_PATH = DATA_DIR / "profiles.json"
@@ -1318,4 +1312,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

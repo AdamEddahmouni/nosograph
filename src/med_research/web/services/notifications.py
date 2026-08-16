@@ -250,7 +250,14 @@ def dispatch_pending_alerts(store: WorkspaceRunStore, researcher_id: str) -> dic
                 continue
             try:
                 send()
-            except (OSError, ConnectionError, TimeoutError, ValueError, TypeError, RuntimeError) as exc:
+            except (
+                OSError,
+                ConnectionError,
+                TimeoutError,
+                ValueError,
+                TypeError,
+                RuntimeError,
+            ) as exc:
                 store.record_delivery_attempt(
                     alert["alert_id"],
                     researcher_id,

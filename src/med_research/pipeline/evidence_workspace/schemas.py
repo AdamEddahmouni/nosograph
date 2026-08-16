@@ -8,7 +8,9 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
-SourceName = Literal["pubmed", "clinical_trials", "gwas", "fda_labels", "opentargets", "gtex", "biorxiv", "chembl"]
+SourceName = Literal[
+    "pubmed", "clinical_trials", "gwas", "fda_labels", "opentargets", "gtex", "biorxiv", "chembl"
+]
 CandidateType = Literal["drugs", "targets", "both"]
 
 # Persisted schema versions are intentionally separate from the runtime model

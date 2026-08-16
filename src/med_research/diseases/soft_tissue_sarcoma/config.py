@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Soft tissue sarcoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Soft tissue sarcoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Soft tissue sarcoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Soft tissue sarcoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Soft tissue sarcoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Soft tissue sarcoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Soft tissue sarcoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Soft tissue sarcoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

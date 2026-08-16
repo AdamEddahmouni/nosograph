@@ -240,6 +240,14 @@ jobs:
 
 
 
+      - name: Corpus readiness unit tests
+
+        run: |
+
+          python -m pytest tests/test_registry_quality.py tests/test_tier_model.py tests/test_corpus_status.py tests/test_disease_context.py tests/web/test_corpus_status_api.py tests/biomed/imports/test_clinvar_openfda_cli.py -q --tb=short
+
+
+
       - name: Verify knowledge graph builds
 
         run: |

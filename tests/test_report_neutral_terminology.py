@@ -14,8 +14,6 @@ UNRELATED_TERMS = re.compile(r"\b(?:lupus|sle|systemic lupus erythematosus)\b", 
 pytestmark = pytest.mark.unit
 
 
-
-
 def _visible_text(html: str) -> str:
     """Strip tags/scripts so we only inspect user-visible copy."""
     text = re.sub(r"<script[\s\S]*?</script>", " ", html, flags=re.IGNORECASE)

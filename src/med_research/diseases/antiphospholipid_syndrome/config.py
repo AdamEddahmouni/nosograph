@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Antiphospholipid syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Antiphospholipid syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Antiphospholipid syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Antiphospholipid syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Antiphospholipid syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Antiphospholipid syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Antiphospholipid syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Antiphospholipid syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

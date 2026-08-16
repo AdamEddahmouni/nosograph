@@ -1,5 +1,3 @@
-
-
 """Parametrized curation contract tests for all seven disease configs."""
 
 import re
@@ -12,8 +10,6 @@ DISEASE_IDS = ("sle", "ra", "ms", "ibd", "ss", "ssc", "t1d")
 NON_SLE = tuple(d for d in DISEASE_IDS if d != "sle")
 
 pytestmark = pytest.mark.unit
-
-
 
 
 @pytest.mark.parametrize("disease_id", DISEASE_IDS)

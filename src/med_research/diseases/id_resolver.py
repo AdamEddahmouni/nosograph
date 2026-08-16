@@ -3,10 +3,10 @@
 from __future__ import annotations
 
 import json
-import re
 import unicodedata
 from dataclasses import dataclass, field
 from difflib import SequenceMatcher
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Optional
 
@@ -56,10 +56,14 @@ class ResolutionResult:
         return patch
 
 
-def _fuzzy_score(a: str, b: str) -> float:
-    return SequenceMatcher(None, a.lower(), b.lower()).ratio()
+def _fuzzy_score(a: str, b: str, min_score: float = 0.0) -> float:
+    matcher = SequenceMatcher(None, a.lower(), b.lower())
+    if matcher.quick_ratio() < min_score:
+        return 0.0
+    return matcher.ratio()
 
 
+@lru_cache(maxsize=None)
 def _normalize_name(value: str) -> str:
     text = unicodedata.normalize("NFKD", value.strip().lower())
     return "".join(ch for ch in text if not unicodedata.combining(ch))
@@ -158,7 +162,7 @@ def _lookup_mondo_by_name(
     best_curie: Optional[str] = None
     best_label = name
     for curie, label in labels:
-        score = _fuzzy_score(needle, _normalize_name(label))
+        score = _fuzzy_score(needle, _normalize_name(label), MONDO_NAME_FUZZY_THRESHOLD)
         if score > best_score:
             best_score = score
             best_curie = curie
@@ -224,7 +228,7 @@ class DiseaseIdResolver:
         best_name = name
         for row in self.bulk_store._read_table("disease"):
             row_name = (row.get("name") or "").strip()
-            score = _fuzzy_score(name, row_name)
+            score = _fuzzy_score(name, row_name, FUZZY_THRESHOLD)
             if score > best_score:
                 candidate = efo_from_disease_row(row, mondo_to_efo)
                 if candidate and is_efo_id(candidate):
@@ -277,13 +281,13 @@ class DiseaseIdResolver:
         mondo_id = entry.get("mondo_id")
         mondo_confidence = 1.0 if mondo_id else 0.0
         if not mondo_id:
-            mondo_id, mondo_confidence, mondo_match = _lookup_mondo_by_name(name, self._mondo_labels)
+            mondo_id, mondo_confidence, mondo_match = _lookup_mondo_by_name(
+                name, self._mondo_labels
+            )
             if mondo_match.startswith("fuzzy:"):
                 result.notes.append(f"MONDO fuzzy matched to '{mondo_match[6:]}'")
 
-        authoritative_mondo = bool(
-            mondo_id and mondo_confidence >= MONDO_NAME_FUZZY_THRESHOLD
-        )
+        authoritative_mondo = bool(mondo_id and mondo_confidence >= MONDO_NAME_FUZZY_THRESHOLD)
 
         if mondo_id:
             result.mondo_id = mondo_id
@@ -335,13 +339,13 @@ class DiseaseIdResolver:
                 if did in seen or not (child / "data" / "profile.json").exists():
                     continue
                 try:
-                    profile = json.loads((child / "data" / "profile.json").read_text(encoding="utf-8"))
+                    profile = json.loads(
+                        (child / "data" / "profile.json").read_text(encoding="utf-8")
+                    )
                     name = profile.get("name") or did
                 except (json.JSONDecodeError, OSError):
                     name = did
-                results.append(
-                    self.resolve_entry({"id": did, "name": name, "category": "orphan"})
-                )
+                results.append(self.resolve_entry({"id": did, "name": name, "category": "orphan"}))
         return results
 
     def build_report(self, results: list[ResolutionResult]) -> dict:
@@ -353,7 +357,9 @@ class DiseaseIdResolver:
             "resolved": len(resolved),
             "ambiguous": len(ambiguous),
             "failed": len(failed),
-            "resolution_rate": round(len([r for r in results if r.efo_id]) / max(len(results), 1), 3),
+            "resolution_rate": round(
+                len([r for r in results if r.efo_id]) / max(len(results), 1), 3
+            ),
             "entries": [
                 {
                     "disease_id": r.disease_id,

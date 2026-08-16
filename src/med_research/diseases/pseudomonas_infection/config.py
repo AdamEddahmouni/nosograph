@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Pseudomonas aeruginosa PA14 infection[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Pseudomonas aeruginosa PA14 infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Pseudomonas aeruginosa PA14 infection[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Pseudomonas aeruginosa PA14 infection[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Pseudomonas aeruginosa PA14 infection[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Pseudomonas aeruginosa PA14 infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Pseudomonas aeruginosa PA14 infection[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Pseudomonas aeruginosa PA14 infection[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

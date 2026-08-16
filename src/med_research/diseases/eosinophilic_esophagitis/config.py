@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Eosinophilic esophagitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Eosinophilic esophagitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Eosinophilic esophagitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Eosinophilic esophagitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Eosinophilic esophagitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Eosinophilic esophagitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Eosinophilic esophagitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Eosinophilic esophagitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

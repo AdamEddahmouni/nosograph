@@ -235,7 +235,9 @@ class BiomedicalRepository:
                         _uuid_str(entity.id),
                         entity.primary_curie,
                         entity.entity_type.value,
-                        _uuid_str(entity.created_in_snapshot_id) if entity.created_in_snapshot_id else "",
+                        _uuid_str(entity.created_in_snapshot_id)
+                        if entity.created_in_snapshot_id
+                        else "",
                     )
                     for entity in bundle.entities
                 ],
@@ -384,7 +386,9 @@ class BiomedicalRepository:
                         _uuid_str(entity.id),
                         entity.primary_curie,
                         entity.entity_type.value,
-                        _uuid_str(entity.created_in_snapshot_id) if entity.created_in_snapshot_id else "",
+                        _uuid_str(entity.created_in_snapshot_id)
+                        if entity.created_in_snapshot_id
+                        else "",
                     ),
                 )
                 return entity
@@ -393,7 +397,10 @@ class BiomedicalRepository:
                 raise BiomedicalValidationError(
                     f"CURIE {entity.primary_curie} is already assigned to {stored.entity_type.value}"
                 )
-            if stored.primary_curie != entity.primary_curie or stored.entity_type != entity.entity_type:
+            if (
+                stored.primary_curie != entity.primary_curie
+                or stored.entity_type != entity.entity_type
+            ):
                 raise BiomedicalValidationError(
                     f"Entity {_uuid_str(entity.id)} payload differs from stored record"
                 )
@@ -931,7 +938,9 @@ class BiomedicalRepository:
         ).fetchall()
         return [self._row_to_mapping(row) for row in rows]
 
-    def _index_revision_names(self, connection: sqlite3.Connection, revision: EntityRevision) -> None:
+    def _index_revision_names(
+        self, connection: sqlite3.Connection, revision: EntityRevision
+    ) -> None:
         names = [revision.label, *revision.synonyms, *revision.alt_labels]
         connection.execute(
             "DELETE FROM entity_names WHERE entity_id = ? AND snapshot_id = ?",
@@ -962,11 +971,11 @@ class BiomedicalRepository:
             "resource_name": snapshot.resource_name,
             "version": snapshot.version,
             "checksum": snapshot.checksum,
-            "name": snapshot.name,
-            "namespace_prefix": snapshot.namespace_prefix,
-            "source_url": snapshot.source_url,
-            "artifact_format": snapshot.artifact_format,
-            "upstream_version": snapshot.upstream_version,
+            "name": snapshot.name or "",
+            "namespace_prefix": snapshot.namespace_prefix or "",
+            "source_url": snapshot.source_url or "",
+            "artifact_format": snapshot.artifact_format or "",
+            "upstream_version": snapshot.upstream_version or "",
             "version_iri": snapshot.version_iri,
             "artifact_size": snapshot.artifact_size,
             "license_id": snapshot.license_id,
@@ -1084,7 +1093,9 @@ class BiomedicalRepository:
             "subject_entity_id": (
                 _uuid_str(claim.subject_entity_id) if claim.subject_entity_id else None
             ),
-            "object_entity_id": _uuid_str(claim.object_entity_id) if claim.object_entity_id else None,
+            "object_entity_id": _uuid_str(claim.object_entity_id)
+            if claim.object_entity_id
+            else None,
         }
 
     def _row_to_claim(self, row: sqlite3.Row) -> Claim:

@@ -8,15 +8,23 @@ PIPELINE_LABEL = "Spinal muscular atrophy (SPINAL_MUSCULAR_ATROPHY)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Spinal muscular atrophy
-SYMPTOMS = []
+SYMPTOMS = [
+    "proximal muscle weakness",
+    "hypotonia and floppy limbs",
+    "areflexia or diminished deep tendon reflexes",
+    "respiratory muscle weakness",
+    "tongue fasciculations",
+    "bulbar dysfunction and dysphagia",
+    "delayed motor milestones",
+    "scoliosis and joint contractures",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Spinal muscular atrophy[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Spinal muscular atrophy[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Spinal muscular atrophy[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Spinal muscular atrophy[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Spinal muscular atrophy[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Spinal muscular atrophy[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Spinal muscular atrophy[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Spinal muscular atrophy[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -91,8 +99,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "amifampridine phosphate",
         "apitegromab",
@@ -111,8 +118,7 @@ DRUG_SAFETY_RISK = {
         "sodium phenylbutyrate",
         "valproic acid",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

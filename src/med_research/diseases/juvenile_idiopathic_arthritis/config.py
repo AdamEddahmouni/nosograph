@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Juvenile idiopathic arthritis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Juvenile idiopathic arthritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Juvenile idiopathic arthritis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Juvenile idiopathic arthritis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Juvenile idiopathic arthritis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Juvenile idiopathic arthritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Juvenile idiopathic arthritis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Juvenile idiopathic arthritis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

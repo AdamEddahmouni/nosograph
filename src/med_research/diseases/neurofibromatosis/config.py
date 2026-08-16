@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Neurofibromatosis type 1[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Neurofibromatosis type 1[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Neurofibromatosis type 1[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Neurofibromatosis type 1[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Neurofibromatosis type 1[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Neurofibromatosis type 1[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Neurofibromatosis type 1[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Neurofibromatosis type 1[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -184,8 +184,7 @@ DRUG_SAFETY_RISK = {
         "veliparib",
         "vinblastine",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

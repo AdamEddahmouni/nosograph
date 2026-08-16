@@ -63,7 +63,9 @@ def to_comparison_view(result: ComparisonResult) -> ComparisonResultView:
     )
 
 
-def get_comparison_run(repository: BiomedicalRepository, run_id: UUID) -> ComparisonResultView | None:
+def get_comparison_run(
+    repository: BiomedicalRepository, run_id: UUID
+) -> ComparisonResultView | None:
     run = repository.get_research_run(run_id)
     if run is None or run.run_type != "condition_comparison":
         return None

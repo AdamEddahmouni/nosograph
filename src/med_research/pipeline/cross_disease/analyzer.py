@@ -21,24 +21,17 @@ Usage:
 import argparse
 import json
 import logging
-import sys
 from pathlib import Path
 from typing import Any
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
 from med_research.exceptions import DataValidationError
 from med_research.pipeline.knowledge_graph.config import (
-    list_diseases,
     load_drugs,
     load_genes,
     load_pathways,
     load_relationships,
 )
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -49,20 +42,52 @@ last_coverage = None
 # ── Data Loading ──────────────────────────────────────────────────────────
 
 
-def load_all_disease_data() -> dict:
-    """Load genes, drugs, pathways, and relationships for all diseases.
+CORE_CROSS_DISEASES: tuple[str, ...] = ("sle", "ra", "ms", "ibd", "ss", "ssc", "t1d")
+
+
+def list_diseases() -> dict[str, Any]:
+    """Return configured cross-disease definitions."""
+    from med_research.pipeline.knowledge_graph.config import get_disease_profile
+
+    result = {}
+    for d in CORE_CROSS_DISEASES:
+        try:
+            profile = get_disease_profile(d)
+        except Exception:
+            profile = {"id": d, "name": d.upper()}
+        result[d] = {"name": profile.get("name", d.upper()), "profile": profile}
+    return result
+
+
+def load_all_disease_data(disease_ids: Any = None) -> dict:
+    """Load genes, drugs, pathways, and relationships for the cross-disease cohort.
 
     Returns:
         dict keyed by disease_id with sub-keys "profile", "genes", "drugs",
         "pathways", "relationships", "kg".
     """
-    all_diseases = list_diseases()
+    from med_research.pipeline.knowledge_graph.config import get_disease_profile
+
+    if disease_ids is not None:
+        target_ids = tuple(disease_ids)
+    elif "list_diseases" in globals() and callable(globals().get("list_diseases")):
+        try:
+            target_ids = tuple(list_diseases().keys())
+        except Exception:
+            target_ids = CORE_CROSS_DISEASES
+    else:
+        target_ids = CORE_CROSS_DISEASES
     data = {}
 
-    for disease_id, meta in all_diseases.items():
+    for disease_id in target_ids:
+        try:
+            profile = get_disease_profile(disease_id)
+        except Exception:
+            profile = {"id": disease_id, "name": disease_id.upper()}
+
         disease_data = {
-            "profile": meta["profile"],
-            "name": meta["name"],
+            "profile": profile,
+            "name": profile.get("name", disease_id.upper()),
         }
         try:
             disease_data["genes"] = load_genes(disease_id)
@@ -492,6 +517,7 @@ def compute_cross_disease_repurposing(data: dict) -> list:
 
 def compute_cross_disease_analysis(
     progress_callback: StandardProgress | None = None,
+    disease_ids: Any = None,
 ) -> dict:
     """Run the full cross-disease analysis pipeline.
 
@@ -503,9 +529,9 @@ def compute_cross_disease_analysis(
     from med_research.diseases.coverage import ModuleCoverage, coverage_for_disease, module_coverage
 
     global last_coverage
-    disease_ids = sorted(list_diseases().keys())
+    target_ids = sorted(disease_ids) if disease_ids is not None else list(CORE_CROSS_DISEASES)
     blocked = [
-        disease_id for disease_id in disease_ids if not coverage_for_disease(disease_id).is_runnable
+        disease_id for disease_id in target_ids if not coverage_for_disease(disease_id).is_runnable
     ]
     if blocked:
         coverage = coverage_for_disease(blocked[0])
@@ -535,7 +561,7 @@ def compute_cross_disease_analysis(
         }
 
     _tick(progress_callback, "loading disease data", 1, 9)
-    data = load_all_disease_data()
+    data = load_all_disease_data(target_ids)
     disease_ids = sorted(data.keys())
 
     _tick(progress_callback, "shared genes", 2, 9)
@@ -615,6 +641,7 @@ def compute_cross_disease_analysis(
 def compute_comparative_modules(
     progress_callback: StandardProgress | None = None,
     top_synergy: int = 5,
+    disease_ids: Any = None,
 ) -> dict:
     """Run biomarker/expression/synergy for every disease and stack results.
 
@@ -630,10 +657,10 @@ def compute_comparative_modules(
     from med_research.pipeline.biomarker_discovery.discover import compute_biomarker_matrix
     from med_research.pipeline.drug_synergy.engine import compute_synergy
     from med_research.pipeline.gene_expression.correlator import compute_all_correlations
+    from med_research.pipeline.knowledge_graph.config import get_disease_profile
 
-    all_diseases = list_diseases()
-    disease_ids = sorted(all_diseases.keys())
-    n = len(disease_ids)
+    target_ids = sorted(disease_ids) if disease_ids is not None else list(CORE_CROSS_DISEASES)
+    n = len(target_ids)
     total_steps = max(1, n * 3)
 
     biomarker_scores: dict = {}
@@ -642,7 +669,7 @@ def compute_comparative_modules(
     counts: dict[str, dict[str, Any]] = {"biomarker": {}, "expression": {}, "synergy": {}}
 
     step = 0
-    for did in disease_ids:
+    for did in target_ids:
         step += 1
         _tick(progress_callback, f"{did} biomarker", step, total_steps)
         try:
@@ -705,7 +732,10 @@ def compute_comparative_modules(
 
     _tick(progress_callback, "comparative complete", total_steps, total_steps)
     return {
-        "diseases": [{"id": did, "name": all_diseases[did]["name"]} for did in disease_ids],
+        "diseases": [
+            {"id": did, "name": get_disease_profile(did).get("name", did.upper())}
+            for did in target_ids
+        ],
         "modules": {
             "biomarker": {"scores": biomarker_scores, "counts": counts["biomarker"]},
             "expression": {"scores": expression_scores, "counts": counts["expression"]},
@@ -857,4 +887,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

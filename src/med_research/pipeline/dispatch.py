@@ -218,7 +218,7 @@ def execute_module(
         )
 
     report_path: Path | None = None
-    provenance: dict[str, Any] | None = None
+    provenance: ProvenanceMetadata | None = None
     if export_html:
         provenance_opts = {key: value for key, value in opts.items() if key not in _RUNTIME_OPTS}
         provenance = module.build_provenance(disease_id, **provenance_opts)

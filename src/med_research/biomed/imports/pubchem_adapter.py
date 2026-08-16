@@ -5,7 +5,6 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
-from uuid import UUID
 
 from med_research.biomed.identifiers import (
     claim_evidence_uuid,
@@ -84,14 +83,42 @@ class PubChemImportAdapter(ImportAdapter):
             if compound_curie not in seen_entities:
                 seen_entities.add(compound_curie)
                 c_ent_id = entity_uuid(EntityType.INTERVENTION, compound_curie)
-                entities.append(Entity(id=c_ent_id, primary_curie=compound_curie, entity_type=EntityType.INTERVENTION, created_in_snapshot_id=snapshot.id))
-                revisions.append(EntityRevision(id=entity_revision_uuid(c_ent_id, snapshot.id), entity_id=c_ent_id, snapshot_id=snapshot.id, label=item.get("cmpd_name", compound_curie)))
+                entities.append(
+                    Entity(
+                        id=c_ent_id,
+                        primary_curie=compound_curie,
+                        entity_type=EntityType.INTERVENTION,
+                        created_in_snapshot_id=snapshot.id,
+                    )
+                )
+                revisions.append(
+                    EntityRevision(
+                        id=entity_revision_uuid(c_ent_id, snapshot.id),
+                        entity_id=c_ent_id,
+                        snapshot_id=snapshot.id,
+                        label=item.get("cmpd_name", compound_curie),
+                    )
+                )
 
             if target_curie not in seen_entities:
                 seen_entities.add(target_curie)
                 t_ent_id = entity_uuid(EntityType.GENE, target_curie)
-                entities.append(Entity(id=t_ent_id, primary_curie=target_curie, entity_type=EntityType.GENE, created_in_snapshot_id=snapshot.id))
-                revisions.append(EntityRevision(id=entity_revision_uuid(t_ent_id, snapshot.id), entity_id=t_ent_id, snapshot_id=snapshot.id, label=item.get("gene_symbol", target_curie)))
+                entities.append(
+                    Entity(
+                        id=t_ent_id,
+                        primary_curie=target_curie,
+                        entity_type=EntityType.GENE,
+                        created_in_snapshot_id=snapshot.id,
+                    )
+                )
+                revisions.append(
+                    EntityRevision(
+                        id=entity_revision_uuid(t_ent_id, snapshot.id),
+                        entity_id=t_ent_id,
+                        snapshot_id=snapshot.id,
+                        label=item.get("gene_symbol", target_curie),
+                    )
+                )
 
             c_id = claim_uuid(compound_curie, Predicate.TREATED_BY, target_curie)
             c_obj = Claim(
@@ -103,19 +130,22 @@ class PubChemImportAdapter(ImportAdapter):
             )
             claims.append(c_obj)
 
+            ev_id = claim_evidence_uuid(
+                c_obj.id, snapshot.id, EvidenceDirection.SUPPORTING, str(item.get("aid", cid))
+            )
+            evidence.append(
+                ClaimEvidence(
+                    id=ev_id,
+                    claim_id=c_obj.id,
+                    snapshot_id=snapshot.id,
+                    direction=EvidenceDirection.SUPPORTING,
+                    source_record_id=str(item.get("aid", cid)),
+                    evidence_type="pubchem_bioassay",
+                )
+            )
 
-            ev_id = claim_evidence_uuid(c_obj.id, snapshot.id, EvidenceDirection.SUPPORTING, str(item.get("aid", cid)))
-            evidence.append(ClaimEvidence(
-                id=ev_id,
-                claim_id=c_obj.id,
-                snapshot_id=snapshot.id,
-                direction=EvidenceDirection.SUPPORTING,
-                source_record_id=str(item.get("aid", cid)),
-                evidence_data={"source": "pubchem", "activity": item.get("activity")},
-            ))
-
-        return ImportBundle.create(
-            snapshot=snapshot,
+        return ImportBundle.build(
+            snapshot,
             entities=entities,
             revisions=revisions,
             mappings=[],

@@ -34,9 +34,6 @@ from med_research.pipeline.results import KgBuildResult
 
 logger = logging.getLogger(__name__)
 
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
-
 
 def build_graph(
     disease_id: str = "sle",
@@ -376,4 +373,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

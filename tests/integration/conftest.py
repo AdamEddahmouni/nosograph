@@ -38,11 +38,22 @@ skip_without_redis = pytest.mark.skipif(
 )
 
 
-def all_disease_ids() -> tuple[str, ...]:
-    """Return sorted disease IDs discovered from disease profile data."""
-    from med_research.pipeline.knowledge_graph.config import list_diseases
+CORE_DISEASES: tuple[str, ...] = ("sle", "ra", "ms", "ss", "ssc", "t1d", "ibd")
 
-    return tuple(sorted(list_diseases().keys()))
+
+def all_disease_ids() -> tuple[str, ...]:
+    """Return sorted disease IDs discovered from disease profile data.
+
+    Defaults to the 7 core benchmark diseases to avoid inflating test parametrization
+    to 22,000+ items. Set TEST_ALL_DISEASES=1 to run against the entire scaffolded corpus.
+    """
+    import os
+
+    if os.environ.get("TEST_ALL_DISEASES"):
+        from med_research.pipeline.knowledge_graph.config import list_diseases
+
+        return tuple(sorted(list_diseases().keys()))
+    return CORE_DISEASES
 
 
 ALL_DISEASES = all_disease_ids()

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(gastroparesis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(gastroparesis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(gastroparesis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(gastroparesis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(gastroparesis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(gastroparesis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(gastroparesis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(gastroparesis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -129,8 +129,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "aprepitant",
         "azithromycin",
@@ -178,8 +177,7 @@ DRUG_SAFETY_RISK = {
         "ulimorelin hydrochloride",
         "velusetrag",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

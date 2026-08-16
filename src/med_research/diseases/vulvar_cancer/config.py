@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Vulvar cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Vulvar cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Vulvar cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Vulvar cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Vulvar cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Vulvar cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Vulvar cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Vulvar cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

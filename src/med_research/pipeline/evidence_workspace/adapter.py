@@ -84,7 +84,9 @@ class EvidenceWorkspaceModule(BasePipelineModule[EvidenceDossier]):
         output = Path(__file__).parent / f"report_{disease_id}.html"
         return write_html(dossier, output)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         sources = opts.get("sources") or ("pubmed", "clinical_trials")
         extra: dict[str, Any] = {
             key: value

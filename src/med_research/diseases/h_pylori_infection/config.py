@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Helicobacter pylori infection[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Helicobacter pylori infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Helicobacter pylori infection[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Helicobacter pylori infection[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Helicobacter pylori infection[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Helicobacter pylori infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Helicobacter pylori infection[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Helicobacter pylori infection[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

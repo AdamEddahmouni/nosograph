@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(primary cutaneous T-cell non-Hodgkin lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(primary cutaneous T-cell non-Hodgkin lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(primary cutaneous T-cell non-Hodgkin lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(primary cutaneous T-cell non-Hodgkin lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(primary cutaneous T-cell non-Hodgkin lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(primary cutaneous T-cell non-Hodgkin lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(primary cutaneous T-cell non-Hodgkin lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(primary cutaneous T-cell non-Hodgkin lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -185,8 +185,7 @@ DRUG_SAFETY_RISK = {
         "vorinostat",
         "zanolimumab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -75,7 +75,9 @@ class SemanticSearchModule(BasePipelineModule[SemanticSearchResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         query = opts.get("query") or _default_query(disease_id)
         extra: dict[str, Any] = {
             key: value

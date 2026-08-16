@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-import json
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Optional
 
@@ -78,6 +78,28 @@ def _hpo_symptoms_from_biomed(mondo_id: str, limit: int = SYMPTOMS_MAX) -> list[
         return []
 
 
+def _resolve_symptoms(
+    resolution: object,
+    store: OpenTargetsBulkStore,
+    max_symptoms: int,
+) -> tuple[list[str], str]:
+    """Return (symptoms, symptom_source)."""
+    mondo_id = getattr(resolution, "mondo_id", None)
+    efo_id = getattr(resolution, "efo_id", None)
+
+    if mondo_id:
+        symptoms = _hpo_symptoms_from_biomed(mondo_id, max_symptoms)
+        if symptoms:
+            return symptoms, "biomed_hpoa"
+
+    if efo_id and store.is_available():
+        symptoms = store.get_phenotypes(efo_id, limit=max_symptoms)
+        if symptoms:
+            return symptoms, "ot_phenotype"
+
+    return [], "none"
+
+
 def harvest_symptoms_for_disease(
     disease_id: str,
     store: Optional[OpenTargetsBulkStore] = None,
@@ -90,11 +112,21 @@ def harvest_symptoms_for_disease(
     root = _diseases_root() / disease_id
     config_path = root / "config.py"
     if not config_path.is_file():
-        return {"disease_id": disease_id, "status": "no_config", "symptoms": []}
+        return {
+            "disease_id": disease_id,
+            "status": "no_config",
+            "symptoms": [],
+            "symptom_source": "none",
+        }
 
     existing = _read_config_symptoms(config_path)
     if existing:
-        return {"disease_id": disease_id, "status": "already_populated", "symptoms": existing}
+        return {
+            "disease_id": disease_id,
+            "status": "already_populated",
+            "symptoms": existing,
+            "symptom_source": "config",
+        }
 
     store = store or OpenTargetsBulkStore()
     resolver = resolver or DiseaseIdResolver(bulk_store=store)
@@ -103,13 +135,7 @@ def harvest_symptoms_for_disease(
         {"id": disease_id, "name": disease_id},
     )
     resolution = resolver.resolve_entry(entry)
-    symptoms: list[str] = []
-
-    if resolution.mondo_id:
-        symptoms = _hpo_symptoms_from_biomed(resolution.mondo_id, max_symptoms)
-
-    if not symptoms and resolution.efo_id and store.is_available():
-        symptoms = store.get_phenotypes(resolution.efo_id, limit=max_symptoms)
+    symptoms, symptom_source = _resolve_symptoms(resolution, store, max_symptoms)
 
     if write and symptoms:
         _write_config_symptoms(config_path, symptoms)
@@ -120,6 +146,7 @@ def harvest_symptoms_for_disease(
         "efo_id": resolution.efo_id,
         "mondo_id": resolution.mondo_id,
         "symptoms": symptoms,
+        "symptom_source": symptom_source,
         "written": write and bool(symptoms),
     }
 
@@ -129,6 +156,7 @@ def harvest_all_symptoms(
     write: bool = False,
     limit: Optional[int] = None,
     disease_ids: Optional[list[str]] = None,
+    workers: int = 1,
 ) -> dict:
     """Harvest symptoms for registry diseases (or a subset)."""
     store = OpenTargetsBulkStore()
@@ -140,14 +168,29 @@ def harvest_all_symptoms(
     if limit:
         entries = entries[:limit]
 
-    results = []
-    for entry in entries:
-        did = sanitize_id(entry.get("id", ""))
-        results.append(harvest_symptoms_for_disease(did, store, resolver, write=write))
+    ids = [sanitize_id(e.get("id", "")) for e in entries]
+
+    def _one(did: str) -> dict:
+        return harvest_symptoms_for_disease(did, store, resolver, write=write)
+
+    results: list[dict] = []
+    if workers > 1:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = {pool.submit(_one, did): did for did in ids}
+            for future in as_completed(futures):
+                results.append(future.result())
+    else:
+        results = [_one(did) for did in ids]
 
     populated = sum(1 for r in results if r["symptoms"])
+    by_source: dict[str, int] = {}
+    for row in results:
+        source = row.get("symptom_source", "none")
+        by_source[source] = by_source.get(source, 0) + 1
+
     return {
         "total": len(results),
         "populated": populated,
+        "by_source": by_source,
         "results": results,
     }

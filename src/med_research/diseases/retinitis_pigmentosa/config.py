@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Retinitis pigmentosa[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Retinitis pigmentosa[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Retinitis pigmentosa[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Retinitis pigmentosa[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Retinitis pigmentosa[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Retinitis pigmentosa[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Retinitis pigmentosa[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Retinitis pigmentosa[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

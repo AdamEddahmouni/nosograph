@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Neurosarcoidosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Neurosarcoidosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Neurosarcoidosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Neurosarcoidosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Neurosarcoidosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Neurosarcoidosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Neurosarcoidosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Neurosarcoidosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -104,8 +104,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "bupivacaine",
         "clonidine",
@@ -114,8 +113,7 @@ DRUG_SAFETY_RISK = {
         "ropivacaine",
         "ropivacaine hydrochloride",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

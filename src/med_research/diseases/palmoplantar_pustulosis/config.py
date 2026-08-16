@@ -24,10 +24,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Palmoplantar pustulosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Palmoplantar pustulosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Palmoplantar pustulosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Palmoplantar pustulosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Palmoplantar pustulosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Palmoplantar pustulosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Palmoplantar pustulosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Palmoplantar pustulosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

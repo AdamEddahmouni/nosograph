@@ -18,6 +18,9 @@ class EntityType(str, Enum):
     MEASUREMENT = "measurement"
     EXPOSURE = "exposure"
     OUTCOME = "outcome"
+    ANATOMY = "anatomy"
+    CELL_TYPE = "cell_type"
+    VARIANT = "variant"
 
 
 class MappingKind(str, Enum):
@@ -33,6 +36,10 @@ class MappingKind(str, Enum):
 
 class Predicate(str, Enum):
     IS_A = "IS_A"
+    PART_OF = "PART_OF"
+    REGULATES = "REGULATES"
+    LOCATED_IN = "LOCATED_IN"
+    EXPRESSED_IN = "EXPRESSED_IN"
     HAS_PHENOTYPE = "HAS_PHENOTYPE"
     ASSOCIATED_WITH_GENE = "ASSOCIATED_WITH_GENE"
     INVOLVES_PATHWAY = "INVOLVES_PATHWAY"

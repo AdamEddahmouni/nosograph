@@ -15,6 +15,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import logging
 import os
 import sys
 import urllib.error
@@ -31,14 +32,6 @@ from med_research.exceptions import (
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import LiteratureArticle, LiteratureResults
 from med_research.rate_limiter import rate_limited_sleep
-
-# Add parent to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
-
-import logging
 
 logger = logging.getLogger(__name__)
 
@@ -57,14 +50,12 @@ class EntityContext:
     ) -> EntityContext:
         source = entities.get("genes", {})
         return cls(
-            genes={
-                gene_id: source.get(gene_id, {"name": gene_id})
-                for gene_id in gene_coverage
-            }
+            genes={gene_id: source.get(gene_id, {"name": gene_id}) for gene_id in gene_coverage}
         )
 
     def get(self, gene_id: str) -> dict[str, Any]:
         return self.genes.get(gene_id, {"name": gene_id})
+
 
 try:
     from Bio import Entrez, Medline
@@ -112,6 +103,7 @@ def resolve_entrez_email(email: str | None = None, *, live: bool = True) -> str:
             "for live PubMed requests (NCBI Entrez requires a contact email)."
         )
     return _PLACEHOLDER_ENTREZ_EMAIL
+
 
 # ── PubMed queries for SLE/lupus ──────────────────────────────────────────
 
@@ -647,9 +639,7 @@ def main():
         progress_callback=cli_progress,
     )
 
-    entity_context = EntityContext.from_results(
-        entities, results.get("gene_coverage", {})
-    )
+    entity_context = EntityContext.from_results(entities, results.get("gene_coverage", {}))
 
     if results.get("status") == "blocked":
         coverage = results.get("coverage", {})

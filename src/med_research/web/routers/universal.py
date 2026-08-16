@@ -7,12 +7,18 @@ from uuid import UUID
 
 from fastapi import APIRouter, HTTPException, Query
 
+from med_research.biomed.analytics.duckdb_engine import DuckDBBiomedicalEngine
 from med_research.biomed.comparison.service import ConditionComparisonService
 from med_research.biomed.errors import BiomedicalValidationError
 from med_research.biomed.identifiers import normalize_curie
 from med_research.biomed.models import EvidenceDirection, Predicate
 from med_research.web.dependencies_biomed import BiomedicalRepositoryDep
 from med_research.web.models.universal import (
+    AnalyticsSharedMechanismView,
+    AnalyticsStatsView,
+    AnalyticsSubgraphEdgeView,
+    AnalyticsSubgraphView,
+    AnalyticsTargetView,
     ComparisonRequest,
     ComparisonResultView,
     ConditionClaimView,
@@ -147,3 +153,87 @@ def get_comparison_run(
     if view is None:
         raise HTTPException(status_code=404, detail=f"Comparison run '{run_id}' not found")
     return view
+
+
+@router.get("/analytics/stats", response_model=AnalyticsStatsView)
+def get_analytics_stats(
+    repository: BiomedicalRepositoryDep,
+) -> AnalyticsStatsView:
+    engine = DuckDBBiomedicalEngine(repository.database.path)
+    stats = engine.get_summary_statistics()
+    return AnalyticsStatsView(
+        total_entities=stats.get("total_entities", 0),
+        total_claims=stats.get("total_claims", 0),
+        total_evidence=stats.get("total_evidence", 0),
+        total_snapshots=stats.get("total_snapshots", 0),
+        entity_type_distribution=stats.get("entity_type_distribution", {}),
+        predicate_distribution=stats.get("predicate_distribution", {}),
+    )
+
+
+@router.get("/analytics/targets/{curie}", response_model=list[AnalyticsTargetView])
+def prioritize_targets(
+    curie: str,
+    repository: BiomedicalRepositoryDep,
+    top_k: int = Query(20, ge=1, le=100),
+) -> list[AnalyticsTargetView]:
+    engine = DuckDBBiomedicalEngine(repository.database.path)
+    norm_curie = normalize_curie(curie)
+    targets = engine.prioritize_targets_vectorized(norm_curie, top_k=top_k)
+    return [
+        AnalyticsTargetView(
+            target_curie=t.target_curie,
+            target_name=t.target_name,
+            target_type=t.target_type,
+            supporting_count=t.supporting_count,
+            contradictory_count=t.contradictory_count,
+            evidence_score=t.evidence_score,
+            pathway_count=t.pathway_count,
+            phenotype_count=t.phenotype_count,
+        )
+        for t in targets
+    ]
+
+
+@router.get("/analytics/shared-mechanisms", response_model=AnalyticsSharedMechanismView)
+def get_shared_mechanisms(
+    repository: BiomedicalRepositoryDep,
+    left_curie: str = Query(...),
+    right_curie: str = Query(...),
+) -> AnalyticsSharedMechanismView:
+    engine = DuckDBBiomedicalEngine(repository.database.path)
+    left = normalize_curie(left_curie)
+    right = normalize_curie(right_curie)
+    res = engine.compute_shared_mechanisms(left, right)
+    return AnalyticsSharedMechanismView(
+        condition_a=res.condition_a,
+        condition_b=res.condition_b,
+        shared_pathways=res.shared_pathways,
+        shared_genes=res.shared_genes,
+        jaccard_similarity=res.jaccard_similarity,
+    )
+
+
+@router.get("/analytics/subgraph/{curie}", response_model=AnalyticsSubgraphView)
+def get_subgraph(
+    curie: str,
+    repository: BiomedicalRepositoryDep,
+    max_hops: int = Query(2, ge=1, le=4),
+    limit: int = Query(100, ge=1, le=500),
+) -> AnalyticsSubgraphView:
+    engine = DuckDBBiomedicalEngine(repository.database.path)
+    norm_curie = normalize_curie(curie)
+    edges = engine.find_multi_hop_subgraph(norm_curie, max_hops=max_hops, limit=limit)
+    return AnalyticsSubgraphView(
+        root_curie=norm_curie,
+        edges=[
+            AnalyticsSubgraphEdgeView(
+                source=e.source,
+                predicate=e.predicate,
+                target=e.target,
+                evidence_count=e.evidence_count,
+            )
+            for e in edges
+        ],
+        edge_count=len(edges),
+    )

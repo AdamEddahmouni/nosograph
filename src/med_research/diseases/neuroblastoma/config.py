@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Neuroblastoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Neuroblastoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Neuroblastoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Neuroblastoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Neuroblastoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Neuroblastoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Neuroblastoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Neuroblastoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

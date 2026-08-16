@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Blepharitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Blepharitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Blepharitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Blepharitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Blepharitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Blepharitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Blepharitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Blepharitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -168,8 +168,7 @@ DRUG_SAFETY_RISK = {
         "tobramycin",
         "vancomycin hydrochloride",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

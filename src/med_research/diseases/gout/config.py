@@ -80,8 +80,7 @@ CAR_T_SCORES = {
     },
 }
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "allopurinol",
         "apremilast",
@@ -106,8 +105,7 @@ DRUG_SAFETY_RISK = {
         "triamcinolone acetonide",
         "ulodesine",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

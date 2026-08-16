@@ -20,8 +20,14 @@ def test_stream_job_progress_invalid_uuid() -> None:
 def test_stream_job_progress_valid_uuid(monkeypatch: pytest.MonkeyPatch) -> None:
     fake_job_id = "00000000-0000-0000-0000-000000000001"
 
-    # Mock _safe_result_state to return SUCCESS immediately
+    from unittest.mock import MagicMock
+
+    # Mock _safe_result_state and AsyncResult to return SUCCESS immediately without connecting to Redis
     monkeypatch.setattr("med_research.web.routers.stream._safe_result_state", lambda res: "SUCCESS")
+    mock_result = MagicMock()
+    mock_result.result = {"data": "done"}
+    mock_result.info = None
+    monkeypatch.setattr("med_research.web.routers.stream.AsyncResult", lambda *a, **kw: mock_result)
 
     client = TestClient(app)
     response = client.get(f"/api/stream/jobs/{fake_job_id}")
@@ -29,3 +35,4 @@ def test_stream_job_progress_valid_uuid(monkeypatch: pytest.MonkeyPatch) -> None
     assert "text/event-stream" in response.headers.get("content-type", "")
     assert "event: job_status" in response.text
     assert fake_job_id in response.text
+

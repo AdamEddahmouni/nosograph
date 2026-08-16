@@ -21,23 +21,14 @@ Usage:
 
 import argparse
 import json
-import sys
+import logging
 from pathlib import Path
 from typing import Any, cast
-
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-import logging
 
 from med_research.cache import disease_output_path, write_json_atomic
 from med_research.pipeline.knowledge_graph.config import load_drugs as config_load_drugs
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import ExpressionCorrelation
-
-if sys.platform == "win32":
-    _stdout = sys.stdout
-    if hasattr(_stdout, "reconfigure"):
-        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -355,6 +346,14 @@ DRUG_CELL_TYPES = {
     "rozanolixizumab": ["B_cell", "plasma_cell"],
 }
 
+ALL_DRUG_AFFECTED_GENES: dict[str, frozenset[str]] = {
+    drug_id: frozenset(
+        DRUG_TARGET_GENES.get(drug_id, [])
+        + DRUG_PATHWAY_REVERSAL.get(drug_id, {}).get("downregulated_genes", [])
+    )
+    for drug_id in set(DRUG_TARGET_GENES) | set(DRUG_PATHWAY_REVERSAL)
+}
+
 
 # ── Scoring Functions ────────────────────────────────────────────────────
 
@@ -410,28 +409,28 @@ def score_target_disease_overlap(drug_id: str, signature: dict[str, Any] | None 
         signature: Optional signature dict with upregulated/downregulated gene maps
     """
     up_genes, down_genes, _, _ = _normalize_signature(signature)
+    all_affected = ALL_DRUG_AFFECTED_GENES.get(drug_id, frozenset())
 
-    targets = DRUG_TARGET_GENES.get(drug_id, [])
-
-    pathway_genes = set()
-    if drug_id in DRUG_PATHWAY_REVERSAL:
-        pathway_genes = set(DRUG_PATHWAY_REVERSAL[drug_id].get("downregulated_genes", []))
-
-    all_affected = set(targets) | pathway_genes
-    upregulated_overlap = all_affected & set(up_genes.keys())
-    downregulated_overlap = all_affected & set(down_genes.keys())
-
-    up_score = sum(up_genes.get(g, 0) for g in upregulated_overlap)
-    down_score = sum(down_genes.get(g, 0) for g in downregulated_overlap)
+    up_score = sum(up_genes[g] for g in all_affected if g in up_genes)
+    down_score = sum(down_genes[g] for g in all_affected if g in down_genes)
 
     total = up_score * 0.7 + down_score * 0.3
     return round(min(10.0, float(total) * 0.7 + 1.0), 1)
 
 
-def score_cell_type_specificity(drug_id: str) -> float:
-    """Score based on how relevant the drug's cell targets are to SLE pathology."""
+def score_cell_type_specificity(drug_id: str, drug: dict | None = None) -> float:
+    """Score based on how relevant the drug's cell targets are to disease pathology.
+
+    Combines curated cellular targets with single-cell RNA-seq Tau specificity metrics.
+    """
     cell_types = DRUG_CELL_TYPES.get(drug_id, [])
     if not cell_types:
+        if drug and drug.get("targets"):
+            from med_research.pipeline.gene_expression.single_cell import (
+                score_cell_type_specificity_dimension,
+            )
+
+            return score_cell_type_specificity_dimension(drug.get("targets", []))
         return 3.0  # Unknown — neutral
 
     scores = [CELL_TYPE_RELEVANCE.get(ct, 5.0) for ct in cell_types]
@@ -505,7 +504,7 @@ def correlate_drug(
     """
     sig_rev = score_signature_reversal(drug_id, signature)
     overlap = score_target_disease_overlap(drug_id, signature)
-    cell_type = score_cell_type_specificity(drug_id)
+    cell_type = score_cell_type_specificity(drug_id, drug)
     evidence = score_expression_evidence(drug_id, all_drugs)
     direction = score_directionality(drug_id)
 
@@ -788,4 +787,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

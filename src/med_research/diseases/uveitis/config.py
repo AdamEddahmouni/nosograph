@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Uveitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Uveitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Uveitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Uveitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Uveitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Uveitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Uveitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Uveitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -146,8 +146,7 @@ DRUG_SAFETY_RISK = {
         "triamcinolone acetonide",
         "triamcinolone hexacetonide",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

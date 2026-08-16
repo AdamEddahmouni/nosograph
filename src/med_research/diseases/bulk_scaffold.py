@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import contextlib
 import json
 import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -16,22 +17,48 @@ from med_research.diseases.scaffold import (
     build_drugs_json,
     build_genes_json,
     build_pathways_json,
-    build_profile,
     build_relationships_json,
     fetch_reactome_pathways,
-    generate_config_py,
     load_disease_registry,
     merge_drugs,
     merge_genes,
     merge_pathways,
     populate_scaffolded_config,
-    refresh_disease,
     sanitize_id,
     scaffold_disease,
 )
 from med_research.logging_config import get_logger
 
 logger = get_logger(__name__)
+
+REACTOME_CACHE_PATH = (
+    Path(__file__).resolve().parents[3] / "data" / "bulk" / "reactome" / "pathways_by_gene.json"
+)
+
+
+def _reactome_from_cache(gene_symbol: str, max_pathways: int) -> list[dict]:
+    if not REACTOME_CACHE_PATH.is_file():
+        return []
+    try:
+        cache = json.loads(REACTOME_CACHE_PATH.read_text(encoding="utf-8"))
+        return list(cache.get(gene_symbol, []))[:max_pathways]
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def _fetch_reactome_pathways(display_name: str, max_pathways: int, genes: list[dict]) -> list[dict]:
+    """Prefer local Reactome cache; fall back to live API when cache miss."""
+    pathways: list[dict] = []
+    for gene in genes[:5]:
+        symbol = gene.get("symbol") or gene.get("id") or ""
+        if not symbol:
+            continue
+        cached = _reactome_from_cache(symbol, max_pathways)
+        if cached:
+            pathways.extend(cached)
+    if pathways:
+        return pathways[:max_pathways]
+    return fetch_reactome_pathways(display_name, max_pathways)
 
 
 def collect_sources_from_bulk(
@@ -72,7 +99,7 @@ def collect_sources_from_bulk(
 
     reactome: list[dict] = []
     if use_reactome:
-        reactome = fetch_reactome_pathways(display_name, max_pathways)
+        reactome = _fetch_reactome_pathways(display_name, max_pathways, genes_json["genes"])
     pathways_json = build_pathways_json(reactome, genes_json["genes"], max_pathways)
 
     return {
@@ -119,10 +146,8 @@ def _harvest_one(
             overwrite=overwrite,
             use_cache=False,
         )
-        try:
+        with contextlib.suppress(Exception):
             populate_scaffolded_config(disease_id)
-        except Exception:
-            pass
         return {"action": "scaffolded", **summary}
 
     sources = collect_sources_from_bulk(
@@ -159,10 +184,8 @@ def _harvest_one(
             json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
         )
 
-    try:
+    with contextlib.suppress(Exception):
         populate_scaffolded_config(disease_id)
-    except Exception:
-        pass
 
     return {
         "action": "refreshed",
@@ -227,7 +250,9 @@ def bulk_harvest(
         entries = [
             e
             for e in entries
-            if not (_diseases_root() / sanitize_id(e.get("id", "")) / "data" / "profile.json").exists()
+            if not (
+                _diseases_root() / sanitize_id(e.get("id", "")) / "data" / "profile.json"
+            ).exists()
         ]
     if limit and limit > 0:
         entries = entries[:limit]
@@ -252,8 +277,16 @@ def bulk_harvest(
         for did, name, efo in tasks:
             try:
                 result = _harvest_one(
-                    did, name, efo, bulk_root, max_genes, max_drugs, max_pathways,
-                    use_gwas, use_reactome, overwrite,
+                    did,
+                    name,
+                    efo,
+                    bulk_root,
+                    max_genes,
+                    max_drugs,
+                    max_pathways,
+                    use_gwas,
+                    use_reactome,
+                    overwrite,
                 )
                 succeeded.append(result)
             except Exception as exc:
@@ -263,8 +296,16 @@ def bulk_harvest(
             futures = {
                 pool.submit(
                     _harvest_one,
-                    did, name, efo, bulk_root, max_genes, max_drugs, max_pathways,
-                    use_gwas, use_reactome, overwrite,
+                    did,
+                    name,
+                    efo,
+                    bulk_root,
+                    max_genes,
+                    max_drugs,
+                    max_pathways,
+                    use_gwas,
+                    use_reactome,
+                    overwrite,
                 ): did
                 for did, name, efo in tasks
             }

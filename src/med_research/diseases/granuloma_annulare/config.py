@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Granuloma annulare[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Granuloma annulare[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Granuloma annulare[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Granuloma annulare[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Granuloma annulare[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Granuloma annulare[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Granuloma annulare[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Granuloma annulare[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -108,15 +108,13 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "abrocitinib",
         "deucravacitinib",
         "tofacitinib",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

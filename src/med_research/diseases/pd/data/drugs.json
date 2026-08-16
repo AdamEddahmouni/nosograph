@@ -5,42 +5,74 @@
     {
       "id": "levodopa",
       "name": "Levodopa",
-      "targets": [
-        "SLC6A3"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Dopamine precursor converted by DOPA decarboxylase",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "DDC",
+      "mechanism": "Dopamine precursor converted by DOPA decarboxylase to replenish striatal dopamine",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Standard of care for motor symptom management",
+      "references": ["PMID:28795767", "PMID:30138612"],
+      "adverse_effects": "Dyskinesia, nausea, orthostatic hypotension, motor fluctuations"
     },
     {
       "id": "pramipexole",
       "name": "Pramipexole",
-      "targets": [
-        "DRD2"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Non-ergot dopamine D2/D3 receptor agonist",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "DRD2",
+      "mechanism": "Non-ergot selective dopamine D2/D3 receptor agonist",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Effective monotherapy and adjunct to levodopa",
+      "references": ["PMID:22021175"],
+      "adverse_effects": "Somnolence, impulse control disorders, peripheral edema, hallucinations"
     },
     {
       "id": "rasagiline",
       "name": "Rasagiline",
-      "targets": [
-        "MAOB"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Irreversible monoamine oxidase-B inhibitor",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "MAOB",
+      "mechanism": "Irreversible selective monoamine oxidase type B (MAO-B) inhibitor",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Symptomatic improvement and motor fluctuation reduction",
+      "references": ["PMID:19779051"],
+      "adverse_effects": "Headache, nausea, postural hypotension, insomnia"
     },
     {
       "id": "entacapone",
       "name": "Entacapone",
-      "targets": [
-        "COMT"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Reversible catechol-O-methyltransferase inhibitor",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "COMT",
+      "mechanism": "Reversible peripheral catechol-O-methyltransferase (COMT) inhibitor",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Extends levodopa half-life and reduces OFF time",
+      "references": ["PMID:15060416"],
+      "adverse_effects": "Urine discoloration, diarrhea, dyskinesia exacerbation, nausea"
+    },
+    {
+      "id": "safinamide",
+      "name": "Safinamide",
+      "type": "Small molecule",
+      "target": "MAOB",
+      "mechanism": "Dual MAO-B inhibitor and glutamate release modulator",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Adjunctive therapy for motor fluctuations and OFF episodes",
+      "references": ["PMID:28222933"],
+      "adverse_effects": "Dyskinesia, insomnia, nausea, hypertension"
+    },
+    {
+      "id": "amantadine",
+      "name": "Amantadine",
+      "type": "Small molecule",
+      "target": "GRIN1",
+      "mechanism": "NMDA receptor antagonist and dopamine release promoter",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Reduces levodopa-induced dyskinesia and motor symptoms",
+      "references": ["PMID:28771487"],
+      "adverse_effects": "Livedo reticularis, hallucinations, ankle edema, dry mouth"
     }
   ]
 }

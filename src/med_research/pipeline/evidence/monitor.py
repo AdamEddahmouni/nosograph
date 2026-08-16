@@ -19,24 +19,18 @@ Usage:
 import argparse
 import hashlib
 import json
+import logging
 import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any, cast
 
+from med_research.pipeline.evidence.gatherer import gather_evidence
+from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.rate_limiter import rate_limited_sleep
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-import logging
-
-from med_research.pipeline.evidence.gatherer import gather_evidence
-from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
-
 logger = logging.getLogger(__name__)
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 SNAPSHOTS_DIR = DATA_DIR / "snapshots"
@@ -325,9 +319,12 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
                 )
 
     # Compare drugs
-    for drug in curr["tracked_drugs"][:25]:
-        prev_data = prev["drugs"].get(drug, {})
-        curr_data = curr["drugs"].get(drug, {})
+    tracked_drugs = curr.get("tracked_drugs", prev.get("tracked_drugs", list(curr.get("drugs", {}).keys())))
+    prev_drugs = prev.get("drugs", {})
+    curr_drugs = curr.get("drugs", {})
+    for drug in tracked_drugs[:25]:
+        prev_data = prev_drugs.get(drug, {})
+        curr_data = curr_drugs.get(drug, {})
         if not prev_data:
             changes["new_drugs"].append(drug)
         elif prev_data.get("hash") != curr_data.get("hash"):
@@ -349,9 +346,12 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
                 )
 
     # Compare genes
-    for gene in curr["tracked_genes"][:25]:
-        prev_data = prev["genes"].get(gene, {})
-        curr_data = curr["genes"].get(gene, {})
+    tracked_genes = curr.get("tracked_genes", prev.get("tracked_genes", list(curr.get("genes", {}).keys())))
+    prev_genes = prev.get("genes", {})
+    curr_genes = curr.get("genes", {})
+    for gene in tracked_genes[:25]:
+        prev_data = prev_genes.get(gene, {})
+        curr_data = curr_genes.get(gene, {})
         if not prev_data:
             changes["new_genes"].append(gene)
             alerts.append(
@@ -588,4 +588,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

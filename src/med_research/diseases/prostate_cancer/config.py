@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Prostate cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Prostate cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Prostate cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Prostate cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Prostate cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Prostate cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Prostate cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Prostate cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

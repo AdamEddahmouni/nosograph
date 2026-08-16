@@ -83,9 +83,7 @@ def render_html(dossier: EvidenceDossier) -> str:
     graph_rows = []
     for explanation in dossier.graph_explanations:
         path = (
-            " → ".join(explanation.path_labels)
-            if explanation.path_labels
-            else explanation.reason
+            " → ".join(explanation.path_labels) if explanation.path_labels else explanation.reason
         )
         graph_rows.append(
             "<tr>"

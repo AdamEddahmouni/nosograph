@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Fibromyalgia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Fibromyalgia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Fibromyalgia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Fibromyalgia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Fibromyalgia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Fibromyalgia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Fibromyalgia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Fibromyalgia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

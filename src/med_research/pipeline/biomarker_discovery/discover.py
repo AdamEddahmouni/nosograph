@@ -20,22 +20,15 @@ Usage:
 
 import argparse
 import json
-import sys
+import logging
 from pathlib import Path
 from typing import Any, cast
-
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-import logging
 
 from med_research.cache import disease_output_path, write_json_atomic
 from med_research.exceptions import DataValidationError
 from med_research.pipeline.knowledge_graph.config import load_relationships
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import BiomarkerRow
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -79,35 +72,35 @@ def load_all_modules(disease_id: str = "sle") -> dict:
     try:
         data = load_json(_module_output_path("expression", "expression_correlations", disease_id))
         results["expression"] = {d["drug_id"]: d for d in data.get("drugs", [])}
-    except (FileNotFoundError, KeyError):
+    except (FileNotFoundError, KeyError, OSError, PermissionError):
         pass
 
     # CAR-T Response Predictor
     try:
         data = load_json(_module_output_path("cart", "car_t_scores", disease_id))
         results["cart"] = {g["gene_id"]: g for g in data.get("genes", [])}
-    except (FileNotFoundError, KeyError):
+    except (FileNotFoundError, KeyError, OSError, PermissionError):
         pass
 
     # Drug Repurposing candidates
     try:
         data = load_json(_module_output_path("repurpose", "candidates", disease_id))
         results["repurpose"] = data.get("repurposing_candidates", [])
-    except (FileNotFoundError, KeyError):
+    except (FileNotFoundError, KeyError, OSError, PermissionError):
         pass
 
     # Adverse Events
     try:
         data = load_json(_module_output_path("safety", "profiles", disease_id))
         results["safety"] = data
-    except (FileNotFoundError, KeyError, json.JSONDecodeError):
+    except (FileNotFoundError, KeyError, OSError, PermissionError, json.JSONDecodeError):
         results["safety"] = {}
 
     # Drug Synergy
     try:
         data = load_json(_module_output_path("synergy", "synergy_results", disease_id))
         results["synergy"] = data.get("pairs", [])
-    except (FileNotFoundError, KeyError):
+    except (FileNotFoundError, KeyError, OSError, PermissionError):
         pass
 
     return results
@@ -229,6 +222,21 @@ def map_gene_to_modules(genes: dict, module_data: dict, disease_id: str = "sle")
             row["consistency"] = round(max(0, 10 - variance * 2), 1)
         else:
             row["consistency"] = 5.0
+
+        # Single-cell RNA-seq cell-type specificity
+        try:
+            from med_research.pipeline.gene_expression.single_cell import (
+                get_gene_cell_specificity,
+            )
+
+            sc_spec = get_gene_cell_specificity(gene_id)
+            row["cell_tau_specificity"] = sc_spec["tau_specificity"]
+            row["top_cell_type"] = sc_spec["top_cell_type"]
+            row["is_cell_type_specific"] = sc_spec["is_cell_type_specific"]
+        except Exception:
+            row["cell_tau_specificity"] = 0.5
+            row["top_cell_type"] = "unassigned"
+            row["is_cell_type_specific"] = False
 
         matrix.append(row)
 
@@ -440,4 +448,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

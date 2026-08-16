@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Ebola virus disease[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Ebola virus disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Ebola virus disease[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Ebola virus disease[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Ebola virus disease[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Ebola virus disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Ebola virus disease[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Ebola virus disease[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -91,8 +91,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "amiodarone",
         "ansuvimab",
@@ -111,8 +110,7 @@ DRUG_SAFETY_RISK = {
         "remdesivir",
         "sunitinib",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

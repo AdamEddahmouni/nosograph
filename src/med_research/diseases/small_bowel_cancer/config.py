@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Small bowel adenocarcinoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Small bowel adenocarcinoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Small bowel adenocarcinoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Small bowel adenocarcinoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Small bowel adenocarcinoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Small bowel adenocarcinoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Small bowel adenocarcinoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Small bowel adenocarcinoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

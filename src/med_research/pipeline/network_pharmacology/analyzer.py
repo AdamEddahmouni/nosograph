@@ -33,11 +33,6 @@ from med_research.pipeline.results import (
     NetworkAnalysis,
 )
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
-
 DATA_DIR = Path(__file__).parent / "data"
 
 logger = logging.getLogger(__name__)
@@ -336,38 +331,49 @@ def compute_all_metrics(
 
 def print_analysis(results: NetworkAnalysis) -> None:
     """Print formatted analysis summary."""
-    gm = results["graph_metrics"]
+    if not isinstance(results, dict):
+        return
+    gm = results.get("graph_metrics")
+    if not gm:
+        return
     logger.info("\n" + "=" * 75)
     logger.info("🌐 NETWORK PHARMACOLOGY ANALYSIS")
     logger.info("=" * 75)
 
     logger.info("\n📊 Graph-Level Metrics:")
-    logger.info(f"   Nodes: {gm['n_nodes']}  |  Edges: {gm['n_edges']}")
-    logger.info(f"   Density: {gm['density']}  |  Components: {gm['n_components']}")
-    logger.info(f"   Diameter: {gm['diameter']}  |  Avg Path: {gm['avg_shortest_path']}")
+    logger.info(f"   Nodes: {gm.get('n_nodes', 0)}  |  Edges: {gm.get('n_edges', 0)}")
+    logger.info(f"   Density: {gm.get('density', 0)}  |  Components: {gm.get('n_components', 0)}")
+    logger.info(f"   Diameter: {gm.get('diameter', 0)}  |  Avg Path: {gm.get('avg_shortest_path', 0)}")
     logger.info(
-        f"   Avg Clustering: {gm['avg_clustering']}  |  Assortativity: {gm['assortativity']}"
+        f"   Avg Clustering: {gm.get('avg_clustering', 0)}  |  Assortativity: {gm.get('assortativity', 0)}"
     )
 
-    com = results["communities"]
-    logger.info(f"\n🔗 Community Detection ({com['algorithm']}, modularity={com['modularity']}):")
-    logger.info(f"   {com['n_communities']} communities found")
-    for c in com["communities"]:
-        logger.info(f"   Community {c['id']}: {c['size']} nodes (dominant: {c['dominant_type']})")
+    com = results.get("communities") or {}
+    if com:
+        logger.info(f"\n🔗 Community Detection ({com.get('algorithm')}, modularity={com.get('modularity')}):")
+        logger.info(f"   {com.get('n_communities', 0)} communities found")
+        for c in com.get("communities", []):
+            logger.info(f"   Community {c['id']}: {c['size']} nodes (dominant: {c['dominant_type']})")
 
-    logger.info("\n🌉 Top 10 Bridge Nodes (betweenness centrality):")
-    for i, b in enumerate(results["bridge_nodes"][:10], 1):
-        logger.info(f"   {i:2d}. {b['label']} ({b['type']}) — {b['betweenness']:.4f}")
+    bridge_nodes = results.get("bridge_nodes") or []
+    if bridge_nodes:
+        logger.info("\n🌉 Top 10 Bridge Nodes (betweenness centrality):")
+        for i, b in enumerate(bridge_nodes[:10], 1):
+            logger.info(f"   {i:2d}. {b['label']} ({b['type']}) — {b['betweenness']:.4f}")
 
-    logger.info("\n🎯 Top 5 by PageRank:")
-    pr = results["centrality"].get("pagerank", [])
-    for i, n in enumerate(pr[:5], 1):
-        logger.info(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
+    centrality = results.get("centrality") or {}
+    pr = centrality.get("pagerank", [])
+    if pr:
+        logger.info("\n🎯 Top 5 by PageRank:")
+        for i, n in enumerate(pr[:5], 1):
+            logger.info(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
 
-    logger.info("\n⭐ Top 5 by Eigenvector Centrality:")
-    ec = results["centrality"].get("eigenvector", [])
-    for i, n in enumerate(ec[:5], 1):
-        logger.info(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
+    ec = centrality.get("eigenvector", [])
+    if ec:
+        logger.info("\n⭐ Top 5 by Eigenvector Centrality:")
+        for i, n in enumerate(ec[:5], 1):
+            logger.info(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
+
 
 
 def main():
@@ -435,4 +441,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(prolactin-producing pituitary gland adenoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(prolactin-producing pituitary gland adenoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(prolactin-producing pituitary gland adenoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(prolactin-producing pituitary gland adenoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(prolactin-producing pituitary gland adenoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(prolactin-producing pituitary gland adenoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(prolactin-producing pituitary gland adenoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(prolactin-producing pituitary gland adenoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

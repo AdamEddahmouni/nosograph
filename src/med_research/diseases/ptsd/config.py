@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(post-traumatic stress disorder[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(post-traumatic stress disorder[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(post-traumatic stress disorder[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(post-traumatic stress disorder[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(post-traumatic stress disorder[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(post-traumatic stress disorder[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(post-traumatic stress disorder[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(post-traumatic stress disorder[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -126,8 +126,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "aprepitant",
         "aripiprazole",
@@ -193,8 +192,7 @@ DRUG_SAFETY_RISK = {
         "verucerfont",
         "ziprasidone",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

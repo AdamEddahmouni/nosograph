@@ -20,9 +20,7 @@ def test_hpo_fixture_imports_phenotype_hierarchy() -> None:
         Path("tests/fixtures/biomed/hpo/minimal.json"),
         policy=hpo_policy(),
     )
-    assert any(
-        entity.entity_type == EntityType.PHENOTYPE for entity in bundle.entities
-    )
+    assert any(entity.entity_type == EntityType.PHENOTYPE for entity in bundle.entities)
     child = next(c for c in bundle.claims if c.predicate == Predicate.IS_A)
     assert child.subject_curie != child.object_curie
 

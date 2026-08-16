@@ -79,7 +79,9 @@ class VirtualScreeningModule(BasePipelineModule[ScreeningResult | UntargetedGene
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         scoring = opts.get("scoring")
         if scoring is None:
             from med_research.pipeline.virtual_screening.screening_strategy import (

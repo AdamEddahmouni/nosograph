@@ -101,6 +101,27 @@ def _dispatch(
     )
 
 
+def _run_module_cli(
+    module_id: str,
+    disease_id: str,
+    args: Any,
+    summary_fn: Any = None,
+    *,
+    context: str = "",
+    **opts: Any,
+) -> int:
+    """Standardized CLI dispatch and exit-code mapping for module commands."""
+    result = _dispatch(module_id, disease_id, args, **opts)
+    if not result.success:
+        return _exit_from_result(result, context=context or module_id)
+    if summary_fn is not None:
+        data = result.data
+        if data is None or _data_blocked(data):
+            return _exit_from_result(result, context=context or module_id) or 1
+        summary_fn(data)
+    return 0
+
+
 def _run_all_opts(args: Any) -> dict:
     """Common kwargs forwarded from ``run-all`` flags."""
     opts: dict = {}
@@ -369,6 +390,15 @@ def _build_parser() -> argparse.ArgumentParser:
     dbulk.add_argument("--skip-reactome", action="store_true", help="Skip Reactome fetch")
     dbulk.add_argument("--overwrite", action="store_true", help="Regenerate existing modules")
 
+    dcorpus = disease_sub.add_parser("corpus-status", help="Show corpus readiness tier report")
+    dcorpus.add_argument("--json", action="store_true", help="Emit JSON report")
+    dcorpus.add_argument("--limit", type=int, help="Limit diseases scanned")
+    dcorpus.add_argument(
+        "--output",
+        type=Path,
+        help="Write report to file (default: data/reports/disease_batch_status.json)",
+    )
+
     # ── Knowledge Graph ────────────────────────────────────────────────
     kg = sub.add_parser("kg", help="Build and export the knowledge graph")
     kg.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
@@ -490,7 +520,9 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Initialize and manage the canonical biomedical knowledge store",
     )
     biomed_sub = biomed.add_subparsers(dest="biomed_action", required=True)
-    biomed_init = biomed_sub.add_parser("init", help="Create or migrate the biomedical SQLite store")
+    biomed_init = biomed_sub.add_parser(
+        "init", help="Create or migrate the biomedical SQLite store"
+    )
     biomed_init.add_argument(
         "--db",
         type=Path,
@@ -500,8 +532,8 @@ def _build_parser() -> argparse.ArgumentParser:
     biomed_import = biomed_sub.add_parser("import", help="Import a pinned ontology artifact")
     biomed_import.add_argument(
         "biomed_import_resource",
-        choices=("mondo", "hp", "hpoa"),
-        help="Ontology resource to import",
+        choices=("mondo", "hp", "hpoa", "clinvar", "openfda", "go", "reactome", "uberon"),
+        help="Ontology or evidence resource to import",
     )
     biomed_import.add_argument("--artifact", type=Path, required=True, help="Local artifact path")
     biomed_import.add_argument(
@@ -606,6 +638,26 @@ def _build_parser() -> argparse.ArgumentParser:
     biomed_compare.add_argument("--intervention-weight", type=float, default=0.10)
     biomed_compare.add_argument("--biomarker-weight", type=float, default=0.0)
 
+    biomed_analytics = biomed_sub.add_parser(
+        "analytics",
+        help="Run DuckDB-accelerated biomedical graph analytics",
+    )
+    biomed_analytics.add_argument(
+        "--disease", help="Target disease/condition CURIE (e.g. MONDO:0007915)"
+    )
+    biomed_analytics.add_argument(
+        "--compare-with", help="Second condition CURIE to compute shared mechanisms"
+    )
+    biomed_analytics.add_argument(
+        "--stats", action="store_true", help="Print overall graph statistics"
+    )
+    biomed_analytics.add_argument("--top", type=int, default=20, help="Top K targets")
+    biomed_analytics.add_argument(
+        "--db",
+        type=Path,
+        help="Biomedical SQLite path (defaults to BIOMEDICAL_DB_PATH)",
+    )
+
     semantic = sub.add_parser("semantic", help="Semantic search over biomedical abstracts")
     semantic.add_argument("--disease", "-d", default="sle", help="Disease ID")
     semantic.add_argument("--query", "-q", default=None, help="Search query")
@@ -701,7 +753,9 @@ def _build_parser() -> argparse.ArgumentParser:
     )
 
     live = sub.add_parser("live", help="Query live external biological databases")
-    live.add_argument("--target", "-t", default="JAK2", help="Target gene symbol (e.g. JAK2, STAT3, TNF)")
+    live.add_argument(
+        "--target", "-t", default="JAK2", help="Target gene symbol (e.g. JAK2, STAT3, TNF)"
+    )
     live.add_argument("--disease", "-d", default="ra", help="Disease code (e.g. ra, sle, ms, ibd)")
     live.add_argument(
         "--source",
@@ -821,6 +875,31 @@ def cmd_disease(args):
     if args.disease_action == "list":
         return cmd_diseases(args)
 
+    if args.disease_action == "corpus-status":
+        import json
+
+        from med_research.diseases.corpus_status import DEFAULT_STATUS_PATH, build_corpus_status
+
+        report = build_corpus_status(limit=args.limit, include_symptom_source=True)
+        output = getattr(args, "output", None) or DEFAULT_STATUS_PATH
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+        agg = report["aggregate"]
+        logger.info(
+            "Corpus status: L3=%s L2=%s L1=%s L0=%s blocked=%s symptoms=%s",
+            agg.get("L3", 0),
+            agg.get("L2", 0),
+            agg.get("L1", 0),
+            agg.get("L0", 0),
+            agg.get("blocked", 0),
+            agg.get("symptoms_populated", 0),
+        )
+        if getattr(args, "json", False):
+            print(json.dumps(report, indent=2))
+        else:
+            print(f"Report written to {output}")
+        return 0
+
     if args.disease_action == "coverage":
         import json
 
@@ -861,7 +940,14 @@ def cmd_disease(args):
                 try:
                     checks = disease.validate()
                     name = disease.profile.name
-                except (OSError, ValueError, KeyError, TypeError, AttributeError, RuntimeError) as e:
+                except (
+                    OSError,
+                    ValueError,
+                    KeyError,
+                    TypeError,
+                    AttributeError,
+                    RuntimeError,
+                ) as e:
                     gaps.append(f"{did}: config load failed — {e}")
                     logger.warning(f"  ⚠️  {did:8s} config load failed: {e}")
                     continue
@@ -1167,14 +1253,13 @@ def cmd_repurpose(args):
     """Run drug repurposing analysis."""
     from med_research.pipeline.drug_repurposing.engine import analyze, print_top_candidates
 
-    result = _dispatch("drug_repurposing", args.disease, args)
-    if not result.success:
-        return _exit_from_result(result, context="Drug repurposing")
+    def _summarize(data: list) -> None:
+        analyze(data)
+        print_top_candidates(data, args.top)
 
-    scored = result.data or []
-    analyze(scored)
-    print_top_candidates(scored, args.top)
-    return 0
+    return _run_module_cli(
+        "drug_repurposing", args.disease, args, summary_fn=_summarize, context="Drug repurposing"
+    )
 
 
 def cmd_bioinformatics(args):
@@ -1233,9 +1318,7 @@ def cmd_literature(args):
 
     entities = payload.get("entities", {})
     candidates = payload.get("candidates", [])
-    entity_context = EntityContext.from_results(
-        entities, results.get("gene_coverage", {})
-    )
+    entity_context = EntityContext.from_results(entities, results.get("gene_coverage", {}))
     print_summary(results, candidates, entities, entity_context=entity_context)
     return 0
 
@@ -1310,14 +1393,13 @@ def cmd_synergy(args):
     """Drug combination synergy."""
     from med_research.pipeline.drug_synergy.engine import analyze, print_top_pairs
 
-    result = _dispatch("drug_synergy", args.disease, args)
-    if not result.success:
-        return _exit_from_result(result, context="Drug synergy")
+    def _summarize(data: list) -> None:
+        analyze(data)
+        print_top_pairs(data, args.top)
 
-    pairs = result.data or []
-    analyze(pairs)
-    print_top_pairs(pairs, args.top)
-    return 0
+    return _run_module_cli(
+        "drug_synergy", args.disease, args, summary_fn=_summarize, context="Drug synergy"
+    )
 
 
 def cmd_safety(args):
@@ -1368,12 +1450,13 @@ def cmd_network(args):
     """Network pharmacology analysis."""
     from med_research.pipeline.network_pharmacology.analyzer import print_analysis
 
-    result = _dispatch("network_pharmacology", args.disease, args)
-    if not result.success:
-        return _exit_from_result(result, context="Network pharmacology")
-
-    print_analysis(cast(NetworkAnalysis, result.data or {}))
-    return 0
+    return _run_module_cli(
+        "network_pharmacology",
+        args.disease,
+        args,
+        summary_fn=lambda d: print_analysis(cast(NetworkAnalysis, d)),
+        context="Network pharmacology",
+    )
 
 
 def cmd_expression(args):
@@ -1383,14 +1466,18 @@ def cmd_expression(args):
         print_top_correlations,
     )
 
-    result = _dispatch("gene_expression", args.disease, args, top=args.top)
-    if not result.success:
-        return _exit_from_result(result, context="Gene expression")
+    def _summarize(data: list) -> None:
+        analyze(data, None, disease_id=args.disease)
+        print_top_correlations(data, args.top)
 
-    results = result.data or []
-    analyze(results, None, disease_id=args.disease)
-    print_top_correlations(results, args.top)
-    return 0
+    return _run_module_cli(
+        "gene_expression",
+        args.disease,
+        args,
+        summary_fn=_summarize,
+        context="Gene expression",
+        top=args.top,
+    )
 
 
 def cmd_cart(args):
@@ -1426,14 +1513,17 @@ def cmd_biomarker(args):
         print_top_biomarkers,
     )
 
-    result = _dispatch("biomarker_discovery", args.disease, args)
-    if not result.success:
-        return _exit_from_result(result, context="Biomarker discovery")
+    def _summarize(data: list) -> None:
+        analyze(data)
+        print_top_biomarkers(data, args.top)
 
-    results = result.data or []
-    analyze(results)
-    print_top_biomarkers(results, args.top)
-    return 0
+    return _run_module_cli(
+        "biomarker_discovery",
+        args.disease,
+        args,
+        summary_fn=_summarize,
+        context="Biomarker discovery",
+    )
 
 
 def cmd_workspace(args):
@@ -1493,6 +1583,8 @@ def cmd_biomed(args: Any) -> int:
         return cmd_biomed_migrate(args)
     if action == "compare":
         return cmd_biomed_compare(args)
+    if action == "analytics":
+        return cmd_biomed_analytics(args)
     logger.error("Unknown biomed action: %s", action)
     return 1
 
@@ -1521,12 +1613,56 @@ def cmd_biomed_init(args: Any) -> int:
     return 0
 
 
+def cmd_biomed_analytics(args: Any) -> int:
+    """Execute DuckDB-accelerated biomedical graph analytics."""
+    from med_research.biomed.analytics.duckdb_engine import DuckDBBiomedicalEngine
+    from med_research.web.config import BIOMEDICAL_DB_PATH
+
+    path = getattr(args, "db", None) or BIOMEDICAL_DB_PATH
+    engine = DuckDBBiomedicalEngine(path)
+
+    if getattr(args, "stats", False):
+        stats = engine.get_summary_statistics()
+        print("=== Biomedical Knowledge Graph Summary ===")
+        for k, v in stats.items():
+            print(f"  {k}: {v}")
+        return 0
+
+    if getattr(args, "disease", None) and getattr(args, "compare_with", None):
+        shared = engine.compute_shared_mechanisms(args.disease, args.compare_with)
+        print(f"=== Shared Mechanisms: {args.disease} vs {args.compare_with} ===")
+        print(f"  Jaccard Similarity: {shared.jaccard_similarity:.4f}")
+        print(f"  Shared Pathways ({len(shared.shared_pathways)}): {shared.shared_pathways[:10]}")
+        print(f"  Shared Genes ({len(shared.shared_genes)}): {shared.shared_genes[:10]}")
+        return 0
+
+    if getattr(args, "disease", None):
+        top_k = getattr(args, "top", 20)
+        targets = engine.prioritize_targets_vectorized(args.disease, top_k=top_k)
+        print(f"=== Prioritized Targets for {args.disease} (Top {len(targets)}) ===")
+        for t in targets:
+            print(
+                f"  [{t.target_curie}] {t.target_name} ({t.target_type}) "
+                f"| Score: {t.evidence_score:.2f} (Sup: {t.supporting_count}, Con: {t.contradictory_count}) "
+                f"| Pathways: {t.pathway_count}"
+            )
+        return 0
+
+    print("Please specify --disease, --stats, or --compare-with. Run with --help for usage.")
+    return 0
+
+
 def cmd_biomed_import(args: Any) -> int:
     """Import a pinned ontology artifact into the biomedical store."""
+    from med_research.biomed.imports.clinvar_adapter import ClinVarImportAdapter
+    from med_research.biomed.imports.go_adapter import GOImportAdapter
     from med_research.biomed.imports.hpo import HpoOntologyAdapter
     from med_research.biomed.imports.hpoa import HpoAnnotationAdapter
     from med_research.biomed.imports.mondo import MondoAdapter
+    from med_research.biomed.imports.openfda_adapter import OpenFDAImportAdapter
+    from med_research.biomed.imports.reactome_adapter import ReactomeImportAdapter
     from med_research.biomed.imports.service import ImportService
+    from med_research.biomed.imports.uberon_adapter import UberonImportAdapter
     from med_research.biomed.models import ResourcePolicy
 
     resource = args.biomed_import_resource
@@ -1549,11 +1685,46 @@ def cmd_biomed_import(args: Any) -> int:
             license_url="https://hpo.jax.org/app/license",
             redistribution_policy="user_supplied",
         ),
+        "clinvar": ResourcePolicy(
+            resource_name="clinvar",
+            license_id="Public Domain",
+            license_url="https://www.ncbi.nlm.nih.gov/clinvar/",
+            redistribution_policy="user_supplied",
+        ),
+        "openfda": ResourcePolicy(
+            resource_name="openfda",
+            license_id="Public Domain",
+            license_url="https://open.fda.gov/",
+            redistribution_policy="user_supplied",
+        ),
+        "go": ResourcePolicy(
+            resource_name="go",
+            license_id="CC-BY-4.0",
+            license_url="http://geneontology.org",
+            redistribution_policy="permitted",
+        ),
+        "reactome": ResourcePolicy(
+            resource_name="reactome",
+            license_id="CC-BY-4.0",
+            license_url="https://reactome.org",
+            redistribution_policy="permitted",
+        ),
+        "uberon": ResourcePolicy(
+            resource_name="uberon",
+            license_id="CC-BY-3.0",
+            license_url="http://uberon.org",
+            redistribution_policy="permitted",
+        ),
     }
     adapters: dict[str, Any] = {
         "mondo": MondoAdapter(),
         "hp": HpoOntologyAdapter(),
         "hpoa": HpoAnnotationAdapter(),
+        "clinvar": ClinVarImportAdapter(),
+        "openfda": OpenFDAImportAdapter(),
+        "go": GOImportAdapter(),
+        "reactome": ReactomeImportAdapter(),
+        "uberon": UberonImportAdapter(),
     }
     repository = _biomed_repository(args)
     adapter = adapters[resource]
@@ -1773,23 +1944,21 @@ def cmd_workspace_migrate(args: Any) -> int:
 def cmd_semantic(args):
     """Semantic search."""
     query = args.query or _default_pubmed_query(args.disease)
-    result = _dispatch(
+    return _run_module_cli(
         "semantic_search",
         args.disease,
         args,
         query=query,
         top=args.top,
+        context="Semantic search",
     )
-    if not result.success:
-        return _exit_from_result(result, context="Semantic search")
-    return 0
 
 
 def cmd_evidence(args):
     """Multi-source evidence gathering."""
     query = args.query or _default_pubmed_query(args.disease)
     sources = None if args.sources == "all" else [s.strip() for s in args.sources.split(",")]
-    result = _dispatch(
+    return _run_module_cli(
         "evidence_gather",
         args.disease,
         args,
@@ -1797,17 +1966,15 @@ def cmd_evidence(args):
         sources=sources,
         max_per_source=args.max,
         use_cache=not args.no_cache,
+        context="Evidence gathering",
     )
-    if not result.success:
-        return _exit_from_result(result, context="Evidence gathering")
-    return 0
 
 
 def cmd_extractor(args):
     """LLM-powered evidence extraction."""
     query = args.query or _default_pubmed_query(args.disease)
     sources = [s.strip() for s in args.sources.split(",")]
-    result = _dispatch(
+    return _run_module_cli(
         "llm_extractor",
         args.disease,
         args,
@@ -1816,10 +1983,8 @@ def cmd_extractor(args):
         max_articles=args.max,
         model=args.model or None,
         use_cache=not args.no_cache,
+        context="LLM extractor",
     )
-    if not result.success:
-        return _exit_from_result(result, context="LLM extractor")
-    return 0
 
 
 def cmd_monitor(args):
@@ -1853,16 +2018,14 @@ def cmd_monitor(args):
             print_diff_summary((result.data or {}).get("diff", {}))
         return 0
 
-    result = _dispatch(
+    return _run_module_cli(
         "evidence_monitor",
         args.disease,
         args,
         sources=sources,
         max_per_query=args.max,
+        context="Evidence monitor",
     )
-    if not result.success:
-        return _exit_from_result(result, context="Evidence monitor")
-    return 0
 
 
 def cmd_cross_disease(args):
@@ -1873,15 +2036,14 @@ def cmd_cross_disease(args):
         print_top_drugs,
     )
 
-    result = _dispatch("cross_disease", args.disease, args)
-    if not result.success:
-        return _exit_from_result(result, context="Cross-disease analysis")
+    def _summarize(results: dict) -> None:
+        analyze(results)
+        print_top_drugs(results, top_n=args.top)
+        print_repurposing(results, top_n=args.top)
 
-    results = result.data or {}
-    analyze(results)
-    print_top_drugs(results, top_n=args.top)
-    print_repurposing(results, top_n=args.top)
-    return 0
+    return _run_module_cli(
+        "cross_disease", args.disease, args, summary_fn=_summarize, context="Cross-disease analysis"
+    )
 
 
 def _warn_config_gaps(disease: Disease) -> bool:
@@ -2172,14 +2334,18 @@ def cmd_live(args):
     if source in ("all", "opentargets"):
         try:
             from med_research.pipeline.external import OpenTargetsClient
+
             ot_client = OpenTargetsClient()
             target_info = ot_client.get_target_details(target)
             print(f"\n[Open Targets] Target Info: {target_info}")
             if "ensembl_id" in target_info and target_info["ensembl_id"]:
                 from med_research.pipeline.external.opentargets import DISEASE_EFO_MAP
+
                 efo = DISEASE_EFO_MAP.get(disease, disease)
                 ev = ot_client.get_target_disease_evidence(target_info["ensembl_id"], efo)
-                print(f"[Open Targets] Association Score ({disease.upper()}): {ev.get('overall_score', 0.0):.3f}")
+                print(
+                    f"[Open Targets] Association Score ({disease.upper()}): {ev.get('overall_score', 0.0):.3f}"
+                )
         except Exception as err:
             logger.warning("[Open Targets] Failed: %s", err)
             print(f"[Open Targets] Failed: {err}")
@@ -2187,6 +2353,7 @@ def cmd_live(args):
     if source in ("all", "gtex"):
         try:
             from med_research.pipeline.external import GTExClient
+
             gtex_client = GTExClient()
             exp = gtex_client.get_median_tissue_expression(target)
             print("\n[GTEx] Top 3 Median Expression Tissues:")
@@ -2199,14 +2366,20 @@ def cmd_live(args):
     if source in ("all", "chembl"):
         try:
             from med_research.pipeline.external import ChEMBLClient
+
             chembl = ChEMBLClient()
             t_res = chembl.search_target(target)
-            if t_res:
-                print(f"\n[ChEMBL] Target ID: {t_res.get('target_chembl_id')} ({t_res.get('pref_name')})")
-                acts = chembl.get_target_bioactivities(t_res.get("target_chembl_id"), limit=3)
+            if t_res and t_res.get("target_chembl_id"):
+                target_id = str(t_res.get("target_chembl_id"))
+                print(
+                    f"\n[ChEMBL] Target ID: {target_id} ({t_res.get('pref_name')})"
+                )
+                acts = chembl.get_target_bioactivities(target_id, limit=3)
                 print("[ChEMBL] Top Bioactivities:")
                 for a in acts:
-                    print(f"  - Molecule {a.get('molecule_chembl_id')}: {a.get('activity_type')} = {a.get('value')} {a.get('units')}")
+                    print(
+                        f"  - Molecule {a.get('molecule_chembl_id')}: {a.get('activity_type')} = {a.get('value')} {a.get('units')}"
+                    )
         except Exception as err:
             logger.warning("[ChEMBL] Failed: %s", err)
             print(f"[ChEMBL] Failed: {err}")
@@ -2214,10 +2387,13 @@ def cmd_live(args):
     if source in ("all", "uniprot"):
         try:
             from med_research.pipeline.external import UniProtClient
+
             uniprot = UniProtClient()
             prot = uniprot.get_protein_by_gene(target)
             if prot:
-                print(f"\n[UniProt] Accession: {prot.get('accession')}, Length: {prot.get('sequence_length')} AA")
+                print(
+                    f"\n[UniProt] Accession: {prot.get('accession')}, Length: {prot.get('sequence_length')} AA"
+                )
                 print(f"[UniProt] Domains: {', '.join(prot.get('domains', []))}")
         except Exception as err:
             logger.warning("[UniProt] Failed: %s", err)
@@ -2226,6 +2402,7 @@ def cmd_live(args):
     if source in ("all", "biorxiv"):
         try:
             from med_research.pipeline.external import BioRxivClient
+
             biorxiv = BioRxivClient()
             preprints = biorxiv.search_preprints_by_keyword(target, limit=2)
             print("\n[bioRxiv/medRxiv] Recent Preprints:")

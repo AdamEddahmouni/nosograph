@@ -41,10 +41,6 @@ from med_research.pipeline.results import GwasResult
 from med_research.rate_limiter import rate_limited_sleep
 
 logger = logging.getLogger(__name__)
-if sys.platform == "win32":
-    _stdout = sys.stdout
-    if hasattr(_stdout, "reconfigure"):
-        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 try:
     import requests
@@ -796,4 +792,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

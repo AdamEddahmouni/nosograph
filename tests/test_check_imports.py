@@ -10,8 +10,6 @@ an isolated script entrypoint (mirroring CI ``make check-imports``), not via an
 in-process import, so exit codes and stdout/stderr match production usage.
 """
 
-
-
 import subprocess
 import sys
 from pathlib import Path
@@ -62,8 +60,6 @@ STALE_FILES = {
 }
 
 pytestmark = pytest.mark.unit
-
-
 
 
 def build_repo(root: Path, files: dict[str, str]) -> None:

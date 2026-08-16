@@ -6,79 +6,91 @@
       "source": "SERPINA1",
       "type": "ASSOCIATED_WITH",
       "target": "Chronic Obstructive Pulmonary Disease",
-      "evidence": "Protease inhibitor deficit causing early emphysema."
-    },
-    {
-      "source": "MMP9",
-      "type": "ASSOCIATED_WITH",
-      "target": "Chronic Obstructive Pulmonary Disease",
-      "evidence": "Gelatinase degrading alveolar extracellular matrix."
+      "description": "Alpha-1 antitrypsin deficiency leads to uninhibited elastase activity and severe early emphysema."
     },
     {
       "source": "CHRNA3",
       "type": "ASSOCIATED_WITH",
       "target": "Chronic Obstructive Pulmonary Disease",
-      "evidence": "Nicotinic acetylcholine receptor locus associated with COPD susceptibility."
+      "description": "Nicotinic acetylcholine receptor locus associated with smoking behavior and COPD susceptibility."
+    },
+    {
+      "source": "CHRNA5",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "description": "Cholinergic receptor subunit associated with lung function decline."
+    },
+    {
+      "source": "MMP9",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "description": "Matrix metalloproteinase driving extracellular matrix degradation and airway remodeling."
+    },
+    {
+      "source": "ADAM33",
+      "type": "ASSOCIATED_WITH",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "description": "Metalloprotease implicated in airway smooth muscle proliferation and bronchial hyperresponsiveness."
     },
     {
       "source": "TGFB1",
       "type": "ASSOCIATED_WITH",
       "target": "Chronic Obstructive Pulmonary Disease",
-      "evidence": "Drives small airway fibrosis and extracellular matrix deposition."
+      "description": "Key driver of peribronchiolar fibrosis and tissue remodeling."
     },
     {
       "source": "tiotropium",
       "type": "TREATS",
       "target": "Chronic Obstructive Pulmonary Disease",
-      "evidence": "Approved disease treatment"
+      "description": "Approved long-acting muscarinic antagonist bronchodilator"
     },
     {
       "source": "tiotropium",
       "type": "TARGETS",
       "target": "CHRM3",
-      "evidence": "Long-acting muscarinic antagonist (LAMA) bronchodilator"
+      "description": "Blocks M3 muscarinic receptors on airway smooth muscle"
     },
     {
       "source": "roflumilast",
       "type": "TREATS",
       "target": "Chronic Obstructive Pulmonary Disease",
-      "evidence": "Approved disease treatment"
+      "description": "Approved oral PDE4 inhibitor for chronic bronchitis exacerbation reduction"
     },
     {
       "source": "roflumilast",
       "type": "TARGETS",
       "target": "PDE4B",
-      "evidence": "Oral PDE4 inhibitor reducing exacerbations"
+      "description": "Inhibits PDE4B to elevate cAMP and suppress neutrophil and macrophage activation"
     },
     {
       "source": "indacaterol",
       "type": "TREATS",
       "target": "Chronic Obstructive Pulmonary Disease",
-      "evidence": "Approved disease treatment"
+      "description": "Approved ultra-long-acting beta-2 agonist bronchodilator"
     },
     {
       "source": "indacaterol",
       "type": "TARGETS",
       "target": "ADRB2",
-      "evidence": "Ultra-long-acting beta-2 adrenergic agonist (LABA)"
+      "description": "Stimulates beta-2 adrenergic receptors relaxing bronchial smooth muscle"
     },
     {
-      "source": "SERPINA1",
-      "type": "PARTICIPATES_IN",
-      "target": "protease-imbalance",
-      "evidence": "Key component of Protease-Antiprotease Imbalance"
+      "source": "fluticasone_salmeterol",
+      "type": "TREATS",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "description": "Approved ICS/LABA combination therapy"
     },
     {
-      "source": "MMP9",
-      "type": "PARTICIPATES_IN",
-      "target": "protease-imbalance",
-      "evidence": "Key component of Protease-Antiprotease Imbalance"
+      "source": "dupilumab",
+      "type": "TREATS",
+      "target": "Chronic Obstructive Pulmonary Disease",
+      "description": "Approved biologic for COPD with type 2 inflammatory phenotype"
     },
     {
-      "source": "TGFB1",
-      "type": "PARTICIPATES_IN",
-      "target": "airway-remodeling",
-      "evidence": "Key component of Small Airway Remodeling"
+      "source": "dupilumab",
+      "type": "TARGETS",
+      "target": "IL4R",
+      "description": "Dual IL-4 and IL-13 receptor subunit antagonist"
     }
   ]
 }

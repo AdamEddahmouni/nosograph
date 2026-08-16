@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Non-Hodgkin lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Non-Hodgkin lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Non-Hodgkin lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Non-Hodgkin lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Non-Hodgkin lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Non-Hodgkin lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Non-Hodgkin lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Non-Hodgkin lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -220,8 +220,7 @@ DRUG_SAFETY_RISK = {
         "vorinostat",
         "yttrium y 90 epratuzumab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

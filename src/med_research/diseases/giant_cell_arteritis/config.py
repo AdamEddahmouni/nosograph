@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Giant cell arteritis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Giant cell arteritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Giant cell arteritis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Giant cell arteritis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Giant cell arteritis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Giant cell arteritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Giant cell arteritis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Giant cell arteritis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

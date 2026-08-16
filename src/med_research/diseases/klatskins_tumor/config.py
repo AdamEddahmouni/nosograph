@@ -94,10 +94,8 @@ DRUG_SAFETY_RISK = {
     "high_risk": [
         "gemcitabine",
     ],
-    "moderate_risk": [
-    ],
-    "low_risk": [
-    ],
+    "moderate_risk": [],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

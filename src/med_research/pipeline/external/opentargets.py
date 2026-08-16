@@ -14,9 +14,9 @@ OPENTARGETS_GRAPHQL_URL = "https://api.platform.opentargets.org/api/v4/graphql"
 # Disease symbol to EFO ID mapping for supported disease modules
 DISEASE_EFO_MAP = {
     "sle": "EFO_0002690",  # Systemic Lupus Erythematosus
-    "ra": "EFO_0000685",   # Rheumatoid Arthritis
-    "ms": "EFO_0003885",   # Multiple Sclerosis
-    "ss": "EFO_0000600",   # Sjögren's Syndrome
+    "ra": "EFO_0000685",  # Rheumatoid Arthritis
+    "ms": "EFO_0003885",  # Multiple Sclerosis
+    "ss": "EFO_0000600",  # Sjögren's Syndrome
     "ssc": "EFO_0000707",  # Systemic Sclerosis
     "t1d": "EFO_0001359",  # Type 1 Diabetes
     "ibd": "EFO_0003767",  # Inflammatory Bowel Disease
@@ -69,7 +69,9 @@ class OpenTargetsClient:
             }
         return {"symbol": target_symbol}
 
-    def get_target_disease_evidence(self, target_ensembl_id: str, disease_efo_id: str) -> Dict[str, Any]:
+    def get_target_disease_evidence(
+        self, target_ensembl_id: str, disease_efo_id: str
+    ) -> Dict[str, Any]:
         """Fetch association score and evidence breakdown for target and disease."""
         gql = """
         query TargetDiseaseAssoc($diseaseId: String!) {
@@ -101,7 +103,12 @@ class OpenTargetsClient:
                         "overall_score": row.get("score", 0.0),
                     }
         except Exception as err:
-            logger.warning("Failed to fetch target disease evidence for %s / %s: %s", target_ensembl_id, disease_efo_id, err)
+            logger.warning(
+                "Failed to fetch target disease evidence for %s / %s: %s",
+                target_ensembl_id,
+                disease_efo_id,
+                err,
+            )
         return {"disease_id": disease_efo_id, "overall_score": 0.0}
 
     def search_disease_targets(self, disease_key: str, size: int = 10) -> List[Dict[str, Any]]:
@@ -130,10 +137,12 @@ class OpenTargetsClient:
         results = []
         for r in rows:
             t = r.get("target", {})
-            results.append({
-                "ensembl_id": t.get("id"),
-                "symbol": t.get("approvedSymbol"),
-                "name": t.get("approvedName"),
-                "association_score": r.get("score", 0.0),
-            })
+            results.append(
+                {
+                    "ensembl_id": t.get("id"),
+                    "symbol": t.get("approvedSymbol"),
+                    "name": t.get("approvedName"),
+                    "association_score": r.get("score", 0.0),
+                }
+            )
         return results

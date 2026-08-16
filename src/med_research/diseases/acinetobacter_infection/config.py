@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Acinetobacter baumannii infection[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Acinetobacter baumannii infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Acinetobacter baumannii infection[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Acinetobacter baumannii infection[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Acinetobacter baumannii infection[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Acinetobacter baumannii infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Acinetobacter baumannii infection[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Acinetobacter baumannii infection[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -22,8 +22,6 @@ REPORT_PATHS = {
 pytestmark = [pytest.mark.integration]
 
 
-
-
 def _assert_disease_report(disease_id: str, html: str) -> None:
     """Assert disease-aware labeling and provenance footer."""
     context = disease_context(disease_id)

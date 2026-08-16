@@ -24,10 +24,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Ulcerative colitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Ulcerative colitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Ulcerative colitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Ulcerative colitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Ulcerative colitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Ulcerative colitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Ulcerative colitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Ulcerative colitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

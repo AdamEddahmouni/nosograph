@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Anthrax[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Anthrax[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Anthrax[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Anthrax[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Anthrax[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Anthrax[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Anthrax[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Anthrax[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -139,8 +139,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "cilastatin",
         "ciprofloxacin",
@@ -152,8 +151,7 @@ DRUG_SAFETY_RISK = {
         "raxibacumab",
         "tosufloxacin",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

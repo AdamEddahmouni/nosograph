@@ -12,7 +12,9 @@ from med_research.web.services.registry_service import (
 )
 
 
-def run_correlation_analysis(top_n: int = 26, disease_id: str = "sle") -> ExpressionAnalysisResponse:
+def run_correlation_analysis(
+    top_n: int = 26, disease_id: str = "sle"
+) -> ExpressionAnalysisResponse:
     """Run gene expression correlation via the gene_expression registry adapter."""
     coverage = module_coverage(disease_id, "expression", ("genes", "drugs"))
     require_runnable_coverage(coverage, "gene_expression")

@@ -21,8 +21,6 @@ GWAS_SEARCH_URL = f"{GWAS_API}/studies/search/findByDiseaseTrait"
 pytestmark = [pytest.mark.integration]
 
 
-
-
 @pytest.fixture
 def gwas_catalog_mocks():
     """Register minimal GWAS Catalog responses for one empty study lookup."""

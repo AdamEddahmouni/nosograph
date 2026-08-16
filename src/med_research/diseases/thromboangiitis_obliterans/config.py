@@ -18,10 +18,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Thromboangiitis obliterans[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Thromboangiitis obliterans[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Thromboangiitis obliterans[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Thromboangiitis obliterans[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Thromboangiitis obliterans[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Thromboangiitis obliterans[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Thromboangiitis obliterans[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Thromboangiitis obliterans[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -136,8 +136,7 @@ DRUG_SAFETY_RISK = {
         "treprostinil",
         "warfarin",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

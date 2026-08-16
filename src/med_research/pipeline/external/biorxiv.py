@@ -30,22 +30,26 @@ class BioRxivClient:
             collection = data.get("collection", [])
             results = []
             for item in collection[:limit]:
-                results.append({
-                    "doi": item.get("doi"),
-                    "title": item.get("title"),
-                    "authors": item.get("authors"),
-                    "date": item.get("date"),
-                    "category": item.get("category"),
-                    "abstract": item.get("abstract"),
-                    "url": f"https://www.biorxiv.org/content/{item.get('doi')}v1",
-                    "server": self.server,
-                })
+                results.append(
+                    {
+                        "doi": item.get("doi"),
+                        "title": item.get("title"),
+                        "authors": item.get("authors"),
+                        "date": item.get("date"),
+                        "category": item.get("category"),
+                        "abstract": item.get("abstract"),
+                        "url": f"https://www.biorxiv.org/content/{item.get('doi')}v1",
+                        "server": self.server,
+                    }
+                )
             return results
         except Exception as err:
             logger.warning("Failed fetching preprints from %s: %s", self.server, err)
             return []
 
-    def search_preprints_by_keyword(self, keyword: str, days_back: int = 90, limit: int = 15) -> List[Dict[str, Any]]:
+    def search_preprints_by_keyword(
+        self, keyword: str, days_back: int = 90, limit: int = 15
+    ) -> List[Dict[str, Any]]:
         """Filter recent preprints by keyword in title or abstract."""
         recent = self.fetch_recent_preprints(days_back=days_back, limit=100)
         kw_lower = keyword.lower()

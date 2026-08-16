@@ -78,11 +78,25 @@ class OpenFDAImportAdapter(ImportAdapter):
         seen_entities: set[str] = set()
 
         for item in records:
-            drug_name = str(item.get("drug_name") or item.get("medicinalproduct") or item.get("substance_name") or "")
+            drug_name = str(
+                item.get("drug_name")
+                or item.get("medicinalproduct")
+                or item.get("substance_name")
+                or ""
+            )
             cid = item.get("pubchem_cid") or item.get("cid")
-            condition_curie = str(item.get("condition_curie") or item.get("mondo_id") or item.get("ncit_id") or "")
-            condition_name = str(item.get("condition_name") or item.get("reaction") or item.get("indication") or condition_curie)
-            report_id = str(item.get("safetyreportid") or item.get("report_id") or item.get("id") or "")
+            condition_curie = str(
+                item.get("condition_curie") or item.get("mondo_id") or item.get("ncit_id") or ""
+            )
+            condition_name = str(
+                item.get("condition_name")
+                or item.get("reaction")
+                or item.get("indication")
+                or condition_curie
+            )
+            report_id = str(
+                item.get("safetyreportid") or item.get("report_id") or item.get("id") or ""
+            )
             record_type = str(item.get("record_type") or "indication")
 
             if not drug_name and not cid:
@@ -90,7 +104,9 @@ class OpenFDAImportAdapter(ImportAdapter):
             if not condition_curie:
                 continue
 
-            drug_curie = f"PUBCHEM.COMPOUND:{cid}" if cid else f"DRUG:{drug_name.upper().replace(' ', '_')}"
+            drug_curie = (
+                f"PUBCHEM.COMPOUND:{cid}" if cid else f"DRUG:{drug_name.upper().replace(' ', '_')}"
+            )
 
             # Ensure intervention entity
             if drug_curie not in seen_entities:
@@ -153,7 +169,11 @@ class OpenFDAImportAdapter(ImportAdapter):
                 )
             )
 
-            rec_id = report_id if report_id else f"FDA:{hashlib.md5(f'{drug_curie}_{condition_curie}'.encode()).hexdigest()[:8]}"
+            rec_id = (
+                report_id
+                if report_id
+                else f"FDA:{hashlib.md5(f'{drug_curie}_{condition_curie}'.encode()).hexdigest()[:8]}"
+            )
             ev_id = claim_evidence_uuid(c_id, snapshot.id, direction, rec_id)
 
             evidence.append(

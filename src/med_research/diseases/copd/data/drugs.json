@@ -5,32 +5,62 @@
     {
       "id": "tiotropium",
       "name": "Tiotropium",
-      "targets": [
-        "CHRM3"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Long-acting muscarinic antagonist (LAMA) bronchodilator",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "CHRM3",
+      "mechanism": "Long-acting muscarinic antagonist (LAMA) bronchodilator",
+      "approval": "FDA Approved",
+      "route": "Inhalation",
+      "efficacy": "Reduces exacerbations and improves lung function and quality of life",
+      "references": ["PMID:18836213"],
+      "adverse_effects": "Dry mouth, urinary retention, cough, pharyngitis"
     },
     {
       "id": "roflumilast",
       "name": "Roflumilast",
-      "targets": [
-        "PDE4B"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Oral PDE4 inhibitor reducing exacerbations",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "PDE4B",
+      "mechanism": "Selective phosphodiesterase-4 (PDE4) inhibitor reducing airway inflammation",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Reduces moderate-to-severe exacerbations in severe chronic bronchitis COPD",
+      "references": ["PMID:19716963"],
+      "adverse_effects": "Diarrhea, weight loss, nausea, insomnia, depression"
     },
     {
       "id": "indacaterol",
       "name": "Indacaterol",
-      "targets": [
-        "ADRB2"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Ultra-long-acting beta-2 adrenergic agonist (LABA)",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "ADRB2",
+      "mechanism": "Ultra-long-acting beta-2 adrenergic receptor agonist (LABA) bronchodilator",
+      "approval": "FDA Approved",
+      "route": "Inhalation",
+      "efficacy": "Sustained 24-hour bronchodilation and dyspnea reduction",
+      "references": ["PMID:20092576"],
+      "adverse_effects": "Cough, nasopharyngitis, headache, muscle spasms"
+    },
+    {
+      "id": "fluticasone_salmeterol",
+      "name": "Fluticasone / Salmeterol",
+      "type": "Combination inhaler",
+      "target": "NR3C1 / ADRB2",
+      "mechanism": "Inhaled corticosteroid (ICS) plus LABA bronchodilator",
+      "approval": "FDA Approved",
+      "route": "Inhalation",
+      "efficacy": "Reduces exacerbation rate in patients with frequent exacerbations or high eosinophils",
+      "references": ["PMID:17314337"],
+      "adverse_effects": "Oral candidiasis, dysphonia, increased risk of pneumonia"
+    },
+    {
+      "id": "dupilumab",
+      "name": "Dupilumab",
+      "type": "Monoclonal antibody",
+      "target": "IL4R",
+      "mechanism": "IL-4Ralpha antagonist blocking dual IL-4 and IL-13 signaling",
+      "approval": "FDA Approved",
+      "route": "Subcutaneous",
+      "efficacy": "Reduces exacerbations and improves FEV1 in COPD with type 2 inflammation",
+      "references": ["PMID:37212485"],
+      "adverse_effects": "Injection site reactions, eosinophilia, headache"
     }
   ]
 }

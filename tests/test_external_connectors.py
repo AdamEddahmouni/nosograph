@@ -1,18 +1,19 @@
-import pytest
 from unittest.mock import patch
 
+import pytest
+
+from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
+from med_research.pipeline.evidence_workspace.sources import (
+    BioRxivSource,
+    GTExSource,
+    OpenTargetsSource,
+)
 from med_research.pipeline.external import (
     BioRxivClient,
     ChEMBLClient,
     GTExClient,
     OpenTargetsClient,
     UniProtClient,
-)
-from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
-from med_research.pipeline.evidence_workspace.sources import (
-    BioRxivSource,
-    GTExSource,
-    OpenTargetsSource,
 )
 
 pytestmark = pytest.mark.unit
@@ -121,7 +122,12 @@ def test_uniprot_client_get_protein():
                 "proteinDescription": {
                     "recommendedName": {"fullName": {"value": "Janus kinase 2"}}
                 },
-                "comments": [{"commentType": "FUNCTION", "texts": [{"value": "Non-receptor tyrosine kinase."}]}],
+                "comments": [
+                    {
+                        "commentType": "FUNCTION",
+                        "texts": [{"value": "Non-receptor tyrosine kinase."}],
+                    }
+                ],
                 "features": [{"type": "DOMAIN", "description": "Protein kinase"}],
                 "sequence": {"length": 1132},
             }
@@ -159,7 +165,12 @@ def test_biorxiv_client_search():
 def test_opentargets_workspace_source():
     source = OpenTargetsSource(
         lambda query, limit: [
-            {"native_id": "ENSG00000096968", "title": "Target: JAK2", "snippet": "Score 0.9", "evidence_type": "target_association"}
+            {
+                "native_id": "ENSG00000096968",
+                "title": "Target: JAK2",
+                "snippet": "Score 0.9",
+                "evidence_type": "target_association",
+            }
         ]
     )
     res = source.search(ResearchRequest(question="Target discovery"), ["JAK2"])
@@ -171,7 +182,12 @@ def test_opentargets_workspace_source():
 def test_gtex_workspace_source():
     source = GTExSource(
         lambda query, limit: [
-            {"native_id": "JAK2:Whole_Blood", "title": "GTEx: JAK2 Whole Blood", "snippet": "45 TPM", "evidence_type": "gene_expression"}
+            {
+                "native_id": "JAK2:Whole_Blood",
+                "title": "GTEx: JAK2 Whole Blood",
+                "snippet": "45 TPM",
+                "evidence_type": "gene_expression",
+            }
         ]
     )
     res = source.search(ResearchRequest(question="Expression lookup"), ["JAK2"])
@@ -183,7 +199,13 @@ def test_gtex_workspace_source():
 def test_biorxiv_workspace_source():
     source = BioRxivSource(
         lambda query, limit: [
-            {"native_id": "10.1101/123", "title": "JAK2 Preprint", "snippet": "Abstract...", "url": "https://biorxiv.org", "evidence_type": "preprint"}
+            {
+                "native_id": "10.1101/123",
+                "title": "JAK2 Preprint",
+                "snippet": "Abstract...",
+                "url": "https://biorxiv.org",
+                "evidence_type": "preprint",
+            }
         ]
     )
     res = source.search(ResearchRequest(question="Preprints"), ["JAK2"])

@@ -16,6 +16,8 @@ logger = get_logger(__name__)
 DEFAULT_CACHE_DIR = Path(__file__).parent.parent / "data" / "cache"
 DEFAULT_TTL_SECONDS = 24 * 3600  # 24 hours
 
+_SAFE_KEY_RE = re.compile(r'[<>:"/\\|?*]')
+
 _DEFAULT_MANAGER: Optional["CacheManager"] = None
 
 
@@ -29,6 +31,29 @@ def disease_output_path(data_dir: Path, stem: str, disease_id: str) -> Path:
     return Path(data_dir) / f"{stem}_{disease_id}.json"
 
 
+try:
+    import orjson
+
+    def _dump_json_bytes(data: Any, indent: int = 2, default: Any = str) -> bytes:
+        opt = orjson.OPT_INDENT_2 if indent == 2 else 0
+        try:
+            return orjson.dumps(data, option=opt, default=default)
+        except Exception:
+            return json.dumps(data, indent=indent, ensure_ascii=False, default=default).encode(
+                "utf-8"
+            )
+
+    def _load_json_bytes(raw: bytes) -> Any:
+        return orjson.loads(raw)
+except ImportError:
+
+    def _dump_json_bytes(data: Any, indent: int = 2, default: Any = str) -> bytes:
+        return json.dumps(data, indent=indent, ensure_ascii=False, default=default).encode("utf-8")
+
+    def _load_json_bytes(raw: bytes) -> Any:
+        return json.loads(raw.decode("utf-8"))
+
+
 def write_json_atomic(
     path: Path,
     data: Any,
@@ -39,14 +64,15 @@ def write_json_atomic(
     """Atomically write JSON via a temp file and ``os.replace``."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
+    payload_bytes = _dump_json_bytes(data, indent=indent, default=default)
     fd, tmp_name = tempfile.mkstemp(
         suffix=".tmp",
         prefix=f"{path.stem}.",
         dir=str(path.parent),
     )
     try:
-        with os.fdopen(fd, "w", encoding="utf-8") as handle:
-            json.dump(data, handle, indent=indent, ensure_ascii=False, default=default)
+        with os.fdopen(fd, "wb") as handle:
+            handle.write(payload_bytes)
         for attempt in range(3):
             try:
                 os.replace(tmp_name, path)
@@ -109,7 +135,7 @@ class CacheManager:
 
     def _safe_key_filename(self, key: str) -> str:
         """Map a logical cache key to a filesystem-safe filename."""
-        safe = re.sub(r'[<>:"/\\|?*]', "_", key).strip()
+        safe = _SAFE_KEY_RE.sub("_", key).strip()
         safe = safe.replace(" ", "_")
         if len(safe) <= 120:
             return safe
@@ -129,8 +155,9 @@ class CacheManager:
             return None
 
         try:
-            entry = json.loads(cache_path.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError) as e:
+            raw_bytes = cache_path.read_bytes()
+            entry = _load_json_bytes(raw_bytes)
+        except (json.JSONDecodeError, ValueError, OSError) as e:
             logger.warning("Cache corrupt for %s/%s: %s", namespace, key, e)
             return None
 

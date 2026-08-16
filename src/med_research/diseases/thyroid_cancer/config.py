@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Thyroid cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Thyroid cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Thyroid cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Thyroid cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Thyroid cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Thyroid cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Thyroid cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Thyroid cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Sarcoidosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Sarcoidosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Sarcoidosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Sarcoidosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Sarcoidosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Sarcoidosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Sarcoidosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Sarcoidosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

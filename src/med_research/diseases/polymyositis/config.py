@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(polymyositis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(polymyositis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(polymyositis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(polymyositis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(polymyositis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(polymyositis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(polymyositis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(polymyositis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -161,8 +161,7 @@ DRUG_SAFETY_RISK = {
         "tacrolimus",
         "tocilizumab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -188,8 +188,6 @@ REACTOME_HITS = [
 pytestmark = pytest.mark.unit
 
 
-
-
 # ── HTTP mock dispatchers ────────────────────────────────────────────────
 
 
@@ -201,6 +199,17 @@ def _fake_ot_post(url, payload, timeout=30):
         return OT_TARGETS
     if "drugAndClinicalCandidates" in query or "knownDrugs" in query:
         return OT_DRUGS
+    if "disease(efoId:" in query or "disease(" in query:
+        return {
+            "data": {
+                "disease": {
+                    "id": "EFO_0001370",
+                    "name": "Rheumatoid Arthritis",
+                    "description": {"value": "Chronic inflammatory joint disease."},
+                    "synonyms": [{"relation": "synonym", "terms": ["RA"]}],
+                }
+            }
+        }
     return None
 
 
@@ -1172,6 +1181,7 @@ def test_restore_auto_selects_newest_backup(tmp_path):
 
 def test_restore_legacy_backup_reattaches_pathway_by_keyword(tmp_path, monkeypatch):
     """Backups without a membership map fall back to keyword matching."""
+
     # Deterministic offline scaffold: IL6R keyword-matches the il6-signaling
     # template (so the pathway exists) while IL6 itself is absent (so restore
     # re-attaches it via the keyword fallback instead of skipping it).

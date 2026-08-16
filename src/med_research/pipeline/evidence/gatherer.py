@@ -35,12 +35,6 @@ from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import EvidenceGatherResult
 
 logger = logging.getLogger(__name__)
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-if sys.platform == "win32":
-    _stdout = sys.stdout
-    if hasattr(_stdout, "reconfigure"):
-        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
 LEGACY_EVIDENCE_CACHE = DATA_DIR / "evidence_cache.json"
@@ -575,4 +569,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

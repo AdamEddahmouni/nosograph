@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Anti-synthetase syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Anti-synthetase syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Anti-synthetase syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Anti-synthetase syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Anti-synthetase syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Anti-synthetase syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Anti-synthetase syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Anti-synthetase syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -104,8 +104,7 @@ DRUG_SAFETY_RISK = {
         "nipocalimab",
         "tofacitinib",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

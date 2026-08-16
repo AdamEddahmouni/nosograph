@@ -1,24 +1,41 @@
 {
-  "schema_version": 1,
-  "description": "Pinned biomedical ontology artifacts for reproducible imports.",
+  "schema_version": 2,
+  "description": "Pinned biomedical ontology artifacts for reproducible imports. fixture_checksum pins the minimal test fixtures; download_checksum pins the full artifacts used by the production import.",
   "artifacts": {
     "mondo": {
       "fixture_path": "tests/fixtures/biomed/mondo/minimal.json",
       "download_filename": "mondo.json",
-      "version": "2024-01-01",
-      "checksum": "sha256:53ec9a18d2662b3c0005007d93297503f720246dd680eddf56125ed729a14495"
+      "version": "2026-08-04",
+      "fixture_checksum": "sha256:53ec9a18d2662b3c0005007d93297503f720246dd680eddf56125ed729a14495",
+      "download_checksum": "sha256:7cf8f1df31185555a21f5ffaf36663ca420671a9bc234fc737eb9bfa977ecd60"
     },
     "hp": {
       "fixture_path": "tests/fixtures/biomed/hpo/minimal.json",
       "download_filename": "hp.json",
-      "version": "2024-02-15",
-      "checksum": "sha256:6d561f1c6280c6da93172eb04cfa716e56adf5f89574140174168d8395f64941"
+      "version": "2026-06-23",
+      "fixture_checksum": "sha256:6d561f1c6280c6da93172eb04cfa716e56adf5f89574140174168d8395f64941",
+      "download_checksum": "sha256:3b646565695329aa399e937883c68d5d424d0df5eaab2f22baa0e08d44fdbe87"
     },
     "hpoa": {
       "fixture_path": "tests/fixtures/biomed/hpoa/minimal.tsv",
       "download_filename": "phenotype.hpoa.tsv",
-      "version": "fixture-minimal",
-      "checksum": "sha256:c1f9e70b1a8afeabc773146b05464a682c3b20894bffc06f6d9136dfe5e34368"
+      "version": "2026-06-23",
+      "fixture_checksum": "sha256:c1f9e70b1a8afeabc773146b05464a682c3b20894bffc06f6d9136dfe5e34368",
+      "download_checksum": "sha256:89004f85b253f980ffe84218d2c080665cbf67a57bbb322111d6a2db5eb31dff"
+    },
+    "clinvar": {
+      "fixture_path": "tests/fixtures/biomed/clinvar/minimal.json",
+      "download_filename": "clinvar_sample.json",
+      "version": "2026.1",
+      "fixture_checksum": "sha256:0a60ac3e4c1193f1b57a5baa0a96fef057d1031c5e6e842de5b971ba7a24d437",
+      "download_checksum": "sha256:0a60ac3e4c1193f1b57a5baa0a96fef057d1031c5e6e842de5b971ba7a24d437"
+    },
+    "openfda": {
+      "fixture_path": "tests/fixtures/biomed/openfda/minimal.json",
+      "download_filename": "openfda_sample.json",
+      "version": "2026.1",
+      "fixture_checksum": "sha256:ea08e86182966b815fd9ba4e41e86b304d0d3e306250558170f87795343c71db",
+      "download_checksum": "sha256:ea08e86182966b815fd9ba4e41e86b304d0d3e306250558170f87795343c71db"
     }
   }
 }

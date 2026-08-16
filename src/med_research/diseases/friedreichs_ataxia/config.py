@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Friedreich ataxia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Friedreich ataxia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Friedreich ataxia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Friedreich ataxia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Friedreich ataxia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Friedreich ataxia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Friedreich ataxia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Friedreich ataxia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -189,8 +189,7 @@ DRUG_SAFETY_RISK = {
         "varenicline",
         "vatiquinone",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

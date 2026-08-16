@@ -14,7 +14,6 @@ from med_research.diseases.schemas import (
     RelationshipsFileDict,
     load_validated_json,
 )
-from med_research.exceptions import MissingDataError, SchemaValidationError
 
 logger = logging.getLogger(__name__)
 
@@ -26,21 +25,24 @@ _DISEASE_DATA_CACHE: dict = {}
 
 def _discover_diseases() -> dict:
     """Scan diseases/ subdirectories for data/profile.json and build disease registry."""
+    from med_research.diseases.schemas import _parse_json
+
     diseases = {}
     for child in DATA_ROOT.iterdir():
-        if child.is_dir() and (child / "__init__.py").exists():
+        if child.is_dir() and not child.name.startswith("_") and child.name != "__pycache__":
             data_dir = child / "data"
             profile_path = data_dir / "profile.json"
             if profile_path.exists():
                 try:
-                    profile = load_validated_json(profile_path, DiseaseProfile)
-                except (MissingDataError, SchemaValidationError) as exc:
+                    profile = _parse_json(profile_path.read_bytes())
+                except Exception as exc:
                     # Registry must survive one broken module.
                     logger.warning("Skipping disease %s: invalid profile (%s)", child.name, exc)
                     continue
-                diseases[profile["id"]] = {
-                    "id": profile["id"],
-                    "name": profile["name"],
+                pid = profile.get("id", child.name)
+                diseases[pid] = {
+                    "id": pid,
+                    "name": profile.get("name", pid),
                     "data_dir": data_dir,
                     "profile": profile,
                 }

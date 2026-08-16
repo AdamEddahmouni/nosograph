@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Hepatitis B[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Hepatitis B[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Hepatitis B[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Hepatitis B[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Hepatitis B[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Hepatitis B[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Hepatitis B[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Hepatitis B[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

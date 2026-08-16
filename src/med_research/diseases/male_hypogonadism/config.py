@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Male hypogonadism[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Male hypogonadism[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Male hypogonadism[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Male hypogonadism[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Male hypogonadism[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Male hypogonadism[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Male hypogonadism[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Male hypogonadism[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

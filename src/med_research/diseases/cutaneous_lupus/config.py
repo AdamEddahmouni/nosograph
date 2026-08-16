@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Cutaneous lupus erythematosus[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Cutaneous lupus erythematosus[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Cutaneous lupus erythematosus[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Cutaneous lupus erythematosus[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Cutaneous lupus erythematosus[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Cutaneous lupus erythematosus[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Cutaneous lupus erythematosus[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Cutaneous lupus erythematosus[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

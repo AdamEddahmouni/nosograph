@@ -9,7 +9,9 @@ from med_research.web.services.registry_service import (
 )
 
 
-def run_repurposing(top_n: int = 15, gene_id: str | None = None, disease_id: str = "sle") -> RepurposingAnalysisResponse:
+def run_repurposing(
+    top_n: int = 15, gene_id: str | None = None, disease_id: str = "sle"
+) -> RepurposingAnalysisResponse:
     """Score drug repurposing candidates and return results."""
     coverage = module_coverage(disease_id, "repurposing", ("genes", "drugs", "relationships"))
     require_runnable_coverage(coverage, "drug_repurposing")

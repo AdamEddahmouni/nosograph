@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Xeroderma pigmentosum[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Xeroderma pigmentosum[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Xeroderma pigmentosum[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Xeroderma pigmentosum[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Xeroderma pigmentosum[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Xeroderma pigmentosum[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Xeroderma pigmentosum[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Xeroderma pigmentosum[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -137,12 +137,9 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
-    "moderate_risk": [
-    ],
-    "low_risk": [
-    ],
+    "high_risk": [],
+    "moderate_risk": [],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -2,8 +2,6 @@
 Tests for the CAR-T Response Predictor module.
 """
 
-
-
 import json
 import sys
 from pathlib import Path

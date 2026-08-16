@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Rhabdomyosarcoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Rhabdomyosarcoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Rhabdomyosarcoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Rhabdomyosarcoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Rhabdomyosarcoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Rhabdomyosarcoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Rhabdomyosarcoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Rhabdomyosarcoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

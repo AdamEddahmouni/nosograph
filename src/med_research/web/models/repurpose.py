@@ -17,8 +17,14 @@ class RepurposingCandidate(BaseModel):
     pathway_proximity_score: float
     mechanistic_rationale_score: float
     clinical_evidence_score: float
-    safety_score: float
-    novelty_score: float
+    safety_score: float = 5.0
+    adverse_event_score: float = 5.0
+    novelty_score: float = 5.0
+    variant_functional_score: float = 0.0
+    variant_details: list[dict] = []
+    tissue_expression_score: float = 0.0
+    top_expressing_tissues: list[dict] = []
+    gtex_tissue_concordance: float = 0.0
     evidence_level: str = ""
     mechanism: str = ""
     rationale: str = ""

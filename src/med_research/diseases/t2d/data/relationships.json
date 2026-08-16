@@ -6,103 +6,85 @@
       "source": "TCF7L2",
       "type": "ASSOCIATED_WITH",
       "target": "Type 2 Diabetes",
-      "evidence": "Strongest common genetic locus associated with T2D risk."
+      "description": "Transcription factor strongly associated with impaired beta-cell function and insulin secretion."
     },
     {
       "source": "PPARG",
       "type": "ASSOCIATED_WITH",
       "target": "Type 2 Diabetes",
-      "evidence": "Master regulator of adipogenesis and insulin sensitivity."
+      "description": "Nuclear receptor regulating adipogenesis and peripheral insulin sensitivity."
     },
     {
       "source": "KCNJ11",
       "type": "ASSOCIATED_WITH",
       "target": "Type 2 Diabetes",
-      "evidence": "Encodes Kir6.2 subunit of beta-cell KATP channel."
+      "description": "ATP-sensitive potassium channel subunit controlling glucose-stimulated insulin release."
+    },
+    {
+      "source": "ABCC8",
+      "type": "ASSOCIATED_WITH",
+      "target": "Type 2 Diabetes",
+      "description": "SUR1 subunit of the pancreatic beta-cell KATP channel."
     },
     {
       "source": "SLC30A8",
       "type": "ASSOCIATED_WITH",
       "target": "Type 2 Diabetes",
-      "evidence": "Zinc transporter ZnT8 critical for insulin crystallization."
-    },
-    {
-      "source": "GLP1R",
-      "type": "ASSOCIATED_WITH",
-      "target": "Type 2 Diabetes",
-      "evidence": "Primary therapeutic target for incretin mimetics."
+      "description": "Zinc transporter ZnT8 responsible for zinc accumulation in insulin secretory granules."
     },
     {
       "source": "metformin",
       "type": "TREATS",
       "target": "Type 2 Diabetes",
-      "evidence": "Approved disease treatment"
+      "description": "Approved first-line biguanide antihyperglycemic agent"
     },
     {
       "source": "metformin",
       "type": "TARGETS",
       "target": "PRKAA1",
-      "evidence": "AMPK activator suppressing hepatic gluconeogenesis"
+      "description": "Activates AMP-activated protein kinase reducing hepatic gluconeogenesis"
     },
     {
       "source": "semaglutide",
       "type": "TREATS",
       "target": "Type 2 Diabetes",
-      "evidence": "Approved disease treatment"
+      "description": "Approved GLP-1 receptor agonist incretin mimetic"
     },
     {
       "source": "semaglutide",
       "type": "TARGETS",
       "target": "GLP1R",
-      "evidence": "GLP-1 receptor agonist enhancing glucose-dependent insulin secretion"
+      "description": "Stimulates GLP-1 receptor to enhance glucose-dependent insulin secretion"
     },
     {
       "source": "empagliflozin",
       "type": "TREATS",
       "target": "Type 2 Diabetes",
-      "evidence": "Approved disease treatment"
+      "description": "Approved SGLT2 inhibitor promoting glycosuria"
     },
     {
       "source": "empagliflozin",
       "type": "TARGETS",
       "target": "SLC5A2",
-      "evidence": "SGLT2 inhibitor reducing renal glucose reabsorption"
+      "description": "Blocks sodium-glucose cotransporter 2 in renal proximal tubules"
     },
     {
       "source": "tirzepatide",
       "type": "TREATS",
       "target": "Type 2 Diabetes",
-      "evidence": "Approved disease treatment"
+      "description": "Approved dual GIP and GLP-1 receptor co-agonist"
     },
     {
-      "source": "tirzepatide",
+      "source": "sitagliptin",
+      "type": "TREATS",
+      "target": "Type 2 Diabetes",
+      "description": "Approved dipeptidyl peptidase-4 inhibitor"
+    },
+    {
+      "source": "sitagliptin",
       "type": "TARGETS",
-      "target": "GLP1R",
-      "evidence": "Dual GIP and GLP-1 receptor agonist"
-    },
-    {
-      "source": "tirzepatide",
-      "type": "TARGETS",
-      "target": "GIPR",
-      "evidence": "Dual GIP and GLP-1 receptor agonist"
-    },
-    {
-      "source": "GLP1R",
-      "type": "PARTICIPATES_IN",
-      "target": "incretin-response",
-      "evidence": "Key component of Incretin Hormone Response"
-    },
-    {
-      "source": "TCF7L2",
-      "type": "PARTICIPATES_IN",
-      "target": "incretin-response",
-      "evidence": "Key component of Incretin Hormone Response"
-    },
-    {
-      "source": "PPARG",
-      "type": "PARTICIPATES_IN",
-      "target": "insulin-signaling",
-      "evidence": "Key component of Insulin Receptor Signaling"
+      "target": "DPP4",
+      "description": "Inhibits DPP-4 enzyme to prolong incretin peptide half-life"
     }
   ]
 }

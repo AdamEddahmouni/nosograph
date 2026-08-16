@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Follicular lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Follicular lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Follicular lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Follicular lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Follicular lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Follicular lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Follicular lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Follicular lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

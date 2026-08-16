@@ -15,15 +15,15 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from med_research.diseases.base import Disease
 from med_research.diseases.bulk_scaffold import bulk_harvest, print_bulk_harvest_summary
-from med_research.diseases.coverage_report import build_coverage_report
+from med_research.diseases.corpus_status import build_corpus_status
 from med_research.diseases.expression_proxy import apply_proxy_all
 from med_research.diseases.symptom_harvester import harvest_all_symptoms
-from med_research.pipeline.gene_expression.geo import CURATED_CONSENSUS_DISEASES
+from med_research.diseases.tier_model import aggregate_tiers
 
 ROOT = Path(__file__).resolve().parents[1]
 STATUS_PATH = ROOT / "data" / "reports" / "disease_batch_status.json"
+BASELINE_PATH = ROOT / "data" / "reports" / "corpus_baseline.json"
 SCRIPTS = ROOT / "scripts"
 
 
@@ -31,14 +31,6 @@ def _run_script(script: str, *args: str) -> int:
     cmd = [sys.executable, str(SCRIPTS / script), *args]
     print(f"\n>> {' '.join(cmd)}")
     return subprocess.call(cmd)
-
-
-def _tier_for_disease(disease_id: str, strict_pass: bool) -> str:
-    if disease_id in CURATED_CONSENSUS_DISEASES:
-        return "L3"
-    if strict_pass:
-        return "L2"
-    return "blocked"
 
 
 def _ensure_ot_bulk_setup(*, from_fixtures: bool = False) -> int:
@@ -77,6 +69,7 @@ def main() -> int:
     parser.add_argument("--populate", action="store_true", help="Populate disease configs")
     parser.add_argument("--expression-proxy", action="store_true", help="Register L2 expression proxies")
     parser.add_argument("--validate", action="store_true", help="Validate all diseases (strict)")
+    parser.add_argument("--gwas", action="store_true", help="Enable GWAS enrichment during harvest")
     parser.add_argument("--workers", type=int, default=8, help="Parallel harvest workers")
     parser.add_argument("--limit", type=int, help="Limit diseases per step")
     args = parser.parse_args()
@@ -126,15 +119,24 @@ def main() -> int:
                 repair=args.repair_all,
                 workers=args.workers,
                 limit=args.limit,
-                use_gwas=False,
+                use_gwas=args.gwas,
             )
             print_bulk_harvest_summary(harvest_report)
         except FileNotFoundError as exc:
             print(f"Harvest skipped: {exc}")
             return 1
 
+    symptom_report = None
     if args.symptoms:
-        harvest_all_symptoms(write=True, limit=args.limit)
+        symptom_report = harvest_all_symptoms(
+            write=True,
+            limit=args.limit,
+            workers=args.workers,
+        )
+        print(
+            f"Symptoms: populated {symptom_report['populated']}/{symptom_report['total']} "
+            f"(sources: {symptom_report.get('by_source', {})})"
+        )
 
     if args.populate:
         populate_args = ["--all", "--write"]
@@ -147,55 +149,32 @@ def main() -> int:
         print(f"Expression proxy: registered {proxy_report['registered']}/{proxy_report['total']}")
 
     per_disease = []
-    l3, l2, blocked = 0, 0, 0
     if args.validate:
-        for did in sorted(Disease.list_all()):
-            try:
-                disease = Disease(did)
-                checks = disease.validate()
-                strict_pass = all(s == "ok" for s in checks.values())
-                coverage = build_coverage_report(did)
-                tier = _tier_for_disease(did, strict_pass)
-                if tier == "L3":
-                    l3 += 1
-                elif tier == "L2":
-                    l2 += 1
-                else:
-                    blocked += 1
-                symptoms = disease.config.get("SYMPTOMS", [])
-                per_disease.append(
-                    {
-                        "disease_id": did,
-                        "name": disease.profile.name,
-                        "tier": tier,
-                        "strict_pass": strict_pass,
-                        "gene_count": coverage["entity_counts"]["genes"],
-                        "drug_count": coverage["entity_counts"]["drugs"],
-                        "pathway_count": coverage["entity_counts"]["pathways"],
-                        "symptom_count": len(symptoms) if isinstance(symptoms, list) else 0,
-                        "config_gaps": [f for f, s in checks.items() if s != "ok"],
-                    }
-                )
-            except Exception as exc:
-                blocked += 1
-                per_disease.append({"disease_id": did, "tier": "blocked", "error": str(exc)})
+        status = build_corpus_status(limit=args.limit, include_symptom_source=True)
+        per_disease = status["per_disease"]
+        aggregate = status["aggregate"]
+    else:
+        aggregate = aggregate_tiers(per_disease)
+        aggregate["total"] = 0
 
-    status = {
+    status_doc = {
         "harvest": harvest_report,
-        "aggregate": {
-            "L3_research_ready": l3,
-            "L2_pipeline_ready": l2,
-            "blocked": blocked,
-            "total": len(per_disease),
-        },
+        "symptoms": symptom_report,
+        "aggregate": aggregate,
         "per_disease": per_disease,
     }
     STATUS_PATH.parent.mkdir(parents=True, exist_ok=True)
-    STATUS_PATH.write_text(json.dumps(status, indent=2, default=str) + "\n", encoding="utf-8")
+    STATUS_PATH.write_text(json.dumps(status_doc, indent=2, default=str) + "\n", encoding="utf-8")
     print(f"\nStatus report: {STATUS_PATH}")
-    print(f"  L3 (research-ready): {l3}")
-    print(f"  L2 (pipeline-ready): {l2}")
-    print(f"  Blocked: {blocked}")
+    print(f"  L3 (research-ready): {aggregate.get('L3', aggregate.get('L3_research_ready', 0))}")
+    print(f"  L2 (pipeline-ready): {aggregate.get('L2', aggregate.get('L2_pipeline_ready', 0))}")
+    print(f"  L1 (KG complete): {aggregate.get('L1', 0)}")
+    print(f"  L0 (scaffold): {aggregate.get('L0', 0)}")
+    print(f"  Blocked: {aggregate.get('blocked', 0)}")
+
+    if args.validate:
+        _run_script("generate_corpus_baseline.py", "--output", str(BASELINE_PATH))
+
     return 0
 
 

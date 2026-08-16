@@ -15,10 +15,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Uveal melanoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Uveal melanoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Uveal melanoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Uveal melanoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Uveal melanoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Uveal melanoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Uveal melanoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Uveal melanoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

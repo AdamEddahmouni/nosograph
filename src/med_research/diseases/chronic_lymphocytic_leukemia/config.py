@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Chronic lymphocytic leukemia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Chronic lymphocytic leukemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Chronic lymphocytic leukemia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Chronic lymphocytic leukemia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Chronic lymphocytic leukemia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Chronic lymphocytic leukemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Chronic lymphocytic leukemia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Chronic lymphocytic leukemia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

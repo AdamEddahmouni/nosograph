@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Interstitial cystitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Interstitial cystitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Interstitial cystitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Interstitial cystitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Interstitial cystitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Interstitial cystitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Interstitial cystitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Interstitial cystitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -15,8 +15,6 @@ PROJECT_ROOT = Path(__file__).parent.parent
 pytestmark = pytest.mark.unit
 
 
-
-
 @pytest.fixture
 def sample_library():
     return [

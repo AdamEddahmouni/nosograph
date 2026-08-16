@@ -20,10 +20,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Polycystic ovary syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Polycystic ovary syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Polycystic ovary syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Polycystic ovary syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Polycystic ovary syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Polycystic ovary syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Polycystic ovary syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Polycystic ovary syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

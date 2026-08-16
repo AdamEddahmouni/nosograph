@@ -117,3 +117,23 @@ async def kg_centrality(
 async def kg_communities(disease: str = Query("sle", description="Disease ID")) -> dict[str, Any]:
     """Detect communities in the selected disease knowledge graph."""
     return run_community_detection(disease_id=disease)
+
+
+@router.get("/multi-network")
+async def kg_multi_network(
+    diseases: str = Query("sle,ra,ms,ibd", description="Comma-separated disease IDs"),
+    shared_only: bool = Query(False, description="Filter for shared hubs and bridges only"),
+    min_degree: int = Query(1, ge=1, le=10, description="Minimum node degree filter"),
+) -> dict[str, Any]:
+    """Get multi-disease merged knowledge graph elements for interactive Cytoscape.js explorer."""
+    from med_research.pipeline.knowledge_graph.network_analytics import (
+        build_multi_disease_network,
+    )
+
+    disease_list = [d.strip() for d in diseases.split(",") if d.strip()]
+    return build_multi_disease_network(
+        disease_ids=disease_list,
+        include_shared_only=shared_only,
+        min_degree=min_degree,
+    )
+

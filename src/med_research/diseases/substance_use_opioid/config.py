@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(opioid use disorder[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(opioid use disorder[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(opioid use disorder[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(opioid use disorder[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(opioid use disorder[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(opioid use disorder[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(opioid use disorder[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(opioid use disorder[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -34,8 +34,6 @@ BROWSER_ARTIFACT_DIR = PROJECT_ROOT / "test-artifacts" / "browser"
 pytestmark = [pytest.mark.unit, pytest.mark.slow]
 
 
-
-
 def _fixture_dossier() -> dict:
     return {
         "run_id": "ew-browser-fixture-001",
@@ -701,7 +699,7 @@ def test_workspace_browser_history_compare_trends_and_safe_dynamic_values(dashbo
     expect(trend_table.locator("caption")).to_contain_text("candidate scores")
     expect(trend_table.locator("thead th")).to_have_count(3)
     expect(trend_table.locator("tbody th")).to_contain_text("JAK1")
-    expect(trend_table.locator("tbody td")).to_contain_text("70.0")
+    expect(trend_table.locator("tbody td").first).to_contain_text("70.0")
     with page.expect_download() as download_info:
         page.get_by_role("button", name="Download CSV").click()
     trend_download = download_info.value

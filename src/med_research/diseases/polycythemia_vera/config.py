@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Polycythemia vera[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Polycythemia vera[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Polycythemia vera[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Polycythemia vera[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Polycythemia vera[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Polycythemia vera[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Polycythemia vera[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Polycythemia vera[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -185,8 +185,7 @@ DRUG_SAFETY_RISK = {
         "xl-019",
         "xl019",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

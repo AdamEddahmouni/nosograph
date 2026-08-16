@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Thymoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Thymoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Thymoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Thymoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Thymoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Thymoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Thymoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Thymoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

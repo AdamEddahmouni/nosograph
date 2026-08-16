@@ -1,5 +1,3 @@
-
-
 """Contract tests for ML and semantic search pipeline adapters."""
 
 from __future__ import annotations

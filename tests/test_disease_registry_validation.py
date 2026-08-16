@@ -31,13 +31,17 @@ def test_all_registry_diseases_validate_strict() -> None:
         disease = Disease(d_id)
         checks = disease.validate()
         for field in ("genes", "drugs", "pathways", "relationships", "profile"):
-            assert checks[field] == "ok", f"Field {field} in disease {d_id} failed validation: {checks[field]}"
+            assert checks[field] == "ok", (
+                f"Field {field} in disease {d_id} failed validation: {checks[field]}"
+            )
 
 
 def test_scaffolded_disease_relationship_consistency() -> None:
     disease_ids = Disease.list_all()
     # Pick sample containing scaffolded diseases
-    scaffolded = [d for d in disease_ids if d not in {"sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"}][:20]
+    scaffolded = [
+        d for d in disease_ids if d not in {"sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"}
+    ][:20]
     for d_id in scaffolded:
         disease = Disease(d_id)
         genes_data = disease.load_genes()

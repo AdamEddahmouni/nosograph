@@ -8,15 +8,24 @@ PIPELINE_LABEL = "Cystic fibrosis (CYSTIC_FIBROSIS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 # ── Symptoms (used by adverse_events/profiler.py) ────────────────────────
-# TODO: add the clinical symptoms of Cystic fibrosis
-SYMPTOMS = []
+SYMPTOMS = [
+    "chronic productive cough",
+    "recurrent pulmonary infections",
+    "bronchiectasis",
+    "steatorrhea and pancreatic insufficiency",
+    "meconium ileus",
+    "salty sweat and electrolyte loss",
+    "failure to thrive",
+    "sinusitis and nasal polyps",
+    "dyspnea on exertion",
+]
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Cystic fibrosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Cystic fibrosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Cystic fibrosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Cystic fibrosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Cystic fibrosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Cystic fibrosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Cystic fibrosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Cystic fibrosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -151,8 +160,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "albuterol",
         "alvelestat",

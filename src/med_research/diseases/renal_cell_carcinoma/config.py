@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Renal cell carcinoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Renal cell carcinoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Renal cell carcinoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Renal cell carcinoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Renal cell carcinoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Renal cell carcinoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Renal cell carcinoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Renal cell carcinoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -192,8 +192,7 @@ DRUG_SAFETY_RISK = {
         "xl-999",
         "zoledronic acid",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

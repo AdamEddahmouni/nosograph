@@ -19,8 +19,6 @@ DISEASE = "ra"
 pytestmark = [pytest.mark.integration]
 
 
-
-
 def _run_all_steps(*, skip_ml: bool = True):
     """Return ordered registry module IDs for ``run-all --full`` (mirrors cli.py)."""
     from med_research.cli import PIPELINE_STEPS, PIPELINE_STEPS_FULL, _steps_to_parallel_modules

@@ -17,10 +17,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Chronic myeloid leukemia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Chronic myeloid leukemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Chronic myeloid leukemia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Chronic myeloid leukemia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Chronic myeloid leukemia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Chronic myeloid leukemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Chronic myeloid leukemia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Chronic myeloid leukemia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -179,8 +179,7 @@ DRUG_SAFETY_RISK = {
         "xl-228",
         "zoledronic acid",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Osteosarcoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Osteosarcoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Osteosarcoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Osteosarcoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Osteosarcoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Osteosarcoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Osteosarcoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Osteosarcoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -56,12 +56,9 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
-    "moderate_risk": [
-    ],
-    "low_risk": [
-    ],
+    "high_risk": [],
+    "moderate_risk": [],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
@@ -85,8 +82,7 @@ SCREENING_PROFILE = {
         "mapk",
         "signaling",
     ],
-    "reference_drug_ids": [
-    ],
+    "reference_drug_ids": [],
     "weights": {
         "binding_estimate": 0.25,
         "druglikeness": 0.15,

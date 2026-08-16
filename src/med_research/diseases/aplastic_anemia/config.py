@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Aplastic anemia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Aplastic anemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Aplastic anemia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Aplastic anemia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Aplastic anemia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Aplastic anemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Aplastic anemia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Aplastic anemia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

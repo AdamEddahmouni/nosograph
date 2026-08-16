@@ -21,19 +21,11 @@ Usage:
 import argparse
 import json
 import logging
-import sys
 from pathlib import Path
 from typing import cast
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
-
 from med_research.cache import disease_output_path, write_json_atomic
-from med_research.pipeline.knowledge_graph.config import (
-    load_genes as config_load_genes,  # noqa: E402
-)
+from med_research.pipeline.knowledge_graph.config import load_genes as config_load_genes
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import CarTGeneScore
 
@@ -646,4 +638,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

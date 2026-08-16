@@ -230,6 +230,10 @@ MODULE_OPTS_MAPPERS: dict[str, OptsMapper] = {
     "llm_extractor": _map_llm_extractor_opts,
     "evidence_monitor": _map_evidence_monitor_opts,
     "evidence_workspace": _map_pass_through_opts,
+    "structure_3d": _map_pass_through_opts,
+    "multi_omics": _map_pass_through_opts,
+    "admet": _map_pass_through_opts,
+    "crispr": _map_pass_through_opts,
 }
 
 

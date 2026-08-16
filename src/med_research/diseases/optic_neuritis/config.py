@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Optic neuritis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Optic neuritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Optic neuritis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Optic neuritis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Optic neuritis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Optic neuritis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Optic neuritis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Optic neuritis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

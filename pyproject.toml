@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "med-research"
-version = "2.0.0"
+version = "2.1.0"
 description = "Multi-disease computational drug discovery and research platform"
 readme = "README.md"
 license = {text = "MIT"}
@@ -47,6 +47,8 @@ semantic = ["chromadb>=0.4", "sentence-transformers>=2.2"]
 dev = [
     "pytest>=8.0",
     "pytest-cov>=4.1",
+    "pytest-xdist>=3.5",
+    "pytest-asyncio>=0.24",
     "ruff>=0.3",
     "responses>=0.25",
     "mypy>=1.8",
@@ -101,7 +103,7 @@ pythonpath = ["src"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "-v --tb=short --color=auto"
+addopts = "-v --tb=short --color=auto -n auto --dist=loadscope"
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
     "unit: fast offline tests (explicit on test modules; auto-applied fallback in tests/conftest.py)",

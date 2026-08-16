@@ -33,8 +33,6 @@ KG_FILES = ["genes.json", "drugs.json", "pathways.json", "relationships.json", "
 pytestmark = pytest.mark.unit
 
 
-
-
 # ── Happy path: every disease validates through both boundaries ──────────
 
 

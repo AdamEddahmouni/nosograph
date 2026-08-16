@@ -50,7 +50,7 @@ Do **not** open public issues for security vulnerabilities. See [SECURITY.md](SE
 
 ## Running tests
 
-Fast offline suite (excludes `slow` and `integration` markers):
+Fast offline suite (excludes `slow` and `network` tests):
 
 ```bash
 make test-offline
@@ -59,7 +59,13 @@ make test-offline
 Equivalent:
 
 ```bash
-python -m pytest tests/ -m "not slow" -q
+python -m pytest tests/ -m "unit and not network" -q
+```
+
+Fast unit tests (excluding `slow` and `integration`):
+
+```bash
+make test-fast
 ```
 
 Report-related changes should pass the neutral-terminology tests so non-SLE diseases do not leak unrelated lupus/SLE copy:

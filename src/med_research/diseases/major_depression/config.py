@@ -15,10 +15,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Major depressive disorder[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Major depressive disorder[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Major depressive disorder[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Major depressive disorder[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Major depressive disorder[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Major depressive disorder[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Major depressive disorder[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Major depressive disorder[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

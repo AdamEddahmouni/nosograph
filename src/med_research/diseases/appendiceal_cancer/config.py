@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Appendiceal cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Appendiceal cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Appendiceal cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Appendiceal cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Appendiceal cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Appendiceal cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Appendiceal cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Appendiceal cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

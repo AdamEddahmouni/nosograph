@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Malaria[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Malaria[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Malaria[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Malaria[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Malaria[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Malaria[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Malaria[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Malaria[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

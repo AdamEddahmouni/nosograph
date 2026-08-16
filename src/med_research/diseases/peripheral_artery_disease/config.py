@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Peripheral artery disease[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Peripheral artery disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Peripheral artery disease[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Peripheral artery disease[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Peripheral artery disease[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Peripheral artery disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Peripheral artery disease[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Peripheral artery disease[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

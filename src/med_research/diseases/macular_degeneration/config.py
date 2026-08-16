@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Age-related macular degeneration[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Age-related macular degeneration[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Age-related macular degeneration[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Age-related macular degeneration[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Age-related macular degeneration[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Age-related macular degeneration[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Age-related macular degeneration[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Age-related macular degeneration[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

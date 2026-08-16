@@ -18,10 +18,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Multiple myeloma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Multiple myeloma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Multiple myeloma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Multiple myeloma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Multiple myeloma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Multiple myeloma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Multiple myeloma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Multiple myeloma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Adenomyosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Adenomyosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Adenomyosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Adenomyosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Adenomyosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Adenomyosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Adenomyosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Adenomyosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -146,8 +146,7 @@ DRUG_SAFETY_RISK = {
         "quinagolide",
         "ulipristal acetate",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

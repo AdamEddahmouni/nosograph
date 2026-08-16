@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+
 import pytest
 
 from med_research.pipeline.scheduler import run_levels_async, topological_levels

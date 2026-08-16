@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Endometriosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Endometriosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Endometriosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Endometriosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Endometriosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Endometriosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Endometriosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Endometriosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -161,8 +161,7 @@ DRUG_SAFETY_RISK = {
         "thalidomide",
         "ulipristal acetate",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

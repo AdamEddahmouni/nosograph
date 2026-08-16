@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Fanconi anemia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Fanconi anemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Fanconi anemia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Fanconi anemia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Fanconi anemia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Fanconi anemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Fanconi anemia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Fanconi anemia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

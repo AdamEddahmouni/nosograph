@@ -58,9 +58,7 @@ class HpoAnnotationAdapter:
             if reader.fieldnames is None:
                 raise BiomedicalValidationError("HPOA artifact is missing a header row")
             for index, row in enumerate(reader, start=2):
-                raw_disease_id = str(
-                    row.get("disease_id") or row.get("database_id") or ""
-                ).strip()
+                raw_disease_id = str(row.get("disease_id") or row.get("database_id") or "").strip()
                 raw_hp_id = str(row.get("hp_id") or row.get("hpo_id") or "").strip()
                 if not raw_disease_id or not raw_hp_id:
                     warnings.append(
@@ -105,9 +103,7 @@ class HpoAnnotationAdapter:
                 )
                 evidence.append(
                     ClaimEvidence(
-                        id=claim_evidence_uuid(
-                            claim.id, snapshot_id, direction, source_record_id
-                        ),
+                        id=claim_evidence_uuid(claim.id, snapshot_id, direction, source_record_id),
                         claim_id=claim.id,
                         snapshot_id=snapshot_id,
                         direction=direction,

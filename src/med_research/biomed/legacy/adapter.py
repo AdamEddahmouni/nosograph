@@ -21,7 +21,9 @@ class LegacyMigrationAdapter:
         version = legacy_resource_version()
         checksum = legacy_bundle_checksum(list(selected))
         snapshot_id = snapshot_uuid(self.resource_name, version, checksum)
-        projections = [project_disease(disease_id, snapshot_id=snapshot_id) for disease_id in selected]
+        projections = [
+            project_disease(disease_id, snapshot_id=snapshot_id) for disease_id in selected
+        ]
         entities, revisions, mappings, claims, evidence, warnings, metadata = merge_projections(
             projections,
             snapshot_id=snapshot_id,

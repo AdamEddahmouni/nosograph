@@ -192,7 +192,12 @@ def _register_genes(
         )
         projection.mappings.append(
             EntityMapping(
-                id=mapping_uuid(curie, legacy_local_id(projection.disease_id, gene_id), MappingKind.EXACT, snapshot_id),
+                id=mapping_uuid(
+                    curie,
+                    legacy_local_id(projection.disease_id, gene_id),
+                    MappingKind.EXACT,
+                    snapshot_id,
+                ),
                 subject_curie=curie,
                 object_curie=legacy_local_id(projection.disease_id, gene_id),
                 relation=MappingKind.EXACT,
@@ -240,7 +245,12 @@ def _register_drugs(
         )
         projection.mappings.append(
             EntityMapping(
-                id=mapping_uuid(curie, legacy_local_id(projection.disease_id, drug_id), MappingKind.EXACT, snapshot_id),
+                id=mapping_uuid(
+                    curie,
+                    legacy_local_id(projection.disease_id, drug_id),
+                    MappingKind.EXACT,
+                    snapshot_id,
+                ),
                 subject_curie=curie,
                 object_curie=legacy_local_id(projection.disease_id, drug_id),
                 relation=MappingKind.EXACT,
@@ -285,7 +295,10 @@ def _register_pathways(
         projection.mappings.append(
             EntityMapping(
                 id=mapping_uuid(
-                    curie, legacy_local_id(projection.disease_id, pathway_id), MappingKind.EXACT, snapshot_id
+                    curie,
+                    legacy_local_id(projection.disease_id, pathway_id),
+                    MappingKind.EXACT,
+                    snapshot_id,
                 ),
                 subject_curie=curie,
                 object_curie=legacy_local_id(projection.disease_id, pathway_id),
@@ -335,7 +348,9 @@ def _register_legacy_mappings(
 ) -> None:
     projection.mappings.append(
         EntityMapping(
-            id=mapping_uuid(mondo_curie, legacy_local_id(disease_id, disease_id), MappingKind.EXACT, snapshot_id),
+            id=mapping_uuid(
+                mondo_curie, legacy_local_id(disease_id, disease_id), MappingKind.EXACT, snapshot_id
+            ),
             subject_curie=mondo_curie,
             object_curie=legacy_local_id(disease_id, disease_id),
             relation=MappingKind.EXACT,
@@ -348,7 +363,10 @@ def _register_legacy_mappings(
         projection.mappings.append(
             EntityMapping(
                 id=mapping_uuid(
-                    mondo_curie, legacy_local_id(disease_id, kg_node_id), MappingKind.EXACT, snapshot_id
+                    mondo_curie,
+                    legacy_local_id(disease_id, kg_node_id),
+                    MappingKind.EXACT,
+                    snapshot_id,
                 ),
                 subject_curie=mondo_curie,
                 object_curie=legacy_local_id(disease_id, kg_node_id),
@@ -385,8 +403,7 @@ def _project_relationships(
                 ImportWarning(
                     code="unsupported_predicate",
                     message=(
-                        f"Could not map relationship {rel_type} "
-                        f"from {source!r} to {target!r}"
+                        f"Could not map relationship {rel_type} from {source!r} to {target!r}"
                     ),
                     source_record_id=source_record_id,
                 )

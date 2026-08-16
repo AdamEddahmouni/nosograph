@@ -43,19 +43,23 @@ class GTExClient:
             expression_rows = data.get("medianGeneExpression", [])
             results = []
             for row in expression_rows:
-                results.append({
-                    "tissue_site_detail_id": row.get("tissueSiteDetailId"),
-                    "tissue_name": row.get("tissueSiteDetailId", "").replace("_", " ").title(),
-                    "median_tpm": row.get("median", 0.0),
-                    "unit": "TPM",
-                })
+                results.append(
+                    {
+                        "tissue_site_detail_id": row.get("tissueSiteDetailId"),
+                        "tissue_name": row.get("tissueSiteDetailId", "").replace("_", " ").title(),
+                        "median_tpm": row.get("median", 0.0),
+                        "unit": "TPM",
+                    }
+                )
             results.sort(key=lambda x: x["median_tpm"], reverse=True)
             return results
         except Exception as err:
             logger.warning("Failed to fetch GTEx expression for %s: %s", gene_symbol, err)
             return []
 
-    def get_single_tissue_eqtls(self, gene_symbol: str, tissue_id: Optional[str] = None) -> List[Dict[str, Any]]:
+    def get_single_tissue_eqtls(
+        self, gene_symbol: str, tissue_id: Optional[str] = None
+    ) -> List[Dict[str, Any]]:
         """Fetch significant eQTL variants for a gene in GTEx tissues."""
         gene_info = self.get_gene_info(gene_symbol)
         gencode_id = gene_info.get("gencode_id") if gene_info else gene_symbol
@@ -70,14 +74,16 @@ class GTExClient:
             eqtls = data.get("singleTissueEqtl", [])
             results = []
             for item in eqtls[:25]:  # Top 25 eQTLs
-                results.append({
-                    "variant_id": item.get("variantId"),
-                    "rs_id": item.get("snpId"),
-                    "gene_symbol": item.get("geneSymbol", gene_symbol),
-                    "tissue_id": item.get("tissueSiteDetailId"),
-                    "p_value": item.get("pValue"),
-                    "nes": item.get("nes"),  # Normalized Effect Size
-                })
+                results.append(
+                    {
+                        "variant_id": item.get("variantId"),
+                        "rs_id": item.get("snpId"),
+                        "gene_symbol": item.get("geneSymbol", gene_symbol),
+                        "tissue_id": item.get("tissueSiteDetailId"),
+                        "p_value": item.get("pValue"),
+                        "nes": item.get("nes"),  # Normalized Effect Size
+                    }
+                )
             return results
         except Exception as err:
             logger.warning("Failed to fetch GTEx eQTLs for %s: %s", gene_symbol, err)

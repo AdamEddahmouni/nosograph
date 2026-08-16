@@ -10,10 +10,13 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 HOST = os.environ.get("HOST", "0.0.0.0")
 PORT = int(os.environ.get("PORT", "8000"))
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
-OPENAPI_ENABLED = os.environ.get(
-    "OPENAPI_ENABLED",
-    "true" if DEBUG else "false",
-).lower() == "true"
+OPENAPI_ENABLED = (
+    os.environ.get(
+        "OPENAPI_ENABLED",
+        "true" if DEBUG else "false",
+    ).lower()
+    == "true"
+)
 
 # ── Researcher authentication ─────────────────────────────────────────────
 # ``local`` uses signed HttpOnly sessions issued by /api/auth/login. ``proxy``
@@ -134,7 +137,7 @@ API_TAGS = [
         "name": "Cross-Disease Analysis",
         "description": (
             "Cross-disease shared biology, similarity, and multi-disease "
-            "drug scoring across 7 autoimmune diseases."
+            "drug scoring across curated disease modules."
         ),
     },
     {
@@ -148,6 +151,13 @@ API_TAGS = [
         "description": (
             "Versioned condition search, hierarchy, claims, and snapshot provenance "
             "from the canonical biomedical store."
+        ),
+    },
+    {
+        "name": "Biomedical Analytics",
+        "description": (
+            "Graph analytics, shortest path discovery, and target vulnerability "
+            "prioritization from the canonical biomedical store."
         ),
     },
 ]
@@ -187,9 +197,7 @@ USE_CACHE = os.environ.get("USE_CACHE", "true").lower() == "true"
 
 # ── Workspace run history ──────────────────────────────────────────────────
 WORKSPACE_DB_PATH = Path(
-    os.environ.get(
-        "WORKSPACE_DB_PATH", str(REPO_ROOT / "data" / "evidence_workspace.sqlite3")
-    )
+    os.environ.get("WORKSPACE_DB_PATH", str(REPO_ROOT / "data" / "evidence_workspace.sqlite3"))
 )
 
 # ── Biomedical canonical store ─────────────────────────────────────────────

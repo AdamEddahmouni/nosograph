@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Hidradenitis suppurativa[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Hidradenitis suppurativa[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Hidradenitis suppurativa[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Hidradenitis suppurativa[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Hidradenitis suppurativa[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Hidradenitis suppurativa[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Hidradenitis suppurativa[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Hidradenitis suppurativa[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

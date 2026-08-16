@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Eisenmenger syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Eisenmenger syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Eisenmenger syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Eisenmenger syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Eisenmenger syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Eisenmenger syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Eisenmenger syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Eisenmenger syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -138,8 +138,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "bosentan",
         "macitentan",
@@ -147,8 +146,7 @@ DRUG_SAFETY_RISK = {
         "sildenafil",
         "tadalafil",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -6,9 +6,9 @@ from pathlib import Path
 from typing import Any
 
 from med_research.diseases.coverage import ModuleCoverage
-from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.base import PipelineRunResult
 from med_research.pipeline.dispatch import LegacyProgress, StandardProgress
+from med_research.pipeline.provenance import ProvenanceMetadata
 
 
 class PipelineGateway:

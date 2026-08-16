@@ -783,32 +783,35 @@
     {
       "id": "mepolizumab",
       "name": "Mepolizumab",
-      "targets": [
-        "IL5"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Humanized anti-IL-5 monoclonal antibody",
-      "drug_type": "Biologic"
+      "type": "Monoclonal antibody",
+      "target": "IL5",
+      "mechanism": "Humanized anti-IL-5 monoclonal antibody reducing eosinophil proliferation",
+      "approval": "FDA Approved",
+      "route": "Subcutaneous",
+      "efficacy": "Reduces exacerbations in severe eosinophilic asthma",
+      "references": ["PMID:25207952"]
     },
     {
       "id": "tezepelumab",
       "name": "Tezepelumab",
-      "targets": [
-        "TSLP"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Human anti-TSLP monoclonal antibody",
-      "drug_type": "Biologic"
+      "type": "Monoclonal antibody",
+      "target": "TSLP",
+      "mechanism": "Human anti-TSLP monoclonal antibody inhibiting epithelial alarmins",
+      "approval": "FDA Approved",
+      "route": "Subcutaneous",
+      "efficacy": "Broad exacerbation reduction across non-eosinophilic and eosinophilic phenotypes",
+      "references": ["PMID:33979488"]
     },
     {
       "id": "fluticasone",
       "name": "Fluticasone",
-      "targets": [
-        "NR3C1"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Inhaled corticosteroid anti-inflammatory agent",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "NR3C1",
+      "mechanism": "High-affinity glucocorticoid receptor agonist suppressing airway inflammation",
+      "approval": "FDA Approved",
+      "route": "Inhalation",
+      "efficacy": "First-line maintenance controller therapy",
+      "references": ["PMID:11451528"]
     }
   ]
 }

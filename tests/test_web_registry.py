@@ -37,12 +37,9 @@ _MODULE_ROUTE_CASES = sorted(
 pytestmark = pytest.mark.unit
 
 
-
-
 @pytest.fixture(scope="module")
 def client():
     """Shared FastAPI test client for router integration checks."""
-
 
     with TestClient(app) as test_client:
         yield test_client
@@ -1077,7 +1074,6 @@ class TestCliCoverageBoost:
         assert mock_dispatch.call_count == 5
 
     def test_cli_safety_network_expression_cart_with_mocks(self, monkeypatch):
-        import med_research.cli as cli_mod
         import med_research.pipeline.network_pharmacology.analyzer as network_analyzer
         from med_research.cli import cmd_cart, cmd_expression, cmd_network, cmd_safety
         from med_research.pipeline.base import PipelineRunResult
@@ -2327,6 +2323,10 @@ class TestMiscRouterUnit:
             "clinical_trials",
             "gwas",
             "fda_labels",
+            "opentargets",
+            "gtex",
+            "biorxiv",
+            "chembl",
         }
 
 

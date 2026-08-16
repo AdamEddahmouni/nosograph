@@ -15,10 +15,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Myelodysplastic syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Myelodysplastic syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Myelodysplastic syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Myelodysplastic syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Myelodysplastic syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Myelodysplastic syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Myelodysplastic syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Myelodysplastic syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -185,8 +185,7 @@ DRUG_SAFETY_RISK = {
         "vismodegib",
         "volasertib",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

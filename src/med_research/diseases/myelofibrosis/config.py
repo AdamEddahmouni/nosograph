@@ -24,10 +24,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Myelofibrosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Myelofibrosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Myelofibrosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Myelofibrosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Myelofibrosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Myelofibrosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Myelofibrosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Myelofibrosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -207,8 +207,7 @@ DRUG_SAFETY_RISK = {
         "xl-019",
         "zoledronic acid",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

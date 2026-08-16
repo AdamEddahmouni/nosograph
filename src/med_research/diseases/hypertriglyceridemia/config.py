@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(hypertriglyceridemia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(hypertriglyceridemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(hypertriglyceridemia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(hypertriglyceridemia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(hypertriglyceridemia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(hypertriglyceridemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(hypertriglyceridemia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(hypertriglyceridemia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

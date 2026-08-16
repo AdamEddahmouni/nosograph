@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Hereditary hemorrhagic telangiectasia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Hereditary hemorrhagic telangiectasia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Hereditary hemorrhagic telangiectasia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Hereditary hemorrhagic telangiectasia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Hereditary hemorrhagic telangiectasia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Hereditary hemorrhagic telangiectasia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Hereditary hemorrhagic telangiectasia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Hereditary hemorrhagic telangiectasia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -136,8 +136,7 @@ DRUG_SAFETY_RISK = {
         "timolol maleate",
         "tranexamic acid",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

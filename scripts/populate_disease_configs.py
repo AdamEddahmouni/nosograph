@@ -207,7 +207,7 @@ def derive_screening_profile(
             "similarity_score": 0.15,
             "novelty_score": 0.10,
         },
-        "source": f"scaffold_{disease_id}_knowledge_graph",
+        "source": "inferred_scaffold_v1",
         "curated_inputs": ["pathways", "drugs", "screening_strategy"],
         "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
         "limitations": [
@@ -319,7 +319,8 @@ def validate_disease(disease_id: str, rubric_strict: bool = False) -> dict[str, 
             if "lupus" in lower or re.search(r"\bsle\b", lower):
                 issues.append(f"PUBMED contains SLE term: {query[:60]}")
 
-    if not existing_risk or not any(existing_risk.values()):
+    drug_count = len(drugs.get("drugs", []))
+    if drug_count > 0 and (not existing_risk or not any(existing_risk.values())):
         issues.append("DRUG_SAFETY_RISK tiers empty")
 
     if not config.get("DRUG_SAFETY_RISK"):

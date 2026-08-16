@@ -82,7 +82,9 @@ class LiteratureMiningModule(BasePipelineModule[LiteratureMiningResult]):
         )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         use_cache = opts.get("use_cache", True)
         extra: dict[str, Any] = {
             key: value

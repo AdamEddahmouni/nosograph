@@ -20,7 +20,6 @@ from med_research.pipeline.provenance import build_provenance
 pytestmark = pytest.mark.unit
 
 
-
 class TestAdverseEventsAdapter(ModuleAdapterContract):
     module_cls = AdverseEventsModule
     module_id = "adverse_events"

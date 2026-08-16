@@ -1,0 +1,20 @@
+{
+  "pathways": [
+    {
+      "id": "R-HSA-168898",
+      "name": "Innate Immune System",
+      "species": "Homo sapiens",
+      "definition": "Innate immunity represents the first line of defense against pathogens.",
+      "parents": [],
+      "genes": ["HGNC:TNF", "HGNC:IL6"]
+    },
+    {
+      "id": "R-HSA-1280215",
+      "name": "Cytokine Signaling in Immune system",
+      "species": "Homo sapiens",
+      "definition": "Cytokines are redundant secreted proteins mediating immunity.",
+      "parents": ["R-HSA-168898"],
+      "genes": ["HGNC:TNF", "HGNC:JAK1"]
+    }
+  ]
+}

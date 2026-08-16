@@ -12,6 +12,7 @@ Usage:
 """
 
 import argparse
+import importlib.util
 import logging
 import sys
 from pathlib import Path
@@ -22,34 +23,25 @@ from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import SemanticHit
 
 logger = logging.getLogger(__name__)
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-if sys.platform == "win32":
-    _stdout = sys.stdout
-    if hasattr(_stdout, "reconfigure"):
-        _stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DATA_DIR = Path(__file__).parent / "data"
 CHROMA_DIR = Path("data/chroma/semantic")
 # Literature-mining data dir (same layout the miner writes to)
 LIT_DATA_DIR = Path(__file__).parent.parent / "literature_mining" / "data"
 
-# ---- Optional dependencies with graceful fallback ----
+# ---- Optional dependencies with graceful fallback (lazy-loaded for fast startup) ----
 
-try:
-    import chromadb
 
-    CHROMADB_AVAILABLE = True
-except ImportError:
-    chromadb = None  # type: ignore[assignment]
-    CHROMADB_AVAILABLE = False
+def _is_package_available(name: str) -> bool:
+    try:
+        return importlib.util.find_spec(name) is not None
+    except (ImportError, ValueError, AttributeError):
+        return False
 
-try:
-    from sentence_transformers import SentenceTransformer
 
-    ST_AVAILABLE = True
-except ImportError:
-    ST_AVAILABLE = False
+CHROMADB_AVAILABLE = _is_package_available("chromadb")
+ST_AVAILABLE = _is_package_available("sentence_transformers")
+chromadb: Any = None
 
 last_coverage = None
 
@@ -57,10 +49,14 @@ last_coverage = None
 def _chromadb_collection_errors() -> tuple:
     """Exception types raised when a Chroma collection is missing."""
     if CHROMADB_AVAILABLE:
-        from chromadb.errors import NotFoundError
+        try:
+            from chromadb.errors import NotFoundError
 
-        return (NotFoundError, ValueError, RuntimeError)
+            return (NotFoundError, ValueError, RuntimeError)
+        except ImportError:
+            pass
     return (ValueError, RuntimeError)
+
 
 
 def resolve_semantic_coverage(disease_id: str) -> ModuleCoverage:
@@ -151,6 +147,8 @@ class SemanticSearchEngine:
     def _load_model(self):
         if self.model is None:
             logger.info(f"Loading embedding model: {self.model_name} ...")
+            from sentence_transformers import SentenceTransformer
+
             self.model = SentenceTransformer(self.model_name)
             logger.info(
                 f"   Model loaded ({self.model.get_sentence_embedding_dimension()}-dim embeddings)"
@@ -159,6 +157,8 @@ class SemanticSearchEngine:
     def _ensure_collection(self):
         if self.collection is None:
             DATA_DIR.mkdir(parents=True, exist_ok=True)
+            import chromadb
+
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             # Delete existing collection on re-index to avoid duplicates
             try:
@@ -244,6 +244,15 @@ class SemanticSearchEngine:
 
         # Load existing collection (don't recreate)
         if self.collection is None:
+            try:
+                import chromadb
+            except ImportError:
+                import sys
+
+                chromadb = getattr(sys.modules.get(__name__), "chromadb", None)
+                if chromadb is None:
+                    return []
+
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
                 self.collection = self.client.get_collection(self.collection_name)
@@ -282,6 +291,8 @@ class SemanticSearchEngine:
         if not CHROMADB_AVAILABLE:
             return 0
         if self.collection is None:
+            import chromadb
+
             self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
             try:
                 self.collection = self.client.get_collection(self.collection_name)
@@ -362,4 +373,3 @@ if __name__ == "__main__":
     from med_research.cli import main as cli_main
 
     sys.exit(cli_main() or 0)
-

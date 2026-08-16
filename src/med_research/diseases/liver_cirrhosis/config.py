@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Liver cirrhosis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Liver cirrhosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Liver cirrhosis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Liver cirrhosis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Liver cirrhosis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Liver cirrhosis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Liver cirrhosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Liver cirrhosis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

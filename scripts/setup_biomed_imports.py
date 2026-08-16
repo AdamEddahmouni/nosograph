@@ -65,12 +65,13 @@ def _sha256(path: Path) -> str:
     return f"sha256:{digest.hexdigest()}"
 
 
-def _verify_artifact(resource: str, path: Path, manifest: dict) -> None:
-    expected = manifest["artifacts"][resource]["checksum"]
+def _verify_artifact(resource: str, path: Path, manifest: dict, from_fixtures: bool) -> None:
+    key = "fixture_checksum" if from_fixtures else "download_checksum"
+    expected = manifest["artifacts"][resource][key]
     actual = _sha256(path)
     if actual != expected:
         raise SystemExit(
-            f"Checksum mismatch for {resource}: expected {expected}, got {actual}"
+            f"Checksum mismatch for {resource} ({key}): expected {expected}, got {actual}"
         )
     print(f"  verified {path.name} ({actual})")
 
@@ -143,8 +144,7 @@ def main() -> int:
         if not artifact.is_file():
             print(f"Missing artifact: {artifact}")
             return 1
-        if args.from_fixtures:
-            _verify_artifact(resource, artifact, manifest)
+        _verify_artifact(resource, artifact, manifest, args.from_fixtures)
         import_args = ["biomed", "import", resource, "--artifact", str(artifact), *slim_args, *activate_args]
         if _run_cli(*import_args) != 0:
             return 1

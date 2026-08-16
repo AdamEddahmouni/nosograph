@@ -21,7 +21,7 @@ PUBMED_QUERIES = [
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
 TRIAL_QUERY = "pituitary-dependent Cushing's disease OR pituitary-dependent"
-GWAS_SEARCH_TERMS = ["pituitary-dependent Cushing's disease", 'pituitary-dependent']
+GWAS_SEARCH_TERMS = ["pituitary-dependent Cushing's disease", "pituitary-dependent"]
 
 # ── CAR-T Scoring Tables (used by car_t_predictor/predictor.py) ──────────
 CAR_T_SCORES = {
@@ -85,8 +85,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "azd-4017",
         "bexarotene",
@@ -102,8 +101,7 @@ DRUG_SAFETY_RISK = {
         "seliciclib",
         "vorinostat",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

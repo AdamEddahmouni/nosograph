@@ -12,11 +12,47 @@ against it, using the disease config to parameterize disease-specific logic.
 from __future__ import annotations
 
 import json
+import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Optional, Sequence, cast
 
 from med_research.diseases.coverage import ModuleCoverage
+
+_ALL_DISEASES_CACHE: Optional[list[str]] = None
+_ROOT_CACHE: dict[str, Path] = {}
+_CONFIG_CACHE: dict[str, dict[str, Any]] = {}
+
+
+def invalidate_disease_cache() -> None:
+    """Invalidate in-memory disease discovery cache (e.g. after scaffold generation)."""
+    global _ALL_DISEASES_CACHE, _ROOT_CACHE, _CONFIG_CACHE
+    _ALL_DISEASES_CACHE = None
+    _ROOT_CACHE.clear()
+    _CONFIG_CACHE.clear()
+    try:
+        from med_research.diseases.coverage import coverage_for_disease, module_coverage
+
+        clear_cov = getattr(coverage_for_disease, "cache_clear", None)
+        if callable(clear_cov):
+            clear_cov()
+        clear_mod = getattr(module_coverage, "cache_clear", None)
+        if callable(clear_mod):
+            clear_mod()
+    except Exception:
+        pass
+    try:
+        from med_research.diseases.schemas import invalidate_schemas_cache
+
+        invalidate_schemas_cache()
+    except Exception:
+        pass
+    try:
+        from med_research.web.routers.system import invalidate_system_disease_cache
+
+        invalidate_system_disease_cache()
+    except Exception:
+        pass
 
 
 @dataclass
@@ -52,15 +88,21 @@ class Disease:
         self._profile: Optional[DiseaseProfile] = None
         self._config: Optional[dict[str, Any]] = None
         self._scores: Optional[dict] = None
+        self._data_cache: dict[str, Any] = {}
 
     @staticmethod
     def _resolve_root(disease_id: str) -> Path:
         """Find the diseases directory and resolve this disease's path."""
+        cached = _ROOT_CACHE.get(disease_id)
+        if cached is not None:
+            return cached
+
         import med_research.diseases as diseases_pkg
 
         root = Path(diseases_pkg.__file__).parent / disease_id
         if not root.exists():
             raise ValueError(f"Disease '{disease_id}' not found. Available: {Disease.list_all()}")
+        _ROOT_CACHE[disease_id] = root
         return root
 
     @property
@@ -95,14 +137,20 @@ class Disease:
 
     def load_json(self, filename: str) -> dict[str, Any]:
         """Load a data file, validating registered KG files against their schema."""
+        if filename in self._data_cache:
+            return cast(dict[str, Any], self._data_cache[filename])
+
         from med_research.diseases.schemas import KG_FILE_MODELS, load_validated_json
 
         path = self.data_dir / filename
         model_class = KG_FILE_MODELS.get(filename)
         if model_class is None:
             with open(path, encoding="utf-8") as f:
-                return cast(dict[str, Any], json.load(f))
-        return load_validated_json(path, model_class)
+                data = cast(dict[str, Any], json.load(f))
+        else:
+            data = load_validated_json(path, model_class)
+        self._data_cache[filename] = data
+        return data
 
     def load_genes(self) -> dict:
         return self.load_json("genes.json")
@@ -120,26 +168,35 @@ class Disease:
 
     def _load_config(self) -> dict:
         """Load disease_config.py if it exists, else return empty defaults."""
-        if self._config is None:
-            config_path = self._root / "config.py"
-            if config_path.exists():
-                import importlib.util
+        if self._config is not None:
+            return self._config
 
-                spec = importlib.util.spec_from_file_location(
-                    f"med_research.diseases.{self.disease_id}.config", str(config_path)
-                )
-                if spec and spec.loader:
-                    module = importlib.util.module_from_spec(spec)
-                    spec.loader.exec_module(module)
-                    self._config = {
-                        k: v
-                        for k, v in vars(module).items()
-                        if not k.startswith("_") and k.isupper()
-                    }
-                else:
-                    self._config = {}
+        cached_cfg = _CONFIG_CACHE.get(self.disease_id)
+        if cached_cfg is not None:
+            self._config = cached_cfg
+            return self._config
+
+        config_path = self._root / "config.py"
+        if config_path.exists():
+            import importlib.util
+
+            spec = importlib.util.spec_from_file_location(
+                f"med_research.diseases.{self.disease_id}.config", str(config_path)
+            )
+            if spec and spec.loader:
+                module = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(module)
+                self._config = {
+                    k: v
+                    for k, v in vars(module).items()
+                    if not k.startswith("_") and k.isupper()
+                }
             else:
                 self._config = {}
+        else:
+            self._config = {}
+
+        _CONFIG_CACHE[self.disease_id] = self._config
         return self._config
 
     @property
@@ -291,14 +348,21 @@ class Disease:
         from med_research.exceptions import MissingDataError, SchemaValidationError
 
         checks: dict[str, str] = {}
+        drug_count = 0
+        try:
+            drug_count = len(self.load_drugs().get("drugs", []))
+        except Exception:
+            drug_count = 0
+
         required = {
             "SYMPTOMS": self.get_symptoms(),
             "PUBMED_QUERIES": self.config.get("PUBMED_QUERIES", []),
             "TRIAL_QUERY": self.config.get("TRIAL_QUERY", ""),
             "GWAS_SEARCH_TERMS": self.config.get("GWAS_SEARCH_TERMS", []),
             "CAR_T_SCORES": self.get_car_t_scores(),
-            "DRUG_SAFETY_RISK": self.get_disease_risk_config(),
         }
+        if drug_count > 0:
+            required["DRUG_SAFETY_RISK"] = self.get_disease_risk_config()
         for name, value in required.items():
             if isinstance(value, dict):
                 if value and any(value.values()):
@@ -332,17 +396,27 @@ class Disease:
 
     @staticmethod
     def list_all() -> list[str]:
+        global _ALL_DISEASES_CACHE
+        if _ALL_DISEASES_CACHE is not None:
+            return list(_ALL_DISEASES_CACHE)
+
         import med_research.diseases as diseases_pkg
 
         root = Path(diseases_pkg.__file__).parent
-        return sorted(
-            d.name
-            for d in root.iterdir()
-            if d.is_dir()
-            and (d / "__init__.py").exists()
-            and not d.name.startswith("_")
-            and d.name != "__pycache__"
-        )
+        from med_research.diseases.registry_quality import is_blocked_slug
+
+        with os.scandir(root) as it:
+            result = sorted(
+                entry.name
+                for entry in it
+                if entry.is_dir()
+                and not entry.name.startswith("_")
+                and entry.name != "__pycache__"
+                and os.path.isfile(os.path.join(entry.path, "__init__.py"))
+                and not is_blocked_slug(entry.name)
+            )
+        _ALL_DISEASES_CACHE = result
+        return list(result)
 
     @staticmethod
     def discover() -> dict[str, "Disease"]:

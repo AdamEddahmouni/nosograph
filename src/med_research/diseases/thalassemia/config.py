@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Beta-thalassemia[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Beta-thalassemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Beta-thalassemia[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Beta-thalassemia[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Beta-thalassemia[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Beta-thalassemia[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Beta-thalassemia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Beta-thalassemia[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -17,10 +17,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Hodgkin lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Hodgkin lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Hodgkin lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Hodgkin lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Hodgkin lymphoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Hodgkin lymphoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Hodgkin lymphoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Hodgkin lymphoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

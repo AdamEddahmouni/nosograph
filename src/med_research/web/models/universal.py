@@ -18,10 +18,17 @@ EntityTypeLiteral = Literal[
     "measurement",
     "exposure",
     "outcome",
+    "anatomy",
+    "cell_type",
+    "variant",
 ]
 
 PredicateLiteral = Literal[
     "IS_A",
+    "PART_OF",
+    "REGULATES",
+    "LOCATED_IN",
+    "EXPRESSED_IN",
     "HAS_PHENOTYPE",
     "ASSOCIATED_WITH_GENE",
     "INVOLVES_PATHWAY",
@@ -52,6 +59,60 @@ class ResearchDisclaimer(BaseModel):
 
     text: str = Field(default=RESEARCH_DISCLAIMER_TEXT)
     schema_version: str = "1.0"
+
+
+class AnalyticsStatsView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    total_entities: int
+    total_claims: int
+    total_evidence: int
+    total_snapshots: int
+    entity_type_distribution: dict[str, int] = Field(default_factory=dict)
+    predicate_distribution: dict[str, int] = Field(default_factory=dict)
+    disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
+
+
+class AnalyticsTargetView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    target_curie: str
+    target_name: str
+    target_type: str
+    supporting_count: int
+    contradictory_count: int
+    evidence_score: float
+    pathway_count: int
+    phenotype_count: int
+
+
+class AnalyticsSharedMechanismView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    condition_a: str
+    condition_b: str
+    shared_pathways: list[str]
+    shared_genes: list[str]
+    jaccard_similarity: float
+    disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
+
+
+class AnalyticsSubgraphEdgeView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    source: str
+    predicate: str
+    target: str
+    evidence_count: int
+
+
+class AnalyticsSubgraphView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    root_curie: str
+    edges: list[AnalyticsSubgraphEdgeView]
+    edge_count: int
+    disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
 
 
 class EntitySummaryView(BaseModel):
@@ -241,4 +302,3 @@ class ComparisonResultView(BaseModel):
     algorithm_id: str = "condition-similarity"
     algorithm_version: str = "1.0.0"
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
-

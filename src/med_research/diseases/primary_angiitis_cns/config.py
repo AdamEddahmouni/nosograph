@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Primary angiitis of the central nervous system[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Primary angiitis of the central nervous system[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Primary angiitis of the central nervous system[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Primary angiitis of the central nervous system[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Primary angiitis of the central nervous system[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Primary angiitis of the central nervous system[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Primary angiitis of the central nervous system[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Primary angiitis of the central nervous system[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

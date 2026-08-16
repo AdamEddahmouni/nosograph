@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Chlamydia infection[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Chlamydia infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Chlamydia infection[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Chlamydia infection[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Chlamydia infection[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Chlamydia infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Chlamydia infection[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Chlamydia infection[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

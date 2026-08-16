@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Diabetic macular edema[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Diabetic macular edema[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Diabetic macular edema[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Diabetic macular edema[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Diabetic macular edema[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Diabetic macular edema[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Diabetic macular edema[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Diabetic macular edema[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

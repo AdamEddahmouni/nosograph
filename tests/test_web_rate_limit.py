@@ -5,8 +5,6 @@ calls and fail-open behavior, the create/fallback factory, and the
 middleware's 429 integration.
 """
 
-
-
 import pytest
 import redis
 

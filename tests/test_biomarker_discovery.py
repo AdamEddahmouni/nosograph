@@ -2,8 +2,6 @@
 Tests for the Biomarker Discovery module.
 """
 
-
-
 import json
 import sys
 from pathlib import Path
@@ -25,10 +23,8 @@ pytestmark = pytest.mark.unit
 # ── Unit: Gene Mapping ───────────────────────────────────────────────────
 
 
-def test_map_gene_to_modules_returns_list():
-    from med_research.pipeline.knowledge_graph.builder import build_graph
-
-    G = build_graph()
+def test_map_gene_to_modules_returns_list(sample_graph):
+    G = sample_graph
     genes = {n: d for n, d in G.nodes(data=True) if d.get("type") == "gene"}
     matrix = map_gene_to_modules(genes, {})
     assert len(matrix) > 20

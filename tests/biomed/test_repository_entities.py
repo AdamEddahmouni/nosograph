@@ -22,7 +22,9 @@ def test_non_exact_mapping_never_resolves(
     assert repository.resolve_exact_curie(close_mapping.object_curie) is None
 
 
-def test_search_entities_finds_synonym(repository, mondo_snapshot, sle_entity, sle_revision) -> None:
+def test_search_entities_finds_synonym(
+    repository, mondo_snapshot, sle_entity, sle_revision
+) -> None:
     repository.upsert_snapshot(mondo_snapshot)
     repository.upsert_entity(sle_entity)
     repository.add_entity_revision(sle_revision)

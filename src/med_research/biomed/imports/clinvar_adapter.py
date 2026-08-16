@@ -91,9 +91,18 @@ class ClinVarImportAdapter(ImportAdapter):
             vcv_id = str(item.get("vcv_id") or item.get("variation_id") or item.get("id") or "")
             gene_symbol = str(item.get("gene_symbol") or item.get("gene") or "")
             gene_id = str(item.get("gene_id") or "")
-            disease_curie = str(item.get("condition_curie") or item.get("disease_curie") or item.get("mondo_id") or "")
-            disease_name = str(item.get("condition_name") or item.get("disease_name") or disease_curie)
-            clinical_sig = str(item.get("clinical_significance") or item.get("significance") or "Pathogenic")
+            disease_curie = str(
+                item.get("condition_curie")
+                or item.get("disease_curie")
+                or item.get("mondo_id")
+                or ""
+            )
+            disease_name = str(
+                item.get("condition_name") or item.get("disease_name") or disease_curie
+            )
+            clinical_sig = str(
+                item.get("clinical_significance") or item.get("significance") or "Pathogenic"
+            )
 
             if not gene_symbol and not gene_id:
                 continue
@@ -162,7 +171,11 @@ class ClinVarImportAdapter(ImportAdapter):
             else:
                 direction = EvidenceDirection.SUPPORTING
 
-            rec_id = vcv_id if vcv_id else f"CLINVAR:{hashlib.md5(f'{gene_curie}_{disease_curie}'.encode()).hexdigest()[:8]}"
+            rec_id = (
+                vcv_id
+                if vcv_id
+                else f"CLINVAR:{hashlib.md5(f'{gene_curie}_{disease_curie}'.encode()).hexdigest()[:8]}"
+            )
             ev_id = claim_evidence_uuid(c_id, snapshot.id, direction, rec_id)
 
             evidence.append(

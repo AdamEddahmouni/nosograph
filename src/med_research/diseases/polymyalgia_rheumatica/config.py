@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Polymyalgia rheumatica[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Polymyalgia rheumatica[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Polymyalgia rheumatica[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Polymyalgia rheumatica[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Polymyalgia rheumatica[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Polymyalgia rheumatica[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Polymyalgia rheumatica[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Polymyalgia rheumatica[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -122,8 +122,7 @@ DRUG_SAFETY_RISK = {
         "tocilizumab",
         "tofacitinib",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

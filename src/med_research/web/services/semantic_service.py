@@ -8,7 +8,9 @@ from med_research.web.services.registry_service import (
 )
 
 
-def run_semantic_search(query: str, top_k: int = 20, disease_id: str = "sle") -> SemanticSearchResponse:
+def run_semantic_search(
+    query: str, top_k: int = 20, disease_id: str = "sle"
+) -> SemanticSearchResponse:
     """Run semantic search via the semantic_search registry adapter."""
     coverage = resolve_semantic_coverage(disease_id)
     require_runnable_coverage(coverage, "semantic_search")

@@ -84,7 +84,9 @@ class EvidenceGathererModule(BasePipelineModule[EvidenceGatherResult]):
 
         return Path(generate_html_report(cast(dict, results), provenance=provenance))
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         use_cache = opts.get("use_cache", True)
         sources = opts.get("sources") or [
             "pubmed",
@@ -149,7 +151,9 @@ class LLMExtractorModule(BasePipelineModule[EvidenceExtractionResult]):
 
         return Path(generate_html_report(cast(dict, results), provenance=provenance))
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         use_cache = opts.get("use_cache", True)
         sources = opts.get("sources") or ["pubmed", "preprints", "clinical_trials"]
         return build_provenance(
@@ -251,7 +255,9 @@ class EvidenceMonitorModule(BasePipelineModule[EvidenceMonitorResult]):
             )
         return Path(report_path)
 
-    def build_provenance(self, disease_id: str, **opts: Unpack[AdapterOptions]) -> ProvenanceMetadata:
+    def build_provenance(
+        self, disease_id: str, **opts: Unpack[AdapterOptions]
+    ) -> ProvenanceMetadata:
         sources = opts.get("sources") or ["pubmed", "preprints", "clinical_trials"]
         return build_provenance(
             disease_id=disease_id,

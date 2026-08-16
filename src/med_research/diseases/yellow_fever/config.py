@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(ankylosing spondylitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(ankylosing spondylitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(ankylosing spondylitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(ankylosing spondylitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(ankylosing spondylitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(ankylosing spondylitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(ankylosing spondylitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(ankylosing spondylitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

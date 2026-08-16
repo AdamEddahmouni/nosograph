@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Granulomatosis with polyangiitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Granulomatosis with polyangiitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Granulomatosis with polyangiitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Granulomatosis with polyangiitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Granulomatosis with polyangiitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Granulomatosis with polyangiitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Granulomatosis with polyangiitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Granulomatosis with polyangiitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -160,8 +160,7 @@ DRUG_SAFETY_RISK = {
         "trimethoprim",
         "vilobelimab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

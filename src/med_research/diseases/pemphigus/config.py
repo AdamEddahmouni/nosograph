@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Pemphigus vulgaris[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Pemphigus vulgaris[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Pemphigus vulgaris[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Pemphigus vulgaris[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Pemphigus vulgaris[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Pemphigus vulgaris[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Pemphigus vulgaris[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Pemphigus vulgaris[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -36,7 +36,6 @@ MEEKO_AVAILABLE = _detect_meeko()
 pytestmark = pytest.mark.unit
 
 
-
 @pytest.mark.skipif(not RDKIT_AVAILABLE, reason="RDKit not installed")
 def test_rdkit_detected():
     assert _detect_rdkit() is True

@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Clostridioides difficile infection[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Clostridioides difficile infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Clostridioides difficile infection[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Clostridioides difficile infection[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Clostridioides difficile infection[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Clostridioides difficile infection[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Clostridioides difficile infection[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Clostridioides difficile infection[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

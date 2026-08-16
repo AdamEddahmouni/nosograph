@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Influenza[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Influenza[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Influenza[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Influenza[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Influenza[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Influenza[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Influenza[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Influenza[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

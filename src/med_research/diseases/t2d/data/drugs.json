@@ -5,43 +5,62 @@
     {
       "id": "metformin",
       "name": "Metformin",
-      "targets": [
-        "PRKAA1"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "AMPK activator suppressing hepatic gluconeogenesis",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "PRKAA1",
+      "mechanism": "AMPK activator suppressing hepatic gluconeogenesis and enhancing peripheral insulin sensitivity",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "First-line standard of care pharmacotherapy for glycemic control",
+      "references": ["PMID:9804005", "PMID:11933843"],
+      "adverse_effects": "Diarrhea, nausea, abdominal discomfort, rare lactic acidosis"
     },
     {
       "id": "semaglutide",
       "name": "Semaglutide",
-      "targets": [
-        "GLP1R"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "GLP-1 receptor agonist enhancing glucose-dependent insulin secretion",
-      "drug_type": "Peptide"
+      "type": "GLP-1 analog peptide",
+      "target": "GLP1R",
+      "mechanism": "GLP-1 receptor agonist stimulating glucose-dependent insulin release and suppressing glucagon",
+      "approval": "FDA Approved",
+      "route": "Subcutaneous / Oral",
+      "efficacy": "Potent HbA1c reduction and major adverse cardiovascular event (MACE) reduction",
+      "references": ["PMID:27633186", "PMID:31185157"],
+      "adverse_effects": "Nausea, vomiting, diarrhea, constipation, rare pancreatitis"
     },
     {
       "id": "empagliflozin",
       "name": "Empagliflozin",
-      "targets": [
-        "SLC5A2"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "SGLT2 inhibitor reducing renal glucose reabsorption",
-      "drug_type": "Small molecule"
+      "type": "Small molecule",
+      "target": "SLC5A2",
+      "mechanism": "Sodium-glucose cotransporter-2 (SGLT2) inhibitor promoting urinary glucose excretion",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Lowers glucose, reduces cardiovascular death, and provides renal protection",
+      "references": ["PMID:26378978"],
+      "adverse_effects": "Mycotic genital infections, urinary tract infections, volume depletion, euglycemic DKA"
     },
     {
       "id": "tirzepatide",
       "name": "Tirzepatide",
-      "targets": [
-        "GLP1R",
-        "GIPR"
-      ],
-      "phase": "Approved",
-      "mechanism_of_action": "Dual GIP and GLP-1 receptor agonist",
-      "drug_type": "Peptide"
+      "type": "Dual incretin peptide",
+      "target": "GLP1R / GIPR",
+      "mechanism": "Dual GIP and GLP-1 receptor agonist enhancing insulin secretion and satiety",
+      "approval": "FDA Approved",
+      "route": "Subcutaneous",
+      "efficacy": "Superior glycemic efficacy and substantial body weight reduction",
+      "references": ["PMID:34170797"],
+      "adverse_effects": "Nausea, diarrhea, decreased appetite, vomiting, dyspepsia"
+    },
+    {
+      "id": "sitagliptin",
+      "name": "Sitagliptin",
+      "type": "Small molecule",
+      "target": "DPP4",
+      "mechanism": "Dipeptidyl peptidase-4 (DPP-4) inhibitor prolonging endogenous GLP-1 and GIP activity",
+      "approval": "FDA Approved",
+      "route": "Oral",
+      "efficacy": "Well-tolerated oral incretin enhancer with low hypoglycemia risk",
+      "references": ["PMID:17182283"],
+      "adverse_effects": "Nasopharyngitis, upper respiratory tract infection, headache"
     }
   ]
 }

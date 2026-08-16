@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(adrenal cortex carcinoma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(adrenal cortex carcinoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(adrenal cortex carcinoma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(adrenal cortex carcinoma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(adrenal cortex carcinoma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(adrenal cortex carcinoma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(adrenal cortex carcinoma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(adrenal cortex carcinoma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

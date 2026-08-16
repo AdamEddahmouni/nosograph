@@ -29,6 +29,7 @@
                     <a href="#evidence-workspace" class="nav-link" data-nav="evidence-workspace">Workspace</a>
                     <a href="#modules" class="nav-link" data-nav="modules">Modules</a>
                     <a href="#kg-explorer" class="nav-link" data-nav="kg-explorer">KG</a>
+                    <a href="#corpus-status" class="nav-link" data-nav="corpus-status">Corpus Health</a>
                     <a href="#condition-explorer" class="nav-link" data-nav="condition-explorer">Conditions</a>
                     <a href="#condition-comparison" class="nav-link" data-nav="condition-comparison">Compare</a>
                     <a href="#graph-analytics" class="nav-link" data-nav="graph-analytics">Analytics</a>
@@ -697,6 +698,125 @@
                 </div>
             </section>
 
+            <!-- ── Disease Corpus Health & Tier Browser ─────────────────── -->
+            <section class="corpus-browser-shell" id="corpus-status" aria-labelledby="corpus-status-title">
+                <div class="biomed-import-status-intro">
+                    <div>
+                        <span class="workspace-kicker">OPERATOR · CORPUS READINESS &amp; QUALITY</span>
+                        <h2 id="corpus-status-title">Disease Corpus Health &amp; Tier Browser</h2>
+                        <p>Explore 10,403 disease modules across L0–L3 validation tiers, track data completeness, and inspect curation gaps.</p>
+                    </div>
+                    <div style="display:flex;gap:8px;align-items:center;">
+                        <button type="button" class="btn btn-secondary btn-sm" id="corpus-refresh-btn">↻ Refresh Corpus</button>
+                    </div>
+                </div>
+
+                <!-- Tier Distribution Metric Cards -->
+                <div class="corpus-tier-grid" id="corpus-tier-cards" aria-label="Corpus Tier Distribution">
+                    <div class="corpus-tier-card tier-all active" data-tier="">
+                        <div class="tier-header"><span class="tier-label">All Modules</span><span>📦</span></div>
+                        <div class="tier-count" id="tier-count-all">…</div>
+                        <div class="tier-desc">Total registered diseases</div>
+                    </div>
+                    <div class="corpus-tier-card tier-l3" data-tier="L3">
+                        <div class="tier-header"><span class="tier-label">Tier L3</span><span>🌟</span></div>
+                        <div class="tier-count" id="tier-count-l3">…</div>
+                        <div class="tier-desc">Research Ready · Curated</div>
+                    </div>
+                    <div class="corpus-tier-card tier-l2" data-tier="L2">
+                        <div class="tier-header"><span class="tier-label">Tier L2</span><span>⚡</span></div>
+                        <div class="tier-count" id="tier-count-l2">…</div>
+                        <div class="tier-desc">Pipeline Ready · Full KG</div>
+                    </div>
+                    <div class="corpus-tier-card tier-l1" data-tier="L1">
+                        <div class="tier-header"><span class="tier-label">Tier L1</span><span>📊</span></div>
+                        <div class="tier-count" id="tier-count-l1">…</div>
+                        <div class="tier-desc">Partial Knowledge Graph</div>
+                    </div>
+                    <div class="corpus-tier-card tier-l0" data-tier="L0">
+                        <div class="tier-header"><span class="tier-label">Tier L0</span><span>🌱</span></div>
+                        <div class="tier-count" id="tier-count-l0">…</div>
+                        <div class="tier-desc">Base Scaffold Module</div>
+                    </div>
+                    <div class="corpus-tier-card tier-blocked" data-tier="blocked">
+                        <div class="tier-header"><span class="tier-label">Blocked</span><span>⚠️</span></div>
+                        <div class="tier-count" id="tier-count-blocked">…</div>
+                        <div class="tier-desc">Validation / Slug issues</div>
+                    </div>
+                    <div class="corpus-tier-card tier-symptoms" data-tier="symptoms">
+                        <div class="tier-header"><span class="tier-label">Symptoms</span><span>🩺</span></div>
+                        <div class="tier-count" id="tier-count-symptoms">…</div>
+                        <div class="tier-desc">Clinical phenotypes active</div>
+                    </div>
+                </div>
+
+                <!-- Filter & Search Toolbar -->
+                <div class="corpus-filter-bar">
+                    <div class="tier-pills-group" id="corpus-tier-pills" aria-label="Filter by Tier">
+                        <button type="button" class="tier-filter-pill active" data-tier="">All</button>
+                        <button type="button" class="tier-filter-pill" data-tier="L3">L3</button>
+                        <button type="button" class="tier-filter-pill" data-tier="L2">L2</button>
+                        <button type="button" class="tier-filter-pill" data-tier="L1">L1</button>
+                        <button type="button" class="tier-filter-pill" data-tier="L0">L0</button>
+                        <button type="button" class="tier-filter-pill" data-tier="blocked">Blocked</button>
+                    </div>
+                    <input type="search" id="corpus-disease-search" class="corpus-search-input" placeholder="Search by disease name or ID (e.g. lupus, arthritis, alzheimer)…" autocomplete="off">
+                    <select id="corpus-gap-filter" class="corpus-select" aria-label="Filter by missing config gap">
+                        <option value="">All Configuration Gaps</option>
+                    </select>
+                    <select id="corpus-sort-by" class="corpus-select" aria-label="Sort by">
+                        <option value="disease_id">Sort: Disease ID</option>
+                        <option value="name">Sort: Name</option>
+                        <option value="tier">Sort: Readiness Tier</option>
+                        <option value="gene_count">Sort: Gene Count</option>
+                        <option value="drug_count">Sort: Drug Count</option>
+                        <option value="pathway_count">Sort: Pathway Count</option>
+                        <option value="symptom_count">Sort: Symptom Count</option>
+                    </select>
+                    <button type="button" class="btn btn-secondary btn-sm" id="corpus-sort-dir-btn" title="Toggle Ascending/Descending">↕ Desc</button>
+                </div>
+
+                <!-- Table Container -->
+                <div class="corpus-table-wrap">
+                    <table class="corpus-table">
+                        <thead>
+                            <tr>
+                                <th style="width:70px;">Tier</th>
+                                <th>Disease Name &amp; Module ID</th>
+                                <th>Curie &amp; EFO</th>
+                                <th style="width:180px;">Entities (Genes / Drugs / Pathways)</th>
+                                <th>Symptoms</th>
+                                <th>Config Gaps</th>
+                                <th style="text-align:right;width:140px;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="corpus-table-body">
+                            <tr>
+                                <td colspan="7" style="text-align:center;padding:24px;color:var(--text-muted);">Loading disease corpus data…</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination & Summary -->
+                <div class="corpus-pagination">
+                    <div id="corpus-pagination-summary">Showing 0–0 of 0 diseases</div>
+                    <div class="corpus-pagination-controls">
+                        <button type="button" class="btn btn-secondary btn-sm" id="corpus-prev-page" disabled>Previous</button>
+                        <span id="corpus-page-num" style="font-weight:600;font-size:0.8rem;padding:0 8px;">Page 1</span>
+                        <button type="button" class="btn btn-secondary btn-sm" id="corpus-next-page" disabled>Next</button>
+                    </div>
+                </div>
+
+                <!-- Top Configuration Gaps Breakdown -->
+                <div style="padding:16px 20px;border-top:1px solid var(--border);background:var(--surface);">
+                    <h4 style="margin:0 0 10px;font-size:0.82rem;text-transform:uppercase;color:var(--text-muted);letter-spacing:0.04em;">Top Missing Configuration Gaps Across Catalog</h4>
+                    <div id="corpus-gaps-breakdown" class="condition-chip-list">
+                        <span class="condition-empty">Loading gap breakdown…</span>
+                    </div>
+                </div>
+            </section>
+
             <section class="condition-explorer-shell" id="condition-explorer" aria-labelledby="condition-explorer-title">
                 <div class="condition-explorer-intro">
                     <div>
@@ -785,21 +905,63 @@
             <section class="condition-comparison-shell" id="graph-analytics" aria-labelledby="graph-analytics-title">
                 <div class="condition-comparison-intro">
                     <div>
-                        <span class="workspace-kicker">BIOMEDICAL GRAPH ANALYTICS · PATHFINDING & TARGET RANKING</span>
-                        <h2 id="graph-analytics-title">Graph Analytics & Target Vulnerability</h2>
-                        <p>Explore canonical claim paths between conditions and targets, and rank disease targets by evidence strength and degree centrality.</p>
+                        <span class="workspace-kicker">BIOMEDICAL GRAPH ANALYTICS · DUCKDB POWERED</span>
+                        <h2 id="graph-analytics-title">Graph Analytics &amp; Target Prioritization</h2>
+                        <p>High-throughput pathfinding, target vulnerability ranking, and biological cross-talk powered by the DuckDB vectorized engine.</p>
                     </div>
-                    <div class="condition-comparison-disclaimer">⚠️ Network pathfinding &amp; target vulnerability hypotheses</div>
+                    <div class="condition-comparison-disclaimer">⚠️ Research hypotheses &amp; graph analytics</div>
                 </div>
 
-                <!-- Card 1: Pathfinding -->
+                <!-- Live DuckDB Summary Stats Banner -->
+                <div style="padding:0 20px;">
+                    <div class="biomed-stats-banner" id="biomed-stats-banner">
+                        <div class="biomed-stats-banner-title">
+                            <span>⚡ Live Knowledge Graph Summary (DuckDB Accelerated)</span>
+                            <button type="button" class="btn btn-secondary btn-sm" id="biomed-stats-refresh-btn">↻ Refresh Stats</button>
+                        </div>
+                        <div class="biomed-stats-cards">
+                            <div class="biomed-stat-box">
+                                <div class="box-num" id="bio-stat-entities">…</div>
+                                <div class="box-label">Total Entities</div>
+                            </div>
+                            <div class="biomed-stat-box">
+                                <div class="box-num" id="bio-stat-claims">…</div>
+                                <div class="box-label">Canonical Claims</div>
+                            </div>
+                            <div class="biomed-stat-box">
+                                <div class="box-num" id="bio-stat-evidence">…</div>
+                                <div class="box-label">Evidence Citations</div>
+                            </div>
+                            <div class="biomed-stat-box">
+                                <div class="box-num" id="bio-stat-snapshots">…</div>
+                                <div class="box-label">Ontology Snapshots</div>
+                            </div>
+                        </div>
+                        <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:6px;">Entity Type Distribution:</div>
+                        <div class="biomed-dist-group" id="bio-entity-dist">
+                            <span class="biomed-dist-chip">Loading distribution…</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1: Claim Pathway Explorer -->
                 <div class="condition-comparison-panel" style="margin-bottom:24px;">
-                    <h3 style="margin-top:0;font-size:1.1rem;margin-bottom:12px;">🕸️ Claim Pathway Explorer</h3>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
+                        <h3 style="margin:0;font-size:1.05rem;">🕸️ Claim Pathway Explorer</h3>
+                        <button type="button" class="btn btn-secondary btn-sm" id="path-use-active-btn">📍 Use Active Disease</button>
+                    </div>
+                    <div class="biomed-preset-pills">
+                        <span style="font-size:0.75rem;color:var(--text-muted);">Quick presets:</span>
+                        <button type="button" class="biomed-preset-btn" data-start="MONDO:0007915" data-target="UNIPROT:P01375">SLE → TNF</button>
+                        <button type="button" class="biomed-preset-btn" data-start="MONDO:0008383" data-target="UNIPROT:P23458">RA → JAK1</button>
+                        <button type="button" class="biomed-preset-btn" data-start="MONDO:0005301" data-target="UNIPROT:P15391">MS → CD19</button>
+                        <button type="button" class="biomed-preset-btn" data-start="MONDO:0005265" data-target="UNIPROT:Q5VWK5">IBD → IL23R</button>
+                    </div>
                     <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
                         <label class="condition-comparison-label" for="path-start-curie">Start CURIE</label>
-                        <input type="text" id="path-start-curie" class="condition-explorer-search" style="max-width:200px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
+                        <input type="text" id="path-start-curie" class="condition-explorer-search" style="max-width:220px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
                         <label class="condition-comparison-label" for="path-target-curie">Target CURIE</label>
-                        <input type="text" id="path-target-curie" class="condition-explorer-search" style="max-width:200px;" value="UNIPROT:P01375" placeholder="e.g. UNIPROT:P01375">
+                        <input type="text" id="path-target-curie" class="condition-explorer-search" style="max-width:220px;" value="UNIPROT:P01375" placeholder="e.g. UNIPROT:P01375">
                         <label class="condition-comparison-label" for="path-max-depth">Max Depth</label>
                         <select id="path-max-depth" class="condition-explorer-depth">
                             <option value="1">1</option>
@@ -816,11 +978,14 @@
                 </div>
 
                 <!-- Card 2: Target Vulnerability Ranking -->
-                <div class="condition-comparison-panel">
-                    <h3 style="margin-top:0;font-size:1.1rem;margin-bottom:12px;">🎯 Target Vulnerability Ranking</h3>
+                <div class="condition-comparison-panel" style="margin-bottom:24px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
+                        <h3 style="margin:0;font-size:1.05rem;">🎯 Target Vulnerability &amp; Prioritization Ranking</h3>
+                        <button type="button" class="btn btn-secondary btn-sm" id="target-use-active-btn">📍 Use Active Disease</button>
+                    </div>
                     <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
                         <label class="condition-comparison-label" for="target-rank-disease">Disease CURIE</label>
-                        <input type="text" id="target-rank-disease" class="condition-explorer-search" style="max-width:240px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
+                        <input type="text" id="target-rank-disease" class="condition-explorer-search" style="max-width:260px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
                         <label class="condition-comparison-label" for="target-rank-top-k">Top K</label>
                         <select id="target-rank-top-k" class="condition-explorer-depth">
                             <option value="5">5</option>
@@ -834,7 +999,112 @@
                         <p class="condition-comparison-placeholder">Enter a disease CURIE to calculate target vulnerability rankings.</p>
                     </div>
                 </div>
+
+                <!-- Card 3: Vectorized Shared Mechanisms & Cross-Talk -->
+                <div class="condition-comparison-panel" style="margin-bottom:24px;">
+                    <h3 style="margin-top:0;font-size:1.05rem;margin-bottom:12px;">🔬 Vectorized Shared Mechanism &amp; Cross-Talk</h3>
+                    <p class="desc" style="margin-bottom:14px;">Compute overlapping biological pathways, target genes, and Jaccard similarity between two conditions via DuckDB.</p>
+                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
+                        <label class="condition-comparison-label" for="shared-curie-a">Condition A</label>
+                        <input type="text" id="shared-curie-a" class="condition-explorer-search" style="max-width:220px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915 (SLE)">
+                        <label class="condition-comparison-label" for="shared-curie-b">Condition B</label>
+                        <input type="text" id="shared-curie-b" class="condition-explorer-search" style="max-width:220px;" value="MONDO:0008383" placeholder="e.g. MONDO:0008383 (RA)">
+                        <button type="button" class="btn btn-primary" id="shared-run-btn">Analyze Overlap</button>
+                    </div>
+                    <div class="condition-comparison-result" id="shared-mech-result" aria-live="polite" style="margin-top:12px;">
+                        <p class="condition-comparison-placeholder">Select two condition CURIEs to evaluate shared pathway and gene networks.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Cross-Disease Similarity Heatmap & Matrix -->
+                <div class="condition-comparison-panel">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
+                        <h3 style="margin:0;font-size:1.05rem;">📊 Vectorized Cross-Disease Similarity Matrix (DuckDB)</h3>
+                        <div class="biomed-preset-pills">
+                            <span style="font-size:0.75rem;color:var(--text-muted);">Clusters:</span>
+                            <button type="button" class="biomed-preset-btn matrix-cluster-btn" data-curies="MONDO:0007915,MONDO:0008383,MONDO:0005301,MONDO:0005265">Autoimmune</button>
+                            <button type="button" class="biomed-preset-btn matrix-cluster-btn" data-curies="MONDO:0005010,MONDO:0005260,MONDO:0005015,MONDO:0005311">Cardiovascular</button>
+                            <button type="button" class="biomed-preset-btn matrix-cluster-btn" data-curies="MONDO:0004975,MONDO:0005180,MONDO:0004976,MONDO:0007739">Neuro</button>
+                            <button type="button" class="biomed-preset-btn matrix-cluster-btn" data-curies="MONDO:0018076,MONDO:0005109,MONDO:0005136">Infectious</button>
+                        </div>
+                    </div>
+                    <p class="desc" style="margin-bottom:14px;">Compute vectorized pairwise Jaccard biological overlap across multi-condition cohorts in real time using DuckDB.</p>
+                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
+                        <label class="condition-comparison-label" for="matrix-curies-input">Disease CURIEs</label>
+                        <input type="text" id="matrix-curies-input" class="condition-explorer-search" style="flex:1;min-width:320px;" value="MONDO:0007915,MONDO:0008383,MONDO:0005301,MONDO:0005265" placeholder="Comma-separated CURIEs (e.g. MONDO:0007915,MONDO:0008383)">
+                        <button type="button" class="btn btn-primary" id="matrix-run-btn">Compute Matrix</button>
+                    </div>
+                    <div class="condition-comparison-result" id="matrix-result" aria-live="polite" style="margin-top:12px;">
+                        <p class="condition-comparison-placeholder">Select a cluster preset or enter disease CURIEs to compute the similarity matrix.</p>
+                    </div>
+                <!-- Card 5: Interactive Cytoscape.js Multi-Disease Network Topology -->
+                <div class="condition-comparison-panel" style="margin-top:24px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
+                        <h3 style="margin:0;font-size:1.05rem;">🌐 Interactive Multi-Disease Topology &amp; Hub Explorer (Cytoscape.js)</h3>
+                        <div class="biomed-preset-pills">
+                            <span style="font-size:0.75rem;color:var(--text-muted);">Cohorts:</span>
+                            <button type="button" class="biomed-preset-btn cy-cohort-btn" data-diseases="sle,ra,ms,ibd">Autoimmune Core</button>
+                            <button type="button" class="biomed-preset-btn cy-cohort-btn" data-diseases="nsclc,colorectal_cancer,triple_neg_breast_cancer,pancreatic_ductal_adenocarcinoma">Oncology Wave 4</button>
+                            <button type="button" class="biomed-preset-btn cy-cohort-btn" data-diseases="major_depressive_disorder,schizophrenia,bipolar_disorder,epilepsy">Neuro / CNS</button>
+                            <button type="button" class="biomed-preset-btn cy-cohort-btn" data-diseases="cystic_fibrosis,sickle_cell_anemia,huntington_disease,spinal_muscular_atrophy">Rare / Neuromuscular</button>
+                        </div>
+                    </div>
+                    <p class="desc" style="margin-bottom:14px;">Explore multi-disease target hub centrality, drug repurposing bridges, and shared therapeutic pathways rendered via dynamic force-directed layouts.</p>
+                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;margin-bottom:12px;">
+                        <label class="condition-comparison-label" for="cy-diseases-input">Diseases</label>
+                        <input type="text" id="cy-diseases-input" class="condition-explorer-search" style="flex:1;min-width:240px;" value="sle,ra,ms,ibd" placeholder="Comma-separated disease IDs (e.g. sle,ra,ms,ibd)">
+                        <label class="condition-comparison-label" for="cy-layout-select">Layout</label>
+                        <select id="cy-layout-select" class="condition-explorer-depth">
+                            <option value="cose" selected>Force-Directed (CoSE)</option>
+                            <option value="concentric">Concentric (Hubs Center)</option>
+                            <option value="breadthfirst">Hierarchical</option>
+                            <option value="circle">Circle</option>
+                            <option value="grid">Grid</option>
+                        </select>
+                        <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--text-muted);cursor:pointer;">
+                            <input type="checkbox" id="cy-shared-only-check"> Shared Hubs Only
+                        </label>
+                        <button type="button" class="btn btn-primary" id="cy-render-btn">Render Topology</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="cy-fit-btn">🔍 Fit View</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="cy-export-png-btn">📷 Export PNG</button>
+                    </div>
+
+                    <!-- Legend & Summary Banner -->
+                    <div id="cy-summary-bar" style="display:flex;justify-content:space-between;align-items:center;padding:8px 14px;background:var(--surface2);border-radius:6px;margin-bottom:12px;font-size:0.8rem;border:1px solid var(--border);">
+                        <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+                            <span><strong id="cy-stat-nodes">0</strong> Nodes</span>
+                            <span><strong id="cy-stat-edges">0</strong> Edges</span>
+                            <span><strong id="cy-stat-hubs" style="color:#e879f9;">0</strong> Shared Target Hubs</span>
+                        </div>
+                        <div style="display:flex;gap:12px;align-items:center;">
+                            <span><span class="dot" style="background:#f43f5e;display:inline-block;width:10px;height:10px;border-radius:50%;"></span> Disease</span>
+                            <span><span class="dot" style="background:#4ade80;display:inline-block;width:10px;height:10px;border-radius:50%;"></span> Gene</span>
+                            <span><span class="dot" style="background:#e879f9;display:inline-block;width:10px;height:10px;border-radius:50%;"></span> Shared Hub</span>
+                            <span><span class="dot" style="background:#60a5fa;display:inline-block;width:10px;height:10px;border-radius:50%;"></span> Drug</span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Canvas & Sidebar Split -->
+                    <div style="display:flex;gap:16px;min-height:540px;position:relative;">
+                        <div id="cy-canvas" style="flex:1;height:540px;background:var(--bg);border:1px solid var(--border);border-radius:8px;position:relative;">
+                            <div id="cy-loading" class="kg-loading" style="display:none;position:absolute;inset:0;background:rgba(15,23,42,0.8);z-index:10;display:flex;align-items:center;justify-content:center;color:var(--text);">
+                                <span class="spinner"></span> Rendering multi-disease network topology…
+                            </div>
+                        </div>
+                        <div id="cy-inspector" style="width:280px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px;font-size:0.82rem;display:flex;flex-direction:column;gap:10px;">
+                            <div style="font-weight:700;font-size:0.95rem;border-bottom:1px solid var(--border);padding-bottom:6px;display:flex;justify-content:space-between;align-items:center;">
+                                <span>🎯 Element Inspector</span>
+                                <span id="cy-elem-type-badge" class="badge" style="background:var(--surface);font-size:0.7rem;">None</span>
+                            </div>
+                            <div id="cy-inspector-body" style="color:var(--text-muted);line-height:1.5;">
+                                Click on any disease, gene target hub, or drug bridge node to inspect connectivity and disease sharing.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+
+
 
             <!-- ── Knowledge Graph Explorer ─────────────────────────── -->
             <h2 class="section-title" id="kg-explorer">
@@ -930,6 +1200,28 @@
 
         </div>
 
+        <!-- ── 3D AlphaFold Structure & Binding Pocket Modal ───────── -->
+        <div id="structure-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="structure-modal-title">
+            <div class="modal-card" style="max-width:720px;width:95%;">
+                <div class="modal-header" style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--border);">
+                    <h3 id="structure-modal-title" style="margin:0;font-size:1.1rem;display:flex;align-items:center;gap:8px;">
+                        <span>🔬</span> <span id="struct-target-title">Target Structure &amp; Pocket Characterization</span>
+                    </h3>
+                    <button type="button" class="btn btn-secondary btn-sm" id="structure-modal-close" aria-label="Close modal" style="padding:2px 8px;">✕</button>
+                </div>
+                <div class="modal-body" id="structure-modal-body" style="padding:20px;max-height:70vh;overflow-y:auto;">
+                    <p class="condition-explorer-placeholder">Loading 3D structure &amp; AlphaFold pocket data…</p>
+                </div>
+                <div class="modal-footer" style="display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-top:1px solid var(--border);background:var(--surface2);">
+                    <div style="display:flex;gap:8px;">
+                        <a id="struct-cif-link" href="#" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">📥 AlphaFold mmCIF</a>
+                        <a id="struct-pae-link" href="#" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">📊 PAE Matrix JSON</a>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm" id="structure-modal-done">Done</button>
+                </div>
+            </div>
+        </div>
+
         <!-- ── Footer ──────────────────────────────────────────────── -->
         <footer>
             <div class="links">
@@ -953,6 +1245,8 @@
 
     <script src="/lib/vis-9.1.2/vis-network.min.js"></script>
     <script src="/lib/tom-select/tom-select.complete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.0.4/3Dmol-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
     <script src="/js/dashboard.js"></script>
 </body>
 </html>

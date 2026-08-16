@@ -27,10 +27,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(metabolic syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(metabolic syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(metabolic syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(metabolic syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(metabolic syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(metabolic syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(metabolic syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(metabolic syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -21,8 +21,9 @@ from med_research.web.main import app
 FIXTURES = Path("tests/fixtures/biomed")
 
 
-@pytest.fixture
-def biomed_repository(tmp_path) -> BiomedicalRepository:
+@pytest.fixture(scope="module")
+def biomed_repository(tmp_path_factory) -> BiomedicalRepository:
+    tmp_path = tmp_path_factory.mktemp("biomed")
     repository = BiomedicalRepository(tmp_path / "biomedical.sqlite3")
     repository.initialize()
     service = ImportService(repository)

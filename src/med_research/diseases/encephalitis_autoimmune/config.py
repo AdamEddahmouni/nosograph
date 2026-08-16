@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(autoimmune encephalitis[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(autoimmune encephalitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(autoimmune encephalitis[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(autoimmune encephalitis[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(autoimmune encephalitis[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(autoimmune encephalitis[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(autoimmune encephalitis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(autoimmune encephalitis[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -157,8 +157,7 @@ DRUG_SAFETY_RISK = {
         "triamcinolone acetonide",
         "vigabatrin",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

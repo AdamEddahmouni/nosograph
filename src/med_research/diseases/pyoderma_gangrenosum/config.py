@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Pyoderma gangrenosum[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Pyoderma gangrenosum[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Pyoderma gangrenosum[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Pyoderma gangrenosum[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Pyoderma gangrenosum[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Pyoderma gangrenosum[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Pyoderma gangrenosum[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Pyoderma gangrenosum[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -154,8 +154,7 @@ DRUG_SAFETY_RISK = {
         "spesolimab",
         "vilobelimab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

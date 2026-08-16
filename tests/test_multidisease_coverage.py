@@ -7,8 +7,6 @@ DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
 pytestmark = pytest.mark.unit
 
 
-
-
 @pytest.mark.parametrize("disease_id", DISEASES)
 def test_core_coverage_reports_all_five_data_files(disease_id):
     from med_research.diseases.coverage import coverage_for_disease
@@ -180,7 +178,6 @@ def test_all_default_modules_return_structured_coverage(disease_id):
 @pytest.mark.parametrize("disease_id", DISEASES)
 def test_all_diseases_have_curated_car_t_and_safety_configs(disease_id):
     """Non-SLE diseases must ship curated CAR-T and safety tables, not empty stubs."""
-
 
     from med_research.diseases.base import Disease
 

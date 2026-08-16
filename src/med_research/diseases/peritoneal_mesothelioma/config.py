@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Peritoneal mesothelioma[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Peritoneal mesothelioma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Peritoneal mesothelioma[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Peritoneal mesothelioma[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Peritoneal mesothelioma[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Peritoneal mesothelioma[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Peritoneal mesothelioma[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Peritoneal mesothelioma[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -155,8 +155,7 @@ DRUG_SAFETY_RISK = {
         "topotecan",
         "zimberelimab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

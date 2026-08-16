@@ -17,7 +17,9 @@ _DIMENSION_PREDICATES: dict[str, Predicate] = {
 }
 
 
-def build_fingerprint(repository: BiomedicalRepository, condition_curie: str) -> ConditionFingerprint:
+def build_fingerprint(
+    repository: BiomedicalRepository, condition_curie: str
+) -> ConditionFingerprint:
     normalized = normalize_curie(condition_curie)
     claims = [
         claim_view

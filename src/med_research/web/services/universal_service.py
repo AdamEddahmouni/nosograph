@@ -144,10 +144,7 @@ def list_condition_claims(
         items = [
             item
             for item in items
-            if (
-                evidence_direction is EvidenceDirection.SUPPORTING
-                and item.supporting_evidence
-            )
+            if (evidence_direction is EvidenceDirection.SUPPORTING and item.supporting_evidence)
             or (
                 evidence_direction is EvidenceDirection.CONTRADICTORY
                 and item.contradictory_evidence

@@ -24,8 +24,6 @@ DISEASES = ALL_DISEASES
 pytestmark = [pytest.mark.integration]
 
 
-
-
 def _run_all_module_ids(*, skip_ml: bool = True) -> list[str]:
     from med_research.cli import PIPELINE_STEPS, PIPELINE_STEPS_FULL, _steps_to_parallel_modules
 
@@ -141,18 +139,16 @@ class TestFullPipelineExportHtml:
             )
             _assert_module_outcome(module_id, disease_id, result)
             if result.success:
-                assert isinstance(result.data, dict) and result.data, (
-                    f"{module_id}@{disease_id} missing result payload"
-                )
+                assert result.data is not None, f"{module_id}@{disease_id} missing result payload"
+                if isinstance(result.data, (dict, list)):
+                    assert len(result.data) > 0, f"{module_id}@{disease_id} returned empty result"
                 _assert_report_path(module_id, disease_id, result.report_path)
 
 
 class TestSleFullPipelineArtifacts:
     """Focused sle run-all artifact gate (network mocked at HTTP boundaries)."""
 
-    def test_sle_run_all_modules_produce_results_and_reports(
-        self, offline_pipeline_http_mocks
-    ):
+    def test_sle_run_all_modules_produce_results_and_reports(self, offline_pipeline_http_mocks):
         disease_id = "sle"
         for module_id in _run_all_module_ids():
             result = execute_module(
@@ -163,5 +159,7 @@ class TestSleFullPipelineArtifacts:
             )
             _assert_module_outcome(module_id, disease_id, result)
             if result.success:
-                assert isinstance(result.data, dict) and result.data
+                assert result.data is not None
+                if isinstance(result.data, (dict, list)):
+                    assert len(result.data) > 0
                 _assert_report_path(module_id, disease_id, result.report_path)

@@ -75,12 +75,18 @@ def claim_evidence_uuid(
     source_record_id: str,
 ) -> UUID:
     """Generate deterministic UUIDv5 for claim evidence."""
-    return uuid5(BIOMED_NAMESPACE, f"claim_evidence|{claim_id}|{snapshot_id}|{direction.value}|{source_record_id}")
+    return uuid5(
+        BIOMED_NAMESPACE,
+        f"claim_evidence|{claim_id}|{snapshot_id}|{direction.value}|{source_record_id}",
+    )
 
 
 def snapshot_uuid(resource_name: str, version: str, checksum: str) -> UUID:
     """Generate deterministic UUIDv5 for a resource snapshot."""
-    return uuid5(BIOMED_NAMESPACE, f"snapshot|{resource_name.strip().lower()}|{version.strip()}|{checksum.strip()}")
+    return uuid5(
+        BIOMED_NAMESPACE,
+        f"snapshot|{resource_name.strip().lower()}|{version.strip()}|{checksum.strip()}",
+    )
 
 
 def research_run_fingerprint(create: Any) -> str:

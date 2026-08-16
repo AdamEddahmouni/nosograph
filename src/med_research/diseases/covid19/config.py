@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(COVID-19[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(COVID-19[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(COVID-19[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(COVID-19[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(COVID-19[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(COVID-19[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(COVID-19[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(COVID-19[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

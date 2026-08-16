@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(anti-glomerular basement membrane disease[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(anti-glomerular basement membrane disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(anti-glomerular basement membrane disease[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(anti-glomerular basement membrane disease[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(anti-glomerular basement membrane disease[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(anti-glomerular basement membrane disease[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(anti-glomerular basement membrane disease[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(anti-glomerular basement membrane disease[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -204,8 +204,7 @@ DRUG_SAFETY_RISK = {
         "upadacitinib",
         "vedolizumab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

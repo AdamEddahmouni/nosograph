@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Fragile X syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Fragile X syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Fragile X syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Fragile X syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Fragile X syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Fragile X syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Fragile X syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Fragile X syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

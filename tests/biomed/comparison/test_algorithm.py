@@ -33,7 +33,9 @@ def sample_fingerprint() -> ConditionFingerprint:
 
 def fingerprint_with_phenotypes(terms: list[str]) -> ConditionFingerprint:
     coverage = {
-        dimension: DimensionCoverage(present=dimension == "phenotype", count=1 if dimension == "phenotype" else 0)
+        dimension: DimensionCoverage(
+            present=dimension == "phenotype", count=1 if dimension == "phenotype" else 0
+        )
         for dimension in ("phenotype", "gene", "pathway", "intervention", "biomarker")
     }
     return ConditionFingerprint(
@@ -46,7 +48,9 @@ def fingerprint_with_phenotypes(terms: list[str]) -> ConditionFingerprint:
 
 def fingerprint_with_genes_only(genes: list[str]) -> ConditionFingerprint:
     coverage = {
-        dimension: DimensionCoverage(present=dimension == "gene", count=len(genes) if dimension == "gene" else 0)
+        dimension: DimensionCoverage(
+            present=dimension == "gene", count=len(genes) if dimension == "gene" else 0
+        )
         for dimension in ("phenotype", "gene", "pathway", "intervention", "biomarker")
     }
     return ConditionFingerprint(
@@ -78,7 +82,9 @@ def hpo_context() -> HpoContext:
         "HP:0001945": 1.5,
         "HP:0001250": 1.2,
     }
-    return HpoContext(graph=graph, information_content=ic_map, hp_snapshot_id=uuid4(), hpoa_snapshot_id=uuid4())
+    return HpoContext(
+        graph=graph, information_content=ic_map, hp_snapshot_id=uuid4(), hpoa_snapshot_id=uuid4()
+    )
 
 
 def test_identical_fingerprints_score_maximally() -> None:

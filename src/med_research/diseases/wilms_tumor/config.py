@@ -16,10 +16,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Wilms tumor[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Wilms tumor[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Wilms tumor[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Wilms tumor[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Wilms tumor[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Wilms tumor[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Wilms tumor[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Wilms tumor[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -202,8 +202,7 @@ DRUG_SAFETY_RISK = {
         "vincristine",
         "vincristine sulfate",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

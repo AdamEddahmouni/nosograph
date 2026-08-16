@@ -56,6 +56,7 @@ class OpenTargetsBulkStore:
         self._conn: Any = None
         self._glob_cache: dict[str, Optional[str]] = {}
         self._cols_cache: dict[str, set[str]] = {}
+        self._table_cache: dict[str, list[dict]] = {}
 
     def _load_manifest(self) -> dict:
         path = manifest_path(self.bulk_root)
@@ -72,10 +73,7 @@ class OpenTargetsBulkStore:
         if not self._manifest.get("version"):
             return False
         required = ("disease", "association_overall_direct", "known_drug")
-        for table in required:
-            if not self._parquet_glob(table):
-                return False
-        return True
+        return all(self._parquet_glob(table) for table in required)
 
     def _parquet_glob(self, table: str) -> Optional[str]:
         if table in self._glob_cache:
@@ -108,20 +106,31 @@ class OpenTargetsBulkStore:
             self._conn.close()
             self._conn = None
 
-    def _query(self, sql: str, params: list[Any] = []) -> list[dict]:
+    def _query(self, sql: str, params: list[Any] = None) -> list[dict]:
+        if params is None:
+            params = []
         try:
             conn = self._connect()
             result = conn.execute(sql, params)
             cols = [d[0] for d in result.description]
-            return [dict(zip(cols, row)) for row in result.fetchall()]
+            return [dict(zip(cols, row, strict=False)) for row in result.fetchall()]
         except Exception as exc:
             logger.warning("Bulk store query failed: %s", exc)
             return []
 
-    def _read_table(self, table: str, where: str = "", params: list[Any] = []) -> list[dict]:
+    def _read_table(self, table: str, where: str = "", params: list[Any] = None) -> list[dict]:
+        if params is None:
+            params = []
         glob = self._parquet_glob(table)
         if not glob:
             return []
+        if not where:
+            cached = self._table_cache.get(table)
+            if cached is not None:
+                return cached
+            rows = self._query(f"SELECT * FROM read_parquet('{glob}')")
+            self._table_cache[table] = rows
+            return rows
         sql = f"SELECT * FROM read_parquet('{glob}')"
         if where:
             sql += f" WHERE {where}"
@@ -312,7 +321,46 @@ class OpenTargetsBulkStore:
                 )
             if targets:
                 return targets[:limit]
-        return []
+        return self._targets_from_biomed(disease_id, limit)
+
+    def _targets_from_biomed(self, disease_id: str, limit: int) -> list[dict]:
+        """Fallback gene associations from ClinVar/biomed claims when OT bulk is empty."""
+        import os
+
+        if os.environ.get("BIOMED_LEGACY_PROJECTION") != "1":
+            return []
+        try:
+            from med_research.biomed.models import Predicate
+            from med_research.biomed.repository import BiomedicalRepository
+            from med_research.web.config import BIOMEDICAL_DB_PATH
+
+            if not BIOMEDICAL_DB_PATH.exists():
+                return []
+            mondo_curie = None
+            normalized = normalize_disease_id(disease_id)
+            if normalized.startswith("MONDO_"):
+                mondo_curie = ot_id_to_mondo_curie(normalized)
+            if not mondo_curie:
+                return []
+
+            repo = BiomedicalRepository(BIOMEDICAL_DB_PATH)
+            repo.initialize()
+            claims = repo.list_claims(mondo_curie, predicate=Predicate.ASSOCIATED_WITH_GENE)
+            targets: list[dict] = []
+            for claim in claims[:limit]:
+                gene_curie = (
+                    claim.object_curie
+                    if claim.subject_curie == mondo_curie
+                    else claim.subject_curie
+                )
+                symbol = gene_curie.split(":")[-1] if ":" in gene_curie else gene_curie
+                targets.append(
+                    {"symbol": symbol, "name": symbol, "score": None, "source": "biomed"}
+                )
+            return targets
+        except Exception as exc:
+            logger.debug("Biomed target fallback skipped: %s", exc)
+            return []
 
     def get_drugs(self, disease_id: str, limit: int = 60) -> list[dict]:
         """Return known drugs as scaffold-compatible dicts."""
@@ -337,7 +385,10 @@ class OpenTargetsBulkStore:
                 drugs.append(
                     {
                         "id": drug_id,
-                        "name": row.get("drugName") or row.get("prefName") or row.get("label") or drug_id,
+                        "name": row.get("drugName")
+                        or row.get("prefName")
+                        or row.get("label")
+                        or drug_id,
                         "type": row.get("drugType") or "",
                         "phase": row.get("phase") or row.get("maximumClinicalTrialPhase"),
                         "status": row.get("status") or "",

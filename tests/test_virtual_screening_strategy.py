@@ -1,5 +1,3 @@
-
-
 """Tests for disease-aware virtual screening strategies."""
 
 import pytest
@@ -7,8 +5,6 @@ import pytest
 DISEASES = ["sle", "ra", "ms", "ss", "ssc", "t1d", "ibd"]
 
 pytestmark = pytest.mark.unit
-
-
 
 
 def test_strategy_for_each_disease_is_valid():

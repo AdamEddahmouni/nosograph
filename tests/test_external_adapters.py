@@ -5,8 +5,11 @@ from __future__ import annotations
 import pytest
 
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
-from med_research.pipeline.evidence_workspace.sources import ChEMBLSource, OpenTargetsSource, default_sources
-from med_research.pipeline.external.chembl_uniprot import ChEMBLClient
+from med_research.pipeline.evidence_workspace.sources import (
+    ChEMBLSource,
+    OpenTargetsSource,
+    default_sources,
+)
 from med_research.pipeline.external.opentargets import OpenTargetsClient
 
 
@@ -44,7 +47,9 @@ def test_chembl_source_search_mocked() -> None:
         ]
 
     source = ChEMBLSource(fetcher=mock_fetcher)
-    request = ResearchRequest(disease_id="ra", question="JAK inhibitors for RA", sources=("chembl",))
+    request = ResearchRequest(
+        disease_id="ra", question="JAK inhibitors for RA", sources=("chembl",)
+    )
     res = source.search(request, ["JAK2"])
     assert res.status.status == "ok"
     assert len(res.records) == 1

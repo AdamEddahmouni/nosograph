@@ -224,11 +224,13 @@ def _ensure_registered() -> None:
 
     if _REGISTRATION_COMPLETE:
         return
+    import med_research.pipeline.admet.adapter  # noqa: F401
     import med_research.pipeline.adverse_events.adapter  # noqa: F401
     import med_research.pipeline.bioinformatics.adapter  # noqa: F401
     import med_research.pipeline.biomarker_discovery.adapter  # noqa: F401
     import med_research.pipeline.car_t_predictor.adapter  # noqa: F401
     import med_research.pipeline.clinical_trials.adapter  # noqa: F401
+    import med_research.pipeline.crispr.adapter  # noqa: F401
     import med_research.pipeline.cross_disease.adapter  # noqa: F401
     import med_research.pipeline.drug_repurposing.adapter  # noqa: F401
     import med_research.pipeline.drug_synergy.adapter  # noqa: F401
@@ -238,13 +240,11 @@ def _ensure_registered() -> None:
     import med_research.pipeline.knowledge_graph.adapter  # noqa: F401
     import med_research.pipeline.literature_mining.adapter  # noqa: F401
     import med_research.pipeline.ml_predictor.adapter  # noqa: F401
+    import med_research.pipeline.multi_omics.adapter  # noqa: F401
     import med_research.pipeline.network_pharmacology.adapter  # noqa: F401
     import med_research.pipeline.semantic_search.adapter  # noqa: F401
-    import med_research.pipeline.virtual_screening.adapter  # noqa: F401
-    import med_research.pipeline.multi_omics.adapter  # noqa: F401
     import med_research.pipeline.structure_3d.adapter  # noqa: F401
-    import med_research.pipeline.admet.adapter  # noqa: F401
-    import med_research.pipeline.crispr.adapter  # noqa: F401
+    import med_research.pipeline.virtual_screening.adapter  # noqa: F401
 
     _REGISTRATION_COMPLETE = True
 

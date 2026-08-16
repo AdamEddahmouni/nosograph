@@ -213,8 +213,8 @@ def test_run_semantic_search_accepts_disease_id(tmp_path, monkeypatch):
 
     SemanticSearchEngine.__init__ = fake_init
     try:
-        run_semantic_search("btk inhibitors", top_k=3, disease_id="ibd")
-        assert captured["disease_id"] == "ibd"
+        run_semantic_search("btk inhibitors", top_k=3, disease_id="ra")
+        assert captured["disease_id"] == "ra"
     finally:
         SemanticSearchEngine.__init__ = original
 

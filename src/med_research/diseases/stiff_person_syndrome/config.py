@@ -28,10 +28,10 @@ SYMPTOMS = [
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Stiff-person syndrome[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Stiff-person syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Stiff-person syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Stiff-person syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Stiff-person syndrome[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Stiff-person syndrome[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Stiff-person syndrome[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Stiff-person syndrome[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
@@ -154,8 +154,7 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-    ],
+    "high_risk": [],
     "moderate_risk": [
         "carmustine",
         "cyclophosphamide",
@@ -167,8 +166,7 @@ DRUG_SAFETY_RISK = {
         "prednisone",
         "rituximab",
     ],
-    "low_risk": [
-    ],
+    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

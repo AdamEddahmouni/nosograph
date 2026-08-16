@@ -2,11 +2,11 @@
 
 This guide documents the repeatable workflow for keeping disease modules research-ready before adding new diseases or shipping major pipeline changes.
 
-The registry contains **10,405 disease modules**: 18 hand-curated modules and 10,387 auto-generated OpenTargets knowledge-graph scaffolds. This playbook applies to the curated set; scaffolds must be curated (below) before they are treated as research-ready.
+The registry contains **10,403 disease modules**: 18 hand-curated modules and 10,385 auto-generated OpenTargets knowledge-graph scaffolds. This playbook applies to the curated set; scaffolds must be curated (below) before they are treated as research-ready.
 
 ## Validate → coverage → refresh cycle
 
-Run these commands for each curated disease (`sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, `ibd`):
+Run these commands for each curated disease (`sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, `ibd`, `ad`, `als`, `as`, `asthma`, `atopic_dermatitis`, `copd`, `gout`, `pd`, `psa`, `pso`, `t2d`):
 
 ```bash
 # Preview external merges before applying
@@ -49,6 +49,17 @@ python -m med_research.cli disease bulk-harvest --all --workers 8 --dry-run
 ```
 
 Scaffolds carry OpenTargets-derived genes/drugs/pathways/relationships plus generated config (PubMed queries, trial query, GWAS terms, placeholder CAR-T/safety/screening blocks). They are **starting points, not research-ready modules**: `disease validate <id> --strict` typically reports empty `SYMPTOMS` and `DRUG_SAFETY_RISK` until curated. The batch pipeline (`scripts/disease_batch_pipeline.py`) orchestrates setup → resolve → harvest → repair → symptoms → populate → validate and writes `data/reports/disease_batch_status.json` with per-module tiering.
+
+### Readiness tiers (L0–L3)
+
+| Tier | Meaning |
+|------|---------|
+| **L0** | Scaffold only — missing KG JSON files |
+| **L1** | KG present (`genes.json`, etc.) but config gaps remain |
+| **L2** | Pipeline-ready — passes strict validation (symptoms, CAR-T, safety when drugs exist, screening profile) |
+| **L3** | Expression-curated — hand-curated GEO consensus (`CURATED_CONSENSUS_DISEASES`) |
+
+Check corpus-wide status: `python -m med_research.cli disease corpus-status` or `make corpus-status`. Baseline metrics: `make corpus-baseline`.
 
 ## `populate_disease_configs.py` rubric
 

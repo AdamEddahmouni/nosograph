@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(Anorexia nervosa[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(Anorexia nervosa[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(Anorexia nervosa[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(Anorexia nervosa[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(Anorexia nervosa[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(Anorexia nervosa[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(Anorexia nervosa[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(Anorexia nervosa[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

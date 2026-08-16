@@ -10,6 +10,7 @@ from uuid import UUID
 from celery.result import AsyncResult
 from fastapi import APIRouter, Depends, HTTPException, Request, WebSocket, WebSocketDisconnect
 from pydantic import Field, ValidationError
+from starlette.websockets import WebSocketState
 
 from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
 from med_research.pipeline.registry import module_catalog
@@ -50,8 +51,15 @@ logger = logging.getLogger(__name__)
 WorkspaceJobRequest = module_body_request_model("evidence_workspace")
 
 
+_CELERY_BACKEND_ERRORS: tuple[type[BaseException], ...] | None = None
+
+
 def _celery_backend_errors() -> tuple[type[BaseException], ...]:
     """Exception types raised when the Celery result backend is unavailable."""
+    global _CELERY_BACKEND_ERRORS
+    if _CELERY_BACKEND_ERRORS is not None:
+        return _CELERY_BACKEND_ERRORS
+
     errors: list[type[BaseException]] = [AttributeError, OSError, ConnectionError]
     try:
         from celery.exceptions import BackendError
@@ -71,7 +79,8 @@ def _celery_backend_errors() -> tuple[type[BaseException], ...]:
         errors.append(RedisConnectionError)
     except ImportError:
         pass
-    return tuple(errors)
+    _CELERY_BACKEND_ERRORS = tuple(errors)
+    return _CELERY_BACKEND_ERRORS
 
 
 def _parse_run_all_request(request: Request) -> RunAllJobRequest:
@@ -449,9 +458,9 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
     every 500ms until the job reaches a terminal state.
     """
     if is_api_key_required():
-        api_key = extract_api_key_from_query(websocket.query_params) or extract_api_key_from_headers(
-            websocket.headers
-        )
+        api_key = extract_api_key_from_query(
+            websocket.query_params
+        ) or extract_api_key_from_headers(websocket.headers)
         if not validate_api_key(api_key):
             await websocket.close(code=1008, reason="Invalid or missing API key")
             return
@@ -472,6 +481,8 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
 
     try:
         while polls < max_polls:
+            if websocket.client_state == WebSocketState.DISCONNECTED:
+                break
             # Celery/Redis reads block (connection timeouts can take seconds);
             # run them off the event loop so one slow poll cannot stall the
             # whole server.

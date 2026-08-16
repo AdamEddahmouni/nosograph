@@ -13,10 +13,10 @@ SYMPTOMS = []
 
 # ── Literature Mining ────────────────────────────────────────────────────
 PUBMED_QUERIES = [
-    '(HER2-positive breast cancer[Title/Abstract]) AND (treatment[Title/Abstract])',
-    '(HER2-positive breast cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])',
-    '(HER2-positive breast cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])',
-    '(HER2-positive breast cancer[Title/Abstract]) AND (biomarker[Title/Abstract])',
+    "(HER2-positive breast cancer[Title/Abstract]) AND (treatment[Title/Abstract])",
+    "(HER2-positive breast cancer[Title/Abstract]) AND (genetics[Title/Abstract] OR genomics[Title/Abstract])",
+    "(HER2-positive breast cancer[Title/Abstract]) AND (clinical trial[Title/Abstract])",
+    "(HER2-positive breast cancer[Title/Abstract]) AND (biomarker[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─

@@ -26,9 +26,7 @@ def test_mondo_fixture_imports_condition_and_hierarchy() -> None:
     assert "MONDO:0007915" in primary_curies
     predicates = {claim.predicate for claim in bundle.claims}
     assert Predicate.IS_A in predicates
-    assert all(
-        m.relation != MappingKind.EXACT or m.relation.can_auto_join for m in bundle.mappings
-    )
+    assert all(m.relation != MappingKind.EXACT or m.relation.can_auto_join for m in bundle.mappings)
 
 
 def test_mondo_revision_types_are_conditions() -> None:

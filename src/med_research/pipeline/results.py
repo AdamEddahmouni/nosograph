@@ -146,6 +146,11 @@ class RepurposingCandidate(TypedDict, total=False):
     gene_disease_evidence: str
     gene_odds_ratio: float | None
     tier: str
+    variant_functional_score: float
+    variant_details: list[dict[str, Any]]
+    tissue_expression_score: float
+    top_expressing_tissues: list[dict[str, Any]]
+    gtex_tissue_concordance: float
 
 
 class BiomarkerRow(TypedDict, total=False):
@@ -793,12 +798,18 @@ class MultiOmicsResult(TypedDict, total=False):
 class Structure3DItem(TypedDict, total=False):
     gene_id: str
     gene_name: str
+    uniprot_id: str
     plddt_score: float
     confidence_category: str
+    plddt_breakdown: dict[str, float]
+    domain_boundaries: list[str]
     active_site_residues: list[str]
     pocket_volume_A3: float
     docking_readiness_score: float
     pdb_id: str
+    alphafold_cif_url: str
+    alphafold_pae_url: str
+    druggability_tier: str
 
 
 class Structure3DResult(TypedDict, total=False):
@@ -874,6 +885,11 @@ RESULT_CONTRACTS: dict[str, Any] = {
 }
 
 
+_ADAPTER_CACHE: dict[str, TypeAdapter[Any]] = {
+    module_id: TypeAdapter(contract) for module_id, contract in RESULT_CONTRACTS.items()
+}
+
+
 def result_contract_name(module_id: str) -> str:
     """Return a stable display name for a module's raw result contract."""
     contract = RESULT_CONTRACTS.get(module_id)
@@ -888,14 +904,18 @@ def result_contract_name(module_id: str) -> str:
 
 def result_contract_schema(module_id: str) -> dict[str, Any]:
     """Return a JSON-schema-shaped description for a module result contract."""
-    contract = RESULT_CONTRACTS.get(module_id)
-    if contract is None:
-        return {
-            "title": result_contract_name(module_id),
-            "type": "object",
-            "description": "Concrete adapter result; no TypedDict contract is registered.",
-        }
-    return TypeAdapter(contract).json_schema()
+    adapter = _ADAPTER_CACHE.get(module_id)
+    if adapter is None:
+        contract = RESULT_CONTRACTS.get(module_id)
+        if contract is None:
+            return {
+                "title": result_contract_name(module_id),
+                "type": "object",
+                "description": "Concrete adapter result; no TypedDict contract is registered.",
+            }
+        adapter = TypeAdapter(contract)
+        _ADAPTER_CACHE[module_id] = adapter
+    return adapter.json_schema()
 
 
 def validate_result_contract(module_id: str, data: Any) -> Any:
@@ -905,8 +925,12 @@ def validate_result_contract(module_id: str, data: Any) -> Any:
     route's ``response_model``. This validation protects the shared raw result
     seam before CLI, web, Celery, or report consumers can diverge.
     """
-    contract = RESULT_CONTRACTS.get(module_id)
-    if contract is None:
-        return data
-    TypeAdapter(contract).validate_python(data)
+    adapter = _ADAPTER_CACHE.get(module_id)
+    if adapter is None:
+        contract = RESULT_CONTRACTS.get(module_id)
+        if contract is None:
+            return data
+        adapter = TypeAdapter(contract)
+        _ADAPTER_CACHE[module_id] = adapter
+    adapter.validate_python(data)
     return data

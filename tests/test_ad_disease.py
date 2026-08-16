@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from med_research.diseases.base import Disease
 
 

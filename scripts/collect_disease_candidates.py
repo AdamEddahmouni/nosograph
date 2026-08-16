@@ -17,6 +17,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from med_research.diseases.bulk_store import OpenTargetsBulkStore
+from med_research.diseases.registry_quality import is_disease_like_entry
 from med_research.diseases.scaffold import load_disease_registry, sanitize_id
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -51,18 +52,19 @@ def main() -> int:
         slug = sanitize_id(row["name"])
         if slug in registry_ids:
             continue
-        candidates.append(
-            {
-                "id": slug,
-                "name": row["name"],
-                "efo_id": efo,
-                "mondo_id": None,
-                "category": "",
-                "gene_count": row["gene_count"],
-                "drug_count": row["drug_count"],
-                "confidence": min(1.0, row["gene_count"] / 20.0),
-            }
-        )
+        candidate = {
+            "id": slug,
+            "name": row["name"],
+            "efo_id": efo,
+            "mondo_id": None,
+            "category": "",
+            "gene_count": row["gene_count"],
+            "drug_count": row["drug_count"],
+            "confidence": min(1.0, row["gene_count"] / 20.0),
+        }
+        if not is_disease_like_entry(candidate):
+            continue
+        candidates.append(candidate)
 
     candidates.sort(key=lambda c: (c["drug_count"], c["gene_count"]), reverse=True)
     candidates = candidates[:args.limit]

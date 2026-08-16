@@ -12,15 +12,24 @@ def run_cross_disease_analysis(disease_id: str | None = None) -> dict[str, Any]:
 
     shared_genes = results.get("shared_genes", {})
     if not isinstance(shared_genes, dict):
-        shared_genes = {"matrix": {}, "shared_genes": shared_genes if isinstance(shared_genes, list) else []}
+        shared_genes = {
+            "matrix": {},
+            "shared_genes": shared_genes if isinstance(shared_genes, list) else [],
+        }
 
     shared_drugs = results.get("shared_drugs", {})
     if not isinstance(shared_drugs, dict):
-        shared_drugs = {"matrix": {}, "shared_drugs": shared_drugs if isinstance(shared_drugs, list) else []}
+        shared_drugs = {
+            "matrix": {},
+            "shared_drugs": shared_drugs if isinstance(shared_drugs, list) else [],
+        }
 
     shared_pathways = results.get("shared_pathways", {})
     if not isinstance(shared_pathways, dict):
-        shared_pathways = {"matrix": {}, "shared_pathways": shared_pathways if isinstance(shared_pathways, list) else []}
+        shared_pathways = {
+            "matrix": {},
+            "shared_pathways": shared_pathways if isinstance(shared_pathways, list) else [],
+        }
 
     disease_sim = results.get("disease_similarity", [])
     if isinstance(disease_sim, dict):

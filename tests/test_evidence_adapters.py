@@ -25,7 +25,6 @@ pytestmark = pytest.mark.unit
 def _openai_api_key(monkeypatch):
     """Evidence extract coverage requires an API key."""
 
-
     monkeypatch.setenv("OPENAI_API_KEY", "test-key-for-adapters")
 
 

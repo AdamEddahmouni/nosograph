@@ -53,15 +53,17 @@ class ChEMBLClient:
             activities = data.get("activities", [])
             results = []
             for act in activities:
-                results.append({
-                    "molecule_chembl_id": act.get("molecule_chembl_id"),
-                    "molecule_pref_name": act.get("molecule_pref_name"),
-                    "activity_type": act.get("standard_type"),
-                    "value": act.get("standard_value"),
-                    "units": act.get("standard_units"),
-                    "relation": act.get("standard_relation"),
-                    "pchembl_value": act.get("pchembl_value"),
-                })
+                results.append(
+                    {
+                        "molecule_chembl_id": act.get("molecule_chembl_id"),
+                        "molecule_pref_name": act.get("molecule_pref_name"),
+                        "activity_type": act.get("standard_type"),
+                        "value": act.get("standard_value"),
+                        "units": act.get("standard_units"),
+                        "relation": act.get("standard_relation"),
+                        "pchembl_value": act.get("pchembl_value"),
+                    }
+                )
             return results
         except Exception as err:
             logger.warning("Failed fetching ChEMBL bioactivities for %s: %s", target_chembl_id, err)
@@ -74,7 +76,9 @@ class UniProtClient:
     def __init__(self, base_url: str = UNIPROT_BASE_URL) -> None:
         self.base_url = base_url
 
-    def get_protein_by_gene(self, gene_symbol: str, organism_id: int = 9606) -> Optional[Dict[str, Any]]:
+    def get_protein_by_gene(
+        self, gene_symbol: str, organism_id: int = 9606
+    ) -> Optional[Dict[str, Any]]:
         """Fetch UniProt protein record for human gene symbol."""
         url = f"{self.base_url}/search"
         query = f"gene_exact:{gene_symbol} AND organism_id:{organism_id} AND reviewed:true"

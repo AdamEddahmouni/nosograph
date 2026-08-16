@@ -293,7 +293,6 @@ class TestExecuteModule:
     def test_integration_with_real_registry_adapter(self):
         """Smoke: real adapter + real coverage gate for RA GWAS."""
 
-
         from med_research.diseases.coverage import module_coverage
 
         module = get_module("gwas")
