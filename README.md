@@ -6,7 +6,7 @@
 
 `med-research` is a multi-disease computational research platform for biomedical evidence exploration, drug discovery, and hypothesis generation. It combines disease-specific knowledge graphs, explainable scoring pipelines, literature and clinical-trial evidence, provenance metadata, a canonical universal biomedical store, and a FastAPI dashboard.
 
-> **Research use only.** Outputs are computational prioritization hypotheses, not medical advice, treatment recommendations, or evidence of efficacy. Validate every finding against the cited source and appropriate experimental or clinical evidence.
+> **Research use only.** Outputs are computational prioritization hypotheses, not medical advice. See [SECURITY.md](SECURITY.md) and [docs/public-launch.md](docs/public-launch.md) before publishing the repository.
 
 ## What is implemented
 
@@ -313,7 +313,9 @@ python -m compileall -q src/med_research
 git diff --check
 ```
 
-While GitHub Actions minutes are exhausted, the merge gate is local/`origin`: `make ci-local`. The hosted `Tests` workflow is `workflow_dispatch` only (it does not run on push/PR). When quota returns, hosted CI will again run lint, lock-check, the offline suite with an **80% coverage gate**, integration tests, and curated disease validation on Python 3.11–3.12.
+While the repository is **private**, GitHub-hosted Actions consume your org quota and may abort when minutes are exhausted. After [going public](docs/public-launch.md), hosted CI is free on standard runners and runs on every push/PR to `master`.
+
+CI runs lint, lock-check, security scans, the offline unit suite with an **80% coverage gate**, integration tests, and curated disease validation on Python 3.11–3.12. Slow/live tests run only on a weekly schedule or manual dispatch. Run `make ci-local` before pushing if you want the same offline gate locally.
 
 ## Docker
 

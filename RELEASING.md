@@ -29,13 +29,13 @@ The canonical version lives in [pyproject.toml](pyproject.toml) (`project.versio
    python -m med_research.cli disease validate sle --strict
    ```
 
-4. **Commit** the version and changelog updates on `main`.
+4. **Commit** the version and changelog updates on `master`.
 
 5. **Tag and push:**
 
    ```bash
    git tag -a vX.Y.Z -m "med-research vX.Y.Z"
-   git push origin main --tags
+   git push origin master --tags
    ```
 
 6. **Create a GitHub Release** from the tag:

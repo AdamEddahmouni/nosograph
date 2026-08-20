@@ -43,14 +43,13 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   browser: `python -m playwright install chromium` (one-off; cached in `~/.cache/ms-playwright`).
 
 ### GitHub Actions
-- **Minutes exhausted (2026-08-20):** hosted runners abort in 2–4 seconds with empty
-  `steps[]`. The `Tests` workflow is **workflow_dispatch only** so push/PR does not
-  keep queueing failed runs. Do not treat missing or red GitHub checks as product bugs.
-- Quality gate until quota resets: `make ci-local` (ruff, lock verify, import audit,
-  serial offline pytest). Equivalent pieces: `make lint` and `make test-offline`.
-  Push the feature branch to `origin`; do not wait for GitHub Actions.
-- Re-enable `push` / `pull_request` / Monday `schedule` in `.github/workflows/test.yml`
-  after Actions minutes refill. Prefer `workflow_dispatch` for a one-off hosted run.
+- **Public OSS:** hosted Actions are free on public repositories (standard runners).
+  The `Tests` workflow runs on push/PR to `master`/`main`; slow/live tests run weekly
+  or via `workflow_dispatch`.
+- **Private forks** of a public repo still consume the fork owner's Actions quota.
+- Local pre-push gate: `make ci-local` (matches hosted lint + offline pytest; serial,
+  skips Playwright browser tests).
+- `make typecheck` is informational only in CI until the mypy backlog in
+  `TECHNICAL_DEBT_ISSUES.md` is cleared.
 - `disease validate --all --strict` is **not** a merge gate: the 10k scaffold registry is
-  expected to exit non-zero. Hosted CI (when enabled) validates the original curated
-  eight (`sle` … `ad`) only.
+  expected to exit non-zero. Hosted CI validates the original curated eight (`sle` … `ad`) only.

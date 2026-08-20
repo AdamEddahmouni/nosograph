@@ -73,12 +73,10 @@ Gate release builds on an individual curated module instead:
 python -m med_research.cli disease validate sle --strict
 ```
 
-GitHub-hosted Actions minutes are exhausted, so `.github/workflows/test.yml` is
-`workflow_dispatch` only. Push/PR will not start hosted jobs. Use `make ci-local`
-(or `make lint` + `make test-offline`) on the Cloud Agent / `origin` branch as the
-merge gate. After billing resets, restore `push` / `pull_request` / schedule triggers.
-The workflow does **not** run `disease validate --all --strict` (scaffolds fail that
-check by design).
+GitHub Actions runs on push/PR when the repository is **public** (free hosted runners).
+While private, quota may block jobs — see [docs/public-launch.md](public-launch.md).
+Use `make ci-local` locally before pushing. The workflow does **not** run
+`disease validate --all --strict` (scaffolds fail that check by design).
 
 ## Data persistence
 

@@ -49,7 +49,7 @@ lint-fix:  ## Auto-fix ruff lint issues
 check-imports:  ## Audit for stale/dead internal med_research imports
 	python scripts/check_imports.py
 
-ci-local:  ## Quality gate while GitHub Actions minutes are exhausted (lint + locks + offline tests)
+ci-local:  ## Local pre-push gate (lint, locks, import audit, serial offline tests)
 	python -m ruff check src tests
 	python -m ruff format --check src tests
 	python scripts/lock_verify.py

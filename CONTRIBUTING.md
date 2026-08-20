@@ -32,7 +32,7 @@ See [README.md](README.md) for alternative install paths and CLI usage.
 
 ## Branch and pull request workflow
 
-- Branch from `main` using prefixes: `feature/`, `fix/`, or `docs/`
+- Branch from `master` using prefixes: `feature/`, `fix/`, or `docs/`
 - Keep PRs focused; link related issues when applicable
 - Before opening a PR, run:
 
@@ -40,9 +40,9 @@ See [README.md](README.md) for alternative install paths and CLI usage.
   make ci-local
   ```
 
-  (`make lint` + `make test-offline` is the same gate.)
+  (`make lint` + `make test-offline` cover most of the same checks.)
 - Fill out the pull request template checklist
-- GitHub-hosted Actions minutes are currently exhausted; hosted checks will not run on push/PR. Treat `make ci-local` on the Cloud Agent / `origin` branch as CI. Restore hosted workflows after billing resets.
+- Ensure GitHub Actions `Tests` passes on your PR (public repos receive free hosted runners)
 
 ## Security
 
