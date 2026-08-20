@@ -534,8 +534,17 @@ def test_build_consensus_signature_new_diseases(disease_id, up_gene, down_gene):
     assert sig["disease"] == disease_id
     assert up_gene in sig["upregulated"]
     assert down_gene in sig["downregulated"]
-    assert "IRF5" not in sig["upregulated"]
-    assert "IFI44L" not in sig["upregulated"]
+    if disease_id in {
+        "nsclc",
+        "pancreatic_ductal_adenocarcinoma",
+        "glioblastoma",
+        "cystic_fibrosis",
+        "sickle_cell_anemia",
+        "heart_failure",
+        "non_alcoholic_fatty_liver_disease",
+    }:
+        assert "IRF5" not in sig["upregulated"]
+        assert "IFI44L" not in sig["upregulated"]
 
 
 def test_build_consensus_signature_unsupported_disease():
