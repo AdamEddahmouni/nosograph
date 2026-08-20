@@ -9,7 +9,7 @@
 
 ### Verification
 
-- `pytest tests/test_gene_expression.py tests/test_tier_model.py tests/test_report_neutral_terminology.py -q`
+- `pytest tests/test_gene_expression.py tests/test_tier_model.py tests/test_report_neutral_terminology.py tests/test_l3_slice_screening_safety.py -q`
 
 ---
 
