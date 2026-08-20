@@ -42,7 +42,7 @@ billiard==4.2.4
     # via
     #   -c requirements-lock.txt
     #   celery
-biopython==1.87
+biopython==1.88
     # via
     #   -c requirements-lock.txt
     #   -r requirements.in
@@ -93,20 +93,18 @@ cloudpickle==3.1.2
     # via
     #   -c requirements-lock.txt
     #   shap
-colorama==0.4.6
-    # via
-    #   -c requirements-lock.txt
-    #   build
-    #   click
-    #   pytest
-    #   tqdm
-    #   typer
 contourpy==1.3.3
     # via
     #   -c requirements-lock.txt
     #   matplotlib
 coverage[toml]==7.15.2
     # via pytest-cov
+cuda-bindings==13.3.1
+    # via torch
+cuda-pathfinder==1.6.1
+    # via cuda-bindings
+cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3.0
+    # via torch
 cycler==0.12.1
     # via
     #   -c requirements-lock.txt
@@ -119,7 +117,7 @@ durationpy==0.10
     # via kubernetes
 execnet==2.1.2
     # via pytest-xdist
-fastapi==0.140.0
+fastapi==0.141.1
     # via
     #   -c requirements-lock.txt
     #   -r requirements.in
@@ -281,6 +279,51 @@ numpy==2.4.6
     #   shap
     #   transformers
     #   xgboost
+nvidia-cublas==13.1.1.3
+    # via
+    #   cuda-toolkit
+    #   nvidia-cudnn-cu13
+    #   nvidia-cusolver
+nvidia-cuda-cupti==13.0.85
+    # via cuda-toolkit
+nvidia-cuda-nvrtc==13.0.88
+    # via
+    #   cuda-toolkit
+    #   nvidia-cublas
+nvidia-cuda-runtime==13.0.96
+    # via cuda-toolkit
+nvidia-cudnn-cu13==9.20.0.48
+    # via torch
+nvidia-cufft==12.0.0.61
+    # via cuda-toolkit
+nvidia-cufile==1.15.1.6
+    # via cuda-toolkit
+nvidia-curand==10.4.0.35
+    # via cuda-toolkit
+nvidia-cusolver==12.0.4.66
+    # via cuda-toolkit
+nvidia-cusparse==12.6.3.3
+    # via
+    #   cuda-toolkit
+    #   nvidia-cusolver
+nvidia-cusparselt-cu13==0.8.1
+    # via torch
+nvidia-nccl-cu12==2.31.2
+    # via
+    #   -c requirements-lock.txt
+    #   xgboost
+nvidia-nccl-cu13==2.29.7
+    # via torch
+nvidia-nvjitlink==13.3.33
+    # via
+    #   cuda-toolkit
+    #   nvidia-cufft
+    #   nvidia-cusolver
+    #   nvidia-cusparse
+nvidia-nvshmem-cu13==3.4.5
+    # via torch
+nvidia-nvtx==13.0.85
+    # via cuda-toolkit
 oauthlib==3.3.1
     # via requests-oauthlib
 onnxruntime==1.28.0
@@ -338,7 +381,7 @@ pillow==12.3.0
     #   rdkit
 pip-tools==7.6.1
     # via -r requirements-dev.in
-playwright==1.61.0
+playwright==1.62.0
     # via -r requirements-dev.in
 pluggy==1.6.0
     # via
@@ -456,7 +499,7 @@ rpds-py==2026.6.3
     # via
     #   jsonschema
     #   referencing
-ruff==0.16.0
+ruff==0.16.3
     # via -r requirements-dev.in
 safetensors==0.8.0
     # via transformers
@@ -474,7 +517,7 @@ scipy==1.17.1
     #   sentence-transformers
     #   shap
     #   xgboost
-sentence-transformers==5.2.3
+sentence-transformers==5.7.0
     # via -r requirements-dev.in
 shap==0.51.0
     # via
@@ -506,6 +549,7 @@ threadpoolctl==3.6.0
 tokenizers==0.22.2
     # via
     #   chromadb
+    #   sentence-transformers
     #   transformers
 torch==2.13.0
     # via sentence-transformers
@@ -519,6 +563,8 @@ tqdm==4.69.1
     #   transformers
 transformers==5.14.1
     # via sentence-transformers
+triton==3.7.1
+    # via torch
 typer==0.27.1
     # via
     #   chromadb
@@ -558,8 +604,6 @@ tzdata==2026.3
     # via
     #   -c requirements-lock.txt
     #   kombu
-    #   pandas
-    #   tzlocal
 tzlocal==5.4.4
     # via
     #   -c requirements-lock.txt
@@ -575,6 +619,10 @@ uvicorn[standard]==0.51.0
     #   -c requirements-lock.txt
     #   -r requirements.in
     #   chromadb
+uvloop==0.22.1
+    # via
+    #   -c requirements-lock.txt
+    #   uvicorn
 vine==5.1.0
     # via
     #   -c requirements-lock.txt

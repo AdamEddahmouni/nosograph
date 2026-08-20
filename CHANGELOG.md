@@ -5,8 +5,20 @@
 ### Added
 
 - **L3 expression consensus for seven Wave 3/4 indications** — disease-specific GEO consensus gene lists (no SLE signature reuse) for `nsclc`, `pancreatic_ductal_adenocarcinoma`, `glioblastoma`, `cystic_fibrosis`, `sickle_cell_anemia`, `heart_failure`, and `non_alcoholic_fatty_liver_disease`. Each list is restricted to symbols in that module's `genes.json`, with tissue-specific GEO search terms and filters (`lung`, `pancreas`, `tumor`, `airway`, `pbmc_blood`, `myocardium`, `liver`).
+- **Second L3 Wave 3/4 batch** — literature-backed GEO consensus for `melanoma`, `colorectal_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `copd`, `asthma`, `t2d`, and `als` (symbols restricted to each module's `genes.json`; tissue filters `tumor`, `pbmc_blood`, `airway`, `islet`, `cns`).
 - **Screening/safety coverage for the same L3 slice** — `SCREENING_PROFILE.reference_drug_ids` now match each module's `drugs.json` catalog (CHEMBL IDs where the KG uses them), NAFLD gained pathway/mechanism keywords, and each module has a catalog-scoped `adverse_events.json` so screening and safety coverage report `ready/full`.
 - **Second Wave 3/4 screening/safety slice** — catalog-aligned reference drugs, pathway keywords, and `adverse_events.json` for `melanoma`, `colorectal_cancer`, `triple_neg_breast_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `spinal_muscular_atrophy`, `major_depressive_disorder`, and `epilepsy`.
+- **Unreleased platform surfaces from 7a80892** — synthetic clinical-trial matching, lead optimization, target hypothesis agent, pharmacogenomics, spatial transcriptomics, and dossier generation are documented as research-only tools. Matching APIs return a disclaimer, do not persist submitted vectors, and refuse to be framed as care advice.
+
+### Changed
+
+- `lead_opt` and `matching_engine` now live under `med_research.pipeline` instead of sibling `src/` packages.
+- GitHub Actions `Tests` workflow: checkout/setup-python/upload-artifact v7, concurrency cancellation, curated-only `disease validate` (not `--all --strict`), and bandit excludes the 10k disease tree plus generated dossiers.
+- Generated timestamped dossier markdown/PDF files are gitignored and removed from source.
+
+### Verification
+
+- `pytest tests/test_gene_expression.py tests/test_tier_model.py tests/test_report_neutral_terminology.py tests/test_l3_slice_screening_safety.py tests/web/test_patient_matching_api.py tests/pipeline/test_hypothesis_agent.py -q`
 
 ### Verification
 
@@ -410,8 +422,8 @@ This section is the maintained snapshot of the live repository. Historical phase
 - **Package:** `med-research` 2.0.0, Python 3.11–3.12 support, unified `med-research` / `python -m med_research.cli` entry points.
 - **Disease modules:** 10,405 discovered modules — 18 hand-curated (`sle`, `ra`, `ms`, `ss`, `ssc`, `t1d`, `ibd`, `ad`, `als`, `as`, `asthma`, `atopic_dermatitis`, `copd`, `gout`, `pd`, `psa`, `pso`, `t2d`) plus 10,387 auto-generated OpenTargets knowledge-graph scaffolds. `disease validate --all` walks the full registry and reports config gaps on scaffolded modules (e.g. empty `SYMPTOMS`); `disease validate <id> --strict` passes for the curated set.
 - **Universal Biomedical Schema v1:** canonical `med_research.biomed` SQLite store with versioned MONDO/HPO/HPOA snapshots, entities, claims, evidence, research runs, legacy-disease migration, HPO-aware condition comparison, graph analytics, and read-only `/api/v1` endpoints with research-only disclaimers.
-- **Analysis capabilities:** disease-specific knowledge graphs, repurposing, bioinformatics, literature mining, virtual screening/docking, trials, ML prediction, synergy, safety, ADMET, CRISPR, multi-omics, structure 3D, network pharmacology, expression, CAR-T, biomarkers, semantic search, evidence gathering/extraction, monitoring, cross-disease analysis, and live external connectors (Open Targets, GTEx, ChEMBL, UniProt, bioRxiv).
-- **Web application:** FastAPI API and vanilla JavaScript dashboard, with Celery/Redis-backed asynchronous jobs, WebSocket **and SSE** progress, HTTP polling fallback, saved Workspace history, comparison, trends, alerts, weekly digests, JSON/HTML exports, API-key middleware, distributed rate limiting, researcher sessions (local + trusted proxy), and the Condition Explorer / Condition Comparison / Biomedical Import Status / Graph Analytics & Target Vulnerability tabs.
+- **Analysis capabilities:** disease-specific knowledge graphs, repurposing, bioinformatics, literature mining, virtual screening/docking, trials, ML prediction, synergy, safety, ADMET, CRISPR, multi-omics, structure 3D, network pharmacology, expression (L3 curated consensus for the original eight plus Wave 3/4 oncology, rare-genetic, cardio-metabolic, COPD/asthma/T2D, and ALS slices), CAR-T, biomarkers, semantic search, evidence gathering/extraction, monitoring, cross-disease analysis, live external connectors (Open Targets, GTEx, ChEMBL, UniProt, bioRxiv), synthetic clinical-trial matching (research simulation only; vectors are not persisted), lead optimization, pharmacogenomics, spatial transcriptomics, and the target hypothesis agent.
+- **Web application:** FastAPI API and vanilla JavaScript dashboard, with Celery/Redis-backed asynchronous jobs, WebSocket **and SSE** progress, HTTP polling fallback, saved Workspace history, comparison, trends, alerts, weekly digests, JSON/HTML exports, API-key middleware, distributed rate limiting, researcher sessions (local + trusted proxy), Condition Explorer / Condition Comparison / Biomedical Import Status / Graph Analytics & Target Vulnerability tabs, and research-only matching / lead-opt / PGx / spatial / agent pages.
 - **Evidence Workspace:** PubMed and ClinicalTrials.gov are the dashboard defaults; GWAS, FDA-label, Open Targets, GTEx, bioRxiv, and ChEMBL adapters are also available. Dossiers include source-level status, native citations, supporting/contradictory claims, explainable drug/target rankings, graph path/no-path explanations, warnings, limitations, and reproducibility fingerprints.
 - **Research-safety posture:** Workspace rankings are computational prioritization heuristics only. Outputs require source review and experimental/clinical validation and are not medical advice.
 
