@@ -1,0 +1,51 @@
+{
+  "schema_version": "1",
+  "disease_id": "cystic_fibrosis",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["cough", "headache", "oropharyngeal pain", "nausea", "rash"],
+    "severe_ae": ["hepatotoxicity", "cataracts", "severe rash"],
+    "disease_overlap_ae": ["cough", "fatigue", "dyspnea"],
+    "severity_burden": 5,
+    "chronic_use_safety": 7,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Liver enzymes and ophthalmologic exam during CFTR modulator therapy.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL2010601",
+      "common_ae": ["headache", "oropharyngeal pain", "upper respiratory infection", "rash"],
+      "severe_ae": ["hepatotoxicity", "cataracts"],
+      "disease_overlap_ae": ["cough", "dyspnea"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "ALT/AST and eye exams."
+    },
+    {
+      "drug_id": "CHEMBL2103870",
+      "common_ae": ["dyspnea", "chest discomfort", "nausea", "diarrhea"],
+      "severe_ae": ["hepatotoxicity", "respiratory events at treatment start"],
+      "disease_overlap_ae": ["cough", "dyspnea"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Liver enzymes and respiratory symptoms after initiation."
+    },
+    {
+      "drug_id": "CHEMBL4298128",
+      "common_ae": ["headache", "upper respiratory infection", "abdominal pain", "diarrhea", "rash"],
+      "severe_ae": ["hepatotoxicity", "rash / hypersensitivity"],
+      "disease_overlap_ae": ["cough", "fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Liver enzymes during the first year of triple-modulator therapy."
+    }
+  ]
+}

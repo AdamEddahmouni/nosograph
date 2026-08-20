@@ -228,12 +228,12 @@ SCREENING_PROFILE = {
         "pi3k",
     ],
     "reference_drug_ids": [
-        "CHEMBL1214827",
-        "CHEMBL1421",
-        "CHEMBL1431",
-        "CHEMBL1683590",
-        "CHEMBL1773",
+        "CHEMBL428647",
         "CHEMBL3137343",
+        "CHEMBL3545262",
+        "CHEMBL521686",
+        "CHEMBL1773",
+        "CHEMBL53463",
     ],
     "weights": {
         "binding_estimate": 0.25,

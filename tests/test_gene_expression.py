@@ -515,6 +515,21 @@ def test_build_consensus_signature_ms():
         ("ss", "TNFSF13B", "AQP5"),
         ("ssc", "COL1A1", "PPARG"),
         ("t1d", "PTPN22", "PDX1"),
+        ("nsclc", "EGFR", "CDKN2A"),
+        ("pancreatic_ductal_adenocarcinoma", "KRAS", "SMAD4"),
+        ("glioblastoma", "EGFR", "PTEN"),
+        ("cystic_fibrosis", "TGFB1", "CFTR"),
+        ("sickle_cell_anemia", "SELP", "NOS3"),
+        ("heart_failure", "MYH7", "ADRB1"),
+        ("non_alcoholic_fatty_liver_disease", "PNPLA3", "ATG7"),
+        ("melanoma", "BRAF", "CDKN2A"),
+        ("colorectal_cancer", "KRAS", "APC"),
+        ("breast_cancer", "ERBB2", "BRCA1"),
+        ("acute_myeloid_leukemia", "FLT3", "TP53"),
+        ("copd", "MMP9", "SERPINA1"),
+        ("asthma", "IL13", "ADRB2"),
+        ("t2d", "TCF7L2", "PPARG"),
+        ("als", "SOD1", "C9orf72"),
     ],
 )
 def test_build_consensus_signature_new_diseases(disease_id, up_gene, down_gene):
@@ -527,6 +542,9 @@ def test_build_consensus_signature_new_diseases(disease_id, up_gene, down_gene):
     assert sig["disease"] == disease_id
     assert up_gene in sig["upregulated"]
     assert down_gene in sig["downregulated"]
+    if disease_id not in {"ms", "ss", "ssc", "t1d"}:
+        assert "IRF5" not in sig["upregulated"]
+        assert "IFI44L" not in sig["upregulated"]
 
 
 def test_build_consensus_signature_unsupported_disease():
@@ -689,3 +707,80 @@ def test_expression_report_with_signature_source():
     assert "Expression Signature Source" in content
     assert "curated_consensus" in content
     Path(path).unlink(missing_ok=True)
+
+
+L3_WAVE_DISEASES = (
+    "nsclc",
+    "pancreatic_ductal_adenocarcinoma",
+    "glioblastoma",
+    "cystic_fibrosis",
+    "sickle_cell_anemia",
+    "heart_failure",
+    "non_alcoholic_fatty_liver_disease",
+    "melanoma",
+    "colorectal_cancer",
+    "breast_cancer",
+    "acute_myeloid_leukemia",
+    "copd",
+    "asthma",
+    "t2d",
+    "als",
+)
+
+L3_TISSUE_CASES = (
+    ("nsclc", "lung", "EGFR", "CDKN2A"),
+    ("pancreatic_ductal_adenocarcinoma", "pancreas", "KRAS", "SMAD4"),
+    ("glioblastoma", "tumor", "EGFR", "PTEN"),
+    ("cystic_fibrosis", "airway", "TGFB1", "CFTR"),
+    ("sickle_cell_anemia", "pbmc_blood", "SELP", "NOS3"),
+    ("heart_failure", "myocardium", "MYH7", "ADRB1"),
+    ("non_alcoholic_fatty_liver_disease", "liver", "PNPLA3", "ATG7"),
+    ("melanoma", "tumor", "BRAF", "CDKN2A"),
+    ("colorectal_cancer", "tumor", "KRAS", "APC"),
+    ("breast_cancer", "tumor", "ERBB2", "BRCA1"),
+    ("acute_myeloid_leukemia", "pbmc_blood", "FLT3", "TP53"),
+    ("copd", "airway", "MMP9", "SERPINA1"),
+    ("asthma", "airway", "IL13", "ADRB2"),
+    ("t2d", "islet", "TCF7L2", "PPARG"),
+    ("als", "cns", "SOD1", "C9orf72"),
+)
+
+
+@pytest.mark.parametrize("disease_id", L3_WAVE_DISEASES)
+def test_wave_l3_curated_signature_manager(disease_id):
+    from med_research.pipeline.gene_expression.signature import get_signature
+
+    sig = get_signature(disease=disease_id, source="curated")
+    assert sig["coverage"] == "curated"
+    assert sig["source"] == "curated_consensus"
+    assert sig["upregulated"]
+    assert sig["downregulated"]
+    assert "IRF5" not in sig["upregulated"]
+
+
+@pytest.mark.parametrize("disease_id", L3_WAVE_DISEASES)
+def test_wave_l3_consensus_symbols_exist_in_kg(disease_id):
+    from med_research.diseases.base import Disease
+    from med_research.pipeline.gene_expression.geo import DISEASE_CONSENSUS_GENES
+
+    kg_ids = {g["id"] for g in Disease(disease_id).load_genes().get("genes", [])}
+    consensus = DISEASE_CONSENSUS_GENES[disease_id]
+    missing = (set(consensus["upregulated"]) | set(consensus["downregulated"])) - kg_ids
+    assert not missing, f"{disease_id} consensus symbols missing from genes.json: {sorted(missing)}"
+
+
+@pytest.mark.parametrize("disease_id,tissue,up_gene,down_gene", L3_TISSUE_CASES)
+def test_wave_l3_tissue_filters(disease_id, tissue, up_gene, down_gene):
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
+
+    sig = build_consensus_signature(
+        [{"accession": "TEST"}],
+        disease=disease_id,
+        min_occurrence=1,
+        tissue=tissue,
+    )
+    assert sig["coverage"] == "curated"
+    assert sig["tissue_category"] == tissue
+    assert up_gene in sig["upregulated"]
+    assert down_gene in sig["downregulated"]
+    assert "IRF5" not in sig["upregulated"]

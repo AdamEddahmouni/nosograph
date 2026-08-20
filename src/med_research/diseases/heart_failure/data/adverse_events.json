@@ -1,0 +1,87 @@
+{
+  "schema_version": "1",
+  "disease_id": "heart_failure",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["dizziness", "hypotension", "fatigue", "electrolyte imbalance"],
+    "severe_ae": ["acute kidney injury", "hyperkalemia", "symptomatic hypotension"],
+    "disease_overlap_ae": ["fatigue", "dyspnea", "dizziness"],
+    "severity_burden": 6,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Blood pressure, renal function, and electrolytes during GDMT titration.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL1069",
+      "common_ae": ["dizziness", "hypotension", "hyperkalemia"],
+      "severe_ae": ["acute kidney injury", "angioedema", "severe hyperkalemia"],
+      "disease_overlap_ae": ["fatigue", "dizziness"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Creatinine, potassium, and blood pressure after dose changes."
+    },
+    {
+      "drug_id": "CHEMBL2107830",
+      "common_ae": ["genital mycotic infection", "increased urination", "volume depletion"],
+      "severe_ae": ["ketoacidosis", "uropathies", "hypotension"],
+      "disease_overlap_ae": ["fatigue", "dizziness"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Volume status, renal function, and infection symptoms."
+    },
+    {
+      "drug_id": "CHEMBL429910",
+      "common_ae": ["genital mycotic infection", "nasopharyngitis", "volume depletion"],
+      "severe_ae": ["ketoacidosis", "uropathies", "hypotension"],
+      "disease_overlap_ae": ["fatigue", "dizziness"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Renal function and volume status."
+    },
+    {
+      "drug_id": "CHEMBL723",
+      "common_ae": ["bradycardia", "fatigue", "dizziness", "weight gain"],
+      "severe_ae": ["decompensated heart failure", "severe bradycardia", "bronchospasm"],
+      "disease_overlap_ae": ["fatigue", "dyspnea"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Heart rate, blood pressure, and fluid status during titration."
+    },
+    {
+      "drug_id": "CHEMBL35",
+      "common_ae": ["electrolyte depletion", "dehydration", "hyperuricemia"],
+      "severe_ae": ["severe hypokalemia", "ototoxicity", "acute kidney injury"],
+      "disease_overlap_ae": ["fatigue", "dizziness"],
+      "severity_burden": 6,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Electrolytes, renal function, and volume status."
+    },
+    {
+      "drug_id": "CHEMBL578",
+      "common_ae": ["cough", "hypotension", "dizziness"],
+      "severe_ae": ["angioedema", "hyperkalemia", "acute kidney injury"],
+      "disease_overlap_ae": ["fatigue", "dyspnea"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Creatinine, potassium, and blood pressure."
+    },
+    {
+      "drug_id": "CHEMBL1095097",
+      "common_ae": ["hyperkalemia", "dizziness", "fatigue"],
+      "severe_ae": ["severe hyperkalemia", "worsening renal function"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Potassium and renal function."
+    }
+  ]
+}

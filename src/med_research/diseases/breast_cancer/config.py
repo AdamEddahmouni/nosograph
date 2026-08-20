@@ -256,12 +256,12 @@ SCREENING_PROFILE = {
         "mtor",
     ],
     "reference_drug_ids": [
-        "CHEMBL1201179",
-        "CHEMBL1201247",
-        "CHEMBL1201746",
-        "CHEMBL1637",
-        "CHEMBL1683590",
+        "CHEMBL189963",
+        "CHEMBL3545110",
         "CHEMBL1743082",
+        "CHEMBL428647",
+        "CHEMBL1201179",
+        "CHEMBL521686",
     ],
     "weights": {
         "binding_estimate": 0.25,

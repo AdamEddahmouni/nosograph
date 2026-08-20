@@ -8,10 +8,10 @@ from typing import Any, Dict, List, Optional
 from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
-from matching_engine.clinical_trials_parser import Trial
-from matching_engine.eligibility_engine import EligibilityEngine
-from matching_engine.match_scoring import MatchScorer
-from matching_engine.patient_profiling import PatientFeatureVector
+from med_research.pipeline.matching_engine.clinical_trials_parser import Trial
+from med_research.pipeline.matching_engine.eligibility_engine import EligibilityEngine
+from med_research.pipeline.matching_engine.match_scoring import MatchScorer
+from med_research.pipeline.matching_engine.patient_profiling import PatientFeatureVector
 
 router = APIRouter(prefix="/api/matching", tags=["Clinical Trial Matching"])
 logger = logging.getLogger(__name__)
@@ -36,6 +36,13 @@ class CohortGenerationRequest(BaseModel):
     num_patients: int = Field(default=10, ge=1, le=200)
     disease: str = Field(default="melanoma")
     seed: Optional[int] = None
+
+
+RESEARCH_ONLY_DISCLAIMER = (
+    "Research simulation only. Submit synthetic or de-identified research vectors. "
+    "Do not upload protected health information or real patient records. "
+    "Rankings are computational hypotheses, not eligibility determinations or care advice."
+)
 
 
 @router.post("/generate-cohort")
@@ -73,6 +80,8 @@ async def generate_synthetic_cohort(req: CohortGenerationRequest) -> Dict[str, A
         "disease": req.disease,
         "count": len(cohort),
         "cohort": cohort,
+        "disclaimer": RESEARCH_ONLY_DISCLAIMER,
+        "persisted": False,
     }
 
 
@@ -177,4 +186,6 @@ async def match_patient_to_trials(patient: PatientVectorInput) -> Dict[str, Any]
         "total_trials_evaluated": len(results),
         "eligible_trials_count": sum(1 for r in results if r["is_eligible"]),
         "matches": results,
+        "disclaimer": RESEARCH_ONLY_DISCLAIMER,
+        "persisted": False,
     }

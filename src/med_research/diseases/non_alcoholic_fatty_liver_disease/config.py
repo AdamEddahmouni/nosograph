@@ -81,6 +81,22 @@ DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "non_alcoholic_fatty_liver_disease-screening-v1",
+    "pathway_keywords": [
+        "lipid metabolism",
+        "autophagy",
+        "thyroid hormone",
+        "glucose metabolism",
+        "insulin",
+        "fibrosis",
+        "coagulation",
+    ],
+    "mechanism_keywords": [
+        "thyroid hormone receptor agonist",
+        "glp-1 agonist",
+        "ppar agonist",
+        "insulin sensitizer",
+        "antifibrotic",
+    ],
     "reference_drug_ids": ["resmetirom", "semaglutide", "pioglitazone", "lanifibranor"],
     "weights": {
         "binding_estimate": 0.30,

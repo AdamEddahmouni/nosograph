@@ -1,20 +1,78 @@
 {
+  "schema_version": "1",
   "disease_id": "asthma",
-  "disease_name": "Chronic Airway Inflammation (Asthma)",
-  "adverse_events": [
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["headache", "oropharyngeal irritation", "tremor", "nasopharyngitis"],
+    "severe_ae": ["paradoxical bronchospasm", "anaphylaxis", "adrenal suppression"],
+    "disease_overlap_ae": ["cough", "wheeze", "dyspnea"],
+    "severity_burden": 5,
+    "chronic_use_safety": 7,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Inhaler technique, exacerbation frequency, and ICS-related local AEs.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
     {
-      "drug": "mepolizumab",
-      "common_events": [
-        "Headache",
-        "Injection site reactions",
-        "Back pain",
-        "Fatigue"
-      ],
-      "serious_events": [
-        "Systemic allergic reactions",
-        "Anaphylaxis"
-      ],
-      "black_box_warning": false
+      "drug_id": "CHEMBL1200681",
+      "common_ae": ["headache", "abdominal pain", "upper respiratory infection"],
+      "severe_ae": ["neuropsychiatric events", "Churg-Strauss-like eosinophilia"],
+      "disease_overlap_ae": ["dyspnea"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Mood/sleep changes and eosinophilic symptoms."
+    },
+    {
+      "drug_id": "CHEMBL1201027",
+      "common_ae": ["dry mouth", "constipation", "blurred vision"],
+      "severe_ae": ["urinary retention", "narrow-angle glaucoma exacerbation"],
+      "disease_overlap_ae": ["cough"],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Anticholinergic burden in older adults."
+    },
+    {
+      "drug_id": "CHEMBL1256786",
+      "common_ae": ["tremor", "palpitations", "headache"],
+      "severe_ae": ["paradoxical bronchospasm", "hypokalemia", "tachyarrhythmia"],
+      "disease_overlap_ae": ["wheeze", "dyspnea"],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Heart rate and potassium with high-dose LABA exposure."
+    },
+    {
+      "drug_id": "CHEMBL131",
+      "common_ae": ["insomnia", "increased appetite", "mood lability", "hyperglycemia"],
+      "severe_ae": ["adrenal suppression", "infection risk", "osteoporosis"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 4,
+      "monitoring_required": "Glucose, blood pressure, and duration of systemic steroid bursts."
+    },
+    {
+      "drug_id": "CHEMBL1370561",
+      "common_ae": ["nausea", "insomnia", "headache", "reflux"],
+      "severe_ae": ["arrhythmia", "seizure", "theophylline toxicity"],
+      "disease_overlap_ae": ["dyspnea"],
+      "severity_burden": 7,
+      "chronic_use_safety": 4,
+      "monitoring_required": "Serum theophylline levels and interacting drugs."
+    },
+    {
+      "drug_id": "CHEMBL1473",
+      "common_ae": ["oral candidiasis", "hoarseness", "cough"],
+      "severe_ae": ["adrenal suppression", "pneumonia", "growth effects in children"],
+      "disease_overlap_ae": ["cough", "wheeze"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Rinse-and-spit after ICS and lowest effective dose."
     }
   ]
 }

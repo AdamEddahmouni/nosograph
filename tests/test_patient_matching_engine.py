@@ -1,9 +1,12 @@
 import pytest
 
-from matching_engine.clinical_trials_parser import Trial
-from matching_engine.eligibility_engine import EligibilityEngine
-from matching_engine.match_scoring import MatchScorer
-from matching_engine.patient_profiling import PatientFeatureVector, SyntheticPatientGenerator
+from med_research.pipeline.matching_engine.clinical_trials_parser import Trial
+from med_research.pipeline.matching_engine.eligibility_engine import EligibilityEngine
+from med_research.pipeline.matching_engine.match_scoring import MatchScorer
+from med_research.pipeline.matching_engine.patient_profiling import (
+    PatientFeatureVector,
+    SyntheticPatientGenerator,
+)
 
 
 @pytest.mark.unit

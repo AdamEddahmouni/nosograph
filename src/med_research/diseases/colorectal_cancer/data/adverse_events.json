@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "disease_id": "colorectal_cancer",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["diarrhea", "fatigue", "nausea", "mucositis", "myelosuppression"],
+    "severe_ae": ["severe diarrhea", "febrile neutropenia", "hepatotoxicity"],
+    "disease_overlap_ae": ["fatigue", "anorexia", "abdominal pain"],
+    "severity_burden": 7,
+    "chronic_use_safety": 5,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "CBC, diarrhea, and hepatic panel during cytotoxic or targeted therapy.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL2103875",
+      "common_ae": ["rash", "diarrhea", "fatigue", "edema"],
+      "severe_ae": ["cardiomyopathy", "interstitial lung disease"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "LVEF and skin toxicity during MEK inhibitor use."
+    },
+    {
+      "drug_id": "CHEMBL553",
+      "common_ae": ["rash", "diarrhea", "fatigue", "anorexia"],
+      "severe_ae": ["interstitial lung disease", "hepatotoxicity"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Liver enzymes and pulmonary symptoms."
+    },
+    {
+      "drug_id": "CHEMBL4297829",
+      "common_ae": ["fatigue", "rash", "pruritus", "diarrhea"],
+      "severe_ae": ["immune-mediated pneumonitis", "colitis", "hepatitis"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Immune-related AE labs and pulmonary symptoms."
+    },
+    {
+      "drug_id": "CHEMBL3545252",
+      "common_ae": ["alopecia", "neuropathy", "nausea", "myelosuppression"],
+      "severe_ae": ["febrile neutropenia", "severe neuropathy", "hypersensitivity"],
+      "disease_overlap_ae": ["fatigue", "anorexia"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC and neuropathy assessment."
+    },
+    {
+      "drug_id": "CHEMBL235668",
+      "common_ae": ["myelosuppression", "nausea", "fatigue", "diarrhea"],
+      "severe_ae": ["severe neutropenia", "febrile neutropenia"],
+      "disease_overlap_ae": ["fatigue", "anorexia"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC during trifluridine/tipiracil-class exposure."
+    },
+    {
+      "drug_id": "CHEMBL1743013",
+      "common_ae": ["infusion reactions", "fatigue", "rash", "diarrhea"],
+      "severe_ae": ["severe infusion reaction", "hypomagnesemia"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Infusion observation and electrolytes for EGFR-directed antibodies."
+    }
+  ]
+}

@@ -1,21 +1,69 @@
 {
+  "schema_version": "1",
   "disease_id": "als",
-  "disease_name": "Amyotrophic Lateral Sclerosis",
-  "adverse_events": [
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["nausea", "fatigue", "headache", "injection site reaction"],
+    "severe_ae": ["hepatotoxicity", "neutropenia", "hypersensitivity"],
+    "disease_overlap_ae": ["fatigue", "weakness"],
+    "severity_burden": 6,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "LFTs and blood counts for approved ALS disease-modifying agents.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
     {
-      "drug": "riluzole",
-      "common_events": [
-        "Nausea",
-        "Fatigue",
-        "Asthenia",
-        "Abdominal pain"
-      ],
-      "serious_events": [
-        "Hepatotoxicity",
-        "Neutropenia",
-        "Interstitial lung disease"
-      ],
-      "black_box_warning": false
+      "drug_id": "riluzole",
+      "common_ae": ["nausea", "asthenia", "abdominal pain", "dizziness"],
+      "severe_ae": ["hepatotoxicity", "neutropenia", "interstitial lung disease"],
+      "disease_overlap_ae": ["fatigue", "weakness"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "ALT/AST monthly for 3 months then periodically; CBC if febrile."
+    },
+    {
+      "drug_id": "edaravone",
+      "common_ae": ["contusion", "gait disturbance", "headache", "dermatitis"],
+      "severe_ae": ["hypersensitivity", "sulfite reaction"],
+      "disease_overlap_ae": ["gait disturbance", "weakness"],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Infusion reactions and sulfite allergy history."
+    },
+    {
+      "drug_id": "tofersen",
+      "common_ae": ["pain", "fatigue", "arthralgia", "CSF pleocytosis"],
+      "severe_ae": ["myelitis", "papilledema", "aseptic meningitis", "intracranial hypertension"],
+      "disease_overlap_ae": ["weakness", "fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Neurologic exam and CSF-related symptoms after IT administration."
+    },
+    {
+      "drug_id": "sodium_phenylbutyrate_taurursodiol",
+      "common_ae": ["diarrhea", "abdominal pain", "nausea", "taste disturbance"],
+      "severe_ae": ["enteral feeding tube clogging", "severe GI events"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "monitoring_required": "GI tolerance and feeding-tube patency when used."
+    },
+    {
+      "drug_id": "masitinib",
+      "common_ae": ["rash", "nausea", "edema", "diarrhea"],
+      "severe_ae": ["severe neutropenia", "hepatotoxicity", "severe skin reactions"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 4,
+      "monitoring_required": "CBC and LFTs; investigational kinase-inhibitor monitoring only."
     }
   ]
 }

@@ -154,12 +154,11 @@ SCREENING_PROFILE = {
         "thyroid",
     ],
     "reference_drug_ids": [
-        "CHEMBL1201834",
-        "CHEMBL1637",
-        "CHEMBL1637",
-        "CHEMBL1637",
-        "CHEMBL1637",
-        "CHEMBL1703",
+        "CHEMBL888",
+        "CHEMBL428647",
+        "CHEMBL481",
+        "CHEMBL185",
+        "CHEMBL513",
     ],
     "weights": {
         "binding_estimate": 0.25,

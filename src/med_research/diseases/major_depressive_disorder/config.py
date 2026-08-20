@@ -86,6 +86,21 @@ DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "major_depressive_disorder-screening-v1",
+    "pathway_keywords": [
+        "serotonin",
+        "dopamine",
+        "gaba",
+        "glutamate",
+        "opioid",
+        "monoamine",
+    ],
+    "mechanism_keywords": [
+        "ssri",
+        "snri",
+        "ndri",
+        "nmda antagonist",
+        "serotonin modulator",
+    ],
     "reference_drug_ids": [
         "escitalopram",
         "sertraline",

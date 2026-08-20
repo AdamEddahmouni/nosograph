@@ -252,12 +252,10 @@ SCREENING_PROFILE = {
         "homeostasis",
     ],
     "reference_drug_ids": [
-        "CHEMBL4297744",
-        "CHEMBL4297744",
-        "CHEMBL4297744",
-        "CHEMBL4297744",
-        "CHEMBL4297744",
-        "CHEMBL4297744",
+        "CHEMBL2010601",
+        "CHEMBL2103870",
+        "CHEMBL4298128",
+        "CHEMBL4297603",
     ],
     "weights": {
         "binding_estimate": 0.25,

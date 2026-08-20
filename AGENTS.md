@@ -15,7 +15,7 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   Dockerfile base image (Python 3.12 + build tools + Redis), `install` syncs the venv from lock
   files, `start` runs [`scripts/cloud-agent-start.sh`](scripts/cloud-agent-start.sh) to start Redis.
 - The pinned toolchain is exact: `python scripts/lock_verify.py` should report
-  `all 67 locked packages match`. If it doesn't, re-run the update script.
+  `all 68 locked packages match`. If it doesn't, re-run the update script.
 
 ### Running the web app (dashboard + API)
 - Load env first: `set -a && . ./.env && set +a` (a copy of `.env.example`), then
@@ -41,3 +41,15 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   a single test serially, pass `-n 0` (NOT `-p no:xdist`, which breaks the `-n` addopt).
 - Playwright browser tests (`tests/test_evidence_workspace_browser.py`, slow tier) need a
   browser: `python -m playwright install chromium` (one-off; cached in `~/.cache/ms-playwright`).
+
+### GitHub Actions
+- **Public OSS:** hosted Actions are free on public repositories (standard runners).
+  The `Tests` workflow runs on push/PR to `master`/`main`; slow/live tests run weekly
+  or via `workflow_dispatch`.
+- **Private forks** of a public repo still consume the fork owner's Actions quota.
+- Local pre-push gate: `make ci-local` (matches hosted lint + offline pytest; serial,
+  skips Playwright browser tests).
+- `make typecheck` is informational only in CI until the mypy backlog in
+  `TECHNICAL_DEBT_ISSUES.md` is cleared.
+- `disease validate --all --strict` is **not** a merge gate: the 10k scaffold registry is
+  expected to exit non-zero. Hosted CI validates the original curated eight (`sle` … `ad`) only.

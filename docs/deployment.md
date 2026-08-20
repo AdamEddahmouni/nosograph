@@ -73,6 +73,11 @@ Gate release builds on an individual curated module instead:
 python -m med_research.cli disease validate sle --strict
 ```
 
+GitHub Actions runs on push/PR when the repository is **public** (free hosted runners).
+While private, quota may block jobs — see [docs/public-launch.md](public-launch.md).
+Use `make ci-local` locally before pushing. The workflow does **not** run
+`disease validate --all --strict` (scaffolds fail that check by design).
+
 ## Data persistence
 
 Runtime data lives under `./data` (mounted to `/app/data` in containers):

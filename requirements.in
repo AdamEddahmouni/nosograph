@@ -2,7 +2,7 @@ networkx>=3.2
 matplotlib>=3.8
 gseapy>=1.1
 requests>=2.31
-biopython>=1.83
+biopython>=1.88
 xgboost>=2.0
 shap>=0.44
 scikit-learn>=1.4
@@ -12,7 +12,7 @@ meeko>=0.5
 gemmi>=0.6
 
 # Web API
-fastapi>=0.109
+fastapi>=0.141.1
 uvicorn[standard]>=0.27
 celery[redis]>=5.3
 redis>=5.0

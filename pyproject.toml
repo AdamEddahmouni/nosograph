@@ -66,6 +66,7 @@ Homepage = "https://github.com/AdamEddahmouni/med-research"
 Repository = "https://github.com/AdamEddahmouni/med-research"
 Documentation = "https://github.com/AdamEddahmouni/med-research#readme"
 Issues = "https://github.com/AdamEddahmouni/med-research/issues"
+Changelog = "https://github.com/AdamEddahmouni/med-research/blob/master/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -75,6 +76,8 @@ med_research = [
     "diseases/*/data/*.json",
     "pipeline/*/data/*.json",
     "pipeline/knowledge_graph/data/**/*.json",
+    "pipeline/matching_engine/config/*.yaml",
+    "pipeline/pharmacogenomics/allele_definitions.json",
     "web/static/**/*",
 ]
 
@@ -92,6 +95,12 @@ known-first-party = ["med_research"]
 
 [tool.coverage.run]
 source = ["src/med_research"]
+omit = [
+    # 10k+ scaffolded disease modules are data/config, not unit-test targets
+    "src/med_research/diseases/*/config.py",
+    "src/med_research/diseases/*/data/*",
+    "src/med_research/diseases/disease_registry.json",
+]
 
 [tool.coverage.report]
 fail_under = 80

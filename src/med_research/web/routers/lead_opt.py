@@ -8,7 +8,7 @@ from typing import Any, Dict, List, Optional
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
-from lead_opt.pipeline import _calc_descriptors, run_batch_analysis
+from med_research.pipeline.lead_opt.pipeline import _calc_descriptors, run_batch_analysis
 
 router = APIRouter(prefix="/api/lead-opt", tags=["Lead Optimization"])
 logger = logging.getLogger(__name__)

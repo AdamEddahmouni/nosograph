@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -48,6 +48,14 @@ lint-fix:  ## Auto-fix ruff lint issues
 
 check-imports:  ## Audit for stale/dead internal med_research imports
 	python scripts/check_imports.py
+
+ci-local:  ## Local pre-push gate (lint, locks, import audit, serial offline tests)
+	python -m ruff check src tests
+	python -m ruff format --check src tests
+	python scripts/lock_verify.py
+	$(MAKE) lock-check
+	python scripts/check_imports.py
+	python -m pytest tests/ -m "unit and not network" -q --tb=short -n 0 --ignore=tests/test_evidence_workspace_browser.py
 
 typecheck:  ## Run mypy on the expanded type-check scope
 	python -m mypy \

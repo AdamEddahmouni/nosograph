@@ -119,12 +119,12 @@ SCREENING_PROFILE = {
         "tyrosine kinase",
     ],
     "reference_drug_ids": [
-        "vemurafenib",
-        "dabrafenib",
-        "trametinib",
-        "pembrolizumab",
-        "nivolumab",
-        "ipilimumab",
+        "CHEMBL2105741",
+        "CHEMBL2146883",
+        "CHEMBL3187723",
+        "CHEMBL2108738",
+        "CHEMBL1789844",
+        "CHEMBL4583691",
     ],
     "weights": {
         "binding_estimate": 0.30,

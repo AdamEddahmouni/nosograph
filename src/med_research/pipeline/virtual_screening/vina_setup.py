@@ -106,7 +106,7 @@ def download_vina(auto: bool = False) -> str | None:
     try:
         logger.info("   Downloading...")
         req = urllib.request.Request(info["url"], headers={"User-Agent": "LupusPlatform/1.0"})
-        with urllib.request.urlopen(req, timeout=120) as resp:
+        with urllib.request.urlopen(req, timeout=120) as resp:  # nosec B310 - https URL from curated map
             data = resp.read()
     except (urllib.error.URLError, urllib.error.HTTPError) as e:
         logger.info(f"   ❌ Download failed: {e}")
@@ -117,7 +117,7 @@ def download_vina(auto: bool = False) -> str | None:
     dest.write_bytes(data)
 
     if sys.platform != "win32":
-        os.chmod(dest, 0o755)
+        os.chmod(dest, 0o755)  # nosec B103 - owner-executable bit for downloaded vina binary
 
     if dest.is_file():
         logger.info(f"   ✅ Installed: {dest}")

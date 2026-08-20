@@ -17,6 +17,9 @@ def test_generate_synthetic_cohort():
     assert data["count"] == 5
     assert len(data["cohort"]) == 5
     assert data["cohort"][0]["disease"] == "melanoma"
+    assert data["persisted"] is False
+    assert "Research simulation only" in data["disclaimer"]
+    assert "protected health information" in data["disclaimer"]
 
 
 def test_match_patient_to_trials():
@@ -38,4 +41,6 @@ def test_match_patient_to_trials():
     assert data["patient_id"] == "PT-9999"
     assert data["total_trials_evaluated"] >= 1
     assert len(data["matches"]) >= 1
+    assert data["persisted"] is False
+    assert "not eligibility determinations" in data["disclaimer"]
     assert "overall_match_score" in data["matches"][0]

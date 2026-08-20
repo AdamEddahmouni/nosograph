@@ -1,11 +1,38 @@
 """Tests for L0-L3 tier model."""
 
+import pytest
+
 from med_research.diseases.tier_model import compute_tier
 
 
 def test_l3_for_curated_consensus() -> None:
     checks = {field: "ok" for field in ("genes", "drugs", "pathways", "relationships", "profile")}
     assert compute_tier("sle", checks) == "L3"
+
+
+@pytest.mark.parametrize(
+    "disease_id",
+    [
+        "nsclc",
+        "pancreatic_ductal_adenocarcinoma",
+        "glioblastoma",
+        "cystic_fibrosis",
+        "sickle_cell_anemia",
+        "heart_failure",
+        "non_alcoholic_fatty_liver_disease",
+        "melanoma",
+        "colorectal_cancer",
+        "breast_cancer",
+        "acute_myeloid_leukemia",
+        "copd",
+        "asthma",
+        "t2d",
+        "als",
+    ],
+)
+def test_l3_for_wave_expression_slice(disease_id: str) -> None:
+    checks = {field: "ok" for field in ("genes", "drugs", "pathways", "relationships", "profile")}
+    assert compute_tier(disease_id, checks) == "L3"
 
 
 def test_l0_missing_kg() -> None:

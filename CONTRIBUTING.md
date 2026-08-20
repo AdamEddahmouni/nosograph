@@ -32,17 +32,17 @@ See [README.md](README.md) for alternative install paths and CLI usage.
 
 ## Branch and pull request workflow
 
-- Branch from `main` using prefixes: `feature/`, `fix/`, or `docs/`
+- Branch from `master` using prefixes: `feature/`, `fix/`, or `docs/`
 - Keep PRs focused; link related issues when applicable
 - Before opening a PR, run:
 
   ```bash
-  make lint
-  make test-offline
+  make ci-local
   ```
 
+  (`make lint` + `make test-offline` cover most of the same checks.)
 - Fill out the pull request template checklist
-- Ensure CI passes (lint, tests, lock-check, 80% coverage gate)
+- Ensure GitHub Actions `Tests` passes on your PR (public repos receive free hosted runners)
 
 ## Security
 

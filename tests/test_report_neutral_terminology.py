@@ -46,7 +46,22 @@ def test_drug_synergy_report_avoids_unrelated_lupus_copy(disease_id):
     assert not UNRELATED_TERMS.search(visible), visible
 
 
-@pytest.mark.parametrize("disease_id", ["ra", "ibd", "ms", "ss", "ssc", "t1d"])
+@pytest.mark.parametrize(
+    "disease_id",
+    [
+        "ra",
+        "ibd",
+        "ms",
+        "ss",
+        "ssc",
+        "t1d",
+        "nsclc",
+        "heart_failure",
+        "cystic_fibrosis",
+        "melanoma",
+        "als",
+    ],
+)
 def test_gene_expression_report_avoids_unrelated_lupus_copy(disease_id):
     from med_research.pipeline.gene_expression.correlator import compute_all_correlations
     from med_research.pipeline.gene_expression.report import generate_html_report

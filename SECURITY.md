@@ -7,7 +7,7 @@
 | 2.x     | Yes       |
 | < 2.0   | No        |
 
-Security fixes are applied to the latest 2.x release on the `main` branch.
+Security fixes are applied to the latest 2.x release on the `master` branch.
 
 ## Reporting a vulnerability
 
