@@ -31,7 +31,7 @@ PROJECT_ROOT = Path(__file__).parents[1]
 STATIC_DIR = PROJECT_ROOT / "src" / "med_research" / "web" / "static"
 BROWSER_ARTIFACT_DIR = PROJECT_ROOT / "test-artifacts" / "browser"
 
-pytestmark = [pytest.mark.unit, pytest.mark.slow]
+pytestmark = [pytest.mark.slow]
 
 
 def _fixture_dossier() -> dict:
