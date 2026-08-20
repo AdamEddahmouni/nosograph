@@ -37,12 +37,12 @@ See [README.md](README.md) for alternative install paths and CLI usage.
 - Before opening a PR, run:
 
   ```bash
-  make lint
-  make test-offline
+  make ci-local
   ```
 
+  (`make lint` + `make test-offline` is the same gate.)
 - Fill out the pull request template checklist
-- Ensure CI passes (lint, tests, lock-check, 80% coverage gate)
+- GitHub-hosted Actions minutes are currently exhausted; hosted checks will not run on push/PR. Treat `make ci-local` on the Cloud Agent / `origin` branch as CI. Restore hosted workflows after billing resets.
 
 ## Security
 
