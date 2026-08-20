@@ -19,8 +19,8 @@ pytest_plugins = ["tests.evidence_http_fixtures", "tests.integration.http_fixtur
 # test_web_api.py, which imports med_research.web.main) is loaded, so the
 # middleware picks it up at module import time.
 os.environ["RATE_LIMIT_REQUESTS"] = "0"
-os.environ.setdefault("DEBUG", "true")
-os.environ.setdefault("OPENAPI_ENABLED", "true")
+os.environ["DEBUG"] = "true"
+os.environ["OPENAPI_ENABLED"] = "true"
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"
