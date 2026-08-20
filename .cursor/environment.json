@@ -1,0 +1,10 @@
+{
+  "name": "med-research",
+  "user": "ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "install": "python3 -m venv .venv\n.venv/bin/python -m pip install --upgrade pip\n.venv/bin/pip install -r requirements-lock.txt -r requirements-dev-lock.txt\n.venv/bin/pip install -e .\ncp -n .env.example .env",
+  "start": "bash scripts/cloud-agent-start.sh"
+}

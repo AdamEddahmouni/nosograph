@@ -360,6 +360,9 @@ def test_geo_search_cache(monkeypatch, tmp_path):
     from med_research.pipeline.gene_expression import geo
 
     cache_root = tmp_path / "central_cache"
+    geo_cache_root = tmp_path / "geo_cache"
+    geo_cache_root.mkdir(parents=True, exist_ok=True)
+    monkeypatch.setattr(geo, "CACHE_DIR", geo_cache_root)
     monkeypatch.setattr(
         "med_research.cache.get_cache_manager",
         lambda: CacheManager(cache_dir=cache_root),
@@ -369,7 +372,7 @@ def test_geo_search_cache(monkeypatch, tmp_path):
         _mock_requests_get,
     )
 
-    studies1 = geo.search_geo_datasets(disease="sle", category="broad", no_cache=True)
+    studies1 = geo.search_geo_datasets(disease="sle", category="broad", no_cache=False)
     assert len(studies1) >= 2
 
     hit_count = 0

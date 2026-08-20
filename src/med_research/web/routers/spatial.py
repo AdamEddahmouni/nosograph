@@ -29,8 +29,12 @@ class SpotCoordinate(BaseModel):
 class SpatialAnalysisRequest(BaseModel):
     spots: List[SpotCoordinate] = Field(..., min_length=3, max_length=2000)
     gene: str = Field(default="CD274", description="Target gene for Moran's I autocorrelation")
-    ligand_gene: Optional[str] = Field(default="CD274", description="Ligand gene for co-localization")
-    receptor_gene: Optional[str] = Field(default="PDCD1", description="Receptor gene for co-localization")
+    ligand_gene: Optional[str] = Field(
+        default="CD274", description="Ligand gene for co-localization"
+    )
+    receptor_gene: Optional[str] = Field(
+        default="PDCD1", description="Receptor gene for co-localization"
+    )
     radius: float = Field(default=150.0, ge=10.0, le=1000.0)
 
 
@@ -63,19 +67,23 @@ async def get_sample_spatial_data(
             egfr = round(max(rng.gauss(3.5 if is_tumor else 0.9, 0.6), 0.1), 2)
 
             barcode = f"SPOT-{i:02d}-{j:02d}"
-            spots.append({
-                "barcode": barcode,
-                "x": round(x, 2),
-                "y": round(y, 2),
-                "region": "Tumor Core" if is_tumor else ("Invasive Margin" if is_margin else "Normal Stroma"),
-                "features": {
-                    "CD274": cd274,
-                    "PDCD1": pdcd1,
-                    "BRAF": braf,
-                    "CD8A": cd8a,
-                    "EGFR": egfr,
-                },
-            })
+            spots.append(
+                {
+                    "barcode": barcode,
+                    "x": round(x, 2),
+                    "y": round(y, 2),
+                    "region": "Tumor Core"
+                    if is_tumor
+                    else ("Invasive Margin" if is_margin else "Normal Stroma"),
+                    "features": {
+                        "CD274": cd274,
+                        "PDCD1": pdcd1,
+                        "BRAF": braf,
+                        "CD8A": cd8a,
+                        "EGFR": egfr,
+                    },
+                }
+            )
             if len(spots) >= num_spots:
                 break
         if len(spots) >= num_spots:

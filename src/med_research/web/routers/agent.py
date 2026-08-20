@@ -36,7 +36,9 @@ async def generate_target_hypothesis(req: TargetHypothesisRequest) -> Dict[str, 
         }
     except Exception as e:
         logger.exception("Failed to generate target hypothesis: %s", e)
-        raise HTTPException(status_code=500, detail=f"Hypothesis generation failed: {str(e)}") from e
+        raise HTTPException(
+            status_code=500, detail=f"Hypothesis generation failed: {str(e)}"
+        ) from e
 
 
 @router.post("/chat")
@@ -54,11 +56,11 @@ async def agent_chat_query(req: ChatQueryRequest) -> Dict[str, Any]:
     hyp = agent.evaluate_target(found_gene)
 
     response_text = (
-        f"**Target Analysis for {found_gene} in {hyp.disease_name} (Confidence: {int(hyp.overall_confidence*100)}%)**:\n\n"
+        f"**Target Analysis for {found_gene} in {hyp.disease_name} (Confidence: {int(hyp.overall_confidence * 100)}%)**:\n\n"
         f"{hyp.mechanism_of_action_hypothesis}\n\n"
-        f"**Key Evidence Points:**\n" +
-        "\n".join([f"- {ev.description} (*{ev.source_type}*)" for ev in hyp.supporting_evidence]) +
-        f"\n\n**Druggability & Feasibility:** {hyp.druggability_assessment['tractability_small_molecule']} tractability for small molecules. "
+        f"**Key Evidence Points:**\n"
+        + "\n".join([f"- {ev.description} (*{ev.source_type}*)" for ev in hyp.supporting_evidence])
+        + f"\n\n**Druggability & Feasibility:** {hyp.druggability_assessment['tractability_small_molecule']} tractability for small molecules. "
         f"Recommended primary screening assay: {hyp.recommended_assays[0]}"
     )
 

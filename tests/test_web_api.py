@@ -73,7 +73,7 @@ class TestSystemEndpoints:
         assert resp.status_code == 200
         data = resp.json()
         assert data["status"] == "ok"
-        assert data["version"] == "2.0.0"
+        assert data["version"] == "2.1.0"
         assert "timestamp" in data
 
     def test_cors_header_present(self, client):
@@ -1031,7 +1031,7 @@ class TestJobSubmission:
         assert resp.json()["module"] == "ml"
 
     def test_submit_safety_with_disease(self, client):
-        resp = client.post("/api/jobs/safety", params={"disease": "ra"})
+        resp = client.post("/api/jobs/safety", params={"disease_id": "ra"})
         assert resp.status_code == 200
         assert "job_id" in resp.json()
         assert resp.json()["module"] == "safety"
@@ -1170,6 +1170,12 @@ class TestStaticServing:
         assert "repurposing_candidates" in resp.text
 
     def test_bioinformatics_report_served(self, client):
+        from med_research.web.main import PIPELINE_DIR
+
+        report_path = PIPELINE_DIR / "bioinformatics" / "data" / "ppi_interactive.html"
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text("<html><body>ppi</body></html>", encoding="utf-8")
+
         resp = client.get("/static/bioinformatics/ppi_interactive.html")
         assert resp.status_code == 200
 

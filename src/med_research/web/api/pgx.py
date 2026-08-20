@@ -45,4 +45,3 @@ def evaluate_pgx(payload: GenotypeInput):
         except ValueError as e:
             raise HTTPException(status_code=400, detail=str(e)) from e
     return results
-

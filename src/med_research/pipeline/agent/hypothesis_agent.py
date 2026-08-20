@@ -59,14 +59,24 @@ class TargetHypothesisAgent:
     def evaluate_target(self, gene_symbol: str) -> TargetHypothesis:
         """Formulate a comprehensive translational target hypothesis."""
         gene_upper = gene_symbol.strip().upper()
-        disease_name = self.profile.name if self.profile else self.disease_id.replace("_", " ").title()
+        disease_name = (
+            self.profile.name if self.profile else self.disease_id.replace("_", " ").title()
+        )
 
         # 1. Query Knowledge Graph for Gene and Relations
         genes_data = self.disease.load_genes() if self.disease else []
         drugs_data = self.disease.load_drugs() if self.disease else []
         relationships_data = self.disease.load_relationships() if self.disease else []
 
-        gene_info = next((g for g in genes_data if g.get("symbol", "").upper() == gene_upper or g.get("id", "").upper() == gene_upper), None)
+        gene_info = next(
+            (
+                g
+                for g in genes_data
+                if g.get("symbol", "").upper() == gene_upper
+                or g.get("id", "").upper() == gene_upper
+            ),
+            None,
+        )
 
         # 2. Associated Pathways & Mechanisms
         associated_pathways = []
@@ -75,8 +85,15 @@ class TargetHypothesisAgent:
         else:
             # Look up in relationships
             for rel in relationships_data:
-                if (rel.get("source", "").upper() == gene_upper or rel.get("target", "").upper() == gene_upper) and rel.get("type") == "in_pathway":
-                    associated_pathways.append(rel.get("target") if rel.get("source", "").upper() == gene_upper else rel.get("source"))
+                if (
+                    rel.get("source", "").upper() == gene_upper
+                    or rel.get("target", "").upper() == gene_upper
+                ) and rel.get("type") == "in_pathway":
+                    associated_pathways.append(
+                        rel.get("target")
+                        if rel.get("source", "").upper() == gene_upper
+                        else rel.get("source")
+                    )
 
         # 3. Known targeting drugs
         targeting_drugs = []
@@ -90,37 +107,45 @@ class TargetHypothesisAgent:
 
         # Genomic / Genetic Association
         if gene_info:
-            evidence_list.append(HypothesisEvidence(
-                source_type="genomics",
-                description=f"{gene_upper} is recognized as a key target/driver locus in {disease_name}.",
-                confidence=0.88 if targeting_drugs else 0.75,
-                reference_id=f"GENE-{gene_upper}",
-            ))
+            evidence_list.append(
+                HypothesisEvidence(
+                    source_type="genomics",
+                    description=f"{gene_upper} is recognized as a key target/driver locus in {disease_name}.",
+                    confidence=0.88 if targeting_drugs else 0.75,
+                    reference_id=f"GENE-{gene_upper}",
+                )
+            )
 
         # Pathway Evidence
         if associated_pathways:
             pathway_str = ", ".join(associated_pathways[:3])
-            evidence_list.append(HypothesisEvidence(
-                source_type="pathway",
-                description=f"Involved in oncogenic / inflammatory cascades: {pathway_str}.",
-                confidence=0.82,
-                reference_id="REACTOME-PATHWAY",
-            ))
+            evidence_list.append(
+                HypothesisEvidence(
+                    source_type="pathway",
+                    description=f"Involved in oncogenic / inflammatory cascades: {pathway_str}.",
+                    confidence=0.82,
+                    reference_id="REACTOME-PATHWAY",
+                )
+            )
 
         # Pharmacological / Drug Evidence
         if targeting_drugs:
-            evidence_list.append(HypothesisEvidence(
-                source_type="pharmacology",
-                description=f"Known bioactive pharmacological modulators exist ({', '.join(targeting_drugs[:3])}).",
-                confidence=0.92,
-                reference_id="CHEMBL-DRUG",
-            ))
+            evidence_list.append(
+                HypothesisEvidence(
+                    source_type="pharmacology",
+                    description=f"Known bioactive pharmacological modulators exist ({', '.join(targeting_drugs[:3])}).",
+                    confidence=0.92,
+                    reference_id="CHEMBL-DRUG",
+                )
+            )
         else:
-            evidence_list.append(HypothesisEvidence(
-                source_type="pharmacology",
-                description="Novel target profile with unexploited small-molecule binding pockets or antibody epitopes.",
-                confidence=0.68,
-            ))
+            evidence_list.append(
+                HypothesisEvidence(
+                    source_type="pharmacology",
+                    description="Novel target profile with unexploited small-molecule binding pockets or antibody epitopes.",
+                    confidence=0.68,
+                )
+            )
 
         # 5. Compute Confidence Score
         confidence_base = 0.65
@@ -153,7 +178,9 @@ class TargetHypothesisAgent:
         druggability = {
             "target_class": "Kinase / Membrane Receptor / Signaling Enzyme",
             "tractability_small_molecule": "High" if targeting_drugs else "Medium-High",
-            "tractability_antibody": "High" if "CD" in gene_upper or "IL" in gene_upper or "REC" in gene_upper else "Moderate",
+            "tractability_antibody": "High"
+            if "CD" in gene_upper or "IL" in gene_upper or "REC" in gene_upper
+            else "Moderate",
             "known_modulators": targeting_drugs,
         }
 
@@ -177,7 +204,11 @@ class TargetHypothesisAgent:
             rationale=rationale,
             supporting_evidence=evidence_list,
             druggability_assessment=druggability,
-            biomarkers=[f"{gene_upper} Expression", "Phospho-Kinase Profiling", "Serum Cytokine Panel"],
+            biomarkers=[
+                f"{gene_upper} Expression",
+                "Phospho-Kinase Profiling",
+                "Serum Cytokine Panel",
+            ],
             safety_considerations=safety_considerations,
             recommended_assays=recommended_assays,
         )

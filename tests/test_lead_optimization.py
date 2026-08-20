@@ -24,7 +24,6 @@ def test_lead_optimization_batch_analysis():
     assert ethanol_row["mw"] < 100
 
 
-
 @pytest.mark.unit
 def test_process_dataframe_and_utils():
     text = "CCO\nc1ccccc1O"
