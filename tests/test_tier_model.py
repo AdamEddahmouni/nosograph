@@ -20,6 +20,14 @@ def test_l3_for_curated_consensus() -> None:
         "sickle_cell_anemia",
         "heart_failure",
         "non_alcoholic_fatty_liver_disease",
+        "melanoma",
+        "colorectal_cancer",
+        "breast_cancer",
+        "acute_myeloid_leukemia",
+        "copd",
+        "asthma",
+        "t2d",
+        "als",
     ],
 )
 def test_l3_for_wave_expression_slice(disease_id: str) -> None:

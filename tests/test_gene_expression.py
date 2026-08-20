@@ -522,6 +522,14 @@ def test_build_consensus_signature_ms():
         ("sickle_cell_anemia", "SELP", "NOS3"),
         ("heart_failure", "MYH7", "ADRB1"),
         ("non_alcoholic_fatty_liver_disease", "PNPLA3", "ATG7"),
+        ("melanoma", "BRAF", "CDKN2A"),
+        ("colorectal_cancer", "KRAS", "APC"),
+        ("breast_cancer", "ERBB2", "BRCA1"),
+        ("acute_myeloid_leukemia", "FLT3", "TP53"),
+        ("copd", "MMP9", "SERPINA1"),
+        ("asthma", "IL13", "ADRB2"),
+        ("t2d", "TCF7L2", "PPARG"),
+        ("als", "SOD1", "C9orf72"),
     ],
 )
 def test_build_consensus_signature_new_diseases(disease_id, up_gene, down_gene):
@@ -534,15 +542,7 @@ def test_build_consensus_signature_new_diseases(disease_id, up_gene, down_gene):
     assert sig["disease"] == disease_id
     assert up_gene in sig["upregulated"]
     assert down_gene in sig["downregulated"]
-    if disease_id in {
-        "nsclc",
-        "pancreatic_ductal_adenocarcinoma",
-        "glioblastoma",
-        "cystic_fibrosis",
-        "sickle_cell_anemia",
-        "heart_failure",
-        "non_alcoholic_fatty_liver_disease",
-    }:
+    if disease_id not in {"ms", "ss", "ssc", "t1d"}:
         assert "IRF5" not in sig["upregulated"]
         assert "IFI44L" not in sig["upregulated"]
 
@@ -717,6 +717,14 @@ L3_WAVE_DISEASES = (
     "sickle_cell_anemia",
     "heart_failure",
     "non_alcoholic_fatty_liver_disease",
+    "melanoma",
+    "colorectal_cancer",
+    "breast_cancer",
+    "acute_myeloid_leukemia",
+    "copd",
+    "asthma",
+    "t2d",
+    "als",
 )
 
 L3_TISSUE_CASES = (
@@ -727,6 +735,14 @@ L3_TISSUE_CASES = (
     ("sickle_cell_anemia", "pbmc_blood", "SELP", "NOS3"),
     ("heart_failure", "myocardium", "MYH7", "ADRB1"),
     ("non_alcoholic_fatty_liver_disease", "liver", "PNPLA3", "ATG7"),
+    ("melanoma", "tumor", "BRAF", "CDKN2A"),
+    ("colorectal_cancer", "tumor", "KRAS", "APC"),
+    ("breast_cancer", "tumor", "ERBB2", "BRCA1"),
+    ("acute_myeloid_leukemia", "pbmc_blood", "FLT3", "TP53"),
+    ("copd", "airway", "MMP9", "SERPINA1"),
+    ("asthma", "airway", "IL13", "ADRB2"),
+    ("t2d", "islet", "TCF7L2", "PPARG"),
+    ("als", "cns", "SOD1", "C9orf72"),
 )
 
 
