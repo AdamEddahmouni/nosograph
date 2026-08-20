@@ -3,7 +3,7 @@
 Usage example::
 
     python scripts/run_matching_engine.py \
-        --config-dir src/matching_engine/config \
+        --config-dir src/med_research/pipeline/matching_engine/config \
         --patient-config synthetic_patient.yaml \
         --output json
 
@@ -17,19 +17,18 @@ The script:
 """
 
 import argparse
-import json
 from pathlib import Path
 
-from matching_engine.patient_profiling import SyntheticPatientGenerator
-from matching_engine.clinical_trials_parser import (
+from med_research.pipeline.matching_engine.clinical_trials_parser import (
     ClinicalTrialsDownloader,
-    get_engine,
-    get_session,
     Trial,
     TrialCriteriaParser,
+    get_engine,
+    get_session,
 )
-from matching_engine.eligibility_engine import EligibilityEngine
-from matching_engine.match_scoring import MatchScorer, serialize_ranking
+from med_research.pipeline.matching_engine.eligibility_engine import EligibilityEngine
+from med_research.pipeline.matching_engine.match_scoring import MatchScorer, serialize_ranking
+from med_research.pipeline.matching_engine.patient_profiling import SyntheticPatientGenerator
 
 
 def main() -> None:
@@ -37,7 +36,7 @@ def main() -> None:
     parser.add_argument(
         "--config-dir",
         type=Path,
-        default=Path("src/matching_engine/config"),
+        default=Path("src/med_research/pipeline/matching_engine/config"),
         help="Directory containing configuration files",
     )
     parser.add_argument(
@@ -100,6 +99,7 @@ def main() -> None:
             print(
                 f"{entry['nct_id']}: confidence={entry['confidence']:.3f}, eligible={entry['eligible']}"
             )
+
 
 if __name__ == "__main__":
     main()

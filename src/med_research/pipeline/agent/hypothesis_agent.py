@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import datetime
 import logging
+from collections.abc import Mapping, Sequence
 from dataclasses import asdict, dataclass, field
 from typing import Any, Dict, List, Optional
 
@@ -44,6 +45,17 @@ class TargetHypothesis:
         return asdict(self)
 
 
+def _records(payload: Any, key: str) -> list[dict[str, Any]]:
+    """Unwrap disease JSON payloads (`{"genes": [...]}`) into record lists."""
+    if isinstance(payload, Sequence) and not isinstance(payload, (str, bytes)):
+        return [item for item in payload if isinstance(item, Mapping)]
+    if isinstance(payload, Mapping):
+        nested = payload.get(key, [])
+        if isinstance(nested, Sequence) and not isinstance(nested, (str, bytes)):
+            return [item for item in nested if isinstance(item, Mapping)]
+    return []
+
+
 class TargetHypothesisAgent:
     """Autonomous agent synthesizing evidence for a drug target in a specific disease."""
 
@@ -64,9 +76,11 @@ class TargetHypothesisAgent:
         )
 
         # 1. Query Knowledge Graph for Gene and Relations
-        genes_data = self.disease.load_genes() if self.disease else []
-        drugs_data = self.disease.load_drugs() if self.disease else []
-        relationships_data = self.disease.load_relationships() if self.disease else []
+        genes_data = _records(self.disease.load_genes() if self.disease else [], "genes")
+        drugs_data = _records(self.disease.load_drugs() if self.disease else [], "drugs")
+        relationships_data = _records(
+            self.disease.load_relationships() if self.disease else [], "relationships"
+        )
 
         gene_info = next(
             (

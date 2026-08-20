@@ -108,7 +108,12 @@ src/med_research/diseases/*/data/audit_log.jsonl
 test-artifacts/browser/
 
 # Local Workspace database and generated per-query clinical-trial caches
+data/evidence_workspace.sqlite3
 src/data/
+
+# Generated regulatory dossiers (written at runtime under pipeline/dossier)
+src/med_research/pipeline/dossier/*.md
+src/med_research/pipeline/dossier/*.pdf
 src/med_research/pipeline/clinical_trials/data/ct_cache_*.json
 
 # v2 pipeline per-disease generated outputs (disease_output_path(): {stem}_{disease}.json)

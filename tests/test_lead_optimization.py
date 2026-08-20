@@ -1,8 +1,8 @@
 import pandas as pd
 import pytest
 
-from lead_opt.pipeline import process_dataframe, run_batch_analysis
-from lead_opt.utils import parse_smiles_text
+from med_research.pipeline.lead_opt.pipeline import process_dataframe, run_batch_analysis
+from med_research.pipeline.lead_opt.utils import parse_smiles_text
 
 
 @pytest.mark.unit

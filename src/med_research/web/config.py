@@ -7,7 +7,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 
 # ── Server ────────────────────────────────────────────────────────────────
-HOST = os.environ.get("HOST", "0.0.0.0")
+HOST = os.environ.get("HOST", "0.0.0.0")  # nosec B104 - bind address is env-overridable
 PORT = int(os.environ.get("PORT", "8000"))
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
 OPENAPI_ENABLED = (

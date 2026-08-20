@@ -21,7 +21,10 @@ async def generate_dossier():
 
     # Load and render the Jinja2 template
     templates_dir = Path(__file__).resolve().parents[3] / "templates"
-    env = Environment(loader=FileSystemLoader(str(templates_dir)))
+    env = Environment(
+        loader=FileSystemLoader(str(templates_dir)),
+        autoescape=True,
+    )
     template = env.get_template("dossier.html")
     rendered = template.render(timestamp=datetime.utcnow().isoformat())
 
