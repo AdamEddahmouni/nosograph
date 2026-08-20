@@ -313,7 +313,7 @@ python -m compileall -q src/med_research
 git diff --check
 ```
 
-CI runs lint, lock-check, the offline suite with an **80% coverage gate**, integration tests, and disease validation on Python 3.11–3.12, and verifies the installed packages match `requirements-lock.txt` on every push. Slow/live tests run only on scheduled or manually dispatched workflows.
+While GitHub Actions minutes are exhausted, the merge gate is local/`origin`: `make ci-local`. The hosted `Tests` workflow is `workflow_dispatch` only (it does not run on push/PR). When quota returns, hosted CI will again run lint, lock-check, the offline suite with an **80% coverage gate**, integration tests, and curated disease validation on Python 3.11–3.12.
 
 ## Docker
 

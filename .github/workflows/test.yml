@@ -1,13 +1,12 @@
 name: Tests
 
+# GitHub-hosted Actions minutes are exhausted (2026-08-20). Automatic
+# push/PR/schedule runs abort in 2–4s with empty steps[] and still queue
+# billable attempts. Keep the job graph, but only run when someone with
+# remaining quota explicitly dispatches the workflow. Restore push,
+# pull_request, and the Monday cron when billing resets, then `make ci-local`
+# remains the Cloud Agent / origin merge gate in the meantime.
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
-  schedule:
-    # Weekly slow-test run (live external API calls) — Mon 03:00 UTC
-    - cron: "0 3 * * 1"
   workflow_dispatch:
 
 permissions:

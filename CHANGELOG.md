@@ -14,7 +14,7 @@
 ### Changed
 
 - `lead_opt` and `matching_engine` now live under `med_research.pipeline` instead of sibling `src/` packages.
-- GitHub Actions `Tests` workflow: checkout/setup-python/upload-artifact v7, concurrency cancellation, curated-only `disease validate` (not `--all --strict`), bandit excludes the 10k disease tree plus generated dossiers, and the offline pytest step has a 20-minute timeout.
+- GitHub Actions `Tests` workflow: checkout/setup-python/upload-artifact v7, concurrency cancellation, curated-only `disease validate` (not `--all --strict`), bandit excludes the 10k disease tree plus generated dossiers, and the offline pytest step has a 20-minute timeout. Automatic push/PR/schedule triggers are disabled while hosted Actions minutes are exhausted (`workflow_dispatch` only); `make ci-local` is the `origin`/Cloud Agent gate.
 - Generated timestamped dossier markdown/PDF files are gitignored and removed from source.
 - Locked toolchain: FastAPI 0.141.1, Biopython 1.88, Ruff 0.16.3, Playwright 1.62.0, sentence-transformers 5.7.0 (`<6` to avoid a Torch 2.13 lock blow-up). Open Dependabot PRs #1–#3 and #5–#9 are superseded by this branch (do not merge them separately).
 
