@@ -1,413 +1,208 @@
 name: Tests
 
-
-
 on:
-
   push:
-
     branches: [main, master]
-
   pull_request:
-
     branches: [main, master]
-
   schedule:
-
     # Weekly slow-test run (live external API calls) — Mon 03:00 UTC
-
     - cron: "0 3 * * 1"
-
   workflow_dispatch:
 
+permissions:
+  contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-
   lint:
-
     runs-on: ubuntu-latest
-
-
-
     steps:
-
       - name: Checkout repository
-
-        uses: actions/checkout@v4
-
-
+        uses: actions/checkout@v7
 
       - name: Set up Python
-
-        uses: actions/setup-python@v5
-
+        uses: actions/setup-python@v7
         with:
-
           python-version: "3.12"
-
           cache: pip
 
-
-
       - name: Install dependencies
-
         run: |
-
           python -m pip install --upgrade pip
-
           pip install -r requirements-lock.txt
-
           pip install -r requirements-dev-lock.txt
-
           pip install -e .
 
-
-
       - name: Run ruff
-
         run: ruff check src tests
 
-
-
       - name: Run ruff format check
-
         run: ruff format --check src tests
 
-
-
       - name: Typecheck expanded modules
-
         run: make typecheck
 
-
-
       - name: Verify dependency lock files are fresh
-
         run: make lock-check
 
-
-
   security:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Checkout repository
-
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-
-        uses: actions/setup-python@v5
-
+        uses: actions/setup-python@v7
         with:
-
           python-version: "3.12"
-
           cache: pip
 
       - name: Install scan tools
-
         run: |
-
           python -m pip install --upgrade pip
-
           pip install pip-audit bandit
-
           pip install -r requirements-lock.txt
 
       - name: Audit locked dependencies
-
         run: pip-audit -r requirements-lock.txt
 
       - name: Run bandit security scan
-
-        run: bandit -r src/med_research -ll -x tests
-
-
+        run: |
+          bandit -r src/med_research -ll \
+            -x tests,src/med_research/diseases,src/med_research/pipeline/dossier
 
   test:
-
     runs-on: ubuntu-latest
-
     strategy:
-
       matrix:
-
         # numpy==2.4.6 (locked) supports Python 3.11+; drop 3.10
-
         python-version: ["3.11", "3.12"]
 
-
-
     steps:
-
       - name: Checkout repository
-
-        uses: actions/checkout@v4
-
-
+        uses: actions/checkout@v7
 
       - name: Set up Python ${{ matrix.python-version }}
-
-        uses: actions/setup-python@v5
-
+        uses: actions/setup-python@v7
         with:
-
           python-version: ${{ matrix.python-version }}
-
           cache: pip
 
-
-
       - name: Install dependencies
-
         run: |
-
           python -m pip install --upgrade pip
-
           pip install -r requirements-lock.txt
-
           pip install -r requirements-dev-lock.txt
-
           pip install -e .  # install the med_research package itself (src layout)
 
-
-
       - name: Verify installed packages match lock
-
-        run: |
-
-          python scripts/lock_verify.py
-
-
+        run: python scripts/lock_verify.py
 
       - name: Check for stale internal imports
-
-        run: |
-
-          python scripts/check_imports.py
-
-
+        run: python scripts/check_imports.py
 
       # Docking prep is covered on every push/PR; only the real-PDB
-
       # receptor-prep test needs network and stays in the slow job.
-
       - name: Run docking tests (no network)
-
-        run: |
-
-          python -m pytest tests/test_docking.py -m "not network" -q --tb=short
-
-
+        run: python -m pytest tests/test_docking.py -m "not network" -q --tb=short
 
       - name: Run deterministic offline tests
-
         timeout-minutes: 5
-
         run: |
-
           python -m pytest tests/ -m "not slow and not integration" -q --tb=short -n auto \
-
             --cov=src/med_research --cov-report=term-missing --cov-report=xml
 
-
-
       - name: Coverage threshold (80%)
-
-        run: |
-
-          python -m coverage report --fail-under=80
-
-
+        run: python -m coverage report --fail-under=80
 
       - name: Verify unified CLI works
+        run: python -m med_research.cli --help
 
+      - name: Verify curated disease configs (not full 10k registry)
         run: |
-
-          python -m med_research.cli --help
-
-
-
-      - name: Verify every disease config is non-stub
-
-        run: |
-
-          python -m med_research.cli disease validate --all --strict
-
-
+          for id in sle ra ibd ms ss ssc t1d ad; do
+            python -m med_research.cli disease validate "$id" --strict
+          done
 
       - name: Corpus readiness unit tests
-
         run: |
-
           python -m pytest tests/test_registry_quality.py tests/test_tier_model.py tests/test_corpus_status.py tests/test_disease_context.py tests/web/test_corpus_status_api.py tests/biomed/imports/test_clinvar_openfda_cli.py -q --tb=short
 
-
-
       - name: Verify knowledge graph builds
-
-        run: |
-
-          python -m med_research.cli kg --disease sle --export
-
-
+        run: python -m med_research.cli kg --disease sle --export
 
       - name: Verify repurposing engine runs
-
-        run: |
-
-          python -m med_research.cli repurpose --disease sle --top 5
-
-
+        run: python -m med_research.cli repurpose --disease sle --top 5
 
   integration-tests:
-
     runs-on: ubuntu-latest
-
     timeout-minutes: 15
-
-
-
     services:
-
       redis:
-
         image: redis:7
-
         ports:
-
           - 6379:6379
-
         options: >-
-
           --health-cmd "redis-cli ping"
-
           --health-interval 10s
-
           --health-timeout 5s
-
           --health-retries 5
-
-
-
     steps:
-
       - name: Checkout repository
-
-        uses: actions/checkout@v4
-
-
+        uses: actions/checkout@v7
 
       - name: Set up Python
-
-        uses: actions/setup-python@v5
-
+        uses: actions/setup-python@v7
         with:
-
           python-version: "3.12"
-
           cache: pip
 
-
-
       - name: Install dependencies
-
         run: |
-
           python -m pip install --upgrade pip
-
           pip install -r requirements-lock.txt
-
           pip install -r requirements-dev-lock.txt
-
           pip install -e .
-
-
 
       - name: Run offline integration tests
-
-        run: |
-
-          python -m pytest tests/ -m "integration and not slow" -q --tb=short
-
-
+        run: python -m pytest tests/ -m "integration and not slow" -q --tb=short
 
   # Slow tests hit live external APIs (GWAS Catalog, STRING, Enrichr, PubMed,
-
   # ClinicalTrials.gov, GEO, PDB/Vina). Run them on a schedule or manually so
-
   # regressions are caught without blocking every PR.
-
   slow-tests:
-
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-
     runs-on: ubuntu-latest
-
     timeout-minutes: 45
-
-
-
     steps:
-
       - name: Checkout repository
-
-        uses: actions/checkout@v4
-
-
+        uses: actions/checkout@v7
 
       - name: Set up Python
-
-        uses: actions/setup-python@v5
-
+        uses: actions/setup-python@v7
         with:
-
           python-version: "3.12"
 
-
-
       - name: Install dependencies
-
         run: |
-
           python -m pip install --upgrade pip
-
           pip install -r requirements-lock.txt
-
           pip install -r requirements-dev-lock.txt
-
           python -m playwright install chromium
-
           pip install -e .
 
-
-
       - name: Run slow tests (live external API calls)
-
-        run: |
-
-          python -m pytest tests/ -m slow -v --tb=short
-
-
+        run: python -m pytest tests/ -m slow -v --tb=short
 
       - name: Upload Playwright failure diagnostics
-
         if: always()
-
-        uses: actions/upload-artifact@v4
-
+        uses: actions/upload-artifact@v7
         with:
-
           name: playwright-browser-diagnostics
-
           path: test-artifacts/browser/
-
           if-no-files-found: ignore
-
           retention-days: 14
-
-

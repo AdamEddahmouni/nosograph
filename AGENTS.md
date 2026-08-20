@@ -41,3 +41,13 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   a single test serially, pass `-n 0` (NOT `-p no:xdist`, which breaks the `-n` addopt).
 - Playwright browser tests (`tests/test_evidence_workspace_browser.py`, slow tier) need a
   browser: `python -m playwright install chromium` (one-off; cached in `~/.cache/ms-playwright`).
+
+### GitHub Actions
+- Jobs that finish in 2–4 seconds with **empty `steps[]` and no `runner_name`** are a
+  GitHub-hosted-runner abort (org minutes, concurrency, or Actions disabled), not a pytest
+  failure. Local `make lint` and `make test-offline` remain the quality gate until a run
+  shows real step logs.
+- When many Cloud Agent PRs queue at once, later `Tests` workflow runs can starve. The
+  workflow uses `concurrency` to cancel superseded runs on the same ref.
+- `disease validate --all --strict` is **not** a CI merge gate: the 10k scaffold registry is
+  expected to exit non-zero. CI validates the original curated eight (`sle` … `ad`) only.

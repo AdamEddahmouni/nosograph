@@ -73,6 +73,12 @@ Gate release builds on an individual curated module instead:
 python -m med_research.cli disease validate sle --strict
 ```
 
+GitHub Actions `Tests` workflow jobs that complete in a few seconds with no steps assigned
+are runner-allocation failures (billing/permissions/concurrency), not application test
+failures. Until a run shows checkout/install logs, treat local `make lint` and
+`make test-offline` as the merge gate. The workflow does **not** run
+`disease validate --all --strict` (scaffolds fail that check by design).
+
 ## Data persistence
 
 Runtime data lives under `./data` (mounted to `/app/data` in containers):
