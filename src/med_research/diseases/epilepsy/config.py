@@ -85,6 +85,20 @@ DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "epilepsy-screening-v1",
+    "pathway_keywords": [
+        "gaba",
+        "glutamate",
+        "sodium channel",
+        "sv2a",
+        "ion channel",
+        "synaptic vesicle",
+    ],
+    "mechanism_keywords": [
+        "sv2a ligand",
+        "sodium channel blocker",
+        "gabaergic",
+        "antiseizure",
+    ],
     "reference_drug_ids": ["levetiracetam", "cenobamate", "lacosamide", "lamotrigine"],
     "weights": {
         "binding_estimate": 0.30,

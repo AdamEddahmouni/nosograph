@@ -169,6 +169,78 @@ AD_SEARCH_TERMS = {
     "broad": '("alzheimer disease"[TIAB] OR "Alzheimer"[TIAB] OR "AD"[TIAB]) AND ' + _EXPR_FILTER,
 }
 
+NSCLC_SEARCH_TERMS = {
+    "lung": (
+        '("non-small cell lung cancer"[TIAB] OR "NSCLC"[TIAB] OR "lung adenocarcinoma"[TIAB] '
+        'OR "lung squamous"[TIAB]) AND ("lung"[TIAB] OR "tumor"[TIAB] OR "tumour"[TIAB]) AND '
+        + _EXPR_FILTER
+    ),
+    "broad": (
+        '("non-small cell lung cancer"[TIAB] OR "NSCLC"[TIAB] OR "lung adenocarcinoma"[TIAB]) AND '
+        + _EXPR_FILTER
+    ),
+}
+
+PDAC_SEARCH_TERMS = {
+    "pancreas": (
+        '("pancreatic ductal adenocarcinoma"[TIAB] OR "PDAC"[TIAB] OR "pancreatic cancer"[TIAB]) AND '
+        '("pancreas"[TIAB] OR "tumor"[TIAB] OR "stroma"[TIAB]) AND ' + _EXPR_FILTER
+    ),
+    "broad": (
+        '("pancreatic ductal adenocarcinoma"[TIAB] OR "PDAC"[TIAB] OR "pancreatic cancer"[TIAB]) AND '
+        + _EXPR_FILTER
+    ),
+}
+
+GBM_SEARCH_TERMS = {
+    "tumor": (
+        '("glioblastoma"[TIAB] OR "GBM"[TIAB] OR "glioblastoma multiforme"[TIAB]) AND '
+        '("brain"[TIAB] OR "tumor"[TIAB] OR "glioma"[TIAB]) AND ' + _EXPR_FILTER
+    ),
+    "broad": '("glioblastoma"[TIAB] OR "GBM"[TIAB] OR "glioblastoma multiforme"[TIAB]) AND '
+    + _EXPR_FILTER,
+}
+
+CF_SEARCH_TERMS = {
+    "airway": (
+        '("cystic fibrosis"[TIAB] OR "CFTR"[TIAB]) AND '
+        '("airway"[TIAB] OR "bronchial"[TIAB] OR "nasal epithelium"[TIAB] OR "lung"[TIAB]) AND '
+        + _EXPR_FILTER
+    ),
+    "broad": '("cystic fibrosis"[TIAB]) AND ' + _EXPR_FILTER,
+}
+
+SCD_SEARCH_TERMS = {
+    "pbmc_blood": (
+        '("sickle cell"[TIAB] OR "sickle cell anemia"[TIAB] OR "sickle cell disease"[TIAB]) AND '
+        '("PBMC"[TIAB] OR "peripheral blood"[TIAB] OR "whole blood"[TIAB] OR "blood"[TIAB]) AND '
+        + _EXPR_FILTER
+    ),
+    "broad": '("sickle cell"[TIAB] OR "sickle cell anemia"[TIAB] OR "sickle cell disease"[TIAB]) AND '
+    + _EXPR_FILTER,
+}
+
+HF_SEARCH_TERMS = {
+    "myocardium": (
+        '("heart failure"[TIAB] OR "dilated cardiomyopathy"[TIAB] OR "failing heart"[TIAB]) AND '
+        '("myocardium"[TIAB] OR "left ventricle"[TIAB] OR "heart"[TIAB] OR "cardiac"[TIAB]) AND '
+        + _EXPR_FILTER
+    ),
+    "broad": '("heart failure"[TIAB] OR "failing myocardium"[TIAB]) AND ' + _EXPR_FILTER,
+}
+
+NAFLD_SEARCH_TERMS = {
+    "liver": (
+        '("nonalcoholic fatty liver"[TIAB] OR "non-alcoholic fatty liver"[TIAB] OR "NAFLD"[TIAB] '
+        'OR "NASH"[TIAB] OR "MASH"[TIAB] OR "metabolic dysfunction-associated steatotic"[TIAB]) AND '
+        '("liver"[TIAB] OR "hepatic"[TIAB] OR "hepatocyte"[TIAB]) AND ' + _EXPR_FILTER
+    ),
+    "broad": (
+        '("nonalcoholic fatty liver"[TIAB] OR "NAFLD"[TIAB] OR "NASH"[TIAB] OR "MASH"[TIAB]) AND '
+        + _EXPR_FILTER
+    ),
+}
+
 DISEASE_SEARCH_TERMS: dict[str, dict[str, str]] = {
     "sle": SLE_SEARCH_TERMS,
     "ra": RA_SEARCH_TERMS,
@@ -178,9 +250,34 @@ DISEASE_SEARCH_TERMS: dict[str, dict[str, str]] = {
     "ssc": SSC_SEARCH_TERMS,
     "t1d": T1D_SEARCH_TERMS,
     "ad": AD_SEARCH_TERMS,
+    "nsclc": NSCLC_SEARCH_TERMS,
+    "pancreatic_ductal_adenocarcinoma": PDAC_SEARCH_TERMS,
+    "glioblastoma": GBM_SEARCH_TERMS,
+    "cystic_fibrosis": CF_SEARCH_TERMS,
+    "sickle_cell_anemia": SCD_SEARCH_TERMS,
+    "heart_failure": HF_SEARCH_TERMS,
+    "non_alcoholic_fatty_liver_disease": NAFLD_SEARCH_TERMS,
 }
 
-CURATED_CONSENSUS_DISEASES = frozenset({"sle", "ra", "ibd", "ms", "ss", "ssc", "t1d", "ad"})
+CURATED_CONSENSUS_DISEASES = frozenset(
+    {
+        "sle",
+        "ra",
+        "ibd",
+        "ms",
+        "ss",
+        "ssc",
+        "t1d",
+        "ad",
+        "nsclc",
+        "pancreatic_ductal_adenocarcinoma",
+        "glioblastoma",
+        "cystic_fibrosis",
+        "sickle_cell_anemia",
+        "heart_failure",
+        "non_alcoholic_fatty_liver_disease",
+    }
+)
 
 
 def _proxy_consensus_diseases() -> frozenset[str]:
@@ -474,6 +571,187 @@ AD_CONSENSUS_GENES = {
     },
 }
 
+# Wave 3/4 L3 signatures: literature-backed directional programs restricted to
+# symbols present in each disease module's genes.json (no SLE interferon reuse).
+NSCLC_CONSENSUS_GENES = {
+    "upregulated": {
+        "EGFR": {"fold_change": 3.1, "confidence": 0.96},
+        "KRAS": {"fold_change": 2.4, "confidence": 0.93},
+        "MET": {"fold_change": 2.3, "confidence": 0.91},
+        "ERBB2": {"fold_change": 2.1, "confidence": 0.89},
+        "VEGFA": {"fold_change": 2.6, "confidence": 0.92},
+        "CD274": {"fold_change": 2.2, "confidence": 0.90},
+        "TERT": {"fold_change": 2.0, "confidence": 0.88},
+        "TP63": {"fold_change": 2.5, "confidence": 0.91},
+        "PIK3CA": {"fold_change": 1.9, "confidence": 0.86},
+        "ALK": {"fold_change": 2.0, "confidence": 0.87},
+        "RET": {"fold_change": 1.8, "confidence": 0.84},
+        "BRAF": {"fold_change": 1.7, "confidence": 0.83},
+        "KDR": {"fold_change": 1.8, "confidence": 0.84},
+        "RRM2": {"fold_change": 2.1, "confidence": 0.88},
+    },
+    "downregulated": {
+        "CDKN2A": {"fold_change": 3.4, "confidence": 0.95},
+        "STK11": {"fold_change": 2.6, "confidence": 0.92},
+        "KEAP1": {"fold_change": 2.2, "confidence": 0.89},
+        "SMARCA4": {"fold_change": 2.1, "confidence": 0.88},
+        "RB1": {"fold_change": 2.4, "confidence": 0.90},
+        "TP53": {"fold_change": 2.0, "confidence": 0.86},
+        "ATM": {"fold_change": 1.8, "confidence": 0.84},
+        "ARID1A": {"fold_change": 1.7, "confidence": 0.83},
+        "CTLA4": {"fold_change": 1.6, "confidence": 0.81},
+    },
+}
+
+PDAC_CONSENSUS_GENES = {
+    "upregulated": {
+        "KRAS": {"fold_change": 3.4, "confidence": 0.97},
+        "MAPK1": {"fold_change": 2.3, "confidence": 0.90},
+        "CDK6": {"fold_change": 2.2, "confidence": 0.89},
+        "WWTR1": {"fold_change": 2.5, "confidence": 0.91},
+        "LEF1": {"fold_change": 2.1, "confidence": 0.87},
+        "CDH11": {"fold_change": 2.4, "confidence": 0.90},
+        "GPC3": {"fold_change": 2.0, "confidence": 0.86},
+        "SMAD3": {"fold_change": 1.9, "confidence": 0.85},
+        "GNAS": {"fold_change": 1.8, "confidence": 0.84},
+        "MECOM": {"fold_change": 1.9, "confidence": 0.85},
+        "MSI2": {"fold_change": 1.8, "confidence": 0.84},
+        "TYMS": {"fold_change": 2.0, "confidence": 0.86},
+    },
+    "downregulated": {
+        "SMAD4": {"fold_change": 3.2, "confidence": 0.96},
+        "CDKN2A": {"fold_change": 2.9, "confidence": 0.94},
+        "TP53": {"fold_change": 2.5, "confidence": 0.91},
+        "RNF43": {"fold_change": 2.2, "confidence": 0.88},
+        "MAP2K4": {"fold_change": 1.9, "confidence": 0.85},
+        "FHIT": {"fold_change": 2.0, "confidence": 0.86},
+        "TGFBR2": {"fold_change": 1.8, "confidence": 0.84},
+        "FOXP1": {"fold_change": 1.6, "confidence": 0.81},
+    },
+}
+
+GBM_CONSENSUS_GENES = {
+    "upregulated": {
+        "EGFR": {"fold_change": 3.6, "confidence": 0.97},
+        "VEGFA": {"fold_change": 3.1, "confidence": 0.95},
+        "PDGFRA": {"fold_change": 2.7, "confidence": 0.93},
+        "MET": {"fold_change": 2.4, "confidence": 0.90},
+        "HIF1A": {"fold_change": 2.6, "confidence": 0.92},
+        "IL13RA2": {"fold_change": 2.8, "confidence": 0.94},
+        "TERT": {"fold_change": 2.3, "confidence": 0.89},
+        "PIK3CA": {"fold_change": 2.1, "confidence": 0.87},
+        "WT1": {"fold_change": 2.2, "confidence": 0.88},
+        "HGF": {"fold_change": 2.0, "confidence": 0.86},
+        "SRC": {"fold_change": 1.9, "confidence": 0.85},
+        "MTOR": {"fold_change": 1.8, "confidence": 0.84},
+        "KDR": {"fold_change": 2.0, "confidence": 0.86},
+        "RRM2": {"fold_change": 2.1, "confidence": 0.87},
+    },
+    "downregulated": {
+        "PTEN": {"fold_change": 3.3, "confidence": 0.96},
+        "CDKN2A": {"fold_change": 3.5, "confidence": 0.97},
+        "CDKN2B": {"fold_change": 3.1, "confidence": 0.94},
+        "RB1": {"fold_change": 2.4, "confidence": 0.90},
+        "NF1": {"fold_change": 2.3, "confidence": 0.89},
+        "ATRX": {"fold_change": 2.1, "confidence": 0.87},
+        "CDKN2C": {"fold_change": 2.2, "confidence": 0.88},
+        "TP53": {"fold_change": 2.0, "confidence": 0.86},
+    },
+}
+
+CF_CONSENSUS_GENES = {
+    "upregulated": {
+        "TGFB1": {"fold_change": 2.6, "confidence": 0.93},
+        "HMOX1": {"fold_change": 2.8, "confidence": 0.94},
+        "SLC6A14": {"fold_change": 2.4, "confidence": 0.91},
+        "SLC11A1": {"fold_change": 2.1, "confidence": 0.87},
+        "IFNGR1": {"fold_change": 1.9, "confidence": 0.85},
+        "KCNN4": {"fold_change": 2.0, "confidence": 0.86},
+        "NR3C1": {"fold_change": 1.8, "confidence": 0.84},
+        "IFNGR2": {"fold_change": 1.7, "confidence": 0.83},
+    },
+    "downregulated": {
+        "CFTR": {"fold_change": 3.4, "confidence": 0.97},
+        "SLC26A9": {"fold_change": 2.2, "confidence": 0.90},
+        "SERPINA1": {"fold_change": 1.9, "confidence": 0.86},
+        "HFE": {"fold_change": 1.7, "confidence": 0.83},
+        "DERL1": {"fold_change": 1.6, "confidence": 0.81},
+        "SEL1L": {"fold_change": 1.6, "confidence": 0.81},
+    },
+}
+
+SCD_CONSENSUS_GENES = {
+    "upregulated": {
+        "SELP": {"fold_change": 2.9, "confidence": 0.94},
+        "SELE": {"fold_change": 2.7, "confidence": 0.93},
+        "SELL": {"fold_change": 2.3, "confidence": 0.89},
+        "HBB": {"fold_change": 2.1, "confidence": 0.90},
+        "HBA1": {"fold_change": 1.9, "confidence": 0.86},
+        "NOS2": {"fold_change": 2.4, "confidence": 0.91},
+        "CXCR4": {"fold_change": 2.2, "confidence": 0.88},
+        "KCNN4": {"fold_change": 2.5, "confidence": 0.92},
+        "AGTR1": {"fold_change": 1.8, "confidence": 0.84},
+        "C5": {"fold_change": 2.0, "confidence": 0.86},
+    },
+    "downregulated": {
+        "NOS3": {"fold_change": 2.8, "confidence": 0.95},
+        "GUCY1A1": {"fold_change": 2.2, "confidence": 0.89},
+        "GUCY1B1": {"fold_change": 2.1, "confidence": 0.88},
+        "ADRB2": {"fold_change": 1.8, "confidence": 0.84},
+        "HBA2": {"fold_change": 1.7, "confidence": 0.83},
+        "PKLR": {"fold_change": 1.6, "confidence": 0.81},
+    },
+}
+
+HF_CONSENSUS_GENES = {
+    "upregulated": {
+        "MYH7": {"fold_change": 3.2, "confidence": 0.96},
+        "NPR1": {"fold_change": 2.4, "confidence": 0.91},
+        "TTN": {"fold_change": 2.1, "confidence": 0.88},
+        "ACE": {"fold_change": 2.3, "confidence": 0.90},
+        "AGTR1": {"fold_change": 2.2, "confidence": 0.89},
+        "TNNT2": {"fold_change": 2.0, "confidence": 0.87},
+        "TNNI3": {"fold_change": 1.9, "confidence": 0.86},
+        "BAG3": {"fold_change": 1.8, "confidence": 0.84},
+        "CDKN1A": {"fold_change": 2.0, "confidence": 0.86},
+        "PRKCA": {"fold_change": 1.8, "confidence": 0.84},
+        "TNNC1": {"fold_change": 1.7, "confidence": 0.83},
+    },
+    "downregulated": {
+        "ADRB1": {"fold_change": 2.7, "confidence": 0.94},
+        "ATP1A2": {"fold_change": 2.1, "confidence": 0.88},
+        "SCN5A": {"fold_change": 1.9, "confidence": 0.86},
+        "HCN4": {"fold_change": 1.8, "confidence": 0.84},
+        "ATP1A1": {"fold_change": 1.7, "confidence": 0.83},
+        "BMPR2": {"fold_change": 1.6, "confidence": 0.81},
+        "ADRB2": {"fold_change": 1.6, "confidence": 0.81},
+    },
+}
+
+NAFLD_CONSENSUS_GENES = {
+    "upregulated": {
+        "PNPLA3": {"fold_change": 2.8, "confidence": 0.96},
+        "TM6SF2": {"fold_change": 2.2, "confidence": 0.91},
+        "PPARG": {"fold_change": 2.4, "confidence": 0.92},
+        "GGT1": {"fold_change": 2.6, "confidence": 0.93},
+        "TRIB1": {"fold_change": 2.0, "confidence": 0.87},
+        "APOE": {"fold_change": 1.9, "confidence": 0.85},
+        "HK1": {"fold_change": 1.8, "confidence": 0.84},
+        "HMGA1": {"fold_change": 1.7, "confidence": 0.83},
+        "MRC1": {"fold_change": 2.1, "confidence": 0.88},
+    },
+    "downregulated": {
+        "ATG7": {"fold_change": 2.3, "confidence": 0.91},
+        "NR1H4": {"fold_change": 2.1, "confidence": 0.89},
+        "HNF1A": {"fold_change": 1.9, "confidence": 0.86},
+        "NDUFS1": {"fold_change": 2.0, "confidence": 0.87},
+        "NDUFV1": {"fold_change": 1.8, "confidence": 0.84},
+        "NDUFA9": {"fold_change": 1.7, "confidence": 0.83},
+        "THRB": {"fold_change": 1.6, "confidence": 0.81},
+        "MTARC1": {"fold_change": 1.6, "confidence": 0.81},
+    },
+}
+
 DISEASE_CONSENSUS_GENES: dict[str, dict[str, dict]] = {
     "sle": SLE_CONSENSUS_GENES,
     "ra": RA_CONSENSUS_GENES,
@@ -483,6 +761,13 @@ DISEASE_CONSENSUS_GENES: dict[str, dict[str, dict]] = {
     "ssc": SSC_CONSENSUS_GENES,
     "t1d": T1D_CONSENSUS_GENES,
     "ad": AD_CONSENSUS_GENES,
+    "nsclc": NSCLC_CONSENSUS_GENES,
+    "pancreatic_ductal_adenocarcinoma": PDAC_CONSENSUS_GENES,
+    "glioblastoma": GBM_CONSENSUS_GENES,
+    "cystic_fibrosis": CF_CONSENSUS_GENES,
+    "sickle_cell_anemia": SCD_CONSENSUS_GENES,
+    "heart_failure": HF_CONSENSUS_GENES,
+    "non_alcoholic_fatty_liver_disease": NAFLD_CONSENSUS_GENES,
 }
 
 DISEASE_TISSUE_SPECIFIC_GENES: dict[str, dict[str, dict[str, list[str]]]] = {
@@ -633,6 +918,57 @@ DISEASE_TISSUE_SPECIFIC_GENES: dict[str, dict[str, dict[str, list[str]]]] = {
                 "CHGA",
                 "INS",
             ],
+        },
+    },
+    "nsclc": {
+        "lung": {
+            "upregulated": [
+                "EGFR",
+                "KRAS",
+                "MET",
+                "VEGFA",
+                "CD274",
+                "TP63",
+                "ALK",
+                "TERT",
+            ],
+            "downregulated": ["CDKN2A", "STK11", "KEAP1", "SMARCA4", "RB1", "TP53"],
+        },
+    },
+    "pancreatic_ductal_adenocarcinoma": {
+        "pancreas": {
+            "upregulated": ["KRAS", "MAPK1", "CDK6", "WWTR1", "CDH11", "LEF1"],
+            "downregulated": ["SMAD4", "CDKN2A", "TP53", "RNF43", "FHIT"],
+        },
+    },
+    "glioblastoma": {
+        "tumor": {
+            "upregulated": ["EGFR", "VEGFA", "PDGFRA", "MET", "HIF1A", "IL13RA2"],
+            "downregulated": ["PTEN", "CDKN2A", "CDKN2B", "RB1", "NF1", "ATRX"],
+        },
+    },
+    "cystic_fibrosis": {
+        "airway": {
+            "upregulated": ["TGFB1", "HMOX1", "SLC6A14", "KCNN4", "SLC11A1"],
+            "downregulated": ["CFTR", "SLC26A9", "SERPINA1", "DERL1"],
+        },
+    },
+    "sickle_cell_anemia": {
+        "pbmc_blood": {
+            "upregulated": ["SELP", "SELE", "SELL", "NOS2", "CXCR4", "KCNN4"],
+            "downregulated": ["NOS3", "GUCY1A1", "GUCY1B1", "ADRB2"],
+        },
+    },
+    "heart_failure": {
+        "myocardium": {
+            "upregulated": ["MYH7", "NPR1", "ACE", "AGTR1", "TNNT2", "TTN"],
+            "downregulated": ["ADRB1", "ATP1A2", "SCN5A", "HCN4", "ATP1A1"],
+        },
+    },
+    "non_alcoholic_fatty_liver_disease": {
+        "liver": {
+            "upregulated": ["PNPLA3", "TM6SF2", "PPARG", "GGT1", "TRIB1", "MRC1"],
+            "downregulated": ["ATG7", "NR1H4", "HNF1A", "NDUFS1", "NDUFV1"],
         },
     },
 }
@@ -932,7 +1268,8 @@ def build_consensus_signature(
             "downregulated": {},
             "study_ids": study_ids,
             "note": (
-                "Consensus gene lists are curated for sle, ra, ibd, ms, ss, ssc, and t1d; "
+                "Consensus gene lists are curated only for diseases in CURATED_CONSENSUS_DISEASES "
+                f"({', '.join(sorted(CURATED_CONSENSUS_DISEASES))}); "
                 "SLE signatures must not be reused for other diseases."
             ),
         }

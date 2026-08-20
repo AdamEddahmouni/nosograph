@@ -1,0 +1,60 @@
+{
+  "schema_version": "1",
+  "disease_id": "epilepsy",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["somnolence", "dizziness", "fatigue", "headache", "nausea"],
+    "severe_ae": ["SJS/TEN", "suicidality", "hyponatremia", "hepatic failure"],
+    "disease_overlap_ae": ["fatigue", "somnolence", "cognitive slowing"],
+    "severity_burden": 6,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Mood/suicidality, rash, and drug-specific labs (LFTs, sodium, CBC).",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "levetiracetam",
+      "common_ae": ["somnolence", "asthenia", "dizziness", "irritability"],
+      "severe_ae": ["psychiatric reactions", "SJS/TEN rare", "pancytopenia rare"],
+      "disease_overlap_ae": ["fatigue", "somnolence"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Behavioral change and mood monitoring."
+    },
+    {
+      "drug_id": "cenobamate",
+      "common_ae": ["somnolence", "dizziness", "fatigue", "diplopia"],
+      "severe_ae": ["DRESS", "QT shortening", "suicidal ideation"],
+      "disease_overlap_ae": ["fatigue", "somnolence"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Slow titration, rash/DRESS vigilance, and ECG if indicated."
+    },
+    {
+      "drug_id": "lacosamide",
+      "common_ae": ["dizziness", "headache", "nausea", "diplopia"],
+      "severe_ae": ["PR prolongation", "atrial arrhythmias", "syncope"],
+      "disease_overlap_ae": ["fatigue", "dizziness"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "ECG in patients with cardiac conduction disease."
+    },
+    {
+      "drug_id": "lamotrigine",
+      "common_ae": ["dizziness", "headache", "diplopia", "nausea", "rash"],
+      "severe_ae": ["SJS/TEN", "DRESS", "hemophagocytic lymphohistiocytosis"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Slow titration and immediate evaluation of rash."
+    }
+  ]
+}

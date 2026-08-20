@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "disease_id": "triple_neg_breast_cancer",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["fatigue", "nausea", "alopecia", "myelosuppression", "diarrhea"],
+    "severe_ae": ["febrile neutropenia", "neuropathy", "immune-mediated events"],
+    "disease_overlap_ae": ["fatigue", "pain"],
+    "severity_burden": 7,
+    "chronic_use_safety": 5,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "CBC, neuropathy, and immune-related symptoms during TNBC regimens.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL428647",
+      "common_ae": ["alopecia", "neuropathy", "nausea", "myalgia"],
+      "severe_ae": ["severe neutropenia", "hypersensitivity", "peripheral neuropathy"],
+      "disease_overlap_ae": ["fatigue", "pain"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Neuropathy assessment and CBC."
+    },
+    {
+      "drug_id": "CHEMBL3137343",
+      "common_ae": ["fatigue", "rash", "pruritus", "diarrhea", "cough"],
+      "severe_ae": ["immune-mediated pneumonitis", "colitis", "hepatitis"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Thyroid, hepatic, and pulmonary monitoring."
+    },
+    {
+      "drug_id": "CHEMBL3545262",
+      "common_ae": ["nausea", "diarrhea", "fatigue", "alopecia", "neutropenia"],
+      "severe_ae": ["severe neutropenia", "diarrhea", "hypersensitivity"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC and diarrhea management during ADC cycles."
+    },
+    {
+      "drug_id": "CHEMBL521686",
+      "common_ae": ["nausea", "fatigue", "anemia", "vomiting"],
+      "severe_ae": ["MDS/AML signal", "pneumonitis", "venous thromboembolism"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "CBC and pulmonary symptoms during PARP inhibitor use."
+    },
+    {
+      "drug_id": "CHEMBL1773",
+      "common_ae": ["hand-foot syndrome", "diarrhea", "nausea", "fatigue"],
+      "severe_ae": ["severe diarrhea", "cardiotoxicity", "myelosuppression"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Hand-foot toxicity and CBC."
+    },
+    {
+      "drug_id": "CHEMBL53463",
+      "common_ae": ["alopecia", "nausea", "myelosuppression", "mucositis"],
+      "severe_ae": ["cardiotoxicity", "febrile neutropenia", "extravasation injury"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 8,
+      "chronic_use_safety": 4,
+      "monitoring_required": "Lifetime anthracycline dose tracking and LVEF."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1",
+  "disease_id": "pancreatic_ductal_adenocarcinoma",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["nausea", "fatigue", "anorexia", "diarrhea", "myelosuppression"],
+    "severe_ae": ["febrile neutropenia", "hepatotoxicity", "severe diarrhea"],
+    "disease_overlap_ae": ["fatigue", "anorexia", "nausea"],
+    "severity_burden": 7,
+    "chronic_use_safety": 5,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "CBC, hepatic panel, and nutritional status during cytotoxic therapy.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL888",
+      "common_ae": ["myelosuppression", "flu-like symptoms", "rash", "nausea"],
+      "severe_ae": ["severe myelosuppression", "pulmonary toxicity", "hemolytic uremic syndrome"],
+      "disease_overlap_ae": ["fatigue", "anorexia"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC before each infusion."
+    },
+    {
+      "drug_id": "CHEMBL428647",
+      "common_ae": ["alopecia", "neuropathy", "nausea", "myalgia"],
+      "severe_ae": ["severe neutropenia", "hypersensitivity", "peripheral neuropathy"],
+      "disease_overlap_ae": ["fatigue", "anorexia"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Neuropathy assessment and CBC."
+    },
+    {
+      "drug_id": "CHEMBL481",
+      "common_ae": ["diarrhea", "nausea", "vomiting", "alopecia"],
+      "severe_ae": ["severe diarrhea", "neutropenia"],
+      "disease_overlap_ae": ["fatigue", "nausea"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC and diarrhea management."
+    },
+    {
+      "drug_id": "CHEMBL185",
+      "common_ae": ["mucositis", "diarrhea", "hand-foot syndrome", "myelosuppression"],
+      "severe_ae": ["severe mucositis", "cardiotoxicity", "myelosuppression"],
+      "disease_overlap_ae": ["fatigue", "anorexia"],
+      "severity_burden": 6,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC and mucositis assessment."
+    }
+  ]
+}

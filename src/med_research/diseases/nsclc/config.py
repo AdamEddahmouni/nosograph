@@ -123,12 +123,12 @@ SCREENING_PROFILE = {
         "kinase inhibitor",
     ],
     "reference_drug_ids": [
-        "osimertinib",
-        "sotorasib",
-        "alectinib",
-        "pembrolizumab",
-        "gefitinib",
-        "bevacizumab",
+        "CHEMBL1079742",
+        "CHEMBL1173655",
+        "CHEMBL1738797",
+        "CHEMBL2108738",
+        "CHEMBL3707227",
+        "CHEMBL3188267",
     ],
     "weights": {
         "binding_estimate": 0.30,

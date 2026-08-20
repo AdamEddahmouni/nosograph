@@ -57,7 +57,7 @@ Scaffolds carry OpenTargets-derived genes/drugs/pathways/relationships plus gene
 | **L0** | Scaffold only — missing KG JSON files |
 | **L1** | KG present (`genes.json`, etc.) but config gaps remain |
 | **L2** | Pipeline-ready — passes strict validation (symptoms, CAR-T, safety when drugs exist, screening profile) |
-| **L3** | Expression-curated — hand-curated GEO consensus (`CURATED_CONSENSUS_DISEASES`) |
+| **L3** | Expression-curated — hand-curated GEO consensus (`CURATED_CONSENSUS_DISEASES`: original 8 plus Wave 3/4 `nsclc`, `pancreatic_ductal_adenocarcinoma`, `glioblastoma`, `cystic_fibrosis`, `sickle_cell_anemia`, `heart_failure`, `non_alcoholic_fatty_liver_disease`) |
 
 Check corpus-wide status: `python -m med_research.cli disease corpus-status` or `make corpus-status`. Baseline metrics: `make corpus-baseline`.
 

@@ -21,58 +21,58 @@
   },
   "profiles": [
     {
-      "drug_id": "vemurafenib",
-      "common_ae": ["arthralgia", "rash", "fatigue", "photosensitivity", "nausea", "alopecia"],
-      "severe_ae": ["cutaneous squamous cell carcinoma", "keratoacanthoma", "QT prolongation", "hepatotoxicity"],
-      "disease_overlap_ae": ["rash", "fatigue", "skin lesion"],
-      "severity_burden": 7,
+      "drug_id": "CHEMBL2105741",
+      "common_ae": ["rash", "diarrhea", "fatigue", "edema", "acneiform dermatitis"],
+      "severe_ae": ["cardiomyopathy", "interstitial lung disease", "severe rash"],
+      "disease_overlap_ae": ["rash", "fatigue"],
+      "severity_burden": 6,
       "chronic_use_safety": 6,
-      "monitoring_required": "Dermatologic evaluation every 2 months, ECG monitoring, LFTs."
+      "monitoring_required": "LVEF at baseline and during MEK inhibitor therapy; skin exams."
     },
     {
-      "drug_id": "dabrafenib",
-      "common_ae": ["hyperkeratosis", "headache", "pyrexia", "arthralgia", "papilloma"],
-      "severe_ae": ["new primary cutaneous malignancies", "febrile reactions", "cardiomyopathy", "uveitis"],
-      "disease_overlap_ae": ["rash", "skin lesion", "fatigue"],
-      "severity_burden": 7,
+      "drug_id": "CHEMBL2146883",
+      "common_ae": ["diarrhea", "photosensitivity", "nausea", "pyrexia", "rash"],
+      "severe_ae": ["cardiomyopathy", "rhabdomyolysis", "severe photosensitivity"],
+      "disease_overlap_ae": ["rash", "fatigue"],
+      "severity_burden": 6,
       "chronic_use_safety": 6,
-      "monitoring_required": "Skin exams, echocardiogram for LVEF, temperature monitoring."
+      "monitoring_required": "CK, LVEF, and photosensitivity counseling."
     },
     {
-      "drug_id": "trametinib",
-      "common_ae": ["rash", "diarrhea", "fatigue", "peripheral edema", "nausea", "dermatitis acneiform"],
-      "severe_ae": ["cardiomyopathy", "retinal pigment epithelial detachment", "interstitial lung disease", "VTE"],
-      "disease_overlap_ae": ["fatigue", "rash"],
-      "severity_burden": 7,
+      "drug_id": "CHEMBL3187723",
+      "common_ae": ["fatigue", "nausea", "diarrhea", "vomiting", "abdominal pain"],
+      "severe_ae": ["cardiomyopathy", "venous thromboembolism", "hepatotoxicity"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
       "chronic_use_safety": 6,
-      "monitoring_required": "Ophthalmologic exams, LVEF, baseline pulmonary status."
+      "monitoring_required": "LVEF and liver enzymes during MEK inhibitor use."
     },
     {
-      "drug_id": "pembrolizumab",
-      "common_ae": ["fatigue", "musculoskeletal pain", "decreased appetite", "pruritus", "diarrhea", "rash"],
-      "severe_ae": ["immune-mediated pneumonitis", "immune-mediated colitis", "immune-mediated hepatitis", "endocrinopathies"],
+      "drug_id": "CHEMBL2108738",
+      "common_ae": ["fatigue", "rash", "diarrhea", "pruritus", "cough"],
+      "severe_ae": ["immune-mediated colitis", "pneumonitis", "hepatitis", "endocrinopathy"],
       "disease_overlap_ae": ["fatigue", "rash"],
       "severity_burden": 6,
       "chronic_use_safety": 7,
-      "monitoring_required": "Thyroid panel, hepatic panel, renal panel, pulmonary symptoms."
+      "monitoring_required": "Thyroid, hepatic, and pulmonary symptom monitoring."
     },
     {
-      "drug_id": "nivolumab",
-      "common_ae": ["fatigue", "rash", "musculoskeletal pain", "pruritus", "diarrhea", "nausea"],
-      "severe_ae": ["immune-mediated pneumonitis", "immune-mediated colitis", "immune-mediated encephalitis", "nephritis"],
-      "disease_overlap_ae": ["fatigue", "rash"],
+      "drug_id": "CHEMBL1789844",
+      "common_ae": ["diarrhea", "pruritus", "rash", "fatigue"],
+      "severe_ae": ["immune-mediated colitis", "hepatitis", "endocrinopathy", "severe dermatitis"],
+      "disease_overlap_ae": ["rash", "fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Diarrhea/colitis vigilance and liver tests."
+    },
+    {
+      "drug_id": "CHEMBL4583691",
+      "common_ae": ["rash", "fatigue", "nausea", "arthralgia"],
+      "severe_ae": ["hepatotoxicity", "pyrexia", "cutaneous events"],
+      "disease_overlap_ae": ["rash", "fatigue"],
       "severity_burden": 6,
-      "chronic_use_safety": 7,
-      "monitoring_required": "LFTs, creatinine, thyroid hormones, adrenocorticotropic monitoring."
-    },
-    {
-      "drug_id": "ipilimumab",
-      "common_ae": ["fatigue", "diarrhea", "pruritus", "rash", "nausea", "decreased appetite"],
-      "severe_ae": ["immune-mediated enterocolitis", "hypophysitis", "adrenal insufficiency", "severe dermatitis"],
-      "disease_overlap_ae": ["fatigue", "rash"],
-      "severity_burden": 8,
-      "chronic_use_safety": 5,
-      "monitoring_required": "Stool frequency logs, pituitary hormone profiling, LFTs."
+      "chronic_use_safety": 6,
+      "monitoring_required": "Liver enzymes and dermatologic exams during RAF inhibitor exposure."
     }
   ]
 }

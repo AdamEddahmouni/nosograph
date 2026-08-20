@@ -1,5 +1,19 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- **L3 expression consensus for seven Wave 3/4 indications** — disease-specific GEO consensus gene lists (no SLE signature reuse) for `nsclc`, `pancreatic_ductal_adenocarcinoma`, `glioblastoma`, `cystic_fibrosis`, `sickle_cell_anemia`, `heart_failure`, and `non_alcoholic_fatty_liver_disease`. Each list is restricted to symbols in that module's `genes.json`, with tissue-specific GEO search terms and filters (`lung`, `pancreas`, `tumor`, `airway`, `pbmc_blood`, `myocardium`, `liver`).
+- **Screening/safety coverage for the same L3 slice** — `SCREENING_PROFILE.reference_drug_ids` now match each module's `drugs.json` catalog (CHEMBL IDs where the KG uses them), NAFLD gained pathway/mechanism keywords, and each module has a catalog-scoped `adverse_events.json` so screening and safety coverage report `ready/full`.
+- **Second Wave 3/4 screening/safety slice** — catalog-aligned reference drugs, pathway keywords, and `adverse_events.json` for `melanoma`, `colorectal_cancer`, `triple_neg_breast_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `spinal_muscular_atrophy`, `major_depressive_disorder`, and `epilepsy`.
+
+### Verification
+
+- `pytest tests/test_gene_expression.py tests/test_tier_model.py tests/test_report_neutral_terminology.py tests/test_l3_slice_screening_safety.py -q`
+
+---
+
 ## [2.1.0] — 2026-08-16
 
 ### Added
