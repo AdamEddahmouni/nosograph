@@ -35,7 +35,12 @@ PUBMED_QUERIES = [
 
 # ── Clinical trials / GWAS search terms ────────────────────────────────
 TRIAL_QUERY = "Non-Small Cell Lung Cancer OR NSCLC OR Lung Adenocarcinoma"
-GWAS_SEARCH_TERMS = ["lung cancer", "non-small cell lung carcinoma", "lung adenocarcinoma", "smoking behavior"]
+GWAS_SEARCH_TERMS = [
+    "lung cancer",
+    "non-small cell lung carcinoma",
+    "lung adenocarcinoma",
+    "smoking behavior",
+]
 
 # ── CAR-T & Target Scoring Tables ───────────────────────────────────────
 CAR_T_SCORES = {

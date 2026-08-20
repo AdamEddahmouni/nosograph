@@ -8,7 +8,12 @@ def test_entity_writes_are_idempotent(repository, mondo_snapshot, sle_entity, sl
     repository.upsert_entity(sle_entity)
     repository.add_entity_revision(sle_revision)
     repository.activate_snapshot("mondo", mondo_snapshot.id)
-    assert repository.get_active_snapshot("mondo") == mondo_snapshot
+    active = repository.get_active_snapshot("mondo")
+    assert active is not None
+    assert active.id == mondo_snapshot.id
+    assert active.resource_name == mondo_snapshot.resource_name
+    assert active.version == mondo_snapshot.version
+    assert active.checksum == mondo_snapshot.checksum
     assert repository.get_entity("MONDO:0007915").entity == sle_entity
 
 

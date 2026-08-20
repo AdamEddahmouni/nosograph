@@ -11,6 +11,9 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
 - Dependencies are installed into a project virtualenv at `.venv` (the startup update script
   refreshes it from the lock files). Activate it (`source .venv/bin/activate`) or use
   `.venv/bin/python` for every command; there is no globally-installed `med_research`.
+- Repository-managed Cloud config lives in [`.cursor/environment.json`](.cursor/environment.json):
+  Dockerfile base image (Python 3.12 + build tools + Redis), `install` syncs the venv from lock
+  files, `start` runs [`scripts/cloud-agent-start.sh`](scripts/cloud-agent-start.sh) to start Redis.
 - The pinned toolchain is exact: `python scripts/lock_verify.py` should report
   `all 67 locked packages match`. If it doesn't, re-run the update script.
 
@@ -24,8 +27,9 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   `./.env: line 1: #: command not found` warning. Ignore it.
 
 ### Async jobs (Celery + Redis)
-- Redis is installed but systemd is not running in this container; start it manually and
-  idempotently with `redis-server --daemonize yes` (verify with `redis-cli ping` → `PONG`).
+- On Cloud Agent builds, Redis is started by `start` / [`scripts/cloud-agent-start.sh`](scripts/cloud-agent-start.sh).
+  On a plain VM without that script, start Redis manually and idempotently with
+  `redis-server --daemonize yes` (verify with `redis-cli ping` → `PONG`).
   Redis is only needed for async dashboard jobs and the integration test tier; pure CLI and
   the offline unit suite do not require it.
 - Start the worker with `.env` sourced:
@@ -37,7 +41,3 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   a single test serially, pass `-n 0` (NOT `-p no:xdist`, which breaks the `-n` addopt).
 - Playwright browser tests (`tests/test_evidence_workspace_browser.py`, slow tier) need a
   browser: `python -m playwright install chromium` (one-off; cached in `~/.cache/ms-playwright`).
-- Known pre-existing failures against the current lock (unrelated to environment setup): a few
-  tests assert the old `2.0.0` version / older FastAPI-Pydantic request behavior while the app
-  is `2.1.0`; `make typecheck` and `ruff format --check` also report pre-existing drift under
-  the locked mypy/ruff versions. Do not "fix" these as part of environment work.

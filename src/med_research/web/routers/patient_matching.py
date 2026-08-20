@@ -25,7 +25,9 @@ class PatientVectorInput(BaseModel):
     stage: str = Field(default="III")
     biomarkers: Dict[str, float] = Field(default_factory=lambda: {"BRAF_V600E": 1.0, "PD_L1": 0.65})
     prior_therapies: List[str] = Field(default_factory=lambda: ["Pembrolizumab"])
-    organ_function: Dict[str, float] = Field(default_factory=lambda: {"creatinine": 1.0, "alt": 25.0})
+    organ_function: Dict[str, float] = Field(
+        default_factory=lambda: {"creatinine": 1.0, "alt": 25.0}
+    )
     location_lat: float = Field(default=37.7749)
     location_lon: float = Field(default=-122.4194)
 
@@ -40,6 +42,7 @@ class CohortGenerationRequest(BaseModel):
 async def generate_synthetic_cohort(req: CohortGenerationRequest) -> Dict[str, Any]:
     """Generate synthetic patient vectors with clinical covariates for simulation."""
     import random
+
     rng = random.Random(req.seed or 42)
     cohort = []
 
@@ -57,7 +60,9 @@ async def generate_synthetic_cohort(req: CohortGenerationRequest) -> Dict[str, A
                 "PD_L1": round(rng.uniform(0.1, 0.95), 2),
                 "EGFR": round(rng.uniform(5.0, 45.0), 1),
             },
-            "prior_therapies": rng.sample(["Chemotherapy", "Nivolumab", "Ipilimumab", "Pembrolizumab"], k=rng.randint(1, 2)),
+            "prior_therapies": rng.sample(
+                ["Chemotherapy", "Nivolumab", "Ipilimumab", "Pembrolizumab"], k=rng.randint(1, 2)
+            ),
             "organ_function": {"creatinine": round(rng.uniform(0.7, 1.4), 2)},
             "location_lat": round(37.7749 + rng.gauss(0, 0.5), 4),
             "location_lon": round(-122.4194 + rng.gauss(0, 0.5), 4),
@@ -90,7 +95,12 @@ async def match_patient_to_trials(patient: PatientVectorInput) -> Dict[str, Any]
             status="RECRUITING",
             inclusion_rules=[
                 {"type": "age", "field": "demographic.age", "operator": ">=", "value": 18},
-                {"type": "biomarker", "field": "biomarkers.BRAF_V600E", "operator": ">", "value": 0.5},
+                {
+                    "type": "biomarker",
+                    "field": "biomarkers.BRAF_V600E",
+                    "operator": ">",
+                    "value": 0.5,
+                },
             ],
             exclusion_rules=[
                 {"type": "age", "field": "demographic.age", "operator": ">", "value": 80},
@@ -142,16 +152,22 @@ async def match_patient_to_trials(patient: PatientVectorInput) -> Dict[str, Any]
             trial_locations=site_locations.get(t.nct_id, [patient_loc]),
         )
 
-        results.append({
-            "trial_id": t.nct_id,
-            "title": t.title,
-            "phase": t.phase,
-            "is_eligible": eligibility.eligible,
-            "inclusion_reasons": ["Inclusion criteria satisfied" if eligibility.eligible else "Unmet criteria"],
-            "exclusion_violations": [] if eligibility.eligible else ["Violates trial criteria boundary"],
-            "overall_match_score": round(score_res.get("confidence", 0.0), 3),
-            "distance_km": round(score_res.get("distance_km", 0.0), 1),
-        })
+        results.append(
+            {
+                "trial_id": t.nct_id,
+                "title": t.title,
+                "phase": t.phase,
+                "is_eligible": eligibility.eligible,
+                "inclusion_reasons": [
+                    "Inclusion criteria satisfied" if eligibility.eligible else "Unmet criteria"
+                ],
+                "exclusion_violations": []
+                if eligibility.eligible
+                else ["Violates trial criteria boundary"],
+                "overall_match_score": round(score_res.get("confidence", 0.0), 3),
+                "distance_km": round(score_res.get("distance_km", 0.0), 1),
+            }
+        )
 
     results.sort(key=lambda x: (x["is_eligible"], x["overall_match_score"]), reverse=True)
 

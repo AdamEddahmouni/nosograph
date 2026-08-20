@@ -15,12 +15,18 @@ logger = logging.getLogger(__name__)
 
 
 class SingleMoleculeRequest(BaseModel):
-    smiles: str = Field(..., description="SMILES string of candidate compound", examples=["CC(C)CC1=CC=C(C=C1)C(C)C(=O)O"])
+    smiles: str = Field(
+        ...,
+        description="SMILES string of candidate compound",
+        examples=["CC(C)CC1=CC=C(C=C1)C(C)C(=O)O"],
+    )
     compound_name: Optional[str] = Field(default=None, description="Optional compound label")
 
 
 class BatchMoleculesRequest(BaseModel):
-    smiles_list: List[str] = Field(..., min_length=1, max_length=500, description="List of SMILES strings")
+    smiles_list: List[str] = Field(
+        ..., min_length=1, max_length=500, description="List of SMILES strings"
+    )
 
 
 @router.post("/analyze")
@@ -61,8 +67,10 @@ async def analyze_molecule(req: SingleMoleculeRequest) -> Dict[str, Any]:
             "Polar Surface / HBA": min(max(props.get("hba", 0) / 10.0, 0.0), 1.0),
             "H-Bond Donors": min(max(props.get("hbd", 0) / 5.0, 0.0), 1.0),
             "BBB Permeability": 1.0 if props.get("bbb_pass") else 0.2,
-            "Safety (Low Toxicity)": 0.2 if (props.get("herg_risk") or props.get("cyp3a4_inhibit")) else 0.9,
-        }
+            "Safety (Low Toxicity)": 0.2
+            if (props.get("herg_risk") or props.get("cyp3a4_inhibit"))
+            else 0.9,
+        },
     }
 
 
