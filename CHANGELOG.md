@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- **L3 expression consensus for seven Wave 3/4 indications** — disease-specific GEO consensus gene lists (no SLE signature reuse) for `nsclc`, `pancreatic_ductal_adenocarcinoma`, `glioblastoma`, `cystic_fibrosis`, `sickle_cell_anemia`, `heart_failure`, and `non_alcoholic_fatty_liver_disease`. Each list is restricted to symbols in that module's `genes.json`, with tissue-specific GEO search terms and filters (`lung`, `pancreas`, `tumor`, `airway`, `pbmc_blood`, `myocardium`, `liver`).
+
+### Verification
+
+- `pytest tests/test_gene_expression.py tests/test_tier_model.py tests/test_report_neutral_terminology.py -q`
+
+---
+
 ## [2.1.0] — 2026-08-16
 
 ### Added
