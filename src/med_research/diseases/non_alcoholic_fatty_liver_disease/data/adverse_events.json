@@ -1,0 +1,60 @@
+{
+  "schema_version": "1",
+  "disease_id": "non_alcoholic_fatty_liver_disease",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["nausea", "diarrhea", "abdominal pain", "fatigue"],
+    "severe_ae": ["hepatotoxicity", "gallbladder disease", "fluid retention"],
+    "disease_overlap_ae": ["fatigue", "right upper quadrant discomfort"],
+    "severity_burden": 5,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Liver enzymes and metabolic labs during investigational or labeled MASH therapies.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "resmetirom",
+      "common_ae": ["diarrhea", "nausea", "pruritus", "vomiting", "constipation"],
+      "severe_ae": ["gallbladder disease", "hepatotoxicity"],
+      "disease_overlap_ae": ["fatigue", "abdominal discomfort"],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Liver enzymes and gallbladder symptoms."
+    },
+    {
+      "drug_id": "semaglutide",
+      "common_ae": ["nausea", "vomiting", "diarrhea", "constipation", "decreased appetite"],
+      "severe_ae": ["pancreatitis", "gallbladder disease", "hypoglycemia with insulin"],
+      "disease_overlap_ae": ["fatigue", "abdominal discomfort"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "GI tolerance and pancreatitis warning signs."
+    },
+    {
+      "drug_id": "pioglitazone",
+      "common_ae": ["weight gain", "edema", "anemia"],
+      "severe_ae": ["heart failure exacerbation", "fractures", "bladder cancer signal"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Edema, weight, and heart-failure symptoms."
+    },
+    {
+      "drug_id": "lanifibranor",
+      "common_ae": ["weight gain", "edema", "anemia", "nausea"],
+      "severe_ae": ["fluid retention", "anemia"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "monitoring_required": "CBC, weight, and edema during PPAR agonist exposure."
+    }
+  ]
+}

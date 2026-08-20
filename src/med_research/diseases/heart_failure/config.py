@@ -249,11 +249,12 @@ SCREENING_PROFILE = {
     ],
     "reference_drug_ids": [
         "CHEMBL1069",
-        "CHEMBL107",
+        "CHEMBL2107830",
+        "CHEMBL429910",
+        "CHEMBL723",
+        "CHEMBL35",
+        "CHEMBL578",
         "CHEMBL1095097",
-        "CHEMBL1201063",
-        "CHEMBL1280",
-        "CHEMBL1431",
     ],
     "weights": {
         "binding_estimate": 0.25,

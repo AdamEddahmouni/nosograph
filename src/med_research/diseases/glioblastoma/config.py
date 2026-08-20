@@ -118,11 +118,11 @@ SCREENING_PROFILE = {
         "bbb penetrating",
     ],
     "reference_drug_ids": [
-        "temozolomide",
-        "bevacizumab",
-        "lomustine",
-        "carmustine",
-        "regorafenib",
+        "CHEMBL1201583",
+        "CHEMBL513",
+        "CHEMBL1946170",
+        "CHEMBL939",
+        "CHEMBL481",
     ],
     "weights": {
         "binding_estimate": 0.30,

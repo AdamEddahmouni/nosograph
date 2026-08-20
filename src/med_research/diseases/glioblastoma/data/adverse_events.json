@@ -16,21 +16,12 @@
     "chronic_use_safety": 5,
     "disease_specific_risk": 1,
     "black_box_warnings": [],
-    "monitoring_required": "Weekly CBC during initial cycles, liver function tests, intracranial pressure monitoring.",
+    "monitoring_required": "CBC, liver function tests, and neurologic exam during treatment.",
     "evidence_grade": "curated_class_pattern"
   },
   "profiles": [
     {
-      "drug_id": "temozolomide",
-      "common_ae": ["alopecia", "nausea", "vomiting", "fatigue", "constipation", "headache"],
-      "severe_ae": ["severe myelosuppression", "aplastic anemia", "opportunistic infections (PCP)", "hepatotoxicity"],
-      "disease_overlap_ae": ["headache", "fatigue", "nausea"],
-      "severity_burden": 8,
-      "chronic_use_safety": 5,
-      "monitoring_required": "Complete blood counts weekly on day 22, PCP prophylaxis during radiation phase."
-    },
-    {
-      "drug_id": "bevacizumab",
+      "drug_id": "CHEMBL1201583",
       "common_ae": ["epistaxis", "hypertension", "rhinitis", "proteinuria", "taste alteration", "dry skin"],
       "severe_ae": ["intracranial hemorrhage", "gastrointestinal perforation", "wound healing disruption", "arterial thromboembolism"],
       "disease_overlap_ae": ["headache", "neurological deficits"],
@@ -39,22 +30,40 @@
       "monitoring_required": "Blood pressure, urine protein monitoring, neurological exam."
     },
     {
-      "drug_id": "lomustine",
-      "common_ae": ["nausea", "vomiting", "anorexia", "stomatitis"],
-      "severe_ae": ["delayed cumulative bone marrow suppression", "pulmonary fibrosis", "secondary leukemias"],
-      "disease_overlap_ae": ["fatigue", "nausea"],
+      "drug_id": "CHEMBL513",
+      "common_ae": ["nausea", "vomiting", "flushing", "injection-site pain"],
+      "severe_ae": ["delayed myelosuppression", "pulmonary fibrosis", "seizures"],
+      "disease_overlap_ae": ["headache", "fatigue", "nausea"],
       "severity_burden": 8,
       "chronic_use_safety": 4,
-      "monitoring_required": "CBC weekly for 6 weeks post-dose, pulmonary function baseline."
+      "monitoring_required": "CBC and pulmonary function around wafer or systemic nitrosourea use."
     },
     {
-      "drug_id": "regorafenib",
+      "drug_id": "CHEMBL1946170",
       "common_ae": ["hand-foot skin reaction", "hyperbilirubinemia", "weight loss", "diarrhea", "hypertension"],
       "severe_ae": ["severe drug-induced liver injury", "severe hemorrhage", "GI perforation"],
       "disease_overlap_ae": ["fatigue", "headache"],
       "severity_burden": 8,
       "chronic_use_safety": 5,
       "monitoring_required": "Liver function tests every 2 weeks, blood pressure monitoring."
+    },
+    {
+      "drug_id": "CHEMBL939",
+      "common_ae": ["rash", "diarrhea", "dry skin", "nausea"],
+      "severe_ae": ["interstitial lung disease", "hepatotoxicity"],
+      "disease_overlap_ae": ["fatigue", "headache"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Liver enzymes and pulmonary symptoms."
+    },
+    {
+      "drug_id": "CHEMBL481",
+      "common_ae": ["diarrhea", "nausea", "vomiting", "alopecia", "fatigue"],
+      "severe_ae": ["severe diarrhea", "neutropenia", "cholinergic syndrome"],
+      "disease_overlap_ae": ["fatigue", "nausea"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC and diarrhea management during cycles."
     }
   ]
 }

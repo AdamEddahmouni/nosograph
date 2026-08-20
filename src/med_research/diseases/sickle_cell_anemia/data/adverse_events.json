@@ -1,0 +1,51 @@
+{
+  "schema_version": "1",
+  "disease_id": "sickle_cell_anemia",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["headache", "nausea", "abdominal pain", "fatigue"],
+    "severe_ae": ["cytopenias", "hypersensitivity", "hepatotoxicity"],
+    "disease_overlap_ae": ["pain", "fatigue", "headache"],
+    "severity_burden": 6,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "CBC and hepatic panel during disease-modifying therapy.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL467",
+      "common_ae": ["leukopenia", "nausea", "skin hyperpigmentation"],
+      "severe_ae": ["severe myelosuppression", "leg ulcers"],
+      "disease_overlap_ae": ["fatigue", "pain"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "CBC every 4 weeks until stable, then periodically."
+    },
+    {
+      "drug_id": "CHEMBL4101807",
+      "common_ae": ["headache", "diarrhea", "abdominal pain", "nausea"],
+      "severe_ae": ["hypersensitivity", "laboratory interference with HbA1c"],
+      "disease_overlap_ae": ["headache", "pain"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Hepatic panel and hypersensitivity monitoring."
+    },
+    {
+      "drug_id": "CHEMBL4297734",
+      "common_ae": ["infusion-related reactions", "nausea", "arthralgia", "back pain"],
+      "severe_ae": ["infusion reactions", "infections"],
+      "disease_overlap_ae": ["pain", "fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Infusion observation and infection monitoring."
+    }
+  ]
+}

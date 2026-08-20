@@ -174,12 +174,10 @@ SCREENING_PROFILE = {
         "glutamate",
     ],
     "reference_drug_ids": [
-        "CHEMBL1096882",
-        "CHEMBL1201772",
-        "CHEMBL1431",
-        "CHEMBL1431",
-        "CHEMBL1431",
-        "CHEMBL1431",
+        "CHEMBL467",
+        "CHEMBL4101807",
+        "CHEMBL4297734",
+        "CHEMBL256147",
     ],
     "weights": {
         "binding_estimate": 0.25,
