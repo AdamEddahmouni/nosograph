@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Silico Lead Optimization & ADMET Screening — med-research</title>
+  <link rel="stylesheet" href="/css/dashboard.css" />
+  <style>
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+    .metric-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 0.75rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .metric-box .val {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .metric-box .lbl {
+      font-size: 0.75rem;
+      color: #64748b;
+      margin-top: 0.2rem;
+    }
+    .pass-tag { color: #16a34a; font-weight: 600; }
+    .fail-tag { color: #dc2626; font-weight: 600; }
+    .bar-outer {
+      background: #e2e8f0;
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+    .bar-inner {
+      height: 100%;
+      background: #0284c7;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <div class="app-layout">
+    <header class="top-nav" style="background:#0f172a;color:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <a href="/" style="color:#38bdf8;text-decoration:none;font-weight:700;font-size:1.1rem;">← med-research Dashboard</a>
+        <span style="color:#64748b;">|</span>
+        <h2 style="margin:0;font-size:1.1rem;">In Silico Lead Optimization & ADMET Profiler</h2>
+      </div>
+      <div style="display:flex;gap:1rem;font-size:0.9rem;">
+        <a href="/patient_matching.html" style="color:#cbd5e1;text-decoration:none;">Patient Matching</a>
+        <a href="/spatial.html" style="color:#cbd5e1;text-decoration:none;">Spatial Omics</a>
+        <a href="/pgx.html" style="color:#cbd5e1;text-decoration:none;">PGx</a>
+        <a href="/agent.html" style="color:#cbd5e1;text-decoration:none;">Target Agent</a>
+      </div>
+    </header>
+
+    <main class="main-content" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
+      <div style="display:grid;grid-template-columns:400px 1fr;gap:2rem;">
+        <!-- Left: Input Form -->
+        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
+          <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Molecule & SMILES Input</h3>
+          
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Compound Label</label>
+            <input type="text" id="compound-name" value="Vemurafenib Analogue-A" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">SMILES String</label>
+            <textarea id="smiles-input" rows="4" style="width:100%;padding:0.5rem;font-family:monospace;font-size:0.85rem;border:1px solid #cbd5e1;border-radius:4px;">CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5</textarea>
+          </div>
+
+          <div style="display:flex;gap:0.5rem;margin-bottom:1.5rem;">
+            <button id="preset-vemurafenib" style="font-size:0.75rem;padding:0.3rem 0.6rem;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:4px;cursor:pointer;">Vemurafenib</button>
+            <button id="preset-osimertinib" style="font-size:0.75rem;padding:0.3rem 0.6rem;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:4px;cursor:pointer;">Osimertinib</button>
+            <button id="preset-temozolomide" style="font-size:0.75rem;padding:0.3rem 0.6rem;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:4px;cursor:pointer;">Temozolomide</button>
+          </div>
+
+          <button id="eval-lead-btn" style="width:100%;background:#0284c7;color:#fff;font-weight:600;padding:0.75rem;border:none;border-radius:6px;cursor:pointer;margin-bottom:1rem;">
+            ⚡ Screen ADMET & Druggability
+          </button>
+
+          <hr style="border:0;border-top:1px solid #e2e8f0;margin:1.5rem 0;" />
+
+          <h4 style="margin:0 0 0.5rem;font-size:0.95rem;">Batch SMILES Screening</h4>
+          <textarea id="batch-smiles-input" rows="3" placeholder="Paste multiple SMILES (one per line)..." style="width:100%;padding:0.5rem;font-family:monospace;font-size:0.8rem;border:1px solid #cbd5e1;border-radius:4px;margin-bottom:0.5rem;"></textarea>
+          <button id="eval-batch-btn" style="width:100%;background:#475569;color:#fff;font-weight:600;padding:0.5rem;border:none;border-radius:6px;cursor:pointer;">
+            📊 Run Batch Screen
+          </button>
+        </section>
+
+        <!-- Right: Results & ADMET Breakdown -->
+        <section>
+          <div id="lead-results-container">
+            <div style="background:#fff;padding:2rem;text-align:center;border-radius:8px;border:1px dashed #cbd5e1;color:#64748b;">
+              Enter a candidate SMILES structure and click <strong>Screen ADMET & Druggability</strong> to view Lipinski rule compliance, BBB score, CYP inhibition alerts, and synthetic accessibility.
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/lead_opt.js"></script>
+</body>
+</html>

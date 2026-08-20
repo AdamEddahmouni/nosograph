@@ -73,9 +73,7 @@ def test_score_cell_type_specificity_dimension():
     assert score_cell_type_specificity_dimension([]) == 5.0
 
     # Targeted alignment with disease cell types
-    aligned_score = score_cell_type_specificity_dimension(
-        ["MS4A1"], disease_cell_types=["b_cell"]
-    )
+    aligned_score = score_cell_type_specificity_dimension(["MS4A1"], disease_cell_types=["b_cell"])
     unaligned_score = score_cell_type_specificity_dimension(
         ["MS4A1"], disease_cell_types=["endothelial"]
     )

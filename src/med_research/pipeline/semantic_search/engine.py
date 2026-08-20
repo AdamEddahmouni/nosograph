@@ -58,7 +58,6 @@ def _chromadb_collection_errors() -> tuple:
     return (ValueError, RuntimeError)
 
 
-
 def resolve_semantic_coverage(disease_id: str) -> ModuleCoverage:
     """Return disease-scoped semantic search readiness including optional deps."""
     from med_research.diseases.coverage import module_coverage

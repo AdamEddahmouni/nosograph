@@ -20,7 +20,7 @@ SYMPTOMS = [
     "severe anhedonia",
     "psychomotor slowing",
     "mood lability",
-    "rapid cycling"
+    "rapid cycling",
 ]
 
 # ── Literature Mining ────────────────────────────────────────────────────
@@ -28,7 +28,7 @@ PUBMED_QUERIES = [
     "(bipolar disorder[Title/Abstract] OR bipolar depression[Title/Abstract] OR mania[Title/Abstract]) AND (treatment[Title/Abstract] OR therapeutics[Title/Abstract])",
     "(bipolar disorder[Title/Abstract]) AND (lithium[Title/Abstract] OR valproate[Title/Abstract] OR lamotrigine[Title/Abstract] OR quetiapine[Title/Abstract])",
     "(bipolar disorder[Title/Abstract]) AND (mood stabilizer[Title/Abstract] OR circadian rhythm[Title/Abstract])",
-    "(bipolar disorder[Title/Abstract]) AND (clinical trial[Title/Abstract])"
+    "(bipolar disorder[Title/Abstract]) AND (clinical trial[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms ────────────────────────────────
@@ -38,7 +38,7 @@ GWAS_SEARCH_TERMS = [
     "major depressive disorder",
     "schizophrenia",
     "sleep duration",
-    "chronotype"
+    "chronotype",
 ]
 
 # ── CAR-T & Target Scoring Tables ───────────────────────────────────────
@@ -48,50 +48,42 @@ CAR_T_SCORES = {
         "GSK3A": 9.0,
         "IMPA1": 9.5,
         "INPP1": 8.5,
-        "AKT1": 8.5
+        "AKT1": 8.5,
     },
     "ION_CHANNEL_NEURONAL_EXCITABILITY": {
         "CACNA1C": 10.0,
         "CACNB2": 9.0,
         "SCN1A": 9.5,
         "SCN2A": 9.0,
-        "KCNQ2": 8.0
+        "KCNQ2": 8.0,
     },
     "MONOAMINE_CIRCADIAN_REGULATION": {
         "SLC6A4": 9.0,
         "DRD2": 9.0,
         "CLOCK": 8.5,
         "ARNTL": 8.0,
-        "BDNF": 9.0
-    }
+        "BDNF": 9.0,
+    },
 }
 
 # ── Drug Safety Risk Tiers ──────────────────────────────────────────────
 DRUG_SAFETY_RISK = {
     "high_risk": [
         "Lithium Toxicity (Narrow therapeutic index, Nephrogenic DI, Thyroid dysfunction)",
-        "Valproate (Hepatotoxicity, Teratogenicity, Pancreatitis)"
+        "Valproate (Hepatotoxicity, Teratogenicity, Pancreatitis)",
     ],
     "moderate_risk": [
         "Lamotrigine (Stevens-Johnson syndrome rash)",
-        "Atypical Antipsychotics (Metabolic syndrome)"
+        "Atypical Antipsychotics (Metabolic syndrome)",
     ],
-    "low_risk": [
-        "Lurasidone",
-        "Cariprazine"
-    ]
+    "low_risk": ["Lurasidone", "Cariprazine"],
 }
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
 DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "bipolar_disorder-screening-v1",
-    "reference_drug_ids": [
-        "lithium",
-        "valproate",
-        "lamotrigine",
-        "quetiapine"
-],
+    "reference_drug_ids": ["lithium", "valproate", "lamotrigine", "quetiapine"],
     "weights": {
         "binding_estimate": 0.30,
         "druglikeness": 0.20,

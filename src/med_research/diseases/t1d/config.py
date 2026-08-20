@@ -20,7 +20,7 @@ SYMPTOMS = [
     "nausea and abdominal pain at presentation",
     "hypoglycemic episodes during intensive insulin therapy",
     "impaired hypoglycemia awareness",
-    "microalbuminuria and diabetic retinopathy long-term"
+    "microalbuminuria and diabetic retinopathy long-term",
 ]
 
 # ── Literature Mining ────────────────────────────────────────────────────
@@ -28,17 +28,12 @@ PUBMED_QUERIES = [
     "(type 1 diabetes[Title/Abstract] OR T1D[Title/Abstract] OR autoimmune diabetes[Title/Abstract]) AND (treatment[Title/Abstract] OR therapeutics[Title/Abstract])",
     "(type 1 diabetes[Title/Abstract]) AND (insulin[Title/Abstract] OR teplizumab[Title/Abstract] OR immunotherapy[Title/Abstract])",
     "(type 1 diabetes[Title/Abstract]) AND (beta cell preservation[Title/Abstract] OR islet autoimmunity[Title/Abstract])",
-    "(type 1 diabetes[Title/Abstract]) AND (clinical trial[Title/Abstract])"
+    "(type 1 diabetes[Title/Abstract]) AND (clinical trial[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms ────────────────────────────────
 TRIAL_QUERY = "Type 1 Diabetes OR Type 1 Diabetes Mellitus OR Autoimmune Diabetes OR T1D"
-GWAS_SEARCH_TERMS = [
-    "type 1 diabetes",
-    "fasting glucose",
-    "HbA1c",
-    "autoimmune diseases"
-]
+GWAS_SEARCH_TERMS = ["type 1 diabetes", "fasting glucose", "HbA1c", "autoimmune diseases"]
 
 # ── CAR-T & Target Scoring Tables ───────────────────────────────────────
 CAR_T_SCORES = {
@@ -49,7 +44,7 @@ CAR_T_SCORES = {
         "CD8A": 9.5,
         "PTPN22": 10.0,
         "CTLA4": 9.5,
-        "IL2RA": 9.5
+        "IL2RA": 9.5,
     },
     "BETA_CELL_AUTOANTIGENS": {
         "INS": 10.0,
@@ -57,7 +52,7 @@ CAR_T_SCORES = {
         "IA-2": 9.0,
         "PTPRN": 9.0,
         "SLC30A8": 9.5,
-        "ICA1": 8.5
+        "ICA1": 8.5,
     },
     "INFLAMMATORY_CYTOKINE_APOPTOSIS": {
         "IFNG": 9.0,
@@ -65,35 +60,68 @@ CAR_T_SCORES = {
         "IL1B": 8.5,
         "FAS": 8.0,
         "CASP3": 8.0,
-        "JAK1": 8.5
-    }
+        "JAK1": 8.5,
+    },
+    "CO_STIMULATION_CHECKPOINT_SIGNALING": {
+        "CD28": 8.5,
+        "CD80": 8.0,
+        "CD86": 8.0,
+        "CTLA4": 9.0,
+        "PTPN22": 8.5,
+    },
+    "TREG_SURVIVAL_IMMUNOMODULATION": {
+        "FOXP3": 9.5,
+        "IL2": 9.0,
+        "IL2RA": 9.5,
+        "IL10": 8.5,
+        "TGFB1": 8.0,
+    },
 }
 
 # ── Drug Safety Risk Tiers ──────────────────────────────────────────────
 DRUG_SAFETY_RISK = {
     "high_risk": [
         "Insulin overdose (Severe / Fatal Hypoglycemia)",
-        "Insulin omission (Life-threatening Diabetic Ketoacidosis)"
+        "Insulin omission (Life-threatening Diabetic Ketoacidosis)",
     ],
     "moderate_risk": [
-        "Teplizumab (Cytokine release syndrome, Transient lymphopenia)"
+        "Teplizumab (Cytokine release syndrome, Transient lymphopenia)",
     ],
     "low_risk": [
         "Nasal Glucagon Rescue",
-        "Continuous Glucose Monitor Guidance"
-    ]
+        "Continuous Glucose Monitor Guidance",
+    ],
 }
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
 DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "t1d-screening-v1",
+    "pathway_keywords": [
+        "insulin",
+        "t cell",
+        "beta cell",
+        "autoimmunity",
+        "glycemic",
+        "incretin",
+        "cytokine",
+        "islet",
+    ],
+    "mechanism_keywords": [
+        "insulin",
+        "cd3",
+        "tcr",
+        "amylin",
+        "incretin",
+        "immunomodulator",
+        "anti-inflammatory",
+    ],
     "reference_drug_ids": [
         "teplizumab",
         "insulin_glargine",
         "insulin_aspart",
-        "pramlintide"
-],
+        "pramlintide",
+    ],
     "weights": {
         "binding_estimate": 0.30,
         "druglikeness": 0.20,

@@ -332,13 +332,16 @@ class DuckDBBiomedicalEngine:
                     row.append(sym_val)
                     pair_key = f"{curie_a}___{curie_b}"
                     sym_key = f"{curie_b}___{curie_a}"
-                    details[pair_key] = details.get(sym_key, {
-                        "condition_a": curie_a,
-                        "condition_b": curie_b,
-                        "jaccard_similarity": sym_val,
-                        "shared_pathways": [],
-                        "shared_genes": [],
-                    })
+                    details[pair_key] = details.get(
+                        sym_key,
+                        {
+                            "condition_a": curie_a,
+                            "condition_b": curie_b,
+                            "jaccard_similarity": sym_val,
+                            "shared_pathways": [],
+                            "shared_genes": [],
+                        },
+                    )
                 else:
                     res = self.compute_shared_mechanisms(curie_a, curie_b)
                     sim = round(res.jaccard_similarity, 4)
@@ -403,5 +406,8 @@ class DuckDBBiomedicalEngine:
             }
         except Exception as err:
             logger.warning("DuckDB get_druggability_distribution error: %s", err)
-            return {"disease_curie": disease_curie or "global", "distribution": {}, "error": str(err)}
-
+            return {
+                "disease_curie": disease_curie or "global",
+                "distribution": {},
+                "error": str(err),
+            }

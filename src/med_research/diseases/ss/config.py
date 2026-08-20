@@ -10,13 +10,27 @@ PIPELINE_LABEL = "Sjögren's Syndrome (SS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 SYMPTOMS = [
-    "dry eyes", "dry mouth", "xerostomia", "xerophthalmia",
-    "fatigue", "joint pain", "arthritis", "parotid gland swelling",
-    "vaginal dryness", "skin dryness", "dry cough",
-    "dysphagia", "dental caries", "oral candidiasis",
-    "peripheral neuropathy", "Raynaud's phenomenon",
-    "vasculitis", "lymphadenopathy", "interstitial lung disease",
-    "renal tubular acidosis", "purpura",
+    "dry eyes",
+    "dry mouth",
+    "xerostomia",
+    "xerophthalmia",
+    "fatigue",
+    "joint pain",
+    "arthritis",
+    "parotid gland swelling",
+    "vaginal dryness",
+    "skin dryness",
+    "dry cough",
+    "dysphagia",
+    "dental caries",
+    "oral candidiasis",
+    "peripheral neuropathy",
+    "Raynaud's phenomenon",
+    "vasculitis",
+    "lymphadenopathy",
+    "interstitial lung disease",
+    "renal tubular acidosis",
+    "purpura",
 ]
 
 PUBMED_QUERIES = [
@@ -122,12 +136,46 @@ DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "ss-screening-v1",
-    "pathway_keywords": ["interferon", "b cell", "baff", "germinal center", "tlr", "jak-stat", "nf-kb"],
-    "mechanism_keywords": ["ifn", "interferon", "b cell", "baff", "cd20", "cd40", "tlr", "jak", "tyk2", "nf-kb"],
-    "reference_drug_ids": ["hydroxychloroquine", "rituximab_ss", "belimumab", "ianalumab", "iscalimab", "abatacept"],
-    "weights": {"binding_estimate": 0.25, "druglikeness": 0.15, "target_complementarity": 0.35, "similarity_score": 0.15, "novelty_score": 0.10},
+    "pathway_keywords": [
+        "interferon",
+        "b cell",
+        "baff",
+        "germinal center",
+        "tlr",
+        "jak-stat",
+        "nf-kb",
+    ],
+    "mechanism_keywords": [
+        "ifn",
+        "interferon",
+        "b cell",
+        "baff",
+        "cd20",
+        "cd40",
+        "tlr",
+        "jak",
+        "tyk2",
+        "nf-kb",
+    ],
+    "reference_drug_ids": [
+        "hydroxychloroquine",
+        "rituximab_ss",
+        "belimumab",
+        "ianalumab",
+        "iscalimab",
+        "abatacept",
+    ],
+    "weights": {
+        "binding_estimate": 0.25,
+        "druglikeness": 0.15,
+        "target_complementarity": 0.35,
+        "similarity_score": 0.15,
+        "novelty_score": 0.10,
+    },
     "source": "curated_ss_knowledge_graph",
     "curated_inputs": ["pathways", "drugs", "screening_strategy"],
     "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
-    "limitations": ["Property scores are heuristic prioritization signals and do not establish Sjogren syndrome efficacy."],
+    "limitations": [
+        "Property scores are heuristic prioritization signals and do not establish Sjogren syndrome efficacy."
+    ],
 }

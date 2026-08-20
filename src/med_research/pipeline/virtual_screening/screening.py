@@ -375,7 +375,6 @@ def compute_druglikeness(compound: Mapping[str, Any]) -> float:
     return round(min(10.0, score), 1)
 
 
-
 def compute_target_complementarity(
     compound: Mapping[str, Any],
     gene_info: Mapping[str, Any],

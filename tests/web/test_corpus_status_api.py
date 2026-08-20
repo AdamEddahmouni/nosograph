@@ -36,4 +36,3 @@ def test_corpus_status_filter_and_search(client):
     data_s = resp_search.json()
     assert "diseases" in data_s
     assert any("lupus" in (d["name"] + d["disease_id"]).lower() for d in data_s["diseases"])
-

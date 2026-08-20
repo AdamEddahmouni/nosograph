@@ -35,6 +35,11 @@
                     <a href="#graph-analytics" class="nav-link" data-nav="graph-analytics">Analytics</a>
                     <a href="#export" class="nav-link" data-nav="export">Export</a>
                     <a href="#jobs" class="nav-link" id="jobs-tab" data-nav="jobs">Jobs <span id="job-count" class="job-badge hidden">0</span></a>
+                    <a href="/patient_matching.html" class="nav-link">Patient Matching</a>
+                    <a href="/lead_opt.html" class="nav-link">Lead Opt</a>
+                    <a href="/spatial.html" class="nav-link">Spatial Omics</a>
+                    <a href="/agent.html" class="nav-link">Target Agent</a>
+                    <a href="/pgx.html" class="nav-link">PGx</a>
                     <a href="/api/docs" class="nav-link" target="_blank" rel="noopener">API Docs</a>
                     <a href="/api/health" class="nav-link nav-status" id="api-status" title="API Status">●</a>
                 </div>
@@ -1195,7 +1200,12 @@
 <span class="cmd">uvicorn</span> med_research.web.main:app --host 127.0.0.1 --port 8000
 
 <span class="comment"># Interactive docs at /api/docs</span>
-                </div>
+<div class="dossier-section" style="margin-top:16px;">
+    <h3>Regulatory Dossier</h3>
+    <p>Generate a comprehensive IND‑ready dossier compiling all pipeline results.</p>
+    <button type="button" class="btn btn-primary" id="generate-dossier-btn" data-action="generate-dossier">Generate Regulatory Dossier</button>
+    <div id="dossier-result" class="dossier-result" style="margin-top:8px;"></div>
+</div>
             </div>
 
         </div>

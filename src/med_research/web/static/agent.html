@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic Target Hypothesis Generator — med-research</title>
+  <link rel="stylesheet" href="/css/dashboard.css" />
+  <style>
+    .chat-bubble {
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+    .chat-user {
+      background: #e0f2fe;
+      color: #0369a1;
+      margin-left: 2rem;
+      border: 1px solid #bae6fd;
+    }
+    .chat-agent {
+      background: #ffffff;
+      color: #1e293b;
+      margin-right: 2rem;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .badge-evidence {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: #475569;
+      margin-right: 0.4rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <div class="app-layout">
+    <header class="top-nav" style="background:#0f172a;color:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <a href="/" style="color:#38bdf8;text-decoration:none;font-weight:700;font-size:1.1rem;">← med-research Dashboard</a>
+        <span style="color:#64748b;">|</span>
+        <h2 style="margin:0;font-size:1.1rem;">Agentic Target Hypothesis & Literature Reasoning</h2>
+      </div>
+      <div style="display:flex;gap:1rem;font-size:0.9rem;">
+        <a href="/patient_matching.html" style="color:#cbd5e1;text-decoration:none;">Patient Matching</a>
+        <a href="/lead_opt.html" style="color:#cbd5e1;text-decoration:none;">Lead Opt & ADMET</a>
+        <a href="/spatial.html" style="color:#cbd5e1;text-decoration:none;">Spatial Omics</a>
+        <a href="/pgx.html" style="color:#cbd5e1;text-decoration:none;">PGx</a>
+      </div>
+    </header>
+
+    <main class="main-content" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
+      <div style="display:grid;grid-template-columns:360px 1fr;gap:2rem;">
+        <!-- Left: Quick Target Hypothesis Generator -->
+        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
+          <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Target Hypothesis Generator</h3>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Disease Context</label>
+            <select id="agent-disease" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
+              <option value="melanoma">Melanoma</option>
+              <option value="nsclc">Non-Small Cell Lung Cancer (NSCLC)</option>
+              <option value="glioblastoma">Glioblastoma (GBM)</option>
+              <option value="sle">Systemic Lupus Erythematosus</option>
+              <option value="ra">Rheumatoid Arthritis</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Gene Target Symbol</label>
+            <input type="text" id="target-gene" value="BRAF" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+          </div>
+
+          <button id="generate-hyp-btn" style="width:100%;background:#0284c7;color:#fff;font-weight:600;padding:0.75rem;border:none;border-radius:6px;cursor:pointer;">
+            🤖 Synthesize Target Hypothesis
+          </button>
+        </section>
+
+        <!-- Right: Interactive Chat / Agent Rationale Stream -->
+        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;display:flex;flex-direction:column;min-height:550px;">
+          <h3 style="margin-top:0;font-size:1.15rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Agent Dialogue & Structured Rationale</h3>
+
+          <div id="chat-messages" style="flex:1;overflow-y:auto;padding-right:0.5rem;max-height:450px;">
+            <div class="chat-bubble chat-agent">
+              <strong>Translational Research Agent:</strong> Hello! Select a target gene and disease or ask any translational question (e.g. <em>"Why is BRAF a validated driver in melanoma and what are the resistance mechanisms?"</em>).
+            </div>
+          </div>
+
+          <div style="margin-top:1rem;display:flex;gap:0.5rem;">
+            <input type="text" id="user-chat-input" placeholder="Ask the scientific research agent..." style="flex:1;padding:0.75rem;border:1px solid #cbd5e1;border-radius:6px;" />
+            <button id="send-chat-btn" style="background:#0f172a;color:#fff;font-weight:600;padding:0.75rem 1.5rem;border:none;border-radius:6px;cursor:pointer;">
+              Send
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/agent.js"></script>
+</body>
+</html>

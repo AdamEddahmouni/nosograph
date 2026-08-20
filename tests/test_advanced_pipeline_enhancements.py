@@ -71,7 +71,9 @@ def test_virtual_screening_lipinski_and_pains():
     assert clean_mol["has_pains_alert"] is False
 
     # Vina grid box generator
-    box = generate_vina_search_box(center=(12.5, -4.2, 33.1), size=(25.0, 25.0, 25.0), exhaustiveness=16)
+    box = generate_vina_search_box(
+        center=(12.5, -4.2, 33.1), size=(25.0, 25.0, 25.0), exhaustiveness=16
+    )
     assert box["center_x"] == 12.5
     assert box["size_x"] == 25.0
     assert box["exhaustiveness"] == 16

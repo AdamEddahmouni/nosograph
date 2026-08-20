@@ -28,16 +28,41 @@ CELL_TYPES_BY_DISEASE: dict[str, list[str]] = {
     "ssc": ["Dermal Fibroblasts", "Endothelial Cells", "Macrophages", "Pericytes"],
     "t1d": ["Pancreatic Beta Cells", "CD8+ T Cells", "Macrophages", "Dendritic Cells"],
     "t2d": ["Pancreatic Beta Cells", "Hepatocytes", "Adipocytes", "Skeletal Myocytes"],
-    "coronary_artery_disease": ["Endothelial Cells", "Vascular Smooth Muscle", "Macrophages", "Fibroblasts"],
+    "coronary_artery_disease": [
+        "Endothelial Cells",
+        "Vascular Smooth Muscle",
+        "Macrophages",
+        "Fibroblasts",
+    ],
     "heart_failure": ["Cardiomyocytes", "Cardiac Fibroblasts", "Endothelial Cells", "Macrophages"],
-    "dilated_cardiomyopathy": ["Cardiomyocytes", "Cardiac Fibroblasts", "Endothelial Cells", "Purkinje Fibers"],
-    "essential_hypertension": ["Vascular Smooth Muscle", "Endothelial Cells", "Renal Tubular Epithelial", "Podocytes"],
-    "coronary_atherosclerosis": ["Endothelial Cells", "Foam Cells", "Vascular Smooth Muscle", "T Cells"],
+    "dilated_cardiomyopathy": [
+        "Cardiomyocytes",
+        "Cardiac Fibroblasts",
+        "Endothelial Cells",
+        "Purkinje Fibers",
+    ],
+    "essential_hypertension": [
+        "Vascular Smooth Muscle",
+        "Endothelial Cells",
+        "Renal Tubular Epithelial",
+        "Podocytes",
+    ],
+    "coronary_atherosclerosis": [
+        "Endothelial Cells",
+        "Foam Cells",
+        "Vascular Smooth Muscle",
+        "T Cells",
+    ],
     "atherosclerosis": ["Endothelial Cells", "Foam Cells", "Vascular Smooth Muscle", "T Cells"],
     "tuberculosis": ["Alveolar Macrophages", "CD4+ T Cells", "Dendritic Cells", "Neutrophils"],
     "hiv": ["CD4+ T Cells", "Macrophages", "Dendritic Cells", "Microglia"],
     "hiv_1_infection": ["CD4+ T Cells", "Macrophages", "Dendritic Cells", "Microglia"],
-    "lupus_nephritis": ["Podocytes", "Mesangial Cells", "Renal Tubular Epithelial", "Infiltrating B Cells"],
+    "lupus_nephritis": [
+        "Podocytes",
+        "Mesangial Cells",
+        "Renal Tubular Epithelial",
+        "Infiltrating B Cells",
+    ],
 }
 
 

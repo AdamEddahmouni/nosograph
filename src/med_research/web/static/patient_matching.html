@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinical Trial Patient Matching Engine — med-research</title>
+  <link rel="stylesheet" href="/css/dashboard.css" />
+  <style>
+    .match-card {
+      background: var(--bg-surface, #ffffff);
+      border: 1px solid var(--border-color, #e2e8f0);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      transition: box-shadow 0.2s ease;
+    }
+    .match-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .eligible-badge {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 9999px;
+    }
+    .badge-pass { background: #dcfce7; color: #166534; }
+    .badge-fail { background: #fee2e2; color: #991b1b; }
+    .score-meter {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0284c7;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <div class="app-layout">
+    <header class="top-nav" style="background:#0f172a;color:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <a href="/" style="color:#38bdf8;text-decoration:none;font-weight:700;font-size:1.1rem;">← med-research Dashboard</a>
+        <span style="color:#64748b;">|</span>
+        <h2 style="margin:0;font-size:1.1rem;">Clinical Trial Patient Matching Engine</h2>
+      </div>
+      <div style="display:flex;gap:1rem;font-size:0.9rem;">
+        <a href="/lead_opt.html" style="color:#cbd5e1;text-decoration:none;">Lead Opt & ADMET</a>
+        <a href="/spatial.html" style="color:#cbd5e1;text-decoration:none;">Spatial Omics</a>
+        <a href="/pgx.html" style="color:#cbd5e1;text-decoration:none;">PGx</a>
+        <a href="/agent.html" style="color:#cbd5e1;text-decoration:none;">Target Agent</a>
+      </div>
+    </header>
+
+    <main class="main-content" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
+      <div style="display:grid;grid-template-columns:360px 1fr;gap:2rem;">
+        <!-- Left Column: Patient Profile Form -->
+        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
+          <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Patient Clinical Vector</h3>
+          
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Patient ID</label>
+            <input type="text" id="patient-id" value="PT-1082" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1rem;">
+            <div>
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Age</label>
+              <input type="number" id="patient-age" value="54" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+            </div>
+            <div>
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Sex</label>
+              <select id="patient-sex" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Primary Indication</label>
+            <select id="patient-disease" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
+              <option value="melanoma">Cutaneous Melanoma</option>
+              <option value="nsclc">Non-Small Cell Lung Cancer (NSCLC)</option>
+              <option value="glioblastoma">Glioblastoma (GBM)</option>
+              <option value="sle">Systemic Lupus Erythematosus</option>
+              <option value="ra">Rheumatoid Arthritis</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">ECOG Performance Status</label>
+            <select id="patient-ecog" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
+              <option value="0">0 — Fully Active</option>
+              <option value="1" selected>1 — Restricted Strenuous</option>
+              <option value="2">2 — Ambulatory Capable</option>
+              <option value="3">3 — Limited Self-Care</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Biomarkers (JSON)</label>
+            <textarea id="patient-biomarkers" rows="3" style="width:100%;padding:0.5rem;font-family:monospace;font-size:0.85rem;border:1px solid #cbd5e1;border-radius:4px;">{"BRAF_V600E": true, "PD_L1": 0.70, "EGFR_L858R": false}</textarea>
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Prior Therapies (comma-separated)</label>
+            <input type="text" id="patient-prior-tx" value="Nivolumab, Ipilimumab" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+          </div>
+
+          <button id="run-matching-btn" style="width:100%;background:#0284c7;color:#fff;font-weight:600;padding:0.75rem;border:none;border-radius:6px;cursor:pointer;margin-bottom:0.75rem;">
+            🔍 Evaluate Matching Trials
+          </button>
+          <button id="synth-cohort-btn" style="width:100%;background:#f1f5f9;color:#334155;font-weight:600;padding:0.5rem;border:1px solid #cbd5e1;border-radius:6px;cursor:pointer;">
+            🎲 Generate Random Synthetic Patient
+          </button>
+        </section>
+
+        <!-- Right Column: Matched Trials Stream -->
+        <section>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+            <h3 style="margin:0;font-size:1.2rem;">Matched Clinical Protocols</h3>
+            <div id="matching-summary" style="font-size:0.9rem;color:#64748b;">Ready to match</div>
+          </div>
+
+          <div id="results-container">
+            <div style="background:#fff;padding:2rem;text-align:center;border-radius:8px;border:1px dashed #cbd5e1;color:#64748b;">
+              Configure patient features and click <strong>Evaluate Matching Trials</strong> to compute inclusion/exclusion screening and geographic distance scores.
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/patient_matching.js"></script>
+</body>
+</html>

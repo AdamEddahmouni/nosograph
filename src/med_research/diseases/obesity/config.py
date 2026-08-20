@@ -19,7 +19,7 @@ SYMPTOMS = [
     "systemic arterial hypertension",
     "mixed atherogenic dyslipidemia",
     "gastroesophageal reflux disease (GERD)",
-    "acanthosis nigricans in intertriginous folds"
+    "acanthosis nigricans in intertriginous folds",
 ]
 
 # ── Literature Mining ────────────────────────────────────────────────────
@@ -27,7 +27,7 @@ PUBMED_QUERIES = [
     "(obesity[Title/Abstract] OR overweight[Title/Abstract]) AND (treatment[Title/Abstract] OR therapeutics[Title/Abstract])",
     "(obesity[Title/Abstract]) AND (tirzepatide[Title/Abstract] OR semaglutide[Title/Abstract] OR GLP-1[Title/Abstract] OR GIP[Title/Abstract])",
     "(obesity[Title/Abstract]) AND (weight loss[Title/Abstract] OR satiety[Title/Abstract] OR adiposity[Title/Abstract])",
-    "(obesity[Title/Abstract]) AND (clinical trial[Title/Abstract])"
+    "(obesity[Title/Abstract]) AND (clinical trial[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms ────────────────────────────────
@@ -37,7 +37,7 @@ GWAS_SEARCH_TERMS = [
     "obesity",
     "waist-to-hip ratio",
     "body fat percentage",
-    "leptin"
+    "leptin",
 ]
 
 # ── CAR-T & Target Scoring Tables ───────────────────────────────────────
@@ -49,49 +49,39 @@ CAR_T_SCORES = {
         "MC4R": 10.0,
         "POMC": 9.5,
         "LEPR": 9.5,
-        "LEP": 9.0
+        "LEP": 9.0,
     },
     "ENERGY_EXPENDITURE_THERMOGENESIS": {
         "ADRB3": 9.0,
         "UCP1": 9.0,
         "PRKAA1": 9.0,
         "PPARA": 8.5,
-        "FGF21": 9.0
+        "FGF21": 9.0,
     },
     "LIPOGENESIS_FAT_STORAGE": {
         "FASN": 8.5,
         "ACACA": 8.5,
         "DGAT1": 8.0,
         "SREBF1": 8.0,
-        "PNLIP": 8.5
-    }
+        "PNLIP": 8.5,
+    },
 }
 
 # ── Drug Safety Risk Tiers ──────────────────────────────────────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-        "Phentermine-Topiramate in pregnancy (Teratogenicity, Tachycardia)"
-    ],
+    "high_risk": ["Phentermine-Topiramate in pregnancy (Teratogenicity, Tachycardia)"],
     "moderate_risk": [
         "GLP-1 / GIP agonists (GI adverse events, Cholelithiasis)",
-        "Bupropion-Naltrexone (Seizure threshold reduction)"
+        "Bupropion-Naltrexone (Seizure threshold reduction)",
     ],
-    "low_risk": [
-        "Setmelanotide in monogenic obesity",
-        "Orlistat (Local GI effects)"
-    ]
+    "low_risk": ["Setmelanotide in monogenic obesity", "Orlistat (Local GI effects)"],
 }
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
 DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "obesity-screening-v1",
-    "reference_drug_ids": [
-        "tirzepatide",
-        "semaglutide",
-        "setmelanotide",
-        "phentermine_topiramate"
-],
+    "reference_drug_ids": ["tirzepatide", "semaglutide", "setmelanotide", "phentermine_topiramate"],
     "weights": {
         "binding_estimate": 0.30,
         "druglikeness": 0.20,

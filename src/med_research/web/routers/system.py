@@ -137,7 +137,9 @@ async def disease_registry() -> DiseasesResponse:
     import time
 
     now = time.time()
-    if _DISEASE_REGISTRY_CACHE["response"] is not None and (now - _DISEASE_REGISTRY_CACHE["time"] < 60.0):
+    if _DISEASE_REGISTRY_CACHE["response"] is not None and (
+        now - _DISEASE_REGISTRY_CACHE["time"] < 60.0
+    ):
         return _DISEASE_REGISTRY_CACHE["response"]
 
     from med_research.diseases.base import Disease
@@ -191,8 +193,7 @@ async def disease_registry() -> DiseasesResponse:
             g_val = gap_index.get(disease_id, [])
 
             mod_cov = {
-                m: {**data, "disease_id": disease_id}
-                for m, data in default_blocked_modules.items()
+                m: {**data, "disease_id": disease_id} for m, data in default_blocked_modules.items()
             }
             core_cov_dict = {
                 "disease_id": disease_id,
@@ -374,7 +375,6 @@ async def corpus_status(
         "offset": offset,
         "diseases": paginated,
     }
-
 
 
 @router.get("/api/system/modules", response_model=PipelineModulesResponse)

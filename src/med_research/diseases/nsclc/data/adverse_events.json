@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "disease_id": "nsclc",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["dyspnea", "cough", "fatigue", "nausea", "rash", "diarrhea"],
+    "severe_ae": ["pneumonitis", "interstitial lung disease", "hepatotoxicity", "severe diarrhea"],
+    "disease_overlap_ae": ["dyspnea", "cough", "fatigue"],
+    "severity_burden": 6,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 0,
+    "black_box_warnings": [],
+    "monitoring_required": "Baseline pulmonary function, chest imaging, CBC, and hepatic panels.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "osimertinib",
+      "common_ae": ["diarrhea", "rash", "dry skin", "nail toxicity", "fatigue", "stomatitis"],
+      "severe_ae": ["interstitial lung disease / pneumonitis", "QTc interval prolongation", "cardiomyopathy", "keratitis"],
+      "disease_overlap_ae": ["cough", "dyspnea", "fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Periodic ECG, echocardiogram, pulmonary symptom monitoring."
+    },
+    {
+      "drug_id": "sotorasib",
+      "common_ae": ["diarrhea", "musculoskeletal pain", "nausea", "fatigue", "hepatotoxicity", "cough"],
+      "severe_ae": ["drug-induced liver injury", "interstitial lung disease"],
+      "disease_overlap_ae": ["cough", "dyspnea", "fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Liver function tests (ALT/AST/total bilirubin) every 3 weeks for initial cycles."
+    },
+    {
+      "drug_id": "alectinib",
+      "common_ae": ["constipation", "fatigue", "edema", "myalgia", "anemia", "rash"],
+      "severe_ae": ["hepatotoxicity", "interstitial lung disease", "severe bradycardia", "CPK elevation / myopathy"],
+      "disease_overlap_ae": ["fatigue", "edema"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Heart rate and blood pressure, CPK levels every 2 weeks, liver panels."
+    },
+    {
+      "drug_id": "pembrolizumab",
+      "common_ae": ["fatigue", "musculoskeletal pain", "decreased appetite", "pruritus", "cough"],
+      "severe_ae": ["immune-mediated pneumonitis", "immune-mediated colitis", "immune-mediated hepatitis"],
+      "disease_overlap_ae": ["cough", "dyspnea", "fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Thyroid panel, hepatic panel, renal panel, pulmonary symptoms."
+    },
+    {
+      "drug_id": "gefitinib",
+      "common_ae": ["skin rash", "diarrhea", "acne", "dry skin", "nausea", "vomiting"],
+      "severe_ae": ["interstitial lung disease", "severe hepatotoxicity", "gastrointestinal perforation"],
+      "disease_overlap_ae": ["cough", "dyspnea"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Periodic liver function tests, respiratory symptoms."
+    },
+    {
+      "drug_id": "bevacizumab",
+      "common_ae": ["epistaxis", "headache", "hypertension", "rhinitis", "proteinuria", "taste alteration"],
+      "severe_ae": ["gastrointestinal perforations", "wound healing complications", "severe arterial thromboembolic events", "hemoptysis"],
+      "disease_overlap_ae": ["cough", "hemoptysis"],
+      "severity_burden": 8,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Blood pressure checks, urine dipstick for protein, surgical wound monitoring."
+    }
+  ]
+}

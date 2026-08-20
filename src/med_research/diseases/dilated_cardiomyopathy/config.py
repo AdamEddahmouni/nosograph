@@ -38,7 +38,9 @@ PUBMED_QUERIES = [
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
-TRIAL_QUERY = "Dilated Cardiomyopathy OR Non-Ischemic Cardiomyopathy OR Idiopathic Dilated Cardiomyopathy"
+TRIAL_QUERY = (
+    "Dilated Cardiomyopathy OR Non-Ischemic Cardiomyopathy OR Idiopathic Dilated Cardiomyopathy"
+)
 GWAS_SEARCH_TERMS = ["Dilated cardiomyopathy", "Cardiomyopathy", "Heart failure"]
 
 # ── CAR-T Scoring Tables (used by car_t_predictor/predictor.py) ──────────

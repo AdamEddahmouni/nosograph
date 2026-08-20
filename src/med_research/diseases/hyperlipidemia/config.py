@@ -18,7 +18,7 @@ SYMPTOMS = [
     "angina pectoris on exertion",
     "intermittent claudication from peripheral artery disease",
     "eruptive cutaneous xanthomas in severe chylomicronemia",
-    "acute pancreatitis risk in severe hypertriglyceridemia"
+    "acute pancreatitis risk in severe hypertriglyceridemia",
 ]
 
 # ── Literature Mining ────────────────────────────────────────────────────
@@ -26,7 +26,7 @@ PUBMED_QUERIES = [
     "(hyperlipidemia[Title/Abstract] OR familial hypercholesterolemia[Title/Abstract] OR LDL-C[Title/Abstract]) AND (treatment[Title/Abstract] OR therapeutics[Title/Abstract])",
     "(hyperlipidemia[Title/Abstract]) AND (statin[Title/Abstract] OR PCSK9[Title/Abstract] OR ezetimibe[Title/Abstract] OR inclisiran[Title/Abstract])",
     "(hyperlipidemia[Title/Abstract]) AND (cardiovascular outcomes[Title/Abstract] OR atherosclerosis[Title/Abstract])",
-    "(hyperlipidemia[Title/Abstract]) AND (clinical trial[Title/Abstract])"
+    "(hyperlipidemia[Title/Abstract]) AND (clinical trial[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms ────────────────────────────────
@@ -36,7 +36,7 @@ GWAS_SEARCH_TERMS = [
     "total cholesterol",
     "triglycerides",
     "coronary artery disease",
-    "apolipoprotein B"
+    "apolipoprotein B",
 ]
 
 # ── CAR-T & Target Scoring Tables ───────────────────────────────────────
@@ -47,38 +47,32 @@ CAR_T_SCORES = {
         "HMGCR": 10.0,
         "APOB": 9.5,
         "ACLY": 9.5,
-        "NPC1L1": 9.5
+        "NPC1L1": 9.5,
     },
     "TRIGLYCERIDE_LIPOPROTEIN_LIPASE": {
         "ANGPTL3": 10.0,
         "APOC3": 9.5,
         "LPL": 9.5,
         "LPA": 9.5,
-        "PPARA": 9.0
+        "PPARA": 9.0,
     },
     "ATHEROGENIC_LIPID_METABOLISM": {
         "CETP": 8.5,
         "CYP7A1": 8.0,
         "SREBF2": 8.5,
         "ABCA1": 8.5,
-        "ABCG5": 8.0
-    }
+        "ABCG5": 8.0,
+    },
 }
 
 # ── Drug Safety Risk Tiers ──────────────────────────────────────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [
-        "Statin-Gemfibrozil combination in renal impairment (Severe Rhabdomyolysis)"
-    ],
+    "high_risk": ["Statin-Gemfibrozil combination in renal impairment (Severe Rhabdomyolysis)"],
     "moderate_risk": [
         "High-intensity Statins (Statin-associated muscle symptoms, hepatic transaminase elevations)",
-        "Bempedoic Acid (Hyperuricemia, tendon rupture)"
+        "Bempedoic Acid (Hyperuricemia, tendon rupture)",
     ],
-    "low_risk": [
-        "PCSK9 Monoclonal Antibodies (Evolocumab/Alirocumab)",
-        "Inclisiran",
-        "Ezetimibe"
-    ]
+    "low_risk": ["PCSK9 Monoclonal Antibodies (Evolocumab/Alirocumab)", "Inclisiran", "Ezetimibe"],
 }
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
 DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
@@ -90,8 +84,8 @@ SCREENING_PROFILE = {
         "evolocumab",
         "inclisiran",
         "ezetimibe",
-        "bempedoic_acid"
-],
+        "bempedoic_acid",
+    ],
     "weights": {
         "binding_estimate": 0.30,
         "druglikeness": 0.20,

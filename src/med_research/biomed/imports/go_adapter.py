@@ -166,9 +166,7 @@ class GOImportAdapter(ImportAdapter):
             )
             raw_synonyms = meta.get("synonyms", node.get("synonyms", []))
             synonyms: list[str] = [
-                str(s.get("val") if isinstance(s, dict) else s)
-                for s in raw_synonyms
-                if s
+                str(s.get("val") if isinstance(s, dict) else s) for s in raw_synonyms if s
             ]
             obsolete = bool(meta.get("deprecated", node.get("is_obsolete", False)))
             aspect = meta.get("aspect", node.get("namespace", "biological_process"))

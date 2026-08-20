@@ -38,7 +38,9 @@ PUBMED_QUERIES = [
 ]
 
 # ── Clinical trials / GWAS search terms (consumed by the web + bio modules) ─
-TRIAL_QUERY = "HIV Infection OR HIV-1 OR Human Immunodeficiency Virus OR Acquired Immunodeficiency Syndrome"
+TRIAL_QUERY = (
+    "HIV Infection OR HIV-1 OR Human Immunodeficiency Virus OR Acquired Immunodeficiency Syndrome"
+)
 GWAS_SEARCH_TERMS = ["HIV infection", "HIV-1", "Human immunodeficiency virus"]
 
 # ── CAR-T Scoring Tables (used by car_t_predictor/predictor.py) ──────────

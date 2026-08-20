@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spatial Transcriptomics Interactive Spot Viewer — med-research</title>
+  <link rel="stylesheet" href="/css/dashboard.css" />
+  <style>
+    #spatial-canvas {
+      background: #0f172a;
+      border-radius: 8px;
+      cursor: crosshair;
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .legend-color {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <div class="app-layout">
+    <header class="top-nav" style="background:#0f172a;color:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <a href="/" style="color:#38bdf8;text-decoration:none;font-weight:700;font-size:1.1rem;">← med-research Dashboard</a>
+        <span style="color:#64748b;">|</span>
+        <h2 style="margin:0;font-size:1.1rem;">Spatial Transcriptomics & Spot Co-Localization</h2>
+      </div>
+      <div style="display:flex;gap:1rem;font-size:0.9rem;">
+        <a href="/patient_matching.html" style="color:#cbd5e1;text-decoration:none;">Patient Matching</a>
+        <a href="/lead_opt.html" style="color:#cbd5e1;text-decoration:none;">Lead Opt & ADMET</a>
+        <a href="/pgx.html" style="color:#cbd5e1;text-decoration:none;">PGx</a>
+        <a href="/agent.html" style="color:#cbd5e1;text-decoration:none;">Target Agent</a>
+      </div>
+    </header>
+
+    <main class="main-content" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
+      <div style="display:grid;grid-template-columns:360px 1fr;gap:2rem;">
+        <!-- Left: Controls -->
+        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
+          <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Visium Spot Parameters</h3>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Disease / Tissue Sample</label>
+            <select id="spatial-disease" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
+              <option value="melanoma">Cutaneous Melanoma (Invasive Margin)</option>
+              <option value="nsclc">NSCLC (Tumor-Immune Microenvironment)</option>
+              <option value="glioblastoma">Glioblastoma (Perivascular Infiltration)</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Primary Gene (Moran's I Autocorrelation)</label>
+            <select id="primary-gene" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
+              <option value="CD274">CD274 (PD-L1 Immune Checkpoint)</option>
+              <option value="PDCD1">PDCD1 (PD-1 Infiltrating T-Cells)</option>
+              <option value="BRAF">BRAF (Driver Oncogene)</option>
+              <option value="CD8A">CD8A (Cytotoxic T-Lymphocytes)</option>
+              <option value="EGFR">EGFR (Receptor Tyrosine Kinase)</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Ligand-Receptor Pair</label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;">
+              <input type="text" id="ligand-gene" value="CD274" style="padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+              <input type="text" id="receptor-gene" value="PDCD1" style="padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+            </div>
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Interaction Radius (&mu;m)</label>
+            <input type="range" id="spatial-radius" min="50" max="300" value="150" style="width:100%;" />
+            <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:#64748b;">
+              <span>50 &mu;m</span>
+              <span id="radius-val">150 &mu;m</span>
+              <span>300 &mu;m</span>
+            </div>
+          </div>
+
+          <button id="load-spatial-btn" style="width:100%;background:#0284c7;color:#fff;font-weight:600;padding:0.75rem;border:none;border-radius:6px;cursor:pointer;margin-bottom:0.75rem;">
+            🔬 Load & Compute Spatial Metrics
+          </button>
+        </section>
+
+        <!-- Right: 2D Spot Canvas & Metrics -->
+        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+            <div>
+              <h3 style="margin:0;font-size:1.15rem;">2D Spatial Expression Map</h3>
+              <div id="spot-info" style="font-size:0.8rem;color:#64748b;margin-top:0.2rem;">Hover over spots for barcode & coordinates</div>
+            </div>
+            <div style="display:flex;gap:1rem;">
+              <div class="legend-item"><div class="legend-color" style="background:#3b82f6;"></div> Low</div>
+              <div class="legend-item"><div class="legend-color" style="background:#eab308;"></div> Mid</div>
+              <div class="legend-item"><div class="legend-color" style="background:#ef4444;"></div> High Expression</div>
+            </div>
+          </div>
+
+          <div style="text-align:center;">
+            <canvas id="spatial-canvas" width="600" height="420"></canvas>
+          </div>
+
+          <!-- Statistical Metrics Panel -->
+          <div id="spatial-metrics-panel" style="margin-top:1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div style="background:#f8fafc;padding:1rem;border-radius:6px;border:1px solid #e2e8f0;">
+              <div style="font-size:0.8rem;color:#64748b;">Moran's I Autocorrelation</div>
+              <div id="moran-score" style="font-size:1.4rem;font-weight:700;color:#0284c7;">--</div>
+              <div id="moran-pattern" style="font-size:0.8rem;color:#475569;margin-top:0.2rem;">Click 'Load & Compute'</div>
+            </div>
+            <div style="background:#f8fafc;padding:1rem;border-radius:6px;border:1px solid #e2e8f0;">
+              <div style="font-size:0.8rem;color:#64748b;">Ligand-Receptor Co-Localization</div>
+              <div id="lr-score" style="font-size:1.4rem;font-weight:700;color:#059669;">--</div>
+              <div id="lr-density" style="font-size:0.8rem;color:#475569;margin-top:0.2rem;">Spatial Interaction Strength</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/spatial.js"></script>
+</body>
+</html>

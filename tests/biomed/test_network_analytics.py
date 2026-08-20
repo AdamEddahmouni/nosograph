@@ -44,7 +44,11 @@ def test_build_multi_disease_network_shared_only():
     assert len(net_shared["elements"]["nodes"]) <= len(net_all["elements"]["nodes"])
     for n in net_shared["elements"]["nodes"]:
         d = n["data"]
-        assert d["type"] == "disease" or d.get("is_shared_hub") is True or d.get("is_repurposing_bridge") is True
+        assert (
+            d["type"] == "disease"
+            or d.get("is_shared_hub") is True
+            or d.get("is_repurposing_bridge") is True
+        )
 
 
 def test_api_multi_network_endpoint():

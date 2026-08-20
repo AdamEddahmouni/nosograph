@@ -32,7 +32,9 @@ def predict_bbb_permeability(
     """
     log_bb = round(0.152 * logp - 0.0148 * psa + 0.139, 3)
 
-    if (log_bb >= -0.30 and psa <= 70.0 and hbd <= 3 and mw <= 450.0) or (log_bb >= 0.0 and psa <= 90.0):
+    if (log_bb >= -0.30 and psa <= 70.0 and hbd <= 3 and mw <= 450.0) or (
+        log_bb >= 0.0 and psa <= 90.0
+    ):
         category = "High (CNS Penetrant)"
         cns_active = True
     elif log_bb >= -0.80 and psa <= 120.0 and hbd <= 5:
@@ -65,7 +67,11 @@ def predict_cyp450_profile(
     inhibited: list[str] = []
 
     # Deterministic assignment based on chemical classification
-    if "biologic" in drug_type.lower() or "antibody" in drug_type.lower() or "peptide" in drug_type.lower():
+    if (
+        "biologic" in drug_type.lower()
+        or "antibody" in drug_type.lower()
+        or "peptide" in drug_type.lower()
+    ):
         inhibited = []
         ddi_liability = "Low (Non-CYP Cleared Biologic)"
     else:
@@ -160,7 +166,11 @@ def analyze_admet(
         cyp_profile = cyp_eval["inhibited_isozymes"]
 
         # Quantitative hERG risk
-        herg_eval = predict_herg_toxicity(logp=logp, mw=mw, basic_nitrogen_count=1 if "amine" in drug.get("mechanism", "").lower() else 0)
+        herg_eval = predict_herg_toxicity(
+            logp=logp,
+            mw=mw,
+            basic_nitrogen_count=1 if "amine" in drug.get("mechanism", "").lower() else 0,
+        )
         herg = herg_eval["herg_risk_category"]
 
         lipinski = 0
@@ -173,7 +183,12 @@ def analyze_admet(
         if psa > 140:
             lipinski += 1
 
-        base_score = 0.90 - (lipinski * 0.12) - (0.15 if herg == "High" else 0.0) - (0.10 if len(cyp_profile) >= 3 else 0.0)
+        base_score = (
+            0.90
+            - (lipinski * 0.12)
+            - (0.15 if herg == "High" else 0.0)
+            - (0.10 if len(cyp_profile) >= 3 else 0.0)
+        )
         composite_score = round(max(0.20, min(0.98, base_score)), 2)
 
         tier = (

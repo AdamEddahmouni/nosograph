@@ -181,7 +181,9 @@ def get_target_3d_structure(
 
     pdb_id = f"AF-{uniprot_id}-F1"
     cif_url = f"https://alphafold.ebi.ac.uk/files/AF-{uniprot_id}-F1-model_v4.cif"
-    pae_url = f"https://alphafold.ebi.ac.uk/files/AF-{uniprot_id}-F1-predicted_aligned_error_v4.json"
+    pae_url = (
+        f"https://alphafold.ebi.ac.uk/files/AF-{uniprot_id}-F1-predicted_aligned_error_v4.json"
+    )
 
     return {
         "gene_id": target_id,
@@ -239,4 +241,3 @@ def analyze_structure_3d(
         "mean_plddt": mean_plddt,
         "total_structures": len(structures),
     }
-

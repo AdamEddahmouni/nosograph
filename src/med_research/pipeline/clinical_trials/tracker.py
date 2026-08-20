@@ -260,8 +260,13 @@ def _primary_phase(phases: list) -> str:
 def parse_eligibility_criteria(criteria_text: str) -> dict[str, Any]:
     """Parse raw clinical trial eligibility text into structured inclusion/exclusion criteria."""
     import re
-    min_age_match = re.search(r"Minimum Age:\s*(\d+\s*(?:Years|Months|Days)?)", criteria_text, re.IGNORECASE)
-    max_age_match = re.search(r"Maximum Age:\s*(\d+\s*(?:Years|Months|Days)?)", criteria_text, re.IGNORECASE)
+
+    min_age_match = re.search(
+        r"Minimum Age:\s*(\d+\s*(?:Years|Months|Days)?)", criteria_text, re.IGNORECASE
+    )
+    max_age_match = re.search(
+        r"Maximum Age:\s*(\d+\s*(?:Years|Months|Days)?)", criteria_text, re.IGNORECASE
+    )
     gender_match = re.search(r"Sex:\s*([A-Za-z]+)", criteria_text, re.IGNORECASE)
 
     min_age = min_age_match.group(1).strip() if min_age_match else "18 Years"
@@ -308,7 +313,9 @@ def forecast_trial_progression(primary_phase: str) -> dict[str, Any]:
         "PHASE4": {"duration_years": 2.0, "transition_prob": 0.95, "ptrs_to_approval": 0.95},
     }
     phase_key = primary_phase.upper()
-    info = phase_metrics.get(phase_key, {"duration_years": 2.0, "transition_prob": 0.45, "ptrs_to_approval": 0.15})
+    info = phase_metrics.get(
+        phase_key, {"duration_years": 2.0, "transition_prob": 0.45, "ptrs_to_approval": 0.15}
+    )
 
     return {
         "current_phase": primary_phase,

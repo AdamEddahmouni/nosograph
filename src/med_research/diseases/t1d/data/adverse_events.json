@@ -5,12 +5,169 @@
   "coverage_level": "full",
   "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
   "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
-  "limitations": ["Safety scores are research heuristics, not individualized clinical risk assessments.", "Insulin and glucose-lowering risks depend heavily on dose, meals, monitoring, and patient context."],
-  "default_profile": {"common_ae": ["fatigue", "headache", "injection site reactions", "infection risk"], "severe_ae": ["severe hypoglycemia", "serious infections", "hypersensitivity reactions"], "disease_overlap_ae": ["fatigue", "weight loss", "blurred vision"], "severity_burden": 5, "chronic_use_safety": 5, "disease_specific_risk": 0, "black_box_warnings": [], "monitoring_required": "Review glucose, hypoglycemia, infection, and product-specific monitoring.", "evidence_grade": "curated_class_pattern"},
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments.",
+    "Insulin and glucose-lowering risks depend heavily on dose, meals, monitoring, and patient context."
+  ],
+  "default_profile": {
+    "common_ae": ["fatigue", "headache", "injection site reactions", "infection risk"],
+    "severe_ae": ["severe hypoglycemia", "serious infections", "hypersensitivity reactions"],
+    "disease_overlap_ae": ["fatigue", "weight loss", "blurred vision"],
+    "severity_burden": 5,
+    "chronic_use_safety": 5,
+    "disease_specific_risk": 0,
+    "black_box_warnings": [],
+    "monitoring_required": "Review glucose, hypoglycemia, infection, and product-specific monitoring.",
+    "evidence_grade": "curated_class_pattern"
+  },
   "profiles": [
-    {"drug_id": "insulin_glargine", "common_ae": ["hypoglycemia", "injection site reactions", "weight gain", "edema"], "severe_ae": ["severe hypoglycemia", "hypokalemia", "hypersensitivity"], "disease_overlap_ae": ["fatigue", "blurred vision"], "severity_burden": 6, "chronic_use_safety": 8, "disease_specific_risk": 1, "monitoring_required": "Glucose and hypoglycemia monitoring with dose adjustment."},
-    {"drug_id": "teplizumab", "common_ae": ["rash", "headache", "lymphopenia", "nausea"], "severe_ae": ["cytokine release syndrome", "serious infections", "severe lymphopenia", "hypersensitivity"], "disease_overlap_ae": ["fatigue", "weight loss"], "severity_burden": 7, "chronic_use_safety": 5, "monitoring_required": "CBC, liver function, infection screening, and infusion monitoring."},
-    {"drug_id": "abatacept", "common_ae": ["headache", "upper respiratory infection", "nausea", "infusion reactions"], "severe_ae": ["serious infections", "hypersensitivity", "malignancy"], "disease_overlap_ae": ["fatigue"], "severity_burden": 5, "chronic_use_safety": 6, "monitoring_required": "Infection screening and monitoring; T1D use is investigational."},
-    {"drug_id": "rituximab", "common_ae": ["infusion reactions", "fever", "chills", "fatigue"], "severe_ae": ["serious infections", "hepatitis B reactivation", "progressive multifocal leukoencephalopathy"], "disease_overlap_ae": ["fatigue"], "severity_burden": 7, "chronic_use_safety": 5, "monitoring_required": "Hepatitis B screening, CBC, immunoglobulins, and infection monitoring."}
+    {
+      "drug_id": "teplizumab",
+      "common_ae": ["rash", "headache", "lymphopenia", "nausea"],
+      "severe_ae": ["cytokine release syndrome", "serious infections", "severe lymphopenia", "hypersensitivity"],
+      "disease_overlap_ae": ["fatigue", "weight loss"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC, liver function, infection screening, and infusion monitoring."
+    },
+    {
+      "drug_id": "insulin_glargine",
+      "common_ae": ["hypoglycemia", "injection site reactions", "weight gain", "edema"],
+      "severe_ae": ["severe hypoglycemia", "hypokalemia", "hypersensitivity"],
+      "disease_overlap_ae": ["fatigue", "blurred vision"],
+      "severity_burden": 6,
+      "chronic_use_safety": 8,
+      "disease_specific_risk": 1,
+      "monitoring_required": "Glucose and hypoglycemia monitoring with dose adjustment."
+    },
+    {
+      "drug_id": "insulin_aspart",
+      "common_ae": ["hypoglycemia", "injection site reactions", "weight gain"],
+      "severe_ae": ["severe hypoglycemia", "hypokalemia", "hypersensitivity"],
+      "disease_overlap_ae": ["fatigue", "blurred vision"],
+      "severity_burden": 6,
+      "chronic_use_safety": 8,
+      "disease_specific_risk": 1,
+      "monitoring_required": "Blood glucose monitoring and carb counting."
+    },
+    {
+      "drug_id": "insulin_lispro",
+      "common_ae": ["hypoglycemia", "injection site reactions", "lipodystrophy"],
+      "severe_ae": ["severe hypoglycemia", "hypokalemia", "anaphylaxis"],
+      "disease_overlap_ae": ["fatigue", "blurred vision"],
+      "severity_burden": 6,
+      "chronic_use_safety": 8,
+      "disease_specific_risk": 1,
+      "monitoring_required": "Pre/postprandial glucose tracking."
+    },
+    {
+      "drug_id": "insulin_degludec",
+      "common_ae": ["hypoglycemia", "weight gain", "injection site discomfort"],
+      "severe_ae": ["severe hypoglycemia", "hypokalemia"],
+      "disease_overlap_ae": ["fatigue", "blurred vision"],
+      "severity_burden": 5,
+      "chronic_use_safety": 8,
+      "disease_specific_risk": 1,
+      "monitoring_required": "Fasting blood glucose monitoring."
+    },
+    {
+      "drug_id": "pramlintide",
+      "common_ae": ["nausea", "vomiting", "anorexia", "headache"],
+      "severe_ae": ["severe insulin-induced hypoglycemia", "allergic reactions"],
+      "disease_overlap_ae": ["nausea and abdominal pain", "weight loss"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Reduce mealtime insulin by 50% upon initiation; monitor postprandial glucose."
+    },
+    {
+      "drug_id": "abatacept",
+      "common_ae": ["headache", "upper respiratory infection", "nausea", "infusion reactions"],
+      "severe_ae": ["serious infections", "hypersensitivity", "malignancy"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Infection screening and monitoring; T1D use is investigational."
+    },
+    {
+      "drug_id": "rituximab",
+      "common_ae": ["infusion reactions", "fever", "chills", "fatigue"],
+      "severe_ae": ["serious infections", "hepatitis B reactivation", "progressive multifocal leukoencephalopathy"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Hepatitis B screening, CBC, immunoglobulins, and infection monitoring."
+    },
+    {
+      "drug_id": "otelixizumab",
+      "common_ae": ["flu-like symptoms", "fever", "headache", "transient rash"],
+      "severe_ae": ["EBV reactivation", "cytokine release syndrome", "lymphopenia"],
+      "disease_overlap_ae": ["fatigue", "fever"],
+      "severity_burden": 7,
+      "chronic_use_safety": 4,
+      "monitoring_required": "EBV viral load, CBC, temperature."
+    },
+    {
+      "drug_id": "golimumab",
+      "common_ae": ["upper respiratory infection", "injection site erythema", "headache"],
+      "severe_ae": ["serious opportunistic infections", "TB reactivation", "malignancy"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "TB screening, Hepatitis B screening, infection signs."
+    },
+    {
+      "drug_id": "alefacept",
+      "common_ae": ["lymphopenia", "headache", "dizziness", "chills"],
+      "severe_ae": ["severe CD4+ T cell lymphopenia", "serious infections", "malignancy"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 4,
+      "monitoring_required": "CD4+ T lymphocyte counts bi-weekly during therapy."
+    },
+    {
+      "drug_id": "anti_thymocyte_globulin",
+      "common_ae": ["fever", "chills", "myalgia", "leukopenia"],
+      "severe_ae": ["cytokine release syndrome", "serum sickness", "severe thrombocytopenia", "anaphylaxis"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 8,
+      "chronic_use_safety": 4,
+      "monitoring_required": "Continuous vital sign monitoring during infusion, pre-medication with antihistamines/steroids."
+    },
+    {
+      "drug_id": "low_dose_il2",
+      "common_ae": ["injection site erythema", "transient malaise", "mild eosinophilia"],
+      "severe_ae": ["capillary leak syndrome (rare at low doses)", "severe hypersensitivity"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 4,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Treg frequency monitoring, routine hematology."
+    },
+    {
+      "drug_id": "verapamil",
+      "common_ae": ["constipation", "dizziness", "headache", "peripheral edema"],
+      "severe_ae": ["bradycardia", "heart block", "hypotension"],
+      "disease_overlap_ae": ["dizziness", "fatigue"],
+      "severity_burden": 4,
+      "chronic_use_safety": 8,
+      "monitoring_required": "Blood pressure, ECG heart rate monitoring."
+    },
+    {
+      "drug_id": "gad_alum",
+      "common_ae": ["local injection site pain", "mild lymph node tenderness"],
+      "severe_ae": ["systemic hypersensitivity reaction"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 3,
+      "chronic_use_safety": 8,
+      "monitoring_required": "HLA genotype verification (DR3-DQ2 positive), injection site inspection."
+    },
+    {
+      "drug_id": "ustekinumab",
+      "common_ae": ["nasopharyngitis", "headache", "fatigue", "injection site erythema"],
+      "severe_ae": ["serious bacterial/fungal infections", "malignancy", "PRES syndrome"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "TB screening before therapy, monitor for signs of infection."
+    }
   ]
 }

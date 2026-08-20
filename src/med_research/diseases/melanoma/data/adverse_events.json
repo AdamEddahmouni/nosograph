@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "disease_id": "melanoma",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["fatigue", "rash", "nausea", "diarrhea", "pruritus"],
+    "severe_ae": ["colitis", "pneumonitis", "hepatitis", "severe skin toxicities"],
+    "disease_overlap_ae": ["fatigue", "rash", "skin lesions"],
+    "severity_burden": 6,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 0,
+    "black_box_warnings": [],
+    "monitoring_required": "Review liver function tests, thyroid function, skin exams, and symptom logs.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "vemurafenib",
+      "common_ae": ["arthralgia", "rash", "fatigue", "photosensitivity", "nausea", "alopecia"],
+      "severe_ae": ["cutaneous squamous cell carcinoma", "keratoacanthoma", "QT prolongation", "hepatotoxicity"],
+      "disease_overlap_ae": ["rash", "fatigue", "skin lesion"],
+      "severity_burden": 7,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Dermatologic evaluation every 2 months, ECG monitoring, LFTs."
+    },
+    {
+      "drug_id": "dabrafenib",
+      "common_ae": ["hyperkeratosis", "headache", "pyrexia", "arthralgia", "papilloma"],
+      "severe_ae": ["new primary cutaneous malignancies", "febrile reactions", "cardiomyopathy", "uveitis"],
+      "disease_overlap_ae": ["rash", "skin lesion", "fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Skin exams, echocardiogram for LVEF, temperature monitoring."
+    },
+    {
+      "drug_id": "trametinib",
+      "common_ae": ["rash", "diarrhea", "fatigue", "peripheral edema", "nausea", "dermatitis acneiform"],
+      "severe_ae": ["cardiomyopathy", "retinal pigment epithelial detachment", "interstitial lung disease", "VTE"],
+      "disease_overlap_ae": ["fatigue", "rash"],
+      "severity_burden": 7,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Ophthalmologic exams, LVEF, baseline pulmonary status."
+    },
+    {
+      "drug_id": "pembrolizumab",
+      "common_ae": ["fatigue", "musculoskeletal pain", "decreased appetite", "pruritus", "diarrhea", "rash"],
+      "severe_ae": ["immune-mediated pneumonitis", "immune-mediated colitis", "immune-mediated hepatitis", "endocrinopathies"],
+      "disease_overlap_ae": ["fatigue", "rash"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Thyroid panel, hepatic panel, renal panel, pulmonary symptoms."
+    },
+    {
+      "drug_id": "nivolumab",
+      "common_ae": ["fatigue", "rash", "musculoskeletal pain", "pruritus", "diarrhea", "nausea"],
+      "severe_ae": ["immune-mediated pneumonitis", "immune-mediated colitis", "immune-mediated encephalitis", "nephritis"],
+      "disease_overlap_ae": ["fatigue", "rash"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "LFTs, creatinine, thyroid hormones, adrenocorticotropic monitoring."
+    },
+    {
+      "drug_id": "ipilimumab",
+      "common_ae": ["fatigue", "diarrhea", "pruritus", "rash", "nausea", "decreased appetite"],
+      "severe_ae": ["immune-mediated enterocolitis", "hypophysitis", "adrenal insufficiency", "severe dermatitis"],
+      "disease_overlap_ae": ["fatigue", "rash"],
+      "severity_burden": 8,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Stool frequency logs, pituitary hormone profiling, LFTs."
+    }
+  ]
+}

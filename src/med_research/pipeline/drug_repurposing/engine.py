@@ -153,59 +153,170 @@ DISEASE_TARGET_TISSUES: dict[str, list[str]] = {
     "sle": ["Whole Blood", "Spleen", "Cells - EBV-transformed lymphocytes"],
     "ra": ["Whole Blood", "Spleen", "Artery - Tibial", "Muscle - Skeletal"],
     "ms": ["Brain - Cortex", "Brain - Frontal Cortex (BA9)", "Whole Blood", "Spleen"],
-    "ibd": ["Colon - Transverse", "Colon - Sigmoid", "Small Intestine - Terminal Ileum", "Whole Blood"],
+    "ibd": [
+        "Colon - Transverse",
+        "Colon - Sigmoid",
+        "Small Intestine - Terminal Ileum",
+        "Whole Blood",
+    ],
     "ss": ["Minor Salivary Gland", "Whole Blood", "Spleen"],
     "ssc": ["Skin - Sun Exposed (Lower leg)", "Skin - Not Sun Exposed (Suprapubic)", "Whole Blood"],
     "t1d": ["Pancreas", "Whole Blood", "Spleen"],
     "ad": ["Brain - Cortex", "Brain - Hippocampus", "Brain - Frontal Cortex (BA9)"],
     "pd": ["Brain - Substantia nigra", "Brain - Caudate (basal ganglia)", "Brain - Cortex"],
     "als": ["Brain - Spinal cord (cervical c-1)", "Brain - Cortex", "Muscle - Skeletal"],
-    "huntington_disease": ["Brain - Caudate (basal ganglia)", "Brain - Putamen (basal ganglia)", "Brain - Cortex"],
-    "colorectal_cancer": ["Colon - Sigmoid", "Colon - Transverse", "Small Intestine - Terminal Ileum"],
+    "huntington_disease": [
+        "Brain - Caudate (basal ganglia)",
+        "Brain - Putamen (basal ganglia)",
+        "Brain - Cortex",
+    ],
+    "colorectal_cancer": [
+        "Colon - Sigmoid",
+        "Colon - Transverse",
+        "Small Intestine - Terminal Ileum",
+    ],
     "acute_myeloid_leukemia": ["Whole Blood", "Spleen", "Cells - EBV-transformed lymphocytes"],
     "glioblastoma": ["Brain - Cortex", "Brain - Frontal Cortex (BA9)", "Brain - Hippocampus"],
-    "melanoma": ["Skin - Sun Exposed (Lower leg)", "Skin - Not Sun Exposed (Suprapubic)", "Whole Blood"],
+    "melanoma": [
+        "Skin - Sun Exposed (Lower leg)",
+        "Skin - Not Sun Exposed (Suprapubic)",
+        "Whole Blood",
+    ],
     "breast_cancer": ["Breast - Mammary Tissue", "Adipose - Subcutaneous", "Whole Blood"],
     "gaucher_disease": ["Spleen", "Liver", "Whole Blood"],
-    "fabry_disease": ["Kidney - Cortex", "Heart - Left Ventricle", "Artery - Aorta", "Skin - Sun Exposed (Lower leg)"],
+    "fabry_disease": [
+        "Kidney - Cortex",
+        "Heart - Left Ventricle",
+        "Artery - Aorta",
+        "Skin - Sun Exposed (Lower leg)",
+    ],
     "phenylketonuria": ["Liver", "Brain - Cortex", "Whole Blood"],
-    "wilson_disease": ["Liver", "Brain - Caudate (basal ganglia)", "Brain - Cortex", "Kidney - Cortex"],
+    "wilson_disease": [
+        "Liver",
+        "Brain - Caudate (basal ganglia)",
+        "Brain - Cortex",
+        "Kidney - Cortex",
+    ],
     "copd": ["Lung", "Whole Blood"],
     "asthma": ["Lung", "Whole Blood"],
     "gout": ["Whole Blood", "Liver", "Kidney - Cortex"],
     "pso": ["Skin - Sun Exposed (Lower leg)", "Skin - Not Sun Exposed (Suprapubic)", "Whole Blood"],
     "psa": ["Skin - Sun Exposed (Lower leg)", "Whole Blood", "Muscle - Skeletal"],
     "t2d": ["Pancreas", "Liver", "Adipose - Subcutaneous", "Muscle - Skeletal"],
-    "coronary_artery_disease": ["Artery - Coronary", "Artery - Aorta", "Heart - Left Ventricle", "Whole Blood"],
+    "coronary_artery_disease": [
+        "Artery - Coronary",
+        "Artery - Aorta",
+        "Heart - Left Ventricle",
+        "Whole Blood",
+    ],
     "heart_failure": ["Heart - Left Ventricle", "Heart - Atrial Appendage", "Lung", "Whole Blood"],
-    "dilated_cardiomyopathy": ["Heart - Left Ventricle", "Heart - Atrial Appendage", "Muscle - Skeletal"],
-    "essential_hypertension": ["Kidney - Cortex", "Artery - Aorta", "Artery - Tibial", "Adrenal Gland", "Whole Blood"],
+    "dilated_cardiomyopathy": [
+        "Heart - Left Ventricle",
+        "Heart - Atrial Appendage",
+        "Muscle - Skeletal",
+    ],
+    "essential_hypertension": [
+        "Kidney - Cortex",
+        "Artery - Aorta",
+        "Artery - Tibial",
+        "Adrenal Gland",
+        "Whole Blood",
+    ],
     "coronary_atherosclerosis": ["Artery - Coronary", "Artery - Aorta", "Whole Blood", "Liver"],
-    "atherosclerosis": ["Artery - Coronary", "Artery - Aorta", "Artery - Tibial", "Whole Blood", "Liver"],
+    "atherosclerosis": [
+        "Artery - Coronary",
+        "Artery - Aorta",
+        "Artery - Tibial",
+        "Whole Blood",
+        "Liver",
+    ],
     "tuberculosis": ["Lung", "Spleen", "Whole Blood", "Cells - EBV-transformed lymphocytes"],
-    "hiv": ["Whole Blood", "Spleen", "Cells - EBV-transformed lymphocytes", "Small Intestine - Terminal Ileum"],
-    "hiv_1_infection": ["Whole Blood", "Spleen", "Cells - EBV-transformed lymphocytes", "Small Intestine - Terminal Ileum"],
+    "hiv": [
+        "Whole Blood",
+        "Spleen",
+        "Cells - EBV-transformed lymphocytes",
+        "Small Intestine - Terminal Ileum",
+    ],
+    "hiv_1_infection": [
+        "Whole Blood",
+        "Spleen",
+        "Cells - EBV-transformed lymphocytes",
+        "Small Intestine - Terminal Ileum",
+    ],
     "lupus_nephritis": ["Kidney - Cortex", "Kidney - Medulla", "Whole Blood", "Spleen"],
     "sjogren_syndrome": ["Minor Salivary Gland", "Whole Blood", "Spleen"],
-    "major_depressive_disorder": ["Brain - Frontal Cortex (BA9)", "Brain - Cortex", "Brain - Hippocampus", "Whole Blood"],
-    "schizophrenia": ["Brain - Frontal Cortex (BA9)", "Brain - Cortex", "Brain - Caudate (basal ganglia)", "Whole Blood"],
-    "bipolar_disorder": ["Brain - Frontal Cortex (BA9)", "Brain - Cortex", "Brain - Hippocampus", "Whole Blood"],
+    "major_depressive_disorder": [
+        "Brain - Frontal Cortex (BA9)",
+        "Brain - Cortex",
+        "Brain - Hippocampus",
+        "Whole Blood",
+    ],
+    "schizophrenia": [
+        "Brain - Frontal Cortex (BA9)",
+        "Brain - Cortex",
+        "Brain - Caudate (basal ganglia)",
+        "Whole Blood",
+    ],
+    "bipolar_disorder": [
+        "Brain - Frontal Cortex (BA9)",
+        "Brain - Cortex",
+        "Brain - Hippocampus",
+        "Whole Blood",
+    ],
     "epilepsy": ["Brain - Cortex", "Brain - Hippocampus", "Brain - Frontal Cortex (BA9)"],
     "non_alcoholic_fatty_liver_disease": ["Liver", "Adipose - Subcutaneous", "Whole Blood"],
     "obesity": ["Adipose - Subcutaneous", "Adipose - Visceral (Omentum)", "Liver", "Pancreas"],
     "hyperlipidemia": ["Liver", "Artery - Coronary", "Artery - Aorta", "Whole Blood"],
-    "scleroderma": ["Skin - Not Sun Exposed (Suprapubic)", "Skin - Sun Exposed (Lower leg)", "Lung", "Kidney - Cortex"],
-    "systemic_scleroderma": ["Skin - Not Sun Exposed (Suprapubic)", "Skin - Sun Exposed (Lower leg)", "Lung", "Kidney - Cortex"],
-    "alopecia_areata": ["Skin - Sun Exposed (Lower leg)", "Skin - Not Sun Exposed (Suprapubic)", "Whole Blood", "Spleen"],
-    "vitiligo": ["Skin - Sun Exposed (Lower leg)", "Skin - Not Sun Exposed (Suprapubic)", "Whole Blood"],
-    "celiac_disease": ["Small Intestine - Terminal Ileum", "Colon - Transverse", "Whole Blood", "Spleen"],
+    "scleroderma": [
+        "Skin - Not Sun Exposed (Suprapubic)",
+        "Skin - Sun Exposed (Lower leg)",
+        "Lung",
+        "Kidney - Cortex",
+    ],
+    "systemic_scleroderma": [
+        "Skin - Not Sun Exposed (Suprapubic)",
+        "Skin - Sun Exposed (Lower leg)",
+        "Lung",
+        "Kidney - Cortex",
+    ],
+    "alopecia_areata": [
+        "Skin - Sun Exposed (Lower leg)",
+        "Skin - Not Sun Exposed (Suprapubic)",
+        "Whole Blood",
+        "Spleen",
+    ],
+    "vitiligo": [
+        "Skin - Sun Exposed (Lower leg)",
+        "Skin - Not Sun Exposed (Suprapubic)",
+        "Whole Blood",
+    ],
+    "celiac_disease": [
+        "Small Intestine - Terminal Ileum",
+        "Colon - Transverse",
+        "Whole Blood",
+        "Spleen",
+    ],
     # Wave 4: Oncology & Rare Neuromuscular
     "nsclc": ["Lung", "Whole Blood", "Spleen"],
-    "triple_neg_breast_cancer": ["Breast - Mammary Tissue", "Adipose - Subcutaneous", "Whole Blood"],
+    "triple_neg_breast_cancer": [
+        "Breast - Mammary Tissue",
+        "Adipose - Subcutaneous",
+        "Whole Blood",
+    ],
     "pancreatic_ductal_adenocarcinoma": ["Pancreas", "Liver", "Whole Blood"],
     "cystic_fibrosis": ["Lung", "Pancreas", "Small Intestine - Terminal Ileum", "Whole Blood"],
-    "sickle_cell_anemia": ["Whole Blood", "Spleen", "Cells - EBV-transformed lymphocytes", "Heart - Left Ventricle"],
-    "spinal_muscular_atrophy": ["Brain - Spinal cord (cervical c-1)", "Muscle - Skeletal", "Brain - Cortex", "Whole Blood"],
+    "sickle_cell_anemia": [
+        "Whole Blood",
+        "Spleen",
+        "Cells - EBV-transformed lymphocytes",
+        "Heart - Left Ventricle",
+    ],
+    "spinal_muscular_atrophy": [
+        "Brain - Spinal cord (cervical c-1)",
+        "Muscle - Skeletal",
+        "Brain - Cortex",
+        "Whole Blood",
+    ],
 }
 
 
@@ -244,7 +355,9 @@ def compute_variant_functional_score(
             "variant_id": rs_id,
             "consequence": consequence,
             "odds_ratio": or_val,
-            "clinical_significance": "Pathogenic / Risk Allele" if variant_score >= 7.0 else "Risk Factor",
+            "clinical_significance": "Pathogenic / Risk Allele"
+            if variant_score >= 7.0
+            else "Risk Factor",
             "source": "GWAS Catalog & Functional Annotations",
         }
     ]
@@ -260,17 +373,21 @@ def compute_tissue_expression_score(
     Compute GTEx baseline tissue expression score (0-10), top expressing tissues, and concordance.
     """
     hash_val = sum(ord(c) for c in gene_id) + sum(ord(c) for c in disease_id)
-    target_tissues = DISEASE_TARGET_TISSUES.get(
-        disease_id, ["Whole Blood", "Spleen", "Liver"]
-    )
+    target_tissues = DISEASE_TARGET_TISSUES.get(disease_id, ["Whole Blood", "Spleen", "Liver"])
 
     tpm_base = round(15.0 + (hash_val % 75) + ((hash_val * 7) % 10) / 10.0, 1)
     concordance = round(min(0.98, max(0.40, 0.55 + (hash_val % 40) / 100.0)), 2)
 
     top_tissues = [
         {"tissue": target_tissues[0], "median_tpm": tpm_base},
-        {"tissue": target_tissues[1] if len(target_tissues) > 1 else "Whole Blood", "median_tpm": round(tpm_base * 0.75, 1)},
-        {"tissue": target_tissues[2] if len(target_tissues) > 2 else "Spleen", "median_tpm": round(tpm_base * 0.55, 1)},
+        {
+            "tissue": target_tissues[1] if len(target_tissues) > 1 else "Whole Blood",
+            "median_tpm": round(tpm_base * 0.75, 1),
+        },
+        {
+            "tissue": target_tissues[2] if len(target_tissues) > 2 else "Spleen",
+            "median_tpm": round(tpm_base * 0.55, 1),
+        },
     ]
 
     expr_score = round(min(9.8, max(3.5, concordance * 10.0)), 1)

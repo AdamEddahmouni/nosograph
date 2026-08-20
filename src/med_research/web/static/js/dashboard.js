@@ -962,6 +962,25 @@ function downloadWorkspaceJson() {
     window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
+function generateDossier() {
+    const resultDiv = document.getElementById('dossier-result');
+    if (!resultDiv) return;
+    resultDiv.innerHTML = '<span class="spinner"></span> Generating dossier...';
+    apiFetch('/api/dossier/generate')
+        .then(data => {
+            const { pdf_url, markdown_url, timestamp } = data;
+            const links = `
+                <a href="${pdf_url}" target="_blank" class="btn btn-primary" style="margin-right:8px;">Download PDF</a>
+                <a href="${markdown_url}" target="_blank" class="btn btn-primary" style="margin-right:8px;">Download Markdown</a>
+                <span>Generated at ${timestamp}</span>
+            `;
+            resultDiv.innerHTML = links;
+        })
+        .catch(err => {
+            resultDiv.innerHTML = `<span class="error">Error: ${err.message}</span>`;
+        });
+}
+
 let workspaceTrendData = { runs: [], drug_series: [], target_series: [] };
 
 function populateWorkspaceTrendCandidates() {
@@ -4492,7 +4511,7 @@ function setupDashboardActions() {
             case 'workspace-graph-fit': fitWorkspaceEvidenceGraph(); break;
             case 'workspace-graph-refresh': reloadWorkspaceEvidenceGraph(); break;
             case 'module-run': void runModule(control.dataset.module); break;
-            case 'scroll-explorer': scrollToExplorer(); break;
+            case 'generate-dossier': void generateDossier(); break;
             case 'network-analysis': void runNetworkAnalysis(); break;
             case 'cross-disease': void runCrossDisease(); break;
             case 'module-comparison': void runModuleComparison(); break;

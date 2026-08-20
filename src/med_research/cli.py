@@ -2371,9 +2371,7 @@ def cmd_live(args):
             t_res = chembl.search_target(target)
             if t_res and t_res.get("target_chembl_id"):
                 target_id = str(t_res.get("target_chembl_id"))
-                print(
-                    f"\n[ChEMBL] Target ID: {target_id} ({t_res.get('pref_name')})"
-                )
+                print(f"\n[ChEMBL] Target ID: {target_id} ({t_res.get('pref_name')})")
                 acts = chembl.get_target_bioactivities(target_id, limit=3)
                 print("[ChEMBL] Top Bioactivities:")
                 for a in acts:

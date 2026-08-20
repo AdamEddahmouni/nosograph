@@ -33,11 +33,17 @@ def test_compute_variant_functional_score():
 
 def test_compute_tissue_expression_score():
     gene_info = {"id": "BTK", "name": "BTK"}
-    score, top_tissues, concordance = compute_tissue_expression_score("BTK", gene_info, disease_id="sle")
+    score, top_tissues, concordance = compute_tissue_expression_score(
+        "BTK", gene_info, disease_id="sle"
+    )
     assert 3.5 <= score <= 9.8
     assert 0.40 <= concordance <= 1.0
     assert len(top_tissues) == 3
-    assert top_tissues[0]["tissue"] in ["Whole Blood", "Spleen", "Cells - EBV-transformed lymphocytes"]
+    assert top_tissues[0]["tissue"] in [
+        "Whole Blood",
+        "Spleen",
+        "Cells - EBV-transformed lymphocytes",
+    ]
     assert top_tissues[0]["median_tpm"] > 0
 
 

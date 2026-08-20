@@ -74,8 +74,12 @@ def test_promoted_disease_validation(disease_id: str):
 
     assert checks["genes"] == "ok", f"{disease_id} genes check failed: {checks.get('genes')}"
     assert checks["drugs"] == "ok", f"{disease_id} drugs check failed: {checks.get('drugs')}"
-    assert checks["pathways"] == "ok", f"{disease_id} pathways check failed: {checks.get('pathways')}"
-    assert checks["relationships"] == "ok", f"{disease_id} relationships check failed: {checks.get('relationships')}"
+    assert checks["pathways"] == "ok", (
+        f"{disease_id} pathways check failed: {checks.get('pathways')}"
+    )
+    assert checks["relationships"] == "ok", (
+        f"{disease_id} relationships check failed: {checks.get('relationships')}"
+    )
     assert checks["profile"] == "ok", f"{disease_id} profile check failed: {checks.get('profile')}"
 
     assert checks["SYMPTOMS"] == "ok", f"{disease_id} symptoms empty"

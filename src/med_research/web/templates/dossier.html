@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regulatory Dossier</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; }
+        h1, h2, h3 { color: #2c3e50; }
+        .section { margin-bottom: 2rem; }
+        .image { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <h1>Regulatory Dossier – {{ dossier_timestamp }}</h1>
+    {% for section in sections %}
+    <div class="section" id="{{ section.id }}">
+        <h2>{{ section.title }}</h2>
+        {% if section.content %}
+        <div>{{ section.content | safe }}</div>
+        {% endif %}
+        {% if section.images %}
+        {% for img in section.images %}
+        <img src="{{ img }}" class="image" />
+        {% endfor %}
+        {% endif %}
+    </div>
+    {% endfor %}
+</body>
+</html>

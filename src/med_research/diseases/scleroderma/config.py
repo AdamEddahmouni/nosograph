@@ -19,7 +19,7 @@ SYMPTOMS = [
     "pulmonary arterial hypertension (PAH)",
     "scleroderma renal crisis with malignant hypertension",
     "tendon friction rubs on wrists and ankles",
-    "generalized arthralgia and joint contractures"
+    "generalized arthralgia and joint contractures",
 ]
 
 # ── Literature Mining ────────────────────────────────────────────────────
@@ -27,7 +27,7 @@ PUBMED_QUERIES = [
     "(systemic sclerosis[Title/Abstract] OR scleroderma[Title/Abstract]) AND (treatment[Title/Abstract] OR therapeutics[Title/Abstract])",
     "(systemic sclerosis[Title/Abstract]) AND (nintedanib[Title/Abstract] OR tocilizumab[Title/Abstract] OR mycophenolate[Title/Abstract] OR rituximab[Title/Abstract])",
     "(systemic sclerosis[Title/Abstract]) AND (interstitial lung disease[Title/Abstract] OR pulmonary hypertension[Title/Abstract] OR fibrosis[Title/Abstract])",
-    "(systemic sclerosis[Title/Abstract]) AND (clinical trial[Title/Abstract])"
+    "(systemic sclerosis[Title/Abstract]) AND (clinical trial[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms ────────────────────────────────
@@ -37,7 +37,7 @@ GWAS_SEARCH_TERMS = [
     "interstitial lung disease",
     "pulmonary fibrosis",
     "autoimmune disease",
-    "Raynaud phenomenon"
+    "Raynaud phenomenon",
 ]
 
 # ── CAR-T & Target Scoring Tables ───────────────────────────────────────
@@ -48,7 +48,7 @@ CAR_T_SCORES = {
         "TGFBR2": 9.5,
         "PDGFRB": 9.5,
         "FGFR1": 9.0,
-        "CTGF": 9.0
+        "CTGF": 9.0,
     },
     "IMMUNE_CYTOKINE_DRIVERS": {
         "IL6R": 10.0,
@@ -57,44 +57,39 @@ CAR_T_SCORES = {
         "MS4A1": 9.5,
         "IL4": 8.5,
         "IL13": 8.5,
-        "JAK1": 9.0
+        "JAK1": 9.0,
     },
     "ENDOTHELIAL_VASCULOPATHY": {
         "EDNRA": 9.5,
         "EDNRB": 9.0,
         "PDE5A": 9.5,
         "PTGIR": 9.0,
-        "VEGFA": 8.5
-    }
+        "VEGFA": 8.5,
+    },
 }
 
 # ── Drug Safety Risk Tiers ──────────────────────────────────────────────
 DRUG_SAFETY_RISK = {
     "high_risk": [
         "High-dose Corticosteroids (Triggers life-threatening Scleroderma Renal Crisis)",
-        "Cyclophosphamide (Myelosuppression, Hemorrhagic cystitis)"
+        "Cyclophosphamide (Myelosuppression, Hemorrhagic cystitis)",
     ],
     "moderate_risk": [
         "Nintedanib (Diarrhea, Liver enzyme elevations)",
-        "Mycophenolate Mofetil (Cytopenias, Teratogenicity)"
+        "Mycophenolate Mofetil (Cytopenias, Teratogenicity)",
     ],
     "low_risk": [
         "Tocilizumab",
         "Phosphodiesterase-5 Inhibitors (Sildenafil)",
-        "Endothelin Receptor Antagonists"
-    ]
+        "Endothelin Receptor Antagonists",
+    ],
 }
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
 DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "scleroderma-screening-v1",
-    "reference_drug_ids": [
-        "nintedanib",
-        "tocilizumab",
-        "mycophenolate_mofetil",
-        "bosentan"
-],
+    "reference_drug_ids": ["nintedanib", "tocilizumab", "mycophenolate_mofetil", "bosentan"],
     "weights": {
         "binding_estimate": 0.30,
         "druglikeness": 0.20,

@@ -119,4 +119,3 @@ def test_duckdb_analytics_engine(repository: BiomedicalRepository, mondo_snapsho
     drug_dist = engine.get_druggability_distribution("MONDO:0007915")
     assert "distribution" in drug_dist
     assert drug_dist["disease_curie"] == "MONDO:0007915"
-

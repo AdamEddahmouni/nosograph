@@ -128,12 +128,14 @@ static_dirs = {
     "/static/evidence": PIPELINE_DIR / "evidence" / "data",
     "/static/semantic_search": PIPELINE_DIR / "semantic_search" / "data",
     "/static/network_pharmacology": PIPELINE_DIR / "network_pharmacology" / "data",
+    "/static/dossier": PIPELINE_DIR / "dossier",
 }
 
 for path_prefix, directory in static_dirs.items():
-    if directory.exists():
-        name = f"static_{path_prefix.replace('/', '_')}"
-        app.mount(path_prefix, StaticFiles(directory=str(directory), html=True), name=name)
+    directory.mkdir(parents=True, exist_ok=True)
+    name = f"static_{path_prefix.replace('/', '_')}"
+    app.mount(path_prefix, StaticFiles(directory=str(directory), html=True), name=name)
+
 
 # Live dashboard (mounted last so it catches root "/")
 static_dir = Path(__file__).parent / "static"

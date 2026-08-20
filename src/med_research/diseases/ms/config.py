@@ -10,14 +10,29 @@ PIPELINE_LABEL = "Multiple Sclerosis (MS)"
 DEFAULT_SAMPLE_SIZE = 50
 
 SYMPTOMS = [
-    "fatigue", "vision problems", "optic neuritis",
-    "numbness", "tingling", "muscle weakness",
-    "spasticity", "balance problems", "coordination problems",
-    "tremor", "bladder dysfunction", "bowel dysfunction",
-    "cognitive impairment", "memory problems",
-    "depression", "anxiety", "pain", "dizziness",
-    "speech difficulties", "swallowing difficulties",
-    "heat sensitivity", "seizures", "hearing loss",
+    "fatigue",
+    "vision problems",
+    "optic neuritis",
+    "numbness",
+    "tingling",
+    "muscle weakness",
+    "spasticity",
+    "balance problems",
+    "coordination problems",
+    "tremor",
+    "bladder dysfunction",
+    "bowel dysfunction",
+    "cognitive impairment",
+    "memory problems",
+    "depression",
+    "anxiety",
+    "pain",
+    "dizziness",
+    "speech difficulties",
+    "swallowing difficulties",
+    "heat sensitivity",
+    "seizures",
+    "hearing loss",
 ]
 
 PUBMED_QUERIES = [
@@ -138,11 +153,36 @@ DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 SCREENING_PROFILE = {
     "strategy_id": "ms-screening-v1",
     "pathway_keywords": ["b cell", "s1p", "integrin", "bbb", "th17", "nrf2", "interferon", "btk"],
-    "mechanism_keywords": ["cd20", "b cell", "s1p", "integrin", "vla-4", "nrf2", "btk", "ifn", "th17"],
-    "reference_drug_ids": ["ocrelizumab", "natalizumab", "fingolimod", "dimethyl_fumarate", "teriflunomide", "evobrutinib"],
-    "weights": {"binding_estimate": 0.25, "druglikeness": 0.15, "target_complementarity": 0.35, "similarity_score": 0.15, "novelty_score": 0.10},
+    "mechanism_keywords": [
+        "cd20",
+        "b cell",
+        "s1p",
+        "integrin",
+        "vla-4",
+        "nrf2",
+        "btk",
+        "ifn",
+        "th17",
+    ],
+    "reference_drug_ids": [
+        "ocrelizumab",
+        "natalizumab",
+        "fingolimod",
+        "dimethyl_fumarate",
+        "teriflunomide",
+        "evobrutinib",
+    ],
+    "weights": {
+        "binding_estimate": 0.25,
+        "druglikeness": 0.15,
+        "target_complementarity": 0.35,
+        "similarity_score": 0.15,
+        "novelty_score": 0.10,
+    },
     "source": "curated_ms_knowledge_graph",
     "curated_inputs": ["pathways", "drugs", "screening_strategy"],
     "inferred_inputs": ["mechanism_keyword_matching", "property_based_binding_estimate"],
-    "limitations": ["Property scores are heuristic prioritization signals and do not establish MS efficacy or CNS exposure."],
+    "limitations": [
+        "Property scores are heuristic prioritization signals and do not establish MS efficacy or CNS exposure."
+    ],
 }

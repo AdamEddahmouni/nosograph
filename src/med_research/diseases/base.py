@@ -187,9 +187,7 @@ class Disease:
                 module = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(module)
                 self._config = {
-                    k: v
-                    for k, v in vars(module).items()
-                    if not k.startswith("_") and k.isupper()
+                    k: v for k, v in vars(module).items() if not k.startswith("_") and k.isupper()
                 }
             else:
                 self._config = {}

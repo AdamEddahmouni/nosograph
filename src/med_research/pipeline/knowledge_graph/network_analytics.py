@@ -175,11 +175,13 @@ def build_multi_disease_network(
             if len(assocs) >= 2:
                 node["data"]["is_shared_hub"] = True
                 node["data"]["color"] = "#e879f9"  # Magenta for multi-disease hub
-                shared_targets.append({
-                    "gene": node["data"]["label"],
-                    "diseases": assocs,
-                    "degree": deg,
-                })
+                shared_targets.append(
+                    {
+                        "gene": node["data"]["label"],
+                        "diseases": assocs,
+                        "degree": deg,
+                    }
+                )
             else:
                 node["data"]["is_shared_hub"] = False
 
@@ -195,7 +197,11 @@ def build_multi_disease_network(
     filtered_nodes = []
     for nid, node in nodes_map.items():
         if include_shared_only:
-            if node["data"]["type"] == "disease" or node["data"].get("is_shared_hub") or node["data"].get("is_repurposing_bridge"):
+            if (
+                node["data"]["type"] == "disease"
+                or node["data"].get("is_shared_hub")
+                or node["data"].get("is_repurposing_bridge")
+            ):
                 filtered_nodes.append(node)
         else:
             if degrees[nid] >= min_degree:
@@ -203,7 +209,8 @@ def build_multi_disease_network(
 
     valid_node_ids = {n["data"]["id"] for n in filtered_nodes}
     filtered_edges = [
-        e for e in edges_map.values()
+        e
+        for e in edges_map.values()
         if e["data"]["source"] in valid_node_ids and e["data"]["target"] in valid_node_ids
     ]
 
@@ -217,6 +224,8 @@ def build_multi_disease_network(
             "total_nodes": len(filtered_nodes),
             "total_edges": len(filtered_edges),
             "shared_target_count": len(shared_targets),
-            "shared_targets": sorted(shared_targets, key=lambda x: len(x["diseases"]), reverse=True),
+            "shared_targets": sorted(
+                shared_targets, key=lambda x: len(x["diseases"]), reverse=True
+            ),
         },
     }

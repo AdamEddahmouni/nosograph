@@ -1,0 +1,25 @@
+demographic:
+  age:
+    min: 30
+    max: 80
+  sex: ["male", "female"]
+histology:
+  type: ["adenocarcinoma", "squamous", "large_cell"]
+biomarkers:
+  EGFR:
+    min: 0.0
+    max: 100.0
+  KRAS:
+    min: 0.0
+    max: 100.0
+prior_therapies:
+  - "surgery"
+  - "chemotherapy"
+  - "radiation"
+organ_function:
+  creatinine:
+    min: 0.5
+    max: 1.5
+  bilirubin:
+    min: 0.0
+    max: 1.0

@@ -13,9 +13,26 @@ logger = get_logger(__name__)
 
 
 PAM_PROXIMAL_SEED_WEIGHTS = {
-    1: 0.15, 2: 0.18, 3: 0.22, 4: 0.25, 5: 0.30, 6: 0.35, 7: 0.40, 8: 0.45,
-    9: 0.55, 10: 0.60, 11: 0.65, 12: 0.70, 13: 0.75, 14: 0.80, 15: 0.85,
-    16: 0.90, 17: 0.92, 18: 0.95, 19: 0.98, 20: 1.00
+    1: 0.15,
+    2: 0.18,
+    3: 0.22,
+    4: 0.25,
+    5: 0.30,
+    6: 0.35,
+    7: 0.40,
+    8: 0.45,
+    9: 0.55,
+    10: 0.60,
+    11: 0.65,
+    12: 0.70,
+    13: 0.75,
+    14: 0.80,
+    15: 0.85,
+    16: 0.90,
+    17: 0.92,
+    18: 0.95,
+    19: 0.98,
+    20: 1.00,
 }
 
 
@@ -71,9 +88,13 @@ def evaluate_crispr_feasibility(
         ]
         delivery = vectors[hash_val % len(vectors)]
 
-        base_score = 0.35 * (1.0 - loef) + 0.30 * grna_spec + 0.15 * (1.0 - cfd_val) + (0.20 if "High" in delivery else 0.08)
+        base_score = (
+            0.35 * (1.0 - loef)
+            + 0.30 * grna_spec
+            + 0.15 * (1.0 - cfd_val)
+            + (0.20 if "High" in delivery else 0.08)
+        )
         priority_score = round(min(0.99, max(0.20, base_score)), 2)
-
 
         tier = (
             "High Priority Gene Therapy"

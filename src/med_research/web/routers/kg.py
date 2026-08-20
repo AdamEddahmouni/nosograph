@@ -136,4 +136,3 @@ async def kg_multi_network(
         include_shared_only=shared_only,
         min_degree=min_degree,
     )
-

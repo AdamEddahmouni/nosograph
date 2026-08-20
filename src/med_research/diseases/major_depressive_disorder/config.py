@@ -23,7 +23,7 @@ SYMPTOMS = [
     "recurrent suicidal ideation",
     "executive dysfunction",
     "anxiety and irritability",
-    "somatic pain symptoms"
+    "somatic pain symptoms",
 ]
 
 # ── Literature Mining ────────────────────────────────────────────────────
@@ -31,7 +31,7 @@ PUBMED_QUERIES = [
     "(major depressive disorder[Title/Abstract] OR depression[Title/Abstract]) AND (treatment[Title/Abstract] OR therapeutics[Title/Abstract])",
     "(major depressive disorder[Title/Abstract]) AND (SSRI[Title/Abstract] OR SNRI[Title/Abstract] OR ketamine[Title/Abstract] OR esketamine[Title/Abstract])",
     "(major depressive disorder[Title/Abstract]) AND (neuroinflammation[Title/Abstract] OR neurogenesis[Title/Abstract] OR synaptic plasticity[Title/Abstract])",
-    "(major depressive disorder[Title/Abstract]) AND (treatment resistant[Title/Abstract] OR clinical trial[Title/Abstract])"
+    "(major depressive disorder[Title/Abstract]) AND (treatment resistant[Title/Abstract] OR clinical trial[Title/Abstract])",
 ]
 
 # ── Clinical trials / GWAS search terms ────────────────────────────────
@@ -41,7 +41,7 @@ GWAS_SEARCH_TERMS = [
     "depressive symptoms",
     "neuroticism",
     "bipolar disorder",
-    "subjective well-being"
+    "subjective well-being",
 ]
 
 # ── CAR-T & Target Scoring Tables ───────────────────────────────────────
@@ -52,7 +52,7 @@ CAR_T_SCORES = {
         "SLC6A3": 9.0,
         "HTR1A": 9.5,
         "HTR2A": 9.0,
-        "MAOA": 8.5
+        "MAOA": 8.5,
     },
     "GLUTAMATERGIC_SYNAPSE_PLASTICITY": {
         "GRIN1": 9.5,
@@ -60,15 +60,15 @@ CAR_T_SCORES = {
         "GRIN2A": 9.0,
         "GRIA1": 8.5,
         "BDNF": 10.0,
-        "NTRK2": 9.5
+        "NTRK2": 9.5,
     },
     "NEUROENDOCRINE_INFLAMMATION": {
         "NR3C1": 9.0,
         "FKBP5": 8.5,
         "CRHR1": 8.0,
         "IL6": 8.0,
-        "TNF": 7.5
-    }
+        "TNF": 7.5,
+    },
 }
 
 # ── Drug Safety Risk Tiers ──────────────────────────────────────────────
@@ -76,16 +76,10 @@ DRUG_SAFETY_RISK = {
     "high_risk": [
         "MAOIs",
         "Tricyclic Antidepressants in Overdose",
-        "Serotonin Syndrome Combinations"
+        "Serotonin Syndrome Combinations",
     ],
-    "moderate_risk": [
-        "SSRIs / SNRIs (Bleeding risk, Hyponatremia, QTc prolongation)"
-    ],
-    "low_risk": [
-        "Bupropion",
-        "Vortioxetine",
-        "Esketamine in controlled clinic setting"
-    ]
+    "moderate_risk": ["SSRIs / SNRIs (Bleeding risk, Hyponatremia, QTc prolongation)"],
+    "low_risk": ["Bupropion", "Vortioxetine", "Esketamine in controlled clinic setting"],
 }
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
 DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
@@ -98,8 +92,8 @@ SCREENING_PROFILE = {
         "duloxetine",
         "bupropion",
         "esketamine",
-        "vortioxetine"
-],
+        "vortioxetine",
+    ],
     "weights": {
         "binding_estimate": 0.30,
         "druglikeness": 0.20,

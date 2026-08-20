@@ -120,5 +120,3 @@ def test_druggability_analytics_endpoint(client: Any, seeded_biomed_db: Any) -> 
     data = response.json()
     assert data["disease_curie"] == "MONDO:0007915"
     assert "distribution" in data
-
-

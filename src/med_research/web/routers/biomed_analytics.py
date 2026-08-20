@@ -71,7 +71,9 @@ def prioritize_targets(
                 "pocket_volume_A3": struct.get("pocket_volume_A3", 0.0),
                 "docking_readiness_score": struct.get("docking_readiness_score", 0.0),
                 "confidence_category": struct.get("confidence_category", "Unknown"),
-                "druggability_tier": struct.get("druggability_tier", "Tier 2 (Moderate Druggability)"),
+                "druggability_tier": struct.get(
+                    "druggability_tier", "Tier 2 (Moderate Druggability)"
+                ),
                 "uniprot_id": struct.get("uniprot_id", ""),
                 "pdb_id": struct.get("pdb_id", ""),
                 "structure_3d": struct,
@@ -175,5 +177,3 @@ def get_druggability_analytics(
     analytics = BiomedicalGraphAnalytics(repository)
     engine = analytics.get_duckdb_engine()
     return engine.get_druggability_distribution(disease_curie=disease_curie)
-
-

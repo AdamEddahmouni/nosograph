@@ -319,7 +319,9 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
                 )
 
     # Compare drugs
-    tracked_drugs = curr.get("tracked_drugs", prev.get("tracked_drugs", list(curr.get("drugs", {}).keys())))
+    tracked_drugs = curr.get(
+        "tracked_drugs", prev.get("tracked_drugs", list(curr.get("drugs", {}).keys()))
+    )
     prev_drugs = prev.get("drugs", {})
     curr_drugs = curr.get("drugs", {})
     for drug in tracked_drugs[:25]:
@@ -346,7 +348,9 @@ def compare_snapshots(prev: dict, curr: dict) -> dict:
                 )
 
     # Compare genes
-    tracked_genes = curr.get("tracked_genes", prev.get("tracked_genes", list(curr.get("genes", {}).keys())))
+    tracked_genes = curr.get(
+        "tracked_genes", prev.get("tracked_genes", list(curr.get("genes", {}).keys()))
+    )
     prev_genes = prev.get("genes", {})
     curr_genes = curr.get("genes", {})
     for gene in tracked_genes[:25]:

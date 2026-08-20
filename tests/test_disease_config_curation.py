@@ -6,7 +6,7 @@ import pytest
 
 from med_research.diseases.base import Disease
 
-DISEASE_IDS = ("sle", "ra", "ms", "ibd", "ss", "ssc", "t1d")
+DISEASE_IDS = ("sle", "ra", "ms", "ibd", "ss", "ssc", "t1d", "melanoma", "nsclc", "glioblastoma")
 NON_SLE = tuple(d for d in DISEASE_IDS if d != "sle")
 
 pytestmark = pytest.mark.unit

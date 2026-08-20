@@ -35,4 +35,3 @@ def test_stream_job_progress_valid_uuid(monkeypatch: pytest.MonkeyPatch) -> None
     assert "text/event-stream" in response.headers.get("content-type", "")
     assert "event: job_status" in response.text
     assert fake_job_id in response.text
-

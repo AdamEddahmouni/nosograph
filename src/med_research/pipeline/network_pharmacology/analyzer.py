@@ -343,17 +343,23 @@ def print_analysis(results: NetworkAnalysis) -> None:
     logger.info("\n📊 Graph-Level Metrics:")
     logger.info(f"   Nodes: {gm.get('n_nodes', 0)}  |  Edges: {gm.get('n_edges', 0)}")
     logger.info(f"   Density: {gm.get('density', 0)}  |  Components: {gm.get('n_components', 0)}")
-    logger.info(f"   Diameter: {gm.get('diameter', 0)}  |  Avg Path: {gm.get('avg_shortest_path', 0)}")
+    logger.info(
+        f"   Diameter: {gm.get('diameter', 0)}  |  Avg Path: {gm.get('avg_shortest_path', 0)}"
+    )
     logger.info(
         f"   Avg Clustering: {gm.get('avg_clustering', 0)}  |  Assortativity: {gm.get('assortativity', 0)}"
     )
 
     com = results.get("communities") or {}
     if com:
-        logger.info(f"\n🔗 Community Detection ({com.get('algorithm')}, modularity={com.get('modularity')}):")
+        logger.info(
+            f"\n🔗 Community Detection ({com.get('algorithm')}, modularity={com.get('modularity')}):"
+        )
         logger.info(f"   {com.get('n_communities', 0)} communities found")
         for c in com.get("communities", []):
-            logger.info(f"   Community {c['id']}: {c['size']} nodes (dominant: {c['dominant_type']})")
+            logger.info(
+                f"   Community {c['id']}: {c['size']} nodes (dominant: {c['dominant_type']})"
+            )
 
     bridge_nodes = results.get("bridge_nodes") or []
     if bridge_nodes:
@@ -373,7 +379,6 @@ def print_analysis(results: NetworkAnalysis) -> None:
         logger.info("\n⭐ Top 5 by Eigenvector Centrality:")
         for i, n in enumerate(ec[:5], 1):
             logger.info(f"   {i}. {n['label']} ({n['type']}) — {n['score']:.4f}")
-
 
 
 def main():

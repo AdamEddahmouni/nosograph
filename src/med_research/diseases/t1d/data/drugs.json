@@ -46,6 +46,34 @@
       "adverse_effects": "Hypoglycemia, weight gain, local injection reactions"
     },
     {
+      "id": "insulin_lispro",
+      "name": "Insulin Lispro",
+      "type": "Recombinant rapid-acting insulin analogue",
+      "target": "INSR",
+      "mechanism": "Rapid-acting prandial insulin analog binding the insulin receptor with fast absorption kinetics for mealtime glycemic management",
+      "approval": "FDA Approved",
+      "route": "Subcutaneous",
+      "efficacy": "Rapid prandial glycemic control with reduced late postprandial hypoglycemia",
+      "references": [
+        "PMID:8968840"
+      ],
+      "adverse_effects": "Hypoglycemia, injection site reactions, lipodystrophy"
+    },
+    {
+      "id": "insulin_degludec",
+      "name": "Insulin Degludec",
+      "type": "Ultra-long-acting insulin analogue",
+      "target": "INSR",
+      "mechanism": "Forms multi-hexamer chains in subcutaneous tissue delivering ultra-flat, peakless 42+ hour basal insulin release",
+      "approval": "FDA Approved",
+      "route": "Subcutaneous",
+      "efficacy": "Provides flexible basal dosing with significantly reduced nocturnal hypoglycemia rates",
+      "references": [
+        "PMID:21715519"
+      ],
+      "adverse_effects": "Hypoglycemia, weight gain, injection site reactions"
+    },
+    {
       "id": "pramlintide",
       "name": "Pramlintide",
       "type": "Synthetic peptide",
@@ -58,6 +86,147 @@
         "PMID:12453965"
       ],
       "adverse_effects": "Severe hypoglycemia risk when combined with insulin, nausea, vomiting, anorexia"
+    },
+    {
+      "id": "abatacept",
+      "name": "Abatacept",
+      "type": "Fusion protein (CTLA4-Ig)",
+      "target": "CD80 / CD86",
+      "mechanism": "Binds CD80 and CD86 on APCs to block CD28 co-stimulation required for autoimmune T cell activation",
+      "approval": "Investigational in T1D / FDA Approved in RA",
+      "route": "Intravenous / Subcutaneous",
+      "efficacy": "Slows decline of C-peptide secretion during initial 2 years of clinical onset",
+      "references": [
+        "PMID:21719632"
+      ],
+      "adverse_effects": "Headache, upper respiratory tract infections, nausea, infusion reactions"
+    },
+    {
+      "id": "rituximab",
+      "name": "Rituximab",
+      "type": "Monoclonal antibody",
+      "target": "MS4A1 (CD20)",
+      "mechanism": "Chimeric monoclonal antibody targeting CD20 to deplete mature B lymphocytes and disrupt autoantibody presentation",
+      "approval": "Investigational in T1D / FDA Approved in RA/Lymphoma",
+      "route": "Intravenous",
+      "efficacy": "Preserved C-peptide beta-cell function for 1 year in newly diagnosed T1D patients",
+      "references": [
+        "PMID:19940299"
+      ],
+      "adverse_effects": "Infusion reactions, lymphopenia, hypogammaglobulinemia, infection risk"
+    },
+    {
+      "id": "otelixizumab",
+      "name": "Otelixizumab",
+      "type": "Monoclonal antibody",
+      "target": "CD3E",
+      "mechanism": "Chimeric humanized anti-CD3 monoclonal antibody modulating TCR-CD3 complex signalling",
+      "approval": "Investigational in T1D",
+      "route": "Intravenous",
+      "efficacy": "Preserved C-peptide secretion in Phase 2 trial of new-onset T1D",
+      "references": [
+        "PMID:20530743"
+      ],
+      "adverse_effects": "EBV reactivation at higher doses, flu-like symptoms, cytokine release"
+    },
+    {
+      "id": "golimumab",
+      "name": "Golimumab",
+      "type": "Monoclonal antibody",
+      "target": "TNF",
+      "mechanism": "Human anti-TNF-alpha monoclonal antibody neutralizing soluble and transmembrane TNF to protect beta-islets",
+      "approval": "Investigational in T1D / FDA Approved in RA/UC",
+      "route": "Subcutaneous",
+      "efficacy": "Preserved endogenous insulin production and reduced exogenous insulin requirements in T1D clinical trial",
+      "references": [
+        "PMID:33207093"
+      ],
+      "adverse_effects": "Infections, injection site erythema, headache"
+    },
+    {
+      "id": "alefacept",
+      "name": "Alefacept",
+      "type": "Fusion protein (LFA-3-IgG1)",
+      "target": "CD2",
+      "mechanism": "Dimers of CD2-binding portion of LFA-3 fused to IgG1 Fc, selectively depleting memory T cells",
+      "approval": "Investigational in T1D",
+      "route": "Intramuscular / Intravenous",
+      "efficacy": "Preserved C-peptide secretion and reduced hypoglycemia in new-onset T1D (T1DAL study)",
+      "references": [
+        "PMID:24075196"
+      ],
+      "adverse_effects": "Lymphopenia, headache, chills, dizziness"
+    },
+    {
+      "id": "anti_thymocyte_globulin",
+      "name": "Anti-Thymocyte Globulin (Low-Dose ATG)",
+      "type": "Polyclonal antibody",
+      "target": "T cell surface antigens (CD2, CD3, CD4, CD8, CD28)",
+      "mechanism": "Induces selective T-cell depletion followed by preferential Treg reconstitution in autoimmune diabetes",
+      "approval": "Investigational in T1D / FDA Approved in Transplant",
+      "route": "Intravenous",
+      "efficacy": "Preserved beta-cell function and improved HbA1c in established and new-onset T1D",
+      "references": [
+        "PMID:31167909"
+      ],
+      "adverse_effects": "Cytokine release syndrome, serum sickness, leukopenia, thrombocytopenia"
+    },
+    {
+      "id": "low_dose_il2",
+      "name": "Low-Dose Interleukin-2 (Aldesleukin)",
+      "type": "Recombinant cytokine",
+      "target": "IL2RA (CD25) / IL2RB / IL2RG",
+      "mechanism": "Selectively stimulates CD4+CD25+FOXP3+ regulatory T cells via high-affinity IL-2 receptor without activating effector cells",
+      "approval": "Investigational in T1D",
+      "route": "Subcutaneous",
+      "efficacy": "Selectively expands functional regulatory T cells in patients with type 1 diabetes (DF-IL2 trial)",
+      "references": [
+        "PMID:23719404"
+      ],
+      "adverse_effects": "Injection site pain, mild transient flu-like symptoms"
+    },
+    {
+      "id": "verapamil",
+      "name": "Verapamil",
+      "type": "Small molecule L-type calcium channel blocker",
+      "target": "CACNA1C / TXNIP",
+      "mechanism": "Downregulates beta-cell TXNIP expression and protects beta cells from apoptosis and oxidative stress",
+      "approval": "Repurposed in T1D / FDA Approved in Hypertension",
+      "route": "Oral",
+      "efficacy": "Maintains endogenous C-peptide beta cell function over 1 and 2 years in adults and children with newly diagnosed T1D",
+      "references": [
+        "PMID:30006587",
+        "PMID:36827827"
+      ],
+      "adverse_effects": "Hypotension, bradycardia, constipation, headache"
+    },
+    {
+      "id": "gad_alum",
+      "name": "Diamyd (GAD-Alum)",
+      "type": "Antigen-specific immunotherapy",
+      "target": "GAD65 (GAD2)",
+      "mechanism": "Formulation of recombinant human GAD65 with aluminium hydroxide inducing immune tolerance to beta-cell autoantigens",
+      "approval": "Investigational in T1D (Phase 3)",
+      "route": "Intralymphatic injection",
+      "efficacy": "Preserves endogenous insulin secretion in HLA-DR3-DQ2 genotype positive newly diagnosed T1D patients",
+      "references": [
+        "PMID:34045233"
+      ],
+      "adverse_effects": "Localized lymph node tenderness, mild transient injection site reactions"
+    },
+    {
+      "id": "ustekinumab",
+      "name": "Ustekinumab",
+      "type": "Monoclonal antibody",
+      "target": "IL12B (p40 subunit of IL-12 and IL-23)",
+      "mechanism": "Human monoclonal antibody binding IL-12/23 p40 subunit, blocking Th1 and Th17 cell differentiation and cytokine production",
+      "approval": "Investigational in T1D / FDA Approved in Psoriasis/Crohn's",
+      "route": "Subcutaneous",
+      "efficacy": "Preserved C-peptide secretion and lowered insulin dose requirements in recent-onset T1D (USTE1D trial)",
+      "references": [
+        "PMID:37482069"
+      ],
+      "adverse_effects": "Upper respiratory infections, headache, fatigue, injection site erythema"
     }
   ]
 }
