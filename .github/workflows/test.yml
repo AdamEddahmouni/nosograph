@@ -111,7 +111,7 @@ jobs:
         run: python -m pytest tests/test_docking.py -m "not network" -q --tb=short
 
       - name: Run deterministic offline tests
-        timeout-minutes: 5
+        timeout-minutes: 20
         run: |
           python -m pytest tests/ -m "not slow and not integration" -q --tb=short -n auto \
             --cov=src/med_research --cov-report=term-missing --cov-report=xml

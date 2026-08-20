@@ -1,20 +1,69 @@
 {
+  "schema_version": "1",
   "disease_id": "copd",
-  "disease_name": "Chronic Obstructive Pulmonary Disease",
-  "adverse_events": [
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["dry mouth", "cough", "nasopharyngitis", "headache"],
+    "severe_ae": ["pneumonia", "paradoxical bronchospasm", "urinary retention"],
+    "disease_overlap_ae": ["cough", "dyspnea"],
+    "severity_burden": 5,
+    "chronic_use_safety": 7,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Inhaler technique, pneumonia symptoms, and intraocular pressure if anticholinergic.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
     {
-      "drug": "tiotropium",
-      "common_events": [
-        "Dry mouth",
-        "Cough",
-        "Upper respiratory tract infection",
-        "Sinusitis"
-      ],
-      "serious_events": [
-        "Narrow-angle glaucoma exacerbation",
-        "Urinary retention"
-      ],
-      "black_box_warning": false
+      "drug_id": "tiotropium",
+      "common_ae": ["dry mouth", "constipation", "cough", "sinusitis"],
+      "severe_ae": ["urinary retention", "narrow-angle glaucoma exacerbation", "paradoxical bronchospasm"],
+      "disease_overlap_ae": ["cough", "dyspnea"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Urinary symptoms and ocular pressure in at-risk patients."
+    },
+    {
+      "drug_id": "roflumilast",
+      "common_ae": ["diarrhea", "weight loss", "nausea", "insomnia"],
+      "severe_ae": ["psychiatric events", "severe weight loss"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Weight, GI tolerance, and mood changes."
+    },
+    {
+      "drug_id": "indacaterol",
+      "common_ae": ["cough", "nasopharyngitis", "headache", "tremor"],
+      "severe_ae": ["paradoxical bronchospasm", "cardiovascular events"],
+      "disease_overlap_ae": ["cough", "dyspnea"],
+      "severity_burden": 5,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Heart rate and inhaler response after initiation."
+    },
+    {
+      "drug_id": "fluticasone_salmeterol",
+      "common_ae": ["oral candidiasis", "hoarseness", "headache", "tremor"],
+      "severe_ae": ["pneumonia", "adrenal suppression", "paradoxical bronchospasm"],
+      "disease_overlap_ae": ["cough", "dyspnea"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Oral hygiene, pneumonia symptoms, and ICS dose minimization."
+    },
+    {
+      "drug_id": "dupilumab",
+      "common_ae": ["injection site reaction", "conjunctivitis", "eosinophilia", "herpes reactivation"],
+      "severe_ae": ["hypersensitivity", "eosinophilic conditions"],
+      "disease_overlap_ae": ["dyspnea"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Ocular symptoms and eosinophil counts in type-2 COPD phenotypes."
     }
   ]
 }

@@ -15,7 +15,7 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   Dockerfile base image (Python 3.12 + build tools + Redis), `install` syncs the venv from lock
   files, `start` runs [`scripts/cloud-agent-start.sh`](scripts/cloud-agent-start.sh) to start Redis.
 - The pinned toolchain is exact: `python scripts/lock_verify.py` should report
-  `all 67 locked packages match`. If it doesn't, re-run the update script.
+  `all 68 locked packages match`. If it doesn't, re-run the update script.
 
 ### Running the web app (dashboard + API)
 - Load env first: `set -a && . ./.env && set +a` (a copy of `.env.example`), then

@@ -1,34 +1,69 @@
 {
+  "schema_version": "1",
   "disease_id": "t2d",
-  "disease_name": "Type 2 Diabetes",
-  "adverse_events": [
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["GI upset", "hypoglycemia risk class-dependent", "volume depletion"],
+    "severe_ae": ["lactic acidosis", "pancreatitis", "ketoacidosis"],
+    "disease_overlap_ae": ["fatigue", "polyuria"],
+    "severity_burden": 5,
+    "chronic_use_safety": 7,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Glucose, renal function, and GI tolerance during titration.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
     {
-      "drug": "metformin",
-      "common_events": [
-        "Diarrhea",
-        "Nausea",
-        "Abdominal discomfort",
-        "Vitamin B12 deficiency"
-      ],
-      "serious_events": [
-        "Lactic acidosis"
-      ],
-      "black_box_warning": true
+      "drug_id": "metformin",
+      "common_ae": ["diarrhea", "nausea", "abdominal discomfort", "B12 deficiency"],
+      "severe_ae": ["lactic acidosis"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 8,
+      "monitoring_required": "eGFR before and during therapy; B12 if anemia or neuropathy."
     },
     {
-      "drug": "semaglutide",
-      "common_events": [
-        "Nausea",
-        "Vomiting",
-        "Diarrhea",
-        "Constipation"
-      ],
-      "serious_events": [
-        "Pancreatitis",
-        "Gallbladder disease",
-        "Acute kidney injury"
-      ],
-      "black_box_warning": true
+      "drug_id": "semaglutide",
+      "common_ae": ["nausea", "vomiting", "diarrhea", "constipation", "decreased appetite"],
+      "severe_ae": ["pancreatitis", "gallbladder disease", "ileus"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "GI symptoms, gallbladder pain, and hydration."
+    },
+    {
+      "drug_id": "empagliflozin",
+      "common_ae": ["genital mycotic infection", "increased urination", "volume depletion"],
+      "severe_ae": ["euglycemic ketoacidosis", "uropathy", "Fournier gangrene"],
+      "disease_overlap_ae": ["polyuria", "fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Volume status, ketones if illness, and genital infection symptoms."
+    },
+    {
+      "drug_id": "tirzepatide",
+      "common_ae": ["nausea", "diarrhea", "decreased appetite", "vomiting"],
+      "severe_ae": ["pancreatitis", "gallbladder disease", "severe GI events"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 7,
+      "monitoring_required": "GI tolerance and gallbladder symptoms during dose escalation."
+    },
+    {
+      "drug_id": "sitagliptin",
+      "common_ae": ["nasopharyngitis", "headache", "arthralgia"],
+      "severe_ae": ["pancreatitis", "severe joint pain", "bullous pemphigoid"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Abdominal pain and new bullous skin lesions."
     }
   ]
 }

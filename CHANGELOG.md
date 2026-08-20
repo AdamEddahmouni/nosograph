@@ -8,21 +8,19 @@
 - **Second L3 Wave 3/4 batch** — literature-backed GEO consensus for `melanoma`, `colorectal_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `copd`, `asthma`, `t2d`, and `als` (symbols restricted to each module's `genes.json`; tissue filters `tumor`, `pbmc_blood`, `airway`, `islet`, `cns`).
 - **Screening/safety coverage for the same L3 slice** — `SCREENING_PROFILE.reference_drug_ids` now match each module's `drugs.json` catalog (CHEMBL IDs where the KG uses them), NAFLD gained pathway/mechanism keywords, and each module has a catalog-scoped `adverse_events.json` so screening and safety coverage report `ready/full`.
 - **Second Wave 3/4 screening/safety slice** — catalog-aligned reference drugs, pathway keywords, and `adverse_events.json` for `melanoma`, `colorectal_cancer`, `triple_neg_breast_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `spinal_muscular_atrophy`, `major_depressive_disorder`, and `epilepsy`.
+- **Catalog-scoped safety profiles for the chronic L3 batch** — `copd`, `asthma`, `t2d`, and `als` `adverse_events.json` files now use `source`/`profiles`/`limitations` so safety coverage reports `ready/full`.
 - **Unreleased platform surfaces from 7a80892** — synthetic clinical-trial matching, lead optimization, target hypothesis agent, pharmacogenomics, spatial transcriptomics, and dossier generation are documented as research-only tools. Matching APIs return a disclaimer, do not persist submitted vectors, and refuse to be framed as care advice.
 
 ### Changed
 
 - `lead_opt` and `matching_engine` now live under `med_research.pipeline` instead of sibling `src/` packages.
-- GitHub Actions `Tests` workflow: checkout/setup-python/upload-artifact v7, concurrency cancellation, curated-only `disease validate` (not `--all --strict`), and bandit excludes the 10k disease tree plus generated dossiers.
+- GitHub Actions `Tests` workflow: checkout/setup-python/upload-artifact v7, concurrency cancellation, curated-only `disease validate` (not `--all --strict`), bandit excludes the 10k disease tree plus generated dossiers, and the offline pytest step has a 20-minute timeout.
 - Generated timestamped dossier markdown/PDF files are gitignored and removed from source.
+- Locked toolchain: FastAPI 0.141.1, Biopython 1.88, Ruff 0.16.3, Playwright 1.62.0, sentence-transformers 5.7.0 (`<6` to avoid a Torch 2.13 lock blow-up). Open Dependabot PRs #1–#3 and #5–#9 are superseded by this branch (do not merge them separately).
 
 ### Verification
 
 - `pytest tests/test_gene_expression.py tests/test_tier_model.py tests/test_report_neutral_terminology.py tests/test_l3_slice_screening_safety.py tests/web/test_patient_matching_api.py tests/pipeline/test_hypothesis_agent.py -q`
-
-### Verification
-
-- `pytest tests/test_gene_expression.py tests/test_tier_model.py tests/test_report_neutral_terminology.py tests/test_l3_slice_screening_safety.py -q`
 
 ---
 
@@ -413,7 +411,7 @@
 
 ---
 
-## [Current capabilities] — last verified 2026-08-13
+## [Current capabilities] — last verified 2026-08-20
 
 This section is the maintained snapshot of the live repository. Historical phase entries below are preserved for project history and describe the codebase at the time of each change; their test counts, paths, and implementation wording are not the current runtime specification.
 
