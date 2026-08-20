@@ -1,0 +1,133 @@
+# NosoGraph Source Registry
+
+Machine-readable registry of external biomedical sources. Human-readable details in [docs/legal/data-licenses.md](../../docs/legal/data-licenses.md).
+
+```yaml
+# data/sources/registry.yaml
+version: "1.0"
+project: NosoGraph
+updated: "2026-08-20"
+
+sources:
+  - id: mondo
+    name: Mondo Disease Ontology
+    url: https://mondo.monarchinitiative.org/
+    license: CC-BY-4.0
+    use: [biomed_import, disease_identifiers]
+    maturity: STABLE
+
+  - id: hpo
+    name: Human Phenotype Ontology
+    url: https://hpo.jax.org/
+    license: HPO-custom
+    use: [biomed_import, phenotype_comparison]
+    maturity: STABLE
+
+  - id: hpoa
+    name: HPO Annotation
+    url: https://hpo.jax.org/
+    license: HPO-custom
+    use: [biomed_import, symptom_harvest]
+    maturity: STABLE
+
+  - id: go
+    name: Gene Ontology
+    url: https://geneontology.org/
+    license: CC-BY-4.0
+    use: [biomed_import, pathways]
+    maturity: STABLE
+
+  - id: reactome
+    name: Reactome
+    url: https://reactome.org/
+    license: CC-BY-4.0
+    use: [biomed_import, pathways]
+    maturity: STABLE
+
+  - id: uberon
+    name: Uberon
+    url: https://uberon.github.io/
+    license: CC-BY-4.0
+    use: [biomed_import, anatomy]
+    maturity: STABLE
+
+  - id: open_targets
+    name: Open Targets Platform
+    url: https://platform.opentargets.org/
+    license: Open-Targets-data
+    use: [kg_scaffold, bulk_harvest, live_connector]
+    maturity: BETA
+
+  - id: pubmed
+    name: PubMed / NCBI Entrez
+    url: https://pubmed.ncbi.nlm.nih.gov/
+    license: NCBI-terms
+    env: [ENTREZ_EMAIL]
+    use: [literature_mining, evidence_workspace]
+    maturity: STABLE
+
+  - id: clinicaltrials_gov
+    name: ClinicalTrials.gov API v2
+    url: https://clinicaltrials.gov/
+    license: CT.gov-terms
+    use: [clinical_trials, evidence_workspace]
+    maturity: STABLE
+
+  - id: gwas_catalog
+    name: GWAS Catalog
+    url: https://www.ebi.ac.uk/gwas/
+    license: EBI-terms
+    use: [evidence_workspace]
+    maturity: BETA
+
+  - id: openfda
+    name: openFDA / DailyMed
+    url: https://open.fda.gov/
+    license: US-public-domain
+    use: [biomed_import, evidence_workspace]
+    maturity: BETA
+
+  - id: clinvar
+    name: ClinVar
+    url: https://www.ncbi.nlm.nih.gov/clinvar/
+    license: NCBI-ClinVar
+    use: [biomed_import]
+    maturity: BETA
+
+  - id: chembl
+    name: ChEMBL
+    url: https://www.ebi.ac.uk/chembl/
+    license: EBI-ChEMBL
+    use: [live_connector, evidence_workspace]
+    maturity: BETA
+
+  - id: pubchem
+    name: PubChem
+    url: https://pubchem.ncbi.nlm.nih.gov/
+    license: NCBI-PubChem
+    use: [live_connector]
+    maturity: BETA
+
+  - id: gtex
+    name: GTEx Portal
+    url: https://gtexportal.org/
+    license: GTEx-data-policy
+    use: [expression, live_connector]
+    maturity: BETA
+
+  - id: uniprot
+    name: UniProt
+    url: https://www.uniprot.org/
+    license: UniProt-terms
+    use: [live_connector]
+    maturity: BETA
+
+  - id: biorxiv
+    name: bioRxiv / medRxiv
+    url: https://www.biorxiv.org/
+    license: per-preprint
+    use: [evidence_workspace]
+    maturity: EXPERIMENTAL
+```
+
+Also available as `registry.yaml` in this directory.

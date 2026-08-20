@@ -2,25 +2,42 @@
 
 ## [Unreleased]
 
-### Added
+## [2.2.0] — 2026-08-20
 
-- **L3 expression consensus for seven Wave 3/4 indications** — disease-specific GEO consensus gene lists (no SLE signature reuse) for `nsclc`, `pancreatic_ductal_adenocarcinoma`, `glioblastoma`, `cystic_fibrosis`, `sickle_cell_anemia`, `heart_failure`, and `non_alcoholic_fatty_liver_disease`. Each list is restricted to symbols in that module's `genes.json`, with tissue-specific GEO search terms and filters (`lung`, `pancreas`, `tumor`, `airway`, `pbmc_blood`, `myocardium`, `liver`).
-- **Second L3 Wave 3/4 batch** — literature-backed GEO consensus for `melanoma`, `colorectal_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `copd`, `asthma`, `t2d`, and `als` (symbols restricted to each module's `genes.json`; tissue filters `tumor`, `pbmc_blood`, `airway`, `islet`, `cns`).
-- **Screening/safety coverage for the same L3 slice** — `SCREENING_PROFILE.reference_drug_ids` now match each module's `drugs.json` catalog (CHEMBL IDs where the KG uses them), NAFLD gained pathway/mechanism keywords, and each module has a catalog-scoped `adverse_events.json` so screening and safety coverage report `ready/full`.
-- **Second Wave 3/4 screening/safety slice** — catalog-aligned reference drugs, pathway keywords, and `adverse_events.json` for `melanoma`, `colorectal_cancer`, `triple_neg_breast_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `spinal_muscular_atrophy`, `major_depressive_disorder`, and `epilepsy`.
-- **Catalog-scoped safety profiles for the chronic L3 batch** — `copd`, `asthma`, `t2d`, and `als` `adverse_events.json` files now use `source`/`profiles`/`limitations` so safety coverage reports `ready/full`.
-- **Unreleased platform surfaces from 7a80892** — synthetic clinical-trial matching, lead optimization, target hypothesis agent, pharmacogenomics, spatial transcriptomics, and dossier generation are documented as research-only tools. Matching APIs return a disclaimer, do not persist submitted vectors, and refuse to be framed as care advice.
+### Added — NosoGraph public-readiness transformation
+
+- **Branding:** Public product name **NosoGraph** — *The Open Computational Map of Human Disease* (compatibility aliases `med-research` / `med_research` retained).
+- **License:** Migrated source license from MIT to **Apache-2.0** with [NOTICE](NOTICE).
+- **Governance docs:** [GOVERNANCE.md](GOVERNANCE.md), [ROADMAP.md](ROADMAP.md), [CITATION.cff](CITATION.cff).
+- **Architecture docs:** `docs/architecture/` (overview, data-model, evidence-model, provenance, ontology-policy, commercialization-boundaries).
+- **Legal docs:** `docs/legal/` (licensing-model, data-licenses, third-party-notices, trademark-policy).
+- **Audit docs:** `docs/audits/` (baseline, gap matrix, biomedical/disease/licensing/security audits, release-readiness report).
+- **Source registry:** [data/sources/registry.yaml](data/sources/registry.yaml).
+- **README:** Restructured with honest disease tier maturity labels.
 
 ### Changed
 
-- `lead_opt` and `matching_engine` now live under `med_research.pipeline` instead of sibling `src/` packages.
-- GitHub Actions `Tests` workflow restored for public OSS (push/PR/schedule); coverage report omits 10k scaffold disease configs; `make ci-local` for local pre-push; `typecheck` job is informational until mypy debt is cleared. Maintainer checklist: [docs/public-launch.md](docs/public-launch.md).
-- Generated timestamped dossier markdown/PDF files are gitignored and removed from source.
-- Locked toolchain: FastAPI 0.141.1, Biopython 1.88, Ruff 0.16.3, Playwright 1.62.0, sentence-transformers 5.7.0 (`<6` to avoid a Torch 2.13 lock blow-up). Open Dependabot PRs #1–#3 and #5–#9 are superseded by this branch (do not merge them separately).
+- [docs/licensing.md](docs/licensing.md), [docs/public-launch.md](docs/public-launch.md), [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [.env.example](.env.example) updated for NosoGraph branding.
+- `pyproject.toml` version bump to 2.2.0; Apache-2.0 classifier.
+
+### Compatibility
+
+- **KEEP_FOR_COMPATIBILITY:** Python import `med_research`, CLI `med-research`, GitHub remote `med-research`.
+- **RENAME_NOW:** Public docs, LICENSE, NOTICE, README, governance messaging.
 
 ### Verification
 
-- `pytest tests/test_gene_expression.py tests/test_tier_model.py tests/test_report_neutral_terminology.py tests/test_l3_slice_screening_safety.py tests/web/test_patient_matching_api.py tests/pipeline/test_hypothesis_agent.py -q`
+```bash
+make ci-local
+python -m med_research.cli disease validate sle --strict
+python -m med_research.cli disease validate ra --strict
+python -m med_research.cli disease validate ibd --strict
+python -m med_research.cli disease validate ms --strict
+python -m med_research.cli disease validate ss --strict
+python -m med_research.cli disease validate ssc --strict
+python -m med_research.cli disease validate t1d --strict
+python -m med_research.cli disease validate ad --strict
+```
 
 ---
 

@@ -1,0 +1,19 @@
+name: Security report
+description: Report a security vulnerability privately (do not include exploit details in public issues)
+title: "[Security]: "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not use this template for public vulnerability disclosure.**
+
+        Report security issues via [GitHub Security Advisories](https://github.com/AdamEddahmouni/med-research/security/advisories/new) instead. See [SECURITY.md](../SECURITY.md).
+
+  - type: textarea
+    id: redirect
+    attributes:
+      label: Why are you here?
+      description: If you reached this template accidentally, close this issue and use the private advisory link above.
+    validations:
+      required: false

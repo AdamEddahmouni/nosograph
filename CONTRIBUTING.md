@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping improve the med-research platform. This document covers the essentials for local development and pull requests.
+Thank you for helping improve **NosoGraph** (The Open Computational Map of Human Disease). The Python package still installs as `med-research` with import path `med_research` during the compatibility transition. This document covers local development and pull requests.
 
 ## Code of conduct
 
@@ -93,3 +93,7 @@ See [TECHNICAL_DEBT_ISSUES.md](TECHNICAL_DEBT_ISSUES.md) for the historical audi
 For disease-module curation (validate, coverage, expression consensus, screening profiles), see [docs/disease-curation.md](docs/disease-curation.md).
 
 For self-hosted deployment, see [docs/deployment.md](docs/deployment.md).
+
+## License
+
+By contributing code, documentation, or other materials to this repository, you agree that your contributions are licensed under the [Apache License 2.0](LICENSE), the same license that covers the project. See [docs/legal/licensing-model.md](docs/legal/licensing-model.md) for how software licensing relates to third-party biomedical data.

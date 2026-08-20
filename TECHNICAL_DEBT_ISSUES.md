@@ -134,12 +134,12 @@
 - `v2 web/main.py:120` has `uvicorn.run("web_api.main:app")` referencing the v1 directory — hard crash if v1 is deleted.
 - Root `main.py:30-51` (967 lines) maps `SCRIPTS` to v1 paths like `"knowledge_graph/build_graph.py"` and imports `from bioinformatics.report import ...` from v1. Fully broken in v2.
 - **6 corrupted directory names** exist as literal entries (missing backslashes from path concatenation):
-  - `C:Usersadamedesktopmedicaladverse_eventsdata/`
-  - `C:Usersadamedesktopmedicalbiomarker_discoverydata/`
-  - `C:Usersadamedesktopmedicalcar_t_predictordata/`
-  - `C:Usersadamedesktopmedicaldrug_synergydata/`
-  - `C:Usersadamedesktopmedicalgene_expressiondata/`
-  - `C:Usersadamedesktopmedicalnetwork_pharmacologydata/`
+  - `src/med_research/pipeline/adverse_events/data/`
+  - `src/med_research/pipeline/biomarker_discovery/data/`
+  - `src/med_research/pipeline/car_t_predictor/data/`
+  - `src/med_research/pipeline/drug_synergy/data/`
+  - `src/med_research/pipeline/gene_expression/data/`
+  - `src/med_research/pipeline/network_pharmacology/data/`
 - `index.html` at root is branded "Lupus Research Platform" (v1), but v2 is multi-disease.
 - Root `lupus_research.md` and `exa_ai_research.md` are outdated v1 docs.
 - Legacy `requirements.txt` files exist in `knowledge_graph/`, `clinical_trials/`, `virtual_screening/`, `drug_repurposing/`, `bioinformatics/`, `literature_mining/`, and `ml_predictor/` — potentially stale.

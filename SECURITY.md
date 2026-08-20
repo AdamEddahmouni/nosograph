@@ -15,7 +15,7 @@ Security fixes are applied to the latest 2.x release on the `master` branch.
 
 Report security issues through one of these channels:
 
-1. **GitHub Security Advisories** (preferred): [Report a vulnerability](https://github.com/AdamEddahmouni/med-research/security/advisories/new)
+1. **GitHub Security Advisories** (preferred): [Report a vulnerability](https://github.com/AdamEddahmouni/med-research/security/advisories/new) for the NosoGraph repository (currently hosted at `med-research` on GitHub)
 2. **Email**: Open a private security advisory via GitHub or contact the repository maintainer directly if advisories are unavailable.
 
 Include:
@@ -35,7 +35,7 @@ We will coordinate disclosure with reporters and publish a security advisory whe
 
 ## Scope
 
-This project is a **research-only** computational biomedical platform. It is designed for public biomedical knowledge, literature, and curated disease data — **not** for storing or processing protected health information (PHI) or patient-identifiable data.
+**NosoGraph** is a **research-only** computational biomedical platform. It is designed for public biomedical knowledge, literature, and curated disease data — **not** for storing or processing protected health information (PHI) or patient-identifiable data.
 
 Out of scope for security reports:
 

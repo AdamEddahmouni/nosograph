@@ -1,4 +1,4 @@
-"""FastAPI application entry point for the Medical Research Platform API."""
+"""FastAPI application entry point for the NosoGraph API."""
 
 import logging
 import sys

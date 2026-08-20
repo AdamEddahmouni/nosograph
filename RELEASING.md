@@ -1,6 +1,6 @@
-# Releasing
+# Releasing NosoGraph
 
-This document describes how to cut a new `med-research` release.
+This document describes how to cut a new NosoGraph release. The Python package still publishes as `med-research` during the compatibility period.
 
 ## Versioning
 

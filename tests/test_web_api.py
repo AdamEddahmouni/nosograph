@@ -14,6 +14,7 @@ Tests cover all REST endpoints using FastAPI's TestClient:
 
 import importlib.util
 import socket
+from importlib.metadata import PackageNotFoundError, version
 from unittest.mock import patch
 
 import pytest
@@ -73,7 +74,11 @@ class TestSystemEndpoints:
         assert resp.status_code == 200
         data = resp.json()
         assert data["status"] == "ok"
-        assert data["version"] == "2.1.0"
+        try:
+            expected_version = version("med-research")
+        except PackageNotFoundError:
+            expected_version = "2.2.0"
+        assert data["version"] == expected_version
         assert "timestamp" in data
 
     def test_cors_header_present(self, client):
@@ -1157,7 +1162,7 @@ class TestStaticServing:
     def test_dashboard_served(self, client):
         resp = client.get("/")
         assert resp.status_code == 200
-        assert "Medical Research Platform" in resp.text
+        assert "NosoGraph" in resp.text
 
     def test_legacy_kg_web_path_not_served(self, client):
         """v2 dropped the v1 knowledge_graph/web/ UI — the legacy path must 404."""
