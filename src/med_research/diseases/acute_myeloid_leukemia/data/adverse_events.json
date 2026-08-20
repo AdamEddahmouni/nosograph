@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "disease_id": "acute_myeloid_leukemia",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["myelosuppression", "nausea", "fatigue", "infection", "mucositis"],
+    "severe_ae": ["febrile neutropenia", "tumor lysis", "differentiation syndrome"],
+    "disease_overlap_ae": ["fatigue", "infection", "bleeding"],
+    "severity_burden": 8,
+    "chronic_use_safety": 4,
+    "disease_specific_risk": 2,
+    "black_box_warnings": [],
+    "monitoring_required": "Daily CBC during induction-like therapy; TLS labs; infection surveillance.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL803",
+      "common_ae": ["myelosuppression", "nausea", "mucositis", "fever"],
+      "severe_ae": ["severe myelosuppression", "cerebellar toxicity", "conjunctivitis"],
+      "disease_overlap_ae": ["fatigue", "infection"],
+      "severity_burden": 8,
+      "chronic_use_safety": 4,
+      "monitoring_required": "CBC, neurologic exam at high dose, and eye prophylaxis as indicated."
+    },
+    {
+      "drug_id": "CHEMBL1489",
+      "common_ae": ["nausea", "constipation", "injection-site reactions", "cytopenias"],
+      "severe_ae": ["febrile neutropenia", "hepatotoxicity"],
+      "disease_overlap_ae": ["fatigue", "infection"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC and liver enzymes during hypomethylating therapy."
+    },
+    {
+      "drug_id": "CHEMBL3137309",
+      "common_ae": ["nausea", "diarrhea", "fatigue", "neutropenia"],
+      "severe_ae": ["tumor lysis syndrome", "severe neutropenia", "infections"],
+      "disease_overlap_ae": ["fatigue", "infection"],
+      "severity_burden": 8,
+      "chronic_use_safety": 5,
+      "monitoring_required": "TLS labs and CBC during venetoclax ramp-up."
+    },
+    {
+      "drug_id": "CHEMBL608533",
+      "common_ae": ["nausea", "vomiting", "edema", "headache", "QT prolongation"],
+      "severe_ae": ["differentiation syndrome", "pulmonary toxicity", "QT prolongation"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "ECG/QT and pulmonary symptoms with FLT3 inhibitor use."
+    },
+    {
+      "drug_id": "CHEMBL3301603",
+      "common_ae": ["myalgia", "fatigue", "fever", "edema", "diarrhea"],
+      "severe_ae": ["differentiation syndrome", "pancreatitis", "posterior reversible encephalopathy"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Differentiation-syndrome vigilance and pancreatic enzymes as indicated."
+    },
+    {
+      "drug_id": "CHEMBL1201129",
+      "common_ae": ["neutropenia", "thrombocytopenia", "anemia", "nausea"],
+      "severe_ae": ["febrile neutropenia", "pneumonia"],
+      "disease_overlap_ae": ["fatigue", "infection"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "CBC during hypomethylating cycles."
+    }
+  ]
+}

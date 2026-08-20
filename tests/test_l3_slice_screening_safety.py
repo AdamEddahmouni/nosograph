@@ -19,10 +19,21 @@ L3_SLICE = (
     "non_alcoholic_fatty_liver_disease",
 )
 
+WAVE2_SLICE = (
+    "melanoma",
+    "colorectal_cancer",
+    "triple_neg_breast_cancer",
+    "breast_cancer",
+    "acute_myeloid_leukemia",
+    "spinal_muscular_atrophy",
+    "major_depressive_disorder",
+    "epilepsy",
+)
+
 pytestmark = pytest.mark.unit
 
 
-@pytest.mark.parametrize("disease_id", L3_SLICE)
+@pytest.mark.parametrize("disease_id", L3_SLICE + WAVE2_SLICE)
 def test_l3_slice_screening_strategy_uses_catalog_drugs(disease_id):
     strategy = strategy_for_disease(disease_id)
     catalog = {drug["id"] for drug in Disease(disease_id).load_drugs()["drugs"]}
@@ -38,7 +49,7 @@ def test_l3_slice_screening_strategy_uses_catalog_drugs(disease_id):
     assert coverage.level == "full"
 
 
-@pytest.mark.parametrize("disease_id", L3_SLICE)
+@pytest.mark.parametrize("disease_id", L3_SLICE + WAVE2_SLICE)
 def test_l3_slice_safety_profile_is_ready(disease_id):
     disease = Disease(disease_id)
     path = disease.data_dir / "adverse_events.json"

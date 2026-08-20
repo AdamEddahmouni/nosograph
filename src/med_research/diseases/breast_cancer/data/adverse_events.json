@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "disease_id": "breast_cancer",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["fatigue", "nausea", "hot flashes", "myelosuppression", "alopecia"],
+    "severe_ae": ["febrile neutropenia", "cardiotoxicity", "ILD"],
+    "disease_overlap_ae": ["fatigue", "pain"],
+    "severity_burden": 6,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "CBC, cardiac function for HER2-directed agents, and endocrine-symptom review.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL189963",
+      "common_ae": ["neutropenia", "fatigue", "nausea", "infections", "alopecia"],
+      "severe_ae": ["severe neutropenia", "ILDs / pneumonitis", "venous thromboembolism"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 6,
+      "monitoring_required": "CBC before each CDK4/6 cycle and pulmonary symptoms."
+    },
+    {
+      "drug_id": "CHEMBL3545110",
+      "common_ae": ["neutropenia", "nausea", "fatigue", "diarrhea", "alopecia"],
+      "severe_ae": ["QT prolongation", "severe neutropenia", "hepatotoxicity"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 6,
+      "monitoring_required": "ECG/QT, CBC, and liver enzymes."
+    },
+    {
+      "drug_id": "CHEMBL1743082",
+      "common_ae": ["nausea", "fatigue", "musculoskeletal pain", "thrombocytopenia", "headache"],
+      "severe_ae": ["hepatotoxicity", "left ventricular dysfunction", "hemorrhage", "ILD"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "LVEF, platelets, and liver tests during T-DM1 exposure."
+    },
+    {
+      "drug_id": "CHEMBL428647",
+      "common_ae": ["alopecia", "neuropathy", "nausea", "myalgia"],
+      "severe_ae": ["severe neutropenia", "hypersensitivity", "peripheral neuropathy"],
+      "disease_overlap_ae": ["fatigue", "pain"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Neuropathy assessment and CBC."
+    },
+    {
+      "drug_id": "CHEMBL1201179",
+      "common_ae": ["diarrhea", "rash", "nausea", "fatigue"],
+      "severe_ae": ["hepatotoxicity", "decreased LVEF", "ILD", "severe diarrhea"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Diarrhea, LVEF, and liver enzymes for HER2 TKI use."
+    },
+    {
+      "drug_id": "CHEMBL521686",
+      "common_ae": ["nausea", "fatigue", "anemia", "vomiting"],
+      "severe_ae": ["MDS/AML signal", "pneumonitis"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "CBC and pulmonary symptoms."
+    }
+  ]
+}

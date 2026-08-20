@@ -205,12 +205,12 @@ SCREENING_PROFILE = {
         "repair",
     ],
     "reference_drug_ids": [
-        "CHEMBL386630",
-        "CHEMBL1743026",
-        "CHEMBL1743047",
-        "CHEMBL2109259",
-        "CHEMBL228814",
-        "CHEMBL98",
+        "CHEMBL2103875",
+        "CHEMBL553",
+        "CHEMBL4297829",
+        "CHEMBL3545252",
+        "CHEMBL235668",
+        "CHEMBL1743013",
     ],
     "weights": {
         "binding_estimate": 0.25,

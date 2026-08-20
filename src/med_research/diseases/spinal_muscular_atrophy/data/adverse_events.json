@@ -1,0 +1,60 @@
+{
+  "schema_version": "1",
+  "disease_id": "spinal_muscular_atrophy",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["headache", "vomiting", "back pain", "pyrexia", "upper respiratory infection"],
+    "severe_ae": ["hydrocephalus", "coagulopathy", "hepatotoxicity", "thrombocytopenia"],
+    "disease_overlap_ae": ["weakness", "fatigue", "respiratory infection"],
+    "severity_burden": 6,
+    "chronic_use_safety": 6,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Procedure-related complications for IT ASO; liver and platelets for gene therapy; diarrhea for splicing modulators.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL3301572",
+      "common_ae": ["headache", "back pain", "vomiting", "pyrexia"],
+      "severe_ae": ["hydrocephalus", "coagulation abnormalities", "thrombocytopenia"],
+      "disease_overlap_ae": ["weakness", "respiratory infection"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Post-lumbar-puncture observation; platelets and coagulation as labeled."
+    },
+    {
+      "drug_id": "CHEMBL4297528",
+      "common_ae": ["fever", "diarrhea", "rash", "mouth ulcers"],
+      "severe_ae": ["retinal toxicity signal", "embryo-fetal toxicity"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Ophthalmologic exams and GI tolerance on oral splicing modulator therapy."
+    },
+    {
+      "drug_id": "CHEMBL4297240",
+      "common_ae": ["vomiting", "pyrexia", "elevated liver enzymes", "thrombocytopenia"],
+      "severe_ae": ["acute liver injury", "thrombotic microangiopathy", "cardiac events"],
+      "disease_overlap_ae": ["weakness", "respiratory infection"],
+      "severity_burden": 8,
+      "chronic_use_safety": 5,
+      "monitoring_required": "Liver enzymes, platelets, and cardiac monitoring around AAV9 gene therapy."
+    },
+    {
+      "drug_id": "CHEMBL744",
+      "common_ae": ["asthenia", "nausea", "dizziness", "somnolence"],
+      "severe_ae": ["neutropenia", "interstitial lung disease", "hepatotoxicity"],
+      "disease_overlap_ae": ["weakness", "fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "LFTs and pulmonary symptoms during riluzole exposure."
+    }
+  ]
+}

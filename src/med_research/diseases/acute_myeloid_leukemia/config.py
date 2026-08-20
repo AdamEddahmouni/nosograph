@@ -244,12 +244,12 @@ SCREENING_PROFILE = {
         "signaling",
     ],
     "reference_drug_ids": [
-        "CHEMBL1096882",
-        "CHEMBL1096882",
-        "CHEMBL1200485",
+        "CHEMBL803",
+        "CHEMBL1489",
+        "CHEMBL3137309",
+        "CHEMBL608533",
+        "CHEMBL3301603",
         "CHEMBL1201129",
-        "CHEMBL1336",
-        "CHEMBL1336",
     ],
     "weights": {
         "binding_estimate": 0.25,

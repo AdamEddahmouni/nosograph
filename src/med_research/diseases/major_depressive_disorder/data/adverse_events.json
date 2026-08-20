@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "disease_id": "major_depressive_disorder",
+  "source": "disease_drug_safety_profile",
+  "coverage_level": "full",
+  "curated_inputs": ["disease_drug_catalog", "class_level_adverse_event_patterns"],
+  "inferred_inputs": ["class_level_mapping_for_unmatched_drugs"],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments."
+  ],
+  "default_profile": {
+    "common_ae": ["nausea", "insomnia", "headache", "sexual dysfunction", "fatigue"],
+    "severe_ae": ["suicidality in young adults", "serotonin syndrome", "hyponatremia", "seizures"],
+    "disease_overlap_ae": ["fatigue", "insomnia", "anhedonia"],
+    "severity_burden": 5,
+    "chronic_use_safety": 7,
+    "disease_specific_risk": 1,
+    "black_box_warnings": [],
+    "monitoring_required": "Mood/suicidality, sodium in older adults, and blood pressure for SNRIs.",
+    "evidence_grade": "curated_class_pattern"
+  },
+  "profiles": [
+    {
+      "drug_id": "escitalopram",
+      "common_ae": ["nausea", "insomnia", "ejaculation disorder", "fatigue", "somnolence"],
+      "severe_ae": ["QT prolongation", "hyponatremia", "suicidality in young adults"],
+      "disease_overlap_ae": ["fatigue", "insomnia"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "QT risk review and mood monitoring after initiation."
+    },
+    {
+      "drug_id": "sertraline",
+      "common_ae": ["nausea", "diarrhea", "insomnia", "dry mouth", "sexual dysfunction"],
+      "severe_ae": ["serotonin syndrome", "hyponatremia", "suicidality in young adults"],
+      "disease_overlap_ae": ["fatigue", "insomnia"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "GI tolerance and mood/suicidality monitoring."
+    },
+    {
+      "drug_id": "duloxetine",
+      "common_ae": ["nausea", "dry mouth", "somnolence", "constipation", "decreased appetite"],
+      "severe_ae": ["hepatotoxicity", "orthostatic hypotension", "withdrawal syndrome"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Liver enzymes, blood pressure, and taper planning."
+    },
+    {
+      "drug_id": "bupropion",
+      "common_ae": ["insomnia", "dry mouth", "headache", "agitation", "weight loss"],
+      "severe_ae": ["seizures", "hypertension", "neuropsychiatric events"],
+      "disease_overlap_ae": ["insomnia", "agitation"],
+      "severity_burden": 6,
+      "chronic_use_safety": 6,
+      "monitoring_required": "Seizure-threshold review and blood pressure."
+    },
+    {
+      "drug_id": "esketamine",
+      "common_ae": ["dissociation", "dizziness", "nausea", "sedation", "increased blood pressure"],
+      "severe_ae": ["sedation", "dissociation", "abuse potential", "suicidal thoughts"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 7,
+      "chronic_use_safety": 5,
+      "monitoring_required": "In-clinic observation for blood pressure, sedation, and dissociation."
+    },
+    {
+      "drug_id": "vortioxetine",
+      "common_ae": ["nausea", "constipation", "vomiting", "sexual dysfunction"],
+      "severe_ae": ["serotonin syndrome", "hyponatremia", "angle-closure glaucoma"],
+      "disease_overlap_ae": ["fatigue"],
+      "severity_burden": 5,
+      "chronic_use_safety": 7,
+      "monitoring_required": "Nausea counseling and mood monitoring."
+    }
+  ]
+}
