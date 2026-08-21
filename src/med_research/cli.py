@@ -344,6 +344,34 @@ def _build_parser() -> argparse.ArgumentParser:
     dval.add_argument(
         "--strict", action="store_true", help="Exit non-zero when config gaps are found (for CI)"
     )
+    dvalbatch = disease_sub.add_parser(
+        "validate-batch",
+        help="Run strict batch validation with machine-readable failure classification",
+    )
+    dvalbatch.add_argument(
+        "--tier",
+        choices=["L2", "L3", "ci_validated", "reference", "all"],
+        default="reference",
+        help="Corpus slice to validate (default: reference)",
+    )
+    dvalbatch.add_argument(
+        "--limit", type=int, help="Maximum number of diseases to validate in this run"
+    )
+    dvalbatch.add_argument(
+        "--output",
+        type=Path,
+        help="Write JSON report to this path (default: data/reports/validation_batch_report.json)",
+    )
+    dvalbatch.add_argument(
+        "--strict",
+        action="store_true",
+        help="Exit non-zero when any module fails validation (for CI)",
+    )
+    dvalbatch.add_argument(
+        "disease_ids",
+        nargs="*",
+        help="Optional explicit disease IDs (overrides --tier when provided)",
+    )
     dcoverage = disease_sub.add_parser(
         "coverage", help="Show strict data and module coverage for a disease"
     )
@@ -992,6 +1020,37 @@ def cmd_disease(args):
             return 1 if args.strict else 0
         return 0
 
+    if args.disease_action == "validate-batch":
+        from med_research.diseases.validation_batch import (
+            run_strict_validation_batch,
+            write_validation_report,
+        )
+
+        tier = args.tier
+        explicit = list(args.disease_ids) if args.disease_ids else None
+        report = run_strict_validation_batch(
+            tier_filter=tier,
+            limit=args.limit,
+            disease_ids=explicit,
+        )
+        out = write_validation_report(report, args.output)
+        summary = report["summary"]
+        logger.info(
+            "\nBatch validation (%s): %s/%s passed (%.1f%%)",
+            tier,
+            summary["passed"],
+            summary["total"],
+            summary["pass_rate"] * 100,
+        )
+        if summary["failed"]:
+            logger.warning("  %s module(s) failed strict validation", summary["failed"])
+            for failure_class, count in summary.get("failure_classes", {}).items():
+                logger.info("    %s: %s", failure_class, count)
+        logger.info("Report written to %s", out)
+        if args.strict and summary["failed"] > 0:
+            return 1
+        return 0
+
     if args.disease_action == "add":
         import tempfile
 
@@ -1224,7 +1283,10 @@ def cmd_disease(args):
         print_backups_summary(summary)
         return 0
 
-    logger.info("Usage: med-research disease {add|refresh|restore|backups|list|validate|coverage}")
+    logger.info(
+        "Usage: med-research disease "
+        "{add|refresh|restore|backups|list|validate|validate-batch|coverage}"
+    )
     return 0
 
 
