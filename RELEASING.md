@@ -18,7 +18,8 @@ The canonical version lives in [pyproject.toml](pyproject.toml) (`project.versio
    - Summary of user-visible changes
    - Verification commands run (`make lint`, `make test-offline`, etc.)
 
-2. **Bump version** in `pyproject.toml` to match the CHANGELOG heading.
+2. **Bump version** in `pyproject.toml`, `CITATION.cff`, `codemeta.json`, `src/med_research/__init__.py`, and `docs/generated/public-status.yaml`.
+3. **Run `python scripts/check_public_metadata.py`.**
 
 3. **Run verification locally:**
 
@@ -34,7 +35,7 @@ The canonical version lives in [pyproject.toml](pyproject.toml) (`project.versio
 5. **Tag and push:**
 
    ```bash
-   git tag -a vX.Y.Z -m "med-research vX.Y.Z"
+   git tag -a vX.Y.Z -m "NosoGraph vX.Y.Z"
    git push origin master --tags
    ```
 

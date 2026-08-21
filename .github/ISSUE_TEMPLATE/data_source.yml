@@ -1,0 +1,36 @@
+name: Data source request
+description: Propose a biomedical source integration or metadata update
+title: "[Source]: "
+labels: ["data-source"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Homepage / docs URL
+    validations:
+      required: true
+  - type: textarea
+    id: license
+    attributes:
+      label: License / terms
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: How NosoGraph would use it
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I am not requesting ingestion of PHI or restricted patient data
+          required: true

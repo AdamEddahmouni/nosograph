@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
-"""Medical Research Platform — Unified CLI
+"""NosoGraph — The Open Computational Map of Human Disease
 
-Run the full computational pipeline against any disease.
+Unified CLI for disease modules, biomedical sources, research pipelines, and the web interface.
 
 Usage:
-    med-research run-all --disease sle          Run complete pipeline for SLE
-    med-research kg --disease ra                Build KG for RA
-    med-research repurpose --disease ms --top 15 Drug repurposing for MS
-    med-research diseases                       List available diseases
-    med-research modules                        List available pipeline modules
-    med-research workspace-migrate --dry-run    Inspect persisted Workspace migrations
-    med-research biomed init                  Initialize the canonical biomedical store
-    med-research serve                          Start the web API server
+    nosograph --help
+    nosograph diseases
+    nosograph disease validate sle --strict
+    nosograph serve --host 127.0.0.1 --port 8000
+
+Legacy alias: med-research (same implementation). Python import: med_research.
+Research use only — not medical advice.
 """
 
 from __future__ import annotations
@@ -258,7 +257,7 @@ def _add_registry_cli_commands(
 
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Medical Research Platform — Multi-disease drug discovery pipeline",
+        description="NosoGraph — The Open Computational Map of Human Disease",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--verbose", "-v", action="store_true", help="Enable debug output")

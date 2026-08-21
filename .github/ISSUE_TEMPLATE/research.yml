@@ -1,0 +1,31 @@
+name: Research question
+description: Propose a research question or analysis that NosoGraph might support
+title: "[Research]: "
+labels: ["research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For open-ended discussion, prefer [Discussions](https://github.com/AdamEddahmouni/nosograph/discussions).
+        Do not include patient data. Outputs would be computational hypotheses, not clinical advice.
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+    validations:
+      required: true
+  - type: textarea
+    id: diseases
+    attributes:
+      label: Disease context (slugs / MONDO IDs)
+  - type: textarea
+    id: sources
+    attributes:
+      label: Evidence sources you would expect
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: This is a research proposal, not a request for medical advice
+          required: true

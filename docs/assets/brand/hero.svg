@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" role="img">
+  <title>NosoGraph connects diseases to phenotypes, genes, mechanisms, treatments, and evidence</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1524"/>
+      <stop offset="100%" stop-color="#132536"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="420" fill="url(#g)"/>
+  <g opacity="0.35" fill="none" stroke="#7FD1CF" stroke-width="1.4">
+    <path d="M80 300 C 220 80, 420 360, 620 160 S 980 80, 1200 240"/>
+    <path d="M60 180 C 280 40, 480 300, 760 220 S 1100 340, 1240 120"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" fill="#F7F4EE">
+    <text x="72" y="120" font-size="22" fill="#7FD1CF" letter-spacing="3">OPEN-SOURCE BIOMEDICAL RESEARCH</text>
+    <text x="72" y="188" font-size="58" font-weight="700">NosoGraph</text>
+    <text x="72" y="236" font-size="26" fill="#D7E3EA">The Open Computational Map of Human Disease</text>
+    <text x="72" y="286" font-size="18" fill="#A9BDC8">Disease · Phenotype · Gene · Mechanism · Pathway · Treatment · Trial · Evidence</text>
+  </g>
+  <g>
+    <circle cx="980" cy="150" r="18" fill="#1B7A7A"/>
+    <circle cx="1088" cy="210" r="14" fill="#3D5A80"/>
+    <circle cx="1010" cy="280" r="16" fill="#B08968"/>
+    <circle cx="1140" cy="120" r="12" fill="#7FD1CF"/>
+    <circle cx="1170" cy="260" r="15" fill="#1B7A7A"/>
+    <line x1="980" y1="150" x2="1088" y2="210" stroke="#7FD1CF" stroke-width="2"/>
+    <line x1="1088" y1="210" x2="1010" y2="280" stroke="#C9D0D8" stroke-width="2"/>
+    <line x1="980" y1="150" x2="1140" y2="120" stroke="#C9D0D8" stroke-width="2"/>
+    <line x1="1088" y1="210" x2="1170" y2="260" stroke="#7FD1CF" stroke-width="2"/>
+    <line x1="1010" y1="280" x2="1170" y2="260" stroke="#B08968" stroke-width="2"/>
+  </g>
+</svg>

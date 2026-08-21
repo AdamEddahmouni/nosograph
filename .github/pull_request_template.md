@@ -1,28 +1,48 @@
 ## Summary
 
-<!-- What does this PR change and why? (NosoGraph / med-research) -->
+<!-- What changed and why? -->
+
+## Why
+
+<!-- User or research impact. Skip for tiny typo PRs. -->
 
 ## Type of change
 
 - [ ] Bug fix
 - [ ] New feature
-- [ ] Documentation
+- [ ] Documentation / public presence
 - [ ] Refactor / tooling
 - [ ] Disease data / curation
+- [ ] Data source / provenance
 
-## Test plan
+## Evidence / sources
 
-- [ ] `make lint`
-- [ ] `make test-offline`
-- [ ] Additional tests (list commands or scenarios):
+<!-- Required for curation and data PRs. Public identifiers only. -->
+
+## Validation
+
+- [ ] `make lint` (or N/A for docs-only)
+- [ ] `make test-offline` (or N/A for docs-only)
+- [ ] `python scripts/check_public_metadata.py` if README/CITATION/version changed
+- [ ] Additional:
+
+## Screenshots
+
+<!-- UI PRs only. No secrets, PHI, or local paths. -->
+
+## Data / provenance impact
+
+- [ ] No new restricted data
+- [ ] Provenance/source metadata updated if associations changed
+
+## Breaking changes
+
+<!-- None / describe -->
 
 ## Research safety
 
 - [ ] Outputs remain framed as computational hypotheses, not clinical advice
-- [ ] Disease context is preserved where relevant
-- [ ] New behavior has deterministic tests where applicable
 
 ## Security
 
-- [ ] No secrets, API keys, or credentials committed
-- [ ] If this touches auth or deployment, see [SECURITY.md](../SECURITY.md)
+- [ ] No secrets, API keys, credentials, or PHI committed

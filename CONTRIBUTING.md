@@ -2,6 +2,16 @@
 
 Thank you for helping improve **NosoGraph** (The Open Computational Map of Human Disease). The Python package still installs as `med-research` with import path `med_research` during the compatibility transition. This document covers local development and pull requests.
 
+## Contribution paths
+
+| Path | Start |
+|------|--------|
+| Code | This file + [docs/contributing/code.md](docs/contributing/code.md) |
+| Disease / data curation | [docs/disease-curation.md](docs/disease-curation.md) + the Disease curation issue template |
+| Documentation | `pip install -r requirements-docs.txt` then `mkdocs serve`; see [docs/contributing/index.md](docs/contributing/index.md) |
+
+Newcomers: look for `good first issue` and `help wanted`. Do not open public issues with secrets or PHI.
+
 ## Code of conduct
 
 This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md). By participating, you agree to uphold a respectful, inclusive community.

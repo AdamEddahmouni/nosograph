@@ -1,0 +1,25 @@
+name: Documentation
+description: Report a docs error or propose a documentation improvement
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: page
+    attributes:
+      label: Page or file
+      description: README, docs URL, or repository path.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should change?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: This is not a request to process patient or PHI data
+          required: true

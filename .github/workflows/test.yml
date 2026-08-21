@@ -51,6 +51,9 @@ jobs:
       - name: Check for stale internal imports
         run: python scripts/check_imports.py
 
+      - name: Check public metadata consistency
+        run: python scripts/check_public_metadata.py
+
   # Non-blocking until TECHNICAL_DEBT_ISSUES.md typing backlog is cleared.
   typecheck:
     runs-on: ubuntu-latest
