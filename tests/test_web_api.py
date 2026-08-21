@@ -535,7 +535,7 @@ class TestRepurposeGene:
             "gene_name",
             "gene_category",
             "gene_function",
-            "lupus_evidence",
+            "disease_evidence",
             "candidates",
         ]:
             assert field in data, f"Missing field: {field}"
@@ -1449,10 +1449,13 @@ class TestDiseaseAwareEndpoints:
 class TestKGGraphDiseaseAware:
     """Tests for GET /api/kg/graph with the disease param."""
 
-    def test_default_is_sle(self, client):
+    def test_generic_default_when_disease_omitted(self, client):
+        from med_research.web.disease_params import default_disease_for_selection
+
+        expected = default_disease_for_selection()
         data = client.get("/api/kg/graph").json()
-        sle = client.get("/api/kg/graph?disease=sle").json()
-        assert data["elements"] == sle["elements"]
+        explicit = client.get(f"/api/kg/graph?disease={expected}").json()
+        assert data["elements"] == explicit["elements"]
 
     def test_ra_graph_differs_from_sle(self, client):
         sle = client.get("/api/kg/graph?disease=sle").json()["elements"]
@@ -1460,11 +1463,10 @@ class TestKGGraphDiseaseAware:
         assert len(ra) > 0
         assert ra != sle
 
-    def test_unknown_disease_returns_409_for_graph(self, client):
+    def test_unknown_disease_returns_422_for_graph(self, client):
         resp = client.get("/api/kg/graph?disease=nonexistent")
-        assert resp.status_code == 409
+        assert resp.status_code == 422
         data = resp.json()
-        assert data["error_type"] == "ModuleNotAvailableError"
         assert "detail" in data
 
     def test_stats_disease_param(self, client):

@@ -23,6 +23,7 @@ from pathlib import Path
 from typing import Any, cast
 
 from med_research.diseases.base import Disease
+from med_research.diseases.identifiers import add_required_disease_cli_argument
 from med_research.logging_config import get_logger, setup_logging
 from med_research.pipeline.base import PipelineRunResult
 from med_research.pipeline.results import MlPredictionResult, NetworkAnalysis
@@ -241,7 +242,7 @@ def _add_registry_cli_commands(
             continue
         module_parser = subparsers.add_parser(command, help=entry["cli_help"])
         module_parser.set_defaults(registry_module_id=entry["module_id"])
-        module_parser.add_argument("--disease", "-d", default="sle", help="Disease ID")
+        add_required_disease_cli_argument(module_parser)
         module_parser.add_argument(
             "--export-html", action="store_true", help="Generate an HTML report"
         )
@@ -401,19 +402,19 @@ def _build_parser() -> argparse.ArgumentParser:
 
     # ── Knowledge Graph ────────────────────────────────────────────────
     kg = sub.add_parser("kg", help="Build and export the knowledge graph")
-    kg.add_argument("--disease", "-d", default="sle", help="Disease ID (default: sle)")
+    add_required_disease_cli_argument(kg, help_text="Disease ID (required)")
     kg.add_argument("--analyze", action="store_true", help="Run graph analysis")
     kg.add_argument("--export", action="store_true", help="Export for web visualization")
 
     # ── Core Pipeline ──────────────────────────────────────────────────
     repurpose = sub.add_parser("repurpose", help="Score drug repurposing candidates")
-    repurpose.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(repurpose)
     repurpose.add_argument("--top", type=int, default=15, help="Top N candidates")
     repurpose.add_argument("--gene", type=str, help="Filter to specific gene")
     repurpose.add_argument("--export-html", action="store_true", help="Generate HTML report")
 
     bio = sub.add_parser("bioinformatics", help="Run GWAS + enrichment + PPI")
-    bio.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(bio)
     bio.add_argument("--skip-gwas", action="store_true")
     bio.add_argument("--skip-enrichment", action="store_true")
     bio.add_argument("--skip-ppi", action="store_true")
@@ -421,7 +422,7 @@ def _build_parser() -> argparse.ArgumentParser:
     bio.add_argument("--export-html", action="store_true")
 
     lit = sub.add_parser("literature", help="Mine PubMed for disease articles")
-    lit.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(lit)
     lit.add_argument("--max", dest="max_articles", type=int, default=200)
     lit.add_argument("--no-cache", action="store_true")
     lit.add_argument("--targeted", action="store_true")
@@ -429,58 +430,58 @@ def _build_parser() -> argparse.ArgumentParser:
     lit.add_argument("--export-html", action="store_true")
 
     screen = sub.add_parser("screening", help="Virtual drug screening")
-    screen.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(screen)
     screen.add_argument("--gene", type=str)
     screen.add_argument("--top", type=int, default=15)
     screen.add_argument("--use-vina", action="store_true")
     screen.add_argument("--export-html", action="store_true")
 
     trials = sub.add_parser("trials", help="Track clinical trials")
-    trials.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(trials)
     trials.add_argument("--top", type=int, default=20)
     trials.add_argument("--no-cache", action="store_true")
     trials.add_argument("--export-html", action="store_true")
 
     ml = sub.add_parser("ml", help="Train ML target predictor")
-    ml.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(ml)
     ml.add_argument("--top", type=int, default=15)
     ml.add_argument("--export-html", action="store_true")
 
     # ── Advanced Analysis ──────────────────────────────────────────────
     synergy = sub.add_parser("synergy", help="Drug combination synergy scoring")
-    synergy.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(synergy)
     synergy.add_argument("--top", type=int, default=20)
     synergy.add_argument("--export-html", action="store_true")
 
     safety = sub.add_parser("safety", help="Adverse event safety profiling")
-    safety.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(safety)
     safety.add_argument("--drug", type=str)
     safety.add_argument("--top", type=int, default=20)
     safety.add_argument("--export-html", action="store_true")
 
     network = sub.add_parser("network", help="Deep network pharmacology analysis")
-    network.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(network)
     network.add_argument("--top", type=int, default=20)
     network.add_argument("--export-html", action="store_true")
 
     expr = sub.add_parser("expression", help="Gene expression correlation analysis")
-    expr.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(expr)
     expr.add_argument("--top", type=int, default=15)
     expr.add_argument("--export-html", action="store_true")
 
     cart = sub.add_parser("cart", help="CAR-T response prediction")
-    cart.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(cart)
     cart.add_argument("--top", type=int, default=15)
     cart.add_argument("--export-html", action="store_true")
 
     biomarker = sub.add_parser("biomarker", help="Cross-module biomarker discovery")
-    biomarker.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(biomarker)
     biomarker.add_argument("--top", type=int, default=15)
     biomarker.add_argument("--export-html", action="store_true")
 
     # ── Evidence & Knowledge ───────────────────────────────────────────
     workspace = sub.add_parser("workspace", help="Build a cited evidence-to-hypothesis dossier")
-    workspace.add_argument("--disease", "-d", default="sle", help="Disease ID (MVP: sle)")
+    add_required_disease_cli_argument(workspace, help_text="Disease ID (required)")
     _add_workspace_request_arguments(workspace)
     workspace.add_argument(
         "--json", dest="json_path", help="Write complete dossier JSON to this path"
@@ -659,13 +660,13 @@ def _build_parser() -> argparse.ArgumentParser:
     )
 
     semantic = sub.add_parser("semantic", help="Semantic search over biomedical abstracts")
-    semantic.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(semantic)
     semantic.add_argument("--query", "-q", default=None, help="Search query")
     semantic.add_argument("--top", type=int, default=20)
     semantic.add_argument("--export-html", action="store_true")
 
     evidence = sub.add_parser("evidence", help="Multi-source evidence gathering")
-    evidence.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(evidence)
     evidence.add_argument("--query", "-q", default=None)
     evidence.add_argument("--sources", default="all")
     evidence.add_argument("--max", type=int, default=20)
@@ -674,7 +675,7 @@ def _build_parser() -> argparse.ArgumentParser:
     evidence.add_argument("--export-html", action="store_true")
 
     extractor = sub.add_parser("extractor", help="LLM-powered evidence extraction")
-    extractor.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(extractor)
     extractor.add_argument("--query", "-q", default=None)
     extractor.add_argument("--sources", default="pubmed,preprints,clinical_trials")
     extractor.add_argument(
@@ -686,7 +687,7 @@ def _build_parser() -> argparse.ArgumentParser:
     extractor.add_argument("--export-html", action="store_true")
 
     monitor = sub.add_parser("monitor", help="Continuous evidence monitoring")
-    monitor.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(monitor)
     monitor.add_argument("--snapshot", action="store_true")
     monitor.add_argument("--diff", action="store_true")
     monitor.add_argument("--list", dest="list_snapshots", action="store_true")
@@ -696,13 +697,15 @@ def _build_parser() -> argparse.ArgumentParser:
 
     # ── Cross-Disease ──────────────────────────────────────────────────
     cd = sub.add_parser("cross-disease", help="Cross-disease drug repurposing analysis")
-    cd.add_argument("--disease", "-d", default="sle", help="Disease ID (for provenance/reporting)")
+    add_required_disease_cli_argument(
+        cd, help_text="Disease ID for provenance/reporting (required)"
+    )
     cd.add_argument("--top", type=int, default=20)
     cd.add_argument("--export-html", action="store_true")
 
     # ── Full Pipeline & Server ─────────────────────────────────────────
     run_all = sub.add_parser("run-all", help="Run the complete research pipeline")
-    run_all.add_argument("--disease", "-d", default="sle", help="Disease ID")
+    add_required_disease_cli_argument(run_all)
     run_all.add_argument("--export-html", action="store_true", help="Generate HTML reports")
     run_all.add_argument("--no-cache", action="store_true", help="Skip caches")
     run_all.add_argument("--skip-trials", action="store_true")
@@ -756,7 +759,9 @@ def _build_parser() -> argparse.ArgumentParser:
     live.add_argument(
         "--target", "-t", default="JAK2", help="Target gene symbol (e.g. JAK2, STAT3, TNF)"
     )
-    live.add_argument("--disease", "-d", default="ra", help="Disease code (e.g. ra, sle, ms, ibd)")
+    add_required_disease_cli_argument(
+        live, help_text="Disease code (required; e.g. ra, sle, ms, ibd)"
+    )
     live.add_argument(
         "--source",
         "-s",
@@ -2476,6 +2481,11 @@ def main():
 
     parser.print_help()
     return 0
+
+
+def nosograph_main() -> int:
+    """Entry point alias for the ``nosograph`` console script."""
+    return main()
 
 
 if __name__ == "__main__":

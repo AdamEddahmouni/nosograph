@@ -859,7 +859,7 @@
                     <div>
                         <span class="workspace-kicker">UNIVERSAL BIOMEDICAL · RESEARCH ONLY</span>
                         <h2 id="condition-comparison-title">Condition Comparison</h2>
-                        <p>Compare two imported conditions using transparent HPO-aware phenotype similarity and biological overlap scores. Results are research hypotheses, not diagnoses.</p>
+                        <p>Compare two imported conditions across phenotype, gene, mechanism, treatment, and evidence-coverage dimensions. Overlap summaries are research hypotheses — no universal similarity score.</p>
                     </div>
                     <div class="condition-comparison-disclaimer" id="condition-comparison-disclaimer">⚠️ Research use only · condition similarity for exploratory analysis</div>
                 </div>
@@ -869,6 +869,14 @@
                         <select id="comparison-left-curie" class="condition-comparison-input" placeholder="Search conditions…" autocomplete="off"></select>
                         <label class="condition-comparison-label" for="comparison-right-curie">Right condition</label>
                         <select id="comparison-right-curie" class="condition-comparison-input" placeholder="Search conditions…" autocomplete="off"></select>
+                        <fieldset class="condition-comparison-dimensions" id="comparison-dimensions">
+                            <legend>Dimensions</legend>
+                            <label><input type="checkbox" value="phenotype" checked> Phenotypes</label>
+                            <label><input type="checkbox" value="gene" checked> Genes</label>
+                            <label><input type="checkbox" value="mechanism" checked> Mechanisms</label>
+                            <label><input type="checkbox" value="treatment" checked> Treatments</label>
+                            <label><input type="checkbox" value="evidence_coverage" checked> Evidence</label>
+                        </fieldset>
                         <button type="button" class="btn btn-primary" id="comparison-run-btn">Compare conditions</button>
                     </div>
                     <div class="condition-comparison-result" id="condition-comparison-result" aria-live="polite">

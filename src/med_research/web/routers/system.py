@@ -4,13 +4,14 @@ import logging
 from datetime import datetime
 from importlib.metadata import version
 from pathlib import Path
-from typing import Any
+from typing import Annotated, Any
 
 import redis
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Depends, Query
 from fastapi.responses import JSONResponse
 
 from med_research.diseases.base import Disease
+from med_research.diseases.identifiers import CI_VALIDATED_DISEASES
 from med_research.pipeline.gateway import pipeline_gateway
 from med_research.web.config import CELERY_BROKER_URL, WORKSPACE_DB_PATH
 from med_research.web.dependencies import (
@@ -20,6 +21,7 @@ from med_research.web.dependencies import (
     get_kg_pathways,
     get_knowledge_graph,
 )
+from med_research.web.disease_params import resolve_optional_query_disease
 from med_research.web.models import (
     CoverageSummary,
     DiseaseInfo,
@@ -178,7 +180,7 @@ async def disease_registry() -> DiseasesResponse:
         for module in DEFAULT_MODULE_INPUTS
     }
 
-    core_diseases = {"sle", "ra", "ms", "ss", "ssc", "t1d", "ibd", "ad"}
+    core_diseases = CI_VALIDATED_DISEASES
     diseases = []
 
     for disease_id in Disease.list_all():
@@ -377,9 +379,12 @@ async def corpus_status(
     }
 
 
+ResolvedDisease = Annotated[str, Depends(resolve_optional_query_disease)]
+
+
 @router.get("/api/system/modules", response_model=PipelineModulesResponse)
 async def pipeline_modules(
-    disease: str = Query("sle", description="Disease ID for per-module coverage metadata"),
+    disease: ResolvedDisease,
 ) -> dict[str, Any]:
     """List registered pipeline modules with per-disease coverage metadata."""
     modules = []
@@ -430,7 +435,7 @@ def _coverage_summary_for_disease(disease_id: str) -> CoverageSummary:
 
 @router.get("/api/stats", response_model=PlatformStats)
 async def platform_stats(
-    disease: str = Query("sle", description="Disease ID to compute stats for"),
+    disease: ResolvedDisease,
 ) -> dict[str, Any]:
     """Get platform statistics for a specific disease."""
     G = get_knowledge_graph(disease)

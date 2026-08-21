@@ -1,9 +1,10 @@
 """Analysis API routers — Literature, Screening, Trials, ML."""
 
-from typing import Any
+from typing import Annotated, Any
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Depends, Query
 
+from med_research.web.disease_params import resolve_optional_query_disease
 from med_research.web.models.shared import (
     LiteratureResponse,
     MLResponse,
@@ -19,16 +20,15 @@ from med_research.web.services.shared_services import (
 
 router = APIRouter(tags=["Analysis"])
 
-
-# ── Literature Mining ──────────────────────────────────────────────────────
+ResolvedDisease = Annotated[str, Depends(resolve_optional_query_disease)]
 
 
 @router.get("/api/literature", response_model=LiteratureResponse)
 async def literature_mining(
+    disease_id: ResolvedDisease,
     max_articles: int = Query(30, ge=1, le=100, description="Max articles"),
     targeted: bool = Query(False, description="Include per-drug targeted queries"),
     no_cache: bool = Query(False, description="Skip cache"),
-    disease_id: str = Query("sle", description="Disease ID"),
 ) -> dict[str, Any]:
     """Mine PubMed for disease-related articles with biomedical NER."""
     return run_literature(
@@ -39,31 +39,25 @@ async def literature_mining(
     )
 
 
-# ── Virtual Screening ──────────────────────────────────────────────────────
-
-
 @router.get("/api/screening", response_model=ScreeningResponse)
 async def virtual_screening(
+    disease_id: ResolvedDisease,
     gene_id: str | None = Query(None, description="Screen against a specific gene"),
     top_n: int = Query(15, ge=1, le=50, description="Top compounds per target"),
     use_vina: bool = Query(False, description="Use AutoDock Vina docking"),
-    disease_id: str = Query("sle", description="Disease ID"),
 ) -> dict[str, Any]:
     """Run virtual drug screening against a disease's targets."""
     return run_screening(gene_id=gene_id, top_n=top_n, use_vina=use_vina, disease_id=disease_id)
 
 
-# ── Clinical Trials ────────────────────────────────────────────────────────
-
-
 @router.get("/api/trials", response_model=TrialsResponse)
 async def clinical_trials(
+    disease_id: ResolvedDisease,
     max_trials: int = Query(100, ge=1, le=200, description="Max trials"),
     query: str | None = Query(
         None, min_length=1, max_length=500, description="ClinicalTrials.gov search query"
     ),
     no_cache: bool = Query(False, description="Skip cache"),
-    disease_id: str = Query("sle", description="Disease ID"),
 ) -> dict[str, Any]:
     """Track disease-specific clinical trials from ClinicalTrials.gov."""
     return run_trials(
@@ -74,14 +68,11 @@ async def clinical_trials(
     )
 
 
-# ── ML Predictor ───────────────────────────────────────────────────────────
-
-
 @router.get("/api/ml/predict", response_model=MLResponse)
 async def ml_predictor(
+    disease_id: ResolvedDisease,
     top_n: int = Query(15, ge=1, le=50, description="Top predictions"),
     no_shap: bool = Query(False, description="Skip SHAP analysis"),
-    disease_id: str = Query("sle", description="Disease ID"),
 ) -> dict[str, Any]:
     """Run ML target druggability prediction with XGBoost + SHAP."""
     return run_ml_prediction(top_n=top_n, no_shap=no_shap, disease_id=disease_id)

@@ -7,6 +7,8 @@ import json
 
 from med_research.diseases.base import Disease
 from med_research.diseases.coverage import coverage_for_disease, module_coverage
+from med_research.diseases.curation_tiers import tier_summary_row
+from med_research.diseases.tier_model import compute_tier
 
 DEFAULT_MODULE_INPUTS = {
     "literature": ("genes", "drugs", "pathways", "pubmed_queries"),
@@ -41,9 +43,25 @@ def build_coverage_report(
 ) -> dict:
     """Build a stable report without timestamps or generated run identifiers."""
     disease = Disease(disease_id)
+    checks = disease.validate()
+    drug_count = len(disease.load_drugs().get("drugs", []))
+    strict_pass = all(status == "ok" for status in checks.values())
+    readiness_tier = compute_tier(
+        disease_id, checks, drug_count=drug_count, strict_pass=strict_pass
+    )
+    config_gaps = [field for field, status in checks.items() if status != "ok"]
     payload = {
         "disease_id": disease_id,
         "name": disease.get_display_name(),
+        **tier_summary_row(
+            disease_id,
+            readiness_tier,
+            strict_pass=strict_pass,
+            config_gaps=config_gaps,
+            phenotype_curated=bool(disease.get_symptoms()),
+            mechanism_curated=bool(disease.load_pathways().get("pathways")),
+            treatment_curated=drug_count > 0,
+        ),
         "entity_counts": {
             "genes": len(disease.load_genes().get("genes", [])),
             "drugs": len(disease.load_drugs().get("drugs", [])),

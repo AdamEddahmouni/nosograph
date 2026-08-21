@@ -12,6 +12,7 @@ from med_research.biomed.comparison.service import ConditionComparisonService
 from med_research.biomed.errors import BiomedicalValidationError
 from med_research.biomed.identifiers import normalize_curie
 from med_research.biomed.models import EvidenceDirection, Predicate
+from med_research.biomed.nosograph_compare.service import NosoGraphCompareService
 from med_research.web.dependencies_biomed import BiomedicalRepositoryDep
 from med_research.web.models.universal import (
     AnalyticsSharedMechanismView,
@@ -19,6 +20,9 @@ from med_research.web.models.universal import (
     AnalyticsSubgraphEdgeView,
     AnalyticsSubgraphView,
     AnalyticsTargetView,
+    ClaimDetailView,
+    ClaimEvidenceDetailView,
+    ClaimProvenanceStepView,
     ComparisonRequest,
     ComparisonResultView,
     ConditionClaimView,
@@ -26,10 +30,16 @@ from med_research.web.models.universal import (
     ConditionSummary,
     EntitySummaryView,
     ImportReportView,
+    NosoGraphCompareRequest,
+    NosoGraphCompareResultView,
     PagedResponse,
     SnapshotSummary,
 )
-from med_research.web.services import comparison_service, universal_service
+from med_research.web.services import (
+    comparison_service,
+    nosograph_compare_service,
+    universal_service,
+)
 
 router = APIRouter(prefix="/api/v1", tags=["Universal Biomedical"])
 
@@ -93,6 +103,55 @@ def list_condition_claims(
             offset=offset,
         )
     except BiomedicalValidationError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@router.get("/claims/{claim_id}", response_model=ClaimDetailView)
+def get_claim(
+    claim_id: UUID,
+    repository: BiomedicalRepositoryDep,
+) -> ClaimDetailView:
+    detail = universal_service.get_claim_detail(repository, claim_id)
+    if detail is None:
+        raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
+    return detail
+
+
+@router.get("/claims/{claim_id}/evidence", response_model=list[ClaimEvidenceDetailView])
+def get_claim_evidence(
+    claim_id: UUID,
+    repository: BiomedicalRepositoryDep,
+) -> list[ClaimEvidenceDetailView]:
+    if repository.get_claim_by_id(claim_id) is None:
+        raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
+    return universal_service.list_claim_evidence(repository, claim_id)
+
+
+@router.get("/claims/{claim_id}/provenance", response_model=list[ClaimProvenanceStepView])
+def get_claim_provenance(
+    claim_id: UUID,
+    repository: BiomedicalRepositoryDep,
+) -> list[ClaimProvenanceStepView]:
+    if repository.get_claim_by_id(claim_id) is None:
+        raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
+    return universal_service.get_claim_provenance(repository, claim_id)
+
+
+@router.post("/nosograph/compare", response_model=NosoGraphCompareResultView)
+def nosograph_compare(
+    payload: NosoGraphCompareRequest,
+    repository: BiomedicalRepositoryDep,
+) -> NosoGraphCompareResultView:
+    try:
+        result = NosoGraphCompareService(repository).compare(
+            normalize_curie(payload.left_curie),
+            normalize_curie(payload.right_curie),
+            dimensions=payload.dimensions,
+        )
+        return nosograph_compare_service.to_compare_view(result)
+    except BiomedicalValidationError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 

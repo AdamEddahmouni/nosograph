@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import duckdb
@@ -83,6 +84,20 @@ def main() -> None:
     )
 
     con.close()
+    manifest = {
+        "version": VERSION,
+        "created_at": "2026-01-01T00:00:00+00:00",
+        "source": "test-fixtures",
+        "tables": [
+            "disease",
+            "association_overall_direct",
+            "known_drug",
+            "disease_phenotype",
+        ],
+        "path": str(OUT),
+    }
+    manifest_file = OUT.parent.parent / "manifest.json"
+    manifest_file.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     print(f"Fixtures written to {OUT}")
 
 

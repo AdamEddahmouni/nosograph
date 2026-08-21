@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-08-21T00:17:59.450014+00:00",
+  "tier_filter": "ci_validated",
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "failure_classes": {}
+  },
+  "failure_class_definitions": {
+    "SCHEMA": "JSON or pydantic schema validation failed for a KG or config artifact.",
+    "PROVENANCE": "Missing or inconsistent source/provenance metadata.",
+    "IDENTIFIER": "Unknown or unresolved disease identifier (slug, MONDO, EFO).",
+    "MAPPING": "Cross-ontology or entity mapping failure.",
+    "MISSING_REQUIRED_DATA": "Required config field or KG file absent or empty.",
+    "LEGACY_FORMAT": "Deprecated field names or legacy-only data shapes.",
+    "DANGLING_REFERENCE": "Relationship or config references an entity not in the module.",
+    "VALIDATOR_BUG": "Validation rule misfire; fix the framework not the module.",
+    "SOURCE_VARIANCE": "Upstream source drift; may be acceptable with review."
+  },
+  "entries": [
+    {
+      "disease_id": "ad",
+      "name": "Alzheimer's Disease",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "ibd",
+      "name": "Inflammatory Bowel Disease",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "ms",
+      "name": "Multiple Sclerosis",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "ra",
+      "name": "Rheumatoid Arthritis",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "sle",
+      "name": "Systemic Lupus Erythematosus",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "ss",
+      "name": "Sjögren's Syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "ssc",
+      "name": "Systemic Sclerosis (Scleroderma)",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "t1d",
+      "name": "Type 1 Diabetes",
+      "passed": true,
+      "failures": []
+    }
+  ]
+}

@@ -1,19 +1,22 @@
 """Gene Expression Correlation API router."""
 
-from typing import Any
+from typing import Annotated, Any
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Depends, Query
 
+from med_research.web.disease_params import resolve_optional_query_disease
 from med_research.web.models.expression import ExpressionCorrelationResponse
 from med_research.web.services.expression_service import run_correlation_analysis
 
 router = APIRouter(tags=["Expression"])
 
+ResolvedDisease = Annotated[str, Depends(resolve_optional_query_disease)]
+
 
 @router.get("/api/expression/correlate", response_model=ExpressionCorrelationResponse)
 async def correlate_expression(
+    disease_id: ResolvedDisease,
     top_n: int = Query(26, ge=1, le=26, description="Number of top drugs to return"),
-    disease_id: str = Query("sle", description="Disease ID"),
 ) -> dict[str, Any]:
     """Correlate drugs against a disease's curated gene expression signature.
 

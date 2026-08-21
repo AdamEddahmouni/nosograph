@@ -60,6 +60,7 @@ all = [
 
 [project.scripts]
 med-research = "med_research.cli:main"
+nosograph = "med_research.cli:nosograph_main"
 
 [project.urls]
 Homepage = "https://github.com/AdamEddahmouni/med-research"

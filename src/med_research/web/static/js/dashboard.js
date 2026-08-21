@@ -2397,7 +2397,40 @@ function renderUniversalClaimEvidence(evidence, directionLabel) {
     const citation = url
         ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(evidence.source_record_id || 'source')}</a>`
         : escapeHtml(evidence.source_record_id || 'source unavailable');
-    return `<span class="condition-evidence-chip ${escapeHtml(directionLabel)}">${escapeHtml(directionLabel)}: ${citation}${evidence.evidence_type ? ` · ${escapeHtml(evidence.evidence_type)}` : ''}</span>`;
+    const confidence = typeof evidence.confidence === 'number'
+        ? ` · confidence ${(evidence.confidence * 100).toFixed(0)}%`
+        : '';
+    const summary = evidence.summary ? ` · ${escapeHtml(evidence.summary)}` : '';
+    return `<span class="condition-evidence-chip ${escapeHtml(directionLabel)}">${escapeHtml(directionLabel)}: ${citation}${evidence.evidence_type ? ` · ${escapeHtml(evidence.evidence_type)}` : ''}${confidence}${summary}</span>`;
+}
+
+function summarizeClaimEvidence(claim) {
+    const supporting = (claim.supporting_evidence || []).length;
+    const contradictory = (claim.contradictory_evidence || []).length;
+    if (supporting && contradictory) return 'INCONCLUSIVE';
+    if (supporting) return 'SUPPORTS';
+    if (contradictory) return 'CONTRADICTS';
+    return 'UNASSERTED';
+}
+
+async function renderClaimEvidencePanel(claimId, container) {
+    if (!container) return;
+    container.innerHTML = '<span class="condition-empty">Loading evidence panel…</span>';
+    try {
+        const detail = await apiFetch(`/api/v1/claims/${encodeURIComponent(claimId)}`);
+        const provenance = (detail.provenance || []).map(step => `<li>${escapeHtml(step.stage)} · ${escapeHtml(step.resource_name || 'n/a')}${step.snapshot_version ? ` @ ${escapeHtml(step.snapshot_version)}` : ''}</li>`).join('') || '<li>No provenance steps recorded.</li>';
+        const evidenceRows = [...(detail.supporting_evidence || []), ...(detail.contradictory_evidence || [])]
+            .map(item => `<div class="condition-evidence-detail"><strong>${escapeHtml(item.summary)}</strong> ${renderUniversalClaimEvidence(item, item.direction)}<small>${escapeHtml(item.confidence_explanation || item.rationale || '')}</small></div>`)
+            .join('') || '<span class="condition-empty">No evidence items attached.</span>';
+        container.innerHTML = `
+            <div class="condition-evidence-panel">
+                <div class="condition-evidence-summary"><strong>Evidence summary:</strong> ${escapeHtml(detail.evidence_summary)}</div>
+                <div>${evidenceRows}</div>
+                <details><summary>Provenance trace</summary><ol>${provenance}</ol></details>
+            </div>`;
+    } catch (error) {
+        container.innerHTML = `<span class="condition-empty">Evidence unavailable: ${escapeHtml(error.message)}</span>`;
+    }
 }
 
 function renderConditionClaimRow(claim) {
@@ -2406,10 +2439,13 @@ function renderConditionClaimRow(claim) {
     const evidence = supporting || contradictory
         ? `${supporting}${contradictory}`
         : '<span class="condition-empty">No data imported for this section</span>';
-    return `<div class="condition-claim">
+    const summary = summarizeClaimEvidence(claim);
+    return `<div class="condition-claim" data-claim-id="${escapeHtml(claim.claim_id)}">
         <strong>${escapeHtml(claim.predicate)} · ${escapeHtml(claim.object_label || claim.object_curie)}</strong>
-        <small>${escapeHtml(claim.subject_curie)} → ${escapeHtml(claim.object_curie)}</small>
+        <small>${escapeHtml(claim.subject_curie)} → ${escapeHtml(claim.object_curie)} · evidence ${escapeHtml(summary)}</small>
         <div>${evidence}</div>
+        <button type="button" class="btn btn-secondary btn-sm" data-action="inspect-claim-evidence">Inspect evidence &amp; provenance</button>
+        <div class="condition-evidence-panel-host"></div>
     </div>`;
 }
 
@@ -2492,6 +2528,13 @@ async function renderConditionExplorer(curie) {
             <div class="condition-section"><h4>Hierarchy</h4>${hierarchyRows}</div>
             <div class="condition-section"><h4>Claims</h4>${claimGroups}</div>
             <div class="condition-section"><h4>Active snapshots</h4>${snapshotRows}</div>`;
+        detail.querySelectorAll('[data-action="inspect-claim-evidence"]').forEach(button => {
+            button.addEventListener('click', () => {
+                const host = button.parentElement?.querySelector('.condition-evidence-panel-host');
+                const claimId = button.closest('[data-claim-id]')?.dataset.claimId;
+                if (claimId) void renderClaimEvidencePanel(claimId, host);
+            });
+        });
         const searchInput = document.getElementById('condition-search-input');
         if (searchInput && searchInput.value.trim()) {
             void searchConditions(searchInput.value);
@@ -2949,30 +2992,40 @@ function renderComparisonEntityLists(sharedEntities, distinguishingEntities) {
     return `<div class="condition-comparison-entities">${shared}${distinguishing}</div>`;
 }
 
-function renderComparisonResult(result) {
+function renderNosoGraphCompareResult(result) {
     const container = document.getElementById('condition-comparison-result');
     if (!container || !result) return;
     const disclaimer = escapeHtml(result.disclaimer?.text || 'For research and exploratory analysis only.');
-    if (result.status === 'insufficient_data') {
-        const missing = (result.coverage?.missing_dimensions || []).join(', ') || 'required dimensions';
-        container.innerHTML = `
-            <p class="condition-comparison-score">Insufficient comparable data</p>
-            <p class="condition-comparison-placeholder">This comparison could not produce a numeric overall score. Missing or non-overlapping dimensions: ${escapeHtml(missing)}.</p>
-            <p class="condition-comparison-meta">run_id: ${escapeHtml(result.run_id)}</p>
-            <p class="condition-comparison-disclaimer">${disclaimer}</p>`;
-        return;
-    }
-    const overall = typeof result.overall_score === 'number' ? `${Math.round(result.overall_score * 100)}% condition similarity` : 'No overall score';
-    const coverage = result.coverage || {};
-    const coverageBadges = (coverage.comparable_dimensions || []).map(item => `<span class="condition-chip">${escapeHtml(item)} comparable</span>`).join('');
+    const overlapHtml = (result.overlaps || []).map(item => {
+        const shared = (item.shared || []).map(v => `<span class="condition-chip">${escapeHtml(v)}</span>`).join('') || '<span class="condition-empty">none</span>';
+        const leftOnly = (item.unique_to_left || []).map(v => `<span class="condition-chip">${escapeHtml(v)}</span>`).join('') || '<span class="condition-empty">none</span>';
+        const rightOnly = (item.unique_to_right || []).map(v => `<span class="condition-chip">${escapeHtml(v)}</span>`).join('') || '<span class="condition-empty">none</span>';
+        const warnings = (item.warnings || []).map(v => `<li>${escapeHtml(v)}</li>`).join('');
+        return `<div class="condition-comparison-dimension">
+            <h4>${escapeHtml(item.dimension)}</h4>
+            <p class="condition-comparison-meta">missing left=${escapeHtml(item.missing_data?.left || 'UNKNOWN')} · right=${escapeHtml(item.missing_data?.right || 'UNKNOWN')} · evidence ${item.left_evidence_count}/${item.right_evidence_count}</p>
+            <div><strong>Shared</strong><div class="condition-chip-list">${shared}</div></div>
+            <div><strong>Left only</strong><div class="condition-chip-list">${leftOnly}</div></div>
+            <div><strong>Right only</strong><div class="condition-chip-list">${rightOnly}</div></div>
+            ${warnings ? `<ul>${warnings}</ul>` : ''}
+        </div>`;
+    }).join('') || '<p class="condition-comparison-placeholder">No dimension overlaps returned.</p>';
+    const curationWarnings = (result.curation_warnings || []).map(item => `<li>${escapeHtml(item)}</li>`).join('');
     container.innerHTML = `
-        <p class="condition-comparison-score">${escapeHtml(overall)}</p>
-        <p class="condition-comparison-meta">${escapeHtml(result.left_curie)} vs ${escapeHtml(result.right_curie)} · algorithm ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
-        <div class="condition-chip-list">${coverageBadges}</div>
-        ${renderComparisonComponentBars(result.components, result.effective_weights)}
-        ${renderComparisonEntityLists(result.shared_entities, result.distinguishing_entities)}
-        <p class="condition-comparison-meta">run_id: <a href="#condition-comparison">${escapeHtml(result.run_id)}</a> · snapshots: ${(result.snapshot_ids || []).map(item => escapeHtml(item)).join(', ') || 'none'}</p>
+        <p class="condition-comparison-score">${escapeHtml(result.status === 'comparable' ? 'Dimension overlap comparison' : 'Insufficient comparable data')}</p>
+        <p class="condition-comparison-meta">${escapeHtml(result.left_curie)} vs ${escapeHtml(result.right_curie)} · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)} · no universal similarity score</p>
+        ${curationWarnings ? `<ul class="condition-comparison-warnings">${curationWarnings}</ul>` : ''}
+        ${overlapHtml}
+        <p class="condition-comparison-meta">run_id: ${escapeHtml(result.run_id)} · fingerprint: ${escapeHtml(result.claim_set_fingerprint || 'n/a')}</p>
         <p class="condition-comparison-disclaimer">${disclaimer}</p>`;
+}
+
+function selectedComparisonDimensions() {
+    const fieldset = document.getElementById('comparison-dimensions');
+    if (!fieldset) {
+        return ['phenotype', 'gene', 'mechanism', 'treatment', 'evidence_coverage'];
+    }
+    return [...fieldset.querySelectorAll('input[type="checkbox"]:checked')].map(input => input.value);
 }
 
 async function compareConditions() {
@@ -2986,15 +3039,20 @@ async function compareConditions() {
         container.innerHTML = '<p class="condition-comparison-placeholder">Enter both condition CURIEs before comparing.</p>';
         return;
     }
+    const dimensions = selectedComparisonDimensions();
+    if (!dimensions.length) {
+        container.innerHTML = '<p class="condition-comparison-placeholder">Select at least one comparison dimension.</p>';
+        return;
+    }
     setConditionComparisonBusy(true);
-    container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Running comparison…</p>';
+    container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Running NosoGraph compare…</p>';
     try {
-        const result = await apiFetch('/api/v1/comparisons', {
+        const result = await apiFetch('/api/v1/nosograph/compare', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ left_curie: left, right_curie: right }),
+            body: JSON.stringify({ left_curie: left, right_curie: right, dimensions }),
         });
-        renderComparisonResult(result);
+        renderNosoGraphCompareResult(result);
     } catch (error) {
         container.innerHTML = `<p class="condition-comparison-placeholder">Comparison failed: ${escapeHtml(error.message)}</p>`;
     } finally {
@@ -4550,7 +4608,15 @@ function setupDashboardActions() {
 }
 
 function getActiveDisease() {
-    return window.localStorage.getItem('active-disease') || 'sle';
+    return window.localStorage.getItem('active-disease') || '';
+}
+
+function pickDefaultDiseaseId(diseases) {
+    if (!Array.isArray(diseases) || diseases.length === 0) return '';
+    const preferred = diseases.find(d => d.readiness_tier === 'ci_validated' || d.readiness_tier === 'L3')
+        || diseases.find(d => d.readiness_tier === 'L2')
+        || diseases[0];
+    return (preferred && preferred.id) || diseases[0].id || '';
 }
 
 async function loadDiseaseSelector() {
@@ -4565,15 +4631,17 @@ async function loadDiseaseSelector() {
         diseaseCache.list = diseases;
         fetched = true;
     } catch {
-        diseases = [{ id: 'sle', name: 'Systemic Lupus Erythematosus', genes: 0 }];
+        diseases = [];
     }
 
     let active = getActiveDisease();
     if (fetched) {
         const known = diseases.some(d => d.id === active);
         if (!known) {
-            active = diseases.some(d => d.id === 'sle') ? 'sle' : (diseases[0] && diseases[0].id) || '';
-            window.localStorage.setItem('active-disease', active);
+            active = pickDefaultDiseaseId(diseases);
+            if (active) {
+                window.localStorage.setItem('active-disease', active);
+            }
         }
     }
 

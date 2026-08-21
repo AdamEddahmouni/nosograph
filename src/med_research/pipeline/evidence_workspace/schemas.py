@@ -52,7 +52,7 @@ class WorkspaceModel(BaseModel):
 class ResearchRequest(WorkspaceModel):
     """Normalized user request for one reproducible research run."""
 
-    disease_id: str = "sle"
+    disease_id: str = Field(min_length=1, description="Disease slug (required)")
     question: str = Field(min_length=2, max_length=500)
     sources: tuple[SourceName, ...] = ("pubmed", "clinical_trials")
     date_from: date | None = None

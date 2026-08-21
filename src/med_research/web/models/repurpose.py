@@ -48,7 +48,7 @@ class GeneRepurposingResponse(BaseModel):
     gene_name: str
     gene_category: str = ""
     gene_function: str = ""
-    lupus_evidence: str = ""
+    disease_evidence: str = ""
     odds_ratio: Optional[float] = None
     candidates: list[RepurposingCandidate]
     best_score: float
