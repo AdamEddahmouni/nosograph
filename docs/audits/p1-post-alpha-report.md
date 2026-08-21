@@ -95,7 +95,7 @@ Reports under `data/reports/`:
 |-------|-------|------|------|-----------|-----------------|
 | `ci_validated` | 8 | 8 | 0 | 100% | — |
 | `reference` | 6 | 6 | 0 | 100% | — |
-| `L2` (sample n=50) | 50 | 50 | 0 | 100% | — |
+| `L2` (full corpus, recomputed 2026-08-21) | 88 | 88 | 0 | 100% | — |
 
 Corpus tier counts (cached `disease_batch_status.json`, n=500 scan): L3=2, L2=88, L1=410, L0=0.
 
@@ -155,7 +155,7 @@ Framework: `src/med_research/biomed/sync/` — nine-stage lifecycle (DISCOVER_VE
 |----------|---------|
 | `sync/models.py`, `contracts.py`, `lifecycle.py`, `registry.py` | Sync contract + orchestrator + 13-source matrix |
 | `sync/sources/opentargets.py` | Vertical slice (checksums, diff, provenance) |
-| `biomed sync` CLI | `list`, `open_targets --dry-run`, publish path |
+| `biomed sync` CLI | `biomed sync open_targets --dry-run` (also `med-research` / `nosograph`) |
 | `data/sources/source-matrix.md` | Connector inventory |
 | `docs/architecture/source-sync-lifecycle.md` | Architecture |
 | `.github/workflows/source-sync-dry-run.yml` | Manual dry-run (no secrets) |
@@ -225,3 +225,104 @@ Result: **9 passed**.
 2. Remove remaining internal `disease_id="sle"` defaults in Celery tasks / web service layer signatures.
 3. Expand L2 strict validation to full corpus once status report covers all modules.
 4. Wire `readiness_tier=ci_validated` into `/api/system/diseases` JSON for dashboard tier-aware picker.
+
+---
+
+## P1 Integrated Closeout (2026-08-21)
+
+### Integration gate
+
+| Item | Value |
+|------|-------|
+| Starting master HEAD | `adbacff54` (PR #17 merge) |
+| PR #18 merge SHA | `a398ee359` |
+| Final master HEAD | `a398ee359` |
+| PR #18 hosted run (green) | [32461598725](https://github.com/AdamEddahmouni/nosograph/actions/runs/32461598725) |
+| Post-merge master run | [32463088564](https://github.com/AdamEddahmouni/nosograph/actions/runs/32463088564) |
+
+Closeout commits on PR #18 branch (after initial `2aef74fc5`):
+
+- `5d946d564` — align workspace/CLI tests with required `disease_id`
+- `f61759ba0` — wire `biomed sync` CLI + ruff format
+- `29c040deb` — workspace OpenAPI / job body `ResearchRequest` alignment
+- `433376f32` — integration-tests job timeout 30 min
+
+### Hosted CI (master run 32463088564)
+
+| Check | Result |
+|-------|--------|
+| lint | PASS |
+| security | PASS |
+| test (3.12) | PASS |
+| integration-tests | PASS |
+| test (3.11) | PASS |
+| typecheck | FAIL (informational; 61 errors, ceiling 61) |
+| slow-tests | SKIPPED (schedule/dispatch only) |
+
+### L2 strict validation (recomputed on master)
+
+```bash
+python -m med_research.cli disease validate-batch --tier L2 --strict \
+  --output data/reports/validation_l2_full.json
+```
+
+| Metric | Value |
+|--------|-------|
+| L2 total | 88 |
+| Passed | 88 |
+| Failed | 0 |
+| Pass rate | 100% |
+| Runtime | ~15 s (local Windows) |
+| Report | `data/reports/validation_l2_full.json` |
+
+### Source sync
+
+| Item | Status |
+|------|--------|
+| Lifecycle stages | `discover_version` → `fetch` → `verify` → `store_raw` → `normalize` → `validate` → `diff` → `publish` → `update_provenance` |
+| CLI | `python -m med_research.cli biomed sync open_targets --dry-run` |
+| Local dry-run | PASS (all stages recorded; publish skipped) |
+| Hosted workflow | `Source sync dry-run` (`.github/workflows/source-sync-dry-run.yml`) — manual dispatch pending |
+| Unit tests | `tests/biomed/sync/test_opentargets_sync.py` — 3/3 offline |
+
+### Evidence golden trace (fixture-backed)
+
+```
+MONDO:0007915 (systemic lupus erythematosus)
+  → GET /api/v1/conditions/MONDO:0007915/claims
+  → claim_id from seeded legacy/HPOA bundle
+  → GET /api/v1/claims/{claim_id}/evidence
+  → GET /api/v1/claims/{claim_id}/provenance (stages: source_snapshot, normalized_record, graph_claim)
+  → original source: HPOA / legacy migration snapshot
+```
+
+Verified by `tests/web/test_claim_provenance_api.py` (3/3).
+
+### Compare acceptance
+
+- Engine + API + tests: **COMPLETE**
+- Dashboard UI (`renderNosoGraphCompareResult`, `POST /api/v1/nosograph/compare`): **PARTIAL** (API-backed panel; not a standalone product UX)
+- Dimensions: phenotype, gene, mechanism, treatment, evidence_coverage
+- Missingness: `NOT_RECORDED` ≠ `KNOWN_ABSENT`; also `UNKNOWN`, `NOT_APPLICABLE`
+
+### P1 track matrix (final)
+
+| Track | Result | Evidence |
+|-------|--------|----------|
+| P1-0 | COMPLETE | PR #17 + branch protection |
+| P1-A | COMPLETE | validate-batch + CI reference gate + weekly L2 wiring |
+| P1-B | COMPLETE | `identifiers.py`, required `--disease`, resolver tests |
+| P1-C | COMPLETE | `nosograph` + `med-research` same `main()` |
+| P1-D | PARTIAL | API golden trace; shallow user-facing provenance UX |
+| P1-E | PARTIAL | Engine + API + dashboard slice; no full Compare product |
+| P1-F | COMPLETE | curation tiers + coverage semantics |
+| P1-G | PARTIAL | sync framework + OT slice + CLI + offline tests PASS; hosted dry-run dispatch proof pending |
+| P1-H | DESIGNED | assessment in this document |
+
+### Overall P1 status
+
+**COMPLETE_WITH_DEFERRED_WORK** — foundational contracts integrated, required CI green on master, deferred: package rename, full Compare UX, public deployment, P1-G hosted source-sync dry-run proof, slow-test weekly run.
+
+### v2.3.0 readiness
+
+**READY_FOR_V2.3.0_RELEASE_PREP** — post-P1 master baseline established at `a398ee359`; proceed with bounded release-preparation wave (not tagging in this pass).
