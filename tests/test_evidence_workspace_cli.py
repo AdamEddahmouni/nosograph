@@ -51,7 +51,10 @@ def test_workspace_migrate_cli_defaults_to_dry_run_then_applies(tmp_path, capsys
     with sqlite3.connect(path) as connection:
         connection.execute(
             "UPDATE workspace_runs SET request_json=?, request_schema_version='1.0' WHERE run_id=?",
-            (json.dumps({"question": "Find JAK interventions", "disease_id": "sle"}), "ew-cli-legacy"),
+            (
+                json.dumps({"question": "Find JAK interventions", "disease_id": "sle"}),
+                "ew-cli-legacy",
+            ),
         )
 
     args = _build_parser().parse_args(

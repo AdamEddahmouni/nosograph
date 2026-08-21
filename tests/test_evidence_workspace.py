@@ -103,7 +103,9 @@ def test_workspace_continues_when_one_source_fails():
     }
 
     dossier = run_workspace(
-        ResearchRequest(disease_id="sle", question="JAK interventions"), sources=sources, graph=nx.MultiDiGraph()
+        ResearchRequest(disease_id="sle", question="JAK interventions"),
+        sources=sources,
+        graph=nx.MultiDiGraph(),
     )
 
     assert dossier.evidence

@@ -611,6 +611,37 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Biomedical SQLite path (defaults to BIOMEDICAL_DB_PATH)",
     )
 
+    from med_research.biomed.sync.registry import list_syncable_sources
+
+    biomed_sync = biomed_sub.add_parser("sync", help="Synchronize an upstream biomedical source")
+    biomed_sync.add_argument(
+        "biomed_sync_source",
+        choices=tuple(list_syncable_sources()),
+        help="Registered sync source identifier",
+    )
+    biomed_sync.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Run lifecycle without publishing canonical snapshots",
+    )
+    biomed_sync.add_argument(
+        "--no-publish",
+        dest="publish",
+        action="store_false",
+        default=True,
+        help="Skip publish even when not in dry-run mode",
+    )
+    biomed_sync.add_argument(
+        "--db",
+        type=Path,
+        help="Biomedical SQLite path (defaults to BIOMEDICAL_DB_PATH)",
+    )
+    biomed_sync.add_argument(
+        "--json",
+        action="store_true",
+        help="Print the machine-readable sync report",
+    )
+
     biomed_migrate = biomed_sub.add_parser(
         "migrate",
         help="Migrate curated legacy disease projections into the canonical store",
@@ -1646,6 +1677,8 @@ def cmd_biomed(args: Any) -> int:
         return cmd_biomed_import(args)
     if action == "snapshots":
         return cmd_biomed_snapshots(args)
+    if action == "sync":
+        return cmd_biomed_sync(args)
     if action == "migrate":
         return cmd_biomed_migrate(args)
     if action == "compare":
@@ -1894,6 +1927,30 @@ def cmd_biomed_migrate(args: Any) -> int:
 
     logger.info(message)
     return 0
+
+
+def cmd_biomed_sync(args: Any) -> int:
+    """Run the biomedical source synchronization lifecycle."""
+    import json
+
+    from med_research.biomed.sync.lifecycle import SyncService
+    from med_research.biomed.sync.models import SyncStatus
+
+    repository = _biomed_repository(args)
+    report = SyncService(repository).run(
+        args.biomed_sync_source,
+        dry_run=bool(args.dry_run),
+        publish=bool(args.publish),
+    )
+    if args.json:
+        print(json.dumps(report.model_dump(mode="json"), indent=2, default=str))
+    else:
+        logger.info("Sync %s: %s", report.source_id, report.status.value)
+        for stage in report.stages:
+            logger.info("  %s: %s", stage.stage.value, stage.status.value)
+        if report.error:
+            logger.error("Sync error: %s", report.error)
+    return 0 if report.status is SyncStatus.COMPLETED else 1
 
 
 def cmd_biomed_compare(args: Any) -> int:

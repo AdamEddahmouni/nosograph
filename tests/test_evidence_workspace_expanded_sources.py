@@ -39,7 +39,8 @@ def test_gwas_source_normalizes_study_fixture():
     )
 
     result = source.search(
-        ResearchRequest(disease_id="sle", question="SLE", sources=("gwas",)), ["systemic lupus erythematosus"]
+        ResearchRequest(disease_id="sle", question="SLE", sources=("gwas",)),
+        ["systemic lupus erythematosus"],
     )
 
     assert result.status.status == "ok"
@@ -65,7 +66,8 @@ def test_fda_label_source_normalizes_dailymed_fixture():
     )
 
     result = source.search(
-        ResearchRequest(disease_id="sle", question="tofacitinib", sources=("fda_labels",)), ["tofacitinib"]
+        ResearchRequest(disease_id="sle", question="tofacitinib", sources=("fda_labels",)),
+        ["tofacitinib"],
     )
 
     assert result.status.status == "ok"

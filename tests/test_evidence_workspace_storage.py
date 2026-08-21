@@ -239,7 +239,9 @@ def test_sqlite_store_rejects_success_without_pending_run(tmp_path):
 
 def test_sqlite_store_records_failures(tmp_path):
     store = WorkspaceRunStore(tmp_path / "workspace.sqlite3")
-    store.create_run("ew-failed", ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE"))
+    store.create_run(
+        "ew-failed", ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE")
+    )
     store.mark_failed("ew-failed", "source unavailable")
 
     run = store.get_run("ew-failed")
