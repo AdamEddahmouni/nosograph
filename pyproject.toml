@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "med-research"
-version = "2.2.0"
+version = "2.3.0"
 description = "NosoGraph — The Open Computational Map of Human Disease"
 readme = "README.md"
 license = {text = "Apache-2.0"}
@@ -63,11 +63,11 @@ med-research = "med_research.cli:main"
 nosograph = "med_research.cli:nosograph_main"
 
 [project.urls]
-Homepage = "https://github.com/AdamEddahmouni/med-research"
-Repository = "https://github.com/AdamEddahmouni/med-research"
-Documentation = "https://github.com/AdamEddahmouni/med-research#readme"
-Issues = "https://github.com/AdamEddahmouni/med-research/issues"
-Changelog = "https://github.com/AdamEddahmouni/med-research/blob/master/CHANGELOG.md"
+Homepage = "https://github.com/AdamEddahmouni/nosograph"
+Repository = "https://github.com/AdamEddahmouni/nosograph"
+Documentation = "https://github.com/AdamEddahmouni/nosograph#readme"
+Issues = "https://github.com/AdamEddahmouni/nosograph/issues"
+Changelog = "https://github.com/AdamEddahmouni/nosograph/blob/master/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
