@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -55,6 +55,7 @@ ci-local:  ## Local pre-push gate (lint, locks, import audit, serial offline tes
 	python scripts/lock_verify.py
 	$(MAKE) lock-check
 	python scripts/check_imports.py
+	python scripts/check_public_metadata.py
 	python -m pytest tests/ -m "unit and not network" -q --tb=short -n 0 --ignore=tests/test_evidence_workspace_browser.py
 
 typecheck:  ## Run mypy on the expanded type-check scope
@@ -283,11 +284,22 @@ serve:  ## Start the web API server
 docker-build:  ## Build the Docker image
 	docker compose build
 
-docker-up:  ## Start the web API server in Docker
-	docker compose up
+docker-up:  ## Start the web API server in Docker (full profile)
+	docker compose --profile full up --build
 
 docker-test:  ## Run tests inside Docker
 	docker compose run --rm pipeline test
+
+check-public-metadata:  ## Verify README / CITATION / version consistency
+	python scripts/check_public_metadata.py
+
+docs-serve:  ## Serve the MkDocs documentation site locally
+	python -m pip install -r requirements-docs.txt
+	python -m mkdocs serve
+
+docs-build:  ## Build the documentation site
+	python -m pip install -r requirements-docs.txt
+	python -m mkdocs build
 
 # ── Biomedical store ─────────────────────────────────────────────────────
 
