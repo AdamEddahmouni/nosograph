@@ -258,7 +258,7 @@ def test_safety_cli_single_drug(caplog):
     from tests.cli_helpers import run_cli_handler
 
     with caplog.at_level(logging.INFO):
-        exit_code = run_cli_handler(cmd_safety, "safety", "--drug", "belimumab")
+        exit_code = run_cli_handler(cmd_safety, "safety", "--disease", "sle", "--drug", "belimumab")
 
     assert exit_code == 0
     assert "Safety Profile" in caplog.text

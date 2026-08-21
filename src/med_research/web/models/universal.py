@@ -302,3 +302,104 @@ class ComparisonResultView(BaseModel):
     algorithm_id: str = "condition-similarity"
     algorithm_version: str = "1.0.0"
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
+
+
+EvidenceSummaryLiteral = Literal["SUPPORTS", "CONTRADICTS", "INCONCLUSIVE", "UNASSERTED"]
+
+
+class ClaimProvenanceStepView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    stage: str
+    resource_name: str = ""
+    snapshot_id: UUID | None = None
+    snapshot_version: str = ""
+    checksum: str = ""
+    source_record_id: str = ""
+    source_url: str = ""
+    importer: str = ""
+    retrieved_at: datetime | None = None
+
+
+class ClaimEvidenceDetailView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    id: UUID
+    direction: EvidenceDirectionLiteral
+    summary: EvidenceSummaryLiteral
+    snapshot_id: UUID
+    source_record_id: str
+    source_url: str = ""
+    evidence_type: str = ""
+    confidence: float | None = None
+    confidence_explanation: str = ""
+    rationale: str = ""
+    curator: str = ""
+    extraction_method: str = ""
+    publication_date: str = ""
+    limitations: list[str] = Field(default_factory=list)
+    provenance: list[ClaimProvenanceStepView] = Field(default_factory=list)
+
+
+class ClaimDetailView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    claim_id: UUID
+    predicate: PredicateLiteral
+    subject_curie: str
+    object_curie: str
+    subject_label: str
+    object_label: str
+    qualifiers: dict[str, object] = Field(default_factory=dict)
+    evidence_summary: EvidenceSummaryLiteral
+    supporting_evidence: list[ClaimEvidenceDetailView] = Field(default_factory=list)
+    contradictory_evidence: list[ClaimEvidenceDetailView] = Field(default_factory=list)
+    provenance: list[ClaimProvenanceStepView] = Field(default_factory=list)
+    disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
+
+
+class NosoGraphCompareRequest(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    left_curie: str = Field(min_length=1)
+    right_curie: str = Field(min_length=1)
+    dimensions: list[str] = Field(
+        default_factory=lambda: ["phenotype", "gene", "mechanism", "treatment", "evidence_coverage"]
+    )
+
+
+class DimensionMissingDataView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    left: str
+    right: str
+
+
+class DimensionOverlapView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    dimension: str
+    shared: list[str] = Field(default_factory=list)
+    unique_to_left: list[str] = Field(default_factory=list)
+    unique_to_right: list[str] = Field(default_factory=list)
+    missing_data: DimensionMissingDataView
+    left_evidence_count: int = 0
+    right_evidence_count: int = 0
+    warnings: list[str] = Field(default_factory=list)
+
+
+class NosoGraphCompareResultView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    run_id: UUID
+    status: ComparisonStatusLiteral
+    left_curie: str
+    right_curie: str
+    dimensions: list[str] = Field(default_factory=list)
+    overlaps: list[DimensionOverlapView] = Field(default_factory=list)
+    curation_warnings: list[str] = Field(default_factory=list)
+    snapshot_ids: list[UUID] = Field(default_factory=list)
+    claim_set_fingerprint: str = ""
+    algorithm_id: str = "nosograph-compare"
+    algorithm_version: str = "1.0.0"
+    disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)

@@ -1,16 +1,22 @@
 """Evidence Gatherer API router."""
 
-from fastapi import APIRouter, HTTPException, Query
+from typing import Annotated
+
+from fastapi import APIRouter, Depends, HTTPException, Query
 
 from med_research.diseases.base import Disease
+from med_research.web.disease_params import resolve_optional_query_disease
 from med_research.web.models.evidence import EvidenceGatherResponse, EvidenceItem
 from med_research.web.services.evidence_service import run_evidence_gather
 
 router = APIRouter(tags=["Evidence Gathering"])
 
+ResolvedDisease = Annotated[str, Depends(resolve_optional_query_disease)]
+
 
 @router.get("/api/evidence/gather", response_model=EvidenceGatherResponse)
 async def evidence_gather(
+    disease_id: ResolvedDisease,
     q: str = Query(..., min_length=2, max_length=500, description="Search query"),
     sources: str = Query(
         default="pubmed,preprints,clinical_trials,fda_labels,patents",
@@ -20,7 +26,6 @@ async def evidence_gather(
     ),
     max_per_source: int = Query(default=20, ge=1, le=100),
     use_cache: bool = Query(default=True),
-    disease_id: str = Query("sle", description="Disease ID"),
 ) -> EvidenceGatherResponse:
     """Gather evidence from multiple biomedical sources simultaneously.
 

@@ -21,7 +21,10 @@ pytestmark = pytest.mark.unit
 def _dossier(run_id: str, score: float, evidence_id: str = "pmid-1") -> EvidenceDossier:
     return EvidenceDossier(
         run_id=run_id,
-        request=ResearchRequest(question="Which JAK intervention merits investigation?"),
+        request=ResearchRequest(
+            disease_id="sle",
+            question="Which JAK intervention merits investigation?",
+        ),
         started_at=datetime(2026, 1, 1, tzinfo=timezone.utc),
         completed_at=datetime(2026, 1, 1, 0, 0, 1, tzinfo=timezone.utc),
         evidence=[

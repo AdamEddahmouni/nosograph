@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-08-21T01:06:24.688608+00:00",
+  "tier_filter": "reference",
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "failure_classes": {}
+  },
+  "failure_class_definitions": {
+    "SCHEMA": "JSON or pydantic schema validation failed for a KG or config artifact.",
+    "PROVENANCE": "Missing or inconsistent source/provenance metadata.",
+    "IDENTIFIER": "Unknown or unresolved disease identifier (slug, MONDO, EFO).",
+    "MAPPING": "Cross-ontology or entity mapping failure.",
+    "MISSING_REQUIRED_DATA": "Required config field or KG file absent or empty.",
+    "LEGACY_FORMAT": "Deprecated field names or legacy-only data shapes.",
+    "DANGLING_REFERENCE": "Relationship or config references an entity not in the module.",
+    "VALIDATOR_BUG": "Validation rule misfire; fix the framework not the module.",
+    "SOURCE_VARIANCE": "Upstream source drift; may be acceptable with review."
+  },
+  "entries": [
+    {
+      "disease_id": "sle",
+      "name": "Systemic Lupus Erythematosus",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "cystic_fibrosis",
+      "name": "Cystic fibrosis",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "tuberculosis",
+      "name": "Tuberculosis",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "melanoma",
+      "name": "Melanoma",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "als",
+      "name": "Amyotrophic Lateral Sclerosis",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "t2d",
+      "name": "Type 2 Diabetes",
+      "passed": true,
+      "failures": []
+    }
+  ]
+}

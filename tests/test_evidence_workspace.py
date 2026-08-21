@@ -41,7 +41,11 @@ def test_workspace_assembles_evidence_claims_rankings_and_manifest():
     graph.add_edge("JAK1", "SLE", type="ASSOCIATED_WITH")
 
     dossier = run_workspace(
-        ResearchRequest(question="Find JAK interventions for SLE", enable_llm=True),
+        ResearchRequest(
+            disease_id="sle",
+            question="Find JAK interventions for SLE",
+            enable_llm=True,
+        ),
         sources=sources,
         graph=graph,
     )
@@ -74,7 +78,7 @@ def test_workspace_manifest_reports_source_retrieval_modes():
             )
 
     dossier = run_workspace(
-        ResearchRequest(question="JAK interventions"),
+        ResearchRequest(disease_id="sle", question="JAK interventions"),
         sources={"pubmed": FixtureSource(), "clinical_trials": FixtureSource()},
         graph=nx.MultiDiGraph(),
     )
@@ -99,7 +103,9 @@ def test_workspace_continues_when_one_source_fails():
     }
 
     dossier = run_workspace(
-        ResearchRequest(question="JAK interventions"), sources=sources, graph=nx.MultiDiGraph()
+        ResearchRequest(disease_id="sle", question="JAK interventions"),
+        sources=sources,
+        graph=nx.MultiDiGraph(),
     )
 
     assert dossier.evidence

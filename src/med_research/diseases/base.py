@@ -53,6 +53,12 @@ def invalidate_disease_cache() -> None:
         invalidate_system_disease_cache()
     except Exception:
         pass
+    try:
+        from med_research.diseases.identifiers import invalidate_identifier_cache
+
+        invalidate_identifier_cache()
+    except Exception:
+        pass
 
 
 @dataclass

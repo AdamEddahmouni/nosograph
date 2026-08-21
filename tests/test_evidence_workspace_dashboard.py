@@ -14,7 +14,7 @@ pytestmark = pytest.mark.unit
 def _fixture_dossier():
     return EvidenceDossier(
         run_id="ew-test",
-        request=ResearchRequest(question="Find JAK interventions for SLE"),
+        request=ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE"),
         started_at="2026-01-01T00:00:00Z",
         completed_at="2026-01-01T00:00:01Z",
     )
@@ -73,7 +73,10 @@ def test_workspace_job_route_uses_json_payload(monkeypatch):
         response = executor.submit(
             asyncio.run,
             jobs.submit_workspace(
-                ResearchRequest(question="Find promising JAK/STAT interventions for SLE")
+                ResearchRequest(
+                    disease_id="sle",
+                    question="Find promising JAK/STAT interventions for SLE",
+                )
             ),
         ).result()
 
@@ -101,6 +104,7 @@ def test_workspace_http_endpoint_accepts_json(monkeypatch):
         response = client.post(
             "/api/jobs/workspace",
             json={
+                "disease_id": "sle",
                 "question": "Find promising JAK/STAT interventions for SLE",
                 "sources": ["pubmed"],
                 "enable_llm": False,

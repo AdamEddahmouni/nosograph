@@ -303,7 +303,8 @@ def test_workspace_request_schema_matches_research_request_contract() -> None:
     }
 
     assert set(registry_fields) == set(request_fields)
-    assert registry_schema["required"] == request_schema["required"]
+    assert registry_schema["required"] == ["question"]
+    assert request_schema["required"] == ["disease_id", "question"]
     assert registry_schema["validators"] == [
         {
             "id": "sources_non_empty",
@@ -362,9 +363,10 @@ def test_workspace_request_schema_matches_research_request_contract() -> None:
     # keep executable checks beside the metadata comparison so removing a
     # ResearchRequest validator also breaks this contract test.
     with pytest.raises(ValidationError):
-        ResearchRequest(question="targets", sources=[])
+        ResearchRequest(disease_id="sle", question="targets", sources=[])
     with pytest.raises(ValidationError):
         ResearchRequest(
+            disease_id="sle",
             question="targets",
             date_from="2025-02-01",
             date_to="2025-01-01",
@@ -417,12 +419,14 @@ def test_workspace_generated_cli_and_web_models_match_contract() -> None:
 
     body_model = module_body_request_model("evidence_workspace")
     assert body_model.model_validate(
-        {"question": "Find targets", "sources": ["pubmed"]}
-    ).sources == ["pubmed"]
+        {"disease_id": "sle", "question": "Find targets", "sources": ["pubmed"]}
+    ).sources == ("pubmed",)
     with pytest.raises(ValidationError):
-        body_model.model_validate({"question": "Find targets", "sources": []})
+        body_model.model_validate({"disease_id": "sle", "question": "Find targets", "sources": []})
     with pytest.raises(ValidationError):
-        body_model.model_validate({"question": "Find targets", "candidate_type": "invalid"})
+        body_model.model_validate(
+            {"disease_id": "sle", "question": "Find targets", "candidate_type": "invalid"}
+        )
 
     # The specialized Workspace CLI is generated from the same registry
     # properties, with disease_id represented by its established --disease
@@ -433,6 +437,7 @@ def test_workspace_generated_cli_and_web_models_match_contract() -> None:
     actions = {action.dest: action for action in workspace_parser._actions}
     schema_fields = set(registry_schema["properties"])
     assert schema_fields <= set(actions)
+    assert "disease" in actions
 
     question_action = actions["question"]
     assert question_action.required is True
@@ -453,6 +458,8 @@ def test_workspace_generated_cli_and_web_models_match_contract() -> None:
     parsed = parser.parse_args(
         [
             "workspace",
+            "--disease",
+            "sle",
             "--question",
             "Find targets",
             "--sources",

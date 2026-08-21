@@ -11,7 +11,11 @@ import pytest
 
 from med_research.pipeline.knowledge_graph.config import load_genes
 
-pytest_plugins = ["tests.evidence_http_fixtures", "tests.integration.http_fixtures"]
+pytest_plugins = [
+    "tests.evidence_http_fixtures",
+    "tests.integration.http_fixtures",
+    "tests.biomed.comparison.conftest",
+]
 
 # Disable the in-memory API rate limiter during tests. The web API suite
 # issues 100+ requests per session and would otherwise be throttled with
@@ -45,6 +49,15 @@ def pytest_collection_modifyitems(items):
             continue
         if "unit" not in markers:
             item.add_marker(pytest.mark.unit)
+
+
+@pytest.fixture(autouse=True)
+def _stable_test_disease_default(monkeypatch):
+    """Optional API disease params default to sle in tests (not first CI slug)."""
+    monkeypatch.setattr(
+        "med_research.web.disease_params.default_disease_for_selection",
+        lambda **kwargs: "sle",
+    )
 
 
 @pytest.fixture(autouse=True)

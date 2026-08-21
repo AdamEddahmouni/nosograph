@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-08-21T00:26:58.171608+00:00",
+  "tier_filter": "L2",
+  "summary": {
+    "total": 50,
+    "passed": 50,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "failure_classes": {}
+  },
+  "failure_class_definitions": {
+    "SCHEMA": "JSON or pydantic schema validation failed for a KG or config artifact.",
+    "PROVENANCE": "Missing or inconsistent source/provenance metadata.",
+    "IDENTIFIER": "Unknown or unresolved disease identifier (slug, MONDO, EFO).",
+    "MAPPING": "Cross-ontology or entity mapping failure.",
+    "MISSING_REQUIRED_DATA": "Required config field or KG file absent or empty.",
+    "LEGACY_FORMAT": "Deprecated field names or legacy-only data shapes.",
+    "DANGLING_REFERENCE": "Relationship or config references an entity not in the module.",
+    "VALIDATOR_BUG": "Validation rule misfire; fix the framework not the module.",
+    "SOURCE_VARIANCE": "Upstream source drift; may be acceptable with review."
+  },
+  "entries": [
+    {
+      "disease_id": "22q11_2_deletion_syndrome",
+      "name": "22q11.2 deletion syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "2_aminoadipic_2_oxoadipic_aciduria",
+      "name": "2-aminoadipic 2-oxoadipic aciduria",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "3_hydroxy_3_methylglutaryl_coa_synthase_deficiency",
+      "name": "3-hydroxy-3-methylglutaryl-CoA synthase deficiency",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "3_methylglutaconic_aciduria",
+      "name": "3-methylglutaconic aciduria",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "3_methylglutaconic_aciduria_type_1",
+      "name": "3-methylglutaconic aciduria type 1",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "3_methylglutaconic_aciduria_type_5",
+      "name": "3-methylglutaconic aciduria type 5",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "46_xx_disorder_of_sex_development_skeletal_anomalies_syndrome",
+      "name": "46,XX disorder of sex development-skeletal anomalies syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "46_xx_ovotesticular_disorder_of_sex_development",
+      "name": "46,XX ovotesticular disorder of sex development",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "46_xx_testicular_disorder_of_sex_development",
+      "name": "46,XX testicular disorder of sex development",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "46_xy_complete_gonadal_dysgenesis",
+      "name": "46,XY complete gonadal dysgenesis",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "46_xy_disorder_of_sex_development_due_to_5_alpha_reductase_2_deficiency",
+      "name": "46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "46_xy_sex_reversal_1",
+      "name": "46,XY sex reversal 1",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "46_xy_sex_reversal_3",
+      "name": "46,XY sex reversal 3",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "46_xy_sex_reversal_6",
+      "name": "46,XY sex reversal 6",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "8q24_3_microdeletion_syndrome",
+      "name": "8q24.3 microdeletion syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "aase_smith_syndrome",
+      "name": "Aase-Smith syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "abducens_nerve_palsy",
+      "name": "abducens nerve palsy",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "abetalipoproteinemia",
+      "name": "abetalipoproteinemia",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "abri_amyloidosis",
+      "name": "ABri amyloidosis",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "absence_deformity_of_leg_cataract_syndrome",
+      "name": "absence deformity of leg-cataract syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acanthosis_nigricans_insulin_resistance_muscle_cramps_acral_enlargement_syndrome",
+      "name": "acanthosis nigricans-insulin resistance-muscle cramps-acral enlargement syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acatalasia",
+      "name": "acatalasia",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "aceruloplasminemia",
+      "name": "aceruloplasminemia",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "achondrogenesis_type_1b",
+      "name": "bone disease",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "achondrogenesis_type_2",
+      "name": "musculoskeletal system disease",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "achondrogenesis_type_ib",
+      "name": "achondrogenesis type IB",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "achondrogenesis_type_ii",
+      "name": "achondrogenesis type II",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "achondroplasia",
+      "name": "achondroplasia",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "ackerman_syndrome",
+      "name": "Ackerman syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acne_inversa_familial_1",
+      "name": "acne inversa, familial, 1",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acne_inversa_familial_3",
+      "name": "acne inversa, familial, 3",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acral_peeling_skin_syndrome",
+      "name": "acral peeling skin syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acro_renal_mandibular_syndrome",
+      "name": "acro-renal-mandibular syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acrocallosal_syndrome",
+      "name": "acrocallosal syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acrocardiofacial_syndrome",
+      "name": "acrocardiofacial syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acrocephalopolydactyly",
+      "name": "acrocephalopolydactyly",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acrodermatitis_enteropathica",
+      "name": "acrodermatitis enteropathica",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acrodysostosis_2_with_or_without_hormone_resistance",
+      "name": "acrodysostosis 2 with or without hormone resistance",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acrofacial_dysostosis_rodr_guez_type",
+      "name": "musculoskeletal system disease",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acrofacial_dysostosis_rodriguez_type",
+      "name": "acrofacial dysostosis Rodriguez type",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acrofacial_dysostosis_weyers_type",
+      "name": "acrofacial dysostosis, Weyers type",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acromesomelic_dysplasia_1_maroteaux_type",
+      "name": "acromesomelic dysplasia 1, Maroteaux type",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acromesomelic_dysplasia_2a",
+      "name": "acromesomelic dysplasia 2A",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acromesomelic_dysplasia_3",
+      "name": "acromesomelic dysplasia 3",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acromesomelic_dysplasia_grebe_type",
+      "name": "osteochondrodysplasia",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acromesomelic_dysplasia_hunter_thomson_type",
+      "name": "skeletal system disease",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acromesomelic_dysplasia_maroteaux_type",
+      "name": "musculoskeletal system disease",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acromicric_dysplasia",
+      "name": "Acromicric dysplasia",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acropectoral_syndrome",
+      "name": "acropectoral syndrome",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "disease_id": "acropectorovertebral_dysplasia",
+      "name": "Acropectorovertebral dysplasia",
+      "passed": true,
+      "failures": []
+    }
+  ]
+}

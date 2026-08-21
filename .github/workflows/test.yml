@@ -143,11 +143,23 @@ jobs:
       - name: Verify unified CLI works
         run: python -m med_research.cli --help
 
+      - name: Verify nosograph CLI alias
+        run: nosograph --help
+
       - name: Verify curated disease configs (not full 10k registry)
         run: |
           for id in sle ra ibd ms ss ssc t1d ad; do
             python -m med_research.cli disease validate "$id" --strict
           done
+
+      - name: Validate reference disease batch (strict)
+        run: python -m med_research.cli disease validate-batch --tier reference --strict
+
+      - name: Platform core unit tests
+        run: |
+          python -m pytest tests/test_disease_identifiers.py tests/test_validation_batch.py \
+            tests/biomed/sync/test_opentargets_sync.py tests/biomed/nosograph_compare/test_engine.py \
+            -q --tb=short -n 0
 
       - name: Corpus readiness unit tests
         run: |
@@ -161,7 +173,7 @@ jobs:
 
   integration-tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     env:
       CELERY_TASK_ALWAYS_EAGER: "true"
       CELERY_TASK_STORE_EAGER_RESULT: "true"
@@ -221,6 +233,11 @@ jobs:
 
       - name: Run slow tests (live external API calls)
         run: python -m pytest tests/ -m slow -v --tb=short
+
+      - name: Strict validate full L2 corpus
+        run: |
+          python -m med_research.cli disease validate-batch --tier L2 --strict \
+            --output data/reports/validation_l2_full.json
 
       - name: Upload Playwright failure diagnostics
         if: always()

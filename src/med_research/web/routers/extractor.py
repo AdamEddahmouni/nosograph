@@ -1,18 +1,22 @@
 """LLM Evidence Extractor API router."""
 
-from typing import Any
+from typing import Annotated, Any
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 
 from med_research.diseases.base import Disease
+from med_research.web.disease_params import resolve_optional_query_disease
 from med_research.web.models.extractor import ExtractionResponse
 from med_research.web.services.extractor_service import run_llm_extraction
 
 router = APIRouter(tags=["LLM Extraction"])
 
+ResolvedDisease = Annotated[str, Depends(resolve_optional_query_disease)]
+
 
 @router.get("/api/llm/extract", response_model=ExtractionResponse)
 async def llm_extract(
+    disease_id: ResolvedDisease,
     q: str = Query(
         ..., min_length=1, max_length=500, description="Search query (natural language)"
     ),
@@ -24,7 +28,6 @@ async def llm_extract(
         "", min_length=0, max_length=200, description="LLM model name (default: gpt-4o-mini)"
     ),
     use_cache: bool = Query(True, description="Use cached extractions"),
-    disease_id: str = Query("sle", description="Disease ID"),
 ) -> dict[str, Any]:
     """Extract structured data from biomedical evidence using an LLM.
 

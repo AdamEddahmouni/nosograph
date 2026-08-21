@@ -145,6 +145,7 @@ _REQUEST_OPTION_DEFINITIONS: dict[str, dict[str, Any]] = {
     "enable_llm": {"type": "boolean", "default": True},
     "date_from": {"type": "string", "format": "date"},
     "date_to": {"type": "string", "format": "date"},
+    "disease_id": {"type": "string", "minLength": 1},
     "drug_id": {"type": "string"},
 }
 

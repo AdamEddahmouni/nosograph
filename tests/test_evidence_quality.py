@@ -78,7 +78,7 @@ def test_report_exposes_quality_methodology_and_record_metadata():
     record = _record("gwas", "genome-wide association", "gwas-1")
     dossier = EvidenceDossier(
         run_id="ew-quality",
-        request=ResearchRequest(question="Quality"),
+        request=ResearchRequest(disease_id="sle", question="Quality"),
         started_at=datetime.now(timezone.utc),
         completed_at=datetime.now(timezone.utc),
         evidence=[record],

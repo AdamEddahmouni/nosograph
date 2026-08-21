@@ -20,7 +20,7 @@ def test_pubmed_source_normalizes_fixture_record():
         ]
     )
 
-    result = source.search(ResearchRequest(question="JAK interventions"), ["JAK"])
+    result = source.search(ResearchRequest(disease_id="sle", question="JAK interventions"), ["JAK"])
 
     assert result.status.status == "ok"
     assert result.records[0].native_id == "123"
@@ -34,7 +34,7 @@ def test_clinical_trials_failure_isolated_at_source_boundary():
         lambda query, limit: (_ for _ in ()).throw(RuntimeError("offline"))
     )
 
-    result = source.search(ResearchRequest(question="JAK interventions"), ["JAK"])
+    result = source.search(ResearchRequest(disease_id="sle", question="JAK interventions"), ["JAK"])
 
     assert result.records == []
     assert result.status.status == "error"

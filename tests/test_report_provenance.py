@@ -616,9 +616,7 @@ def test_cli_export_html_includes_provenance_footer(
     report_path = PROJECT_ROOT / report_rel_path
     report_path.unlink(missing_ok=True)
 
-    args = ["--export-html", "--top", "5"]
-    if command != "cross-disease":
-        args.extend(["--disease", "ra"])
+    args = ["--export-html", "--top", "5", "--disease", "ra"]
 
     exit_code = run_cli_handler(handler, command, *args)
     assert exit_code == 0

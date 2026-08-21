@@ -12,10 +12,15 @@ from med_research.pipeline.evidence_workspace.schemas import (
 pytestmark = pytest.mark.unit
 
 
-def test_request_defaults_to_sle_and_both_sources_and_candidates():
-    request = ResearchRequest(question="  Find JAK interventions  ")
+def test_request_requires_explicit_disease_id():
+    with pytest.raises(ValidationError):
+        ResearchRequest(question="  Find JAK interventions  ")
 
-    assert request.disease_id == "sle"
+
+def test_request_accepts_explicit_disease_and_normalizes_sources():
+    request = ResearchRequest(disease_id="ra", question="  Find JAK interventions  ")
+
+    assert request.disease_id == "ra"
     assert request.question == "Find JAK interventions"
     assert request.sources == ("pubmed", "clinical_trials")
     assert request.candidate_type == "both"
@@ -23,10 +28,11 @@ def test_request_defaults_to_sle_and_both_sources_and_candidates():
 
 def test_request_rejects_empty_question_and_invalid_date_range():
     with pytest.raises(ValidationError):
-        ResearchRequest(question="  ")
+        ResearchRequest(disease_id="sle", question="  ")
 
     with pytest.raises(ValidationError):
         ResearchRequest(
+            disease_id="sle",
             question="JAK interventions",
             date_from=date(2024, 1, 1),
             date_to=date(2023, 1, 1),
@@ -35,10 +41,10 @@ def test_request_rejects_empty_question_and_invalid_date_range():
 
 def test_request_rejects_unsupported_source_and_bounds_limit():
     with pytest.raises(ValidationError):
-        ResearchRequest(question="JAK", sources=("fda",))
+        ResearchRequest(disease_id="sle", question="JAK", sources=("fda",))
 
     with pytest.raises(ValidationError):
-        ResearchRequest(question="JAK", max_evidence=0)
+        ResearchRequest(disease_id="sle", question="JAK", max_evidence=0)
 
 
 def test_evidence_deduplication_merges_missing_metadata_and_provenance():
@@ -73,6 +79,7 @@ def test_evidence_deduplication_merges_missing_metadata_and_provenance():
 
 def test_request_json_round_trip():
     request = ResearchRequest(
+        disease_id="ibd",
         question="Find JAK/STAT interventions",
         date_from=date(2020, 1, 1),
         enable_llm=False,
