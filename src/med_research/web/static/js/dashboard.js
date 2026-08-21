@@ -1,5 +1,5 @@
 /**
- * Medical Research Platform — Live Dashboard JavaScript
+ * NosoGraph — Live Dashboard JavaScript
  * Calls the FastAPI backend to power module cards with live data.
  * Uses WebSocket for real-time job progress streaming.
  */

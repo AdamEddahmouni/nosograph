@@ -15,7 +15,7 @@ Security fixes are applied to the latest 2.x release on the `master` branch.
 
 Report security issues through one of these channels:
 
-1. **GitHub Security Advisories** (preferred): [Report a vulnerability](https://github.com/AdamEddahmouni/med-research/security/advisories/new) for the NosoGraph repository (currently hosted at `med-research` on GitHub)
+1. **GitHub Security Advisories** (preferred): [Report a vulnerability](https://github.com/AdamEddahmouni/nosograph/security/advisories/new)
 2. **Email**: Open a private security advisory via GitHub or contact the repository maintainer directly if advisories are unavailable.
 
 Include:

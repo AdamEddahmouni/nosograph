@@ -8,14 +8,28 @@ repository-code: "https://github.com/AdamEddahmouni/nosograph"
 url: "https://github.com/AdamEddahmouni/nosograph"
 license: Apache-2.0
 version: 2.3.0
+date-released: "2026-08-21"
 keywords:
   - bioinformatics
+  - biomedical-knowledge-graph
+  - computational-biology
   - disease-ontology
   - drug-discovery
+  - evidence-synthesis
   - knowledge-graph
-  - computational-biology
   - open-science
+  - phenotype
+  - provenance
 abstract: >-
   NosoGraph is an open computational map of human disease — a Python platform
   combining disease knowledge graphs, universal ontology imports, evidence
-  gathering, and explainable research pipelines.
+  gathering, and explainable research pipelines. Public alpha; research use
+  only. Registry coverage is not equivalent to curation depth.
+preferred-citation:
+  type: software
+  title: "NosoGraph: The Open Computational Map of Human Disease"
+  authors:
+    - name: NosoGraph contributors
+  year: 2026
+  version: 2.3.0
+  url: "https://github.com/AdamEddahmouni/nosograph"

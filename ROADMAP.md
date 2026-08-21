@@ -57,8 +57,8 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 | Temporal disease trajectories | PLANNED |
 | Computational model registry | NOT_IMPLEMENTED |
 | Package rename (`med-research` → `nosograph` on PyPI) | PLANNED v3.0 |
-| Official NosoGraph logo & website | PLANNED |
-| GitHub Discussions Q&A | PLANNED |
+| Official NosoGraph logo & public documentation site | IN_PROGRESS (Pages enablement may be manual) |
+| GitHub Discussions Q&A | PLANNED (seed copy in docs/project/github-discussions-seed.md) |
 
 ---
 

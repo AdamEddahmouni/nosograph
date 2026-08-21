@@ -1,55 +1,31 @@
-# Public Launch Checklist (NosoGraph)
+# Public readiness (evergreen)
 
-Use this list when flipping the repository to **public** on GitHub. NosoGraph is Apache-2.0 licensed and intended for open research use. The GitHub remote may still be named `med-research` until renamed by maintainers.
+The GitHub repository **is already public** at [AdamEddahmouni/nosograph](https://github.com/AdamEddahmouni/nosograph). Current release: **v2.3.0**.
 
-## Before you change visibility
+Use this page for future public-readiness reviews. The original “flip to public / rename from med-research / tag v2.2.0” list is archived at [audits/public-launch-v2.2-checklist.md](audits/public-launch-v2.2-checklist.md).
 
-Run locally:
+## Before each public release
 
 ```bash
 make venv-sync
 make ci-local
+python scripts/check_public_metadata.py
 ```
 
 Confirm:
 
-- No secrets in tracked files (`.env` is gitignored; use `.env.example` only).
-- No PHI or patient-identifiable data in commits.
-- Runtime databases under `data/` are not version-controlled.
-- README honestly describes disease tier maturity (registry ≠ curation).
-- [docs/audits/release-readiness-report.md](audits/release-readiness-report.md) gates reviewed.
+- No secrets or PHI in tracked files
+- README and `CITATION.cff` versions match `pyproject.toml`
+- Registry vs curation-depth wording is intact
+- Release notes are understandable without the full CHANGELOG
+- [release-readiness-report](audits/release-readiness-report.md) reviewed when cutting a version
 
-## GitHub repository settings
+## GitHub settings
 
-1. **General → Change repository visibility → Public**
-2. **Settings → Actions → General** — allow workflows
-3. **Settings → Security** — enable Dependabot alerts, secret scanning
-4. **Settings → General → Features** — enable Issues (templates under `.github/ISSUE_TEMPLATE/`)
-5. **About box** — Description: *NosoGraph — The Open Computational Map of Human Disease*
-6. **Topics:** `bioinformatics`, `drug-discovery`, `fastapi`, `python`, `computational-biology`, `open-science`, `knowledge-graph`, `disease-ontology`
+Maintainer-only steps: [project/github-public-settings.md](project/github-public-settings.md)
 
-## Branch protection (recommended)
+## Out of scope (still)
 
-On `master`:
-
-- Require pull request before merging
-- Require status checks: `lint`, `security`, `test (3.11)`, `test (3.12)`, `integration-tests`
-- Do **not** require `typecheck` until mypy backlog cleared
-
-## After going public
-
-1. Create GitHub Release from `v2.2.0` per [RELEASING.md](../RELEASING.md)
-2. Confirm README badge is green on `master`
-3. Optionally rename repository to `nosograph` (update URLs in docs)
-
-## What stays out of scope
-
-- FHIR / OMOP / Phenopackets (PLANNED)
-- Billing / Stripe (NOT_IMPLEMENTED)
 - Clinical decision support or PHI processing
-
-## Support channels
-
-- **Bugs / features:** GitHub Issues
-- **Security:** Private advisory — never public issues
-- **Governance:** [GOVERNANCE.md](../GOVERNANCE.md)
+- Billing / Stripe
+- FHIR / OMOP / Phenopackets until those roadmap items ship

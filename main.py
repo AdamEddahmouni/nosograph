@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Medical Research Platform — entry point.
-
-Delegates to the med_research CLI.
-"""
+"""NosoGraph CLI entry point. Delegates to med_research.cli (compatibility import)."""
 
 from med_research.cli import main
 
