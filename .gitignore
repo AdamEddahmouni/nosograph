@@ -157,3 +157,11 @@ tmp_test_bulk/
 scripts/_test_ot_queries.py
 coverage.xml
 pytest*.txt
+test-offline-*.txt
+mypy-full.txt
+mypy-output.txt
+mypy-files.txt
+
+# CI-generated validation reports (recompute at release; see docs/audits/v2.3.0-release.md)
+data/reports/validation_l2_full.json
+data/tmp_test_biomed.sqlite3
