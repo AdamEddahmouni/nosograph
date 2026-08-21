@@ -1,0 +1,16 @@
+# Bandit configuration for NosoGraph CI (security job in .github/workflows/test.yml).
+#
+# Scope: src/med_research only; disease scaffold tree and dossier markdown are
+# excluded in the workflow because they are non-executable fixtures, generated
+# artifacts, or ~10k scaffold modules (scan-time). DuckDB SQL in bulk_store.py
+# uses _duckdb_parquet_sql() with documented nosec — see audit.
+#
+# Severity gate: -ll (Medium and High). Low-severity findings are informational.
+#
+# Documented suppressions live beside the flagged lines (nosec / bandit: disable).
+# See docs/audits/p1-ci-baseline.md for classification of each finding class.
+
+exclude_dirs:
+  - tests
+  - src/med_research/diseases
+  - src/med_research/pipeline/dossier

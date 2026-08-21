@@ -1,5 +1,6 @@
 """Celery application and analysis tasks — with real-time progress reporting."""
 
+import os
 from datetime import datetime, timezone
 from typing import Any, Callable
 from uuid import uuid4
@@ -9,6 +10,11 @@ from celery import Celery
 from med_research.pipeline.progress import StandardProgress
 from med_research.pipeline.registry import celery_task_routes, module_catalog
 from med_research.web.config import CELERY_BROKER_URL, CELERY_RESULT_BACKEND
+
+
+def _env_bool(name: str) -> bool:
+    return os.environ.get(name, "").lower() in ("1", "true", "yes")
+
 
 celery_app = Celery(
     "med_research",
@@ -25,6 +31,9 @@ celery_app.conf.update(
     task_track_started=True,
     task_time_limit=600,
     task_soft_time_limit=540,
+    task_always_eager=_env_bool("CELERY_TASK_ALWAYS_EAGER"),
+    task_eager_propagates=_env_bool("CELERY_TASK_EAGER_PROPAGATES"),
+    task_store_eager_result=_env_bool("CELERY_TASK_STORE_EAGER_RESULT"),
     # Route every registered module task from the same catalog used by the
     # CLI and web job alias resolver. ``run_module`` remains the generic
     # compatibility task for callers that submit a module ID dynamically.

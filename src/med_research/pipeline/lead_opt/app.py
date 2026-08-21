@@ -86,4 +86,5 @@ def results(job_id):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    # Local-only dev helper; production uses the FastAPI dashboard/API.
+    app.run(host="0.0.0.0", port=5000, debug=True)  # nosec

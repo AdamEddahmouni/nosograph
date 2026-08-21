@@ -18,6 +18,12 @@ from med_research.logging_config import get_logger
 
 logger = get_logger(__name__)
 
+
+def _duckdb_parquet_sql(glob: str, sql: str, **extra: str) -> str:
+    """Format DuckDB SQL; parquet globs come from bulk store layout, not user input."""
+    return sql.format(glob=glob, **extra)  # nosec B608
+
+
 DEFAULT_VERSION = "25.03"
 MANIFEST_NAME = "manifest.json"
 
@@ -128,10 +134,10 @@ class OpenTargetsBulkStore:
             cached = self._table_cache.get(table)
             if cached is not None:
                 return cached
-            rows = self._query(f"SELECT * FROM read_parquet('{glob}')")
+            rows = self._query(_duckdb_parquet_sql(glob, "SELECT * FROM read_parquet('{glob}')"))
             self._table_cache[table] = rows
             return rows
-        sql = f"SELECT * FROM read_parquet('{glob}')"
+        sql = _duckdb_parquet_sql(glob, "SELECT * FROM read_parquet('{glob}')")
         if where:
             sql += f" WHERE {where}"
         return self._query(sql, params)
@@ -235,7 +241,9 @@ class OpenTargetsBulkStore:
             return set()
         if glob in self._cols_cache:
             return self._cols_cache[glob]
-        rows = self._query(f"DESCRIBE SELECT * FROM read_parquet('{glob}') LIMIT 1")
+        rows = self._query(
+            _duckdb_parquet_sql(glob, "DESCRIBE SELECT * FROM read_parquet('{glob}') LIMIT 1")
+        )
         cols = {str(row.get("column_name", "")) for row in rows}
         self._cols_cache[glob] = cols
         return cols
@@ -276,32 +284,28 @@ class OpenTargetsBulkStore:
 
         for candidate_id in self._association_disease_ids(disease_id):
             if legacy:
-                sql = f"""
-                    SELECT diseaseId, score, approvedSymbol, approvedName, biotype
-                    FROM read_parquet('{assoc_glob}')
-                    WHERE diseaseId = ?
-                    ORDER BY score DESC
-                    LIMIT ?
-                """
+                sql = _duckdb_parquet_sql(
+                    assoc_glob,
+                    "SELECT diseaseId, score, approvedSymbol, approvedName, biotype "
+                    "FROM read_parquet('{glob}') WHERE diseaseId = ? ORDER BY score DESC LIMIT ?",
+                )
                 rows = self._query(sql, [candidate_id, limit * 2])
             elif target_glob:
-                sql = f"""
-                    SELECT a.score, t.approvedSymbol, t.approvedName, t.biotype
-                    FROM read_parquet('{assoc_glob}') a
-                    LEFT JOIN read_parquet('{target_glob}') t ON a.targetId = t.id
-                    WHERE a.diseaseId = ?
-                    ORDER BY a.score DESC
-                    LIMIT ?
-                """
+                sql = _duckdb_parquet_sql(
+                    assoc_glob,
+                    "SELECT a.score, t.approvedSymbol, t.approvedName, t.biotype "
+                    "FROM read_parquet('{glob}') a "
+                    "LEFT JOIN read_parquet('{target_glob}') t ON a.targetId = t.id "
+                    "WHERE a.diseaseId = ? ORDER BY a.score DESC LIMIT ?",
+                    target_glob=target_glob,
+                )
                 rows = self._query(sql, [candidate_id, limit * 2])
             else:
-                sql = f"""
-                    SELECT score, targetId AS approvedSymbol, targetId AS approvedName, '' AS biotype
-                    FROM read_parquet('{assoc_glob}')
-                    WHERE diseaseId = ?
-                    ORDER BY score DESC
-                    LIMIT ?
-                """
+                sql = _duckdb_parquet_sql(
+                    assoc_glob,
+                    "SELECT score, targetId AS approvedSymbol, targetId AS approvedName, '' AS biotype "
+                    "FROM read_parquet('{glob}') WHERE diseaseId = ? ORDER BY score DESC LIMIT ?",
+                )
                 rows = self._query(sql, [candidate_id, limit * 2])
 
             targets: list[dict] = []
@@ -368,12 +372,10 @@ class OpenTargetsBulkStore:
         if not glob:
             return []
         for candidate_id in self._association_disease_ids(disease_id):
-            sql = f"""
-                SELECT *
-                FROM read_parquet('{glob}')
-                WHERE diseaseId = ?
-                LIMIT ?
-            """
+            sql = _duckdb_parquet_sql(
+                glob,
+                "SELECT * FROM read_parquet('{glob}') WHERE diseaseId = ? LIMIT ?",
+            )
             rows = self._query(sql, [candidate_id, limit * 2])
             drugs: list[dict] = []
             for row in rows:
@@ -409,22 +411,18 @@ class OpenTargetsBulkStore:
         cols = self._glob_column_names(glob)
         id_param = normalize_disease_id(disease_id)
         if "phenotypeLabel" in cols:
-            sql = f"""
-                SELECT phenotypeLabel AS label
-                FROM read_parquet('{glob}')
-                WHERE diseaseId = ?
-                ORDER BY frequency DESC
-                LIMIT ?
-            """
+            sql = _duckdb_parquet_sql(
+                glob,
+                "SELECT phenotypeLabel AS label FROM read_parquet('{glob}') "
+                "WHERE diseaseId = ? ORDER BY frequency DESC LIMIT ?",
+            )
             rows = self._query(sql, [id_param, limit])
             labels = [str(r["label"]) for r in rows if r.get("label")]
         else:
-            sql = f"""
-                SELECT phenotype
-                FROM read_parquet('{glob}')
-                WHERE disease = ?
-                LIMIT ?
-            """
+            sql = _duckdb_parquet_sql(
+                glob,
+                "SELECT phenotype FROM read_parquet('{glob}') WHERE disease = ? LIMIT ?",
+            )
             rows = self._query(sql, [id_param, limit])
             hpo_labels = _hpo_label_map()
             labels = []
@@ -441,7 +439,10 @@ class OpenTargetsBulkStore:
         if not glob:
             return 0
         rows = self._query(
-            f"SELECT COUNT(*) AS n FROM read_parquet('{glob}') WHERE diseaseId = ?",
+            _duckdb_parquet_sql(
+                glob,
+                "SELECT COUNT(*) AS n FROM read_parquet('{glob}') WHERE diseaseId = ?",
+            ),
             [efo_id],
         )
         return int(rows[0]["n"]) if rows else 0
@@ -451,7 +452,10 @@ class OpenTargetsBulkStore:
         if not glob:
             return 0
         rows = self._query(
-            f"SELECT COUNT(*) AS n FROM read_parquet('{glob}') WHERE diseaseId = ?",
+            _duckdb_parquet_sql(
+                glob,
+                "SELECT COUNT(*) AS n FROM read_parquet('{glob}') WHERE diseaseId = ?",
+            ),
             [efo_id],
         )
         return int(rows[0]["n"]) if rows else 0
@@ -463,7 +467,10 @@ class OpenTargetsBulkStore:
         counts: dict[str, int] = {}
         if assoc_glob:
             count_rows = self._query(
-                f"SELECT diseaseId, COUNT(*) AS n FROM read_parquet('{assoc_glob}') GROUP BY diseaseId"
+                _duckdb_parquet_sql(
+                    assoc_glob,
+                    "SELECT diseaseId, COUNT(*) AS n FROM read_parquet('{glob}') GROUP BY diseaseId",
+                )
             )
             counts = {r["diseaseId"]: int(r["n"]) for r in count_rows}
 
@@ -471,7 +478,10 @@ class OpenTargetsBulkStore:
         drug_glob = self._parquet_glob("known_drug")
         if drug_glob:
             drug_rows = self._query(
-                f"SELECT diseaseId, COUNT(*) AS n FROM read_parquet('{drug_glob}') GROUP BY diseaseId"
+                _duckdb_parquet_sql(
+                    drug_glob,
+                    "SELECT diseaseId, COUNT(*) AS n FROM read_parquet('{glob}') GROUP BY diseaseId",
+                )
             )
             drug_counts = {r["diseaseId"]: int(r["n"]) for r in drug_rows}
 

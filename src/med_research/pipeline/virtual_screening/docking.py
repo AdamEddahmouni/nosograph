@@ -156,7 +156,7 @@ def _fetch_pdb(pdb_id: str, output_path: Path) -> bool:
     url = f"https://files.rcsb.org/download/{pdb_id}.pdb"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "LupusPlatform/1.0"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=30) as resp:  # nosec B310 - RCSB PDB HTTPS only
             output_path.write_bytes(resp.read())
         return True
     except (urllib.error.HTTPError, urllib.error.URLError, OSError) as e:

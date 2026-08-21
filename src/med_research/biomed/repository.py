@@ -111,6 +111,48 @@ def _json_loads(value: str, default: Any) -> Any:
     return json.loads(value)
 
 
+def _insert_row_sql(table: str, row: dict[str, Any]) -> str:
+    """Build INSERT from typed row keys; values are bound via placeholders."""
+    columns = ", ".join(row)
+    placeholders = ", ".join("?" for _ in row)
+    return f"INSERT INTO {table} ({columns}) VALUES ({placeholders})"  # nosec B608
+
+
+def _entity_search_count_sql(type_clause: str) -> str:
+    return (
+        f"SELECT COUNT(DISTINCT e.id) AS total FROM entities e "
+        f"JOIN entity_names n ON n.entity_id = e.id "
+        f"WHERE n.name_normalized LIKE ? {type_clause}"  # nosec B608
+    )
+
+
+def _entity_search_rows_sql(type_clause: str) -> str:
+    return (
+        f"SELECT DISTINCT e.id, e.primary_curie, e.entity_type, e.created_in_snapshot_id, "
+        f"COALESCE(r.label, e.primary_curie) AS label FROM entities e "
+        f"JOIN entity_names n ON n.entity_id = e.id "
+        f"LEFT JOIN entity_revisions r ON r.entity_id = e.id "
+        f"WHERE n.name_normalized LIKE ? {type_clause} "  # nosec B608
+        f"ORDER BY label COLLATE NOCASE, e.primary_curie LIMIT ? OFFSET ?"
+    )
+
+
+def _claims_where_sql(where: str) -> str:
+    return f"SELECT * FROM claims WHERE {where} ORDER BY predicate, object_curie, id"  # nosec B608
+
+
+def _snapshot_count_sql(where: str) -> str:
+    return f"SELECT COUNT(*) AS total FROM resource_snapshots s {where}"  # nosec B608
+
+
+def _snapshot_list_sql(where: str) -> str:
+    return (
+        f"SELECT s.* FROM resource_snapshots s {where} "  # nosec B608
+        "ORDER BY s.resource_name, s.version, s.id LIMIT ? OFFSET ?"
+    )
+
+
+# Dynamic INSERT/SELECT fragments use typed model field names, not user input.
 class BiomedicalRepository:
     def __init__(self, path: Path) -> None:
         self.database = BiomedicalDatabase(path)
@@ -142,10 +184,7 @@ class BiomedicalRepository:
             row = self._snapshot_to_row(snapshot)
             if existing is None:
                 connection.execute(
-                    f"""
-                    INSERT INTO resource_snapshots ({", ".join(row)})
-                    VALUES ({", ".join("?" for _ in row)})
-                    """,
+                    _insert_row_sql("resource_snapshots", row),
                     tuple(row.values()),
                 )
             else:
@@ -217,10 +256,7 @@ class BiomedicalRepository:
 
             row = self._snapshot_to_row(snapshot)
             connection.execute(
-                f"""
-                INSERT INTO resource_snapshots ({", ".join(row)})
-                VALUES ({", ".join("?" for _ in row)})
-                """,
+                _insert_row_sql("resource_snapshots", row),
                 tuple(row.values()),
             )
 
@@ -415,10 +451,7 @@ class BiomedicalRepository:
             row = self._revision_to_row(revision)
             if existing is None:
                 connection.execute(
-                    f"""
-                    INSERT INTO entity_revisions ({", ".join(row)})
-                    VALUES ({", ".join("?" for _ in row)})
-                    """,
+                    _insert_row_sql("entity_revisions", row),
                     tuple(row.values()),
                 )
                 self._index_revision_names(connection, revision)
@@ -445,10 +478,7 @@ class BiomedicalRepository:
             row = self._mapping_to_row(normalized)
             if existing is None:
                 connection.execute(
-                    f"""
-                    INSERT INTO entity_mappings ({", ".join(row)})
-                    VALUES ({", ".join("?" for _ in row)})
-                    """,
+                    _insert_row_sql("entity_mappings", row),
                     tuple(row.values()),
                 )
             else:
@@ -509,25 +539,11 @@ class BiomedicalRepository:
                 type_clause = "AND e.entity_type = ?"
                 params.append(entity_type.value)
             total = connection.execute(
-                f"""
-                SELECT COUNT(DISTINCT e.id) AS total
-                FROM entities e
-                JOIN entity_names n ON n.entity_id = e.id
-                WHERE n.name_normalized LIKE ? {type_clause}
-                """,
+                _entity_search_count_sql(type_clause),
                 params,
             ).fetchone()["total"]
             rows = connection.execute(
-                f"""
-                SELECT DISTINCT e.id, e.primary_curie, e.entity_type, e.created_in_snapshot_id,
-                       COALESCE(r.label, e.primary_curie) AS label
-                FROM entities e
-                JOIN entity_names n ON n.entity_id = e.id
-                LEFT JOIN entity_revisions r ON r.entity_id = e.id
-                WHERE n.name_normalized LIKE ? {type_clause}
-                ORDER BY label COLLATE NOCASE, e.primary_curie
-                LIMIT ? OFFSET ?
-                """,
+                _entity_search_rows_sql(type_clause),
                 [*params, limit, offset],
             ).fetchall()
             items = [
@@ -559,10 +575,7 @@ class BiomedicalRepository:
             row = self._claim_to_row(normalized)
             if existing is None:
                 connection.execute(
-                    f"""
-                    INSERT INTO claims ({", ".join(row)})
-                    VALUES ({", ".join("?" for _ in row)})
-                    """,
+                    _insert_row_sql("claims", row),
                     tuple(row.values()),
                 )
             else:
@@ -582,10 +595,7 @@ class BiomedicalRepository:
             row = self._evidence_to_row(evidence)
             if existing is None:
                 connection.execute(
-                    f"""
-                    INSERT INTO claim_evidence ({", ".join(row)})
-                    VALUES ({", ".join("?" for _ in row)})
-                    """,
+                    _insert_row_sql("claim_evidence", row),
                     tuple(row.values()),
                 )
             else:
@@ -612,6 +622,27 @@ class BiomedicalRepository:
     ) -> list[ClaimView]:
         return self._list_claim_rows(object_curie=object_curie, predicate=predicate)
 
+    def get_claim_by_id(self, claim_id: UUID) -> ClaimView | None:
+        with self.database.connect() as connection:
+            row = connection.execute(
+                "SELECT * FROM claims WHERE id = ?",
+                (_uuid_str(claim_id),),
+            ).fetchone()
+            if row is None:
+                return None
+            claim = self._row_to_claim(row)
+            evidence_rows = connection.execute(
+                "SELECT * FROM claim_evidence WHERE claim_id = ? ORDER BY direction, id",
+                (_uuid_str(claim.id),),
+            ).fetchall()
+            evidence = [self._row_to_evidence(item) for item in evidence_rows]
+            return ClaimView(
+                claim=claim,
+                subject_curie=claim.subject_curie,
+                object_curie=claim.object_curie,
+                evidence=evidence,
+            )
+
     def _list_claim_rows(
         self,
         *,
@@ -635,11 +666,7 @@ class BiomedicalRepository:
                 params.append(predicate.value)
             where = " AND ".join(clauses)
             rows = connection.execute(
-                f"""
-                SELECT * FROM claims
-                WHERE {where}
-                ORDER BY predicate, object_curie, id
-                """,
+                _claims_where_sql(where),
                 params,
             ).fetchall()
             views: list[ClaimView] = []
@@ -686,16 +713,11 @@ class BiomedicalRepository:
                 where = "WHERE s.resource_name = ?"
                 params.append(resource_name)
             total = connection.execute(
-                f"SELECT COUNT(*) AS total FROM resource_snapshots s {where}",
+                _snapshot_count_sql(where),
                 params,
             ).fetchone()["total"]
             rows = connection.execute(
-                f"""
-                SELECT s.* FROM resource_snapshots s
-                {where}
-                ORDER BY s.resource_name, s.version, s.id
-                LIMIT ? OFFSET ?
-                """,
+                _snapshot_list_sql(where),
                 [*params, limit, offset],
             ).fetchall()
             return Page(

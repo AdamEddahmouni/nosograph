@@ -73,12 +73,17 @@ def celery_eager():
     prior = {
         "task_always_eager": celery_app.conf.task_always_eager,
         "task_eager_propagates": celery_app.conf.task_eager_propagates,
+        "task_store_eager_result": celery_app.conf.task_store_eager_result,
     }
     celery_app.conf.task_always_eager = True
-    celery_app.conf.task_eager_propagates = True
+    celery_app.conf.task_eager_propagates = False
+    # Without this, eager tasks succeed but AsyncResult stays PENDING because
+    # nothing is written to the Redis result backend (jobs API + WebSocket).
+    celery_app.conf.task_store_eager_result = True
     yield celery_app
     celery_app.conf.task_always_eager = prior["task_always_eager"]
     celery_app.conf.task_eager_propagates = prior["task_eager_propagates"]
+    celery_app.conf.task_store_eager_result = prior["task_store_eager_result"]
 
 
 @pytest.fixture

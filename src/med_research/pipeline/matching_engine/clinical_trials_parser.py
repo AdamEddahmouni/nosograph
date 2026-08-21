@@ -194,12 +194,12 @@ class TrialCriteriaParser:
         try:
             if hasattr(etree, "XMLParser"):
                 try:
-                    parser = etree.XMLParser(recover=True)
-                    tree = etree.parse(str(xml_path), parser)
+                    parser = etree.XMLParser(recover=True)  # nosec B314 - offline CT.gov fixture/XML dumps
+                    tree = etree.parse(str(xml_path), parser)  # nosec B314
                 except TypeError:
-                    tree = etree.parse(str(xml_path))
+                    tree = etree.parse(str(xml_path))  # nosec B314
             else:
-                tree = etree.parse(str(xml_path))
+                tree = etree.parse(str(xml_path))  # nosec B314
             root = tree.getroot()
         except Exception:
             return []
