@@ -193,6 +193,10 @@ def module_job_request_model(module_id: str) -> type[CatalogModuleJobRequest]:
 @lru_cache(maxsize=None)
 def module_body_request_model(module_id: str) -> type[CatalogModuleJobRequest]:
     """Create and cache a JSON body model represented by a catalog schema."""
+    if module_id == "evidence_workspace":
+        from med_research.pipeline.evidence_workspace.schemas import ResearchRequest
+
+        return cast(type[CatalogModuleJobRequest], ResearchRequest)
     return _build_module_request_model(module_id, body=True)
 
 

@@ -11,7 +11,10 @@ pytestmark = pytest.mark.unit
 def test_report_preserves_provenance_escapes_text_and_includes_disclaimer():
     dossier = EvidenceDossier(
         run_id="ew-test",
-        request=ResearchRequest(question='<script>alert("x")</script>'),
+        request=ResearchRequest(
+            disease_id="sle",
+            question='<script>alert("x")</script>',
+        ),
         started_at=datetime.now(timezone.utc),
         completed_at=datetime.now(timezone.utc),
         warnings=["source warning"],

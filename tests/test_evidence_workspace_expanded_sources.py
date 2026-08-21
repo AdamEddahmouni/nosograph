@@ -12,6 +12,7 @@ pytestmark = pytest.mark.unit
 
 def test_request_accepts_gwas_and_fda_sources():
     request = ResearchRequest(
+        disease_id="sle",
         question="Find genetic and approved-drug evidence for SLE",
         sources=("pubmed", "clinical_trials", "gwas", "fda_labels"),
     )
@@ -38,7 +39,7 @@ def test_gwas_source_normalizes_study_fixture():
     )
 
     result = source.search(
-        ResearchRequest(question="SLE", sources=("gwas",)), ["systemic lupus erythematosus"]
+        ResearchRequest(disease_id="sle", question="SLE", sources=("gwas",)), ["systemic lupus erythematosus"]
     )
 
     assert result.status.status == "ok"
@@ -64,7 +65,7 @@ def test_fda_label_source_normalizes_dailymed_fixture():
     )
 
     result = source.search(
-        ResearchRequest(question="tofacitinib", sources=("fda_labels",)), ["tofacitinib"]
+        ResearchRequest(disease_id="sle", question="tofacitinib", sources=("fda_labels",)), ["tofacitinib"]
     )
 
     assert result.status.status == "ok"
@@ -77,7 +78,9 @@ def test_fda_label_source_normalizes_dailymed_fixture():
 
 def test_expanded_source_failure_is_isolated():
     source = GWASSource(lambda query, limit: (_ for _ in ()).throw(RuntimeError("catalog offline")))
-    result = source.search(ResearchRequest(question="SLE", sources=("gwas",)), ["SLE"])
+    result = source.search(
+        ResearchRequest(disease_id="sle", question="SLE", sources=("gwas",)), ["SLE"]
+    )
 
     assert result.records == []
     assert result.status.status == "error"
@@ -88,6 +91,7 @@ def test_date_filter_warns_when_source_record_has_no_date():
     source = FDALabelSource(lambda query, limit: [{"setid": "undated", "title": "Unknown label"}])
     result = source.search(
         ResearchRequest(
+            disease_id="sle",
             question="label",
             sources=("fda_labels",),
             date_from="2024-01-01",

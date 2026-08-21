@@ -31,8 +31,8 @@ def test_corpus_status_filter_and_search(client):
         assert d["tier"].lower() == "l3"
 
     # Test search
-    resp_search = client.get("/api/system/corpus-status?search=lupus")
+    resp_search = client.get("/api/system/corpus-status?search=leukemia")
     assert resp_search.status_code == 200
     data_s = resp_search.json()
     assert "diseases" in data_s
-    assert any("lupus" in (d["name"] + d["disease_id"]).lower() for d in data_s["diseases"])
+    assert any("leukemia" in (d["name"] + d["disease_id"]).lower() for d in data_s["diseases"])

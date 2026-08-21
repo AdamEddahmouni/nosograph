@@ -1204,7 +1204,7 @@ class TestCliCoverageBoost:
                 assert run_cli_command("semantic", "--disease", "ra", "--top", "5") == 0
                 assert run_cli_command("evidence", "--disease", "ra", "--max", "5") == 0
                 assert run_cli_command("extractor", "--disease", "ra", "--max", "5") == 0
-                assert run_cli_command("monitor", "--list") == 0
+                assert run_cli_command("monitor", "--disease", "ra", "--list") == 0
                 assert run_cli_command("monitor", "--disease", "ra", "--diff", "--max", "5") == 0
                 assert run_cli_command("monitor", "--disease", "ra", "--max", "5") == 0
                 assert run_cli_command("biomarker", "--disease", "ra", "--top", "5") == 0

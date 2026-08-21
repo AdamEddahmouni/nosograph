@@ -12,12 +12,12 @@ def test_condition_comparison_section_present() -> None:
 def test_condition_comparison_functions_present() -> None:
     js = (ROOT / "js" / "dashboard.js").read_text(encoding="utf-8")
     assert "function compareConditions" in js
-    assert "function renderComparisonResult" in js
+    assert "function renderNosoGraphCompareResult" in js
     assert "function initConditionCurieTomSelect" in js
 
 
 def test_condition_comparison_renders_research_disclaimer() -> None:
     js = (ROOT / "js" / "dashboard.js").read_text(encoding="utf-8")
-    block = js[js.find("function renderComparisonResult") :]
+    block = js[js.find("function renderNosoGraphCompareResult") :]
     assert "research" in block.lower()
     assert "condition-comparison-disclaimer" in block

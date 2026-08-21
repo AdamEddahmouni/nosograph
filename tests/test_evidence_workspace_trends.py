@@ -32,7 +32,7 @@ def _dossier(run_id: str, completed_at: str, drug_score: float, include_target: 
         )
     return EvidenceDossier(
         run_id=run_id,
-        request=ResearchRequest(question=f"Find JAK interventions ({run_id})"),
+        request=ResearchRequest(disease_id="sle", question=f"Find JAK interventions ({run_id})"),
         started_at=datetime.fromisoformat(completed_at.replace("Z", "+00:00")),
         completed_at=datetime.fromisoformat(completed_at.replace("Z", "+00:00")),
         source_statuses=[
@@ -66,7 +66,7 @@ def test_sqlite_store_builds_chronological_sparse_trends(tmp_path):
     store = WorkspaceRunStore(tmp_path / "workspace.sqlite3")
     _save(store, _dossier("ew-new", "2026-01-02T00:00:00Z", 84.0, include_target=False))
     _save(store, _dossier("ew-old", "2026-01-01T00:00:00Z", 72.0, include_target=True))
-    store.create_run("ew-failed", ResearchRequest(question="failed"))
+    store.create_run("ew-failed", ResearchRequest(disease_id="sle", question="failed"))
     store.mark_failed("ew-failed", "source unavailable")
 
     trends = store.trends(limit=20)

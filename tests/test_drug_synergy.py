@@ -488,7 +488,7 @@ def test_synergy_cli_top(caplog):
     from tests.cli_helpers import run_cli_handler
 
     with caplog.at_level(logging.INFO):
-        exit_code = run_cli_handler(cmd_synergy, "synergy", "--top", "5")
+        exit_code = run_cli_handler(cmd_synergy, "synergy", "--disease", "ra", "--top", "5")
 
     assert exit_code == 0
     assert "TOP 5 SYNERGISTIC" in caplog.text

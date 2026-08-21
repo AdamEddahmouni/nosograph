@@ -15,6 +15,8 @@ def test_workspace_cli_parser_accepts_question_sources_and_exports():
     args = _build_parser().parse_args(
         [
             "workspace",
+            "--disease",
+            "sle",
             "--question",
             "Find JAK interventions",
             "--sources",
@@ -28,6 +30,7 @@ def test_workspace_cli_parser_accepts_question_sources_and_exports():
     )
 
     assert args.command == "workspace"
+    assert args.disease == "sle"
     assert args.question == "Find JAK interventions"
     assert args.sources == "pubmed"
     assert args.enable_llm is False
@@ -41,11 +44,14 @@ def test_workspace_migrate_cli_defaults_to_dry_run_then_applies(tmp_path, capsys
 
     path = tmp_path / "workspace.sqlite3"
     store = WorkspaceRunStore(path)
-    store.create_run("ew-cli-legacy", ResearchRequest(question="Find JAK interventions"))
+    store.create_run(
+        "ew-cli-legacy",
+        ResearchRequest(disease_id="sle", question="Find JAK interventions"),
+    )
     with sqlite3.connect(path) as connection:
         connection.execute(
             "UPDATE workspace_runs SET request_json=?, request_schema_version='1.0' WHERE run_id=?",
-            (json.dumps({"question": "Find JAK interventions"}), "ew-cli-legacy"),
+            (json.dumps({"question": "Find JAK interventions", "disease_id": "sle"}), "ew-cli-legacy"),
         )
 
     args = _build_parser().parse_args(
@@ -74,7 +80,7 @@ def test_workspace_cli_wires_cli_progress_through_dispatch(monkeypatch, tmp_path
     """Workspace CLI must thread cli_progress into the gateway dispatch path."""
     dossier = EvidenceDossier(
         run_id="ew-cli-progress",
-        request=ResearchRequest(question="JAK interventions"),
+        request=ResearchRequest(disease_id="sle", question="JAK interventions"),
         started_at="2026-08-06T00:00:00Z",
         completed_at="2026-08-06T00:00:00Z",
     )
@@ -86,6 +92,8 @@ def test_workspace_cli_wires_cli_progress_through_dispatch(monkeypatch, tmp_path
     args = _build_parser().parse_args(
         [
             "workspace",
+            "--disease",
+            "sle",
             "--question",
             "JAK interventions",
             "--json",
@@ -117,6 +125,8 @@ def test_workspace_cli_runs_and_writes_requested_exports(monkeypatch, tmp_path, 
     args = _build_parser().parse_args(
         [
             "workspace",
+            "--disease",
+            "sle",
             "--question",
             "JAK interventions",
             "--json",

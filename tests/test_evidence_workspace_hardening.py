@@ -31,7 +31,10 @@ def test_source_applies_date_window():
         ]
     )
 
-    result = source.search(ResearchRequest(question="JAK", date_from=date(2023, 1, 1)), ["JAK"])
+    result = source.search(
+        ResearchRequest(disease_id="sle", question="JAK", date_from=date(2023, 1, 1)),
+        ["JAK"],
+    )
 
     assert [record.native_id for record in result.records] == ["new"]
 
@@ -39,7 +42,7 @@ def test_source_applies_date_window():
 def test_report_does_not_create_javascript_link():
     dossier = EvidenceDossier(
         run_id="ew-safe",
-        request=ResearchRequest(question="JAK"),
+        request=ResearchRequest(disease_id="sle", question="JAK"),
         started_at="2026-08-06T00:00:00Z",
         completed_at="2026-08-06T00:00:00Z",
         evidence=[

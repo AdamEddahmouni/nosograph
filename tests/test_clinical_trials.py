@@ -927,6 +927,8 @@ def test_cmd_trials_uses_disease_query(monkeypatch):
     assert cmd_trials(parser.parse_args(["trials", "--disease", "ra"])) == 0
     assert captured["query"] == "rheumatoid arthritis OR RA"
 
-    # Default disease keeps the SLE query
-    assert cmd_trials(parser.parse_args(["trials"])) == 0
+    assert cmd_trials(parser.parse_args(["trials", "--disease", "sle"])) == 0
     assert captured["query"] == "lupus OR SLE"
+
+    with pytest.raises(SystemExit):
+        parser.parse_args(["trials"])

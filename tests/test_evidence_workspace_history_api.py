@@ -13,7 +13,7 @@ def _save_run(path, run_id, score):
     store = WorkspaceRunStore(path)
     dossier = EvidenceDossier(
         run_id=run_id,
-        request=ResearchRequest(question="Find JAK interventions for SLE"),
+        request=ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE"),
         started_at="2026-01-01T00:00:00Z",
         completed_at="2026-01-01T00:00:01Z",
     )
@@ -27,7 +27,7 @@ def test_workspace_history_api_lists_gets_and_compares_runs(monkeypatch, tmp_pat
 
     db_path = tmp_path / "workspace.sqlite3"
     store = _save_run(db_path, "ew-one", 1)
-    store.create_run("ew-two", ResearchRequest(question="Second question"))
+    store.create_run("ew-two", ResearchRequest(disease_id="sle", question="Second question"))
     monkeypatch.setattr(workspace_router, "WORKSPACE_DB_PATH", db_path)
 
     from med_research.web.main import app

@@ -376,7 +376,7 @@ def test_cross_disease_cli_run(caplog):
     from tests.cli_helpers import run_cli_handler
 
     with caplog.at_level(logging.INFO):
-        exit_code = run_cli_handler(cmd_cross_disease, "cross-disease", "--top", "5")
+        exit_code = run_cli_handler(cmd_cross_disease, "cross-disease", "--disease", "ra", "--top", "5")
 
     assert exit_code == 0
     assert "CROSS-DISEASE" in caplog.text

@@ -28,6 +28,7 @@ def dossier(run_id: str, drug_score: float, target_score: float) -> EvidenceDoss
     return EvidenceDossier(
         run_id=run_id,
         request=ResearchRequest(
+            disease_id="sle",
             question="Find JAK interventions for SLE",
             date_from=date(2025, 1, 1),
         ),
@@ -58,7 +59,7 @@ def dossier(run_id: str, drug_score: float, target_score: float) -> EvidenceDoss
 
 def test_sqlite_store_persists_and_lists_dossiers(tmp_path):
     store = WorkspaceRunStore(tmp_path / "workspace.sqlite3")
-    request = ResearchRequest(question="Find JAK interventions for SLE")
+    request = ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE")
 
     store.create_run("ew-pending", request)
     store.save_success(dossier("ew-pending", 82.5, 76.0), "<html>one</html>")
@@ -84,7 +85,7 @@ def test_workspace_migration_registry_contains_explicit_upgrade_chain():
 
 
 def test_workspace_persisted_schemas_are_versioned_and_migratable():
-    request = ResearchRequest(question="Find JAK interventions for SLE")
+    request = ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE")
     encoded_request = serialize_workspace_request(request)
     assert encoded_request["schema_version"] == WORKSPACE_REQUEST_SCHEMA_VERSION
     assert WorkspaceRequestV1.model_json_schema()["properties"]["schema_version"]["const"] == "1.0"
@@ -114,7 +115,7 @@ def test_workspace_persisted_schemas_are_versioned_and_migratable():
 def test_sqlite_store_rewrites_legacy_workspace_payloads(tmp_path):
     path = tmp_path / "workspace.sqlite3"
     store = WorkspaceRunStore(path)
-    request = ResearchRequest(question="Find JAK interventions for SLE")
+    request = ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE")
     result = dossier("ew-legacy", 82.5, 76.0)
     store.create_run(result.run_id, request)
     store.save_success(result, "<html>legacy</html>")
@@ -153,7 +154,7 @@ def test_sqlite_store_rewrites_legacy_workspace_payloads(tmp_path):
 def test_sqlite_store_migration_report_is_dry_run_then_applies(tmp_path):
     path = tmp_path / "workspace.sqlite3"
     store = WorkspaceRunStore(path)
-    request = ResearchRequest(question="Find JAK interventions for SLE")
+    request = ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE")
     result = dossier("ew-migrate", 82.5, 76.0)
     store.create_run(result.run_id, request)
     store.save_success(result, "<html>legacy</html>")
@@ -203,7 +204,7 @@ def test_sqlite_store_migration_report_is_dry_run_then_applies(tmp_path):
 
 def test_sqlite_store_compares_rankings_and_can_delete(tmp_path):
     store = WorkspaceRunStore(tmp_path / "workspace.sqlite3")
-    request = ResearchRequest(question="Find JAK interventions for SLE")
+    request = ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE")
     store.create_run("ew-left", request)
     store.create_run("ew-right", request)
     left = dossier("ew-left", 70.0, 76.0)
@@ -238,7 +239,7 @@ def test_sqlite_store_rejects_success_without_pending_run(tmp_path):
 
 def test_sqlite_store_records_failures(tmp_path):
     store = WorkspaceRunStore(tmp_path / "workspace.sqlite3")
-    store.create_run("ew-failed", ResearchRequest(question="Find JAK interventions for SLE"))
+    store.create_run("ew-failed", ResearchRequest(disease_id="sle", question="Find JAK interventions for SLE"))
     store.mark_failed("ew-failed", "source unavailable")
 
     run = store.get_run("ew-failed")

@@ -173,7 +173,7 @@ def test_opentargets_workspace_source():
             }
         ]
     )
-    res = source.search(ResearchRequest(question="Target discovery"), ["JAK2"])
+    res = source.search(ResearchRequest(disease_id="sle", question="Target discovery"), ["JAK2"])
     assert res.status.status == "ok"
     assert len(res.records) == 1
     assert res.records[0].source == "opentargets"
@@ -190,7 +190,7 @@ def test_gtex_workspace_source():
             }
         ]
     )
-    res = source.search(ResearchRequest(question="Expression lookup"), ["JAK2"])
+    res = source.search(ResearchRequest(disease_id="sle", question="Expression lookup"), ["JAK2"])
     assert res.status.status == "ok"
     assert len(res.records) == 1
     assert res.records[0].source == "gtex"
@@ -208,7 +208,7 @@ def test_biorxiv_workspace_source():
             }
         ]
     )
-    res = source.search(ResearchRequest(question="Preprints"), ["JAK2"])
+    res = source.search(ResearchRequest(disease_id="sle", question="Preprints"), ["JAK2"])
     assert res.status.status == "ok"
     assert len(res.records) == 1
     assert res.records[0].source == "biorxiv"
