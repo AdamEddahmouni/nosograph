@@ -66,7 +66,7 @@ def api_get(url: str, timeout: int = 15) -> dict:
     def _fetch() -> dict:
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "LupusResearchPlatform/2.0"})
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:  # nosec B310 - curated HTTPS APIs
                 return cast(dict, json.loads(resp.read().decode("utf-8")))
         except json.JSONDecodeError as e:
             raise classify_api_error(e, f"API response parse error ({url[:80]}...)") from e

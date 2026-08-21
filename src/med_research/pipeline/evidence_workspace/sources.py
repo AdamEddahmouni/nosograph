@@ -55,7 +55,9 @@ def _record_from_dict(item: dict[str, Any], source: SourceName, terms: list[str]
         "biorxiv": "doi",
         "chembl": "chembl",
     }[source]
-    fallback = sha1(str(item.get("title", "")).encode("utf-8")).hexdigest()[:12]
+    fallback = sha1(str(item.get("title", "")).encode("utf-8"), usedforsecurity=False).hexdigest()[
+        :12
+    ]
     evidence_id = str(item.get("evidence_id") or f"{source_prefix}:{native_id or fallback}")
     published = _parse_date(
         item.get("published_date")

@@ -59,7 +59,7 @@ def fetch_json(
                 headers=req_headers,
                 method="POST" if body is not None else "GET",
             )
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:  # nosec B310 - curated HTTPS APIs
                 resp_data = resp.read().decode("utf-8")
                 return json.loads(resp_data)
 

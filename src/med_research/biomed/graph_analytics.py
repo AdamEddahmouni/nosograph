@@ -137,7 +137,7 @@ class BiomedicalGraphAnalytics:
                     UNION ALL
                     SELECT object_curie AS curie FROM claims WHERE object_curie IN ({placeholders})
                 ) GROUP BY curie
-                """,
+                """,  # nosec B608 - placeholders are "?" tokens; values are bound
                 target_curies + target_curies,
             )
             degree_map = dict(cursor.fetchall())
@@ -149,7 +149,7 @@ class BiomedicalGraphAnalytics:
                 FROM entities e
                 JOIN entity_revisions r ON e.id = r.entity_id
                 WHERE e.primary_curie IN ({placeholders})
-                """,
+                """,  # nosec B608 - placeholders are "?" tokens; values are bound
                 target_curies,
             )
             label_map = {row[0]: row[1] for row in cursor.fetchall() if row[1]}

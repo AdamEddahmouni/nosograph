@@ -174,7 +174,7 @@ class ClinVarImportAdapter(ImportAdapter):
             rec_id = (
                 vcv_id
                 if vcv_id
-                else f"CLINVAR:{hashlib.md5(f'{gene_curie}_{disease_curie}'.encode()).hexdigest()[:8]}"
+                else f"CLINVAR:{hashlib.md5(f'{gene_curie}_{disease_curie}'.encode(), usedforsecurity=False).hexdigest()[:8]}"
             )
             ev_id = claim_evidence_uuid(c_id, snapshot.id, direction, rec_id)
 

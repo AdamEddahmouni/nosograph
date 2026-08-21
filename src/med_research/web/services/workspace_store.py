@@ -875,7 +875,7 @@ class WorkspaceRunStore:
                        current_quality, quality_change, trigger_reasons_json, created_at, read_at
                 FROM workspace_alerts WHERE {where}
                 ORDER BY created_at DESC, alert_id DESC LIMIT ? OFFSET ?
-                """,
+                """,  # nosec B608 - WHERE uses static fragments; values are bound
                 [*params, limit, offset],
             ).fetchall()
             unread_count = connection.execute(
@@ -1462,7 +1462,7 @@ class WorkspaceRunStore:
         with self._connect() as connection:
             rows = connection.execute(
                 "SELECT run_id, dossier_json, updated_at FROM workspace_runs WHERE "
-                + " AND ".join(filters),
+                + " AND ".join(filters),  # nosec B608 - filters are static SQL fragments
                 params,
             ).fetchall()
         parsed: list[dict[str, Any]] = []
@@ -1560,7 +1560,7 @@ class WorkspaceRunStore:
                     SELECT run_id, question, dossier_json, updated_at
                     FROM workspace_runs
                     WHERE status='SUCCESS' AND run_id IN ({placeholders})
-                    """,
+                    """,  # nosec B608 - placeholders are "?" tokens; IDs are bound
                     selected_ids,
                 ).fetchall()
             else:

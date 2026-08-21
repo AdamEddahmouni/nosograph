@@ -730,7 +730,7 @@ def _build_parser() -> argparse.ArgumentParser:
     )
 
     serve = sub.add_parser("serve", help="Start the web API server")
-    serve.add_argument("--host", default="0.0.0.0")
+    serve.add_argument("--host", default="0.0.0.0")  # nosec B104 - overridable bind; see web/config.py
     serve.add_argument("--port", type=int, default=8000)
     serve.add_argument("--reload", action="store_true")
 
@@ -1887,7 +1887,7 @@ def cmd_biomed_snapshots(args: Any) -> int:
               ON a.resource_name = s.resource_name AND a.snapshot_id = s.id
             {where}
             ORDER BY s.resource_name, s.version
-            """,
+            """,  # nosec B608 - optional WHERE uses a static fragment; value is bound
             params,
         ).fetchall()
     for row in rows:

@@ -1,0 +1,24 @@
+name: Source sync dry-run
+
+on:
+  workflow_dispatch:
+
+jobs:
+  opentargets-dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Build Open Targets fixtures
+        run: python tests/fixtures/opentargets/build_fixtures.py
+      - name: Dry-run Open Targets sync
+        run: |
+          python -m med_research.cli biomed init
+          python -m med_research.cli biomed import mondo --artifact tests/fixtures/biomed/mondo/minimal.json
+          python -m med_research.cli biomed sync open_targets --dry-run

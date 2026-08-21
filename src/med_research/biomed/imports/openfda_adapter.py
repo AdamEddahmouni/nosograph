@@ -172,7 +172,7 @@ class OpenFDAImportAdapter(ImportAdapter):
             rec_id = (
                 report_id
                 if report_id
-                else f"FDA:{hashlib.md5(f'{drug_curie}_{condition_curie}'.encode()).hexdigest()[:8]}"
+                else f"FDA:{hashlib.md5(f'{drug_curie}_{condition_curie}'.encode(), usedforsecurity=False).hexdigest()[:8]}"
             )
             ev_id = claim_evidence_uuid(c_id, snapshot.id, direction, rec_id)
 

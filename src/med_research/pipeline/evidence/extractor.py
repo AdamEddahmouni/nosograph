@@ -185,7 +185,7 @@ def call_llm(
 
 def _call_llm_request(url: str, payload: bytes, headers: dict) -> str:
     req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
-    with urllib.request.urlopen(req, timeout=45) as resp:
+    with urllib.request.urlopen(req, timeout=45) as resp:  # nosec B310 - HTTPS OpenAI endpoint only
         body = json.loads(resp.read().decode("utf-8"))
         return cast(str, body["choices"][0]["message"]["content"]).strip()
 
