@@ -23,6 +23,8 @@ NosoGraph is an open-source biomedical research platform that connects diseases 
 
 ![Representative dashboard layout](assets/screenshots/dashboard.svg)
 
+*Representative product layout (not a live screenshot).*
+
 ## Status
 
 NosoGraph **v2.3.0** is a **public alpha**. Core research infrastructure is functional. Selected UI, comparison, and source-sync areas remain experimental. Registry size is not curation depth.
