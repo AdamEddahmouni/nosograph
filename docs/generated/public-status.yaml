@@ -1,0 +1,19 @@
+# Canonical public metrics for README / docs / metadata checks.
+# Update this file in the same release as pyproject.toml and CITATION.cff.
+version: "2.3.0"
+maturity: PUBLIC_ALPHA
+release_date: "2026-08-21"
+repository: "https://github.com/AdamEddahmouni/nosograph"
+python: ["3.11", "3.12"]
+metrics:
+  registry_modules: 10407
+  l2_strict_validated: 88
+  l3_expression_curated: 2
+  reference_tier: 6
+  ci_validated: 8
+  analysis_pipelines: "40+"
+  offline_tests: 2351
+notes:
+  - Registry coverage is not equivalent to curation depth.
+  - L3 count is from the v2.3.0 sampled status report.
+  - Offline test count is the v2.3.0 release suite (2351 passed).

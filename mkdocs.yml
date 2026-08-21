@@ -1,0 +1,129 @@
+site_name: NosoGraph
+site_description: Open-source, evidence-native computational map of human disease.
+site_url: https://adameddahmouni.github.io/nosograph/
+repo_url: https://github.com/AdamEddahmouni/nosograph
+repo_name: AdamEddahmouni/nosograph
+edit_uri: edit/master/docs/
+docs_dir: docs
+copyright: NosoGraph is research software. Not medical advice. Apache-2.0 source license.
+
+theme:
+  name: material
+  custom_dir: docs-theme
+  logo: assets/brand/mark.svg
+  favicon: assets/brand/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AdamEddahmouni/nosograph
+  generator: false
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - What is NosoGraph?: getting-started/what-is.md
+      - Installation: getting-started/install.md
+      - Five-minute tutorial: getting-started/tutorial.md
+      - Docker: getting-started/docker.md
+      - Demo: getting-started/demo.md
+      - FAQ: getting-started/faq.md
+  - Concepts:
+      - Diseases: concepts/diseases.md
+      - Disease registry: concepts/registry.md
+      - Curation tiers: concepts/curation-tiers.md
+      - Evidence: concepts/evidence.md
+      - Claims: concepts/claims.md
+      - Provenance: concepts/provenance.md
+      - Biomedical sources: concepts/sources.md
+      - Hypotheses: concepts/hypotheses.md
+      - What is a biomedical knowledge graph?: concepts/biomedical-knowledge-graph.md
+      - Graphs vs ontologies: concepts/graph-vs-ontology.md
+      - MONDO and HPO: concepts/mondo-hpo.md
+  - Using NosoGraph:
+      - Web interface: using/web.md
+      - Evidence Workspace: using/evidence-workspace.md
+      - Compare: using/compare.md
+      - CLI: using/cli.md
+      - API: using/api.md
+      - Source sync: using/source-sync.md
+      - Validation: using/validation.md
+  - Research examples:
+      - SLE: research/sle.md
+      - Rheumatoid arthritis: research/ra.md
+      - Alzheimer disease: research/ad.md
+      - Cross-disease comparison: research/comparison.md
+      - Evidence tracing: research/evidence-tracing.md
+      - Drug repurposing: research/repurposing.md
+  - Data:
+      - Disease coverage: data/coverage.md
+      - Data sources: data/sources.md
+      - Licensing: data/licensing.md
+      - Provenance: data/provenance.md
+      - Update cadence: data/update-cadence.md
+  - Developers:
+      - Architecture: developers/architecture.md
+      - Data model: developers/data-model.md
+      - Local development: developers/local.md
+      - Testing: developers/testing.md
+      - Deployment: developers/deployment.md
+  - Contributing:
+      - Getting started: contributing/index.md
+      - Disease curation: contributing/curation.md
+      - Data sources: contributing/sources.md
+      - Code: contributing/code.md
+      - Governance: contributing/governance.md
+  - Project:
+      - Roadmap: project/roadmap.md
+      - Releases: project/releases.md
+      - Citation: project/citation.md
+      - Security: project/security.md
+      - License: project/license.md
+      - Source of truth: project/source-of-truth.md
+
+validation:
+  nav:
+    omitted_files: info
+  links:
+    not_found: warn
+    absolute_links: info
+    unrecognized_links: warn
