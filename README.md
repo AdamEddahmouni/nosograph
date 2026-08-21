@@ -2,7 +2,7 @@
 
 **The Open Computational Map of Human Disease**
 
-[![Tests](https://github.com/AdamEddahmouni/med-research/actions/workflows/test.yml/badge.svg)](https://github.com/AdamEddahmouni/med-research/actions/workflows/test.yml)
+[![Tests](https://github.com/AdamEddahmouni/nosograph/actions/workflows/test.yml/badge.svg)](https://github.com/AdamEddahmouni/nosograph/actions/workflows/test.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)](https://www.python.org/downloads/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
@@ -12,12 +12,13 @@ NosoGraph is an open-source biomedical research platform for exploring disease k
 
 ## Compatibility note
 
-The Python package still installs as **`med-research`** with import path **`med_research`** during the branding transition. CLI command: `med-research`. Public product name: **NosoGraph**.
+The Python package still installs as **`med-research`** with import path **`med_research`**. Canonical CLI: **`nosograph`**. Legacy alias: **`med-research`**. Public product name: **NosoGraph**.
 
 | Surface | Name | Policy |
 |---------|------|--------|
 | Product / docs | NosoGraph | Current |
-| `pip install` / CLI | `med-research` | Compatibility alias |
+| Canonical CLI | `nosograph` | Current |
+| `pip install` / legacy CLI | `med-research` | Compatibility alias |
 | Python imports | `med_research` | Compatibility alias |
 
 ## What is implemented today
@@ -26,10 +27,13 @@ Honest maturity labels — see [docs/architecture/overview.md](docs/architecture
 
 | Capability | Maturity | Notes |
 |------------|----------|-------|
-| Unified CLI (`med-research`) | **STABLE** | Pipeline dispatch, disease tooling, biomed imports |
+| Unified CLI (`nosograph` / `med-research`) | **STABLE** | Same implementation; disease tooling, batch validation, biomed sync |
 | FastAPI web API + dashboard | **BETA** | Celery async jobs, WebSocket/SSE progress |
 | Evidence Workspace | **BETA** | PubMed, trials, GWAS, FDA labels, rankings |
 | Universal Biomedical Store | **BETA** | MONDO, HPO, GO, Reactome, ClinVar, openFDA |
+| Claim/evidence/provenance APIs | **BETA** | End-to-end traceability; polished Evidence UX incomplete |
+| NosoGraph Compare | **EXPERIMENTAL** | Initial multidimensional engine + API + dashboard slice |
+| Source synchronization | **EXPERIMENTAL** | Open Targets vertical slice; dry-run lifecycle proven |
 | Disease registry | **BETA** | 10,407 modules — mostly scaffolds |
 | Curated disease corpus | **BETA** | See tier table below |
 | Live external connectors | **BETA** | Open Targets, GTEx, ChEMBL, UniProt, bioRxiv |
@@ -41,8 +45,9 @@ Honest maturity labels — see [docs/architecture/overview.md](docs/architecture
 | Tier | Count | Meaning |
 |------|-------|---------|
 | Registry modules | 10,407 | MONDO-aligned slugs (mostly Open Targets scaffolds) |
-| L2 pipeline-ready | ~45 promoted + legacy curated | Pass strict validation |
-| L3 expression-curated | 23 | Hand-curated GEO consensus genes |
+| L2 pipeline-ready | 88 | Pass strict validation (full L2 corpus) |
+| L3 expression-curated | 2 | Hand-curated GEO consensus genes (sample scan; refresh pending) |
+| Reference tier | 6 | Deep reference modules (`sle`, `ra`, … subset) |
 | CI-validated (original eight) | 8 | `sle`, `ra`, `ibd`, `ms`, `ss`, `ssc`, `t1d`, `ad` |
 
 **Important:** registry size ≠ curation depth. Scaffold modules are starting points, not validated clinical models.
@@ -54,7 +59,9 @@ Honest maturity labels — see [docs/architecture/overview.md](docs/architecture
 - Gene expression, screening, safety, ADMET, virtual screening, clinical trial tracking
 - Provenance fingerprints and coverage contracts for research integrity
 - DuckDB-accelerated biomedical graph analytics
-- HPO-aware condition comparison
+- HPO-aware condition comparison and **NosoGraph Compare** initial slice (phenotype, gene, mechanism, treatment, evidence_coverage)
+- Batch strict validation (`disease validate-batch`) and curation tier reporting
+- Biomedical source-sync lifecycle (Open Targets dry-run)
 
 ## Quick start
 
@@ -68,6 +75,7 @@ source .venv/bin/activate
 make venv-sync
 cp .env.example .env   # sets DEBUG=true for local dev
 python -m med_research.cli --help
+nosograph --help   # canonical alias
 ```
 
 Run the dashboard (requires Redis for async jobs):
@@ -91,7 +99,9 @@ Validate a curated disease:
 
 ```bash
 python -m med_research.cli disease validate sle --strict
+python -m med_research.cli disease validate-batch --tier reference --strict
 python -m med_research.cli disease corpus-status
+nosograph biomed sync open_targets --dry-run
 ```
 
 ## Documentation

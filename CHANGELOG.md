@@ -2,6 +2,49 @@
 
 ## [Unreleased]
 
+## [2.3.0] — 2026-08-21
+
+First substantial post-public-alpha capability expansion: disease-general core, strict batch validation, initial NosoGraph Compare slice, evidence/provenance API traceability, and biomedical source-sync foundations.
+
+### Added
+
+- **Canonical CLI alias:** `nosograph` entry point alongside legacy `med-research` (same implementation).
+- **Disease batch validation:** `disease validate-batch --tier {ci_validated,reference,L2,L3} --strict` with structured JSON reports.
+- **Curation tiers & coverage semantics:** explicit readiness tiers and corpus-status reporting.
+- **NosoGraph Compare (initial vertical slice):** multidimensional comparison engine, API (`POST /api/v1/nosograph/compare`), and dashboard panel for phenotype, gene, mechanism, treatment, and evidence_coverage dimensions with explicit missingness semantics (`NOT_RECORDED` ≠ `KNOWN_ABSENT`).
+- **Source synchronization framework:** nine-stage lifecycle with Open Targets vertical slice and `biomed sync open_targets --dry-run` CLI; hosted dry-run workflow.
+- **Claim/evidence/provenance API traceability:** end-to-end golden trace from condition → claim → evidence → provenance → source snapshot.
+
+### Changed
+
+- **Disease-general CLI/API semantics:** centralized disease identifier resolution; explicit `--disease` / `disease_id` where semantically required; removal of inappropriate SLE/RA platform defaults in P1 scope.
+- **CI validation:** reference-tier strict gate on PRs; weekly L2 full-corpus validation in slow-test workflow.
+- **Disease coverage reporting:** README and audit docs distinguish broad registry coverage from deeply curated/strict-validated modules.
+
+### Fixed
+
+- ResearchRequest disease ID alignment in workspace OpenAPI and async job bodies.
+- `biomed sync` CLI wiring for Open Targets dry-run path.
+- Integration-tests job timeout reliability (30 min ceiling).
+
+### Compatibility
+
+- **KEEP_FOR_COMPATIBILITY:** Python import `med_research`, CLI `med-research`, PyPI distribution `med-research`.
+- **Canonical product CLI:** `nosograph`.
+- **Maturity:** Public Alpha — not production/stable.
+
+### Verification
+
+```bash
+make ci-local
+python -m med_research.cli disease validate-batch --tier L2 --strict
+python -m med_research.cli disease validate sle --strict
+nosograph disease validate ra --strict
+pytest tests/biomed/nosograph_compare/ tests/web/test_claim_provenance_api.py -n 0
+```
+
+---
+
 ## [2.2.0] — 2026-08-20
 
 ### Added — NosoGraph public-readiness transformation
