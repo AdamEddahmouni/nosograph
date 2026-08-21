@@ -2,7 +2,8 @@
 
 **Date:** 2026-08-20  
 **Workstream:** A (P1-0 Hosted CI Stabilization)  
-**Repo HEAD at audit:** `717f52be79a5cebfb077fc4f8be704cbe94f7374` (master)  
+**Repo HEAD at audit:** `717f52be79a5cebfb077fc4f8be704cbe94f7374` (pre–#16)  
+**Closeout HEAD:** `174a52533f64e1604bf478c13d945586284ec396` (master after #16)  
 **Public alpha tag:** `v2.2.0` @ `131b72eab6a3ca2826e2dd53829495cab22f67cd`  
 **Reference failing run:** GitHub Actions `32428709854` (post–public-alpha merge)
 
@@ -26,7 +27,7 @@ Hosted CI on `master` was **red** after the v2.2.0 public-alpha merge. Root caus
 | Field | Value |
 |-------|-------|
 | Branch | `master` |
-| HEAD | `717f52be79a5cebfb077fc4f8be704cbe94f7374` |
+| HEAD (closeout) | `174a52533f64e1604bf478c13d945586284ec396` |
 | Workflows | `.github/workflows/test.yml`, `.github/workflows/source-sync-dry-run.yml` |
 | Local gate | `make ci-local` (lint, format, locks, imports, serial offline tests) |
 
@@ -45,15 +46,16 @@ Hosted CI on `master` was **red** after the v2.2.0 public-alpha merge. Root caus
 
 \*Integration job is required on `main`/`master` pushes but uses fixture-backed tests only (no live network).
 
-#### `test` job smoke steps (Platform Core / P1-B)
+#### `test` job smoke steps (master @ closeout)
 
 | Step | Command | Purpose |
 |------|---------|---------|
-| Unified CLI | `med_research.cli --help`, `nosograph --help` | Entry-point alias parity |
+| Unified CLI | `med_research.cli --help` | CLI entry point |
 | Curated eight | `disease validate {sle…ad} --strict` | Original curated corpus |
-| Reference tier | `disease validate-batch --tier reference --strict` | Reference corpus slice |
-| Corpus readiness | `test_registry_quality`, `test_tier_model`, `test_corpus_status`, `test_disease_identifiers`, `test_validation_batch`, … | Unit coverage for new modules |
-| KG / repurpose | `kg --disease sle --export`, `repurpose --disease sle --top 5` | Pipeline smoke |
+| Corpus readiness | `test_registry_quality`, `test_tier_model`, `test_corpus_status`, `test_disease_context`, … | Registry/tier unit coverage |
+| KG / repurpose | `kg --disease sle --export`, `repurpose --disease sle --top 5` | Pipeline smoke (explicit `--disease`) |
+
+Planned P1-B additions (not yet on master): `nosograph --help`, `validate-batch --tier reference`, `test_disease_identifiers`, `test_validation_batch`.
 
 #### Trigger layering
 
@@ -267,8 +269,36 @@ Bandit config: `.bandit` (exclude dirs + pointer to this audit).
 
 ## Verification checklist (post-merge)
 
-- [ ] Push branch and confirm `lint`, `security`, `test (3.12)`, `integration-tests` green
-- [ ] Confirm `typecheck` still informational (61 errors acceptable)
+- [x] Push branch and confirm `lint`, `security`, `test (3.12)`, `integration-tests` green — PR [#16](https://github.com/AdamEddahmouni/nosograph/pull/16), run [32441092381](https://github.com/AdamEddahmouni/nosograph/actions/runs/32441092381)
+- [x] Confirm `typecheck` still informational (58 errors on Linux; ≤61 ratchet)
 - [ ] Dispatch `slow-tests` manually once to validate Playwright + live API tier
 - [ ] Dispatch `Source sync dry-run` once after Open Targets sync lands
-- [ ] Enable branch protection checks listed above
+- [x] Enable branch protection required status checks — `lint`, `security`, `test (3.12)`, `integration-tests` (2026-08-21)
+
+## P1-0 closeout (2026-08-21)
+
+**Status:** `COMPLETE`
+
+| Field | Value |
+|-------|-------|
+| Merge commit | `174a52533f64e1604bf478c13d945586284ec396` |
+| Authoritative CI run | [32441092381](https://github.com/AdamEddahmouni/nosograph/actions/runs/32441092381) |
+| Hosted fixes after first push | Celery env-at-import (`CELERY_TASK_*`), integration `-n 0`, literature cache stub |
+
+### Hosted verification (run 32441092381)
+
+| Job | Result | Runtime |
+|-----|--------|---------|
+| `lint` | PASS | 4m11s |
+| `security` | PASS | 2m13s |
+| `test (3.12)` | PASS | 12m49s |
+| `test (3.11)` | PASS | 14m1s |
+| `integration-tests` | PASS | 14m32s |
+| `typecheck` | FAIL (informational) | 4m26s — 58 errors |
+| `slow-tests` | skipped (PR) | — |
+
+### Fixes required after push (hosted-only)
+
+1. **REAL_DEFECT** — Literature adapter contract test hit live PubMed without cache on fresh Linux checkout (`ENTREZ_EMAIL`); fixed with monkeypatched cache fixture.
+2. **REAL_DEFECT** — Integration Celery lifecycle: `task_store_eager_result` must be set at Celery app import via `CELERY_TASK_*` env; `task_eager_propagates=false` so FAILURE jobs are pollable.
+3. **STALE_CONFIGURATION** — Integration job needed `-n 0` to avoid xdist/Redis collisions despite serial `-n 0` being intended for Celery tests.
