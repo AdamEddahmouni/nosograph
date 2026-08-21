@@ -2313,8 +2313,8 @@ class TestMiscRouterUnit:
         schema_name = schema_ref.rsplit("/", 1)[-1]
         schema = app.openapi()["components"]["schemas"][schema_name]
 
-        assert schema_name == "EvidenceWorkspaceRequest"
-        assert schema["required"] == ["question"]
+        assert schema_name == "ResearchRequest"
+        assert schema["required"] == ["disease_id", "question"]
         assert schema["properties"]["question"]["minLength"] == 2
         assert schema["properties"]["max_evidence"]["maximum"] == 200
         source_items = schema["properties"]["sources"]["items"]

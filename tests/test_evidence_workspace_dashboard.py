@@ -104,6 +104,7 @@ def test_workspace_http_endpoint_accepts_json(monkeypatch):
         response = client.post(
             "/api/jobs/workspace",
             json={
+                "disease_id": "sle",
                 "question": "Find promising JAK/STAT interventions for SLE",
                 "sources": ["pubmed"],
                 "enable_llm": False,
