@@ -267,8 +267,36 @@ Bandit config: `.bandit` (exclude dirs + pointer to this audit).
 
 ## Verification checklist (post-merge)
 
-- [ ] Push branch and confirm `lint`, `security`, `test (3.12)`, `integration-tests` green
-- [ ] Confirm `typecheck` still informational (61 errors acceptable)
+- [x] Push branch and confirm `lint`, `security`, `test (3.12)`, `integration-tests` green — PR [#16](https://github.com/AdamEddahmouni/nosograph/pull/16), run [32441092381](https://github.com/AdamEddahmouni/nosograph/actions/runs/32441092381)
+- [x] Confirm `typecheck` still informational (58 errors on Linux; ≤61 ratchet)
 - [ ] Dispatch `slow-tests` manually once to validate Playwright + live API tier
 - [ ] Dispatch `Source sync dry-run` once after Open Targets sync lands
-- [ ] Enable branch protection checks listed above
+- [ ] Enable branch protection required status checks (ruleset currently PR-only; no required checks configured)
+
+## P1-0 closeout (2026-08-21)
+
+**Status:** `COMPLETE`
+
+| Field | Value |
+|-------|-------|
+| Merge commit | `174a52533f64e1604bf478c13d945586284ec396` |
+| Authoritative CI run | [32441092381](https://github.com/AdamEddahmouni/nosograph/actions/runs/32441092381) |
+| Hosted fixes after first push | Celery env-at-import (`CELERY_TASK_*`), integration `-n 0`, literature cache stub |
+
+### Hosted verification (run 32441092381)
+
+| Job | Result | Runtime |
+|-----|--------|---------|
+| `lint` | PASS | 4m11s |
+| `security` | PASS | 2m13s |
+| `test (3.12)` | PASS | 12m49s |
+| `test (3.11)` | PASS | 14m1s |
+| `integration-tests` | PASS | 14m32s |
+| `typecheck` | FAIL (informational) | 4m26s — 58 errors |
+| `slow-tests` | skipped (PR) | — |
+
+### Fixes required after push (hosted-only)
+
+1. **REAL_DEFECT** — Literature adapter contract test hit live PubMed without cache on fresh Linux checkout (`ENTREZ_EMAIL`); fixed with monkeypatched cache fixture.
+2. **REAL_DEFECT** — Integration Celery lifecycle: `task_store_eager_result` must be set at Celery app import via `CELERY_TASK_*` env; `task_eager_propagates=false` so FAILURE jobs are pollable.
+3. **STALE_CONFIGURATION** — Integration job needed `-n 0` to avoid xdist/Redis collisions despite serial `-n 0` being intended for Celery tests.
