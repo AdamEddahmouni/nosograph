@@ -282,7 +282,8 @@ python -m med_research.cli disease validate-batch --tier L2 --strict \
 | Lifecycle stages | `discover_version` → `fetch` → `verify` → `store_raw` → `normalize` → `validate` → `diff` → `publish` → `update_provenance` |
 | CLI | `python -m med_research.cli biomed sync open_targets --dry-run` |
 | Local dry-run | PASS (all stages recorded; publish skipped) |
-| Hosted workflow | `Source sync dry-run` (`.github/workflows/source-sync-dry-run.yml`) — manual dispatch pending |
+| Hosted workflow | `Source sync dry-run` — [run 32504822631](https://github.com/AdamEddahmouni/nosograph/actions/runs/32504822631) PASS (2026-08-21) |
+| Hosted stages | discover_version ✓, fetch skipped (dry-run), verify ✓, store_raw ✓, normalize ✓, validate ✓, diff ✓, publish skipped, update_provenance ✓ |
 | Unit tests | `tests/biomed/sync/test_opentargets_sync.py` — 3/3 offline |
 
 ### Evidence golden trace (fixture-backed)
@@ -316,12 +317,12 @@ Verified by `tests/web/test_claim_provenance_api.py` (3/3).
 | P1-D | PARTIAL | API golden trace; shallow user-facing provenance UX |
 | P1-E | PARTIAL | Engine + API + dashboard slice; no full Compare product |
 | P1-F | COMPLETE | curation tiers + coverage semantics |
-| P1-G | PARTIAL | sync framework + OT slice + CLI + offline tests PASS; hosted dry-run dispatch proof pending |
+| P1-G | COMPLETE | sync framework + OT slice + CLI + offline tests; hosted dry-run [32504822631](https://github.com/AdamEddahmouni/nosograph/actions/runs/32504822631) PASS |
 | P1-H | DESIGNED | assessment in this document |
 
 ### Overall P1 status
 
-**COMPLETE_WITH_DEFERRED_WORK** — foundational contracts integrated, required CI green on master, deferred: package rename, full Compare UX, public deployment, P1-G hosted source-sync dry-run proof, slow-test weekly run.
+**COMPLETE_WITH_DEFERRED_WORK** — foundational contracts integrated, required CI green on master, P1-G hosted source-sync dry-run proof complete; deferred: package rename, full Compare UX, public deployment, slow-test weekly run.
 
 ### v2.3.0 readiness
 
