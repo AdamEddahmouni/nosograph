@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -25,6 +25,10 @@ test-offline:  ## Run the complete offline suite; live API tests are marked slow
 
 test-slow:  ## Run live API/integration tests marked slow
 	python -m pytest tests/ -m slow -v --tb=short
+
+test-browser:  ## Run deterministic Playwright UI tests serially
+	python -m pytest tests/test_evidence_workspace_browser.py -n 0 -q --tb=short
+	python -m pytest tests/test_evidence_explorer_ui.py -n 0 -q --tb=short
 
 test-unit:  ## Run unit tests only (fast, offline)
 	python -m pytest tests/ -m "unit" -q --tb=line

@@ -305,6 +305,26 @@ class ComparisonResultView(BaseModel):
 
 
 EvidenceSummaryLiteral = Literal["SUPPORTS", "CONTRADICTS", "INCONCLUSIVE", "UNASSERTED"]
+EvidenceSortLiteral = Literal["newest", "oldest", "source"]
+
+
+class EvidenceQualityView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    species_context: str = "unknown"
+    study_design: str = "unknown"
+    sample_size: int | None = None
+    sample_size_context: str = "unknown"
+    replication: str = "unknown"
+    effect_direction: str = "unknown"
+    statistical_quality: str = "unknown"
+    directness: str = "unknown"
+    source_quality: str = "unknown"
+    recency: str = ""
+    human_review: str = "unknown"
+    contradiction_burden: str = "unknown"
+    origin_class: str = "UNKNOWN_ORIGIN_CLASS"
+    limitations: list[str] = Field(default_factory=list)
 
 
 class ClaimProvenanceStepView(BaseModel):
@@ -330,7 +350,9 @@ class ClaimEvidenceDetailView(BaseModel):
     snapshot_id: UUID
     source_record_id: str
     source_url: str = ""
+    source_name: str = ""
     evidence_type: str = ""
+    population: str = ""
     confidence: float | None = None
     confidence_explanation: str = ""
     rationale: str = ""
@@ -338,7 +360,21 @@ class ClaimEvidenceDetailView(BaseModel):
     extraction_method: str = ""
     publication_date: str = ""
     limitations: list[str] = Field(default_factory=list)
+    quality: EvidenceQualityView = Field(default_factory=EvidenceQualityView)
     provenance: list[ClaimProvenanceStepView] = Field(default_factory=list)
+
+
+class RelatedClaimView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    claim_id: UUID
+    predicate: PredicateLiteral
+    subject_curie: str
+    object_curie: str
+    subject_label: str
+    object_label: str
+    relation: str
+    evidence_summary: EvidenceSummaryLiteral
 
 
 class ClaimDetailView(BaseModel):
@@ -352,6 +388,10 @@ class ClaimDetailView(BaseModel):
     object_label: str
     qualifiers: dict[str, object] = Field(default_factory=dict)
     evidence_summary: EvidenceSummaryLiteral
+    supporting_count: int = 0
+    contradictory_count: int = 0
+    inconclusive_count: int = 0
+    source_count: int = 0
     supporting_evidence: list[ClaimEvidenceDetailView] = Field(default_factory=list)
     contradictory_evidence: list[ClaimEvidenceDetailView] = Field(default_factory=list)
     provenance: list[ClaimProvenanceStepView] = Field(default_factory=list)
