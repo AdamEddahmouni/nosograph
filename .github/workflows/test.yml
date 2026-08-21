@@ -190,7 +190,7 @@ jobs:
           pip install -e .
 
       - name: Run offline integration tests
-        run: python -m pytest tests/ -m "integration and not slow" -q --tb=short
+        run: python -m pytest tests/ -m "integration and not slow" -q --tb=short -n 0
 
   slow-tests:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'

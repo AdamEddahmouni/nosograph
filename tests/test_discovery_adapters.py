@@ -39,11 +39,27 @@ class TestLiteratureMiningAdapter(ModuleAdapterContract):
         for key in ("disease_id", "module", "sources", "cache_or_live"):
             assert provenance[key] == expected[key]
 
-    def test_run_matches_engine(self):
+    def test_run_matches_engine(self, monkeypatch):
         module = self.module_cls()
         disease_id = self.disease_id
 
         from med_research.pipeline.literature_mining.miner import mine_literature
+
+        cached_articles = [
+            {
+                "pmid": "12345678",
+                "title": "SLE biologic study",
+                "abstract": "Type I interferon pathway in systemic lupus erythematosus.",
+                "journal": "Test Journal",
+                "year": "2024",
+                "authors": ["Example Author"],
+            }
+        ]
+
+        monkeypatch.setattr(
+            "med_research.pipeline.literature_mining.miner.load_literature_articles",
+            lambda _disease_id, use_cache=True: cached_articles if use_cache else None,
+        )
 
         direct_results, direct_entities, direct_candidates, direct_stats = mine_literature(
             use_cache=True,
