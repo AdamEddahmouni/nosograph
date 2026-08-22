@@ -26,8 +26,8 @@ def test_dockerfile_installs_editable_package_after_source_copy() -> None:
 def test_compose_worker_and_beat_invoke_celery_directly() -> None:
     text = (ROOT / "docker-compose.yml").read_text(encoding="utf-8")
     assert 'entrypoint: ["celery"]' in text
-    assert 'command: celery -A med_research.web.tasks.analysis_tasks worker' not in text
-    assert 'command: celery -A med_research.web.tasks.analysis_tasks beat' not in text
+    assert "command: celery -A med_research.web.tasks.analysis_tasks worker" not in text
+    assert "command: celery -A med_research.web.tasks.analysis_tasks beat" not in text
     assert '"-A", "med_research.web.tasks.analysis_tasks", "worker"' in text
     assert '"-A", "med_research.web.tasks.analysis_tasks", "beat"' in text
 
