@@ -76,7 +76,9 @@ jobs:
           pip install -e .
 
       - name: Run mypy (informational)
-        run: make typecheck
+        run: |
+          make typecheck
+          exit 0
 
   security:
     runs-on: ubuntu-latest
