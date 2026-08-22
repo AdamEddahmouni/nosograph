@@ -5,14 +5,18 @@ from __future__ import annotations
 from typing import Annotated
 from uuid import UUID
 
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Response
 
 from med_research.biomed.analytics.duckdb_engine import DuckDBBiomedicalEngine
 from med_research.biomed.comparison.service import ConditionComparisonService
 from med_research.biomed.errors import BiomedicalValidationError
 from med_research.biomed.identifiers import normalize_curie
 from med_research.biomed.models import EvidenceDirection, Predicate
-from med_research.biomed.nosograph_compare.service import NosoGraphCompareService
+from med_research.biomed.nosograph_compare.service import (
+    CompareRunIncompleteError,
+    CompareRunNotFoundError,
+    NosoGraphCompareService,
+)
 from med_research.web.dependencies_biomed import BiomedicalRepositoryDep
 from med_research.web.models.universal import (
     AnalyticsSharedMechanismView,
@@ -42,6 +46,12 @@ from med_research.web.services import (
     comparison_service,
     nosograph_compare_service,
     universal_service,
+)
+from med_research.web.services.nosograph_compare_export import (
+    render_json as render_compare_json,
+)
+from med_research.web.services.nosograph_compare_export import (
+    render_markdown as render_compare_markdown,
 )
 
 router = APIRouter(prefix="/api/v1", tags=["Universal Biomedical"])
@@ -201,6 +211,49 @@ def nosograph_compare_v2(
         raise HTTPException(status_code=422, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+def _persisted_compare_view(
+    run_id: UUID, repository: BiomedicalRepositoryDep
+) -> NosoGraphCompareV2ResultView:
+    try:
+        result = NosoGraphCompareService(repository).get_comparison(run_id)
+    except CompareRunNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except CompareRunIncompleteError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    return nosograph_compare_service.to_compare_v2_view(result)
+
+
+@router.get("/nosograph/comparisons/{run_id}", response_model=NosoGraphCompareV2ResultView)
+def get_nosograph_comparison(
+    run_id: UUID, repository: BiomedicalRepositoryDep
+) -> NosoGraphCompareV2ResultView:
+    return _persisted_compare_view(run_id, repository)
+
+
+@router.get("/nosograph/comparisons/{run_id}/exports/json")
+def export_nosograph_comparison_json(run_id: UUID, repository: BiomedicalRepositoryDep) -> Response:
+    result = _persisted_compare_view(run_id, repository)
+    filename = f"nosograph-comparison-{run_id}.json"
+    return Response(
+        content=render_compare_json(result),
+        media_type="application/json",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
+
+
+@router.get("/nosograph/comparisons/{run_id}/exports/markdown")
+def export_nosograph_comparison_markdown(
+    run_id: UUID, repository: BiomedicalRepositoryDep
+) -> Response:
+    result = _persisted_compare_view(run_id, repository)
+    filename = f"nosograph-comparison-{run_id}.md"
+    return Response(
+        content=render_compare_markdown(result),
+        media_type="text/markdown",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
 
 
 @router.get("/snapshots", response_model=PagedResponse[SnapshotSummary])

@@ -9,6 +9,7 @@ from uuid import UUID
 from pydantic import BaseModel, ConfigDict, Field
 
 CompareStatus = Literal["comparable", "insufficient_data"]
+COMPARE_RESULT_SCHEMA_VERSION = "2.0"
 
 DEFAULT_DIMENSIONS = ("phenotype", "gene", "pathway", "treatment", "evidence_coverage")
 LEGACY_DEFAULT_DIMENSIONS = (
@@ -61,7 +62,9 @@ class EntityStateRow(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     entity_curie: str
+    entity_label: str = ""
     states: dict[str, EntityState] = Field(default_factory=dict)
+    claim_ids_by_condition: dict[str, list[UUID]] = Field(default_factory=dict)
 
 
 class DimensionComparison(BaseModel):
@@ -80,8 +83,10 @@ class CompareV2Result(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     run_id: UUID
+    result_schema_version: str = COMPARE_RESULT_SCHEMA_VERSION
     status: CompareStatus
     condition_curies: list[str] = Field(default_factory=list)
+    condition_labels: dict[str, str] = Field(default_factory=dict)
     dimensions: list[str] = Field(default_factory=list)
     dimension_results: list[DimensionComparison] = Field(default_factory=list)
     curation_warnings: list[CompareWarning] = Field(default_factory=list)

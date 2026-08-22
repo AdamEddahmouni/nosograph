@@ -34,6 +34,8 @@ class ConditionFingerprint:
     positive_counts: dict[str, dict[str, int]]
     negated_counts: dict[str, dict[str, int]]
     coverage: dict[str, ConditionCoverage]
+    positive_claim_ids_by_entity: dict[str, dict[str, tuple[UUID, ...]]]
+    negated_claim_ids_by_entity: dict[str, dict[str, tuple[UUID, ...]]]
     claim_ids: tuple[UUID, ...]
     fingerprint: str
 
@@ -42,6 +44,8 @@ class ConditionFingerprint:
 class CohortContext:
     condition_curies: tuple[str, ...]
     fingerprints: dict[str, ConditionFingerprint]
+    condition_labels: dict[str, str]
+    entity_labels: dict[str, str]
     snapshot_ids: tuple[UUID, ...]
 
     @property
@@ -62,9 +66,21 @@ def build_cohort_context(
         curie: _build_condition_fingerprint(repository, curie, active_ids, snapshot_by_id)
         for curie in condition_curies
     }
+    entity_curies = {
+        entity
+        for fingerprint in fingerprints.values()
+        for values in (*fingerprint.positive.values(), *fingerprint.negated.values())
+        for entity in values
+    }
     return CohortContext(
         condition_curies=tuple(condition_curies),
         fingerprints=fingerprints,
+        condition_labels={
+            curie: _display_label(repository, curie, active_ids) for curie in condition_curies
+        },
+        entity_labels={
+            curie: _display_label(repository, curie, active_ids) for curie in sorted(entity_curies)
+        },
         snapshot_ids=tuple(item.id for item in snapshots),
     )
 
@@ -134,7 +150,22 @@ def compare_dimension(context: CohortContext, dimension: str) -> DimensionCompar
                 states[curie] = EntityState.KNOWN_ABSENT
             else:
                 states[curie] = EntityState.NOT_RECORDED
-        rows.append(EntityStateRow(entity_curie=entity, states=states))
+        rows.append(
+            EntityStateRow(
+                entity_curie=entity,
+                entity_label=context.entity_labels.get(entity, entity),
+                states=states,
+                claim_ids_by_condition={
+                    curie: _claim_ids_for_state(
+                        context.fingerprints[curie],
+                        dimension,
+                        entity,
+                        states[curie],
+                    )
+                    for curie in context.condition_curies
+                },
+            )
+        )
         if len(present_in) == len(context.condition_curies):
             shared_all.append(entity)
         elif len(present_in) >= 2:
@@ -165,6 +196,23 @@ def compare_dimension(context: CohortContext, dimension: str) -> DimensionCompar
     )
 
 
+def _claim_ids_for_state(
+    fingerprint: ConditionFingerprint,
+    dimension: str,
+    entity: str,
+    state: EntityState,
+) -> list[UUID]:
+    positive = fingerprint.positive_claim_ids_by_entity[dimension].get(entity, ())
+    negated = fingerprint.negated_claim_ids_by_entity[dimension].get(entity, ())
+    if state is EntityState.PRESENT:
+        selected = (*positive, *negated) if negated else positive
+    elif state is EntityState.KNOWN_ABSENT:
+        selected = negated
+    else:
+        selected = ()
+    return sorted(set(selected), key=str)
+
+
 def dimension_has_comparable_data(result: DimensionComparison) -> bool:
     return sum(item.claim_count > 0 for item in result.coverage_by_condition.values()) >= 2
 
@@ -186,6 +234,8 @@ def _build_condition_fingerprint(
     positive_counts: dict[str, dict[str, int]] = {}
     negated_counts: dict[str, dict[str, int]] = {}
     coverage: dict[str, ConditionCoverage] = {}
+    positive_claim_ids_by_entity: dict[str, dict[str, tuple[UUID, ...]]] = {}
+    negated_claim_ids_by_entity: dict[str, dict[str, tuple[UUID, ...]]] = {}
     for dimension, predicate in DIMENSION_PREDICATES.items():
         selected = [
             (view, evidence) for view, evidence in current if view.claim.predicate == predicate
@@ -204,6 +254,17 @@ def _build_condition_fingerprint(
         negated_counts[dimension] = dict(
             sorted(Counter(view.object_curie for view, _ in selected if _is_negated(view)).items())
         )
+        grouped_positive: dict[str, list[UUID]] = {}
+        grouped_negated: dict[str, list[UUID]] = {}
+        for view, _ in selected:
+            grouped = grouped_negated if _is_negated(view) else grouped_positive
+            grouped.setdefault(view.object_curie, []).append(view.claim.id)
+        positive_claim_ids_by_entity[dimension] = {
+            entity: tuple(sorted(ids, key=str)) for entity, ids in sorted(grouped_positive.items())
+        }
+        negated_claim_ids_by_entity[dimension] = {
+            entity: tuple(sorted(ids, key=str)) for entity, ids in sorted(grouped_negated.items())
+        }
         coverage[dimension] = _coverage(selected, snapshots)
     coverage["evidence_coverage"] = _coverage(current, snapshots)
 
@@ -224,9 +285,24 @@ def _build_condition_fingerprint(
         positive_counts=positive_counts,
         negated_counts=negated_counts,
         coverage=coverage,
+        positive_claim_ids_by_entity=positive_claim_ids_by_entity,
+        negated_claim_ids_by_entity=negated_claim_ids_by_entity,
         claim_ids=claim_ids,
         fingerprint=fingerprint_json(payload),
     )
+
+
+def _display_label(repository: BiomedicalRepository, curie: str, active_ids: set[UUID]) -> str:
+    view = repository.get_entity(curie)
+    if view is None:
+        return curie
+    if (
+        view.revision is not None
+        and view.revision.snapshot_id in active_ids
+        and view.revision.label
+    ):
+        return view.revision.label
+    return view.entity.canonical_name or curie
 
 
 def _coverage(

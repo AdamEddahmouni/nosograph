@@ -1,6 +1,6 @@
 # Disease coverage
 
-Generated from NosoGraph **v0.1.0**. Data snapshot: release date 2026-08-22. Source: [public-status.yaml](../generated/public-status.yaml).
+Generated from NosoGraph **v0.2.0**. Data snapshot: release date 2026-08-22. Source: [public-status.yaml](../generated/public-status.yaml).
 
 | Tier | Count |
 |------|------:|

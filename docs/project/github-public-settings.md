@@ -7,7 +7,7 @@ Code cannot apply these. Maintainer actions only.
 - Public repo `AdamEddahmouni/nosograph`
 - Issues, Discussions, Projects enabled
 - Dependabot config present (`.github/dependabot.yml`)
-- Current public-alpha baseline v0.1.0
+- Current public-alpha release v0.2.0; v0.1.0 remains the archived baseline
 - Canonical About description and GitHub Pages homepage
 - Custom 1280×640 social preview from `docs/assets/brand/social-preview.png`
 - Private vulnerability reporting, secret scanning, and push protection enabled

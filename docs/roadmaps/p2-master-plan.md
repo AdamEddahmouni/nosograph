@@ -136,10 +136,11 @@ product workflow does not.
 **Dependencies:** E1 drill-down, ADR-003  
 **Effort:** M · **Risk:** medium
 
-**Current state (2026-08-22):** Sprint 1 backend is complete: ADR-003 is accepted; deterministic
+**Current state (2026-08-22):** Sprints 1–2 are complete: ADR-003 is accepted; deterministic
 2–5-condition comparison, all five dimensions, explicit absence states, curation warnings,
-research-run replay, the canonical API, the deprecated pairwise adapter, and golden JSON tests
-are implemented. UI, exports, CLI support, and Explorer drill-down remain future work.
+research-run replay, the canonical API, the deprecated pairwise adapter, the product UI,
+deterministic JSON/Markdown exports, Evidence Explorer drill-down, and golden/browser tests are
+implemented. CLI export and Compare history remain future work.
 
 **V2 dimensions (data-backed only):**
 
@@ -350,7 +351,7 @@ make typecheck  # ≤45 errors
 |-------|--------|--------------|
 | W2-A Multi-disease engine (2–5) | Complete (Sprint 1) | Wave 1 contracts |
 | W2-B Dimensions + curation warnings | Complete (Sprint 1) | W2-A |
-| W2-C Compare UI + export | Planned | W1-C Explorer drill-down |
+| W2-C Compare UI + export | Complete (Sprint 2) | W1-C Explorer drill-down |
 | W2-D API + golden tests | Complete (Sprint 1) | W2-A |
 
 **Validation gate:**
@@ -358,7 +359,7 @@ make typecheck  # ≤45 errors
 ```bash
 pytest tests/biomed/nosograph_compare/ -n 0
 pytest tests/web/test_nosograph_compare_v2_api.py -n 0
-# Export schema validation remains part of W2-C.
+pytest tests/test_evidence_explorer_ui.py -n 0
 ```
 
 **Release:** v2.5.0
