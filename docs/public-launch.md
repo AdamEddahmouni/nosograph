@@ -1,8 +1,8 @@
 # Public readiness (evergreen)
 
-The GitHub repository **is already public** at [AdamEddahmouni/nosograph](https://github.com/AdamEddahmouni/nosograph). Current release: **v2.3.0**.
+The GitHub repository is public at [AdamEddahmouni/nosograph](https://github.com/AdamEddahmouni/nosograph). Current release: **v2.4.0**. Current maturity: **Public Alpha**.
 
-Use this page for future public-readiness reviews. The original “flip to public / rename from med-research / tag v2.2.0” list is archived at [audits/public-launch-v2.2-checklist.md](audits/public-launch-v2.2-checklist.md).
+Use this page for future public-readiness reviews. Historical launch checklists remain in [audits/public-launch-v2.2-checklist.md](audits/public-launch-v2.2-checklist.md).
 
 ## Before each public release
 
@@ -10,15 +10,18 @@ Use this page for future public-readiness reviews. The original “flip to publi
 make venv-sync
 make ci-local
 python scripts/check_public_metadata.py
+python -m mkdocs build --strict
 ```
 
 Confirm:
 
 - No secrets or PHI in tracked files
-- README and `CITATION.cff` versions match `pyproject.toml`
+- README, `CITATION.cff`, `pyproject.toml`, and `public-status.yaml` versions match
+- README and Pages use the current positioning: **Disease Intelligence. Connected.**
 - Registry vs curation-depth wording is intact
 - Release notes are understandable without the full CHANGELOG
-- [release-readiness-report](audits/release-readiness-report.md) reviewed when cutting a version
+- Current screenshots and diagrams are labeled accurately
+- `scripts/generate_brand_assets.py --check` passes
 
 ## GitHub settings
 
@@ -29,3 +32,4 @@ Maintainer-only steps: [project/github-public-settings.md](project/github-public
 - Clinical decision support or PHI processing
 - Billing / Stripe
 - FHIR / OMOP / Phenopackets until those roadmap items ship
+- A public hosted demo until the snapshot-first design is implemented safely

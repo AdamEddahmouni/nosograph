@@ -1,16 +1,26 @@
 # NosoGraph visual system
 
-Node-and-edge language: teal structure, copper evidence, slate supporting entities. No clinical iconography.
+The production visual system is generated from one canonical symbol geometry in `scripts/generate_brand_assets.py`. The generated assets use a shared graph mark: teal connections, blue intelligence paths, violet graph depth, and light evidence nodes.
+
+Run:
+
+```bash
+python scripts/generate_brand_assets.py
+python scripts/generate_brand_assets.py --check
+```
 
 | File | Use |
 |------|-----|
-| `mark.svg` | Compact symbol (dark) |
-| `mark-light.svg` | Compact symbol (light) |
-| `logo-dark.svg` | Wordmark for dark backgrounds |
-| `logo-light.svg` | Wordmark for light backgrounds |
-| `hero.svg` | README / docs hero |
-| `social-preview.svg` | Vector social card |
-| `social-preview.png` | GitHub repository social preview (1280×640 class) |
-| `favicon.svg` | Docs favicon |
+| `symbol.svg` | Canonical transparent geometry source |
+| `mark.svg` | Full-color dark compact mark |
+| `mark-light.svg` | Full-color light compact mark |
+| `compact.svg` | Compact application mark |
+| `micro.svg` / `favicon.svg` | Simplified small-size mark |
+| `logo-dark.svg` | Dark-background horizontal lockup |
+| `logo-light.svg` | Light-background horizontal lockup |
+| `tagline-lockup.svg` | Canonical tagline lockup |
+| `github-avatar.svg` | GitHub/avatar-size mark |
+| `hero.svg` | README and public visual treatment |
+| `social-preview.svg` | GitHub/OG source treatment |
 
-Regenerate SVGs with `python scripts/generate_brand_assets.py`.
+The detailed mark is not blindly shrunk for micro sizes. All variants intentionally derive from the same anchor geometry, with secondary edges removed only where needed for legibility. The gradient is a signature asset, not a general-purpose status or interaction color.

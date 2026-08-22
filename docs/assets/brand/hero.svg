@@ -1,32 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" role="img">
-  <title>NosoGraph connects diseases to phenotypes, genes, mechanisms, treatments, and evidence</title>
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0B1524"/>
-      <stop offset="100%" stop-color="#132536"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img">
+  <title>NosoGraph connected disease intelligence</title>
+    <defs>
+    <linearGradient id="ng-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19D2C7"/>
+      <stop offset="0.52" stop-color="#2F86FF"/>
+      <stop offset="1" stop-color="#7252F4"/>
     </linearGradient>
   </defs>
-  <rect width="1280" height="420" fill="url(#g)"/>
-  <g opacity="0.35" fill="none" stroke="#7FD1CF" stroke-width="1.4">
-    <path d="M80 300 C 220 80, 420 360, 620 160 S 980 80, 1200 240"/>
-    <path d="M60 180 C 280 40, 480 300, 760 220 S 1100 340, 1240 120"/>
+<rect width="1440" height="560" fill="#08142D"/>
+  <g opacity=".4" fill="none" stroke="#2F86FF" stroke-width="2">
+    <path d="M930 80 C1100 10 1140 220 1390 90"/>
+    <path d="M880 420 C1060 190 1170 520 1430 300"/>
+    <path d="M1010 520 C1110 300 1270 400 1440 180"/>
   </g>
-  <g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" fill="#F7F4EE">
-    <text x="72" y="120" font-size="22" fill="#7FD1CF" letter-spacing="3">OPEN-SOURCE BIOMEDICAL RESEARCH</text>
-    <text x="72" y="188" font-size="58" font-weight="700">NosoGraph</text>
-    <text x="72" y="236" font-size="26" fill="#D7E3EA">The Open Computational Map of Human Disease</text>
-    <text x="72" y="286" font-size="18" fill="#A9BDC8">Disease · Phenotype · Gene · Mechanism · Pathway · Treatment · Trial · Evidence</text>
-  </g>
-  <g>
-    <circle cx="980" cy="150" r="18" fill="#1B7A7A"/>
-    <circle cx="1088" cy="210" r="14" fill="#3D5A80"/>
-    <circle cx="1010" cy="280" r="16" fill="#B08968"/>
-    <circle cx="1140" cy="120" r="12" fill="#7FD1CF"/>
-    <circle cx="1170" cy="260" r="15" fill="#1B7A7A"/>
-    <line x1="980" y1="150" x2="1088" y2="210" stroke="#7FD1CF" stroke-width="2"/>
-    <line x1="1088" y1="210" x2="1010" y2="280" stroke="#C9D0D8" stroke-width="2"/>
-    <line x1="980" y1="150" x2="1140" y2="120" stroke="#C9D0D8" stroke-width="2"/>
-    <line x1="1088" y1="210" x2="1170" y2="260" stroke="#7FD1CF" stroke-width="2"/>
-    <line x1="1010" y1="280" x2="1170" y2="260" stroke="#B08968" stroke-width="2"/>
-  </g>
+  <g transform="translate(72 112)"><g transform="translate(0 0) scale(1)"><g  fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M24 24 V96" stroke="#19D2C7" stroke-width="5"/>
+  <path d="M24 24 L60 58 L96 24" stroke="url(#ng-gradient)" stroke-width="5"/>
+  <path d="M24 96 L48 70 L96 96" stroke="url(#ng-gradient)" stroke-width="5"/>
+  <path d="M60 58 L96 96" stroke="#7252F4" stroke-width="5"/>
+  <path d="M48 70 L96 24" stroke="#2F86FF" stroke-width="4"/>
+  <circle cx="24" cy="24" r="9" fill="#19D2C7" stroke="none"/>
+  <circle cx="24" cy="96" r="9" fill="#19D2C7" stroke="none"/>
+  <circle cx="96" cy="24" r="9" fill="#2F86FF" stroke="none"/>
+  <circle cx="96" cy="96" r="9" fill="#7252F4" stroke="none"/>
+  <circle cx="60" cy="58" r="7" fill="#2F86FF" stroke="none"/>
+  <circle cx="48" cy="70" r="5" fill="#DCE4EF" stroke="#2F86FF" stroke-width="3"/>
+</g></g></g>
+  <text x="230" y="190" font-family="Sora, Inter, Arial, sans-serif" font-size="64" font-weight="650" fill="#F8FBFF">Noso<tspan fill="url(#ng-gradient)">Graph</tspan></text>
+  <text x="234" y="248" font-family="Sora, Inter, Arial, sans-serif" font-size="30" fill="#19D2C7">Disease Intelligence. Connected.</text>
+  <text x="234" y="306" font-family="Inter, Arial, sans-serif" font-size="19" fill="#DCE4EF">Open-source research software for connecting disease knowledge,</text>
+  <text x="234" y="338" font-family="Inter, Arial, sans-serif" font-size="19" fill="#DCE4EF">evidence, and provenance across biomedical sources.</text>
+  <text x="234" y="420" font-family="JetBrains Mono, monospace" font-size="14" fill="#73819A">DISEASE → CLAIM → EVIDENCE → PROVENANCE → SOURCE</text>
 </svg>

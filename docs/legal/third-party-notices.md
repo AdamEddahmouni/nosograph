@@ -36,4 +36,4 @@ See [data-licenses.md](data-licenses.md) for biomedical data attribution require
 
 This product includes software developed as part of the NosoGraph project (formerly med-research).
 
-Full license text: [LICENSE](../../LICENSE)
+Full license text: [LICENSE](https://github.com/AdamEddahmouni/nosograph/blob/master/LICENSE)

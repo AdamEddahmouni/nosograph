@@ -4,7 +4,7 @@
 
 ## Project software
 
-NosoGraph source code is released under the [Apache License 2.0](../LICENSE). See also [NOTICE](../NOTICE) and [docs/legal/licensing-model.md](legal/licensing-model.md).
+NosoGraph source code is released under the [Apache License 2.0](https://github.com/AdamEddahmouni/nosograph/blob/master/LICENSE). See also [NOTICE](https://github.com/AdamEddahmouni/nosograph/blob/master/NOTICE) and [licensing model](legal/licensing-model.md).
 
 The Python distribution may still install as `med-research`; the license applies regardless of package name.
 
@@ -14,9 +14,9 @@ The platform integrates public biomedical data and APIs. When using, redistribut
 
 See:
 
-- [docs/legal/data-licenses.md](legal/data-licenses.md) — full provider table
-- [data/sources/registry.yaml](../data/sources/registry.yaml) — machine-readable registry
-- [docs/legal/third-party-notices.md](legal/third-party-notices.md) — dependency notices
+- [data licenses](legal/data-licenses.md) — full provider table
+- [source registry](https://github.com/AdamEddahmouni/nosograph/blob/master/data/sources/registry.yaml) — machine-readable registry
+- [third-party notices](legal/third-party-notices.md) — dependency notices
 
 ## Curated disease JSON
 
@@ -24,7 +24,7 @@ Disease-specific knowledge graph files under `src/med_research/diseases/*/data/`
 
 ## No clinical or patient data
 
-This repository does not distribute protected health information (PHI). Do not commit patient records, clinical notes, or identifiable case data. See [SECURITY.md](../SECURITY.md).
+This repository does not distribute protected health information (PHI). Do not commit patient records, clinical notes, or identifiable case data. See [SECURITY.md](https://github.com/AdamEddahmouni/nosograph/blob/master/SECURITY.md).
 
 ## Trademark
 

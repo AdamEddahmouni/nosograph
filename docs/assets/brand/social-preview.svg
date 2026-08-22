@@ -1,18 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img">
-  <title>NosoGraph — The Open Computational Map of Human Disease</title>
-  <rect width="1280" height="640" fill="#0B1524"/>
-  <g opacity="0.28" fill="none" stroke="#1B7A7A" stroke-width="2">
-    <path d="M40 520 C 240 80, 520 600, 820 220 S 1160 80, 1260 360"/>
-  </g>
-  <text x="80" y="210" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="72" font-weight="700" fill="#F7F4EE">NosoGraph</text>
-  <text x="80" y="280" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" fill="#7FD1CF">The Open Computational Map</text>
-  <text x="80" y="328" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" fill="#7FD1CF">of Human Disease</text>
-  <text x="80" y="400" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#D7E3EA">Disease · Phenotype · Gene · Mechanism · Treatment · Evidence</text>
-  <text x="80" y="540" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#A9BDC8">Open-source biomedical research  ·  Public alpha</text>
-  <circle cx="1080" cy="200" r="28" fill="#1B7A7A"/>
-  <circle cx="1180" cy="280" r="20" fill="#B08968"/>
-  <circle cx="1040" cy="360" r="22" fill="#3D5A80"/>
-  <line x1="1080" y1="200" x2="1180" y2="280" stroke="#7FD1CF" stroke-width="3"/>
-  <line x1="1080" y1="200" x2="1040" y2="360" stroke="#B08968" stroke-width="3"/>
-  <line x1="1180" y1="280" x2="1040" y2="360" stroke="#C9D0D8" stroke-width="3"/>
+  <title>NosoGraph connected disease intelligence</title>
+    <defs>
+    <linearGradient id="ng-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19D2C7"/>
+      <stop offset="0.52" stop-color="#2F86FF"/>
+      <stop offset="1" stop-color="#7252F4"/>
+    </linearGradient>
+  </defs>
+<rect width="1280" height="640" fill="#08142D"/>
+  <g opacity=".32" fill="none" stroke="#19D2C7" stroke-width="2"><path d="M750 100 C920 250 880 360 1230 180"/><path d="M720 510 C920 300 1080 580 1260 350"/></g>
+  <g transform="translate(80 168)"><g transform="translate(0 0) scale(1)"><g  fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M24 24 V96" stroke="#19D2C7" stroke-width="5"/>
+  <path d="M24 24 L60 58 L96 24" stroke="url(#ng-gradient)" stroke-width="5"/>
+  <path d="M24 96 L48 70 L96 96" stroke="url(#ng-gradient)" stroke-width="5"/>
+  <path d="M60 58 L96 96" stroke="#7252F4" stroke-width="5"/>
+  <path d="M48 70 L96 24" stroke="#2F86FF" stroke-width="4"/>
+  <circle cx="24" cy="24" r="9" fill="#19D2C7" stroke="none"/>
+  <circle cx="24" cy="96" r="9" fill="#19D2C7" stroke="none"/>
+  <circle cx="96" cy="24" r="9" fill="#2F86FF" stroke="none"/>
+  <circle cx="96" cy="96" r="9" fill="#7252F4" stroke="none"/>
+  <circle cx="60" cy="58" r="7" fill="#2F86FF" stroke="none"/>
+  <circle cx="48" cy="70" r="5" fill="#DCE4EF" stroke="#2F86FF" stroke-width="3"/>
+</g></g></g>
+  <text x="240" y="236" font-family="Sora, Inter, Arial, sans-serif" font-size="70" font-weight="650" fill="#F8FBFF">Noso<tspan fill="url(#ng-gradient)">Graph</tspan></text>
+  <text x="244" y="312" font-family="Sora, Inter, Arial, sans-serif" font-size="34" fill="#19D2C7">Disease Intelligence. Connected.</text>
+  <text x="244" y="384" font-family="Inter, Arial, sans-serif" font-size="21" fill="#DCE4EF">Open-source biomedical research software</text>
 </svg>

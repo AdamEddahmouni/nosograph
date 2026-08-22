@@ -1,6 +1,6 @@
 # Historical: v2.2.0 public launch checklist
 
-Archived. The repository is public as `AdamEddahmouni/nosograph` and **v2.3.0** is the current release.
+Archived historical checklist. The repository is public as `AdamEddahmouni/nosograph`; this checklist described the v2.3.0 launch state. The current release is v2.4.0.
 
 Current maintainer checklist: [github-public-settings.md](../project/github-public-settings.md) · [RELEASING.md](https://github.com/AdamEddahmouni/nosograph/blob/master/RELEASING.md)
 

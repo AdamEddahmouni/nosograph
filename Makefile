@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -60,6 +60,7 @@ ci-local:  ## Local pre-push gate (lint, locks, import audit, serial offline tes
 	$(MAKE) lock-check
 	python scripts/check_imports.py
 	python scripts/check_public_metadata.py
+	python scripts/check_public_fonts.py
 	python -m pytest tests/ -m "unit and not network" -q --tb=short -n 0 --ignore=tests/test_evidence_workspace_browser.py
 
 typecheck:  ## Run mypy on the expanded type-check scope
@@ -296,6 +297,9 @@ docker-test:  ## Run tests inside Docker
 
 check-public-metadata:  ## Verify README / CITATION / version consistency
 	python scripts/check_public_metadata.py
+
+check-public-fonts:  ## Verify bundled fonts, licenses, checksums, and CSS loading
+	python scripts/check_public_fonts.py
 
 docs-serve:  ## Serve the MkDocs documentation site locally
 	python -m pip install -r requirements-docs.txt

@@ -9,7 +9,7 @@
 | docs/audits/ | Validation / release evidence |
 | CHANGELOG.md | Version history |
 | CITATION.cff | Canonical citation |
-| docs/generated/public-status.yaml | Public metric numbers |
+| docs/generated/public-status.yaml | Current public metric numbers and release snapshot |
 | CONTRIBUTING.md | Contribution workflow |
 | GOVERNANCE.md | Governance |
 | SECURITY.md | Vulnerability reporting |

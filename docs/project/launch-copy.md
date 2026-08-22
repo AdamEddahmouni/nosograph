@@ -1,9 +1,30 @@
 # Launch copy
 
-**Core story:** Biomedical knowledge is fragmented across disease ontologies, genetics resources, pathway databases, clinical trials, publications, and drug data. NosoGraph is building an open computational layer across those sources while preserving evidence and provenance.
+## One line
 
-**50 words:** NosoGraph is an open-source computational map of human disease. It connects conditions to phenotypes, genes, mechanisms, pathways, treatments, trials, literature, and traceable evidence. Public alpha — research use only, not medical advice. Registry coverage is not the same as curation depth.
+**NosoGraph — Disease Intelligence. Connected.**
 
-**150 words:** (use README + 50-word blurb; keep limitations: public alpha, no hosted demo, package name `med-research`, experimental Compare.)
+## Short description
 
-Do not ask communities to “please star.” Channels only if the story fits: GitHub, Show HN, r/bioinformatics, r/computationalbiology, r/openscience, LinkedIn, Bluesky, university lists, awesome-bioinformatics — without spam.
+NosoGraph is open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.
+
+## Core story
+
+Biomedical knowledge is fragmented across disease ontologies, genetics resources, pathway databases, clinical trials, publications, and drug data. NosoGraph is an open computational layer across those sources: it normalizes records, represents typed claims, attaches evidence, and preserves provenance for inspection.
+
+## Research boundary
+
+NosoGraph supports exploratory research and computational hypothesis generation. Evidence supports claims; it is not automatic proof. Associations are not causation. Outputs are not medical advice or clinical recommendations.
+
+## Maturity
+
+NosoGraph is Public Alpha. The CLI is stable, the API/dashboard and Evidence Workspace are beta, Evidence Explorer shipped in v2.4.0 as a public-alpha surface, Compare and source sync remain experimental, and no public hosted demo is deployed.
+
+## Do not say
+
+- “AI-powered medical advice”
+- “clinically validated”
+- “complete disease coverage”
+- “the definitive biomedical database”
+- “NosoGraph recommends treatment”
+- any unverified stars, contributors, institutions, studies, publications, partnerships, or user counts
