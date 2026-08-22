@@ -74,7 +74,12 @@ def test_related_claims_endpoint(client, seeded_biomed_db) -> None:
     assert isinstance(rows, list)
     if rows:
         assert rows[0]["relation"] in {"same_subject", "same_object"}
-        assert rows[0]["evidence_summary"] in {"SUPPORTS", "CONTRADICTS", "INCONCLUSIVE", "UNASSERTED"}
+        assert rows[0]["evidence_summary"] in {
+            "SUPPORTS",
+            "CONTRADICTS",
+            "INCONCLUSIVE",
+            "UNASSERTED",
+        }
 
 
 def test_claim_evidence_unknown_claim_returns_404(client, seeded_biomed_db) -> None:

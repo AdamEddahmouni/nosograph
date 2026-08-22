@@ -279,9 +279,7 @@ def list_claim_evidence(
         items = [item for item in items if needle in (item.source_name or "").lower()]
     if species_context:
         needle = species_context.lower()
-        items = [
-            item for item in items if item.quality.species_context.lower() == needle
-        ]
+        items = [item for item in items if item.quality.species_context.lower() == needle]
     if sort == "oldest":
         items.sort(key=lambda item: item.publication_date or "")
     elif sort == "source":

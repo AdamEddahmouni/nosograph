@@ -122,7 +122,9 @@ class _ExplorerFixtureBackend:
             route.fulfill(
                 status=200,
                 content_type="application/json",
-                body=json.dumps({"diseases": [{"id": "sle", "name": "Systemic Lupus Erythematosus"}]}),
+                body=json.dumps(
+                    {"diseases": [{"id": "sle", "name": "Systemic Lupus Erythematosus"}]}
+                ),
             )
             return
         if path == "/api/stats":
@@ -135,7 +137,9 @@ class _ExplorerFixtureBackend:
             route.fulfill(status=200, content_type="application/json", body='{"modules":[]}')
             return
         if path == f"/api/v1/claims/{FIXTURE_CLAIM_ID}":
-            route.fulfill(status=200, content_type="application/json", body=json.dumps(_claim_detail()))
+            route.fulfill(
+                status=200, content_type="application/json", body=json.dumps(_claim_detail())
+            )
             return
         if path == f"/api/v1/claims/{FIXTURE_CLAIM_ID}/evidence":
             items = _evidence_items()
@@ -170,7 +174,9 @@ class _ExplorerFixtureBackend:
                 ),
             )
             return
-        route.fulfill(status=404, content_type="application/json", body=json.dumps({"detail": path}))
+        route.fulfill(
+            status=404, content_type="application/json", body=json.dumps({"detail": path})
+        )
 
 
 class _StaticHandler(SimpleHTTPRequestHandler):
@@ -218,7 +224,9 @@ def test_evidence_explorer_deep_link_renders_claim(explorer_page: Page, explorer
     base = explorer_static_server.replace("/index.html", "")
     explorer_page.goto(f"{base}/index.html?claim_id={FIXTURE_CLAIM_ID}#evidence-explorer")
     expect(explorer_page.locator("#evidence-explorer-title")).to_be_visible()
-    expect(explorer_page.locator(".evidence-claim-header h3")).to_contain_text("systemic lupus erythematosus")
+    expect(explorer_page.locator(".evidence-claim-header h3")).to_contain_text(
+        "systemic lupus erythematosus"
+    )
     expect(explorer_page.get_by_text("HAS_PHENOTYPE")).to_be_visible()
     expect(explorer_page.get_by_role("heading", name="Supporting evidence")).to_be_visible()
     expect(explorer_page.get_by_role("heading", name="Contradictory evidence")).to_be_visible()
