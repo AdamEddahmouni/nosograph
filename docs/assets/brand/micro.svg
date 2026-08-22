@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img">
-  <title>NosoGraph connected disease intelligence</title>
-    <defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">NosoGraph micro mark</title>
+  <defs>
     <linearGradient id="ng-gradient" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#19D2C7"/>
       <stop offset="0.52" stop-color="#2F86FF"/>
       <stop offset="1" stop-color="#7252F4"/>
     </linearGradient>
   </defs>
-<rect width="120" height="120" rx="28" fill="#08142D"/>
-  <path d="M34 32 V88 M34 32 L86 88" stroke="url(#ng-gradient)" stroke-width="9" stroke-linecap="round"/>
-  <circle cx="34" cy="32" r="11" fill="#19D2C7"/>
-  <circle cx="86" cy="88" r="11" fill="#7252F4"/>
+<rect width="120" height="120" rx="26" fill="#08142D"/>
+  <path d="M35 28 V88 M35 28 L86 88" stroke="url(#ng-gradient)" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="35" cy="28" r="12" fill="#19D2C7"/>
+  <circle cx="86" cy="88" r="12" fill="#7252F4"/>
 </svg>

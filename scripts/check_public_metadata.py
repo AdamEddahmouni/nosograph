@@ -64,6 +64,8 @@ ACTIVE_POSITIONING_SURFACES += (
 )
 REQUIRED_ASSETS = (
     "symbol.svg",
+    "symbol-mono-dark.svg",
+    "symbol-reversed.svg",
     "mark.svg",
     "mark-light.svg",
     "compact.svg",
@@ -71,6 +73,8 @@ REQUIRED_ASSETS = (
     "favicon.svg",
     "logo-dark.svg",
     "logo-light.svg",
+    "logo-mono-dark.svg",
+    "logo-reversed.svg",
     "tagline-lockup.svg",
     "github-avatar.svg",
     "hero.svg",

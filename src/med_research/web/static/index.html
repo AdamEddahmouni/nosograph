@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NosoGraph</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#08142D">
+    <meta name="description" content="NosoGraph local research dashboard for connected disease evidence and provenance.">
+    <title>NosoGraph Research Dashboard</title>
+    <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/lib/tom-select/tom-select.css">
 </head>
@@ -16,8 +17,8 @@
         <nav class="top-nav" id="top-nav">
             <div class="nav-brand">
                 <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">☰</button>
-                <span class="nav-logo">🧬</span>
-                <span class="nav-title">NosoGraph</span>
+                <img class="nav-logo" src="/brand/symbol.svg" alt="">
+                <span class="nav-title">Noso<span>Graph</span></span>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <div class="nav-disease-wrap">
@@ -53,28 +54,30 @@
             <div class="hero">
                 <div class="hero-layout">
                     <div class="hero-content">
-                        <h1>NosoGraph</h1>
+                        <p class="hero-kicker">Connected biomedical research</p>
+                        <h1>Noso<span>Graph</span></h1>
+                        <p class="hero-tagline">Disease Intelligence. Connected.</p>
                         <p class="subtitle">
-                            Disease Intelligence. Connected. Explore
+                            Explore
                             <span id="hero-disease-name" class="hero-disease-name">the selected disease</span>
                             across phenotypes, genes, mechanisms, pathways, treatments, trials, and literature
                             with traceable evidence — research use only.
                         </p>
                         <div class="badges">
-                            <span class="hero-badge open">🧬 Open Science</span>
-                            <span class="hero-badge research">🔬 Research Tool</span>
+                            <span class="hero-badge open">Open source</span>
+                            <span class="hero-badge research">Research use only</span>
                             <span class="hero-badge python">Python 3.11+</span>
-                            <span class="hero-badge disease" id="hero-disease-badge">🦠 Selected disease</span>
-                            <span class="hero-badge api" id="api-badge">⚡ API …</span>
+                            <span class="hero-badge disease" id="hero-disease-badge">Selected disease</span>
+                            <span class="hero-badge api" id="api-badge">API …</span>
                         </div>
                     </div>
                     <div class="hero-actions" aria-label="Quick actions">
-                        <a href="#evidence-workspace" class="btn btn-primary">🚀 Run Workspace</a>
-                        <a href="#kg-explorer" class="btn btn-secondary">🕸️ Explore KG</a>
-                        <a href="#graph-analytics" class="btn btn-secondary">📊 Graph Analytics</a>
-                        <a href="#condition-comparison" class="btn btn-secondary">⚖️ Compare Conditions</a>
-                        <a href="#evidence-explorer" class="btn btn-secondary" id="hero-evidence-link">🔍 Evidence Explorer</a>
-                        <a href="/api/docs" class="btn btn-secondary" target="_blank" rel="noopener">📖 API Docs</a>
+                        <a href="#evidence-workspace" class="btn btn-primary">Run workspace</a>
+                        <a href="#kg-explorer" class="btn btn-secondary">Explore knowledge graph</a>
+                        <a href="#graph-analytics" class="btn btn-secondary">Graph analytics</a>
+                        <a href="#condition-comparison" class="btn btn-secondary">Compare conditions</a>
+                        <a href="#evidence-explorer" class="btn btn-secondary" id="hero-evidence-link">Evidence Explorer</a>
+                        <a href="/api/docs" class="btn btn-secondary" target="_blank" rel="noopener">API documentation</a>
                     </div>
                 </div>
             </div>

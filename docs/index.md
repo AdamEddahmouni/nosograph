@@ -9,8 +9,8 @@ description: Open-source research software for connecting disease knowledge, evi
   <div class="ng-shell ng-hero-grid">
     <div>
       <p class="ng-eyebrow ng-eyebrow--light">Open-source biomedical research software</p>
-      <h1 id="ng-hero-title">Noso<span class="ng-gradient-text">Graph</span></h1>
-      <h2>Disease Intelligence. Connected.</h2>
+      <h1 id="ng-hero-title" class="ng-visually-hidden">NosoGraph — Disease Intelligence. Connected.</h1>
+      <img class="ng-hero-lockup" src="assets/brand/tagline-lockup.svg" alt="" aria-hidden="true">
       <p class="ng-lede">Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.</p>
       <div class="ng-hero-actions" aria-label="Primary actions">
         <a class="ng-button ng-button--primary" href="getting-started/what-is/">Explore documentation</a>
