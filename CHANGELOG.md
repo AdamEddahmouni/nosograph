@@ -2,7 +2,45 @@
 
 ## [Unreleased]
 
-## [2.3.0] — 2026-08-21
+## [2.4.0] — 2026-08-22
+
+**NosoGraph v2.4.0 — Evidence Explorer**
+
+First-class Evidence Explorer research surface with structured evidence quality, hardened claim/evidence APIs, and Playwright reliability improvements.
+
+### Added
+
+- **Evidence Explorer UI:** Dashboard navigation, claim summary, supporting/contradictory/inconclusive evidence groups, quality badges, provenance timeline, filters with URL state, deep links (`?claim_id=`), related claims, and Condition Explorer integration.
+- **Evidence quality model (ADR-001):** Structured dimensions (`species_context`, `study_design`, `sample_size`, `origin_class`, etc.) with conservative `unknown` defaults in `biomed/evidence_quality.py`.
+- **Claim API enhancements:** `GET /api/v1/claims/{id}/related`; paginated/filtered `GET /api/v1/claims/{id}/evidence` with `limit`, `offset`, `sort`, `direction`, `source`, `species_context`; claim detail counts (`supporting_count`, `contradictory_count`, `inconclusive_count`, `source_count`).
+- **Playwright reliability:** Global `.hidden` modal CSS, structure API fixture mocks, serial browser test targets (`make test-browser`), and `tests/test_evidence_explorer_ui.py` (4 scenarios).
+- **Documentation:** User guide [docs/using/evidence-explorer.md](docs/using/evidence-explorer.md) and architecture [docs/architecture/evidence-explorer.md](docs/architecture/evidence-explorer.md).
+
+### Changed
+
+- **`GET /api/v1/claims/{id}/evidence` response shape:** bare list → `PagedResponse` with `items`, `total`, `limit`, `offset`. Claim detail still embeds inline evidence arrays. **Breaking change** for clients expecting a raw JSON array (acceptable for public alpha v2.x).
+
+### Fixed
+
+- Evidence Workspace browser tests: structure-modal overlay interception and missing global `.hidden` behavior.
+- Ruff format consistency on Wave 1 integration files.
+
+### Known limitations
+
+- Evidence quality inference is heuristic; sparse metadata remains `unknown`.
+- No public hosted demo; Compare V2 not yet implemented.
+- `statistical_quality` is not inferred from confidence scores (conservative release tightening).
+
+### Verification
+
+```bash
+make ci-local
+make test-browser
+pytest tests/biomed/test_evidence_quality.py tests/web/test_claim_provenance_api.py -n 0
+python scripts/check_public_metadata.py
+```
+
+---
 
 First substantial post-public-alpha capability expansion: disease-general core, strict batch validation, initial NosoGraph Compare slice, evidence/provenance API traceability, and biomedical source-sync foundations.
 

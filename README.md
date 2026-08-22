@@ -33,7 +33,7 @@ An open-source biomedical research platform connecting diseases to phenotypes, g
 
 ## Status at a glance
 
-**NosoGraph v2.3.0 — Public Alpha**
+**NosoGraph v2.4.0 — Public Alpha**
 
 | | |
 |---|---|
@@ -41,7 +41,7 @@ An open-source biomedical research platform connecting diseases to phenotypes, g
 | 88 | strict L2 validated |
 | 6 | deep reference diseases |
 | 40+ | analysis pipelines |
-| 2,351 | offline tests (v2.3.0 suite) |
+| 2,391 | offline tests (v2.4.0 suite) |
 
 **Registry coverage is not equivalent to curation depth.** Most registry modules are scaffolds. That distinction is intentional: NosoGraph reports breadth and depth separately rather than implying every listed condition is equally curated.
 
@@ -400,7 +400,7 @@ Cite this repository via GitHub’s citation UI or [CITATION.cff](CITATION.cff).
   author = {{NosoGraph contributors}},
   year   = {2026},
   url    = {https://github.com/AdamEddahmouni/nosograph},
-  version = {2.3.0}
+  version = {2.4.0}
 }
 ```
 
