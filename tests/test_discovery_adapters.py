@@ -25,6 +25,24 @@ class TestLiteratureMiningAdapter(ModuleAdapterContract):
     coverage_inputs = ("genes", "drugs", "pathways", "pubmed_queries")
     disease_id = "sle"
 
+    @pytest.fixture(autouse=True)
+    def _offline_literature_cache(self, monkeypatch):
+        """Provide a deterministic PubMed cache for every adapter contract test."""
+        cached_articles = [
+            {
+                "pmid": "12345678",
+                "title": "SLE biologic study",
+                "abstract": "Type I interferon pathway in systemic lupus erythematosus.",
+                "journal": "Test Journal",
+                "year": "2024",
+                "authors": ["Example Author"],
+            }
+        ]
+        monkeypatch.setattr(
+            "med_research.pipeline.literature_mining.miner.load_literature_articles",
+            lambda _disease_id, use_cache=True: cached_articles if use_cache else None,
+        )
+
     def test_build_provenance_matches_engine_main(self):
         module = self.module_cls()
         provenance = module.build_provenance(self.disease_id, use_cache=True)
