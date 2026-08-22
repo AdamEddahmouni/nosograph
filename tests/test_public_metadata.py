@@ -98,6 +98,21 @@ def test_rejects_retired_positioning_on_current_surface(
     )
 
 
+def test_rejects_lowercase_retired_positioning_variant(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    faq = (ROOT / "docs" / "getting-started" / "faq.md").read_text(encoding="utf-8")
+    _assert_overlay_fails(
+        monkeypatch,
+        "docs/getting-started/faq.md",
+        faq.replace(
+            "Disease Intelligence. Connected.",
+            "An open computational map of human disease.",
+        ),
+        "retired positioning",
+    )
+
+
 def test_rejects_svg_social_metadata(monkeypatch: pytest.MonkeyPatch) -> None:
     template = (ROOT / "docs-theme" / "main.html").read_text(encoding="utf-8")
     _assert_overlay_fails(

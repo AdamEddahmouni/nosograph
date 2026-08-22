@@ -2,12 +2,19 @@
 
 Code cannot apply these. Maintainer actions only.
 
-## DONE in this repository (as of audit)
+## Completed in this repository (2026-08-22)
 
 - Public repo `AdamEddahmouni/nosograph`
 - Issues, Discussions, Projects enabled
 - Dependabot config present (`.github/dependabot.yml`)
 - Current public-alpha baseline v0.1.0
+- Canonical About description and GitHub Pages homepage
+- Custom 1280×640 social preview from `docs/assets/brand/social-preview.png`
+- Private vulnerability reporting, secret scanning, and push protection enabled
+- `master` ruleset: one approval, fresh approvals, thread resolution, current branch, and required `Tests` plus `Documentation` checks
+- Eight [good-first issues](good-first-issues.md), two research-focused categories, and five [seed Discussions](github-discussions-seed.md)
+- NosoGraph pinned on the maintainer profile
+- Zenodo release archival enabled; [v0.1.0](https://github.com/AdamEddahmouni/nosograph/releases/tag/v0.1.0) archived with concept DOI [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279) and version DOI [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280)
 
 ## Applied via API (verify in GitHub UI)
 
@@ -15,16 +22,12 @@ Code cannot apply these. Maintainer actions only.
 - **Wiki:** disabled (`DISABLE_WIKI`). Canonical docs remain version-controlled in `docs/`.
 - **GitHub Pages source:** GitHub Actions (`build_type=workflow`). Deploy job lives in `.github/workflows/docs.yml`.
 
-## MANUAL_ACTION_REQUIRED
+## Operating notes
 
-1. **Social preview:** Settings → General → Social preview → Edit → upload `docs/assets/brand/social-preview.png`; keep `social-preview.svg` as the canonical source.
-2. **About homepage:** set to `https://adameddahmouni.github.io/nosograph/` after the live site returns HTTP 200.
-3. **Discussions categories:** add **Research** and **Data & Curation** if desired (defaults already include Announcements, Q&A, Ideas, Show and tell, General). Seed posts: [github-discussions-seed.md](github-discussions-seed.md).
-4. **Private vulnerability reporting:** Settings → Code security → enable private reporting if not on.
-5. **Issue labels:** create `disease-curation`, `data-source`, and `research` if templates do not apply them automatically.
-6. **Projects:** keep maintainer-oriented; do not treat the board as the public roadmap.
-7. **Zenodo:** [zenodo-setup.md](zenodo-setup.md).
-8. **Profile pin:** pin NosoGraph with one-line description (do not edit unrelated profile content).
+- Keep `social-preview.svg` as the canonical editable source and export the PNG after changes.
+- Keep Projects maintainer-oriented; do not treat the board as the public roadmap.
+- Use the repository-admin pull-request bypass only after `Tests` and `Documentation` pass.
+- Preserve the v2.x tags and legacy prereleases as historical records.
 
 ## OPTIONAL
 

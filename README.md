@@ -16,6 +16,7 @@ Open-source research software for connecting disease knowledge, evidence, and pr
 · [Cite](#citation)
 
 [![Release](https://img.shields.io/github/v/release/AdamEddahmouni/nosograph?display_name=tag)](https://github.com/AdamEddahmouni/nosograph/releases/latest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22055279.svg)](https://doi.org/10.5281/zenodo.22055279)
 [![Tests](https://github.com/AdamEddahmouni/nosograph/actions/workflows/test.yml/badge.svg)](https://github.com/AdamEddahmouni/nosograph/actions/workflows/test.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%20%7C%203.12-2F86FF.svg)](https://www.python.org/downloads/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-19D2C7.svg)](LICENSE)
@@ -172,7 +173,7 @@ Do not submit secrets, PHI, or patient-identifiable data. Questions belong in [G
 
 ## Citation
 
-Cite the repository through GitHub’s citation UI or [`CITATION.cff`](CITATION.cff). The software is Apache-2.0; upstream biomedical datasets retain their own terms. A DOI will be added after Zenodo archival.
+Cite the archived v0.1.0 release using version DOI [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280). The all-versions concept DOI is [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279). Canonical metadata is also available through GitHub’s citation UI and [`CITATION.cff`](CITATION.cff). The software is Apache-2.0; upstream biomedical datasets retain their own terms.
 
 ```bibtex
 @software{nosograph2026,
@@ -180,7 +181,8 @@ Cite the repository through GitHub’s citation UI or [`CITATION.cff`](CITATION.
   author  = {Eddahmouni, Adam and NosoGraph contributors},
   year    = {2026},
   url     = {https://github.com/AdamEddahmouni/nosograph},
-  version = {0.1.0}
+  version = {0.1.0},
+  doi     = {10.5281/zenodo.22055280}
 }
 ```
 

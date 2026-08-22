@@ -14,7 +14,10 @@ DESCRIPTOR = (
     "and provenance across biomedical sources."
 )
 PACKAGE_DESCRIPTION = f"NosoGraph — {TAGLINE} {DESCRIPTOR}"
-RETIRED_POSITIONING = "The Open Computational Map of Human Disease"
+RETIRED_POSITIONING_PATTERNS = (
+    re.compile(r"\b(?:the|an)\s+open computational map of human disease\b", re.IGNORECASE),
+    re.compile(r"\bevidence-native computational map of human disease\b", re.IGNORECASE),
+)
 
 CURRENT_SURFACES = (
     "README.md",
@@ -51,6 +54,14 @@ DESCRIPTOR_SURFACES = (
     "docs-theme/main.html",
 )
 ACTIVE_POSITIONING_SURFACES = tuple(dict.fromkeys((*TAGLINE_SURFACES, *DESCRIPTOR_SURFACES)))
+ACTIVE_POSITIONING_SURFACES += (
+    "CONTRIBUTING.md",
+    "docs/architecture/overview.md",
+    "docs/assets/screenshots/dashboard.svg",
+    "docs/getting-started/faq.md",
+    "docs/getting-started/what-is.md",
+    "docs/project/release-notes-template.md",
+)
 REQUIRED_ASSETS = (
     "symbol.svg",
     "mark.svg",
@@ -171,7 +182,7 @@ def main() -> None:
         if DESCRIPTOR not in _text(relative):
             errors.append(f"{relative} missing canonical positioning descriptor")
     for relative in ACTIVE_POSITIONING_SURFACES:
-        if RETIRED_POSITIONING in _text(relative):
+        if any(pattern.search(_text(relative)) for pattern in RETIRED_POSITIONING_PATTERNS):
             errors.append(f"{relative} contains retired positioning")
 
     brand_dir = ROOT / "docs" / "assets" / "brand"

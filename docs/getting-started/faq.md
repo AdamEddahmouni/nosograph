@@ -5,7 +5,7 @@ description: Frequently asked questions about NosoGraph scope, data, citation, a
 
 # FAQ
 
-**What is NosoGraph?** An open computational map of human disease: software that connects diseases to biomedical knowledge while preserving evidence.
+**What is NosoGraph?** Disease Intelligence. Connected. Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.
 
 **Who is it for?** Researchers, developers, students, curators, and institutions evaluating open research software.
 
