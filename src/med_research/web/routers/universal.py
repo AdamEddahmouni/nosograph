@@ -32,6 +32,8 @@ from med_research.web.models.universal import (
     ImportReportView,
     NosoGraphCompareRequest,
     NosoGraphCompareResultView,
+    NosoGraphCompareV2Request,
+    NosoGraphCompareV2ResultView,
     PagedResponse,
     RelatedClaimView,
     SnapshotSummary,
@@ -166,7 +168,7 @@ def get_claim_provenance(
     return universal_service.get_claim_provenance(repository, claim_id)
 
 
-@router.post("/nosograph/compare", response_model=NosoGraphCompareResultView)
+@router.post("/nosograph/compare", response_model=NosoGraphCompareResultView, deprecated=True)
 def nosograph_compare(
     payload: NosoGraphCompareRequest,
     repository: BiomedicalRepositoryDep,
@@ -178,6 +180,23 @@ def nosograph_compare(
             dimensions=payload.dimensions,
         )
         return nosograph_compare_service.to_compare_view(result)
+    except BiomedicalValidationError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@router.post("/nosograph/comparisons", response_model=NosoGraphCompareV2ResultView)
+def nosograph_compare_v2(
+    payload: NosoGraphCompareV2Request,
+    repository: BiomedicalRepositoryDep,
+) -> NosoGraphCompareV2ResultView:
+    try:
+        result = NosoGraphCompareService(repository).compare_many(
+            payload.condition_curies,
+            dimensions=payload.dimensions,
+        )
+        return nosograph_compare_service.to_compare_v2_view(result)
     except BiomedicalValidationError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
     except ValueError as exc:
