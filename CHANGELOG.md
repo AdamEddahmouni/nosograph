@@ -2,6 +2,47 @@
 
 ## [Unreleased]
 
+## [0.2.0] — 2026-08-22
+
+**NosoGraph v0.2.0 — Compare V2**
+
+Compare V2 turns the experimental pairwise comparison slice into a deterministic product workflow for two through five diseases.
+
+### Added
+
+- Deterministic two-to-five-condition comparisons across phenotype, gene, pathway, treatment, and evidence-coverage dimensions.
+- Shared-by-all, shared-by-subset, disease-distinct, and explicit missing-data panels.
+- Evidence Explorer drill-down from comparison entities and conflicting assertions.
+- Canonical, timestamp-free JSON and Markdown comparison exports.
+- Persisted Compare result-schema versioning, golden JSON/export fixtures, API coverage, and Playwright product-flow coverage including a live browser-to-FastAPI seam.
+
+### Changed
+
+- Compare V2 distinguishes `NOT_RECORDED` from explicit `KNOWN_ABSENT` assertions and emits deterministic curation-asymmetry and conflicting-assertion warnings.
+- The canonical endpoint is `POST /api/v1/nosograph/comparisons`; the deprecated two-condition `POST /api/v1/nosograph/compare` projection remains available.
+- Public package, runtime, citation, CodeMeta, roadmap, and documentation metadata advance to v0.2.0.
+
+### Compatibility
+
+- Compare algorithm `nosograph-compare-v2` remains at `2.0.0`; its persisted result contract is versioned independently as schema `2.0`.
+- Existing historical comparison runs remain readable with conservative label and claim-link fallbacks. Identical requests under a newer result contract create a new deterministic run rather than replaying an incomplete payload.
+- The `nosograph` CLI remains canonical; `med-research` and `med_research` remain compatibility names during public alpha.
+
+### Known limitations
+
+- Results reflect imported active snapshots and curation depth; absent curation is never interpreted as biological absence.
+- NosoGraph remains research software and does not emit a universal disease-similarity score or clinical recommendations.
+- No public hosted demo is deployed.
+
+### Verification
+
+```bash
+make ci-local
+make test-browser
+python -m mkdocs build --strict
+python scripts/check_public_metadata.py
+```
+
 ## [0.1.0] — 2026-08-22
 
 **NosoGraph v0.1.0 — Public-Alpha Baseline**

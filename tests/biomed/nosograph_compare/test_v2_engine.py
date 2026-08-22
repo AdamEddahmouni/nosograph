@@ -7,7 +7,8 @@ from threading import Barrier
 
 import pytest
 
-from med_research.biomed.identifiers import claim_evidence_uuid, claim_uuid
+import med_research.biomed.nosograph_compare.service as compare_service_module
+from med_research.biomed.identifiers import canonical_json, claim_evidence_uuid, claim_uuid
 from med_research.biomed.models import Claim, ClaimEvidence, EvidenceDirection, Predicate, RunStatus
 from med_research.biomed.nosograph_compare.models import EntityState
 from med_research.biomed.nosograph_compare.service import NosoGraphCompareService
@@ -36,10 +37,26 @@ def test_compare_many_canonicalizes_inputs_dimensions_and_replays_run(
     assert first.dimensions == ["phenotype", "gene", "treatment"]
     assert first == permuted
     assert first.algorithm_version == "2.0.0"
+    assert first.result_schema_version == "2.0"
     run = compare_v2_repository.get_research_run(first.run_id)
     assert run is not None
     assert run.run_type == "nosograph_compare_v2"
+    assert run.parameters["result_schema_version"] == "2.0"
     assert run.result is not None
+
+
+def test_compare_many_result_schema_version_changes_run_identity(
+    compare_v2_repository,
+    monkeypatch,
+) -> None:
+    service = NosoGraphCompareService(compare_v2_repository)
+    current = service.compare_many(list(CONDITIONS), dimensions=["phenotype"])
+
+    monkeypatch.setattr(compare_service_module, "COMPARE_RESULT_SCHEMA_VERSION", "2.1")
+    evolved = service.compare_many(list(CONDITIONS), dimensions=["phenotype"])
+
+    assert current.run_id != evolved.run_id
+    assert evolved.result_schema_version == "2.1"
 
 
 def test_compare_many_partitions_memberships_and_preserves_absence_semantics(
@@ -90,6 +107,14 @@ def test_compare_many_partitions_memberships_and_preserves_absence_semantics(
     }
     conflict = next(item for item in phenotype.entities if item.entity_curie == "HP:0000007")
     assert conflict.states[CONDITIONS[0]] is EntityState.PRESENT
+    conflict_claims = conflict.claim_ids_by_condition[CONDITIONS[0]]
+    assert len(conflict_claims) == 4
+    qualifiers = [
+        compare_v2_repository.get_claim_by_id(claim_id).claim.qualifiers
+        for claim_id in conflict_claims
+    ]
+    assert any(item.get("negated") is True for item in qualifiers)
+    assert any(item.get("negated") is not True for item in qualifiers)
     conflict_warning = next(
         warning
         for warning in phenotype.warnings
@@ -100,6 +125,29 @@ def test_compare_many_partitions_memberships_and_preserves_absence_semantics(
         CONDITIONS[1]: 0,
         CONDITIONS[2]: 0,
     }
+
+
+def test_compare_many_persists_labels_and_exact_claim_links(compare_v2_repository) -> None:
+    result = NosoGraphCompareService(compare_v2_repository).compare_many(
+        list(CONDITIONS), dimensions=["phenotype"]
+    )
+    phenotype = _dimension(result, "phenotype")
+    shared = next(item for item in phenotype.entities if item.entity_curie == "HP:0000001")
+    missing = next(item for item in phenotype.entities if item.entity_curie == "HP:0000006")
+
+    assert result.condition_labels == {
+        CONDITIONS[0]: "Condition 1",
+        CONDITIONS[1]: "Condition 2",
+        CONDITIONS[2]: "Condition 3",
+    }
+    assert shared.entity_label == "HP:0000001"
+    assert set(shared.claim_ids_by_condition) == set(CONDITIONS)
+    assert all(shared.claim_ids_by_condition[curie] for curie in CONDITIONS)
+    assert missing.claim_ids_by_condition[CONDITIONS[0]]
+    assert missing.claim_ids_by_condition[CONDITIONS[1]] == []
+    assert missing.claim_ids_by_condition[CONDITIONS[2]]
+    for claim_ids in shared.claim_ids_by_condition.values():
+        assert claim_ids == sorted(claim_ids, key=str)
 
 
 def test_compare_many_reports_coverage_and_curation_thresholds(compare_v2_repository) -> None:
@@ -261,6 +309,36 @@ def test_compare_many_accepts_five_conditions_and_marks_sparse_data_insufficient
 
     assert sparse.status == "insufficient_data"
     assert len(bounded.condition_curies) == 5
+
+
+def test_get_comparison_defaults_labels_and_claim_links_for_older_runs(
+    compare_v2_repository,
+) -> None:
+    service = NosoGraphCompareService(compare_v2_repository)
+    created = service.compare_many(list(CONDITIONS), dimensions=["phenotype"])
+    run = compare_v2_repository.get_research_run(created.run_id)
+    assert run is not None and run.result is not None
+    payload = dict(run.result)
+    payload.pop("condition_labels", None)
+    for dimension in payload["dimension_results"]:
+        for row in dimension["entities"]:
+            row.pop("entity_label", None)
+            row.pop("claim_ids_by_condition", None)
+    with compare_v2_repository.transaction() as connection:
+        connection.execute(
+            "UPDATE research_runs SET result_json = ? WHERE id = ?",
+            (canonical_json(payload), str(created.run_id)),
+        )
+
+    replayed = service.get_comparison(created.run_id)
+    phenotype = _dimension(replayed, "phenotype")
+
+    assert replayed.condition_labels == {curie: curie for curie in CONDITIONS}
+    assert all(row.entity_label == row.entity_curie for row in phenotype.entities)
+    assert all(
+        row.claim_ids_by_condition == {curie: [] for curie in CONDITIONS}
+        for row in phenotype.entities
+    )
 
 
 def test_compare_many_matches_complete_three_condition_golden_response(

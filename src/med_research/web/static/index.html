@@ -912,28 +912,32 @@
                     <div>
                         <span class="workspace-kicker">UNIVERSAL BIOMEDICAL · RESEARCH ONLY</span>
                         <h2 id="condition-comparison-title">Condition Comparison</h2>
-                        <p>Compare two imported conditions across phenotype, gene, mechanism, treatment, and evidence-coverage dimensions. Overlap summaries are research hypotheses — no universal similarity score.</p>
+                        <p>Compare 2–5 imported conditions across phenotype, gene, pathway, treatment, and evidence coverage. Inspect shared and distinct entities without treating unrecorded data as biological absence.</p>
                     </div>
                     <div class="condition-comparison-disclaimer" id="condition-comparison-disclaimer">⚠️ Research use only · condition similarity for exploratory analysis</div>
                 </div>
                 <div class="condition-comparison-panel" id="condition-comparison-panel" aria-busy="false">
                     <div class="condition-comparison-toolbar">
-                        <label class="condition-comparison-label" for="comparison-left-curie">Left condition</label>
-                        <select id="comparison-left-curie" class="condition-comparison-input" placeholder="Search conditions…" autocomplete="off"></select>
-                        <label class="condition-comparison-label" for="comparison-right-curie">Right condition</label>
-                        <select id="comparison-right-curie" class="condition-comparison-input" placeholder="Search conditions…" autocomplete="off"></select>
+                        <div class="condition-comparison-picker">
+                            <label class="condition-comparison-label" for="comparison-condition-curies">Select 2–5 imported conditions</label>
+                            <select id="comparison-condition-curies" class="condition-comparison-input" multiple placeholder="Search imported conditions…" autocomplete="off" aria-describedby="comparison-picker-help"></select>
+                            <p id="comparison-picker-help">Search by disease name or CURIE. Selection order does not affect the persisted result.</p>
+                        </div>
                         <fieldset class="condition-comparison-dimensions" id="comparison-dimensions">
                             <legend>Dimensions</legend>
                             <label><input type="checkbox" value="phenotype" checked> Phenotypes</label>
                             <label><input type="checkbox" value="gene" checked> Genes</label>
-                            <label><input type="checkbox" value="mechanism" checked> Mechanisms</label>
+                            <label><input type="checkbox" value="pathway" checked> Pathways</label>
                             <label><input type="checkbox" value="treatment" checked> Treatments</label>
-                            <label><input type="checkbox" value="evidence_coverage" checked> Evidence</label>
+                            <label><input type="checkbox" value="evidence_coverage" checked> Evidence coverage</label>
                         </fieldset>
-                        <button type="button" class="btn btn-primary" id="comparison-run-btn">Compare conditions</button>
+                        <div class="condition-comparison-actions">
+                            <button type="button" class="btn btn-primary" id="comparison-run-btn">Compare selected conditions</button>
+                            <span id="comparison-selection-status" aria-live="polite">Select at least two conditions.</span>
+                        </div>
                     </div>
                     <div class="condition-comparison-result" id="condition-comparison-result" aria-live="polite">
-                        <p class="condition-comparison-placeholder">Enter two condition CURIEs to run a persisted comparison research run.</p>
+                        <p class="condition-comparison-placeholder">Select 2–5 conditions and at least one dimension to create a persisted comparison report.</p>
                     </div>
                 </div>
             </section>

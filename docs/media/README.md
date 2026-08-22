@@ -6,4 +6,4 @@
 - Social preview source: `../assets/brand/social-preview.svg`; committed/upload-ready export: `../assets/brand/social-preview.png` (1280×640)
 - Screenshots: live evaluation captures in `../assets/screenshots/` (`dashboard.png`, `disease-explore.png`) plus conceptual layouts (`evidence-workspace.svg`). Do not publish PHI-bearing or credential-bearing captures.
 - Links: https://github.com/AdamEddahmouni/nosograph · docs GitHub Pages URL · [CITATION.cff](https://github.com/AdamEddahmouni/nosograph/blob/master/CITATION.cff)
-- Release: v0.1.0 public alpha (2026-08-22)
+- Release: v0.2.0 public alpha — Compare V2 (2026-08-22)

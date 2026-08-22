@@ -52,9 +52,11 @@ counts. `ASYMMETRIC_CURATION` is emitted when nonzero counts differ by at least 
 absolute delta of at least three. Conflict warnings additionally identify `entity_curie`.
 
 Each comparison persists one deterministic `nosograph_compare_v2` research run using algorithm
-version `2.0.0`. Its fingerprint includes canonical conditions, canonical dimensions, condition
-fingerprints, active snapshots, claims, and algorithm version. Permutations of identical inputs
-replay the same completed run and run ID.
+version `2.0.0` and result schema version `2.0`. Its fingerprint includes canonical conditions,
+canonical dimensions, condition fingerprints, active snapshots, claims, algorithm version, and
+result-schema version. Permutations of identical inputs under the same result contract replay the
+same completed run and run ID. A result-contract change creates a new run identity without
+misrepresenting that serialization change as a biomedical semantics change.
 
 The canonical API is `POST /api/v1/nosograph/comparisons`. Invalid CURIE syntax, unresolved
 conditions, invalid cohort cardinality, empty dimension selections, and unknown dimensions

@@ -14,6 +14,7 @@ from med_research.biomed.nosograph_compare.engine import (
     dimension_has_comparable_data,
 )
 from med_research.biomed.nosograph_compare.models import (
+    COMPARE_RESULT_SCHEMA_VERSION,
     DEFAULT_DIMENSIONS,
     LEGACY_DEFAULT_DIMENSIONS,
     CompareResult,
@@ -35,6 +36,14 @@ _ALGORITHM_ID = "nosograph-compare-v2"
 _ALGORITHM_VERSION = "2.0.0"
 _RUN_TYPE = "nosograph_compare_v2"
 _LEGACY_ALIASES = {"mechanism": "pathway"}
+
+
+class CompareRunNotFoundError(LookupError):
+    """Raised when a persisted run is not a Compare V2 run."""
+
+
+class CompareRunIncompleteError(RuntimeError):
+    """Raised when a persisted Compare V2 run has no completed result."""
 
 
 class NosoGraphCompareService:
@@ -73,6 +82,7 @@ class NosoGraphCompareService:
         claim_set_fingerprint = fingerprint_json(
             {
                 "algorithm_version": _ALGORITHM_VERSION,
+                "result_schema_version": COMPARE_RESULT_SCHEMA_VERSION,
                 "conditions": [
                     {
                         "curie": curie,
@@ -92,6 +102,7 @@ class NosoGraphCompareService:
             parameters={
                 "condition_curies": conditions,
                 "dimensions": selected,
+                "result_schema_version": COMPARE_RESULT_SCHEMA_VERSION,
                 "condition_fingerprints": {
                     curie: context.fingerprints[curie].fingerprint for curie in conditions
                 },
@@ -102,8 +113,10 @@ class NosoGraphCompareService:
             input_query=f"{'|'.join(conditions)}::{','.join(selected)}",
         )
         payload = {
+            "result_schema_version": COMPARE_RESULT_SCHEMA_VERSION,
             "status": status,
             "condition_curies": conditions,
+            "condition_labels": context.condition_labels,
             "dimensions": selected,
             "dimension_results": [item.model_dump(mode="json") for item in dimension_results],
             "curation_warnings": [item.model_dump(mode="json") for item in warnings],
@@ -138,6 +151,14 @@ class NosoGraphCompareService:
             raise RuntimeError(_failed_run_message(run))
         if run.status is not RunStatus.COMPLETED or run.result is None:
             raise RuntimeError(f"Comparison run {run.id} did not produce a completed result")
+        return _v2_result_from_run(run)
+
+    def get_comparison(self, run_id: UUID) -> CompareV2Result:
+        run = self._repository.get_research_run(run_id)
+        if run is None or run.run_type != _RUN_TYPE:
+            raise CompareRunNotFoundError(f"Comparison run {run_id} not found")
+        if run.status is not RunStatus.COMPLETED or run.result is None:
+            raise CompareRunIncompleteError(f"Comparison run {run_id} is not complete")
         return _v2_result_from_run(run)
 
     def compare(
@@ -236,15 +257,34 @@ def _legacy_missing_reason(coverage: ConditionCoverage) -> MissingDataReason:
 
 def _v2_result_from_run(run: ResearchRun) -> CompareV2Result:
     payload = dict(run.result or {})
+    condition_curies = list(payload.get("condition_curies", []))
+    condition_labels = dict(payload.get("condition_labels", {}))
+    condition_labels = {
+        curie: str(condition_labels.get(curie) or curie) for curie in condition_curies
+    }
+    dimension_results = []
+    for stored in list(payload.get("dimension_results", [])):
+        item = dict(stored)
+        rows = []
+        for stored_row in list(item.get("entities", [])):
+            row = dict(stored_row)
+            entity_curie = str(row.get("entity_curie", ""))
+            row["entity_label"] = str(row.get("entity_label") or entity_curie)
+            stored_claims = dict(row.get("claim_ids_by_condition", {}))
+            row["claim_ids_by_condition"] = {
+                curie: list(stored_claims.get(curie, [])) for curie in condition_curies
+            }
+            rows.append(row)
+        item["entities"] = rows
+        dimension_results.append(DimensionComparison.model_validate(item))
     return CompareV2Result(
         run_id=run.id,
+        result_schema_version=str(payload.get("result_schema_version", "1.0")),
         status=str(payload.get("status", "insufficient_data")),
-        condition_curies=list(payload.get("condition_curies", [])),
+        condition_curies=condition_curies,
+        condition_labels=condition_labels,
         dimensions=list(payload.get("dimensions", [])),
-        dimension_results=[
-            DimensionComparison.model_validate(item)
-            for item in list(payload.get("dimension_results", []))
-        ],
+        dimension_results=dimension_results,
         curation_warnings=list(payload.get("curation_warnings", [])),
         snapshot_ids=run.snapshot_ids,
         claim_set_fingerprint=str(payload.get("claim_set_fingerprint", run.fingerprint)),
