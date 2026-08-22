@@ -23,7 +23,9 @@ An open-source biomedical research platform connecting diseases to phenotypes, g
 
 <img src="docs/assets/brand/hero.svg" alt="NosoGraph hero: a network map linking disease knowledge to evidence" width="100%">
 
-<img src="docs/assets/screenshots/dashboard.svg" alt="Representative NosoGraph dashboard layout with disease graph, evidence workspace, and comparison panels" width="100%">
+<img src="docs/assets/screenshots/dashboard.png" alt="NosoGraph dashboard showing disease selection, platform statistics, and the evidence workspace" width="100%">
+
+*Local Docker evaluation capture (research use only; not a clinical interface).*
 
 > **Research use only.** NosoGraph produces computational research outputs, not medical advice or clinical decisions. See [SECURITY.md](SECURITY.md).
 
@@ -83,7 +85,9 @@ Combine evidence from multiple sources to prioritize research questions. Outputs
 
 Use the `nosograph` CLI, HTTP API, disease data model, or research pipelines.
 
-<img src="docs/assets/screenshots/disease-explore.svg" alt="Representative Condition Explorer layout for inspecting disease entities and relationships" width="100%">
+<img src="docs/assets/screenshots/disease-explore.png" alt="NosoGraph Condition Explorer for searching imported conditions and comparing coverage dimensions" width="100%">
+
+*Local Docker evaluation capture of Condition Explorer (empty search state; research use only).*
 
 ---
 
@@ -306,6 +310,8 @@ The evidence model turns multi-source records into claims, ranked candidates, an
 
 <img src="docs/assets/screenshots/evidence-workspace.svg" alt="Representative Evidence Workspace layout with retrieved evidence, claims, and provenance" width="100%">
 
+*Representative product layout (not a live screenshot).*
+
 ---
 
 ## Built on open biomedical knowledge
@@ -320,7 +326,7 @@ Verified integrations include MONDO, HPO/HPOA, GO, Reactome, Uberon, Open Target
 
 The documentation site is the long-form public surface: https://adameddahmouni.github.io/nosograph/
 
-Until GitHub Pages is enabled, the same pages live under [`docs/`](docs/index.md).
+Repository Markdown under [`docs/`](docs/index.md) is the source; GitHub Pages publishes the built site.
 
 | Document | Role |
 |----------|------|

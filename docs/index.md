@@ -21,7 +21,9 @@ NosoGraph is an open-source biomedical research platform that connects diseases 
 - **Trace** claims to evidence and provenance.
 - **Analyze** via CLI, API, or research pipelines.
 
-![Representative dashboard layout](assets/screenshots/dashboard.svg)
+![NosoGraph dashboard](assets/screenshots/dashboard.png)
+
+*Local Docker evaluation capture (research use only; not a clinical interface).*
 
 ## Status
 

@@ -6,6 +6,7 @@ import re
 
 import pytest
 
+from med_research import __version__
 from med_research.pipeline.provenance import (
     SCHEMA_VERSION,
     build_provenance,
@@ -64,7 +65,7 @@ def test_build_provenance_includes_required_contract_fields():
     assert payload["run_id"] == "ew-test-run"
     assert payload["disease_id"] == "ra"
     assert payload["module"] == "evidence_workspace"
-    assert payload["package_version"]
+    assert payload["package_version"] == __version__
     assert payload["sources"] == ["clinical_trials", "pubmed"]
     assert payload["query"] == "JAK inhibitor"
     assert payload["filters"]["max_evidence"] == 25

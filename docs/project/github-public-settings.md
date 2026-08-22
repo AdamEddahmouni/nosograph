@@ -9,18 +9,22 @@ Code cannot apply these. Maintainer actions only.
 - Dependabot config present (`.github/dependabot.yml`)
 - Latest release v2.3.0
 
+## Applied via API (verify in GitHub UI)
+
+- **Topics:** full 20-topic set including `biomedical-knowledge-graph`, `disease-ontology`, `drug-repurposing`, `evidence-synthesis`, `fastapi`, `python`, `research-software`, `systems-biology`.
+- **Wiki:** disabled (`DISABLE_WIKI`). Canonical docs remain version-controlled in `docs/`.
+- **GitHub Pages source:** GitHub Actions (`build_type=workflow`). Deploy job lives in `.github/workflows/docs.yml`.
+
 ## MANUAL_ACTION_REQUIRED
 
-1. **Social preview:** Settings → General → Social preview → upload `docs/assets/brand/social-preview.png`.
-2. **About homepage:** set to `https://adameddahmouni.github.io/nosograph/` after Pages is live (keep description as-is if still accurate).
-3. **Topics:** add `biomedical-knowledge-graph`, `disease-ontology`, `drug-repurposing`, `evidence-synthesis`, `fastapi`, `python`, `research-software`, `systems-biology` to the existing set if missing.
-4. **GitHub Pages:** Settings → Pages → Source **GitHub Actions** (workflow `.github/workflows/docs.yml`).
-5. **Discussions categories:** Announcements, Q&A, Ideas, Research, Data & Curation, Show and Tell, General. Seed posts: [github-discussions-seed.md](github-discussions-seed.md).
-6. **Private vulnerability reporting:** Settings → Code security → enable private reporting if not on.
-7. **Wiki:** disable (canonical docs are version-controlled). Recommendation: `DISABLE_WIKI`.
-8. **Projects:** keep maintainer-oriented; do not treat the board as the public roadmap.
-9. **Zenodo:** [zenodo-setup.md](zenodo-setup.md).
-10. **Profile pin:** pin NosoGraph with one-line description (do not edit unrelated profile content).
+1. **Social preview:** Settings → General → Social preview → Edit → Upload `docs/assets/brand/social-preview.png` (1280×640).
+2. **About homepage:** set to `https://adameddahmouni.github.io/nosograph/` after the live site returns HTTP 200.
+3. **Discussions categories:** add **Research** and **Data & Curation** if desired (defaults already include Announcements, Q&A, Ideas, Show and tell, General). Seed posts: [github-discussions-seed.md](github-discussions-seed.md).
+4. **Private vulnerability reporting:** Settings → Code security → enable private reporting if not on.
+5. **Issue labels:** create `disease-curation`, `data-source`, and `research` if templates do not apply them automatically.
+6. **Projects:** keep maintainer-oriented; do not treat the board as the public roadmap.
+7. **Zenodo:** [zenodo-setup.md](zenodo-setup.md).
+8. **Profile pin:** pin NosoGraph with one-line description (do not edit unrelated profile content).
 
 ## OPTIONAL
 

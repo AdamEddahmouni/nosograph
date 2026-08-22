@@ -2,7 +2,6 @@
 
 import logging
 from datetime import datetime
-from importlib.metadata import version
 from pathlib import Path
 from typing import Annotated, Any
 
@@ -10,6 +9,7 @@ import redis
 from fastapi import APIRouter, Depends, Query
 from fastapi.responses import JSONResponse
 
+from med_research import __version__
 from med_research.diseases.base import Disease
 from med_research.diseases.identifiers import CI_VALIDATED_DISEASES
 from med_research.pipeline.gateway import pipeline_gateway
@@ -41,7 +41,7 @@ async def health() -> dict[str, Any]:
     """Health check endpoint."""
     return {
         "status": "ok",
-        "version": version("med-research"),
+        "version": __version__,
         "timestamp": datetime.now().isoformat(),
     }
 
@@ -112,7 +112,7 @@ async def ready() -> JSONResponse | dict[str, Any]:
 
     payload = {
         "status": overall,
-        "version": version("med-research"),
+        "version": __version__,
         "timestamp": datetime.now().isoformat(),
         "components": components,
     }
