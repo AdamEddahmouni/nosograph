@@ -107,9 +107,66 @@ def _stub_evidence_monitor_empty_gather(monkeypatch: pytest.MonkeyPatch) -> None
     )
 
 
+def _stub_clinical_trials_empty_search(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Keep the clinical-trials empty-result progress path offline."""
+    monkeypatch.setattr(
+        "med_research.pipeline.clinical_trials.tracker.search_clinical_trials",
+        lambda *args, **kwargs: [],
+    )
+
+
+def _stub_enrichment_empty_results(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Return empty Enrichr responses without making HTTP requests."""
+    monkeypatch.setattr(
+        "med_research.pipeline.bioinformatics.enrichment.gp",
+        SimpleNamespace(enrichr=lambda **kwargs: SimpleNamespace(results=None)),
+    )
+
+
+def _stub_ppi_network(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Return a deterministic STRING-shaped network without HTTP requests."""
+
+    def fake_fetch(symbols: list[str], confidence: float) -> tuple[dict, list]:
+        id_map = {symbol: f"string-{index}" for index, symbol in enumerate(symbols)}
+        string_ids = list(id_map.values())
+        interactions = [
+            {
+                "stringId_A": source,
+                "stringId_B": target,
+                "score": max(confidence, 0.9),
+            }
+            for source, target in zip(string_ids, string_ids[1:], strict=False)
+        ]
+        return id_map, interactions
+
+    monkeypatch.setattr(
+        "med_research.pipeline.bioinformatics.ppi._fetch_ppi",
+        fake_fetch,
+    )
+
+
+def _stub_literature_empty_results(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Keep the literature adapter progress contract offline."""
+
+    def fake_mine_literature(**kwargs: Any) -> tuple[dict, dict, list, dict]:
+        callback = kwargs.get("progress_callback")
+        if callback:
+            callback("literature mining", 1, 1)
+        return ({"article_matches": []}, {}, [], {})
+
+    monkeypatch.setattr(
+        "med_research.pipeline.literature_mining.miner.mine_literature",
+        fake_mine_literature,
+    )
+
+
 _EMPTY_PATH_STUBS = {
+    "clinical_trials": _stub_clinical_trials_empty_search,
+    "enrichment": _stub_enrichment_empty_results,
     "semantic_search": _stub_semantic_search_empty_path,
     "evidence_monitor": _stub_evidence_monitor_empty_gather,
+    "literature_mining": _stub_literature_empty_results,
+    "ppi": _stub_ppi_network,
 }
 
 

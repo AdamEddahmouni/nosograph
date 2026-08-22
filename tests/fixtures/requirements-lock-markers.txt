@@ -1,0 +1,4 @@
+base-package==1.0
+worker[redis]==4.0
+windows-package==2.0 ; sys_platform == 'win32'
+linux-package==3.0 ; sys_platform == 'linux'

@@ -21,7 +21,7 @@ test-fast:  ## Run fast unit tests without slow or integration markers
 	python -m pytest tests/ -m "not slow and not integration" -q --tb=line
 
 test-offline:  ## Run the complete offline suite; live API tests are marked slow
-	python -m pytest tests/ -m "unit and not network" -q --tb=short
+	python -m pytest tests/ -m "unit and not network and not slow" -q --tb=short
 
 test-slow:  ## Run live API/integration tests marked slow
 	python -m pytest tests/ -m slow -v --tb=short
@@ -61,7 +61,7 @@ ci-local:  ## Local pre-push gate (lint, locks, import audit, serial offline tes
 	python scripts/check_imports.py
 	python scripts/check_public_metadata.py
 	python scripts/check_public_fonts.py
-	python -m pytest tests/ -m "unit and not network" -q --tb=short -n 0 --ignore=tests/test_evidence_workspace_browser.py
+	python -m pytest tests/ -m "unit and not network and not slow" -q --tb=short -n 0 --ignore=tests/test_evidence_workspace_browser.py
 
 typecheck:  ## Run mypy on the expanded type-check scope
 	python -m mypy \

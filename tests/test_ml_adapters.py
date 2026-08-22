@@ -92,6 +92,31 @@ class TestSemanticSearchAdapter(ModuleAdapterContract):
     coverage_module = "semantic"
     coverage_inputs = ("genes", "drugs", "pubmed_queries")
 
+    @pytest.fixture(autouse=True)
+    def _stub_empty_semantic_index(self, monkeypatch, semantic_fake_embedder):
+        """Exercise the real empty-index path without model downloads."""
+        from types import SimpleNamespace
+
+        import med_research.pipeline.semantic_search.engine as engine_mod
+
+        monkeypatch.setattr(
+            engine_mod.SemanticSearchEngine,
+            "_load_model",
+            lambda self: setattr(self, "model", semantic_fake_embedder),
+        )
+        monkeypatch.setattr(
+            engine_mod,
+            "chromadb",
+            SimpleNamespace(
+                PersistentClient=lambda path: SimpleNamespace(
+                    get_collection=lambda name: (_ for _ in ()).throw(
+                        ValueError(f"no indexed collection for {name}")
+                    )
+                )
+            ),
+            raising=False,
+        )
+
     def test_build_provenance_matches_engine_main(self):
         module = self.module_cls()
         query = _default_query(self.disease_id)
