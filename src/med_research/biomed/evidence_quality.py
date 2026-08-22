@@ -102,7 +102,7 @@ def _infer_study_design(evidence: ClaimEvidence) -> StudyDesignLiteral:
     haystack = (evidence.evidence_type or "").lower()
     if not haystack:
         return "unknown"
-    if "rct" in haystack or "randomized" in haystack or "trial" in haystack:
+    if "rct" in haystack or "randomized" in haystack:
         return "rct"
     if "cohort" in haystack:
         return "cohort"
@@ -149,16 +149,24 @@ def _infer_human_review(evidence: ClaimEvidence) -> HumanReviewLiteral:
 
 
 def _infer_statistical_quality(evidence: ClaimEvidence) -> StatisticalQualityLiteral:
-    score = (
-        evidence.confidence_score if evidence.confidence_score is not None else evidence.confidence
-    )
-    if score is None:
+    """Do not map confidence scores to statistical quality — they measure different things."""
+    haystack = " ".join(
+        filter(
+            None,
+            [
+                evidence.evidence_type or "",
+                evidence.rationale or "",
+                evidence.snippet or "",
+            ],
+        )
+    ).lower()
+    if not haystack.strip():
         return "unknown"
-    if score >= 0.75:
+    if re.search(r"\bp\s*[<=>]\s*0\.\d+", haystack) or "confidence interval" in haystack:
         return "high"
-    if score >= 0.45:
+    if "statistically significant" in haystack or "significant association" in haystack:
         return "medium"
-    return "low"
+    return "unknown"
 
 
 def derive_evidence_quality(evidence: ClaimEvidence) -> EvidenceQuality:
