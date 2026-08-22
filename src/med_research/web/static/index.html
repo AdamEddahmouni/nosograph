@@ -31,6 +31,7 @@
                     <a href="#kg-explorer" class="nav-link" data-nav="kg-explorer">KG</a>
                     <a href="#corpus-status" class="nav-link" data-nav="corpus-status">Corpus Health</a>
                     <a href="#condition-explorer" class="nav-link" data-nav="condition-explorer">Conditions</a>
+                    <a href="#evidence-explorer" class="nav-link" data-nav="evidence-explorer">Evidence</a>
                     <a href="#condition-comparison" class="nav-link" data-nav="condition-comparison">Compare</a>
                     <a href="#graph-analytics" class="nav-link" data-nav="graph-analytics">Analytics</a>
                     <a href="#export" class="nav-link" data-nav="export">Export</a>
@@ -72,6 +73,7 @@
                         <a href="#kg-explorer" class="btn btn-secondary">🕸️ Explore KG</a>
                         <a href="#graph-analytics" class="btn btn-secondary">📊 Graph Analytics</a>
                         <a href="#condition-comparison" class="btn btn-secondary">⚖️ Compare Conditions</a>
+                        <a href="#evidence-explorer" class="btn btn-secondary" id="hero-evidence-link">🔍 Evidence Explorer</a>
                         <a href="/api/docs" class="btn btn-secondary" target="_blank" rel="noopener">📖 API Docs</a>
                     </div>
                 </div>
@@ -850,6 +852,54 @@
                         <div class="condition-explorer-detail" id="condition-explorer-detail">
                             <p class="condition-explorer-placeholder">Select a condition to inspect labels, hierarchy, claims, and snapshot provenance.</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="evidence-explorer-shell" id="evidence-explorer" aria-labelledby="evidence-explorer-title">
+                <div class="evidence-explorer-intro">
+                    <div>
+                        <span class="workspace-kicker">CLAIM TRACEABILITY · RESEARCH ONLY</span>
+                        <h2 id="evidence-explorer-title">Evidence Explorer</h2>
+                        <p>Inspect why NosoGraph asserts a relationship: supporting and contradictory evidence, quality context, provenance, and source links.</p>
+                    </div>
+                    <div class="evidence-explorer-disclaimer">⚠️ Research use only · associations are not causation</div>
+                </div>
+                <div class="evidence-explorer-panel" id="evidence-explorer-panel" aria-busy="false">
+                    <div class="evidence-explorer-toolbar">
+                        <label class="evidence-explorer-label" for="evidence-claim-input">Claim ID or condition CURIE</label>
+                        <input type="search" id="evidence-claim-input" class="evidence-explorer-input" placeholder="Paste claim UUID or search by condition CURIE…" autocomplete="off" aria-controls="evidence-explorer-content">
+                        <button type="button" class="btn btn-primary btn-sm" id="evidence-explorer-load-btn" data-action="evidence-explorer-load">Load claim</button>
+                        <a class="btn btn-secondary btn-sm" id="evidence-disease-bridge" href="#condition-explorer" hidden>Browse condition claims</a>
+                    </div>
+                    <div class="evidence-explorer-filters" id="evidence-explorer-filters" hidden>
+                        <label>Direction
+                            <select id="evidence-filter-direction" data-action="evidence-filter-change" aria-label="Filter evidence direction">
+                                <option value="">All</option>
+                                <option value="supporting">Supporting</option>
+                                <option value="contradictory">Contradictory</option>
+                            </select>
+                        </label>
+                        <label>Species
+                            <select id="evidence-filter-species" data-action="evidence-filter-change" aria-label="Filter evidence species context">
+                                <option value="">All</option>
+                                <option value="human">Human</option>
+                                <option value="animal">Animal</option>
+                                <option value="in_vitro">In vitro</option>
+                                <option value="computational">Computational</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </label>
+                        <label>Sort
+                            <select id="evidence-filter-sort" data-action="evidence-filter-change" aria-label="Sort evidence list">
+                                <option value="newest">Newest</option>
+                                <option value="oldest">Oldest</option>
+                                <option value="source">Source</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="evidence-explorer-content" id="evidence-explorer-content" aria-live="polite">
+                        <p class="evidence-explorer-placeholder">Enter a claim ID, open a claim from Condition Explorer, or follow a shared deep link (<code>?claim_id=…</code>).</p>
                     </div>
                 </div>
             </section>

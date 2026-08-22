@@ -33,6 +33,7 @@ from med_research.web.models.universal import (
     NosoGraphCompareRequest,
     NosoGraphCompareResultView,
     PagedResponse,
+    RelatedClaimView,
     SnapshotSummary,
 )
 from med_research.web.services import (
@@ -117,14 +118,42 @@ def get_claim(
     return detail
 
 
-@router.get("/claims/{claim_id}/evidence", response_model=list[ClaimEvidenceDetailView])
+@router.get("/claims/{claim_id}/evidence", response_model=PagedResponse[ClaimEvidenceDetailView])
 def get_claim_evidence(
     claim_id: UUID,
     repository: BiomedicalRepositoryDep,
-) -> list[ClaimEvidenceDetailView]:
+    direction: EvidenceDirectionQuery = None,
+    evidence_type: str | None = Query(default=None, max_length=200),
+    source: str | None = Query(default=None, max_length=200),
+    species_context: str | None = Query(default=None, max_length=50),
+    sort: str = Query(default="newest", pattern="^(newest|oldest|source)$"),
+    limit: int = Query(50, ge=1, le=200),
+    offset: int = Query(0, ge=0),
+) -> PagedResponse[ClaimEvidenceDetailView]:
     if repository.get_claim_by_id(claim_id) is None:
         raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
-    return universal_service.list_claim_evidence(repository, claim_id)
+    return universal_service.list_claim_evidence(
+        repository,
+        claim_id,
+        direction=direction,
+        evidence_type=evidence_type,
+        source_name=source,
+        species_context=species_context,
+        sort=sort,
+        limit=limit,
+        offset=offset,
+    )
+
+
+@router.get("/claims/{claim_id}/related", response_model=list[RelatedClaimView])
+def get_related_claims(
+    claim_id: UUID,
+    repository: BiomedicalRepositoryDep,
+    limit: int = Query(20, ge=1, le=100),
+) -> list[RelatedClaimView]:
+    if repository.get_claim_by_id(claim_id) is None:
+        raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
+    return universal_service.list_related_claims(repository, claim_id, limit=limit)
 
 
 @router.get("/claims/{claim_id}/provenance", response_model=list[ClaimProvenanceStepView])

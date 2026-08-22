@@ -2445,6 +2445,7 @@ function renderConditionClaimRow(claim) {
         <small>${escapeHtml(claim.subject_curie)} → ${escapeHtml(claim.object_curie)} · evidence ${escapeHtml(summary)}</small>
         <div>${evidence}</div>
         <button type="button" class="btn btn-secondary btn-sm" data-action="inspect-claim-evidence">Inspect evidence &amp; provenance</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-action="evidence-explorer-open" data-claim-id="${escapeHtml(claim.claim_id)}">Open in Evidence Explorer</button>
         <div class="condition-evidence-panel-host"></div>
     </div>`;
 }
@@ -2928,12 +2929,219 @@ function handleUniversalDeepLinks() {
     const curie = params.get('curie');
     const left = params.get('left');
     const right = params.get('right');
-    if (curie) {
+    const claimId = params.get('claim_id');
+    if (claimId) {
+        window.location.hash = 'evidence-explorer';
+        void openEvidenceExplorer(claimId);
+    } else if (curie) {
         window.location.hash = 'condition-explorer';
         void renderConditionExplorer(curie);
     }
     if (left || right) {
         openConditionComparison(left || '', right || '');
+    }
+}
+
+// ── Evidence Explorer ────────────────────────────────────────────────────
+
+let activeEvidenceClaimId = null;
+
+function setEvidenceExplorerBusy(isBusy) {
+    const panel = document.getElementById('evidence-explorer-panel');
+    if (panel) panel.setAttribute('aria-busy', String(isBusy));
+}
+
+function renderEvidencePolarityBadge(summary) {
+    const key = (summary || 'UNASSERTED').toLowerCase();
+    const label = summary || 'UNASSERTED';
+    return `<span class="evidence-polarity-badge ${escapeHtml(key)}" role="status">${escapeHtml(label)}</span>`;
+}
+
+function renderEvidenceQualityBadges(quality) {
+    if (!quality) return '';
+    const badges = [];
+    if (quality.species_context && quality.species_context !== 'unknown') {
+        badges.push(`Species: ${quality.species_context}`);
+    }
+    if (quality.study_design && quality.study_design !== 'unknown') {
+        badges.push(`Design: ${quality.study_design}`);
+    }
+    if (quality.origin_class && quality.origin_class !== 'UNKNOWN_ORIGIN_CLASS') {
+        badges.push(quality.origin_class.replace(/_/g, ' ').toLowerCase());
+    }
+    if (quality.source_quality && quality.source_quality !== 'unknown') {
+        badges.push(`Source: ${quality.source_quality}`);
+    }
+    if (quality.sample_size_context === 'known' && typeof quality.sample_size === 'number') {
+        badges.push(`n=${quality.sample_size}`);
+    }
+    return badges.map(text => `<span class="evidence-quality-badge">${escapeHtml(text)}</span>`).join('');
+}
+
+function renderEvidenceSourceLink(item) {
+    const url = item.source_url && /^https?:\/\//i.test(item.source_url) ? item.source_url : '';
+    const label = item.source_record_id || item.source_name || 'source record';
+    if (url) {
+        return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`;
+    }
+    return `<span>${escapeHtml(label)}</span>`;
+}
+
+function renderEvidenceCard(item) {
+    const polarity = item.summary === 'CONTRADICTS' ? 'contradicts' : item.summary === 'SUPPORTS' ? 'supports' : 'inconclusive';
+    const details = [
+        item.evidence_type ? `Type: ${item.evidence_type}` : '',
+        item.publication_date ? `Date: ${item.publication_date}` : '',
+        item.population ? `Population: ${item.population}` : '',
+        item.source_name ? `Source: ${item.source_name}` : '',
+    ].filter(Boolean).join(' · ');
+    const provenance = (item.provenance || []).map(step => `<li><strong>${escapeHtml(step.stage)}</strong> · ${escapeHtml(step.resource_name || 'n/a')}${step.snapshot_version ? ` @ ${escapeHtml(step.snapshot_version)}` : ''}</li>`).join('') || '<li>No provenance steps recorded for this evidence item.</li>';
+    return `<article class="evidence-card" data-polarity="${escapeHtml(polarity)}" data-evidence-id="${escapeHtml(item.id)}">
+        <div class="evidence-card-head">
+            <div>${renderEvidencePolarityBadge(item.summary)} ${renderEvidenceSourceLink(item)}</div>
+            <span class="condition-empty">${escapeHtml(item.direction)}</span>
+        </div>
+        ${details ? `<p>${escapeHtml(details)}</p>` : ''}
+        <div class="evidence-quality-badges">${renderEvidenceQualityBadges(item.quality)}</div>
+        ${item.rationale || item.confidence_explanation ? `<p><small>${escapeHtml(item.rationale || item.confidence_explanation)}</small></p>` : ''}
+        <details><summary>Evidence detail &amp; provenance</summary><ol class="evidence-provenance-chain">${provenance}</ol></details>
+    </article>`;
+}
+
+function getEvidenceExplorerFilters() {
+    return {
+        direction: document.getElementById('evidence-filter-direction')?.value || '',
+        species: document.getElementById('evidence-filter-species')?.value || '',
+        sort: document.getElementById('evidence-filter-sort')?.value || 'newest',
+    };
+}
+
+function syncEvidenceExplorerUrl(claimId) {
+    const params = new URLSearchParams(window.location.search);
+    if (claimId) params.set('claim_id', claimId);
+    else params.delete('claim_id');
+    const filters = getEvidenceExplorerFilters();
+    if (filters.direction) params.set('evidence_direction', filters.direction);
+    else params.delete('evidence_direction');
+    if (filters.species) params.set('evidence_species', filters.species);
+    else params.delete('evidence_species');
+    if (filters.sort && filters.sort !== 'newest') params.set('evidence_sort', filters.sort);
+    else params.delete('evidence_sort');
+    const query = params.toString();
+    const next = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
+    window.history.replaceState({}, '', next);
+}
+
+async function loadEvidenceExplorerClaim(claimId) {
+    const content = document.getElementById('evidence-explorer-content');
+    const filtersPanel = document.getElementById('evidence-explorer-filters');
+    const input = document.getElementById('evidence-claim-input');
+    if (!content || !claimId) return;
+    activeEvidenceClaimId = claimId;
+    if (input) input.value = claimId;
+    setEvidenceExplorerBusy(true);
+    content.innerHTML = '<p class="evidence-explorer-placeholder"><span class="spinner"></span> Loading claim evidence…</p>';
+    const filters = getEvidenceExplorerFilters();
+    const query = new URLSearchParams({ limit: '100', sort: filters.sort || 'newest' });
+    if (filters.direction) query.set('direction', filters.direction);
+    if (filters.species) query.set('species_context', filters.species);
+    try {
+        const [detail, evidencePage, related] = await Promise.all([
+            apiFetch(`/api/v1/claims/${encodeURIComponent(claimId)}`),
+            apiFetch(`/api/v1/claims/${encodeURIComponent(claimId)}/evidence?${query.toString()}`),
+            apiFetch(`/api/v1/claims/${encodeURIComponent(claimId)}/related?limit=8`).catch(() => []),
+        ]);
+        if (filtersPanel) filtersPanel.hidden = false;
+        const bridge = document.getElementById('evidence-disease-bridge');
+        if (bridge) {
+            bridge.hidden = false;
+            bridge.href = `#condition-explorer?curie=${encodeURIComponent(detail.subject_curie)}`;
+        }
+        const supporting = (evidencePage.items || []).filter(item => item.summary === 'SUPPORTS');
+        const contradictory = (evidencePage.items || []).filter(item => item.summary === 'CONTRADICTS');
+        const inconclusive = (evidencePage.items || []).filter(item => item.summary === 'INCONCLUSIVE');
+        const claimProvenance = (detail.provenance || []).map(step => `<li><strong>${escapeHtml(step.stage)}</strong> · ${escapeHtml(step.resource_name || 'n/a')}${step.retrieved_at ? ` · ${escapeHtml(step.retrieved_at)}` : ''}</li>`).join('') || '<li>No provenance chain is recorded for this claim in the current NosoGraph dataset.</li>';
+        const relatedRows = (related || []).map(item => `<button type="button" class="evidence-related-item" data-action="evidence-explorer-open" data-claim-id="${escapeHtml(item.claim_id)}"><strong>${escapeHtml(item.predicate)}</strong> · ${escapeHtml(item.object_label || item.object_curie)} <small>(${escapeHtml(item.relation)}) · ${escapeHtml(item.evidence_summary)}</small></button>`).join('') || '<p class="condition-empty">No related claims are indexed for this relationship yet.</p>';
+        content.innerHTML = `
+            <header class="evidence-claim-header">
+                <p class="evidence-claim-predicate" aria-label="Relationship type">${escapeHtml(detail.predicate)}</p>
+                <h3>${escapeHtml(detail.subject_label || detail.subject_curie)} → ${escapeHtml(detail.object_label || detail.object_curie)}</h3>
+                <p class="evidence-claim-meta">${escapeHtml(detail.subject_curie)} · ${escapeHtml(detail.object_curie)} · claim ${escapeHtml(detail.claim_id)}</p>
+                <div>${renderEvidencePolarityBadge(detail.evidence_summary)}</div>
+                <div class="evidence-summary-grid" role="list">
+                    <div class="evidence-summary-stat" role="listitem"><strong>${detail.supporting_count || 0}</strong><span>Supporting</span></div>
+                    <div class="evidence-summary-stat" role="listitem"><strong>${detail.contradictory_count || 0}</strong><span>Contradictory</span></div>
+                    <div class="evidence-summary-stat" role="listitem"><strong>${detail.inconclusive_count || 0}</strong><span>Mixed polarity</span></div>
+                    <div class="evidence-summary-stat" role="listitem"><strong>${detail.source_count || 0}</strong><span>Sources</span></div>
+                </div>
+                <p class="condition-explorer-disclaimer">${escapeHtml(detail.disclaimer?.text || 'For research use only.')}</p>
+            </header>
+            <section class="evidence-group" aria-labelledby="evidence-supporting-title">
+                <h4 id="evidence-supporting-title">Supporting evidence</h4>
+                ${supporting.length ? supporting.map(renderEvidenceCard).join('') : '<p class="condition-empty">No supporting evidence is recorded for this claim in the current NosoGraph dataset.</p>'}
+            </section>
+            <section class="evidence-group" aria-labelledby="evidence-contradictory-title">
+                <h4 id="evidence-contradictory-title">Contradictory evidence</h4>
+                ${contradictory.length ? contradictory.map(renderEvidenceCard).join('') : '<p class="condition-empty">No contradictory evidence is recorded for this claim in the current NosoGraph dataset.</p>'}
+            </section>
+            ${inconclusive.length ? `<section class="evidence-group" aria-labelledby="evidence-inconclusive-title"><h4 id="evidence-inconclusive-title">Inconclusive evidence</h4>${inconclusive.map(renderEvidenceCard).join('')}</section>` : ''}
+            <section class="evidence-group" aria-labelledby="evidence-provenance-title">
+                <h4 id="evidence-provenance-title">Provenance timeline</h4>
+                <ol class="evidence-provenance-chain">${claimProvenance}</ol>
+            </section>
+            <section class="evidence-group" aria-labelledby="evidence-related-title">
+                <h4 id="evidence-related-title">Related claims</h4>
+                <div class="evidence-related-list">${relatedRows}</div>
+            </section>
+            <p><a href="/api/v1/claims/${encodeURIComponent(claimId)}" target="_blank" rel="noopener">JSON export ↗</a> · <a href="https://github.com/AdamEddahmouni/nosograph/issues" target="_blank" rel="noopener noreferrer">Report data issue ↗</a></p>`;
+        syncEvidenceExplorerUrl(claimId);
+    } catch (error) {
+        const message = error.message || 'Unknown error';
+        const statusHint = message.includes('404') ? 'Claim not found or not imported into the biomed store.' : 'Could not load claim evidence.';
+        content.innerHTML = `<p class="condition-empty">${escapeHtml(statusHint)} ${escapeHtml(message)}</p>`;
+    } finally {
+        setEvidenceExplorerBusy(false);
+    }
+}
+
+async function openEvidenceExplorer(claimId) {
+    if (!claimId) return;
+    window.location.hash = 'evidence-explorer';
+    await loadEvidenceExplorerClaim(claimId);
+}
+
+function initEvidenceExplorer() {
+    const loadBtn = document.getElementById('evidence-explorer-load-btn');
+    const input = document.getElementById('evidence-claim-input');
+    loadBtn?.addEventListener('click', () => {
+        const value = (input?.value || '').trim();
+        if (!value) return;
+        if (/^MONDO:/i.test(value) || /^HP:/i.test(value)) {
+            window.location.hash = 'condition-explorer';
+            void renderConditionExplorer(value);
+            return;
+        }
+        void openEvidenceExplorer(value);
+    });
+    input?.addEventListener('keydown', event => {
+        if (event.key === 'Enter') loadBtn?.click();
+    });
+    const params = new URLSearchParams(window.location.search);
+    const direction = params.get('evidence_direction');
+    const species = params.get('evidence_species');
+    const sort = params.get('evidence_sort');
+    if (direction) document.getElementById('evidence-filter-direction').value = direction;
+    if (species) document.getElementById('evidence-filter-species').value = species;
+    if (sort) document.getElementById('evidence-filter-sort').value = sort;
+}
+
+function updateEvidenceExplorerDiseaseBridge() {
+    const link = document.getElementById('hero-evidence-link');
+    const diseaseId = getActiveDisease();
+    const curie = DISEASE_TO_MONDO_MAP[diseaseId];
+    if (link && curie) {
+        link.href = `#condition-explorer?curie=${encodeURIComponent(curie)}`;
+        link.title = `Browse claims for ${curie}`;
     }
 }
 
@@ -4537,6 +4745,7 @@ function updateDiseaseDisplay() {
     if (nameEl) nameEl.textContent = info.name;
     const badgeEl = document.getElementById('hero-disease-badge');
     if (badgeEl) badgeEl.textContent = `🦠 ${info.label}`;
+    updateEvidenceExplorerDiseaseBridge();
 }
 
 // ── Bootstrap ────────────────────────────────────────────────────────────
@@ -4587,6 +4796,21 @@ function setupDashboardActions() {
             case 'compare-with-condition': {
                 const curie = control.dataset.conditionCurie;
                 if (curie) openConditionComparison(curie, '', control.dataset.conditionLabel || curie, '');
+                break;
+            }
+            case 'evidence-explorer-open': {
+                const claimId = control.dataset.claimId;
+                if (claimId) void openEvidenceExplorer(claimId);
+                break;
+            }
+            case 'evidence-explorer-load': {
+                const input = document.getElementById('evidence-claim-input');
+                const value = (input?.value || '').trim();
+                if (value) void openEvidenceExplorer(value);
+                break;
+            }
+            case 'evidence-filter-change': {
+                if (activeEvidenceClaimId) void loadEvidenceExplorerClaim(activeEvidenceClaimId);
                 break;
             }
             default: break;
@@ -4863,6 +5087,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await refreshModuleMetadata();
     initKGExplorer();
     initConditionExplorer();
+    initEvidenceExplorer();
     initConditionComparison();
     initGraphAnalytics();
     initMultiDiseaseCytoscape();

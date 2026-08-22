@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections import deque
 from uuid import UUID
 
+from med_research.biomed.evidence_quality import derive_evidence_quality
 from med_research.biomed.legacy.compat import legacy_projection_enabled
 from med_research.biomed.legacy.manifest import LEGACY_DISEASE_MONDO_MAP
 from med_research.biomed.models import (
@@ -26,10 +27,13 @@ from med_research.web.models.universal import (
     EntityMappingView,
     EntitySummaryView,
     EntityTypeLiteral,
+    EvidenceQualityView,
+    EvidenceSummaryLiteral,
     HierarchyNode,
     ImportReportView,
     PagedResponse,
     ReadinessBadge,
+    RelatedClaimView,
     ResearchDisclaimer,
     SnapshotSummary,
 )
@@ -219,6 +223,10 @@ def get_claim_detail(repository: BiomedicalRepository, claim_id: UUID) -> ClaimD
     ]
     summary = _evidence_summary(supporting, contradictory)
     provenance = _claim_provenance_steps(repository, claim_view)
+    source_ids = {item.snapshot_id for item in claim_view.evidence}
+    inconclusive_count = 0
+    if supporting and contradictory:
+        inconclusive_count = len(supporting) + len(contradictory)
     return ClaimDetailView(
         claim_id=claim_view.claim.id,
         predicate=claim_view.claim.predicate.value,
@@ -228,6 +236,10 @@ def get_claim_detail(repository: BiomedicalRepository, claim_id: UUID) -> ClaimD
         object_label=_entity_label(repository, claim_view.object_curie),
         qualifiers=dict(claim_view.claim.qualifiers),
         evidence_summary=summary,
+        supporting_count=len(supporting),
+        contradictory_count=len(contradictory),
+        inconclusive_count=inconclusive_count,
+        source_count=len(source_ids),
         supporting_evidence=supporting,
         contradictory_evidence=contradictory,
         provenance=provenance,
@@ -236,12 +248,85 @@ def get_claim_detail(repository: BiomedicalRepository, claim_id: UUID) -> ClaimD
 
 
 def list_claim_evidence(
-    repository: BiomedicalRepository, claim_id: UUID
-) -> list[ClaimEvidenceDetailView]:
+    repository: BiomedicalRepository,
+    claim_id: UUID,
+    *,
+    direction: EvidenceDirection | None = None,
+    evidence_type: str | None = None,
+    source_name: str | None = None,
+    species_context: str | None = None,
+    sort: str = "newest",
+    limit: int = 50,
+    offset: int = 0,
+) -> PagedResponse[ClaimEvidenceDetailView]:
+    claim_view = repository.get_claim_by_id(claim_id)
+    if claim_view is None:
+        return PagedResponse(
+            items=[],
+            total=0,
+            limit=limit,
+            offset=offset,
+            disclaimer=_DISCLAIMER,
+        )
+    items = [_evidence_detail_view(repository, item) for item in claim_view.evidence]
+    if direction is not None:
+        items = [item for item in items if item.direction == direction.value]
+    if evidence_type:
+        needle = evidence_type.lower()
+        items = [item for item in items if needle in (item.evidence_type or "").lower()]
+    if source_name:
+        needle = source_name.lower()
+        items = [item for item in items if needle in (item.source_name or "").lower()]
+    if species_context:
+        needle = species_context.lower()
+        items = [item for item in items if item.quality.species_context.lower() == needle]
+    if sort == "oldest":
+        items.sort(key=lambda item: item.publication_date or "")
+    elif sort == "source":
+        items.sort(key=lambda item: (item.source_name, item.source_record_id))
+    else:
+        items.sort(key=lambda item: item.publication_date or "", reverse=True)
+    total = len(items)
+    page_items = items[offset : offset + limit]
+    return PagedResponse(
+        items=page_items,
+        total=total,
+        limit=limit,
+        offset=offset,
+        disclaimer=_DISCLAIMER,
+    )
+
+
+def list_related_claims(
+    repository: BiomedicalRepository,
+    claim_id: UUID,
+    *,
+    limit: int = 20,
+) -> list[RelatedClaimView]:
     claim_view = repository.get_claim_by_id(claim_id)
     if claim_view is None:
         return []
-    return [_evidence_detail_view(repository, item) for item in claim_view.evidence]
+    subject_curie = claim_view.subject_curie
+    object_curie = claim_view.object_curie
+    related: list[RelatedClaimView] = []
+    seen: set[UUID] = {claim_id}
+    for candidate in repository.list_claims(subject_curie):
+        if candidate.claim.id in seen:
+            continue
+        seen.add(candidate.claim.id)
+        relation = "same_subject"
+        related.append(_related_claim_view(repository, candidate, relation))
+        if len(related) >= limit:
+            break
+    if len(related) < limit:
+        for candidate in repository.list_claims_by_object(object_curie):
+            if candidate.claim.id in seen:
+                continue
+            seen.add(candidate.claim.id)
+            related.append(_related_claim_view(repository, candidate, "same_object"))
+            if len(related) >= limit:
+                break
+    return related[:limit]
 
 
 def get_claim_provenance(
@@ -257,7 +342,7 @@ def get_claim_provenance(
 def _evidence_summary(
     supporting: list[ClaimEvidenceDetailView],
     contradictory: list[ClaimEvidenceDetailView],
-) -> str:
+) -> EvidenceSummaryLiteral:
     if supporting and contradictory:
         return "INCONCLUSIVE"
     if supporting:
@@ -282,7 +367,9 @@ def _evidence_detail_view(
     evidence: ClaimEvidence,
 ) -> ClaimEvidenceDetailView:
     direction = evidence.direction
-    summary = "SUPPORTS" if direction is EvidenceDirection.SUPPORTING else "CONTRADICTS"
+    summary: EvidenceSummaryLiteral = (
+        "SUPPORTS" if direction is EvidenceDirection.SUPPORTING else "CONTRADICTS"
+    )
     snapshot = repository.get_snapshot(evidence.snapshot_id)
     provenance = [
         ClaimProvenanceStepView(
@@ -318,7 +405,9 @@ def _evidence_detail_view(
         snapshot_id=evidence.snapshot_id,
         source_record_id=evidence.source_record_id,
         source_url=evidence.source_url or "",
+        source_name=snapshot.resource_name if snapshot else "",
         evidence_type=evidence.evidence_type or "",
+        population=evidence.population or "",
         confidence=evidence.confidence_score
         if evidence.confidence_score is not None
         else evidence.confidence,
@@ -328,7 +417,55 @@ def _evidence_detail_view(
         extraction_method=evidence.extraction_method or "",
         publication_date=evidence.publication_date or "",
         limitations=list(evidence.limitations),
+        quality=_quality_view(evidence),
         provenance=provenance,
+    )
+
+
+def _quality_view(evidence: ClaimEvidence) -> EvidenceQualityView:
+    quality = derive_evidence_quality(evidence)
+    return EvidenceQualityView(
+        species_context=quality.species_context,
+        study_design=quality.study_design,
+        sample_size=quality.sample_size,
+        sample_size_context=quality.sample_size_context,
+        replication=quality.replication,
+        effect_direction=quality.effect_direction,
+        statistical_quality=quality.statistical_quality,
+        directness=quality.directness,
+        source_quality=quality.source_quality,
+        recency=quality.recency,
+        human_review=quality.human_review,
+        contradiction_burden=quality.contradiction_burden,
+        origin_class=quality.origin_class,
+        limitations=list(quality.limitations),
+    )
+
+
+def _related_claim_view(
+    repository: BiomedicalRepository,
+    claim_view: ClaimView,
+    relation: str,
+) -> RelatedClaimView:
+    supporting = [
+        item for item in claim_view.evidence if item.direction is EvidenceDirection.SUPPORTING
+    ]
+    contradictory = [
+        item for item in claim_view.evidence if item.direction is EvidenceDirection.CONTRADICTORY
+    ]
+    summary = _evidence_summary(
+        [_evidence_detail_view(repository, item) for item in supporting],
+        [_evidence_detail_view(repository, item) for item in contradictory],
+    )
+    return RelatedClaimView(
+        claim_id=claim_view.claim.id,
+        predicate=claim_view.claim.predicate.value,
+        subject_curie=claim_view.subject_curie,
+        object_curie=claim_view.object_curie,
+        subject_label=_entity_label(repository, claim_view.subject_curie),
+        object_label=_entity_label(repository, claim_view.object_curie),
+        relation=relation,
+        evidence_summary=summary,
     )
 
 

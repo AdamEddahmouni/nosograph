@@ -459,6 +459,17 @@ class _FixtureBackend:
                 },
             )
             return
+        if path.startswith("/api/v1/biomed/structures/"):
+            self._fulfill(
+                route,
+                {
+                    "uniprot_id": "P01375",
+                    "pdb_id": "1ABC",
+                    "chains": ["A"],
+                    "viewer_payload": {"atoms": []},
+                },
+            )
+            return
         responses = {
             "/api/system/diseases": {
                 "diseases": [{"id": "sle", "name": "Systemic Lupus Erythematosus"}]

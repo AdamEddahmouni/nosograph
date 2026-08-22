@@ -26,9 +26,9 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 | Item | Target release | Status |
 |------|----------------|--------|
-| Evidence Explorer (claim → evidence → provenance → source) | v2.4.0 | PLANNED |
-| Evidence Quality Model (structured dimensions) | v2.4.0 | PLANNED |
-| Playwright / UI reliability fixes | v2.4.0 | PLANNED |
+| Evidence Explorer (claim → evidence → provenance → source) | v2.4.0 | IN_PROGRESS (Wave 1 branch) |
+| Evidence Quality Model (structured dimensions) | v2.4.0 | IN_PROGRESS (ADR-001 implemented) |
+| Playwright / UI reliability fixes | v2.4.0 | IN_PROGRESS (local green; hosted proof pending) |
 | NosoGraph Compare V2 (2–5 diseases, exports, drill-down) | v2.5.0 | PLANNED |
 | Tier-gated Atlas navigation | v2.5.0 | PLANNED |
 

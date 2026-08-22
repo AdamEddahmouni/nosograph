@@ -116,6 +116,7 @@ python_functions = ["test_*"]
 addopts = "-v --tb=short --color=auto -n auto --dist=loadscope"
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "browser: deterministic Playwright UI tests (fixture-backed, no live APIs)",
     "unit: fast offline tests (explicit on test modules; auto-applied fallback in tests/conftest.py)",
     "integration: auto-applied under tests/integration/ (see tests/integration/conftest.py)",
     "network: requires live external APIs (excluded from the PR docking check)",
