@@ -2,9 +2,10 @@
 
 import logging
 from datetime import datetime
-from importlib.metadata import version
 from pathlib import Path
 from typing import Annotated, Any
+
+from med_research import __version__
 
 import redis
 from fastapi import APIRouter, Depends, Query
@@ -41,7 +42,7 @@ async def health() -> dict[str, Any]:
     """Health check endpoint."""
     return {
         "status": "ok",
-        "version": version("med-research"),
+        "version": __version__,
         "timestamp": datetime.now().isoformat(),
     }
 
@@ -112,7 +113,7 @@ async def ready() -> JSONResponse | dict[str, Any]:
 
     payload = {
         "status": overall,
-        "version": version("med-research"),
+        "version": __version__,
         "timestamp": datetime.now().isoformat(),
         "components": components,
     }

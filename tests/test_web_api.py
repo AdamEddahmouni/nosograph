@@ -14,13 +14,13 @@ Tests cover all REST endpoints using FastAPI's TestClient:
 
 import importlib.util
 import socket
-from importlib.metadata import PackageNotFoundError, version
 from unittest.mock import patch
 
 import pytest
 from fastapi.testclient import TestClient
 from starlette.websockets import WebSocketDisconnect
 
+from med_research import __version__
 from med_research.web.main import app
 
 pytestmark = pytest.mark.unit
@@ -74,11 +74,7 @@ class TestSystemEndpoints:
         assert resp.status_code == 200
         data = resp.json()
         assert data["status"] == "ok"
-        try:
-            expected_version = version("med-research")
-        except PackageNotFoundError:
-            expected_version = "2.2.0"
-        assert data["version"] == expected_version
+        assert data["version"] == __version__
         assert "timestamp" in data
 
     def test_cors_header_present(self, client):

@@ -18,6 +18,6 @@ The `web`, `worker`, and `beat` services are behind Compose profile **`full`**. 
 
 Local evaluation builds pass `DOCKER_SKIP_DISEASE_VALIDATE=1` so image build does not run strict validation across 10,407 modules (that gate is expected to fail on scaffolds). This does **not** disable API keys or production `DEBUG=false` rules.
 
-Image name remains `med-research:latest` for compatibility.
+Compose project name is `nosograph` (container names like `nosograph-web-1`). The image tag remains `med-research:latest` as an internal/compatibility name matching the Python distribution; it is not a public rename of NosoGraph.
 
 Production hardening: [deployment](../developers/deployment.md)
