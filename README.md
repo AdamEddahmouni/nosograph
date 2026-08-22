@@ -77,7 +77,7 @@ Evidence records support claims; they are not automatic proof. Supporting and co
 | FastAPI API + dashboard | **Beta** | Local research interface and documented API routes |
 | Evidence Explorer | **Public Alpha** | Claim → evidence → provenance → source inspection; included in v0.1.0 |
 | Evidence Workspace | **Beta** | Multi-source evidence, claims, and ranked research hypotheses |
-| NosoGraph Compare | **Experimental** | Initial multidimensional comparison with explicit missingness |
+| NosoGraph Compare | **Experimental** | Deterministic 2–5-condition backend/API with explicit missingness; V2 UI and exports pending |
 | Source synchronization | **Experimental** | Open Targets vertical slice and sync lifecycle |
 | Public hosted demo | **Planned** | Not deployed |
 | Optional LLM enrichment | **Experimental** | Not required for deterministic core workflows |

@@ -408,6 +408,79 @@ class NosoGraphCompareRequest(BaseModel):
     )
 
 
+class NosoGraphCompareV2Request(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    condition_curies: list[str]
+    dimensions: list[str] | None = None
+
+
+class CompareWarningView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    code: str
+    dimension: str
+    condition_curies: list[str] = Field(default_factory=list)
+    counts: dict[str, int] = Field(default_factory=dict)
+    message: str
+    entity_curie: str | None = None
+
+
+class ConditionCoverageView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    positive_claim_count: int = 0
+    negated_claim_count: int = 0
+    claim_count: int = 0
+    evidence_count: int = 0
+    source_count: int = 0
+    snapshot_count: int = 0
+    snapshot_ids: list[UUID] = Field(default_factory=list)
+    source_names: list[str] = Field(default_factory=list)
+
+
+class SubsetMembershipView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    entity_curie: str
+    condition_curies: list[str] = Field(default_factory=list)
+
+
+class EntityStateRowView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    entity_curie: str
+    states: dict[str, str] = Field(default_factory=dict)
+
+
+class DimensionComparisonView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    dimension: str
+    shared_by_all: list[str] = Field(default_factory=list)
+    shared_by_subset: list[SubsetMembershipView] = Field(default_factory=list)
+    unique_by_condition: dict[str, list[str]] = Field(default_factory=dict)
+    entities: list[EntityStateRowView] = Field(default_factory=list)
+    coverage_by_condition: dict[str, ConditionCoverageView] = Field(default_factory=dict)
+    warnings: list[CompareWarningView] = Field(default_factory=list)
+
+
+class NosoGraphCompareV2ResultView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    run_id: UUID
+    status: ComparisonStatusLiteral
+    condition_curies: list[str] = Field(default_factory=list)
+    dimensions: list[str] = Field(default_factory=list)
+    dimension_results: list[DimensionComparisonView] = Field(default_factory=list)
+    curation_warnings: list[CompareWarningView] = Field(default_factory=list)
+    snapshot_ids: list[UUID] = Field(default_factory=list)
+    claim_set_fingerprint: str = ""
+    algorithm_id: str = "nosograph-compare-v2"
+    algorithm_version: str = "2.0.0"
+    disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
+
+
 class DimensionMissingDataView(BaseModel):
     model_config = ConfigDict(frozen=True)
 

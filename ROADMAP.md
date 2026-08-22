@@ -36,7 +36,7 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 | Evidence Explorer (claim → evidence → provenance → source) | v0.1.0 | INCLUDED_IN_V0.1.0 |
 | Evidence Quality Model (structured dimensions) | v0.1.0 | INCLUDED_IN_V0.1.0 |
 | Playwright / UI reliability fixes | v0.1.0 | INCLUDED_IN_V0.1.0 (hosted validated) |
-| NosoGraph Compare V2 (2–5 diseases, exports, drill-down) | v0.2.0 | PLANNED |
+| NosoGraph Compare V2 | v0.2.0 | BACKEND_COMPLETE; UI, exports, and drill-down planned |
 | Tier-gated Atlas navigation | v0.2.0 | PLANNED |
 
 ---

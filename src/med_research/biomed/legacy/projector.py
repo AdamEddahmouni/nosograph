@@ -62,6 +62,24 @@ def project_disease(disease_id: str, *, snapshot_id: UUID) -> DiseaseProjection:
             "file_checksums": legacy_file_checksums(disease_id),
         },
     )
+    condition = Entity(
+        id=entity_uuid(EntityType.CONDITION, mondo_curie),
+        primary_curie=mondo_curie,
+        entity_type=EntityType.CONDITION,
+        created_in_snapshot_id=snapshot_id,
+    )
+    projection.entities.append(condition)
+    projection.revisions.append(
+        EntityRevision(
+            id=entity_revision_uuid(condition.id, snapshot_id),
+            entity_id=condition.id,
+            snapshot_id=snapshot_id,
+            label=profile.name,
+            description=profile.description,
+            source_record_id="profile.json",
+            audit={"legacy_id": disease_id},
+        )
+    )
 
     node_registry = _NodeRegistry(disease_id, mondo_curie, profile.kg_node_id, profile.name)
     _register_genes(disease, projection, snapshot_id, node_registry)

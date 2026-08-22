@@ -108,6 +108,8 @@ Versioned read-only condition endpoints backed by the canonical biomedical store
 | GET | `/api/v1/conditions/{curie}/claims` | Claims with optional `predicate` and `evidence_direction` filters |
 | GET | `/api/v1/snapshots` | List resource snapshots with active flags |
 | GET | `/api/v1/snapshots/{snapshot_id}/report` | Import report metadata for a snapshot |
+| POST | `/api/v1/nosograph/comparisons` | Deterministically compare 2–5 conditions across evidence-aware dimensions |
+| POST | `/api/v1/nosograph/compare` | Deprecated two-condition projection of Compare V2 (`mechanism` maps to `pathway`) |
 | POST | `/api/v1/comparisons` | Compare two condition CURIEs and persist a research run |
 | GET | `/api/v1/comparisons/{run_id}` | Fetch a persisted comparison research run |
 | GET | `/api/v1/analytics/stats` | Overall biomedical store summary statistics and entity/predicate distributions |
@@ -125,11 +127,20 @@ curl "http://127.0.0.1:8000/api/v1/conditions/MONDO:0007915"
 curl "http://127.0.0.1:8000/api/v1/conditions/MONDO:0007915/hierarchy?depth=2"
 curl "http://127.0.0.1:8000/api/v1/conditions/MONDO:0007915/claims?predicate=HAS_PHENOTYPE&limit=20"
 curl "http://127.0.0.1:8000/api/v1/snapshots?resource=mondo"
+curl -X POST "http://127.0.0.1:8000/api/v1/nosograph/comparisons" \
+  -H "Content-Type: application/json" \
+  -d '{"condition_curies":["MONDO:0007915","MONDO:0008390"],"dimensions":["phenotype","gene","pathway","treatment","evidence_coverage"]}'
 curl -X POST "http://127.0.0.1:8000/api/v1/comparisons" \
   -H "Content-Type: application/json" \
   -d '{"left_curie":"MONDO:0007915","right_curie":"MONDO:0008390"}'
 curl "http://127.0.0.1:8000/api/v1/comparisons/{run_id}"
 ```
+
+For the complete Compare V2 request, response, warning, replay, and missingness contract, see
+[NosoGraph Compare](using/compare.md). The V2 endpoint persists its own
+`nosograph_compare_v2` run and returns that run ID in the response; the scored comparison lookup
+at `GET /api/v1/comparisons/{run_id}` only retrieves runs created by the separate scored
+`POST /api/v1/comparisons` endpoint.
 
 CLI comparison and graph analytics:
 

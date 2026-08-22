@@ -16,6 +16,10 @@ updates:
     ignore:
       - dependency-name: "rdkit"
         update-types: ["version-update:semver-major"]
+      # Kombu 5.6.x (via celery[redis]) requires redis<6.5. Without this
+      # guard Dependabot attempts an unresolvable Redis 8 lock update.
+      - dependency-name: "redis"
+        versions: [">=6.5"]
 
   - package-ecosystem: github-actions
     directory: "/"
