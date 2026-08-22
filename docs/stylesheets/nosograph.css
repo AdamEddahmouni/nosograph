@@ -132,10 +132,10 @@ body:has(.ng-homepage) .md-main__inner { max-width: 100%; }
 .ng-dark .ng-lede { color: var(--ng-mist); }
 .ng-gradient-text { background: linear-gradient(110deg, var(--ng-teal), var(--ng-blue) 50%, var(--ng-violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
-.ng-hero { position: relative; padding-top: clamp(4rem, 9vw, 8rem) !important; padding-bottom: clamp(3rem, 7vw, 6rem) !important; background: var(--ng-deep-navy); }
+.ng-hero { position: relative; container-type: inline-size; padding-top: clamp(4rem, 9vw, 8rem) !important; padding-bottom: clamp(3rem, 7vw, 6rem) !important; background: var(--ng-deep-navy); }
 .ng-hero::after { position: absolute; inset: 0 0 auto 50%; width: 50%; height: 100%; background: radial-gradient(circle at 65% 35%, rgba(47, 134, 255, 0.18), transparent 54%); content: ""; pointer-events: none; }
-.ng-hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
-.ng-hero h1 { margin: 0.4rem 0 0.7rem; color: var(--ng-white); font-size: clamp(3.2rem, 8vw, 6.6rem); line-height: 0.98; }
+.ng-hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr); gap: clamp(1.25rem, 3vw, 3rem); align-items: center; }
+.ng-hero h1 { margin: 0.4rem 0 0.7rem; color: var(--ng-white); font-size: clamp(3.2rem, 5vw, 6rem); line-height: 0.98; white-space: nowrap; }
 .ng-hero h2 { margin: 0 0 1.2rem; color: var(--ng-teal); font-size: clamp(1.4rem, 2.8vw, 2.5rem); line-height: 1.15; }
 .ng-hero .ng-lede { color: var(--ng-mist); }
 .ng-hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
@@ -259,6 +259,11 @@ body:has(.ng-homepage) .md-main__inner { max-width: 100%; }
 .ng-footer { padding: 1.5rem clamp(1rem, 4vw, 3rem) !important; color: #aebdd2; background: #061025; font-size: 0.76rem; }
 .ng-footer-inner { display: flex; flex-wrap: wrap; gap: 0.7rem 1.3rem; justify-content: space-between; align-items: center; }
 .ng-footer a { color: var(--ng-mist); }
+
+@container (max-width: 950px) {
+  .ng-hero-grid { grid-template-columns: 1fr; }
+  .ng-hero-graph { max-width: 760px; }
+}
 
 @media (max-width: 900px) {
   .ng-hero-grid,

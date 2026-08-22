@@ -27,7 +27,7 @@ Open-source research software for connecting disease knowledge, evidence, and pr
 
 ## At a glance
 
-**NosoGraph v2.4.0 · Public Alpha · snapshot 2026-08-22**
+**NosoGraph v0.1.0 · Public Alpha · snapshot 2026-08-22**
 
 | Repository-backed snapshot | Value |
 |---|---:|
@@ -36,7 +36,7 @@ Open-source research software for connecting disease knowledge, evidence, and pr
 | Reference modules | 6 |
 | CI-validated modules | 8 |
 | Analysis pipelines | 40+ |
-| Offline tests in the v2.4.0 suite | 2,391 |
+| Offline tests in the v0.1.0 suite | 2,391 |
 
 These values come from [`docs/generated/public-status.yaml`](docs/generated/public-status.yaml). **Registry breadth is not curation depth**: most registry modules are scaffolds.
 
@@ -74,7 +74,7 @@ Evidence records support claims; they are not automatic proof. Supporting and co
 |---|---|---|
 | `nosograph` CLI | **Stable** | Explore, validate, sync, analyze, and serve locally |
 | FastAPI API + dashboard | **Beta** | Local research interface and documented API routes |
-| Evidence Explorer | **Public Alpha** | Claim → evidence → provenance → source inspection; shipped in v2.4.0 |
+| Evidence Explorer | **Public Alpha** | Claim → evidence → provenance → source inspection; included in v0.1.0 |
 | Evidence Workspace | **Beta** | Multi-source evidence, claims, and ranked research hypotheses |
 | NosoGraph Compare | **Experimental** | Initial multidimensional comparison with explicit missingness |
 | Source synchronization | **Experimental** | Open Targets vertical slice and sync lifecycle |
@@ -97,7 +97,7 @@ Open http://localhost:8000. Requires Docker Compose v2. The `full` profile start
 
 ### CLI / contributor setup
 
-The product CLI is `nosograph`. The installable Python distribution and import path remain `med-research` / `med_research` for v2.x compatibility.
+The product CLI is `nosograph`. The installable Python distribution and import path remain `med-research` / `med_research` throughout the public-alpha compatibility period.
 
 ```bash
 python -m venv .venv
@@ -177,10 +177,10 @@ Cite the repository through GitHub’s citation UI or [`CITATION.cff`](CITATION.
 ```bibtex
 @software{nosograph2026,
   title   = {NosoGraph: Disease Intelligence. Connected.},
-  author  = {{NosoGraph contributors}},
+  author  = {Eddahmouni, Adam and NosoGraph contributors},
   year    = {2026},
   url     = {https://github.com/AdamEddahmouni/nosograph},
-  version = {2.4.0}
+  version = {0.1.0}
 }
 ```
 

@@ -18,6 +18,6 @@ Propose a source with license/terms, identifier scheme, and research value. See 
 
 Show and tell for tools, notebooks, and analyses. No PHI. Label hypotheses as research prioritization.
 
-## NosoGraph v2.3.0 public-alpha discussion
+## NosoGraph v0.1.0 public-alpha discussion
 
-Thread for the v2.3.0 release: disease-general core, 88/88 L2 strict, Compare slice, provenance APIs. Known gaps: hosted demo, package rename, UX polish.
+Thread for the v0.1.0 public-alpha baseline: disease-general core, 88/88 L2 strict, Evidence Explorer, Compare slice, provenance APIs, and the canonical public front door. Known gaps: hosted demo, package rename, and UX polish.

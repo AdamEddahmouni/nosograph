@@ -15,7 +15,7 @@ Inspect phenotypes, genes, mechanisms, pathways, treatments, trials, and literat
 
 ## Compare diseases
 
-Compare conditions on multiple dimensions. Comparison in v2.4.0 remains an experimental initial slice.
+Compare conditions on multiple dimensions. Comparison in v0.1.0 remains an experimental initial slice.
 
 ## Trace claims
 

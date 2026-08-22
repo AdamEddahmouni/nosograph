@@ -213,6 +213,27 @@ jobs:
       - name: Run offline integration tests
         run: python -m pytest tests/ -m "integration and not slow" -q --tb=short -n 0
 
+  required-tests:
+    name: Tests
+    if: always()
+    needs: [lint, security, test, integration-tests]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify required jobs succeeded
+        env:
+          REQUIRED_RESULTS: ${{ toJSON(needs) }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import sys
+
+          jobs = json.loads(os.environ["REQUIRED_RESULTS"])
+          results = {name: details["result"] for name, details in jobs.items()}
+          print(results)
+          sys.exit(0 if all(result == "success" for result in results.values()) else 1)
+          PY
+
   slow-tests:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest

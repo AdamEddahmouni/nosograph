@@ -2,7 +2,7 @@
 
 ## Project name
 
-**NosoGraph** — *The Open Computational Map of Human Disease*
+**NosoGraph** — *Disease Intelligence. Connected.*
 
 ## Mission
 

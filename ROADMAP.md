@@ -2,9 +2,9 @@
 
 Status key: **STABLE** | **BETA** | **EXPERIMENTAL** | **PROTOTYPE** | **PLANNED** | **NOT_IMPLEMENTED**
 
-## Current release (v2.4.0 — Evidence Explorer)
+## Current release (v0.1.0 — Public-Alpha Baseline)
 
-Shipped in v2.4.0 (2026-08-22):
+Included in v0.1.0 (2026-08-22; originally developed on the legacy v2.4.0 prototype line):
 
 - [x] Evidence Explorer (claim → evidence → provenance → source workflow)
 - [x] Evidence Quality Model (ADR-001 structured dimensions)
@@ -33,11 +33,11 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 | Item | Target release | Status |
 |------|----------------|--------|
-| Evidence Explorer (claim → evidence → provenance → source) | v2.4.0 | SHIPPED_IN_V2.4.0 |
-| Evidence Quality Model (structured dimensions) | v2.4.0 | SHIPPED_IN_V2.4.0 |
-| Playwright / UI reliability fixes | v2.4.0 | SHIPPED_IN_V2.4.0 (hosted validated) |
-| NosoGraph Compare V2 (2–5 diseases, exports, drill-down) | v2.5.0 | PLANNED |
-| Tier-gated Atlas navigation | v2.5.0 | PLANNED |
+| Evidence Explorer (claim → evidence → provenance → source) | v0.1.0 | INCLUDED_IN_V0.1.0 |
+| Evidence Quality Model (structured dimensions) | v0.1.0 | INCLUDED_IN_V0.1.0 |
+| Playwright / UI reliability fixes | v0.1.0 | INCLUDED_IN_V0.1.0 (hosted validated) |
+| NosoGraph Compare V2 (2–5 diseases, exports, drill-down) | v0.2.0 | PLANNED |
+| Tier-gated Atlas navigation | v0.2.0 | PLANNED |
 
 ---
 
@@ -63,8 +63,8 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 | Research Workbench (full investigations) | PLANNED |
 | Temporal disease trajectories | PLANNED |
 | Computational model registry | NOT_IMPLEMENTED |
-| Package rename (`med-research` → `nosograph` on PyPI) | PLANNED v3.0 |
-| Official NosoGraph logo & public documentation site | IN_PROGRESS (Pages enablement may be manual) |
+| Package rename (`med-research` → `nosograph` on PyPI) | PLANNED before v1.0.0 |
+| Official NosoGraph logo & public documentation site | INCLUDED_IN_V0.1.0 |
 | GitHub Discussions Q&A | PLANNED (seed copy in docs/project/github-discussions-seed.md) |
 
 ---

@@ -2,7 +2,7 @@
 
 ## NosoGraph name
 
-**NosoGraph** is the product name for this open-source project: *The Open Computational Map of Human Disease*.
+**NosoGraph** is the product name for this open-source project: *Disease Intelligence. Connected.*
 
 ## Permitted uses
 
@@ -29,7 +29,7 @@ During the transition from `med-research`:
 
 ## Logo
 
-No official logo is bundled in this release. Community contributions welcome via issue discussion.
+The canonical logo assets are versioned in `docs/assets/brand/`. Community adaptations must not imply official endorsement.
 
 ## Questions
 

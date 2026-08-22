@@ -11,13 +11,6 @@ on:
       - "README.md"
       - ".github/workflows/docs.yml"
   pull_request:
-    paths:
-      - "docs/**"
-      - "mkdocs.yml"
-      - "docs-theme/**"
-      - "requirements-docs.txt"
-      - "README.md"
-      - ".github/workflows/docs.yml"
   workflow_dispatch:
 
 concurrency:
@@ -26,6 +19,7 @@ concurrency:
 
 jobs:
   build:
+    name: Documentation
     runs-on: ubuntu-latest
     permissions:
       contents: read

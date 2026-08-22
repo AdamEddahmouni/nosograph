@@ -31,7 +31,7 @@ AUTH_TRUSTED_PROXY_IPS = os.environ.get("AUTH_TRUSTED_PROXY_IPS", "")
 API_TITLE = "NosoGraph API"
 API_VERSION = __version__
 API_DESCRIPTION = (
-    "REST API for NosoGraph — The Open Computational Map of Human Disease. "
+    "REST API for NosoGraph — Disease Intelligence. Connected. "
     "Provides programmatic access to knowledge graph queries, drug repurposing "
     "scoring, bioinformatics analyses, literature mining, virtual screening, "
     "clinical trial tracking, and ML-driven target prediction across multiple diseases."

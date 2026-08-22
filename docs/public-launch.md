@@ -1,6 +1,6 @@
 # Public readiness (evergreen)
 
-The GitHub repository is public at [AdamEddahmouni/nosograph](https://github.com/AdamEddahmouni/nosograph). Current release: **v2.4.0**. Current maturity: **Public Alpha**.
+The GitHub repository is public at [AdamEddahmouni/nosograph](https://github.com/AdamEddahmouni/nosograph). Current release: **v0.1.0**. Current maturity: **Public Alpha**.
 
 Use this page for future public-readiness reviews. Historical launch checklists remain in [audits/public-launch-v2.2-checklist.md](audits/public-launch-v2.2-checklist.md).
 

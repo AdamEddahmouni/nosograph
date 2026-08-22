@@ -2,7 +2,7 @@
 
 This guide documents the repeatable workflow for keeping disease modules research-ready before adding new diseases or shipping major pipeline changes.
 
-The registry contains **10,407 disease modules**: **88** L2 pipeline-ready modules (strict-validated at v2.4.0), a small L3 expression-curated set, and more than 10,000 Open Targets auto-generated scaffolds. This playbook applies to the curated set; scaffolds must be curated (below) before they are treated as research-ready.
+The registry contains **10,407 disease modules**: **88** L2 pipeline-ready modules (strict-validated at v0.1.0), a small L3 expression-curated set, and more than 10,000 Open Targets auto-generated scaffolds. This playbook applies to the curated set; scaffolds must be curated (below) before they are treated as research-ready.
 
 ## Validate → coverage → refresh cycle
 

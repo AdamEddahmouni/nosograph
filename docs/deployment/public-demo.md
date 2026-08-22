@@ -1,6 +1,6 @@
 # Public hosted demo (design)
 
-**Status:** NOT deployed. v2.4.0 still identifies the public hosted demo as future work.
+**Status:** NOT deployed. v0.1.0 still identifies the public hosted demo as future work.
 
 ## Goals
 

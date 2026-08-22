@@ -1,3 +1,3 @@
-"""NosoGraph — The Open Computational Map of Human Disease."""
+"""NosoGraph — Disease Intelligence. Connected."""
 
-__version__ = "2.4.0"
+__version__ = "0.1.0"

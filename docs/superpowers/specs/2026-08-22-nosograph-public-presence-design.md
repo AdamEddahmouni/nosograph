@@ -1,6 +1,6 @@
 # NosoGraph Public Presence Design
 
-**Status:** Approved for execution  
+**Status:** Approved for execution
 **Date:** 2026-08-22
 
 ## Goal

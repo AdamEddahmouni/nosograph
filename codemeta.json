@@ -2,13 +2,13 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "name": "NosoGraph",
-  "description": "Open-source, evidence-native computational map connecting human diseases to phenotypes, mechanisms, genes, pathways, treatments, trials, literature, and biomedical evidence.",
+  "description": "Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.",
   "codeRepository": "https://github.com/AdamEddahmouni/nosograph",
   "url": "https://github.com/AdamEddahmouni/nosograph",
   "license": "https://www.apache.org/licenses/LICENSE-2.0",
   "programmingLanguage": "Python",
   "runtimePlatform": "Python 3.11+",
-  "version": "2.4.0",
+  "version": "0.1.0",
   "datePublished": "2026-08-22",
   "applicationCategory": "Research",
   "keywords": [
@@ -21,6 +21,11 @@
     "open-science"
   ],
   "author": {
+    "@type": "Person",
+    "givenName": "Adam",
+    "familyName": "Eddahmouni"
+  },
+  "contributor": {
     "@type": "Organization",
     "name": "NosoGraph contributors"
   },

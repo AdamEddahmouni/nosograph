@@ -161,7 +161,7 @@ description: Open-source research software for connecting disease knowledge, evi
 
 <section class="ng-maturity" aria-labelledby="ng-maturity-title">
   <div class="ng-shell">
-    <div class="ng-status-line"><span class="ng-status-badge">PUBLIC_ALPHA</span><span>Research software under active development. Snapshot: v2.4.0 · 2026-08-22.</span></div>
+    <div class="ng-status-line"><span class="ng-status-badge">PUBLIC_ALPHA</span><span>Research software under active development. Snapshot: v0.1.0 · 2026-08-22.</span></div>
     <h2 id="ng-maturity-title">What exists today—and what does not.</h2>
     <p class="ng-lede">Maturity labels are part of the product. They tell you how to interpret a surface before you use it.</p>
     <div class="ng-maturity-table-wrap">
@@ -170,7 +170,7 @@ description: Open-source research software for connecting disease knowledge, evi
         <tbody>
           <tr><td>Unified <code>nosograph</code> CLI</td><td>Stable</td><td>Task-oriented commands for exploration, validation, sources, analysis, and serving.</td></tr>
           <tr><td>FastAPI API + dashboard</td><td>Beta</td><td>Working local research interface with async jobs and documented API surfaces.</td></tr>
-          <tr><td>Evidence Explorer</td><td>Public alpha · shipped in v2.4.0</td><td>Read-only claim → evidence → provenance → source workflow.</td></tr>
+          <tr><td>Evidence Explorer</td><td>Public alpha · included in v0.1.0</td><td>Read-only claim → evidence → provenance → source workflow.</td></tr>
           <tr><td>Evidence Workspace</td><td>Beta</td><td>Multi-source evidence assembled into claims and ranked hypotheses.</td></tr>
           <tr><td>NosoGraph Compare</td><td>Experimental</td><td>Initial multidimensional comparison with explicit missingness.</td></tr>
           <tr><td>Public hosted demo</td><td>Planned</td><td>Not deployed; local Docker evaluation is the current route.</td></tr>
@@ -185,7 +185,7 @@ description: Open-source research software for connecting disease knowledge, evi
       <div class="ng-stat"><strong>6</strong><span>reference modules</span></div>
       <div class="ng-stat"><strong>8</strong><span>CI-validated modules</span></div>
       <div class="ng-stat"><strong>40+</strong><span>analysis pipelines</span></div>
-      <div class="ng-stat"><strong>2,391</strong><span>offline tests in v2.4.0 suite</span></div>
+      <div class="ng-stat"><strong>2,391</strong><span>offline tests in v0.1.0 suite</span></div>
     </div>
     <p class="ng-footnote">Snapshot source: <a href="generated/public-status.yaml">public-status.yaml</a>. Registry breadth is not curation depth; most registry modules are scaffolds.</p>
   </div>

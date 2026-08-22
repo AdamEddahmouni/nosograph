@@ -3,11 +3,16 @@ title: NosoGraph
 message: "If you use NosoGraph in academic work, please cite this software."
 type: software
 authors:
+  - family-names: Eddahmouni
+    given-names: Adam
+contributors:
   - name: NosoGraph contributors
+    contribution-types:
+      - Other
 repository-code: "https://github.com/AdamEddahmouni/nosograph"
 url: "https://github.com/AdamEddahmouni/nosograph"
 license: Apache-2.0
-version: 2.4.0
+version: 0.1.0
 date-released: "2026-08-22"
 keywords:
   - bioinformatics
@@ -21,15 +26,16 @@ keywords:
   - phenotype
   - provenance
 abstract: >-
-  NosoGraph is an open computational map of human disease — a Python platform
-  combining disease knowledge graphs, universal ontology imports, evidence
-  gathering, and explainable research pipelines. Public alpha; research use
-  only. Registry coverage is not equivalent to curation depth.
+  Disease Intelligence. Connected. Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.
+  NosoGraph combines disease knowledge graphs, universal ontology imports,
+  evidence gathering, and explainable research pipelines. Public alpha;
+  research use only. Registry coverage is not equivalent to curation depth.
 preferred-citation:
   type: software
-  title: "NosoGraph: The Open Computational Map of Human Disease"
+  title: "NosoGraph: Disease Intelligence. Connected."
   authors:
-    - name: NosoGraph contributors
+    - family-names: Eddahmouni
+      given-names: Adam
   year: 2026
-  version: 2.4.0
+  version: 0.1.0
   url: "https://github.com/AdamEddahmouni/nosograph"

@@ -21,6 +21,7 @@ python scripts/generate_brand_assets.py --check
 | `tagline-lockup.svg` | Canonical tagline lockup |
 | `github-avatar.svg` | GitHub/avatar-size mark |
 | `hero.svg` | README and public visual treatment |
-| `social-preview.svg` | GitHub/OG source treatment |
+| `social-preview.svg` | Canonical GitHub/OG source treatment |
+| `social-preview.png` | 1280×640 GitHub and social-metadata export |
 
 The detailed mark is not blindly shrunk for micro sizes. All variants intentionally derive from the same anchor geometry, with secondary edges removed only where needed for legibility. The gradient is a signature asset, not a general-purpose status or interaction color.

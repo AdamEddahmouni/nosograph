@@ -4,16 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "med-research"
-version = "2.4.0"
-description = "NosoGraph — The Open Computational Map of Human Disease"
+version = "0.1.0"
+description = "NosoGraph — Disease Intelligence. Connected. Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources."
 readme = "README.md"
 license = {text = "Apache-2.0"}
 requires-python = ">=3.11"
 authors = [
+    {name = "Adam Eddahmouni"}
+]
+maintainers = [
     {name = "NosoGraph contributors"}
 ]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3.11",

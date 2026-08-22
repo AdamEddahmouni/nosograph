@@ -4,11 +4,13 @@ This document describes how to cut a new NosoGraph release. The Python package s
 
 ## Versioning
 
-We follow [Semantic Versioning](https://semver.org/) on the `2.x` line while the public API stabilizes:
+NosoGraph follows [Semantic Versioning](https://semver.org/) on a pre-1.0 public-alpha line:
 
-- **Patch** (`2.0.1`): bug fixes, documentation, dependency updates with no API change
-- **Minor** (`2.1.0`): backward-compatible features, new disease scaffolds, new optional endpoints
-- **Major** (`3.0.0`): breaking CLI, API, or data contract changes
+- **Patch** (`0.1.1`): backward-compatible fixes, documentation, and dependency updates
+- **Minor** (`0.2.0`): features or intentional breaking CLI, API, package, or data-contract changes, with migration notes
+- **Stable** (`1.0.0`): supported CLI, API, package naming, and data contracts have explicit compatibility commitments
+
+The historical v2.1.0–v2.4.0 tags predate this deliberate public-alpha baseline. They remain immutable audit records but do not define the current compatibility line.
 
 The canonical version lives in [pyproject.toml](pyproject.toml) (`project.version`).
 
@@ -21,7 +23,7 @@ The canonical version lives in [pyproject.toml](pyproject.toml) (`project.versio
 2. **Bump version** in `pyproject.toml`, `CITATION.cff`, `codemeta.json`, `src/med_research/__init__.py`, and `docs/generated/public-status.yaml`.
 3. **Run `python scripts/check_public_metadata.py`.**
 
-3. **Run verification locally:**
+4. **Run verification locally:**
 
    ```bash
    make lint
@@ -30,16 +32,16 @@ The canonical version lives in [pyproject.toml](pyproject.toml) (`project.versio
    python -m med_research.cli disease validate sle --strict
    ```
 
-4. **Commit** the version and changelog updates on `master`.
+5. **Commit** the version and changelog updates through a pull request to `master`.
 
-5. **Tag and push:**
+6. **Tag and push:**
 
    ```bash
    git tag -a vX.Y.Z -m "NosoGraph vX.Y.Z"
    git push origin master --tags
    ```
 
-6. **Create a GitHub Release** from the tag:
+7. **Create a GitHub Release** from the tag:
    - Title: `vX.Y.Z`
    - Body: copy the CHANGELOG section for that version
    - Attach build artifacts if distributing Docker images
