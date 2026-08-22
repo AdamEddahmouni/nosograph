@@ -14,7 +14,7 @@ Code cannot apply these. Maintainer actions only.
 - `master` ruleset: one approval, fresh approvals, thread resolution, current branch, and required `Tests` plus `Documentation` checks
 - Eight [good-first issues](good-first-issues.md), two research-focused categories, and five [seed Discussions](github-discussions-seed.md)
 - NosoGraph pinned on the maintainer profile
-- Zenodo release archival enabled; [v0.1.0](https://github.com/AdamEddahmouni/nosograph/releases/tag/v0.1.0) archived with concept DOI [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279) and version DOI [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280)
+- Zenodo release archival enabled; concept DOI [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279), v0.2.0 DOI [10.5281/zenodo.22062925](https://doi.org/10.5281/zenodo.22062925), and historical v0.1.0 DOI [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280)
 
 ## Applied via API (verify in GitHub UI)
 
