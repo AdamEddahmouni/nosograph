@@ -16,7 +16,21 @@ Useful URLs:
 - Swagger UI: `http://127.0.0.1:8000/api/docs` (only when `OPENAPI_ENABLED` is truthy — enabled by default only when `DEBUG=true`)
 - ReDoc: `http://127.0.0.1:8000/api/redoc`
 - OpenAPI JSON: `http://127.0.0.1:8000/api/openapi.json`
-- Health: `GET /api/health`
+Health: `GET /api/health`
+
+````bash
+curl http://127.0.0.1:8000/api/health
+````
+
+Example response:
+
+````json
+{
+  "status": "ok",
+  "version": "0.1.0",
+  "timestamp": "2026-08-22T14:03:11.123456"
+}
+````
 - Readiness: `GET /api/ready`
 
 The application preloads the default knowledge graph at startup. API-key middleware protects deployment-level mutation endpoints when `API_KEY` is set. Researcher ownership uses a separate server-derived principal: local deployments issue signed HttpOnly sessions, while production deployments can use a trusted identity-aware reverse proxy. Do not treat development compatibility behavior as production security.
