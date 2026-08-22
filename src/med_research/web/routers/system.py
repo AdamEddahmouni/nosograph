@@ -5,12 +5,11 @@ from datetime import datetime
 from pathlib import Path
 from typing import Annotated, Any
 
-from med_research import __version__
-
 import redis
 from fastapi import APIRouter, Depends, Query
 from fastapi.responses import JSONResponse
 
+from med_research import __version__
 from med_research.diseases.base import Disease
 from med_research.diseases.identifiers import CI_VALIDATED_DISEASES
 from med_research.pipeline.gateway import pipeline_gateway

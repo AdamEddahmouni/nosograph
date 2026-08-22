@@ -22,7 +22,7 @@ def test_health_version_matches_dunder_version() -> None:
         payload = client.get("/api/health").json()
     assert payload["status"] == "ok"
     assert payload["version"] == __version__
-    assert API_VERSION == __version__
+    assert __version__ == API_VERSION
     assert package_version() == __version__
 
 
