@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping improve **NosoGraph** (The Open Computational Map of Human Disease). The Python package still installs as `med-research` with import path `med_research` during the compatibility transition. This document covers local development and pull requests.
+Thank you for helping improve **NosoGraph — Disease Intelligence. Connected.** NosoGraph is open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources. The Python package still installs as `med-research` with import path `med_research` during the compatibility transition. This document covers local development and pull requests.
 
 ## Contribution paths
 

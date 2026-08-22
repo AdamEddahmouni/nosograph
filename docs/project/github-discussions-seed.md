@@ -1,23 +1,23 @@
-# Seeded Discussions (copy/paste)
+# Seeded Discussions
 
-Create after categories exist.
+Published on 2026-08-22 after creating the **Research** and **Data & Curation** categories.
 
-## Welcome to NosoGraph — what are you researching?
+## [Welcome to NosoGraph — what are you researching?](https://github.com/AdamEddahmouni/nosograph/discussions/39)
 
-NosoGraph is an open computational map of human disease. Introduce yourself: disease area, methods, or what you hope to trace in the evidence model. Research use only.
+Disease Intelligence. Connected. NosoGraph is open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources. Introduce yourself: disease area, methods, or what you hope to trace in the evidence model. Research use only.
 
-## Which disease should receive deeper curation next?
+## [Which disease should receive deeper curation next?](https://github.com/AdamEddahmouni/nosograph/discussions/36)
 
 Registry size ≠ curation depth. Which condition should move toward L2/L3 next, and what public sources support that work?
 
-## Which biomedical source should NosoGraph integrate next?
+## [Which biomedical source should NosoGraph integrate next?](https://github.com/AdamEddahmouni/nosograph/discussions/35)
 
 Propose a source with license/terms, identifier scheme, and research value. See `data/sources/registry.yaml`.
 
-## Share what you're building with NosoGraph
+## [Share what you're building with NosoGraph](https://github.com/AdamEddahmouni/nosograph/discussions/38)
 
 Show and tell for tools, notebooks, and analyses. No PHI. Label hypotheses as research prioritization.
 
-## NosoGraph v0.1.0 public-alpha discussion
+## [NosoGraph v0.1.0 public-alpha discussion](https://github.com/AdamEddahmouni/nosograph/discussions/37)
 
 Thread for the v0.1.0 public-alpha baseline: disease-general core, 88/88 L2 strict, Evidence Explorer, Compare slice, provenance APIs, and the canonical public front door. Known gaps: hosted demo, package rename, and UX polish.

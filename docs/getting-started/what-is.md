@@ -1,6 +1,6 @@
 ---
 title: What is NosoGraph?
-description: Plain-language introduction to NosoGraph, an evidence-native computational map of human disease.
+description: Plain-language introduction to NosoGraph, open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.
 ---
 
 # What is NosoGraph?

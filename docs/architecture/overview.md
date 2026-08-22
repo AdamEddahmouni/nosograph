@@ -5,7 +5,7 @@
 
 ## What NosoGraph is
 
-NosoGraph is an open computational map of human disease: a Python platform that combines disease-specific knowledge graphs, a universal biomedical ontology store, evidence gathering pipelines, and a FastAPI web dashboard for exploratory research.
+NosoGraph is open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources. The Python platform combines disease-specific knowledge graphs, a universal biomedical ontology store, evidence gathering pipelines, and a FastAPI web dashboard for exploratory research.
 
 > **Research use only.** Outputs are computational hypotheses, not medical advice.
 
