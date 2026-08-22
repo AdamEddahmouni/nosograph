@@ -1,49 +1,35 @@
 # P2 Wave 1 — Evidence Explorer Audit
 
 **Wave:** P2 Wave 1 · Evidence Explorer Productization + Playwright Reliability  
-**Status:** IMPLEMENTATION COMPLETE (branch `p2/wave1-evidence-explorer`, not yet merged)  
+**Status:** SHIPPED_IN_V2.4.0  
 **Starting HEAD:** `c977d8b6b`  
-**Implementation HEAD:** pending merge  
-**Current release:** v2.3.0  
-**Date:** 2026-08-21
+**Wave 1 implementation:** `5e9a317c6`  
+**Integration base (master):** `4e6bf2a5b`  
+**Final merge SHA:** `27d7d1ebe` (PR #22)  
+**Release:** v2.4.0 (2026-08-22)  
+**Date:** 2026-08-22
 
 ---
 
 ## Executive summary
 
-Wave 1 delivers a first-class **Evidence Explorer** research surface, structured evidence quality dimensions, hardened claim/evidence API contracts, Playwright reliability fixes, and deterministic browser coverage. Work is ready for PR review and hosted CI validation before v2.4.0 release prep.
+Wave 1 delivers a first-class **Evidence Explorer** research surface, structured evidence quality dimensions, hardened claim/evidence API contracts, Playwright reliability fixes, and deterministic browser coverage. Integrated with post-public-presence master (PR #23/#24) via merge; hosted CI and browser proof green.
 
-**Recommended release readiness:** `READY_FOR_V2.4.0_RELEASE_PREP` (after merge + hosted green checks)
+**Release readiness:** `SHIPPED_IN_V2.4.0`
 
 ---
 
-## PR plan (pre-merge)
+## Integration
 
-| Workstream | Branch / PR title | Status |
-|------------|-------------------|--------|
-| Playwright reliability | `fix(test): stabilize Playwright UI harness` | Ready (CSS `.hidden`, structure API mock, serial `test-browser`) |
-| Evidence contracts/API | `feat(evidence): harden evidence and provenance resources` | Ready |
-| Evidence Explorer UI | `feat(evidence): add Evidence Explorer research experience` | Ready |
-| Browser/API tests | `test(evidence): add browser and integration coverage` | Ready |
-
-Suggested merge order: Playwright fixes → API/contracts → UI + tests (combined on branch).
+| Item | Value |
+|------|-------|
+| Strategy | `MERGE_MASTER_INTO_WAVE1` |
+| Conflicts | `Makefile` only (merged `test-browser` + `docs-serve`/`check-public-metadata`) |
+| Pre-sync backup | `backup/p2-wave1-pre-master-sync` at `5e9a317c6` |
 
 ---
 
 ## Playwright
-
-### Previous baseline
-
-- Documented slow suite: **12 passed / 10 failed** (structure-modal / intercept cluster; explorer tests not committed)
-- `#structure-modal` visible on load due to missing global `.hidden` CSS
-
-### Root causes addressed
-
-| Classification | Fix |
-|----------------|-----|
-| `MODAL_OVERLAY_RACE` / `ACTUAL_UI_DEFECT` | Global `.modal-overlay.hidden { display: none }` |
-| `NETWORK_INTERCEPT_RACE` | Mock `/api/v1/biomed/structures/*` in fixture backend |
-| Missing explorer coverage | New `tests/test_evidence_explorer_ui.py` (4 scenarios) |
 
 ### Local validation
 
@@ -51,28 +37,30 @@ Suggested merge order: Playwright fixes → API/contracts → UI + tests (combin
 |-------|--------|
 | `tests/test_evidence_workspace_browser.py` | **11/11 passed** (serial, `-n 0`) |
 | `tests/test_evidence_explorer_ui.py` | **4/4 passed** (serial, `-n 0`) |
-| Combined single pytest invocation | Fixture conflict (dual session Playwright) — **Makefile runs two serial invocations** |
 
-### Hosted run
+### Hosted validation
 
-Not yet dispatched post-implementation. Prior baseline run ID referenced in v2.3.0 audit.
+| Run | Result |
+|-----|--------|
+| [32547140215](https://github.com/AdamEddahmouni/nosograph/actions/runs/32547140215) slow-tests | **PASS** (includes Playwright browser subset) |
+
+---
+
+## API compatibility decision
+
+**`BREAKING_CHANGE_ACCEPTED`**
+
+`GET /api/v1/claims/{id}/evidence` changed from bare list → `PagedResponse`. In-repo frontend, tests, and docs updated. Claim detail still embeds inline evidence. Documented in CHANGELOG and release notes.
 
 ---
 
 ## Evidence contract changes
 
-### New
-
 - `src/med_research/biomed/evidence_quality.py` — ADR-001 structured dimensions
 - `EvidenceQualityView` on `ClaimEvidenceDetailView`
 - `GET /api/v1/claims/{id}/related`
-- Paginated `GET /api/v1/claims/{id}/evidence` with `limit`, `offset`, `sort`, `direction`, `source`, `species_context`
-- `ClaimDetailView` counts: `supporting_count`, `contradictory_count`, `inconclusive_count`, `source_count`
-
-### Compatibility
-
-- v2.3.0 claim detail/provenance routes preserved
-- Evidence list response shape changed from bare array → `PagedResponse` (**additive breaking change** for clients expecting a raw list; claim detail still embeds full evidence)
+- Paginated evidence list with filters
+- Claim detail counts: `supporting_count`, `contradictory_count`, `inconclusive_count`, `source_count`
 
 ---
 
@@ -80,18 +68,16 @@ Not yet dispatched post-implementation. Prior baseline run ID referenced in v2.3
 
 | Capability | Status |
 |------------|--------|
-| Claim summary (subject · predicate · object) | ✅ |
-| Supporting / contradictory evidence groups | ✅ |
-| Inconclusive handling | ✅ (claim-level summary; per-row INCONCLUSIVE when present) |
-| Evidence quality badges | ✅ (derived dimensions) |
+| Claim summary | ✅ |
+| Supporting / contradictory / inconclusive groups | ✅ |
+| Evidence quality badges | ✅ |
 | Provenance timeline | ✅ |
-| Source links (HTTPS validated) | ✅ |
+| Source links | ✅ |
 | Filters + URL state | ✅ |
-| Deep links (`?claim_id=`) | ✅ |
+| Deep links | ✅ |
 | Related claims | ✅ |
-| Disease / condition integration | ✅ (Condition Explorer button + hero MONDO bridge) |
-| JSON export link | ✅ (API resource) |
-| Report data issue link | ✅ |
+| Condition integration | ✅ |
+| JSON/API export link | ✅ |
 
 ---
 
@@ -99,26 +85,20 @@ Not yet dispatched post-implementation. Prior baseline run ID referenced in v2.3
 
 | Dimension | Implementation |
 |-----------|----------------|
-| `species_context` | Implemented (text inference) |
-| `study_design` | Implemented (evidence_type hints) |
+| `species_context` | Implemented (conservative text inference) |
+| `study_design` | Implemented (evidence_type hints; no bare "trial" → RCT) |
 | `sample_size` | Implemented when present |
-| `statistical_quality` | Implemented from confidence when present |
+| `statistical_quality` | Text hints only; **not** inferred from confidence scores (v2.4.0 tightening) |
 | `source_quality` / `origin_class` | Implemented from curator/extraction_method |
 | `human_review` | Implemented from curator |
-| `replication`, `effect_direction`, `directness`, `contradiction_burden` | Deferred (unknown) |
+| `replication`, `effect_direction`, `directness`, `contradiction_burden` | Deferred (`unknown`) |
 
 ---
 
-## Golden trace (tested)
+## Golden trace
 
 ```text
-MONDO:0007915 (systemic lupus erythematosus)
-  → GET /api/v1/conditions/MONDO:0007915/claims
-  → claim_id (seeded fixture)
-  → GET /api/v1/claims/{claim_id}
-  → GET /api/v1/claims/{claim_id}/evidence
-  → GET /api/v1/claims/{claim_id}/provenance
-  → source_snapshot / ingestion → graph_claim
+MONDO:0007915 → claims → claim_id → evidence (paginated) → provenance
 ```
 
 Verified by `tests/web/test_claim_provenance_api.py`.
@@ -129,11 +109,12 @@ Verified by `tests/web/test_claim_provenance_api.py`.
 
 | Invariant | Enforced |
 |-----------|----------|
-| Association ≠ causation | Predicate badge, disclaimer copy |
-| SUPPORTS ≠ CONTRADICTS | Separate UI groups + API `summary` |
+| Association ≠ causation | Predicate badge, disclaimer |
+| SUPPORTS ≠ CONTRADICTS | Separate groups + API `summary` |
 | NOT_RECORDED ≠ KNOWN_ABSENT | Empty-state wording |
 | ANIMAL ≠ HUMAN | `species_context` badge |
 | GENERATED ≠ CURATED | `origin_class` badge |
+| UNKNOWN ≠ LOW_QUALITY | Default `unknown` dimensions |
 
 ---
 
@@ -143,43 +124,27 @@ Verified by `tests/web/test_claim_provenance_api.py`.
 |------|--------|
 | Evidence quality unit | 3 passed |
 | Claim/provenance API | 7 passed |
-| Offline unit suite | passed (`-n 0`, browser tests excluded) |
-| Browser (workspace) | 11 passed |
-| Browser (explorer) | 4 passed |
-| mypy (new modules) | clean on `evidence_quality.py`, `universal_service.py` |
+| Workspace browser | 11 passed |
+| Explorer browser | 4 passed |
+| PR #22 required CI | PASS (typecheck informational fail) |
 
 ---
 
 ## Known limitations
 
-- Evidence quality inference is heuristic; sparse HPOA rows remain mostly `unknown`
-- No hosted Playwright proof yet in this branch
-- Evidence list pagination is a breaking shape change for direct list consumers
-- UI smoke not yet promoted to required CI (`ui-smoke` job proposed, not configured)
-- Compare V2 explicitly out of scope
-
----
-
-## Beta criteria progress
-
-| Criterion | Progress |
-|-----------|----------|
-| Evidence Explorer usable | **Advanced** (Wave 1 UI shipped) |
-| Playwright slow suite reliable | **Advanced** (local green; hosted TBD) |
-| Public demo | Not started |
-| Compare V2 + exports | Not started |
+- Heuristic evidence-quality inference; sparse metadata remains `unknown`
+- No public hosted demo
+- Compare V2 out of scope (Wave 2)
 
 ---
 
 ## Documentation
 
-- [Evidence Explorer architecture](architecture/evidence-explorer.md)
-- ROADMAP update pending merge
+- [User guide](../using/evidence-explorer.md)
+- [Architecture](../architecture/evidence-explorer.md)
 
 ---
 
-## v2.4.0 readiness
+## v2.4.0
 
-**Recommendation:** `READY_FOR_V2.4.0_RELEASE_PREP` after PR merge and one green hosted slow/browser workflow run.
-
-**Theme:** NosoGraph v2.4.0 — Evidence Explorer
+**Status:** `RELEASED` — see [v2.4.0 release record](v2.4.0-release.md) and [release notes](../release-notes/v2.4.0.md).
