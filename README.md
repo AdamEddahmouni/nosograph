@@ -173,7 +173,7 @@ Do not submit secrets, PHI, or patient-identifiable data. Questions belong in [G
 
 ## Citation
 
-Cite v0.2.0 through the all-versions concept DOI [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279) until Zenodo mints its version-specific archive. The historical v0.1.0 version DOI is [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280). Canonical metadata is also available through GitHub’s citation UI and [`CITATION.cff`](CITATION.cff). The software is Apache-2.0; upstream biomedical datasets retain their own terms.
+Cite v0.2.0 with its version DOI [10.5281/zenodo.22062925](https://doi.org/10.5281/zenodo.22062925). The all-versions concept DOI is [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279), and the historical v0.1.0 version DOI is [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280). Canonical metadata is also available through GitHub’s citation UI and [`CITATION.cff`](CITATION.cff). The software is Apache-2.0; upstream biomedical datasets retain their own terms.
 
 ```bibtex
 @software{nosograph2026,
@@ -182,7 +182,7 @@ Cite v0.2.0 through the all-versions concept DOI [10.5281/zenodo.22055279](https
   year    = {2026},
   url     = {https://github.com/AdamEddahmouni/nosograph},
   version = {0.2.0},
-  doi     = {10.5281/zenodo.22055279}
+  doi     = {10.5281/zenodo.22062925}
 }
 ```
 
