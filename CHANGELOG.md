@@ -2,6 +2,38 @@
 
 ## [Unreleased]
 
+## [0.1.0] — 2026-08-22
+
+**NosoGraph v0.1.0 — Public-Alpha Baseline**
+
+First deliberately versioned public-alpha baseline. This release keeps the existing research capabilities while resetting the compatibility line before any PyPI publication or Zenodo archival.
+
+### Added
+
+- Branded GitHub Pages front door, canonical social card, and responsive evidence-graph hero.
+- Stronger public metadata checks covering citation, package, CodeMeta, positioning, and DOI consistency.
+- Stable aggregate `Tests` and `Documentation` pull-request checks.
+
+### Changed
+
+- Canonical positioning is **Disease Intelligence. Connected.** with a precise research-software descriptor.
+- Current versioning uses SemVer 0.x: minor releases may carry breaking public-alpha changes with migration notes; patches remain backward compatible.
+- Adam Eddahmouni is the creator of record and NosoGraph contributors retain contributor attribution.
+
+### Compatibility
+
+- The `nosograph` CLI remains canonical.
+- The `med-research` distribution and `med_research` import remain compatibility names throughout public alpha.
+- Historical v2.1.0–v2.4.0 tags and audits remain immutable legacy prototype records.
+
+### Verification
+
+```bash
+make ci-local
+python -m mkdocs build
+python scripts/check_public_metadata.py
+```
+
 ## [2.4.0] — 2026-08-22
 
 **NosoGraph v2.4.0 — Evidence Explorer**

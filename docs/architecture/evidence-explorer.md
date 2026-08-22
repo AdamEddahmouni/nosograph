@@ -1,7 +1,7 @@
 # Evidence Explorer Architecture
 
 **Status:** P2 Wave 1 · PUBLIC_ALPHA  
-**Baseline release:** v2.3.0
+**Baseline release:** v0.1.0
 
 ## Purpose
 

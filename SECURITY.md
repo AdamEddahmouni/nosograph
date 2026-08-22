@@ -4,10 +4,10 @@
 
 | Version | Supported |
 |---------|-----------|
-| 2.x     | Yes       |
-| < 2.0   | No        |
+| 0.x     | Yes       |
+| 2.1–2.4 legacy prototypes | No |
 
-Security fixes are applied to the latest 2.x release on the `master` branch.
+Security fixes are applied to the latest 0.x public-alpha release on the `master` branch.
 
 ## Reporting a vulnerability
 

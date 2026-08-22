@@ -32,4 +32,4 @@ NosoGraph does not distribute protected health information. Do not commit patien
 
 ## Registry
 
-Machine-readable source list: [data/sources/registry.yaml](../../data/sources/registry.yaml).
+Machine-readable source list: [source registry](https://github.com/AdamEddahmouni/nosograph/blob/master/data/sources/registry.yaml).

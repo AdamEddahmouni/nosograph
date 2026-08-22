@@ -40,7 +40,7 @@ This guide covers running NosoGraph locally or on a private server with Docker C
 | `OPENAPI_ENABLED` | follows `DEBUG` | `false` to hide `/api/docs` |
 | `BIOMEDICAL_DB_PATH` | `<repo>/data/biomedical.sqlite3` | Persistent volume path for the universal biomedical store |
 
-See [.env.example](../.env.example) for the full list.
+See [.env.example](https://github.com/AdamEddahmouni/nosograph/blob/master/.env.example) for the full list.
 
 ## Authentication modes
 
@@ -74,7 +74,7 @@ python -m med_research.cli disease validate sle --strict
 ```
 
 GitHub Actions runs on push/PR when the repository is **public** (free hosted runners).
-While private, quota may block jobs — see [docs/public-launch.md](public-launch.md).
+While private, quota may block jobs — see [public launch readiness](public-launch.md).
 Use `make ci-local` locally before pushing. The workflow does **not** run
 `disease validate --all --strict` (scaffolds fail that check by design).
 
@@ -101,7 +101,7 @@ For test/demo data, `make biomed-import-fixtures` loads the minimal checked-in f
 
 ## Research-only policy
 
-This platform is for **public biomedical knowledge and computational research**. Do not store or process patient-identifiable data (PHI). See [SECURITY.md](../SECURITY.md) and [licensing.md](licensing.md).
+This platform is for **public biomedical knowledge and computational research**. Do not store or process patient-identifiable data (PHI). See [SECURITY.md](https://github.com/AdamEddahmouni/nosograph/blob/master/SECURITY.md) and [licensing.md](licensing.md).
 
 ## Troubleshooting
 

@@ -2,7 +2,7 @@
 
 ## Software (Apache-2.0)
 
-NosoGraph source code is licensed under the [Apache License 2.0](../../LICENSE).
+NosoGraph source code is licensed under the [Apache License 2.0](https://github.com/AdamEddahmouni/nosograph/blob/master/LICENSE).
 
 This includes:
 
@@ -23,7 +23,7 @@ See [data-licenses.md](data-licenses.md).
 
 ## Contributor grants
 
-By contributing, you agree that your contributions are licensed under Apache-2.0 per [CONTRIBUTING.md](../../CONTRIBUTING.md).
+By contributing, you agree that your contributions are licensed under Apache-2.0 per [CONTRIBUTING.md](https://github.com/AdamEddahmouni/nosograph/blob/master/CONTRIBUTING.md).
 
 ## Patent grant
 
@@ -31,7 +31,7 @@ Apache-2.0 Section 3 grants recipients a patent license for contributions includ
 
 ## NOTICE file
 
-Third-party attributions and NosoGraph copyright appear in [NOTICE](../../NOTICE).
+Third-party attributions and NosoGraph copyright appear in [NOTICE](https://github.com/AdamEddahmouni/nosograph/blob/master/NOTICE).
 
 ## Compatibility alias
 

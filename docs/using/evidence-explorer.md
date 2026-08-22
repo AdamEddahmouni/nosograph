@@ -1,6 +1,6 @@
 # Evidence Explorer
 
-**Status:** PUBLIC_ALPHA · shipped in v2.4.0
+**Status:** PUBLIC_ALPHA · included in v0.1.0
 
 Evidence Explorer is a read-only research surface that shows **why NosoGraph holds a claim** — from the claim itself through supporting, contradictory, and inconclusive evidence, provenance, and original source metadata.
 

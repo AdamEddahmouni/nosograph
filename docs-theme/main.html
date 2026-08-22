@@ -2,20 +2,28 @@
 
 {% block extrahead %}
 {{ super() }}
-<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#0B1524">
-<meta property="og:image" content="https://adameddahmouni.github.io/nosograph/assets/brand/social-preview.png">
+<link rel="icon" href="{{ config.site_url }}assets/brand/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#08142D">
+<meta name="description" content="{{ page.meta.description if page and page.meta and page.meta.description else config.site_description }}">
+<meta property="og:title" content="{{ page.title if page and page.title else config.site_name }}">
+<meta property="og:description" content="{{ page.meta.description if page and page.meta and page.meta.description else config.site_description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.canonical_url if page else config.site_url }}">
+<meta property="og:image" content="{{ config.site_url }}assets/brand/social-preview.png">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://adameddahmouni.github.io/nosograph/assets/brand/social-preview.png">
+<meta name="twitter:title" content="{{ page.title if page and page.title else config.site_name }}">
+<meta name="twitter:description" content="{{ page.meta.description if page and page.meta and page.meta.description else config.site_description }}">
+<meta name="twitter:image" content="{{ config.site_url }}assets/brand/social-preview.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareSourceCode",
   "name": "NosoGraph",
-  "alternateName": "The Open Computational Map of Human Disease",
-  "description": "Open-source, evidence-native computational map connecting human diseases to phenotypes, mechanisms, genes, pathways, treatments, trials, literature, and biomedical evidence.",
+  "alternateName": "Disease Intelligence. Connected.",
+  "description": "Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.",
   "url": "https://adameddahmouni.github.io/nosograph/",
   "codeRepository": "https://github.com/AdamEddahmouni/nosograph",
   "license": "https://www.apache.org/licenses/LICENSE-2.0",

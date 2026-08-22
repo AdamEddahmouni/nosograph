@@ -7,7 +7,7 @@ Code cannot apply these. Maintainer actions only.
 - Public repo `AdamEddahmouni/nosograph`
 - Issues, Discussions, Projects enabled
 - Dependabot config present (`.github/dependabot.yml`)
-- Latest release v2.3.0
+- Current public-alpha baseline v0.1.0
 
 ## Applied via API (verify in GitHub UI)
 
@@ -17,7 +17,7 @@ Code cannot apply these. Maintainer actions only.
 
 ## MANUAL_ACTION_REQUIRED
 
-1. **Social preview:** Settings → General → Social preview → Edit → Upload `docs/assets/brand/social-preview.png` (1280×640).
+1. **Social preview:** Settings → General → Social preview → Edit → upload `docs/assets/brand/social-preview.png`; keep `social-preview.svg` as the canonical source.
 2. **About homepage:** set to `https://adameddahmouni.github.io/nosograph/` after the live site returns HTTP 200.
 3. **Discussions categories:** add **Research** and **Data & Curation** if desired (defaults already include Announcements, Q&A, Ideas, Show and tell, General). Seed posts: [github-discussions-seed.md](github-discussions-seed.md).
 4. **Private vulnerability reporting:** Settings → Code security → enable private reporting if not on.

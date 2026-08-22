@@ -8,4 +8,4 @@
 | L3 | Expression-curated |
 | Reference / CI-validated | Deeper maintained sets |
 
-v2.3.0: 88 L2 strict, 6 reference, 8 CI-validated. Full playbook: [disease-curation.md](../disease-curation.md).
+v0.1.0: 88 L2 strict, 6 reference, 8 CI-validated. Full playbook: [disease-curation.md](../disease-curation.md).

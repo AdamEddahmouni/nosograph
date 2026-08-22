@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""NosoGraph — The Open Computational Map of Human Disease
+"""NosoGraph — Disease Intelligence. Connected.
 
 Unified CLI for disease modules, biomedical sources, research pipelines, and the web interface.
 
@@ -257,7 +257,7 @@ def _add_registry_cli_commands(
 
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="NosoGraph — The Open Computational Map of Human Disease",
+        description="NosoGraph — Disease Intelligence. Connected.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--verbose", "-v", action="store_true", help="Enable debug output")

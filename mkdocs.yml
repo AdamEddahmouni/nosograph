@@ -1,5 +1,5 @@
 site_name: NosoGraph
-site_description: Open-source, evidence-native computational map of human disease.
+site_description: Disease intelligence connected across biomedical knowledge, evidence, and provenance.
 site_url: https://adameddahmouni.github.io/nosograph/
 repo_url: https://github.com/AdamEddahmouni/nosograph
 repo_name: AdamEddahmouni/nosograph
@@ -12,18 +12,19 @@ theme:
   custom_dir: docs-theme
   logo: assets/brand/mark.svg
   favicon: assets/brand/favicon.svg
+  font: false
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: teal
-      accent: teal
+      accent: blue
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: teal
-      accent: teal
+      accent: blue
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -36,6 +37,11 @@ theme:
     - search.highlight
     - content.tabs.link
     - toc.follow
+
+extra_css:
+  - stylesheets/nosograph.css
+extra_javascript:
+  - javascripts/home.js
 
 plugins:
   - search
@@ -59,48 +65,48 @@ extra:
   generator: false
 
 nav:
-  - Home: index.md
-  - Getting Started:
+  - Overview:
+      - Home: index.md
       - What is NosoGraph?: getting-started/what-is.md
       - Installation: getting-started/install.md
       - Five-minute tutorial: getting-started/tutorial.md
-      - Docker: getting-started/docker.md
-      - Demo: getting-started/demo.md
+      - Demo and hosted status: getting-started/demo.md
       - FAQ: getting-started/faq.md
+      - Current status: project/status.md
+  - Research:
+      - Web interface: using/web.md
+      - Evidence Explorer: using/evidence-explorer.md
+      - Evidence Workspace: using/evidence-workspace.md
+      - Research examples:
+          - SLE: research/sle.md
+          - Rheumatoid arthritis: research/ra.md
+          - Alzheimer disease: research/ad.md
+          - Cross-disease comparison: research/comparison.md
+          - Evidence tracing: research/evidence-tracing.md
+          - Drug repurposing: research/repurposing.md
+      - Validation: using/validation.md
+      - Research-use boundary: project/security.md
   - Concepts:
       - Diseases: concepts/diseases.md
       - Disease registry: concepts/registry.md
       - Curation tiers: concepts/curation-tiers.md
+      - Biomedical knowledge graphs: concepts/biomedical-knowledge-graph.md
       - Evidence: concepts/evidence.md
       - Claims: concepts/claims.md
       - Provenance: concepts/provenance.md
-      - Biomedical sources: concepts/sources.md
       - Hypotheses: concepts/hypotheses.md
-      - What is a biomedical knowledge graph?: concepts/biomedical-knowledge-graph.md
       - Graphs vs ontologies: concepts/graph-vs-ontology.md
       - MONDO and HPO: concepts/mondo-hpo.md
+  - Data:
+      - Sources: data/sources.md
+      - Coverage: data/coverage.md
+      - Provenance: data/provenance.md
+      - Update cadence: data/update-cadence.md
+      - Licensing: data/licensing.md
   - Using NosoGraph:
-      - Web interface: using/web.md
-      - Evidence Workspace: using/evidence-workspace.md
-      - Evidence Explorer: using/evidence-explorer.md
-      - Compare: using/compare.md
       - CLI: using/cli.md
       - API: using/api.md
       - Source sync: using/source-sync.md
-      - Validation: using/validation.md
-  - Research examples:
-      - SLE: research/sle.md
-      - Rheumatoid arthritis: research/ra.md
-      - Alzheimer disease: research/ad.md
-      - Cross-disease comparison: research/comparison.md
-      - Evidence tracing: research/evidence-tracing.md
-      - Drug repurposing: research/repurposing.md
-  - Data:
-      - Disease coverage: data/coverage.md
-      - Data sources: data/sources.md
-      - Licensing: data/licensing.md
-      - Provenance: data/provenance.md
-      - Update cadence: data/update-cadence.md
   - Developers:
       - Architecture: developers/architecture.md
       - Evidence Explorer architecture: architecture/evidence-explorer.md
@@ -110,15 +116,15 @@ nav:
       - Deployment: developers/deployment.md
   - Contributing:
       - Getting started: contributing/index.md
+      - Code: contributing/code.md
       - Disease curation: contributing/curation.md
       - Data sources: contributing/sources.md
-      - Code: contributing/code.md
       - Governance: contributing/governance.md
   - Project:
       - Roadmap: project/roadmap.md
-      - Releases: project/releases.md
-      - Citation: project/citation.md
+      - Current releases: project/releases.md
       - Security: project/security.md
+      - Citation: project/citation.md
       - License: project/license.md
       - Source of truth: project/source-of-truth.md
 
