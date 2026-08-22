@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{{ super() }}
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0B1524">
+<meta property="og:image" content="https://adameddahmouni.github.io/nosograph/assets/brand/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://adameddahmouni.github.io/nosograph/assets/brand/social-preview.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "NosoGraph",
+  "alternateName": "The Open Computational Map of Human Disease",
+  "description": "Open-source, evidence-native computational map connecting human diseases to phenotypes, mechanisms, genes, pathways, treatments, trials, literature, and biomedical evidence.",
+  "url": "https://adameddahmouni.github.io/nosograph/",
+  "codeRepository": "https://github.com/AdamEddahmouni/nosograph",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "programmingLanguage": "Python",
+  "applicationCategory": "ResearchSoftware",
+  "isAccessibleForFree": true,
+  "creativeWorkStatus": "PublicAlpha"
+}
+</script>
+{% endblock %}

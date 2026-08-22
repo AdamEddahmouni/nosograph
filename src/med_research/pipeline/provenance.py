@@ -5,7 +5,6 @@ from __future__ import annotations
 import hashlib
 import json
 from datetime import datetime, timezone
-from importlib.metadata import PackageNotFoundError, version
 from typing import Any, cast
 
 from typing_extensions import TypedDict
@@ -40,10 +39,9 @@ def utc_now_iso() -> str:
 
 
 def package_version() -> str:
-    try:
-        return version("med-research")
-    except PackageNotFoundError:
-        return "2.0.0"
+    from med_research import __version__
+
+    return __version__
 
 
 def _json_safe(value: Any) -> Any:

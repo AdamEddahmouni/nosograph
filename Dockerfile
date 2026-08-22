@@ -13,13 +13,13 @@ FROM base AS deps
 
 COPY requirements-lock.txt pyproject.toml ./
 RUN pip install --upgrade pip && \
-    pip install -r requirements-lock.txt && \
-    pip install -e .
+    pip install -r requirements-lock.txt
 
 # ── Runtime ─────────────────────────────────────────────────────────────────
 FROM deps AS runtime
 
 COPY . .
+RUN pip install --no-deps -e .
 
 ARG DOCKER_SKIP_DISEASE_VALIDATE=0
 RUN if [ "$DOCKER_SKIP_DISEASE_VALIDATE" != "1" ]; then \

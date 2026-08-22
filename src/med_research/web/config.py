@@ -1,9 +1,9 @@
 """Web API configuration — loaded from environment with sensible defaults."""
 
 import os
-from importlib.metadata import PackageNotFoundError
-from importlib.metadata import version as package_version
 from pathlib import Path
+
+from med_research import __version__
 
 PROJECT_ROOT = Path(__file__).parent.parent
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
@@ -29,10 +29,7 @@ AUTH_TRUSTED_PROXY_IPS = os.environ.get("AUTH_TRUSTED_PROXY_IPS", "")
 
 # ── API Metadata ──────────────────────────────────────────────────────────
 API_TITLE = "NosoGraph API"
-try:
-    API_VERSION = package_version("med-research")
-except PackageNotFoundError:
-    API_VERSION = "2.2.0"
+API_VERSION = __version__
 API_DESCRIPTION = (
     "REST API for NosoGraph — The Open Computational Map of Human Disease. "
     "Provides programmatic access to knowledge graph queries, drug repurposing "

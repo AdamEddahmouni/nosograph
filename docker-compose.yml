@@ -1,4 +1,16 @@
-# ── Medical Research Platform — Docker Compose ───────────────────────────
+# ── NosoGraph — Docker Compose ───────────────────────────────────────────
+#
+# Evaluation:
+#   cp .env.example .env
+#   docker compose --profile full up --build
+#   open http://localhost:8000
+#
+# Image tag `med-research:latest` is an internal/compatibility name (Python
+# distribution `med-research`), not public product branding. Compose project
+# name is `nosograph` so evaluation containers are nosograph-* rather than
+# inheriting the local checkout directory name.
+# Local builds skip the 10k-module strict validation gate by default
+# (DOCKER_SKIP_DISEASE_VALIDATE=1). That is not a production security bypass.
 #
 # Usage:
 #   docker compose build                          Build the image
@@ -11,6 +23,8 @@
 # mounted at /app/data inside containers. Override PORT to change the host port.
 #
 # ─────────────────────────────────────────────────────────────────────────────
+
+name: nosograph
 
 services:
 
@@ -29,9 +43,13 @@ services:
 
   # ── Celery Worker ─────────────────────────────────────────────────────
   worker:
-    build: .
+    build:
+      context: .
+      args:
+        DOCKER_SKIP_DISEASE_VALIDATE: ${DOCKER_SKIP_DISEASE_VALIDATE:-1}
     image: med-research:latest
-    command: celery -A med_research.web.tasks.analysis_tasks worker --loglevel=info --concurrency=2
+    entrypoint: ["celery"]
+    command: ["-A", "med_research.web.tasks.analysis_tasks", "worker", "--loglevel=info", "--concurrency=2"]
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
@@ -48,14 +66,20 @@ services:
         condition: service_healthy
     volumes:
       - ./data:/app/data
+    healthcheck:
+      disable: true
     profiles:
       - full
 
   # ── Celery Beat — weekly digest scheduler ────────────────────────────
   beat:
-    build: .
+    build:
+      context: .
+      args:
+        DOCKER_SKIP_DISEASE_VALIDATE: ${DOCKER_SKIP_DISEASE_VALIDATE:-1}
     image: med-research:latest
-    command: celery -A med_research.web.tasks.analysis_tasks beat --loglevel=info
+    entrypoint: ["celery"]
+    command: ["-A", "med_research.web.tasks.analysis_tasks", "beat", "--loglevel=info"]
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
@@ -72,15 +96,21 @@ services:
         condition: service_healthy
     volumes:
       - ./data:/app/data
+    healthcheck:
+      disable: true
     profiles:
       - full
 
   # ── Web API + Dashboard ───────────────────────────────────────────────
   web:
-    build: .
+    build:
+      context: .
+      args:
+        DOCKER_SKIP_DISEASE_VALIDATE: ${DOCKER_SKIP_DISEASE_VALIDATE:-1}
     image: med-research:latest
     env_file:
-      - .env
+      - path: .env
+        required: false
     ports:
       - "${PORT:-8000}:${PORT:-8000}"
     environment:
@@ -115,7 +145,10 @@ services:
 
   # ── CLI pipeline ──────────────────────────────────────────────────────
   pipeline:
-    build: .
+    build:
+      context: .
+      args:
+        DOCKER_SKIP_DISEASE_VALIDATE: ${DOCKER_SKIP_DISEASE_VALIDATE:-1}
     image: med-research:latest
     entrypoint: ["python", "-m", "med_research.cli"]
     volumes:

@@ -167,7 +167,7 @@ def _find_results_file(fname: str) -> Path | None:
 
 # Shared print stylesheet — turns the dark reports into clean light PDFs
 _PRINT_CSS = """\
-/* Medical Research Platform — print/PDF stylesheet */
+/* NosoGraph — print/PDF stylesheet */
 @media print {
     * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     body { background: #ffffff !important; color: #111827 !important; }

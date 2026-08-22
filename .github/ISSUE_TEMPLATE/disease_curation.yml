@@ -1,0 +1,60 @@
+name: Disease curation
+description: Propose or contribute deeper curation for a disease module
+title: "[Curation]: "
+labels: ["disease-curation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Follow [docs/disease-curation.md](https://github.com/AdamEddahmouni/nosograph/blob/master/docs/disease-curation.md).
+        Do not attach PHI or restricted clinical data. Cite public sources only.
+  - type: input
+    id: disease
+    attributes:
+      label: Disease name / slug
+    validations:
+      required: true
+  - type: input
+    id: mondo
+    attributes:
+      label: MONDO identifier
+      placeholder: MONDO:0000000
+  - type: textarea
+    id: synonyms
+    attributes:
+      label: Synonyms
+  - type: textarea
+    id: associations
+    attributes:
+      label: Phenotypes, genes, mechanisms, pathways, treatments, trials
+      description: List with identifiers where possible.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence, primary references, confidence, provenance
+      description: What supports the associations? Include source versions/dates if known.
+    validations:
+      required: true
+  - type: textarea
+    id: licensing
+    attributes:
+      label: Licensing notes
+      description: Upstream terms that apply to the contributed facts.
+  - type: dropdown
+    id: target_tier
+    attributes:
+      label: Target tier
+      options: [L1, L2, L3, reference]
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: No PHI or patient-identifiable data
+          required: true
+        - label: Sources are publicly citable
+          required: true
+        - label: I understand registry listing is not the same as curation depth
+          required: true

@@ -1,3 +1,3 @@
-"""Medical Research Platform - Multi-disease computational drug discovery."""
+"""NosoGraph — The Open Computational Map of Human Disease."""
 
-__version__ = "2.0.0"
+__version__ = "2.3.0"

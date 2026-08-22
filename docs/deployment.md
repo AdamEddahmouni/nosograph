@@ -1,6 +1,6 @@
 # Self-Hosted Deployment
 
-This guide covers running `med-research` locally or on a private server with Docker Compose. For API details, see [api-reference.md](api-reference.md).
+This guide covers running NosoGraph locally or on a private server with Docker Compose. For API details, see [api-reference.md](api-reference.md).
 
 ## Prerequisites
 
@@ -13,8 +13,8 @@ This guide covers running `med-research` locally or on a private server with Doc
 1. Clone the repository and copy the environment template:
 
    ```bash
-   git clone https://github.com/AdamEddahmouni/med-research.git
-   cd med-research
+   git clone https://github.com/AdamEddahmouni/nosograph.git
+   cd nosograph
    cp .env.example .env
    ```
 
