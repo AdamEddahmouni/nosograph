@@ -21,7 +21,12 @@ import re
 import sys
 from pathlib import Path
 
-PIN_RE = re.compile(r"^([A-Za-z0-9_.-]+)==([^\s]+)$")
+from packaging.markers import InvalidMarker, Marker
+
+PIN_RE = re.compile(
+    r"^([A-Za-z0-9_.-]+(?:\[[A-Za-z0-9_,.-]+\])?)==([^\s;]+)"
+    r"(?:\s*;\s*(.+))?$"
+)
 
 
 def parse_pins(lock_path: Path) -> dict[str, str]:
@@ -30,7 +35,17 @@ def parse_pins(lock_path: Path) -> dict[str, str]:
     for line in lock_path.read_text(encoding="utf-8").splitlines():
         match = PIN_RE.match(line.strip())
         if match:
-            pins[match.group(1)] = match.group(2)
+            marker_text = match.group(3)
+            if marker_text:
+                try:
+                    if not Marker(marker_text).evaluate():
+                        continue
+                except InvalidMarker as exc:
+                    raise ValueError(
+                        f"invalid environment marker in {lock_path}: {marker_text}"
+                    ) from exc
+            package_name = match.group(1).split("[", 1)[0]
+            pins[package_name] = match.group(2)
     return pins
 
 

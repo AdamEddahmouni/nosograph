@@ -117,13 +117,18 @@ body,
 .md-typeset img { border-radius: var(--ng-radius-sm); }
 
 body:has(.ng-homepage) .md-sidebar--secondary { display: none; }
-body:has(.ng-homepage) .md-content { max-width: none; }
+body:has(.ng-homepage) .md-content { max-width: none; margin: 0; }
 body:has(.ng-homepage) .md-content__inner { margin: 0 auto; padding: 0; }
-body:has(.ng-homepage) .md-main__inner { max-width: 100%; }
+body:has(.ng-homepage) .md-main__inner { max-width: 100%; margin-top: 0; padding: 0; }
+
+@media (min-width: 76.25em) {
+  body:has(.ng-homepage) .md-sidebar--primary { display: none; }
+}
 
 .ng-homepage { color: var(--ng-ink); overflow: hidden; }
 .ng-homepage section { padding: var(--ng-section-space) clamp(1rem, 4vw, 3rem); }
 .ng-shell { max-width: var(--ng-container); margin: 0 auto; }
+.ng-visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
 .ng-eyebrow,
 .ng-kicker { color: var(--ng-blue); font: 700 0.72rem/1.2 "JetBrains Mono", monospace; letter-spacing: 0.14em; text-transform: uppercase; }
 .ng-eyebrow--light { color: var(--ng-teal); }
@@ -133,10 +138,9 @@ body:has(.ng-homepage) .md-main__inner { max-width: 100%; }
 .ng-gradient-text { background: linear-gradient(110deg, var(--ng-teal), var(--ng-blue) 50%, var(--ng-violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
 .ng-hero { position: relative; container-type: inline-size; padding-top: clamp(4rem, 9vw, 8rem) !important; padding-bottom: clamp(3rem, 7vw, 6rem) !important; background: var(--ng-deep-navy); }
-.ng-hero::after { position: absolute; inset: 0 0 auto 50%; width: 50%; height: 100%; background: radial-gradient(circle at 65% 35%, rgba(47, 134, 255, 0.18), transparent 54%); content: ""; pointer-events: none; }
+.ng-hero::after { position: absolute; inset: 0; width: 100%; height: 100%; background: radial-gradient(circle at 82% 35%, rgba(47, 134, 255, 0.18), transparent 42%); content: ""; pointer-events: none; }
 .ng-hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr); gap: clamp(1.25rem, 3vw, 3rem); align-items: center; }
-.ng-hero h1 { margin: 0.4rem 0 0.7rem; color: var(--ng-white); font-size: clamp(3.2rem, 5vw, 6rem); line-height: 0.98; white-space: nowrap; }
-.ng-hero h2 { margin: 0 0 1.2rem; color: var(--ng-teal); font-size: clamp(1.4rem, 2.8vw, 2.5rem); line-height: 1.15; }
+.md-typeset .ng-hero-lockup { display: block; width: min(100%, 680px); max-width: 680px; margin: 0.6rem 0 1.2rem; border-radius: 0 !important; }
 .ng-hero .ng-lede { color: var(--ng-mist); }
 .ng-hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
 .ng-button { display: inline-flex; min-height: 2.8rem; align-items: center; justify-content: center; padding: 0.72rem 1.05rem; border: 1px solid transparent; border-radius: var(--ng-radius-sm); font: 700 0.78rem/1.2 Inter, sans-serif; letter-spacing: 0.02em; text-decoration: none !important; transition: transform var(--ng-fast) var(--ng-ease), background var(--ng-fast) var(--ng-ease), border-color var(--ng-fast) var(--ng-ease); }
@@ -279,7 +283,7 @@ body:has(.ng-homepage) .md-main__inner { max-width: 100%; }
 
 @media (max-width: 600px) {
   .ng-homepage section { padding-inline: 1rem; }
-  .ng-hero h1 { font-size: clamp(3rem, 16vw, 4.5rem); }
+  .md-typeset .ng-hero-lockup { width: 130%; max-width: none; margin-left: -10%; }
   .ng-hero-actions .ng-button { width: 100%; }
   .ng-orientation-grid,
   .ng-audience-grid,

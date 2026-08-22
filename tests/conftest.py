@@ -152,6 +152,57 @@ def gwas_result():
 
 
 @pytest.fixture(scope="session")
+def enrichment_result():
+    """Deterministic enrichment result for offline API contract tests."""
+    genes = ["HLA-DRB1", "IRF5", "STAT4", "BLK", "TNFAIP3"]
+    return {
+        "coverage": {"level": "full"},
+        "status": "ready",
+        "gene_list": [{"symbol": symbol} for symbol in genes],
+        "enrichment_results": {
+            "GO_Biological_Process_2023": {
+                "library": "GO_Biological_Process_2023",
+                "terms": [
+                    {
+                        "term": "immune system process",
+                        "overlap": "3/100",
+                        "p_value": 0.001,
+                        "adj_p_value": 0.01,
+                        "odds_ratio": 2.5,
+                        "combined_score": 30.0,
+                        "genes": genes[:3],
+                    }
+                ],
+                "total_significant": 1,
+            }
+        },
+        "kg_pathway_matches": {},
+    }
+
+
+@pytest.fixture(scope="session")
+def literature_result():
+    """Deterministic literature-mining result for offline API contract tests."""
+    return {
+        "article_matches": [
+            {
+                "pmid": "99001001",
+                "title": "Kinase inhibition in autoimmune disease",
+                "abstract": "BTK inhibition modulates autoreactive B cells.",
+            }
+        ],
+        "gene_coverage": {
+            "BTK": {
+                "articles": 1,
+                "supporting_count": 1,
+                "coverage_score": 100.0,
+            }
+        },
+        "candidate_support": {},
+    }
+
+
+@pytest.fixture(scope="session")
 def synergy_pairs():
     """Drug-synergy pairs for RA, computed once per process."""
     from med_research.pipeline.drug_synergy.engine import compute_synergy

@@ -558,6 +558,8 @@ def track_trials(
         max_results,
         progress_callback=progress_callback,
     )
+    if not raw_trials:
+        _tick(progress_callback, "searching clinical trials", 1, 1)
 
     # Parse trials
     trials = []

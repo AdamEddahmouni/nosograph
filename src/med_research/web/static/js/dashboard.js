@@ -4534,7 +4534,7 @@ async function checkAPIStatus() {
             statApi.className = 'stat-value stat-color-green';
         }
         const badge = document.getElementById('api-badge');
-        if (badge && health.version) badge.textContent = `⚡ API v${health.version}`;
+        if (badge && health.version) badge.textContent = `API v${health.version}`;
         return health;
     } catch {
         if (indicator) {
@@ -4744,7 +4744,7 @@ function updateDiseaseDisplay() {
     const nameEl = document.getElementById('hero-disease-name');
     if (nameEl) nameEl.textContent = info.name;
     const badgeEl = document.getElementById('hero-disease-badge');
-    if (badgeEl) badgeEl.textContent = `🦠 ${info.label}`;
+    if (badgeEl) badgeEl.textContent = info.label;
     updateEvidenceExplorerDiseaseBridge();
 }
 

@@ -83,6 +83,30 @@ class TestEnrichmentAdapter(BioinformaticsAdapterContract):
     provenance_sources = ["enrichr"]
     provenance_scoring = {"analysis": "pathway_enrichment"}
 
+    @pytest.fixture(autouse=True)
+    def _stub_enrichr(self, monkeypatch):
+        """Exercise the real engine and adapter without calling Enrichr."""
+        monkeypatch.setattr(
+            "med_research.pipeline.bioinformatics.enrichment.run_enrichment",
+            lambda gene_list, **_kwargs: {
+                "GO_Biological_Process_2023": {
+                    "library": "GO_Biological_Process_2023",
+                    "terms": [
+                        {
+                            "term": "immune system process",
+                            "overlap": "3/100",
+                            "p_value": 0.001,
+                            "adj_p_value": 0.01,
+                            "odds_ratio": 2.5,
+                            "combined_score": 30.0,
+                            "genes": [gene["symbol"] for gene in gene_list[:3]],
+                        }
+                    ],
+                    "total_significant": 1,
+                }
+            },
+        )
+
     def test_run_matches_engine(self):
         module = self.module_cls()
         disease_id = self.disease_id
@@ -119,6 +143,28 @@ class TestPpiAdapter(BioinformaticsAdapterContract):
     coverage_inputs = ("genes",)
     provenance_sources = ["string"]
     provenance_scoring = {"analysis": "ppi_hub"}
+
+    @pytest.fixture(autouse=True)
+    def _stub_string(self, monkeypatch):
+        """Exercise the real engine and adapter without calling STRING."""
+
+        def fake_fetch(symbols, confidence):
+            id_map = {symbol: f"string-{index}" for index, symbol in enumerate(symbols)}
+            string_ids = list(id_map.values())
+            interactions = [
+                {
+                    "stringId_A": source,
+                    "stringId_B": target,
+                    "score": max(confidence, 0.9),
+                }
+                for source, target in zip(string_ids, string_ids[1:], strict=False)
+            ]
+            return id_map, interactions
+
+        monkeypatch.setattr(
+            "med_research.pipeline.bioinformatics.ppi._fetch_ppi",
+            fake_fetch,
+        )
 
     def test_run_matches_engine(self):
         module = self.module_cls()

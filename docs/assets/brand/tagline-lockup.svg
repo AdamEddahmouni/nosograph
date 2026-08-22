@@ -1,26 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 154" role="img">
-  <title>NosoGraph connected disease intelligence</title>
-    <defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 154" role="img" aria-labelledby="title">
+  <title id="title">NosoGraph — Disease Intelligence. Connected.</title>
+  <defs>
     <linearGradient id="ng-gradient" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#19D2C7"/>
       <stop offset="0.52" stop-color="#2F86FF"/>
       <stop offset="1" stop-color="#7252F4"/>
     </linearGradient>
   </defs>
-<rect width="760" height="154" rx="22" fill="#08142D"/>
-  <g><g transform="translate(0 0) scale(1)"><g  fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M24 24 V96" stroke="#19D2C7" stroke-width="5"/>
-  <path d="M24 24 L60 58 L96 24" stroke="url(#ng-gradient)" stroke-width="5"/>
-  <path d="M24 96 L48 70 L96 96" stroke="url(#ng-gradient)" stroke-width="5"/>
-  <path d="M60 58 L96 96" stroke="#7252F4" stroke-width="5"/>
-  <path d="M48 70 L96 24" stroke="#2F86FF" stroke-width="4"/>
-  <circle cx="24" cy="24" r="9" fill="#19D2C7" stroke="none"/>
-  <circle cx="24" cy="96" r="9" fill="#19D2C7" stroke="none"/>
-  <circle cx="96" cy="24" r="9" fill="#2F86FF" stroke="none"/>
-  <circle cx="96" cy="96" r="9" fill="#7252F4" stroke="none"/>
-  <circle cx="60" cy="58" r="7" fill="#2F86FF" stroke="none"/>
-  <circle cx="48" cy="70" r="5" fill="#DCE4EF" stroke="#2F86FF" stroke-width="3"/>
-</g></g></g>
-  <text x="148" y="72" font-family="Sora, Inter, Arial, sans-serif" font-size="56" font-weight="650" fill="#F8FBFF">Noso<tspan fill="url(#ng-gradient)">Graph</tspan></text>
-  <text x="151" y="118" font-family="Inter, Arial, sans-serif" font-size="17" letter-spacing="3.4" fill="#DCE4EF">DISEASE INTELLIGENCE. <tspan fill="#19D2C7">CONNECTED.</tspan></text>
+<g transform="translate(18 17) scale(1)"><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M24 16 V104" stroke="#19D2C7" stroke-width="5"/>
+  <path d="M104 24 V104" stroke="url(#ng-gradient)" stroke-width="4"/>
+  <path d="M24 16 L68 60 L104 104" stroke="url(#ng-gradient)" stroke-width="7"/>
+  <path d="M24 56 L48 80 L68 60" stroke="#2F86FF" stroke-width="3"/>
+  <path d="M24 104 L48 80 L104 24" stroke="#2F86FF" stroke-width="3"/>
+  <path d="M24 56 L68 60" stroke="url(#ng-gradient)" stroke-width="3"/>
+  <path d="M48 80 L104 104" stroke="#7252F4" stroke-width="3"/>
+  <circle cx="24" cy="16" r="11" fill="#19D2C7" stroke="none"/>
+  <circle cx="24" cy="56" r="6" fill="none" stroke="#19D2C7" stroke-width="3"/>
+  <circle cx="24" cy="104" r="8" fill="none" stroke="#19D2C7" stroke-width="4"/>
+  <circle cx="68" cy="60" r="10" fill="#2F86FF" stroke="none"/>
+  <circle cx="48" cy="80" r="6" fill="none" stroke="#2F86FF" stroke-width="3"/>
+  <circle cx="104" cy="24" r="8" fill="none" stroke="#2F86FF" stroke-width="4"/>
+  <circle cx="104" cy="104" r="13" fill="#7252F4" stroke="none"/>
+</g></g>
+  <text x="164" y="78" font-family="Sora, Inter, Arial, sans-serif" font-size="58" font-weight="400" letter-spacing="-1.8" fill="#F8FBFF">Noso<tspan fill="url(#ng-gradient)">Graph</tspan></text>
+  <text x="168" y="121" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="6" fill="#DCE4EF">DISEASE INTELLIGENCE. <tspan fill="#19D2C7">CONNECTED.</tspan></text>
 </svg>

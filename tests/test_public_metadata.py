@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -15,6 +16,16 @@ ROOT = Path(__file__).resolve().parents[1]
 def _load_checker():
     spec = importlib.util.spec_from_file_location(
         "check_public_metadata", ROOT / "scripts" / "check_public_metadata.py"
+    )
+    assert spec and spec.loader
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def _load_brand_generator():
+    spec = importlib.util.spec_from_file_location(
+        "generate_brand_assets", ROOT / "scripts" / "generate_brand_assets.py"
     )
     assert spec and spec.loader
     module = importlib.util.module_from_spec(spec)
@@ -123,3 +134,87 @@ def test_rejects_svg_social_metadata(monkeypatch: pytest.MonkeyPatch) -> None:
         ),
         "PNG social preview",
     )
+
+
+def test_brand_assets_match_the_canonical_reference_system() -> None:
+    assets = _load_brand_generator().build_assets()
+    variation_names = {
+        "symbol-mono-dark.svg",
+        "symbol-reversed.svg",
+        "logo-mono-dark.svg",
+        "logo-reversed.svg",
+    }
+    assert variation_names <= assets.keys()
+    assert variation_names <= set(_load_checker().REQUIRED_ASSETS)
+    symbol = assets["symbol.svg"]
+    dark_logo = assets["logo-dark.svg"]
+    lockup = assets["tagline-lockup.svg"]
+
+    assert len(re.findall(r"<circle\b", symbol)) == 7
+    assert 'font-weight="400"' in dark_logo
+    assert 'letter-spacing="6"' in dark_logo
+    assert "DISEASE INTELLIGENCE." in dark_logo
+    assert "CONNECTED." in dark_logo
+    assert "<rect" not in lockup
+
+
+def test_product_surfaces_use_the_canonical_nosograph_identity() -> None:
+    dashboard = (ROOT / "src/med_research/web/static/index.html").read_text(encoding="utf-8")
+    dashboard_css = (ROOT / "src/med_research/web/static/css/dashboard.css").read_text(
+        encoding="utf-8"
+    )
+    dashboard_js = (ROOT / "src/med_research/web/static/js/dashboard.js").read_text(
+        encoding="utf-8"
+    )
+    launcher = (ROOT / "index.html").read_text(encoding="utf-8")
+
+    assert '<img class="nav-logo" src="/brand/symbol.svg"' in dashboard
+    assert '<span class="nav-logo">🧬</span>' not in dashboard
+    assert "fonts.googleapis.com" not in dashboard
+    assert "⚡ API v" not in dashboard_js
+    assert "🦠 ${info.label}" not in dashboard_js
+    for color in ("#08142d", "#102246", "#19d2c7", "#2f86ff", "#7252f4"):
+        assert color in dashboard_css.lower()
+    for font in (
+        "InterVariable.woff2",
+        "JetBrainsMono-Variable.woff2",
+        "Sora-Variable.ttf",
+        "OFL-1.1.txt",
+    ):
+        assert (ROOT / "src/med_research/web/static/fonts" / font).is_file()
+    assert "Disease Intelligence. Connected." in launcher
+    assert "docs/assets/brand/symbol.svg" in launcher
+
+
+def test_public_homepage_hero_uses_the_canonical_lockup() -> None:
+    homepage = (ROOT / "docs/index.md").read_text(encoding="utf-8")
+    stylesheet = (ROOT / "docs/stylesheets/nosograph.css").read_text(encoding="utf-8")
+
+    assert 'src="assets/brand/tagline-lockup.svg"' in homepage
+    assert 'class="ng-visually-hidden"' in homepage
+    assert ".ng-hero-lockup" in stylesheet
+    assert "body:has(.ng-homepage) .md-sidebar--primary" in stylesheet
+
+
+def test_satellite_research_pages_use_public_brand_name() -> None:
+    for name in (
+        "agent.html",
+        "lead_opt.html",
+        "patient_matching.html",
+        "pgx.html",
+        "spatial.html",
+    ):
+        page = (ROOT / "src/med_research/web/static" / name).read_text(encoding="utf-8")
+        assert "— med-research" not in page
+        assert "med-research Dashboard" not in page
+        assert "NosoGraph" in page
+
+
+def test_media_kit_contains_reusable_approved_marketing_copy() -> None:
+    launch_copy = (ROOT / "docs/project/launch-copy.md").read_text(encoding="utf-8")
+
+    assert "Turning fragmented disease evidence into connected intelligence." in launch_copy
+    assert "## Social bio" in launch_copy
+    assert "## 50-word boilerplate" in launch_copy
+    assert "## 150-word boilerplate" in launch_copy
+    assert "## Calls to action" in launch_copy

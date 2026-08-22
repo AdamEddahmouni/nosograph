@@ -7,6 +7,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+from med_research.biomed.legacy.manifest import LEGACY_DISEASE_MONDO_MAP
 from med_research.diseases.base import Disease
 from med_research.diseases.id_resolver import DiseaseIdResolver
 from med_research.diseases.scaffold import load_disease_registry, sanitize_id
@@ -81,6 +82,14 @@ def resolve_disease_context(disease_id: str, *, full_validate: bool = True) -> d
     """Return mondo_curie, efo_id, readiness_tier, and config_gaps for a disease slug."""
     did = sanitize_id(disease_id)
     entry = _registry_by_id().get(did, {"id": did, "name": did})
+    if not entry.get("efo_id") and not entry.get("mondo_id"):
+        legacy_mondo = LEGACY_DISEASE_MONDO_MAP.get(did)
+        if legacy_mondo:
+            entry = {
+                **entry,
+                "efo_id": legacy_mondo.replace(":", "_"),
+                "mondo_id": legacy_mondo,
+            }
 
     resolver = _get_resolver()
     resolution = resolver.resolve_entry(entry)
