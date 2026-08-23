@@ -71,15 +71,15 @@ def render_dossier_html(module_data: dict) -> str:
         return template.render(
             sections=sections,
             module_data=module_data,
-            dossier_timestamp=datetime.datetime.utcnow().isoformat() + " UTC",
-            generated_at=datetime.datetime.utcnow(),
+            dossier_timestamp=datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            generated_at=datetime.datetime.now(datetime.timezone.utc),
         )
     except Exception as e:
         logger.error("Failed to render dossier template: %s", e)
         # Fallback basic HTML
         html_parts = [
             "<!DOCTYPE html><html><head><meta charset='utf-8'><title>Regulatory Dossier</title></head><body>",
-            f"<h1>Regulatory IND-Ready Dossier</h1><p>Generated: {datetime.datetime.utcnow().isoformat()} UTC</p>",
+            f"<h1>Regulatory IND-Ready Dossier</h1><p>Generated: {datetime.datetime.now(datetime.timezone.utc).isoformat()}</p>",
         ]
         for k, v in module_data.items():
             html_parts.append(f"<h2>{k}</h2>")
@@ -107,7 +107,9 @@ def html_to_pdf(html_content: str, output_path: Path) -> None:
 
         c = canvas.Canvas(str(output_path), pagesize=letter)
         c.drawString(100, 750, "Regulatory IND-Ready Dossier Summary")
-        c.drawString(100, 730, f"Generated: {datetime.datetime.utcnow().isoformat()} UTC")
+        c.drawString(
+            100, 730, f"Generated: {datetime.datetime.now(datetime.timezone.utc).isoformat()}"
+        )
         c.drawString(
             100, 700, "Please see the full Markdown / HTML export bundle for complete data tables."
         )
@@ -137,7 +139,7 @@ def html_to_pdf(html_content: str, output_path: Path) -> None:
 def data_to_markdown(module_data: dict) -> str:
     """Create a GitHub-flavored Markdown representation of the dossier."""
     lines = ["# Automated Regulatory / IND-Ready Dossier", ""]
-    lines.append(f"Generated at: {datetime.datetime.utcnow().isoformat()} UTC\n")
+    lines.append(f"Generated at: {datetime.datetime.now(datetime.timezone.utc).isoformat()}\n")
     for name, data in module_data.items():
         lines.append(f"## Module: {name}\n")
         if isinstance(data, dict):

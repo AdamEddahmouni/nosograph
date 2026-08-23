@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import APIRouter
@@ -26,7 +26,7 @@ async def generate_dossier():
         autoescape=True,
     )
     template = env.get_template("dossier.html")
-    rendered = template.render(timestamp=datetime.utcnow().isoformat())
+    rendered = template.render(timestamp=datetime.now(timezone.utc).isoformat())
 
     # Write Markdown (HTML content saved as .md for simplicity)
     md_path = base_dir / "dossier.md"
@@ -42,7 +42,7 @@ async def generate_dossier():
         # Create an empty placeholder PDF
         pdf_path.write_bytes(b"%PDF-1.4\n%Placeholder PDF generated without WeasyPrint\n")
 
-    timestamp = datetime.utcnow().isoformat()
+    timestamp = datetime.now(timezone.utc).isoformat()
     return {
         "pdf_url": f"/static/dossier/{pdf_path.name}",
         "markdown_url": f"/static/dossier/{md_path.name}",

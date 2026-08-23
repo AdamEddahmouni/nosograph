@@ -32,7 +32,9 @@ class AsyncTask:
     status: TaskStatus = TaskStatus.PENDING
     progress: float = 0.0
     message: str = "Initialized"
-    created_at: str = field(default_factory=lambda: datetime.datetime.utcnow().isoformat())
+    created_at: str = field(
+        default_factory=lambda: datetime.datetime.now(datetime.timezone.utc).isoformat()
+    )
     started_at: Optional[str] = None
     completed_at: Optional[str] = None
     params: Dict[str, Any] = field(default_factory=dict)
@@ -80,7 +82,7 @@ class AsyncJobQueue:
 
         def _worker():
             task.status = TaskStatus.RUNNING
-            task.started_at = datetime.datetime.utcnow().isoformat()
+            task.started_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
             task.message = "Running"
             try:
                 result = fn(*args, **kwargs)
@@ -88,13 +90,13 @@ class AsyncJobQueue:
                 task.progress = 1.0
                 task.message = "Completed successfully"
                 task.result = result
-                task.completed_at = datetime.datetime.utcnow().isoformat()
+                task.completed_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
                 logger.info("Async task %s completed successfully", task_id)
             except Exception as e:
                 task.status = TaskStatus.FAILED
                 task.message = "Failed execution"
                 task.error = str(e)
-                task.completed_at = datetime.datetime.utcnow().isoformat()
+                task.completed_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
                 logger.exception("Async task %s failed: %s", task_id, e)
 
         self._executor.submit(_worker)
