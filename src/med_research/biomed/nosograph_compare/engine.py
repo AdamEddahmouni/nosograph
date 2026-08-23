@@ -108,7 +108,7 @@ def compare_dimension(context: CohortContext, dimension: str) -> DimensionCompar
     )
     shared_all: list[str] = []
     subsets: list[SubsetMembership] = []
-    unique = {curie: [] for curie in context.condition_curies}
+    unique: dict[str, list[str]] = {curie: [] for curie in context.condition_curies}
     rows: list[EntityStateRow] = []
     conflict_warnings: list[CompareWarning] = []
 
