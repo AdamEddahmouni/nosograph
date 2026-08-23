@@ -1,5 +1,7 @@
 """Unit tests for TargetHypothesisAgent knowledge-graph unwrapping."""
 
+import datetime
+
 import pytest
 
 from med_research.pipeline.agent.hypothesis_agent import TargetHypothesisAgent, _records
@@ -20,3 +22,11 @@ def test_evaluate_target_uses_kg_gene_records() -> None:
     assert hypothesis.disease_id == "melanoma"
     assert hypothesis.overall_confidence > 0.5
     assert hypothesis.supporting_evidence
+
+
+def test_generated_at_is_timezone_aware_utc() -> None:
+    agent = TargetHypothesisAgent("melanoma")
+    hypothesis = agent.evaluate_target("BRAF")
+    generated_at = datetime.datetime.fromisoformat(hypothesis.generated_at)
+    assert generated_at.tzinfo is not None
+    assert generated_at.utcoffset() == datetime.timedelta(0)

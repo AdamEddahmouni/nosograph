@@ -30,7 +30,7 @@ async def generate_dossier():
     html_content = render_dossier_html(module_data)
 
     # 3. Create timestamped filenames
-    timestamp = datetime.datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    timestamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     dossier_dir = PIPELINE_DIR / "dossier"
     dossier_dir.mkdir(parents=True, exist_ok=True)
     pdf_path = dossier_dir / f"{timestamp}_dossier.pdf"

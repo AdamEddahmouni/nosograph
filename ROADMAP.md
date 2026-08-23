@@ -2,7 +2,15 @@
 
 Status key: **STABLE** | **BETA** | **EXPERIMENTAL** | **PROTOTYPE** | **PLANNED** | **NOT_IMPLEMENTED**
 
-## Current release (v0.2.0 — Compare V2)
+## Current release (v0.2.1 — stabilization)
+
+Included in v0.2.1 (2026-08-22; backward-compatible stabilization patch):
+
+- [x] Timezone-aware UTC timestamps (async queue, hypothesis agent, dossier flow) with compatible filename tokens
+- [x] Open Targets ingestion hardening (optional phase normalization, UUID snapshot typing)
+- [x] Compare V2 persisted-status validation at the storage boundary
+- [x] mypy ratchet extended to the recently shipped stabilization surfaces
+- [x] Technical-debt ledger refreshed with a prioritized active backlog
 
 Included in v0.2.0 (2026-08-22):
 

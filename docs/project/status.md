@@ -5,7 +5,7 @@ description: Current NosoGraph release, maturity, capabilities, and repository s
 
 # Current status
 
-**NosoGraph v0.2.0 · Public Alpha · 2026-08-22**
+**NosoGraph v0.2.1 · Public Alpha · 2026-08-22**
 
 NosoGraph is research software under active development. It connects biomedical knowledge, evidence, and provenance for exploratory research—not medical advice, diagnosis, or clinical decision support.
 
@@ -18,7 +18,7 @@ NosoGraph is research software under active development. It connects biomedical 
 | Reference modules | 6 |
 | CI-validated modules | 8 |
 | Analysis pipelines | 40+ |
-| Offline tests selected in v0.2.0 suite | 2,425 |
+| Offline tests selected in v0.2.1 suite | 2,445 |
 
 Canonical source: [`public-status.yaml`](../generated/public-status.yaml). Registry breadth is not curation depth; most registry modules are scaffolds. Recompute corpus values with `nosograph disease corpus-status` before publishing a new release.
 

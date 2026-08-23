@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
+from typing import Any, cast
 from uuid import UUID
 
 from med_research import __version__ as software_version
@@ -18,6 +20,7 @@ from med_research.biomed.nosograph_compare.models import (
     DEFAULT_DIMENSIONS,
     LEGACY_DEFAULT_DIMENSIONS,
     CompareResult,
+    CompareStatus,
     CompareV2Result,
     ConditionCoverage,
     DimensionComparison,
@@ -36,6 +39,7 @@ _ALGORITHM_ID = "nosograph-compare-v2"
 _ALGORITHM_VERSION = "2.0.0"
 _RUN_TYPE = "nosograph_compare_v2"
 _LEGACY_ALIASES = {"mechanism": "pathway"}
+_VALID_PERSISTED_STATUSES: tuple[CompareStatus, ...] = ("comparable", "insufficient_data")
 
 
 class CompareRunNotFoundError(LookupError):
@@ -255,8 +259,21 @@ def _legacy_missing_reason(coverage: ConditionCoverage) -> MissingDataReason:
     return MissingDataReason.NOT_RECORDED
 
 
+def _persisted_status(run: ResearchRun, payload: Mapping[str, Any]) -> CompareStatus:
+    """Validate the persisted status at the storage boundary.
+
+    Only ``comparable`` and ``insufficient_data`` are valid persisted states.
+    Anything else is corrupt/invalid persisted data and follows the service's
+    existing persistence-error behavior instead of being silently coerced.
+    """
+    raw = payload.get("status")
+    if isinstance(raw, str) and raw in _VALID_PERSISTED_STATUSES:
+        return cast(CompareStatus, raw)
+    raise CompareRunIncompleteError(f"Comparison run {run.id} has invalid persisted status {raw!r}")
+
+
 def _v2_result_from_run(run: ResearchRun) -> CompareV2Result:
-    payload = dict(run.result or {})
+    payload: dict[str, Any] = dict(run.result or {})
     condition_curies = list(payload.get("condition_curies", []))
     condition_labels = dict(payload.get("condition_labels", {}))
     condition_labels = {
@@ -280,7 +297,7 @@ def _v2_result_from_run(run: ResearchRun) -> CompareV2Result:
     return CompareV2Result(
         run_id=run.id,
         result_schema_version=str(payload.get("result_schema_version", "1.0")),
-        status=str(payload.get("status", "insufficient_data")),
+        status=_persisted_status(run, payload),
         condition_curies=condition_curies,
         condition_labels=condition_labels,
         dimensions=list(payload.get("dimensions", [])),

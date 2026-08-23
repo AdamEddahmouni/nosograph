@@ -1,6 +1,6 @@
 # Canonical public metrics for README / docs / metadata checks.
 # Update this file in the same release as pyproject.toml and CITATION.cff.
-version: "0.2.0"
+version: "0.2.1"
 maturity: PUBLIC_ALPHA
 release_date: "2026-08-22"
 repository: "https://github.com/AdamEddahmouni/nosograph"
@@ -12,8 +12,8 @@ metrics:
   reference_tier: 6
   ci_validated: 8
   analysis_pipelines: "40+"
-  offline_tests: 2425
+  offline_tests: 2445
 notes:
   - Registry coverage is not equivalent to curation depth.
   - L3 count is from the sampled status report; it is not a full-corpus curation count.
-  - Offline test count is the v0.2.0 release suite (2425 unit tests selected by the offline gate).
+  - Offline test count is the v0.2.1 release suite (2445 unit tests selected by the offline gate).

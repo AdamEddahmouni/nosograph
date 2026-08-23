@@ -11,7 +11,10 @@ import med_research.biomed.nosograph_compare.service as compare_service_module
 from med_research.biomed.identifiers import canonical_json, claim_evidence_uuid, claim_uuid
 from med_research.biomed.models import Claim, ClaimEvidence, EvidenceDirection, Predicate, RunStatus
 from med_research.biomed.nosograph_compare.models import EntityState
-from med_research.biomed.nosograph_compare.service import NosoGraphCompareService
+from med_research.biomed.nosograph_compare.service import (
+    CompareRunIncompleteError,
+    NosoGraphCompareService,
+)
 
 CONDITIONS = ("MONDO:0000001", "MONDO:0000002", "MONDO:0000003")
 
@@ -309,6 +312,56 @@ def test_compare_many_accepts_five_conditions_and_marks_sparse_data_insufficient
 
     assert sparse.status == "insufficient_data"
     assert len(bounded.condition_curies) == 5
+
+
+def _corrupt_persisted_result(repository, run_id, mutation) -> None:
+    run = repository.get_research_run(run_id)
+    assert run is not None and run.result is not None
+    payload = dict(run.result)
+    mutation(payload)
+    with repository.transaction() as connection:
+        connection.execute(
+            "UPDATE research_runs SET result_json = ? WHERE id = ?",
+            (canonical_json(payload), str(run_id)),
+        )
+
+
+def test_get_comparison_round_trips_valid_persisted_statuses(compare_v2_repository) -> None:
+    from med_research.biomed.identifiers import entity_uuid
+    from med_research.biomed.models import Entity, EntityType
+
+    service = NosoGraphCompareService(compare_v2_repository)
+    comparable = service.compare_many(list(CONDITIONS[:2]), dimensions=["phenotype"])
+    assert comparable.status == "comparable"
+
+    snapshot_id = compare_v2_repository.list_active_snapshots()[0].id
+    for curie in ("MONDO:0000004", "MONDO:0000005"):
+        compare_v2_repository.upsert_entity(
+            Entity(
+                id=entity_uuid(EntityType.CONDITION, curie),
+                primary_curie=curie,
+                entity_type=EntityType.CONDITION,
+                created_in_snapshot_id=snapshot_id,
+            )
+        )
+    sparse = service.compare_many(["MONDO:0000004", "MONDO:0000005"], dimensions=["gene"])
+    assert sparse.status == "insufficient_data"
+
+    for created in (comparable, sparse):
+        replayed = service.get_comparison(created.run_id)
+        assert replayed.status == created.status
+        assert replayed == created
+
+
+def test_get_comparison_rejects_unknown_persisted_status(compare_v2_repository) -> None:
+    service = NosoGraphCompareService(compare_v2_repository)
+    created = service.compare_many(list(CONDITIONS[:2]), dimensions=["phenotype"])
+    _corrupt_persisted_result(
+        compare_v2_repository, created.run_id, lambda payload: payload.update(status="bogus")
+    )
+
+    with pytest.raises(CompareRunIncompleteError, match="invalid persisted status"):
+        service.get_comparison(created.run_id)
 
 
 def test_get_comparison_defaults_labels_and_claim_links_for_older_runs(

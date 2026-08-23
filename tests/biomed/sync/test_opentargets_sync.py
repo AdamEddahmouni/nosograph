@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import uuid
 from pathlib import Path
 
 import pytest
@@ -84,6 +85,38 @@ def test_opentargets_adapter_is_deterministic(sync_repository) -> None:
     assert first.counts.claims == second.counts.claims
     assert first.counts.evidence == second.counts.evidence
     assert first.counts.claims > 0
+
+
+def test_snapshot_id_is_typed_as_uuid() -> None:
+    from med_research.biomed.imports.opentargets_adapter import _snapshot_id
+
+    value = _snapshot_id("open_targets", "25.03", "sha256:fixture")
+    assert isinstance(value, uuid.UUID)
+    assert value == _snapshot_id("open_targets", "25.03", "sha256:fixture")
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        (3, 3),
+        (0, 0),
+        ("2", 2),
+        (" 1 ", 1),
+        (None, None),
+        (True, None),
+        (False, None),
+        ("Phase 3", None),
+        ("N/A", None),
+        ("", None),
+        (object(), None),
+    ],
+)
+def test_normalize_phase_handles_integer_numeric_and_invalid_values(raw, expected) -> None:
+    from med_research.biomed.imports.opentargets_adapter import _normalize_phase
+
+    result = _normalize_phase(raw)
+    assert result == expected
+    assert (result is None) == (expected is None)
 
 
 def test_sync_lifecycle_dry_run_records_all_stages(sync_repository) -> None:

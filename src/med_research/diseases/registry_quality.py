@@ -10,6 +10,9 @@ NON_DISEASE_BLOCKLIST: frozenset[str] = frozenset(
     {
         "positive_regulation_of_ovulation",
         "sensory_perception_of_sound",
+        # Test-owned scaffold fixture; concurrent test runs create and remove it
+        # inside the real diseases tree, so discovery must never list it.
+        "zz_scaffold_test",
     }
 )
 
