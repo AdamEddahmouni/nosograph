@@ -28,7 +28,7 @@ Open-source research software for connecting disease knowledge, evidence, and pr
 
 ## At a glance
 
-**NosoGraph v0.2.0 · Public Alpha · snapshot 2026-08-22**
+**NosoGraph v0.2.1 · Public Alpha · snapshot 2026-08-22**
 
 | Repository-backed snapshot | Value |
 |---|---:|
@@ -37,7 +37,7 @@ Open-source research software for connecting disease knowledge, evidence, and pr
 | Reference modules | 6 |
 | CI-validated modules | 8 |
 | Analysis pipelines | 40+ |
-| Offline tests selected in the v0.2.0 suite | 2,425 |
+| Offline tests selected in the v0.2.1 suite | 2,445 |
 
 These values come from [`docs/generated/public-status.yaml`](docs/generated/public-status.yaml). **Registry breadth is not curation depth**: most registry modules are scaffolds.
 
@@ -173,7 +173,7 @@ Do not submit secrets, PHI, or patient-identifiable data. Questions belong in [G
 
 ## Citation
 
-Cite v0.2.0 with its version DOI [10.5281/zenodo.22062925](https://doi.org/10.5281/zenodo.22062925). The all-versions concept DOI is [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279), and the historical v0.1.0 version DOI is [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280). Canonical metadata is also available through GitHub’s citation UI and [`CITATION.cff`](CITATION.cff). The software is Apache-2.0; upstream biomedical datasets retain their own terms.
+Cite v0.2.1 with the all-versions concept DOI [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279) until a v0.2.1 archive record exists. The historical version DOI [10.5281/zenodo.22062925](https://doi.org/10.5281/zenodo.22062925) identifies v0.2.0 only, and the v0.1.0 version DOI is [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280). Canonical metadata is also available through GitHub’s citation UI and [`CITATION.cff`](CITATION.cff). The software is Apache-2.0; upstream biomedical datasets retain their own terms.
 
 ```bibtex
 @software{nosograph2026,
@@ -181,8 +181,8 @@ Cite v0.2.0 with its version DOI [10.5281/zenodo.22062925](https://doi.org/10.52
   author  = {Eddahmouni, Adam and NosoGraph contributors},
   year    = {2026},
   url     = {https://github.com/AdamEddahmouni/nosograph},
-  version = {0.2.0},
-  doi     = {10.5281/zenodo.22062925}
+  version = {0.2.1},
+  doi     = {10.5281/zenodo.22055279}
 }
 ```
 

@@ -1,6 +1,8 @@
 # Releases
 
-Current public-alpha release: **v0.2.0**. Release notes: [v0.2.0 Compare V2](../release-notes/v0.2.0.md). Changelog: repository [`CHANGELOG.md`](https://github.com/AdamEddahmouni/nosograph/blob/master/CHANGELOG.md).
+Current public-alpha release: **v0.2.1**. Release notes: [v0.2.1 Stabilization](../release-notes/v0.2.1.md). Changelog: repository [`CHANGELOG.md`](https://github.com/AdamEddahmouni/nosograph/blob/master/CHANGELOG.md).
+
+The [v0.2.0 Compare V2 release](../release-notes/v0.2.0.md) remains the most recent feature milestone and its archived record is historical metadata for v0.2.0 only.
 
 The [v0.1.0 Public-Alpha Baseline](../release-notes/v0.1.0.md) remains the compatibility-line baseline and first archived 0.x release.
 

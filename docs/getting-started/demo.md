@@ -5,7 +5,7 @@ description: How to evaluate NosoGraph locally and the status of a public hosted
 
 # Demo
 
-There is **no public hosted demo** in v0.2.0.
+There is **no public hosted demo** in v0.2.1.
 
 ## Local evaluation
 

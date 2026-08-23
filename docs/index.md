@@ -161,7 +161,7 @@ description: Open-source research software for connecting disease knowledge, evi
 
 <section class="ng-maturity" aria-labelledby="ng-maturity-title">
   <div class="ng-shell">
-    <div class="ng-status-line"><span class="ng-status-badge">PUBLIC_ALPHA</span><span>Research software under active development. Snapshot: v0.2.0 · 2026-08-22.</span></div>
+    <div class="ng-status-line"><span class="ng-status-badge">PUBLIC_ALPHA</span><span>Research software under active development. Snapshot: v0.2.1 · 2026-08-22.</span></div>
     <h2 id="ng-maturity-title">What exists today—and what does not.</h2>
     <p class="ng-lede">Maturity labels are part of the product. They tell you how to interpret a surface before you use it.</p>
     <div class="ng-maturity-table-wrap">
@@ -185,7 +185,7 @@ description: Open-source research software for connecting disease knowledge, evi
       <div class="ng-stat"><strong>6</strong><span>reference modules</span></div>
       <div class="ng-stat"><strong>8</strong><span>CI-validated modules</span></div>
       <div class="ng-stat"><strong>40+</strong><span>analysis pipelines</span></div>
-      <div class="ng-stat"><strong>2,425</strong><span>offline tests selected in v0.2.0 suite</span></div>
+      <div class="ng-stat"><strong>2,445</strong><span>offline tests selected in v0.2.1 suite</span></div>
     </div>
     <p class="ng-footnote">Snapshot source: <a href="generated/public-status.yaml">public-status.yaml</a>. Registry breadth is not curation depth; most registry modules are scaffolds.</p>
   </div>
