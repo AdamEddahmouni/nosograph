@@ -94,7 +94,7 @@ def render_dossier_html(module_data: dict) -> str:
 def html_to_pdf(html_content: str, output_path: Path) -> None:
     """Convert HTML string to PDF if a PDF engine is available, or write styled printable document."""
     try:
-        import weasyprint  # type: ignore
+        import weasyprint
 
         weasyprint.HTML(string=html_content).write_pdf(str(output_path))
         return
@@ -102,8 +102,8 @@ def html_to_pdf(html_content: str, output_path: Path) -> None:
         logger.debug("WeasyPrint not available or failed: %s", e)
 
     try:
-        from reportlab.lib.pagesizes import letter  # type: ignore
-        from reportlab.pdfgen import canvas  # type: ignore
+        from reportlab.lib.pagesizes import letter
+        from reportlab.pdfgen import canvas
 
         c = canvas.Canvas(str(output_path), pagesize=letter)
         c.drawString(100, 750, "Regulatory IND-Ready Dossier Summary")

@@ -225,7 +225,16 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/models/universal.py \
 	src/med_research/web/routers/universal.py \
 	src/med_research/web/services/universal_service.py \
-	src/med_research/web/services/comparison_service.py
+	src/med_research/web/services/comparison_service.py \
+	src/med_research/biomed/imports/opentargets_adapter.py \
+	src/med_research/biomed/nosograph_compare/__init__.py \
+	src/med_research/biomed/nosograph_compare/dimensions.py \
+	src/med_research/biomed/nosograph_compare/engine.py \
+	src/med_research/biomed/nosograph_compare/models.py \
+	src/med_research/biomed/nosograph_compare/service.py \
+	src/med_research/web/api/dossier.py \
+	src/med_research/web/routers/dossier.py \
+	src/med_research/web/services/dossier_service.py
 
 # ── Locked dependencies ────────────────────────────────────────────────────
 # The dev lock is compiled against the runtime lock (-c requirements-lock.txt)
