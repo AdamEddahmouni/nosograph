@@ -1,3 +1,7 @@
+---
+description: What NosoGraph curation tiers L0 through L3 and the reference/CI-validated sets mean, and why tier labels matter for interpretation.
+---
+
 # Curation tiers
 
 | Tier | Meaning |

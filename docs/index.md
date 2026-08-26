@@ -7,229 +7,283 @@ description: Open-source research software for connecting disease knowledge, evi
 
 <section class="ng-hero ng-dark" aria-labelledby="ng-hero-title">
   <div class="ng-shell ng-hero-grid">
-    <div>
+    <div class="ng-hero-copy">
       <p class="ng-eyebrow ng-eyebrow--light">Open-source biomedical research software</p>
-      <h1 id="ng-hero-title" class="ng-visually-hidden">NosoGraph — Disease Intelligence. Connected.</h1>
-      <img class="ng-hero-lockup" src="assets/brand/tagline-lockup.svg" alt="" aria-hidden="true">
-      <p class="ng-lede">Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.</p>
+      <h1 id="ng-hero-title" class="ng-hero-title">Trace disease evidence from claim to&nbsp;source.</h1>
+      <p class="ng-lede ng-hero-lede">NosoGraph connects disease knowledge from MONDO, HPO, literature, and clinical trials into typed claims — and keeps every claim's evidence direction and source provenance open to inspection.</p>
       <div class="ng-hero-actions" aria-label="Primary actions">
-        <a class="ng-button ng-button--primary" href="getting-started/what-is/">Explore documentation</a>
-        <a class="ng-button ng-button--secondary" href="getting-started/install/">Run NosoGraph locally</a>
-        <a class="ng-button ng-button--secondary" href="https://github.com/AdamEddahmouni/nosograph">View on GitHub</a>
+        <a class="ng-btn ng-btn--primary" href="using/evidence-explorer/">Explore Evidence Explorer</a>
+        <a class="ng-btn ng-btn--secondary ng-btn--on-dark" href="getting-started/install/">Run NosoGraph locally</a>
+        <a class="ng-btn ng-btn--text" href="https://github.com/AdamEddahmouni/nosograph">View source →</a>
       </div>
-      <p class="ng-hero-note">PUBLIC_ALPHA · RESEARCH USE ONLY · NO HOSTED DEMO YET</p>
+      <p class="ng-hero-availability">Runs locally · no hosted demo yet</p>
     </div>
-    <figure class="ng-hero-graph" data-ng-graph>
-      <svg viewBox="0 0 720 470" role="img" aria-labelledby="ng-graph-title ng-graph-desc">
-        <title id="ng-graph-title">Illustrative NosoGraph evidence path</title>
-        <desc id="ng-graph-desc">A disease connects to phenotypes, genes, pathways, interventions, and claims. Claims connect to supporting or contradictory evidence, studies, and source provenance.</desc>
-        <g aria-hidden="true">
-          <line class="ng-graph-edge" data-from="disease" data-to="phenotype" x1="350" y1="205" x2="190" y2="90" />
-          <line class="ng-graph-edge" data-from="disease" data-to="gene" x1="350" y1="205" x2="86" y2="180" />
-          <line class="ng-graph-edge" data-from="disease" data-to="pathway" x1="350" y1="205" x2="190" y2="320" />
-          <line class="ng-graph-edge" data-from="disease" data-to="intervention" x1="350" y1="205" x2="570" y2="100" />
-          <line class="ng-graph-edge" data-from="disease" data-to="claim" x1="350" y1="205" x2="495" y2="245" />
-          <line class="ng-graph-edge" data-from="gene" data-to="variant" x1="86" y1="180" x2="82" y2="385" />
-          <line class="ng-graph-edge" data-from="gene" data-to="pathway" x1="86" y1="180" x2="190" y2="320" />
-          <line class="ng-graph-edge" data-from="claim" data-to="evidence-supports" x1="495" y1="245" x2="560" y2="340" />
-          <line class="ng-graph-edge" data-from="claim" data-to="evidence-contradicts" x1="495" y1="245" x2="665" y2="300" />
-          <line class="ng-graph-edge" data-from="evidence-supports" data-to="study" x1="560" y1="340" x2="410" y2="405" />
-          <line class="ng-graph-edge" data-from="evidence-contradicts" data-to="source" x1="665" y1="300" x2="635" y2="415" />
-          <line class="ng-graph-edge" data-from="study" data-to="source" x1="410" y1="405" x2="635" y2="415" />
-        </g>
-        <g class="ng-graph-node" data-node="disease" data-label="Disease" tabindex="0" role="button" aria-label="Focus Disease relationships"><circle cx="350" cy="205" r="31" fill="#19D2C7"/><text x="350" y="210" text-anchor="middle">Disease</text></g>
-        <g class="ng-graph-node" data-node="phenotype" data-label="Phenotype" tabindex="0" role="button" aria-label="Focus Phenotype relationships"><circle cx="190" cy="90" r="21" fill="#19D2C7"/><text x="190" y="58" text-anchor="middle">Phenotype</text></g>
-        <g class="ng-graph-node" data-node="gene" data-label="Gene" tabindex="0" role="button" aria-label="Focus Gene relationships"><circle cx="86" cy="180" r="22" fill="#2F86FF"/><text x="86" y="224" text-anchor="middle">Gene</text></g>
-        <g class="ng-graph-node" data-node="pathway" data-label="Pathway" tabindex="0" role="button" aria-label="Focus Pathway relationships"><circle cx="190" cy="320" r="22" fill="#2F86FF"/><text x="190" y="363" text-anchor="middle">Pathway</text></g>
-        <g class="ng-graph-node" data-node="variant" data-label="Variant" tabindex="0" role="button" aria-label="Focus Variant relationships"><circle cx="82" cy="385" r="18" fill="#7252F4"/><text x="82" y="427" text-anchor="middle">Variant</text></g>
-        <g class="ng-graph-node" data-node="intervention" data-label="Intervention" tabindex="0" role="button" aria-label="Focus Intervention relationships"><circle cx="570" cy="100" r="23" fill="#7252F4"/><text x="570" y="64" text-anchor="middle">Intervention</text></g>
-        <g class="ng-graph-node" data-node="claim" data-label="Claim" tabindex="0" role="button" aria-label="Focus Claim relationships"><circle cx="495" cy="245" r="25" fill="#2F86FF"/><text x="495" y="250" text-anchor="middle">Claim</text></g>
-        <g class="ng-graph-node" data-node="evidence-supports" data-label="Evidence · supports" tabindex="0" role="button" aria-label="Focus supporting Evidence relationships"><circle cx="560" cy="340" r="24" fill="#DCE4EF"/><text x="560" y="382" text-anchor="middle">Evidence</text></g>
-        <g class="ng-graph-node" data-node="evidence-contradicts" data-label="Evidence · contradicts" tabindex="0" role="button" aria-label="Focus contradictory Evidence relationships"><circle cx="665" cy="300" r="20" fill="#DCE4EF"/><text x="665" y="266" text-anchor="middle">Evidence</text></g>
-        <g class="ng-graph-node" data-node="study" data-label="Study" tabindex="0" role="button" aria-label="Focus Study relationships"><circle cx="410" cy="405" r="21" fill="#73819A"/><text x="410" y="445" text-anchor="middle">Study</text></g>
-        <g class="ng-graph-node" data-node="source" data-label="Source / provenance" tabindex="0" role="button" aria-label="Focus Source and provenance relationships"><circle cx="635" cy="415" r="23" fill="#7252F4"/><text x="635" y="453" text-anchor="middle">Source</text></g>
-      </svg>
-      <p class="ng-graph-status" data-graph-status aria-live="polite">Select a labeled entity to trace relationships.</p>
-      <figcaption>Illustrative model, not a live query. NosoGraph keeps the claim, evidence direction, study context, and source provenance visible for inspection.</figcaption>
+    <figure class="ng-hero-trace" data-ng-evidence-trace aria-labelledby="ng-hero-trace-title">
+      <div class="ng-hero-trace-head">
+        <span id="ng-hero-trace-title" class="ng-hero-trace-label">Evidence trace</span>
+        <span class="ng-hero-trace-chip">Illustrative structure</span>
+      </div>
+      <div class="ng-hero-trace-stage" data-ng-trace-stage>
+        <ol class="ng-hero-trace-path" aria-label="Trace path stages">
+          <li>
+            <button type="button" class="ng-trace-stage is-selected" data-ng-trace-step="disease" aria-controls="ng-trace-inspector" aria-pressed="true">
+              <span class="ng-trace-index">01</span><span class="ng-hero-trace-name">Disease</span><span class="ng-hero-trace-detail">MONDO:0007915</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="ng-trace-stage" data-ng-trace-step="claim" aria-controls="ng-trace-inspector" aria-pressed="false">
+              <span class="ng-trace-index">02</span><span class="ng-hero-trace-name">Typed claim</span><span class="ng-hero-trace-detail">associated_with</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="ng-trace-stage" data-ng-trace-step="evidence" aria-controls="ng-trace-inspector" aria-pressed="false">
+              <span class="ng-trace-index">03</span><span class="ng-hero-trace-name">Evidence</span><span class="ng-hero-trace-detail"><span class="ng-ev ng-ev--supports">SUPPORTS</span></span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="ng-trace-stage" data-ng-trace-step="source" aria-controls="ng-trace-inspector" aria-pressed="false">
+              <span class="ng-trace-index">04</span><span class="ng-hero-trace-name">Study / source</span><span class="ng-hero-trace-detail">NOT_RECORDED</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="ng-trace-stage" data-ng-trace-step="provenance" aria-controls="ng-trace-inspector" aria-pressed="false">
+              <span class="ng-trace-index">05</span><span class="ng-hero-trace-name">Provenance</span><span class="ng-hero-trace-detail">snapshot context</span>
+            </button>
+          </li>
+        </ol>
+        <div id="ng-trace-inspector" class="ng-trace-inspector" tabindex="-1" aria-live="polite" aria-label="Selected trace stage">
+          <span class="ng-trace-inspector-label">Disease context</span>
+          <strong class="ng-trace-inspector-value">systemic lupus erythematosus</strong>
+          <span class="ng-trace-inspector-meta">MONDO:0007915 · reference disease module</span>
+        </div>
+      </div>
+      <p class="ng-hero-trace-meta" aria-label="Trace status"><span>Repository-backed vocabulary</span><span>Unknown stays unknown</span></p>
+      <figcaption>Follow a typed claim through evidence, source context, and preserved provenance.</figcaption>
     </figure>
   </div>
-</section>
-
-<section class="ng-orientation" aria-labelledby="ng-orientation-title">
-  <div class="ng-shell">
-    <p class="ng-kicker">Choose a way in</p>
-    <h2 id="ng-orientation-title" class="ng-display">Start with the question you need to answer.</h2>
-    <div class="ng-orientation-grid">
-      <a class="ng-route ng-route--research" href="using/evidence-explorer/">
-        <span class="ng-kicker">For researchers</span>
-        <h2>Trace what the graph says—and why.</h2>
-        <p>Explore disease knowledge, inspect claims, review supporting or contradictory evidence, and follow provenance to the source.</p>
-        <span class="ng-button ng-button--text">Open the research path →</span>
-      </a>
-      <a class="ng-route ng-route--developer" href="developers/architecture/">
-        <span class="ng-kicker">For developers</span>
-        <h2>Inspect the model. Extend the system.</h2>
-        <p>Run the platform locally, inspect the API and data model, add a source or disease, validate it, and contribute the change.</p>
-        <span class="ng-button ng-button--text">Open the developer path →</span>
-      </a>
-    </div>
+  <div class="ng-shell ng-hero-rail">
+    <span>Research software — <a href="project/security/">not medical advice</a></span>
+    <a href="project/status/">Status: public alpha</a>
   </div>
 </section>
 
-<section class="ng-problem" aria-labelledby="ng-problem-title">
+<section class="ng-credibility-rail" aria-labelledby="ng-credibility-title">
+  <div class="ng-shell">
+    <div class="ng-credibility-heading">
+      <p class="ng-kicker">Project record</p>
+      <h2 id="ng-credibility-title">Built to be inspected.</h2>
+      <a href="project/status/">Current status →</a>
+    </div>
+    <dl class="ng-credibility-stats">
+      <div><dt>L2-validated modules</dt><dd>{{NG_L2_STRICT_VALIDATED}}</dd></div>
+      <div><dt>Selected offline tests</dt><dd>{{NG_OFFLINE_TESTS}}</dd></div>
+      <div><dt>Registered integrations</dt><dd>17</dd></div>
+      <div><dt>License</dt><dd>Apache-2.0</dd></div>
+      <div><dt>Concept DOI</dt><dd><a href="project/citation/">10.5281/zenodo.22055279</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="ng-problem ng-context-section" aria-labelledby="ng-problem-title">
   <div class="ng-shell ng-problem-grid">
     <div>
-      <p class="ng-kicker">The problem</p>
-      <h2 id="ng-problem-title">Biomedical evidence is connected in the literature, but scattered in practice.</h2>
-      <p class="ng-lede">Diseases, phenotypes, genes, pathways, trials, publications, and therapies live across different resources. Finding a relationship is only the beginning; researchers also need its context and lineage.</p>
+      <p class="ng-kicker">Why this is hard</p>
+      <h2 id="ng-problem-title">A claim rarely arrives with all of its context in one place.</h2>
+      <p class="ng-lede">Biomedical resources are built for different questions. The work is not to replace them, but to reconcile identifiers, relationships, evidence direction, and provenance without flattening their differences.</p>
     </div>
     <ul class="ng-problem-list">
-      <li><strong>Distributed knowledge</strong> Ontologies, genetics resources, pathway databases, trials, and literature each expose a partial view.</li>
-      <li><strong>Hard-to-trace claims</strong> A result without its underlying evidence is difficult to review or reproduce.</li>
-      <li><strong>Uneven coverage</strong> A registry entry is not the same thing as a deeply curated disease module.</li>
-      <li><strong>Uncertain context</strong> Species, study design, origin, and missing metadata change how evidence should be read.</li>
+      <li><strong>Distributed knowledge</strong> Ontologies, literature, trials, genetics, and target resources each expose a partial view.</li>
+      <li><strong>Hard-to-trace claims</strong> A relationship is easier to review when its evidence and source context travel with it.</li>
+      <li><strong>Uneven metadata</strong> Species, study design, origin, and other fields may be unknown—not negative.</li>
+      <li><strong>Context matters</strong> Association, evidence direction, and provenance are separate dimensions of interpretation.</li>
     </ul>
   </div>
 </section>
 
-<section class="ng-transformation ng-dark" aria-labelledby="ng-transformation-title">
+<section class="ng-transformation ng-context-section" aria-labelledby="ng-transformation-title">
   <div class="ng-shell">
-    <p class="ng-eyebrow ng-eyebrow--light">The NosoGraph layer</p>
-    <h2 id="ng-transformation-title">Turn fragmented sources into inspectable relationships.</h2>
-    <p class="ng-lede">NosoGraph is a computational layer across upstream resources—not a replacement for them. It normalizes records, creates typed claims, attaches evidence, and preserves provenance for downstream inspection.</p>
-    <div class="ng-pipeline" aria-label="NosoGraph evidence pipeline">
-      <div class="ng-pipeline-step"><strong>Sources</strong><span>MONDO, HPO, PubMed, trials, genetics, pathways, and drug data.</span></div>
-      <div class="ng-pipeline-step"><strong>Normalize</strong><span>Resolve identifiers and preserve source context.</span></div>
-      <div class="ng-pipeline-step"><strong>Claims</strong><span>Represent deterministic biomedical assertions.</span></div>
-      <div class="ng-pipeline-step"><strong>Evidence</strong><span>Separate supports, contradicts, and inconclusive signals.</span></div>
-      <div class="ng-pipeline-step"><strong>Provenance</strong><span>Keep snapshot, import, fingerprint, and source lineage visible.</span></div>
+    <div class="ng-transformation-intro">
+      <p class="ng-kicker">The NosoGraph layer</p>
+      <h2 id="ng-transformation-title">Turn fragmented sources into inspectable relationships.</h2>
+      <p class="ng-lede">NosoGraph adds a computational layer across upstream resources—not a replacement for them. Each step keeps the distinction between source data, typed relationships, evidence, and provenance visible.</p>
     </div>
-    <div class="ng-source-row" aria-label="Example upstream sources"><span class="ng-source-chip">MONDO</span><span class="ng-source-chip">HPO / HPOA</span><span class="ng-source-chip">PubMed</span><span class="ng-source-chip">ClinicalTrials.gov</span><span class="ng-source-chip">Open Targets</span><span class="ng-source-chip">GWAS Catalog</span></div>
+    <ol class="ng-pipeline" aria-label="NosoGraph evidence pipeline">
+      <li class="ng-pipeline-step"><span class="ng-pipeline-index">01</span><strong>Source sync</strong><span>Acquire a resource record and retain its snapshot context.</span></li>
+      <li class="ng-pipeline-step"><span class="ng-pipeline-index">02</span><strong>Normalize</strong><span>Resolve identifiers while retaining source vocabulary.</span></li>
+      <li class="ng-pipeline-step"><span class="ng-pipeline-index">03</span><strong>Typed claims</strong><span>Represent explicit subject–predicate–object relationships.</span></li>
+      <li class="ng-pipeline-step"><span class="ng-pipeline-index">04</span><strong>Evidence</strong><span>Keep SUPPORTS, CONTRADICTS, and INCONCLUSIVE distinct.</span></li>
+      <li class="ng-pipeline-step"><span class="ng-pipeline-index">05</span><strong>Provenance</strong><span>Carry source, snapshot, import, and fingerprint context forward.</span></li>
+    </ol>
   </div>
 </section>
 
-<section class="ng-trace ng-dark" aria-labelledby="ng-trace-title">
-  <div class="ng-shell ng-trace-grid">
-    <div>
-      <p class="ng-eyebrow ng-eyebrow--light">Evidence-first by design</p>
-      <h2 id="ng-trace-title">See why information is present—not only what was generated.</h2>
-      <p class="ng-lede">Evidence records support claims; they are not automatic proof. Associations are not causation. Conflicting evidence can coexist, and unknown metadata remains unknown rather than becoming a confident score.</p>
-      <a class="ng-button ng-button--primary" href="using/evidence-explorer/">Read the Evidence Explorer guide</a>
-    </div>
-    <div>
-      <ol class="ng-trace-path" aria-label="Evidence traceability path">
-        <li data-step="1">Disease context</li>
-        <li data-step="2">Typed claim</li>
-        <li data-step="3">Supporting / contradictory evidence</li>
-        <li data-step="4">Study and source metadata</li>
-        <li data-step="5">Provenance and snapshot</li>
-      </ol>
-      <p class="ng-trace-note">The Evidence Explorer is a read-only public-alpha surface. Quality dimensions such as species, study design, origin, and human review describe context; sparse metadata is shown as <code>unknown</code>.</p>
-    </div>
-  </div>
-</section>
-
-<section class="ng-audience-section" aria-labelledby="ng-researcher-title">
+<section class="ng-sources ng-context-section" aria-labelledby="ng-sources-title">
   <div class="ng-shell">
-    <p class="ng-kicker">Real paths, not dead-end cards</p>
-    <div class="ng-audience-grid">
-      <article class="ng-audience ng-audience--research">
-        <span class="ng-kicker">Researcher path</span>
-        <h2 id="ng-researcher-title">From disease question to inspectable evidence.</h2>
-        <ul>
-          <li>Explore a disease and its connected entities</li>
-          <li>Inspect claims and evidence directions</li>
-          <li>Trace provenance to source snapshots</li>
-          <li>Compare relationships with explicit missingness</li>
-        </ul>
-        <a class="ng-button ng-button--text" href="research/sle/">See a research example →</a>
-      </article>
-      <article class="ng-audience ng-audience--developer">
-        <span class="ng-kicker">Developer path</span>
-        <h2>From architecture to contribution.</h2>
-        <ul>
-          <li>Understand the disease and biomedical store model</li>
-          <li>Run the CLI, API, dashboard, and tests locally</li>
-          <li>Extend a source adapter or disease module</li>
-          <li>Validate the change and open a contribution</li>
-        </ul>
-        <a class="ng-button ng-button--text" href="contributing/">Read the contribution path →</a>
-      </article>
+    <div class="ng-sources-heading">
+      <div><p class="ng-kicker">Source ecosystem</p><h2 id="ng-sources-title">Source context stays visible.</h2></div>
+      <p class="ng-sources-count"><strong>17</strong> registered integrations<br><span>Representative resources shown below.</span></p>
     </div>
-  </div>
-</section>
-
-<section class="ng-maturity" aria-labelledby="ng-maturity-title">
-  <div class="ng-shell">
-    <div class="ng-status-line"><span class="ng-status-badge">PUBLIC_ALPHA</span><span>Research software under active development. Snapshot: v0.2.1 · 2026-08-22.</span></div>
-    <h2 id="ng-maturity-title">What exists today—and what does not.</h2>
-    <p class="ng-lede">Maturity labels are part of the product. They tell you how to interpret a surface before you use it.</p>
-    <div class="ng-maturity-table-wrap">
-      <table class="ng-maturity-table">
-        <thead><tr><th scope="col">Capability</th><th scope="col">Current state</th><th scope="col">What that means</th></tr></thead>
+    <div class="ng-source-table-wrap">
+      <table class="ng-source-table">
+        <caption class="ng-visually-hidden">Representative NosoGraph source integrations and their integration maturity</caption>
+        <thead><tr><th scope="col">Source</th><th scope="col">Role in NosoGraph</th><th scope="col">Integration maturity</th></tr></thead>
         <tbody>
-          <tr><td>Unified <code>nosograph</code> CLI</td><td>Stable</td><td>Task-oriented commands for exploration, validation, sources, analysis, and serving.</td></tr>
-          <tr><td>FastAPI API + dashboard</td><td>Beta</td><td>Working local research interface with async jobs and documented API surfaces.</td></tr>
-          <tr><td>Evidence Explorer</td><td>Public alpha · included in v0.1.0</td><td>Read-only claim → evidence → provenance → source workflow.</td></tr>
-          <tr><td>Evidence Workspace</td><td>Beta</td><td>Multi-source evidence assembled into claims and ranked hypotheses.</td></tr>
-          <tr><td>NosoGraph Compare</td><td>Beta · released in v0.2.0</td><td>2–5-condition comparison with explicit missingness, claim drill-down, and deterministic exports.</td></tr>
-          <tr><td>Public hosted demo</td><td>Planned</td><td>Not deployed; local Docker evaluation is the current route.</td></tr>
-          <tr><td>Optional LLM enrichment</td><td>Experimental</td><td>Not required for core deterministic extraction and evidence workflows.</td></tr>
-          <tr><td>FHIR / OMOP / Phenopackets</td><td>Not implemented</td><td>Future interoperability work, not current capability.</td></tr>
+          <tr><th scope="row"><a href="data/sources/">MONDO</a></th><td>Disease ontology and identifiers</td><td><span class="ng-chip ng-chip--stable">STABLE</span></td></tr>
+          <tr><th scope="row"><a href="data/sources/">HPO / HPOA</a></th><td>Phenotypes and annotations</td><td><span class="ng-chip ng-chip--stable">STABLE</span></td></tr>
+          <tr><th scope="row"><a href="data/sources/">PubMed</a></th><td>Literature and evidence workspace</td><td><span class="ng-chip ng-chip--stable">STABLE</span></td></tr>
+          <tr><th scope="row"><a href="data/sources/">ClinicalTrials.gov</a></th><td>Clinical study records</td><td><span class="ng-chip ng-chip--stable">STABLE</span></td></tr>
+          <tr><th scope="row"><a href="data/sources/">Open Targets</a></th><td>Target–disease data and connector</td><td><span class="ng-chip ng-chip--beta">BETA</span></td></tr>
+          <tr><th scope="row"><a href="data/sources/">GWAS Catalog</a></th><td>Genetic associations</td><td><span class="ng-chip ng-chip--beta">BETA</span></td></tr>
+          <tr><th scope="row"><a href="data/sources/">bioRxiv / medRxiv</a></th><td>Preprint evidence workspace</td><td><span class="ng-chip ng-chip--experimental">EXPERIMENTAL</span></td></tr>
         </tbody>
       </table>
     </div>
-    <div class="ng-snapshot" aria-label="Repository snapshot metrics">
-      <div class="ng-stat"><strong>10,407</strong><span>registry modules</span></div>
-      <div class="ng-stat"><strong>88</strong><span>strict L2-validated</span></div>
-      <div class="ng-stat"><strong>6</strong><span>reference modules</span></div>
-      <div class="ng-stat"><strong>8</strong><span>CI-validated modules</span></div>
-      <div class="ng-stat"><strong>40+</strong><span>analysis pipelines</span></div>
-      <div class="ng-stat"><strong>2,445</strong><span>offline tests selected in v0.2.1 suite</span></div>
-    </div>
-    <p class="ng-footnote">Snapshot source: <a href="generated/public-status.yaml">public-status.yaml</a>. Registry breadth is not curation depth; most registry modules are scaffolds.</p>
+    <p class="ng-source-note">Integration maturity describes NosoGraph's implementation state, not the scientific quality or clinical validity of an upstream resource. <a href="data/sources/">View the complete source matrix →</a></p>
   </div>
 </section>
 
-<section class="ng-credibility" aria-labelledby="ng-credibility-title">
+<section class="ng-product-proof ng-dark" id="product" aria-labelledby="ng-product-title">
   <div class="ng-shell">
-    <p class="ng-kicker">Scientific and technical practice</p>
-    <h2 id="ng-credibility-title">Trust comes from inspectability.</h2>
-    <div class="ng-credibility-grid">
-      <article class="ng-credibility-item"><h3>Source transparency</h3><p>Upstream resources, integration state, and data terms are documented in a source matrix.</p></article>
-      <article class="ng-credibility-item"><h3>Provenance</h3><p>Source snapshots, import paths, filters, fingerprints, and retrieval context can travel with an output.</p></article>
-      <article class="ng-credibility-item"><h3>Conservative quality</h3><p>Species, study design, origin, and human review are contextual dimensions; missing values stay unknown.</p></article>
-      <article class="ng-credibility-item"><h3>Reproducibility</h3><p>CLI validation, fixture-backed workflows, tests, and explicit maturity make limits visible.</p></article>
+    <div class="ng-product-intro">
+      <p class="ng-eyebrow ng-eyebrow--light">From model to working software</p>
+      <h2 id="ng-product-title">Inspect the structure directly.</h2>
+      <p class="ng-lede">The evidence model is not only a diagram. NosoGraph exposes local research interfaces for exploring conditions, claims, evidence, and provenance.</p>
+    </div>
+    <figure class="ng-product-figure ng-product-figure--primary">
+      <div class="ng-product-media"><img src="assets/product/evidence-explorer.webp" width="1440" height="900" loading="lazy" decoding="async" alt="NosoGraph dashboard showing condition and evidence exploration panels." /></div>
+      <figcaption><strong>Evidence Explorer</strong> — a local dashboard surface for inspecting condition context, claims, evidence direction, and source-linked research data. <span class="ng-product-meta">LOCAL RUN · PUBLIC ALPHA</span></figcaption>
+    </figure>
+    <div class="ng-product-secondary">
+      <figure class="ng-product-figure">
+        <div class="ng-product-media"><img src="assets/product/evidence-workspace.webp" width="1440" height="900" loading="lazy" decoding="async" alt="NosoGraph local dashboard showing a disease exploration interface." /></div>
+        <figcaption><strong>Evidence Workspace</strong> — the documented async workspace turns selected evidence sources into a provenance-backed dossier. <a href="evidence-workspace/">Run it locally →</a><span class="ng-product-meta">DOCUMENTED SURFACE · BETA</span></figcaption>
+      </figure>
+      <figure class="ng-product-figure">
+        <div class="ng-product-media"><img src="assets/product/compare.svg" width="900" height="520" loading="lazy" decoding="async" alt="Conceptual diagram representing NosoGraph Compare condition comparison." /></div>
+        <figcaption><strong>NosoGraph Compare</strong> — the implemented workflow compares two to five conditions with explicit missingness and deterministic structured output. <a href="using/compare/">Read the workflow →</a><span class="ng-product-meta">DOCUMENTED SURFACE · BETA · CONCEPTUAL ARTWORK</span></figcaption>
+      </figure>
+    </div>
+    <p class="ng-product-note">These are local research interfaces, not a hosted demo. Captures and concepts are presented with their actual status; no screenshot is a clinical result or proof of causation.</p>
+  </div>
+</section>
+
+<section class="ng-philosophy ng-context-section" aria-labelledby="ng-philosophy-title">
+  <div class="ng-shell ng-philosophy-grid">
+    <div class="ng-philosophy-intro">
+      <p class="ng-kicker">Evidence-first by design</p>
+      <h2 id="ng-philosophy-title">Evidence is direction, context, and provenance—not a single score.</h2>
+      <p class="ng-lede">NosoGraph structures evidence for inspection. It does not automatically turn a claim into scientific proof or a clinical conclusion.</p>
+      <p class="ng-philosophy-boundary"><strong>ASSOCIATED_WITH</strong> is a relationship type. It is not automatically <strong>CAUSES</strong>.</p>
+    </div>
+    <div class="ng-evidence-specimen" aria-labelledby="ng-evidence-specimen-title">
+      <div class="ng-specimen-head"><span id="ng-evidence-specimen-title">Evidence semantics</span><span>Structural example</span></div>
+      <div class="ng-specimen-claim"><span class="ng-specimen-label">Typed claim</span><strong>subject <span>→</span> predicate <span>→</span> object</strong><code>associated_with</code></div>
+      <dl class="ng-evidence-semantics">
+        <div><dt><span class="ng-ev ng-ev--supports">SUPPORTS</span></dt><dd>Evidence supports the claim; it is not a proven fact.</dd></div>
+        <div><dt><span class="ng-ev ng-ev--contradicts">CONTRADICTS</span></dt><dd>Evidence disagrees with the claim; it is not automatic falsification.</dd></div>
+        <div><dt><span class="ng-ev ng-ev--inconclusive">INCONCLUSIVE</span></dt><dd>Evidence does not establish a clear direction.</dd></div>
+        <div><dt><span class="ng-ev ng-ev--unasserted">UNASSERTED</span></dt><dd>No directional evidence is recorded.</dd></div>
+      </dl>
+      <div class="ng-specimen-footer"><span>Missing field</span><code>NOT_RECORDED</code><span>Provenance stays attached where available.</span></div>
     </div>
   </div>
 </section>
 
-<section class="ng-docs" aria-labelledby="ng-docs-title">
+<section class="ng-research-workflow ng-context-section" aria-labelledby="ng-research-workflow-title">
   <div class="ng-shell">
-    <p class="ng-kicker">Go deeper</p>
-    <h2 id="ng-docs-title">Documentation organized around how you work.</h2>
-    <div class="ng-doc-grid">
-      <a class="ng-doc-link" href="getting-started/what-is/"><h3>Get started</h3><p>Understand the model, install locally, and run a first workflow.</p></a>
-      <a class="ng-doc-link" href="concepts/evidence/"><h3>Learn the concepts</h3><p>Evidence, claims, provenance, knowledge graphs, and curation tiers.</p></a>
-      <a class="ng-doc-link" href="using/cli/"><h3>Use NosoGraph</h3><p>Web interface, Evidence Explorer, CLI, API, validation, and source sync.</p></a>
-      <a class="ng-doc-link" href="data/sources/"><h3>Inspect the data</h3><p>Sources, coverage, licensing, provenance, and update cadence.</p></a>
-      <a class="ng-doc-link" href="developers/architecture/"><h3>Build with it</h3><p>Architecture, data model, local development, testing, and deployment.</p></a>
-      <a class="ng-doc-link" href="project/roadmap/"><h3>See what is next</h3><p>Read the public roadmap and current release record without inflated promises.</p></a>
+    <div class="ng-workflow-heading">
+      <div><p class="ng-kicker">Researcher workflow</p><h2 id="ng-research-workflow-title">Start with a question. Follow the evidence.</h2></div>
+      <p class="ng-lede">A practical path from disease context to the next inspectable research surface.</p>
+    </div>
+    <ol class="ng-research-flow">
+      <li><span class="ng-flow-index">01</span><div><strong>Choose context</strong><p>Start with a disease module or research question, then check its curation and coverage context.</p><a href="research/sle/">SLE walkthrough →</a></div></li>
+      <li><span class="ng-flow-index">02</span><div><strong>Inspect claims</strong><p>Open the condition view and identify the exact relationship type instead of reading an unlabeled edge.</p><a href="using/evidence-explorer/">Evidence Explorer guide →</a></div></li>
+      <li><span class="ng-flow-index">03</span><div><strong>Review direction</strong><p>Read SUPPORTS, CONTRADICTS, INCONCLUSIVE, or UNASSERTED as categorical evidence semantics.</p><a href="concepts/evidence/">Evidence concepts →</a></div></li>
+      <li><span class="ng-flow-index">04</span><div><strong>Trace context</strong><p>Follow study/source metadata and the provenance chain; keep unavailable fields explicitly unknown.</p><a href="research/evidence-tracing/">Evidence tracing →</a></div></li>
+      <li><span class="ng-flow-index">05</span><div><strong>Compare if useful</strong><p>Compare two to five conditions with explicit missingness when a cross-condition question is appropriate.</p><a href="using/compare/">Compare workflow →</a></div></li>
+    </ol>
+    <p class="ng-research-boundary">Research software for investigation—not medical advice or clinical decision support. <a href="project/security/">Research-use boundary →</a></p>
+  </div>
+</section>
+
+<section class="ng-research-exits ng-context-section" aria-labelledby="ng-research-exits-title">
+  <div class="ng-shell">
+    <div class="ng-exits-heading"><p class="ng-kicker">Continue the research</p><h2 id="ng-research-exits-title">Choose the next question, not an automatic answer.</h2></div>
+    <nav aria-label="Research workflows"><ul class="ng-exit-list">
+      <li><a href="research/evidence-tracing/"><strong>Evidence tracing</strong><span>Follow a claim to source provenance →</span></a></li>
+      <li><a href="research/comparison/"><strong>Cross-disease comparison</strong><span>Inspect structured differences across conditions →</span></a></li>
+      <li><a href="research/repurposing/"><strong>Drug repurposing research</strong><span>Surface evidence context for further investigation →</span></a></li>
+      <li><a href="research/ra/"><strong>Rheumatoid arthritis</strong><span>Use a second CI-validated disease context →</span></a></li>
+    </ul></nav>
+  </div>
+</section>
+
+<section class="ng-developer ng-context-section" id="developers" aria-labelledby="ng-developer-title">
+  <div class="ng-shell ng-developer-grid">
+    <div class="ng-developer-copy">
+      <p class="ng-kicker">Developer path</p>
+      <h2 id="ng-developer-title">Run it locally. Inspect the model. Extend the system.</h2>
+      <p class="ng-lede">NosoGraph is source-install software: use the CLI, local FastAPI surface, structured disease modules, and documented interfaces to inspect or extend research workflows.</p>
+      <nav class="ng-inline-links" aria-label="Developer resources">
+        <a href="getting-started/install/">Installation guide →</a>
+        <a href="api-reference/">API reference →</a>
+        <a href="architecture/overview/">Architecture →</a>
+      </nav>
+    </div>
+    <div class="ng-quickstart">
+      <div class="ng-code-head"><span>Run locally</span><span>source install</span></div>
+      <pre><code>git clone https://github.com/AdamEddahmouni/nosograph.git
+cd nosograph
+cp .env.example .env
+docker compose --profile full up --build</code></pre>
+      <p>Then open the local dashboard at <code>http://localhost:8000</code>.</p>
+    </div>
+  </div>
+  <div class="ng-shell ng-developer-surface">
+    <div class="ng-capability-list" aria-label="Developer capabilities">
+      <div><strong>CLI</strong><span>Validate disease modules and run task-oriented analysis commands.</span><a href="using/cli/">CLI guide →</a></div>
+      <div><strong>API</strong><span>Query structured disease, evidence, provenance, and comparison surfaces.</span><a href="api-reference/">API reference →</a></div>
+      <div><strong>Validation</strong><span>Run the local project gate before contributing.</span><code>make ci-local</code></div>
+      <div><strong>Sources</strong><span>Extend source integrations with licensing, provenance, maturity, and tests.</span><a href="contributing/sources/">Source contributions →</a></div>
+    </div>
+    <div class="ng-architecture-map" aria-label="Software architecture">
+      <div><span>DATA</span><strong>Disease modules</strong><small>structured domain objects</small></div>
+      <div><span>MODEL</span><strong>Claims · evidence</strong><small>typed relationships + context</small></div>
+      <div><span>INTERFACES</span><strong>CLI · API · web</strong><small>inspect, validate, compare</small></div>
+      <div><span>EXTEND</span><strong>Modules · adapters · tests</strong><small>documented contribution surfaces</small></div>
     </div>
   </div>
 </section>
 
-<section class="ng-open-source ng-dark" aria-labelledby="ng-open-source-title">
+<section class="ng-contribution ng-context-section" id="contribute" aria-labelledby="ng-contribution-title">
   <div class="ng-shell">
-    <p class="ng-eyebrow ng-eyebrow--light">Open implementation · open questions</p>
-    <h2 id="ng-open-source-title">Read the code. Improve the model.</h2>
-    <p class="ng-lede">Add a source, deepen a disease module, improve the evidence workflow, or ask a research question. NosoGraph is built in public and labeled honestly.</p>
-    <div class="ng-hero-actions"><a class="ng-button ng-button--primary" href="https://github.com/AdamEddahmouni/nosograph">View on GitHub</a><a class="ng-button ng-button--secondary" href="contributing/">Contribute</a><a class="ng-button ng-button--secondary" href="https://github.com/AdamEddahmouni/nosograph/discussions">Join Discussions</a></div>
+    <div class="ng-contribution-heading"><p class="ng-kicker">Open source</p><h2 id="ng-contribution-title">Contribute to the parts you can inspect.</h2><p class="ng-lede">The project accepts focused improvements to code, curation, source context, documentation, and validation.</p></div>
+    <div class="ng-contribution-list">
+      <div><strong>Build</strong><span>Improve software and interfaces without weakening the tests.</span><a href="contributing/code/">Code contribution guide →</a></div>
+      <div><strong>Curate</strong><span>Improve disease modules with sourced evidence, provenance, and licensing discipline.</span><a href="contributing/curation/">Disease curation guide →</a></div>
+      <div><strong>Integrate</strong><span>Add or maintain source entries with terms, maturity, and connector tests.</span><a href="contributing/sources/">Source contribution guide →</a></div>
+      <div><strong>Document</strong><span>Strengthen research examples and accessible project documentation.</span><a href="contributing/">Contributing overview →</a></div>
+    </div>
+    <p class="ng-contribution-note"><a href="project/good-first-issues/">Good first issues →</a> are listed with their intended area; governance and decision-making are documented publicly.</p>
   </div>
 </section>
 
-<footer class="ng-footer">
-  <div class="ng-shell ng-footer-inner"><span>NosoGraph · Disease Intelligence. Connected.</span><span><a href="project/security/">Research-use boundary</a> · <a href="project/license/">Apache-2.0</a> · <a href="project/citation/">Citation</a> · <a href="https://github.com/AdamEddahmouni/nosograph">GitHub</a></span></div>
+<section class="ng-legacy-open-source ng-dark" aria-labelledby="ng-open-source-title">
+  <div class="ng-shell ng-open-source-grid">
+    <div><p class="ng-eyebrow ng-eyebrow--light">Inspectable evidence · inspectable software</p><h2 id="ng-open-source-title">The research model is open to review.</h2></div>
+    <div><p class="ng-lede">Read the source, check the current status, cite the project, or review its security and roadmap records. Apache-2.0 covers the source code; upstream data terms remain source-specific.</p><nav class="ng-open-links" aria-label="Project resources"><a href="https://github.com/AdamEddahmouni/nosograph">View source →</a><a href="project/status/">Status →</a><a href="project/roadmap/">Roadmap →</a><a href="project/citation/">Concept DOI / citation →</a><a href="project/security/">Security policy →</a><a href="project/license/">Apache-2.0 license →</a></nav></div>
+  </div>
+</section>
+
+<footer class="ng-footer" aria-label="Site footer">
+  <div class="ng-shell ng-footer-grid">
+    <div class="ng-footer-brand"><strong>NosoGraph</strong><span>Disease intelligence, connected.</span><small>Research software · not medical advice</small></div>
+    <nav aria-labelledby="ng-footer-product"><h2 id="ng-footer-product">Product</h2><a href="using/evidence-explorer/">Evidence Explorer</a><a href="evidence-workspace/">Evidence Workspace</a><a href="using/compare/">Compare</a><a href="project/status/">Status</a></nav>
+    <nav aria-labelledby="ng-footer-start"><h2 id="ng-footer-start">Start</h2><a href="getting-started/what-is/">What is NosoGraph?</a><a href="getting-started/install/">Installation</a><a href="getting-started/tutorial/">Five-minute tutorial</a><a href="research/sle/">Research examples</a></nav>
+    <nav aria-labelledby="ng-footer-understand"><h2 id="ng-footer-understand">Understand</h2><a href="concepts/claims/">Claims</a><a href="concepts/evidence/">Evidence</a><a href="concepts/provenance/">Provenance</a><a href="data/sources/">Sources</a></nav>
+    <nav aria-labelledby="ng-footer-project"><h2 id="ng-footer-project">Project</h2><a href="https://github.com/AdamEddahmouni/nosograph">GitHub</a><a href="contributing/">Contributing</a><a href="project/roadmap/">Roadmap</a><a href="project/citation/">Citation</a><a href="project/security/">Security</a><a href="project/license/">License</a></nav>
+  </div>
+  <div class="ng-shell ng-footer-baseline"><span>Apache-2.0 source · upstream data terms vary by source · v{{NG_VERSION}}</span><span>Concept DOI <a href="project/citation/">10.5281/zenodo.22055279</a></span></div>
 </footer>
 
 </div>

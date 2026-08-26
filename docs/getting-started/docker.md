@@ -20,4 +20,4 @@ Local evaluation builds pass `DOCKER_SKIP_DISEASE_VALIDATE=1` so image build doe
 
 Compose project name is `nosograph` (container names like `nosograph-web-1`). The image tag remains `med-research:latest` as an internal/compatibility name matching the Python distribution; it is not a public rename of NosoGraph.
 
-Production hardening: [deployment](../developers/deployment.md)
+Production hardening: see [self-hosted deployment](../deployment.md).

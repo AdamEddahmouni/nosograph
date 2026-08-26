@@ -1,3 +1,7 @@
+---
+description: Which repository artifact owns each class of public fact — versions, metrics, citation data, capability status, and documentation.
+---
+
 # Documentation source of truth
 
 | Artifact | Owns |

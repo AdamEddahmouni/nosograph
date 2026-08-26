@@ -1,3 +1,7 @@
+---
+description: How the Evidence Workspace assembles multi-source biomedical evidence into deterministic claims and ranked computational hypotheses.
+---
+
 # Evidence Model
 
 ## Purpose

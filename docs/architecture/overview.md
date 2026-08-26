@@ -1,79 +1,70 @@
-# NosoGraph Architecture Overview
+---
+title: Architecture overview
+description: A repository-aligned view of NosoGraph's sources, domain stores, evidence services, and local interfaces.
+---
 
-**Status:** BETA (research platform)  
-**Package import path:** `med_research` (compatibility alias — see branding policy)
+# Architecture overview
 
-## What NosoGraph is
+NosoGraph is a Python research platform whose local runtime connects source data to structured disease and biomedical records, evidence-aware services, and user-facing interfaces. This page provides the developer mental model; the [API reference](../api-reference.md) and [data model](data-model.md) provide the operational details.
 
-NosoGraph is open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources. The Python platform combines disease-specific knowledge graphs, a universal biomedical ontology store, evidence gathering pipelines, and a FastAPI web dashboard for exploratory research.
+> **Research scope.** The platform exposes computational research artifacts. It is not a diagnostic system or clinical decision-support system.
 
-> **Research use only.** Outputs are computational hypotheses, not medical advice.
-
-## System context
+## Layered model
 
 ```text
-┌─────────────────────────────────────────────────────────────────┐
-│                     NosoGraph Platform                          │
-├──────────────┬──────────────────────┬───────────────────────────┤
-│  CLI         │  FastAPI Web API     │  Celery Workers           │
-│  med-research│  + Dashboard (JS)    │  (async analysis jobs)    │
-├──────────────┴──────────────────────┴───────────────────────────┤
-│  Pipeline modules (40+): KG, repurposing, expression, screening,│
-│  evidence workspace, virtual screening, clinical trials, …      │
-├────────────────────────────┬────────────────────────────────────┤
-│  Disease modules (10k+)    │  Universal Biomedical Store (SQLite)│
-│  JSON KG + config.py       │  MONDO/HPO/GO/Reactome/… imports   │
-└────────────────────────────┴────────────────────────────────────┘
-         │                                    │
-         ▼                                    ▼
-   External public APIs              Local parquet / fixture imports
-   (PubMed, CT.gov, Open Targets, …)
+upstream sources and local artifacts
+        ↓
+disease modules + universal biomedical store
+        ↓
+typed claims + evidence + provenance
+        ↓
+pipeline and analysis services
+        ↓
+CLI + FastAPI/API + dashboard + asynchronous workers
 ```
+
+The layers are repository components, not a promise that every source or pipeline has the same maturity.
 
 ## Major components
 
-| Component | Path | Maturity |
-|-----------|------|----------|
-| Unified CLI | `src/med_research/cli.py` | STABLE |
-| Disease registry | `src/med_research/diseases/` | BETA |
-| Pipeline engine | `src/med_research/pipeline/` | BETA |
-| Evidence Workspace | `src/med_research/pipeline/evidence_workspace/` | BETA |
-| Universal biomed | `src/med_research/biomed/` | BETA |
-| Web API + dashboard | `src/med_research/web/` | BETA |
-| Async tasks | `src/med_research/web/tasks/` | BETA |
+| Layer | Repository surface | Role | Maturity |
+|---|---|---|---|
+| Sources | `data/sources/`, import adapters, local artifacts | Acquire or stage upstream records and snapshots. | Per-source; see [source matrix](../data/sources.md). |
+| Disease registry | `src/med_research/diseases/` | Disease-specific JSON/config modules and readiness validation. | Mixed; registry breadth is not curation depth. |
+| Biomedical store | `src/med_research/biomed/` and local SQLite | Ontology entities, typed claims, evidence links, and resource snapshots. | Beta. |
+| Evidence services | `src/med_research/pipeline/` and Evidence Workspace | Gather records, normalize evidence, build research artifacts, and preserve provenance. | Mixed; Workspace is Beta and optional LLM enrichment is Experimental. |
+| Interfaces | `src/med_research/cli.py`, `src/med_research/web/` | CLI, versioned API slices, dashboard, and async job surface. | CLI Stable; API/dashboard Beta. |
 
-## Data flow (typical analysis)
+## Typical data flow
 
-1. User selects `disease_id` via CLI or dashboard.
-2. `Disease` loads JSON KG + config; `coverage` checks curated inputs.
-3. Pipeline module executes with disease context; optional live API fetches.
-4. `build_provenance()` attaches fingerprint + source metadata.
-5. Results returned as JSON/HTML or stored in workspace SQLite history.
+1. A user selects a disease or condition through the CLI, dashboard, or API.
+2. The relevant disease module or active biomedical snapshot is loaded.
+3. Services normalize records into typed claims and attach evidence/source context where supported.
+4. Provenance records source, retrieval/import context, and stable fingerprints where available.
+5. The CLI, API, dashboard, or Workspace renders a research artifact with explicit warnings and missingness.
 
-## Tier model (public honesty)
+## Run and validate locally
 
-See [data-model.md](data-model.md). **Registry count ≠ curation depth.**
+For the dashboard/API path, use the [installation](../getting-started/install.md) or [self-hosted deployment](../deployment.md) guide. The canonical server command is:
 
-## Deployment topology
+```bash
+python -m med_research.cli serve --host 127.0.0.1 --port 8000
+```
 
-- **Minimal:** Python venv + CLI (no Redis)
-- **Dashboard:** FastAPI + Redis + Celery worker
-- **Docker:** `docker-compose.yml` (API, worker, Redis)
+For a focused repository validation path:
 
-## Related documents
+```bash
+nosograph disease validate sle --strict
+make ci-local
+```
 
-- [data-model.md](data-model.md)
-- [evidence-model.md](evidence-model.md)
-- [provenance.md](provenance.md)
-- [ontology-policy.md](ontology-policy.md)
-- [commercialization-boundaries.md](commercialization-boundaries.md)
+Redis is required for asynchronous jobs and integration tests, not for the offline CLI validation command.
 
-## Branding compatibility
+## Extension points
 
-| Surface | Name |
-|---------|------|
-| Public product | **NosoGraph** |
-| Python package | `med_research` (KEEP_FOR_COMPATIBILITY) |
-| CLI command | `med-research` (KEEP_FOR_COMPATIBILITY) |
+- Add or revise disease modules under the disease curation workflow.
+- Add a source adapter with source-specific terms, tests, and honest maturity labels.
+- Extend typed biomedical services or API routers while preserving schema and provenance contracts.
+- Improve docs, fixtures, and browser tests for user-facing workflows.
 
-Future major version may introduce `nosograph` package alias.
+See [local development](../developers/local.md), [testing](../developers/testing.md), [code contributions](../contributing/code.md), [disease curation](../contributing/curation.md), and [source contributions](../contributing/sources.md).

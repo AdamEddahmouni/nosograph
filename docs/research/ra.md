@@ -1,3 +1,7 @@
+---
+description: A research walkthrough for rheumatoid arthritis using the ra disease module — computational hypothesis generation, not clinical advice.
+---
+
 # Rheumatoid arthritis
 
 

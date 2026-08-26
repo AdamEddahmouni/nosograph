@@ -1,0 +1,7 @@
+{# NosoGraph documentation context. Keep homepage markup untouched. #}
+{% if page and page.file and page.file.src_uri != 'index.md' %}
+  <div class="ng-doc-context">
+    <span class="ng-doc-context__label">Documentation</span>
+    {% if page.parent %}<span class="ng-doc-context__separator">/</span><span>{{ page.parent.title }}</span>{% endif %}
+  </div>
+{% endif %}

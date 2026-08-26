@@ -33,7 +33,7 @@ description: Frequently asked questions about NosoGraph scope, data, citation, a
 
 **What license?** Apache-2.0 for code; upstream terms for data.
 
-**Can I deploy it myself?** Yes. [Deployment](../developers/deployment.md).
+**Can I deploy it myself?** Yes. See [self-hosted deployment](../deployment.md).
 
 **What is NosoGraph Compare?** A beta workflow for deterministic two-to-five-disease comparisons with explicit missingness, evidence drill-down, and JSON/Markdown exports.
 

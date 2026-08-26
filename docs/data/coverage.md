@@ -1,15 +1,27 @@
+---
+title: Disease coverage
+description: Read NosoGraph registry breadth, validation subsets, and curation-depth limits.
+---
+
 # Disease coverage
 
-Generated from NosoGraph **v0.2.1**. Data snapshot: release date 2026-08-22. Source: [public-status.yaml](../generated/public-status.yaml).
+This page describes repository coverage metadata, not clinical coverage or scientific completeness. The current public snapshot is v0.2.1, released 2026-08-22; authoritative values live in [public-status.yaml](../generated/public-status.yaml).
 
-| Tier | Count |
-|------|------:|
+| Tier or measure | Count |
+|---|---:|
 | Registry modules | 10,407 |
 | L2 strict-validated | 88 |
-| L3 (sampled report) | 2 |
+| L3 expression-curated | 2 |
 | Reference | 6 |
 | CI-validated | 8 |
 
-NosoGraph separates **breadth of registry coverage** from **depth of evidence curation**. Scaffolds are starting points.
+Registry breadth describes discoverable module coverage. It is not equivalent to deep curation: most registry modules are scaffolds, while validation and reference status apply to smaller explicitly tracked subsets.
 
-Recompute: `nosograph disease corpus-status` and `nosograph disease validate-batch --tier L2 --strict`.
+Recompute repository reports with:
+
+```bash
+nosograph disease corpus-status
+nosograph disease validate-batch --tier L2 --strict
+```
+
+Do not interpret an unrecorded module field as a biological negative finding. Use [curation tiers](../concepts/curation-tiers.md) for the readiness model and [Sources](sources.md) for upstream integration context.

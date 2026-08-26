@@ -1,3 +1,7 @@
+---
+description: The experimental nine-stage source sync lifecycle, currently covering an Open Targets vertical slice.
+---
+
 # Source sync
 
 EXPERIMENTAL. Nine-stage lifecycle with an Open Targets vertical slice.

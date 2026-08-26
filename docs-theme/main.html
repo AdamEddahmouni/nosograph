@@ -2,10 +2,19 @@
 
 {% block extrahead %}
 {{ super() }}
+{# Page identity: explicit class on <html> instead of body:has() inference.
+   Set synchronously in <head> so page-scoped CSS applies at first paint. #}
+{% set ng_page_ctx = 'ng-page-home' if page and page.file and page.file.src_uri == 'index.md' else 'ng-page-docs' %}
+{# Social/title metadata: prefer explicit front-matter title; never degrade
+   the homepage to its nav label ("Home"). #}
+{% set ng_meta_title = page.meta.title if page and page.meta and page.meta.title else (config.site_name if page and page.file and page.file.src_uri == 'index.md' else page.title) %}
+<script>document.documentElement.classList.add('{{ ng_page_ctx }}');</script>
+<link rel="preload" href="{{ 'assets/fonts/InterVariable.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ 'assets/fonts/JetBrainsMono-Variable.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ 'assets/fonts/Sora-Variable.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="{{ config.site_url }}assets/brand/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#08142D">
-<meta name="description" content="{{ page.meta.description if page and page.meta and page.meta.description else config.site_description }}">
-<meta property="og:title" content="{{ page.title if page and page.title else config.site_name }}">
+<meta property="og:title" content="{{ ng_meta_title }}">
 <meta property="og:description" content="{{ page.meta.description if page and page.meta and page.meta.description else config.site_description }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.canonical_url if page else config.site_url }}">
@@ -14,7 +23,7 @@
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ page.title if page and page.title else config.site_name }}">
+<meta name="twitter:title" content="{{ ng_meta_title }}">
 <meta name="twitter:description" content="{{ page.meta.description if page and page.meta and page.meta.description else config.site_description }}">
 <meta name="twitter:image" content="{{ config.site_url }}assets/brand/social-preview.png">
 <script type="application/ld+json">
@@ -33,4 +42,25 @@
   "creativeWorkStatus": "PublicAlpha"
 }
 </script>
+{% endblock %}
+{% block htmltitle %}
+  {% if page and page.file and page.file.src_uri == 'index.md' %}
+    <title>{{ page.meta.title if page and page.meta and page.meta.title else config.site_name }}</title>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+{# Tabs render inside the header row (see partials/header.html override);
+   the container-level tab strip is intentionally suppressed. #}
+{% block tabs %}{% endblock %}
+
+{% block content %}
+  {% if page and page.file and page.file.src_uri != 'index.md' %}
+    <div class="ng-doc-frame">
+      {% include "partials/docs-shell.html" %}
+      {{ super() }}
+    </div>
+  {% else %}
+    {{ super() }}
+  {% endif %}
 {% endblock %}

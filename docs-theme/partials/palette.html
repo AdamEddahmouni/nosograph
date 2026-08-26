@@ -1,0 +1,16 @@
+{#- NosoGraph override: ensure theme radios expose programmatic names (axe label rule). -#}
+<form class="md-header__option" data-md-component="palette" aria-label="Color scheme">
+  {% for option in config.theme.palette %}
+    {% set scheme  = option.scheme  | d("default", true) %}
+    {% set primary = option.primary | d("indigo", true) %}
+    {% set accent  = option.accent  | d("indigo", true) %}
+    {% set toggle_name = option.toggle.name if option.toggle else scheme %}
+    <input class="md-option" data-md-color-media="{{ option.media }}" data-md-color-scheme="{{ scheme | replace(' ', '-') }}" data-md-color-primary="{{ primary | replace(' ', '-') }}" data-md-color-accent="{{ accent | replace(' ', '-') }}" type="radio" name="__palette" id="__palette_{{ loop.index0 }}" aria-label="{{ toggle_name }}">
+    {% if option.toggle %}
+      <label class="md-header__button md-icon" title="{{ option.toggle.name }}" for="__palette_{{ loop.index % loop.length }}" hidden>
+        <span class="ng-visually-hidden">{{ option.toggle.name }}</span>
+        {% include ".icons/" ~ option.toggle.icon ~ ".svg" %}
+      </label>
+    {% endif %}
+  {% endfor %}
+</form>

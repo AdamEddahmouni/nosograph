@@ -1,0 +1,69 @@
+{#-
+  NosoGraph shell override — single-row instrument header.
+  Derived from Material 9.7.7 partials/header.html. Structural deltas:
+  1. Brand lockup (mark + typeset wordmark, ONE link home) replaces the
+     site-name/page-title swap block (audit P1-7 identity split).
+  2. Tabs are embedded in the header row as the center column; the
+     container-level tabs block is neutralized in main.html.
+  3. Version/maturity chip rendered from config.extra.ng_public_status
+     (injected by scripts/site_hooks.py from public-status.yaml — never
+     hard-coded release data, audit P0-4).
+  Preserved verbatim from upstream: __drawer/__search/__palette toggles,
+  data-md-component hooks, search dialog inside <header> (sibling-combinator
+  selectors depend on it), palette JS include.
+-#}
+{% set class = "md-header ng-header" %}
+{% if "navigation.tabs.sticky" in features %}
+  {% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% elif "navigation.tabs" not in features %}
+  {% set class = class ~ " md-header--shadow" %}
+{% endif %}
+<header class="{{ class }}" data-md-component="header">
+  <nav class="md-header__inner md-grid ng-header-grid" aria-label="{{ lang.t('header') }}">
+    <label class="md-header__button md-icon ng-menu-btn" for="__drawer" aria-label="Open navigation menu">
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo ng-brand" aria-label="{{ config.site_name }}" data-md-component="logo">
+      <img src="{{ config.theme.logo | url }}" alt="" class="ng-mark">
+      <span class="ng-wordmark">{{ config.site_name }}</span>
+    </a>
+    {% if config.extra.ng_public_status %}
+      <a class="ng-version-chip" href="{{ config.extra.ng_public_status.status_page | url }}" title="Release status">
+        <span class="ng-version-num">v{{ config.extra.ng_public_status.version }}</span>
+        {% if config.extra.ng_public_status.maturity %}<span class="ng-version-maturity">{{ config.extra.ng_public_status.maturity.replace('_', ' ') }}</span>{% endif %}
+      </a>
+    {% endif %}
+    {% if "navigation.tabs" in features %}
+      <div class="ng-header-nav">
+        {% include "partials/tabs.html" %}
+      </div>
+    {% endif %}
+    {% if config.theme.palette %}
+      {% if not config.theme.palette is mapping %}
+        {% include "partials/palette.html" %}
+      {% endif %}
+    {% endif %}
+    {% if not config.theme.palette is mapping %}
+      {% include "partials/javascripts/palette.html" %}
+    {% endif %}
+    {% if config.extra.alternate %}
+      {% include "partials/alternate.html" %}
+    {% endif %}
+    {% if "material/search" in config.plugins %}
+      {% set search = config.plugins["material/search"] | attr("config") %}
+      {% if search.enabled %}
+        <label class="md-header__button md-icon ng-search-btn" for="__search" aria-label="{{ lang.t('search') }}">
+          {% set icon = config.theme.icon.search or "material/magnify" %}
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+        {% include "partials/search.html" %}
+      {% endif %}
+    {% endif %}
+    {% if config.repo_url %}
+      <div class="md-header__source">
+        {% include "partials/source.html" %}
+      </div>
+    {% endif %}
+  </nav>
+</header>

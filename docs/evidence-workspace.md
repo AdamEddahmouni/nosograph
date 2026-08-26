@@ -1,8 +1,15 @@
+---
+title: Evidence-to-Hypothesis Workspace
+description: Run the local Beta Evidence Workspace to assemble multi-source evidence into provenance-backed research dossiers.
+---
+
 # Evidence-to-Hypothesis Workspace
 
-The Evidence Workspace turns a biomedical question into a provenance-backed dossier for research review. It searches the selected evidence sources, normalizes records, extracts deterministic claims, optionally enriches them with a validated LLM, ranks drugs and targets with explainable heuristics, checks knowledge-graph paths, and renders JSON/HTML exports.
+**Maturity:** `BETA` · local asynchronous research workflow
 
-> **Research use only.** The Workspace produces computational prioritization hypotheses. It does not provide medical advice, establish efficacy, or replace study-level scientific, experimental, or clinical review.
+The Evidence Workspace turns a biomedical question into a provenance-backed dossier for research review. It searches selected evidence sources, normalizes records, extracts deterministic claims, optionally enriches them with a validated LLM, ranks drugs and targets with explainable heuristics, checks knowledge-graph paths, and renders JSON/HTML exports.
+
+> **Research use only.** The Workspace produces computational prioritization hypotheses. It does not provide medical advice, establish efficacy, or replace study-level scientific, experimental, or clinical review. Scores are heuristics, not probabilities of benefit or safety.
 
 ## Quick start
 
@@ -46,7 +53,7 @@ The command prints the run ID and evidence/claim/candidate counts. `--json` and 
 8. Use history to reopen a saved run, compare two runs, inspect trends, download the compact trend table as CSV, or delete a run.
 9. Expand **Researcher review** on any drug or target to add notes, tags, a pinned/rejected decision, a rationale, and what changed your mind. Use **Evidence history** to inspect that candidate across saved runs.
 10. Sign in through the Workspace authentication controls. Local development accounts are configured with `LOCAL_AUTH_USERS`; production deployments should use `AUTH_MODE=proxy` behind an identity-aware reverse proxy. Notes and decisions are separated by the server-derived principal.
-11. Open the **Evidence graph** to explore candidate → claim → citation/pathway relationships and your researcher-owned review decisions.
+11. Open the **Evidence graph** to explore candidate -> claim -> citation/pathway relationships and your researcher-owned review decisions.
 12. Download the **Review bundle** for a citation-ready ZIP containing Markdown review notes, a citations CSV, the exact dossier, review metadata, review events, and provenance.
 13. Configure an email address or Slack Incoming Webhook in **Review reminders**. New unread reminders are delivered once per channel; failed attempts remain retryable and the latest delivery state is shown beside the settings.
 14. Set optional alert thresholds for score drops, rank movement, and evidence-quality changes. A threshold of `0` disables metric-only alerts while preserving the existing new-evidence reminder behavior.
@@ -217,3 +224,10 @@ python -m pytest tests/test_evidence_workspace_browser.py -q
 ```
 
 The browser fixture covers success, duplicate-submit prevention, WebSocket-to-polling fallback, and terminal `FAILURE`, `ERROR`, and `TIMEOUT` recovery, including escaped error messages and restored accessible form state.
+
+## Continue
+
+- [Evidence Explorer](using/evidence-explorer.md) for read-only claim/evidence inspection.
+- [Source matrix](data/sources.md) for integration maturity and source terms.
+- [Provenance](concepts/provenance.md) for traceability semantics.
+- [API reference](api-reference.md) for the complete route catalog.

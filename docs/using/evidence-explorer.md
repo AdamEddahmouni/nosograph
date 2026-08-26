@@ -1,77 +1,72 @@
+---
+title: Evidence Explorer
+description: Inspect a local NosoGraph claim, its evidence direction, source context, and provenance.
+---
+
 # Evidence Explorer
 
-**Status:** PUBLIC_ALPHA · included in v0.1.0
+**Maturity:** `PUBLIC_ALPHA` · local read-only research surface
 
-Evidence Explorer is a read-only research surface that shows **why NosoGraph holds a claim** — from the claim itself through supporting, contradictory, and inconclusive evidence, provenance, and original source metadata.
+Evidence Explorer is the local NosoGraph interface for inspecting a typed claim, its evidence direction, study or source context, and available provenance. This page is procedural: it explains what to open and how to interpret the records without turning an evidence label into a scientific conclusion.
 
-## What is a claim?
+> **Research boundary.** Evidence Explorer presents computational research artifacts. `SUPPORTS` does not mean proven, `CONTRADICTS` does not by itself establish falsification, and an association is not causation. NosoGraph is not medical advice or clinical decision support.
 
-A **claim** is a structured biomedical statement in the knowledge graph, such as:
+## Open a claim
 
-- a condition **associated with** a gene or phenotype
-- a treatment **indicated for** a condition
-- a mechanism **linked to** a pathway
+1. Start the local dashboard from the [Docker guide](../getting-started/docker.md) or the [API/server guide](../api-reference.md).
+2. Open the dashboard at <http://127.0.0.1:8000/>.
+3. Open a condition, choose a claim, and select **Open in Evidence Explorer**. Depending on the local dashboard build, the same surface may be reached from the **Evidence** navigation item.
+4. Inspect the claim row, evidence groups, source identifiers, and provenance details.
 
-Claims are **associations**, not proof of causation. The exact relationship type appears on each claim row.
+A shareable claim URL uses the documented shape `?claim_id={uuid}#evidence-explorer`. The UUID is an application identifier, not a scientific confidence value.
 
-## How do I open Evidence Explorer?
+## Read the claim
 
-1. Open the NosoGraph dashboard (`/`).
-2. Click **Evidence** in the top navigation, or **Evidence Explorer** in the hero quick actions.
-3. Or open a condition in **Conditions**, pick a claim, and click **Open in Evidence Explorer**.
+A claim is a structured statement with a subject, predicate, and object. The predicate names the relationship; it does not decide whether the relationship is causal or clinically useful. The [Claims concept](../concepts/claims.md) defines the model and the [Evidence model](../concepts/evidence.md) explains how records attach to it.
 
-**Deep link:** `?claim_id={uuid}#evidence-explorer` — shareable URLs reload the same claim.
+## Read evidence direction
 
-## Evidence directions
+The canonical evidence directions are:
 
-| Label | Meaning |
-|-------|---------|
-| **SUPPORTS** | Evidence in the dataset supports the claim |
-| **CONTRADICTS** | Evidence disagrees with the claim |
-| **INCONCLUSIVE** | Mixed or insufficient evidence in the dataset |
-| **UNASSERTED** | No directional evidence recorded |
+| Direction | Meaning in NosoGraph |
+|---|---|
+| `SUPPORTS` | The evidence record is represented as supporting the claim. |
+| `CONTRADICTS` | The evidence record is represented as disagreeing with the claim. |
+| `INCONCLUSIVE` | The available evidence is mixed or does not establish a clear direction. |
+| `UNASSERTED` | No directional evidence is recorded for the claim. |
 
-Supporting evidence does **not** mean contradictory evidence is absent — check each group separately.
+These labels describe the stored relationship between an evidence record and a claim. They are not a universal confidence score, proof state, or clinical recommendation. Supporting and contradictory records can coexist; inspect each group separately. See the canonical [Evidence semantics](../concepts/evidence.md) page for the full interpretation reference.
 
-## Evidence quality badges
+## Read context and missingness
 
-Quality dimensions describe **context**, not a single confidence score. Missing metadata shows as **unknown** — absence is not treated as low quality.
+Quality dimensions such as species, study design, origin, and human review describe context. A field that is not present should remain explicitly unavailable; it should not be silently converted into a negative finding or a score.
 
-| Dimension | Examples |
-|-----------|----------|
-| **Species** | human, animal, in vitro, computational, unknown |
-| **Study design** | RCT, cohort, review, unknown |
-| **Origin** | curated, imported, generated, unknown |
-| **Human review** | none, community, expert, unknown |
+In Compare outputs, `KNOWN_ABSENT` means an explicit current negated assertion exists, while `NOT_RECORDED` means neither a positive nor a negated assertion is present. Those are different contracts; the [Compare guide](compare.md) defines them in detail.
 
-**UNKNOWN** means the field was not recorded or could not be derived conservatively from stored metadata.
+## Trace provenance and sources
 
-## Provenance
-
-The provenance timeline shows how data reached the graph:
+Follow the available chain:
 
 ```text
-source snapshot → normalized record → ingestion → graph claim
+claim -> evidence -> study or source -> snapshot/context -> provenance
 ```
 
-Incomplete chains are shown honestly — NosoGraph does not invent missing stages.
+Source identity, import context, version/date, fingerprints, and incomplete stages are shown only where the current record supports them. Provenance establishes traceability to stored inputs; it does not establish that the underlying conclusion is correct. See [Provenance](../concepts/provenance.md) and the [source matrix](../data/sources.md).
 
-## Original sources
+## API view
 
-Each evidence row links to source metadata (PubMed ID, trial registry, ontology record, etc.). Use **View source** when a URL or external identifier is available.
+A loaded claim can expose its structured response through the local API. The evidence list is paginated:
 
-## Filters
+```text
+GET /api/v1/claims/{claim_id}/evidence?limit=50&offset=0
+```
 
-Filter evidence by direction, species context, and sort order. Filter state is reflected in the URL so refresh and back/forward navigation preserve your view.
+Use the [API reference](../api-reference.md) for the current base URL and endpoint catalog. The route is local unless you deploy the application yourself.
 
-## API export
+## Continue
 
-Use the **JSON/API** link on a loaded claim to open the underlying `/api/v1/claims/{id}` response, or call the API directly. The evidence list is paginated:
-
-`GET /api/v1/claims/{claim_id}/evidence?limit=50&offset=0`
-
-## Research disclaimer
-
-NosoGraph is for **research use only**. Associations are not causation. Not medical advice.
-
-Architecture details: [Evidence Explorer architecture](../architecture/evidence-explorer.md).
+- [Claims](../concepts/claims.md) — understand the subject, predicate, and object.
+- [Evidence semantics](../concepts/evidence.md) — use one canonical direction vocabulary.
+- [Trace evidence](../research/evidence-tracing.md) — follow the inspection sequence.
+- [Provenance](../concepts/provenance.md) — interpret source and snapshot metadata.
+- [Compare conditions](compare.md) — inspect recorded differences without implying diagnosis.
