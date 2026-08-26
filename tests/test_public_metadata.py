@@ -231,14 +231,18 @@ def test_product_surfaces_use_the_canonical_nosograph_identity() -> None:
     assert "docs/assets/brand/symbol.svg" in launcher
 
 
-def test_public_homepage_hero_uses_the_canonical_lockup() -> None:
+def test_public_site_uses_canonical_brand_and_accessible_naming() -> None:
     homepage = (ROOT / "docs/index.md").read_text(encoding="utf-8")
-    stylesheet = (ROOT / "docs/stylesheets/nosograph.css").read_text(encoding="utf-8")
+    config = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
+    header = (ROOT / "docs-theme/partials/header.html").read_text(encoding="utf-8")
+    stylesheet = (ROOT / "docs/stylesheets/home.css").read_text(encoding="utf-8")
 
-    assert 'src="assets/brand/tagline-lockup.svg"' in homepage
     assert 'class="ng-visually-hidden"' in homepage
-    assert ".ng-hero-lockup" in stylesheet
-    assert "body:has(.ng-homepage) .md-sidebar--primary" in stylesheet
+    assert "assets/brand/mark.svg" in config
+    assert 'md-header__button md-logo ng-brand' in header
+    assert 'aria-label="{{ config.site_name }}"' in header
+    # Homepage full-bleed overrides are scoped by page context, not body:has().
+    assert "html.ng-page-home .md-sidebar--primary" in stylesheet
 
 
 def test_satellite_research_pages_use_public_brand_name() -> None:
