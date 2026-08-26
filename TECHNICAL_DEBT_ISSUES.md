@@ -1,4 +1,64 @@
-# med-research v2.0 — Comprehensive Technical Debt & Improvement Audit
+# Technical Debt — Active Backlog & Historical Audit
+
+## Active backlog (prioritized 2026-08-22, v0.2.1)
+
+This is the current open work queue. Everything below the divider is the preserved
+2026-07-25 audit plus its dated resolution notes; resolved findings there are
+historical records, not open defects. Deferred work must not be described as
+fixed by v0.2.1.
+
+### A1. Continue the incremental mypy ratchet across remaining runtime boundaries
+
+- **Impact/rationale:** `make typecheck` is informational only (`.github/workflows/test.yml` runs `make typecheck || true`). The expanded v0.2.1 scope (170 files) still reports **59 pre-existing errors in 45 legacy files**, so typing regressions can land silently in those boundaries.
+- **Evidence:** Fresh `mypy` run over the full explicit Makefile file list on the v0.2.1 tree: `Found 59 errors in 45 files`. Error-code breakdown: `override` ×21, `arg-type` ×18, `return-value` ×7, `assignment` ×5, `no-any-return` ×4, single `attr-defined`/`typeddict-unknown-key`/`var-annotated`/`operator`/`str-bytes-safe` items. All nine stabilization-surface files added by v0.2.1 pass with zero errors; these errors were verified present before the v0.2.1 changes (base commit `fc5e5f7a1`).
+- **Acceptance criteria:** `python -m mypy <full Makefile list>` exits 0 without new ignores; the CI job drops `|| true` and becomes a required check; each batch of fixes lands with tests where behavior is affected.
+- **Recommended release target:** v0.3.0 (incremental batches; do not attempt a repository-wide strict conversion in one step).
+
+### A2. Plan and test the FastAPI/Starlette TestClient migration to `httpx2`
+
+- **Impact/rationale:** Every web test emits `StarletteDeprecationWarning: Using 'httpx' with 'starlette.testclient' is deprecated; install 'httpx2' instead.` When the compatibility window closes, the whole API test tier breaks at once.
+- **Evidence:** Warning originates from `.venv/Lib/site-packages/fastapi/testclient.py:1` on every pytest run that imports `fastapi.testclient` (visible in the v0.2.1 verification warning summary).
+- **Acceptance criteria:** Dependency-family migration executed behind a tested upgrade: locks regenerated, full offline + integration tiers green, zero TestClient deprecation warnings, no warning filters added to hide it.
+- **Recommended release target:** v0.3.0.
+
+### A3. Resolve SHAP/Matplotlib deprecated color-map usage through a tested dependency upgrade or isolation
+
+- **Impact/rationale:** Third-party deprecation warnings from the SHAP/Matplotlib color-map path will become hard failures on future upgrades and currently pollute the warning summary for ML-tier runs.
+- **Evidence:** SHAP/Matplotlib colormap `MatplotlibDeprecationWarning`s observed in the offline-suite warning summary (third-party frames under `shap`/`matplotlib`).
+- **Acceptance criteria:** Either a locked dependency upgrade eliminates the warnings in the exercised ML paths, or the usage is isolated behind an owned adapter with tests; warnings are gone without suppression filters.
+- **Recommended release target:** v0.3.0.
+
+### A4. Standardize remaining timestamp creation and serialization behind one UTC utility
+
+- **Impact/rationale:** v0.2.1 removed all project-owned `datetime.utcnow()` uses in its scoped surfaces, but the repository still carries two conventions side by side (`datetime.now(UTC)` and `datetime.now(timezone.utc)`) and repeats ISO/filename-token formatting inline. Divergent helpers invite naive-datetime regressions.
+- **Evidence:** `rg "now\(UTC\)|now\(timezone\.utc\)" src/med_research` shows both conventions across biomed models/repository, sync lifecycle, evidence workspace, rate limiter, provenance, and web services. No repository-wide datetime utility exists (v0.2.1 deliberately did not introduce one).
+- **Acceptance criteria:** One owned UTC utility module provides aware-now, machine ISO serialization, and filename-token helpers; runtime code stops calling module-level datetime constructors directly; regression tests pin explicit-offset output and the `YYYYMMDDTHHMMSSZ` filename shape.
+- **Recommended release target:** v0.3.0.
+
+### A5. Add a reproducible SPDX/SBOM license report to release gates
+
+- **Impact/rationale:** Releases ship without a generated license bill-of-materials, so license regressions in the lock files are caught manually rather than by a gate.
+- **Evidence:** No SBOM/SPDX generation exists in `Makefile`, `.github/workflows/test.yml`, or `RELEASING.md`.
+- **Acceptance criteria:** A pinned tool emits a reproducible SPDX report from the lock files; `make ci-local` (or a dedicated gate) fails on license drift; the report artifact is attached to release handoff documentation.
+- **Recommended release target:** v0.3.0.
+
+### A6. Add trusted PyPI publishing with provenance and a dry-run validation path
+
+- **Impact/rationale:** `RELEASING.md` states PyPI publishing is not configured. Publishing remains manual and unproven; trusted publishing (OIDC provenance) and a package-validation dry run would make the first public distribution deliberate instead of improvised.
+- **Evidence:** No `publish` workflow under `.github/workflows/`; `RELEASING.md` documents publishing as "not automated".
+- **Acceptance criteria:** A tag-triggered trusted-publishing workflow with provenance, preceded by build/twine-check (or equivalent) dry-run validation in CI; a rehearsal run documented before any real publication.
+- **Recommended release target:** v0.4.0 (before any PyPI publication).
+
+### A7. Reduce generated disease-scaffold validation cost and ambiguity while retaining strict curated gates
+
+- **Impact/rationale:** `disease validate --all --strict` walks 10,000+ auto-generated scaffolds, takes significant time, and exits non-zero by design, which makes it unusable as a gate and confusing as a signal.
+- **Evidence:** Repository guidance (README/AGENTS/release docs) explicitly warns the command is *expected* to fail on scaffold config gaps; hosted CI validates only the original curated eight individually.
+- **Acceptance criteria:** Tier-scoped or sampled full-registry validation with clear structured output and predictable exit semantics; the curated set (`sle`…`ad`) keeps passing `disease validate <id> --strict` as individual gates; no loosening of strictness for curated modules.
+- **Recommended release target:** v0.3.0.
+
+---
+
+# med-research v2.0 — Comprehensive Technical Debt & Improvement Audit (historical)
 
 > **Current-state note (2026-08-13):** This document preserves the 2026-07-25 audit for traceability. The disease registry has expanded to **10,403 modules** (18 hand-curated modules — the seven original autoimmune diseases plus AD, ALS, ankylosing spondylitis, asthma, atopic dermatitis, COPD, gout, Parkinson's, psoriatic arthritis, psoriasis, and T2D — and 10,385 auto-generated OpenTargets knowledge-graph scaffolds). Production/OSS hardening added in 2026-08-12 includes `LICENSE`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, GitHub community templates, Docker lockfile alignment, WebSocket API-key auth, `/api/ready`, pre-commit hooks, and CI security scanning — see [docs/deployment.md](docs/deployment.md) and [RELEASING.md](RELEASING.md). Treat historical “Current state” sections below as dated audit observations, not the live API specification.
 
@@ -884,6 +944,8 @@ Rebrand to "Medical Research Platform" or generate dynamically per disease.
 ---
 
 ## Remaining open
+
+> **2026-08-22 update:** Current open work is tracked in the **Active backlog** section at the top of this document. The table below reflects the state of the original 2026-07-25 audit items as of 2026-08-11.
 
 No substantive audit items remain open as of **2026-08-11**. Accepted limitations and out-of-scope enhancements:
 

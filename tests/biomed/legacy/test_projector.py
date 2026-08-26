@@ -17,6 +17,14 @@ def test_sle_projection_emits_genes_drugs_and_target_claims() -> None:
     assert Predicate.TREATED_BY in predicates or Predicate.HAS_BIOMARKER in predicates
 
 
+def test_projection_emits_typed_condition_entity() -> None:
+    projection = project_disease("ra", snapshot_id=uuid4())
+    condition = next(
+        entity for entity in projection.entities if entity.primary_curie == projection.mondo_curie
+    )
+    assert condition.entity_type is EntityType.CONDITION
+
+
 def test_ra_projection_does_not_emit_sle_identifiers() -> None:
     bundle = project_disease("ra", snapshot_id=uuid4())
     serialized = "|".join(

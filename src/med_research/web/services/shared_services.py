@@ -47,7 +47,7 @@ def run_literature(
             "queries_run": 0,
             "articles": [],
             "gene_coverage": [],
-            "candidate_support": [],
+            "candidate_support": {},
             "coverage": coverage.to_dict(),
             "status": "ready",
         }
@@ -88,7 +88,7 @@ def run_literature(
         "queries_run": 5 + (len(candidates) if targeted else 0),
         "articles": article_matches[:max_articles],
         "gene_coverage": gene_coverage,
-        "candidate_support": crossref.get("candidate_support", []),
+        "candidate_support": crossref.get("candidate_support", {}),
         "coverage": coverage.to_dict(),
         "status": "limited_coverage" if coverage.level == "partial" else "ready",
     }

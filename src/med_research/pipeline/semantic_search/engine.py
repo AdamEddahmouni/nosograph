@@ -238,8 +238,6 @@ class SemanticSearchEngine:
 
         if not _check_deps():
             return []
-        self._load_model()
-        _tick(progress_callback, "semantic search", 1, 1)
 
         # Load existing collection (don't recreate)
         if self.collection is None:
@@ -257,8 +255,11 @@ class SemanticSearchEngine:
                 self.collection = self.client.get_collection(self.collection_name)
             except _chromadb_collection_errors() as exc:
                 logger.info("No indexed collection found for %s: %s", self.collection_name, exc)
+                _tick(progress_callback, "semantic search", 1, 1)
                 return []
 
+        self._load_model()
+        _tick(progress_callback, "semantic search", 1, 1)
         query_embedding = self.model.encode(query).tolist()
         results = self.collection.query(
             query_embeddings=[query_embedding],

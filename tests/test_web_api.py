@@ -595,6 +595,16 @@ class TestBioGWAS:
 class TestBioEnrichment:
     """Tests for GET /api/bioinformatics/enrichment (uses cache)."""
 
+    @pytest.fixture(autouse=True)
+    def _patch_enrichment_engine(self, monkeypatch, enrichment_result):
+        """Keep endpoint contract tests deterministic and offline."""
+        monkeypatch.setattr(
+            "med_research.pipeline.bioinformatics.enrichment.run_enrichment_analysis",
+            lambda disease_id="sle", untargeted_only=False, use_cache=True, progress_callback=None: (
+                enrichment_result
+            ),
+        )
+
     def test_returns_200(self, client):
         resp = client.get("/api/bioinformatics/enrichment")
         assert resp.status_code == 200
@@ -852,6 +862,14 @@ class TestLLMExtract:
 
 class TestAnalysisLiterature:
     """Tests for GET /api/literature (uses cached results)."""
+
+    @pytest.fixture(autouse=True)
+    def _patch_literature_engine(self, monkeypatch, literature_result):
+        """Keep endpoint contract tests deterministic and offline."""
+        monkeypatch.setattr(
+            "med_research.pipeline.literature_mining.miner.mine_literature",
+            lambda **_kwargs: (literature_result, {}, [], {}),
+        )
 
     def test_returns_200(self, client):
         resp = client.get("/api/literature?max_articles=5")

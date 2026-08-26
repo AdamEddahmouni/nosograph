@@ -4,7 +4,7 @@
 **Baseline:** v2.3.0 (`ff1ea223b`) · PUBLIC_ALPHA  
 **Status:** APPROVED FOR IMPLEMENTATION  
 **Owner:** NosoGraph core team  
-**Last updated:** 2026-08-21
+**Last updated:** 2026-08-22
 
 ---
 
@@ -60,7 +60,7 @@ These become authoritative before parallel UI work:
 
 **ADR-001:** Evidence Quality Model (Wave 1 gate)  
 **ADR-002:** Evidence Explorer resource model (Wave 1 gate)  
-**ADR-003:** Compare V2 semantics (Wave 2 gate)
+**ADR-003:** [Compare V2 semantics](../architecture/decisions/003-compare-v2-semantics.md) — Accepted (Wave 2 gate)
 
 ---
 
@@ -131,9 +131,16 @@ User opens claim from disease/condition context
 
 ### Epic E2 — Compare V2 Product (P0)
 
-**Why:** Second flagship differentiator; engine exists, product does not.  
+**Why:** Second flagship differentiator; the Sprint 1 engine and API exist, but the standalone
+product workflow does not.
 **Dependencies:** E1 drill-down, ADR-003  
 **Effort:** M · **Risk:** medium
+
+**Current state (2026-08-22):** Sprints 1–2 are complete: ADR-003 is accepted; deterministic
+2–5-condition comparison, all five dimensions, explicit absence states, curation warnings,
+research-run replay, the canonical API, the deprecated pairwise adapter, the product UI,
+deterministic JSON/Markdown exports, Evidence Explorer drill-down, and golden/browser tests are
+implemented. CLI export and Compare history remain future work.
 
 **V2 dimensions (data-backed only):**
 
@@ -141,9 +148,9 @@ User opens claim from disease/condition context
 |-----------|------------|-----------|
 | phenotype | yes | HPOA claims abundant |
 | gene | yes | OT + legacy |
-| mechanism/pathway | yes | INVOLVES_PATHWAY |
+| pathway | yes | `INVOLVES_PATHWAY` |
 | treatment | yes | TREATED_BY |
-| evidence_coverage | yes | claim overlap |
+| evidence_coverage | yes | per-condition claims, evidence, sources, and snapshots |
 | biomarker | defer | schema immature |
 | trials | P2 P1 | after trials sync |
 | cells/anatomy | defer | sparse claims |
@@ -176,7 +183,7 @@ User selects 3 diseases, 5 dimensions
 
 **Key files:**
 
-- `biomed/nosograph_compare/engine.py`, `dimensions.py`, `models.py`
+- `biomed/nosograph_compare/engine.py`, `service.py`, `models.py`
 - `web/services/nosograph_compare_service.py`
 - `web/routers/universal.py`
 - `tests/biomed/nosograph_compare/`
@@ -340,19 +347,19 @@ make typecheck  # ≤45 errors
 
 **Goal:** Compare V2 flagship workflow with exports and Explorer drill-down.
 
-| Track | Dependencies |
-|-------|--------------|
-| W2-A Multi-disease engine (2–5) | Wave 1 contracts |
-| W2-B Dimension adapters + curation warnings | W2-A |
-| W2-C Compare UI + export | W1-C Explorer drill-down |
-| W2-D API + golden tests | W2-A |
+| Track | Status | Dependencies |
+|-------|--------|--------------|
+| W2-A Multi-disease engine (2–5) | Complete (Sprint 1) | Wave 1 contracts |
+| W2-B Dimensions + curation warnings | Complete (Sprint 1) | W2-A |
+| W2-C Compare UI + export | Complete (Sprint 2) | W1-C Explorer drill-down |
+| W2-D API + golden tests | Complete (Sprint 1) | W2-A |
 
 **Validation gate:**
 
 ```bash
 pytest tests/biomed/nosograph_compare/ -n 0
-# Compare determinism golden files
-# Export schema validation
+pytest tests/web/test_nosograph_compare_v2_api.py -n 0
+pytest tests/test_evidence_explorer_ui.py -n 0
 ```
 
 **Release:** v2.5.0

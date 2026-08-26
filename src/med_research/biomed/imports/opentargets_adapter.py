@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Mapping
+from uuid import UUID
 
 from med_research.biomed.errors import BiomedicalValidationError
 from med_research.biomed.identifiers import claim_evidence_uuid, claim_uuid, normalize_curie
@@ -166,7 +167,7 @@ class OpenTargetsImportAdapter:
                 else normalize_curie(f"DRUG:{drug_name}")
             )
             qualifiers = {
-                "phase": int(row.get("phase")) if row.get("phase") is not None else None,
+                "phase": _normalize_phase(row.get("phase")),
                 "status": str(row.get("status") or ""),
                 "mechanism": str(row.get("mechanism") or ""),
                 "source": "open_targets",
@@ -228,7 +229,26 @@ def _bulk_checksum(manifest_path: Path, data_dir: Path) -> str:
     return f"sha256:{fingerprint_json({'files': digest_parts})}"
 
 
-def _snapshot_id(resource_name: str, version: str, checksum: str) -> object:
+def _snapshot_id(resource_name: str, version: str, checksum: str) -> UUID:
     from med_research.biomed.identifiers import snapshot_uuid
 
     return snapshot_uuid(resource_name, version, checksum)
+
+
+def _normalize_phase(value: object) -> int | None:
+    """Normalize an optional Open Targets development phase to an integer.
+
+    Integer and numeric-string phases become integers. Missing, null,
+    boolean, malformed, or unsupported values normalize to ``None`` so a
+    single malformed record cannot crash ingestion.
+    """
+    if value is None or isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, str):
+        try:
+            return int(value.strip())
+        except ValueError:
+            return None
+    return None

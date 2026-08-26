@@ -12,7 +12,7 @@ contributors:
 repository-code: "https://github.com/AdamEddahmouni/nosograph"
 url: "https://github.com/AdamEddahmouni/nosograph"
 license: Apache-2.0
-version: 0.1.0
+version: 0.2.1
 date-released: "2026-08-22"
 keywords:
   - bioinformatics
@@ -30,6 +30,16 @@ abstract: >-
   NosoGraph combines disease knowledge graphs, universal ontology imports,
   evidence gathering, and explainable research pipelines. Public alpha;
   research use only. Registry coverage is not equivalent to curation depth.
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22055279"
+    description: Concept DOI (all versions)
+  - type: doi
+    value: "10.5281/zenodo.22062925"
+    description: Version DOI for v0.2.0
+  - type: doi
+    value: "10.5281/zenodo.22055280"
+    description: Version DOI for v0.1.0
 preferred-citation:
   type: software
   title: "NosoGraph: Disease Intelligence. Connected."
@@ -37,5 +47,6 @@ preferred-citation:
     - family-names: Eddahmouni
       given-names: Adam
   year: 2026
-  version: 0.1.0
+  version: 0.2.1
+  doi: "10.5281/zenodo.22055279"
   url: "https://github.com/AdamEddahmouni/nosograph"

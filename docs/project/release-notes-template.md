@@ -8,7 +8,7 @@ Use for GitHub Releases. Do not rewrite historical tags.
 **Maturity:** Public Alpha — research use only; not production clinical software.
 
 ## What NosoGraph is
-An open computational map of human disease connecting conditions to phenotypes, genes, mechanisms, pathways, treatments, trials, literature, and traceable evidence.
+Disease Intelligence. Connected. Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.
 
 ## What changed
 - …

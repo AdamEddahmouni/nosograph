@@ -21,7 +21,7 @@ test-fast:  ## Run fast unit tests without slow or integration markers
 	python -m pytest tests/ -m "not slow and not integration" -q --tb=line
 
 test-offline:  ## Run the complete offline suite; live API tests are marked slow
-	python -m pytest tests/ -m "unit and not network" -q --tb=short
+	python -m pytest tests/ -m "unit and not network and not slow" -q --tb=short
 
 test-slow:  ## Run live API/integration tests marked slow
 	python -m pytest tests/ -m slow -v --tb=short
@@ -61,7 +61,7 @@ ci-local:  ## Local pre-push gate (lint, locks, import audit, serial offline tes
 	python scripts/check_imports.py
 	python scripts/check_public_metadata.py
 	python scripts/check_public_fonts.py
-	python -m pytest tests/ -m "unit and not network" -q --tb=short -n 0 --ignore=tests/test_evidence_workspace_browser.py
+	python -m pytest tests/ -m "unit and not network and not slow" -q --tb=short -n 0 --ignore=tests/test_evidence_workspace_browser.py
 
 typecheck:  ## Run mypy on the expanded type-check scope
 	python -m mypy \
@@ -225,7 +225,16 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/models/universal.py \
 	src/med_research/web/routers/universal.py \
 	src/med_research/web/services/universal_service.py \
-	src/med_research/web/services/comparison_service.py
+	src/med_research/web/services/comparison_service.py \
+	src/med_research/biomed/imports/opentargets_adapter.py \
+	src/med_research/biomed/nosograph_compare/__init__.py \
+	src/med_research/biomed/nosograph_compare/dimensions.py \
+	src/med_research/biomed/nosograph_compare/engine.py \
+	src/med_research/biomed/nosograph_compare/models.py \
+	src/med_research/biomed/nosograph_compare/service.py \
+	src/med_research/web/api/dossier.py \
+	src/med_research/web/routers/dossier.py \
+	src/med_research/web/services/dossier_service.py
 
 # ── Locked dependencies ────────────────────────────────────────────────────
 # The dev lock is compiled against the runtime lock (-c requirements-lock.txt)

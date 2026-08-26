@@ -2,4 +2,4 @@
 
 
 > Example · computational hypothesis / research prioritization · **not clinical advice**.
-Use the experimental Compare API and dashboard panel. Interpret missing values using explicit missingness semantics. It is not a finished standalone Compare product in v0.1.0.
+Use the v0.2.0 Compare API and dashboard workflow to inspect two to five diseases across canonical dimensions. Interpret missing values using explicit missingness semantics; `NOT_RECORDED` is not biological absence.

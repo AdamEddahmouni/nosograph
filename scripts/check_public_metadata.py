@@ -14,7 +14,10 @@ DESCRIPTOR = (
     "and provenance across biomedical sources."
 )
 PACKAGE_DESCRIPTION = f"NosoGraph — {TAGLINE} {DESCRIPTOR}"
-RETIRED_POSITIONING = "The Open Computational Map of Human Disease"
+RETIRED_POSITIONING_PATTERNS = (
+    re.compile(r"\b(?:the|an)\s+open computational map of human disease\b", re.IGNORECASE),
+    re.compile(r"\bevidence-native computational map of human disease\b", re.IGNORECASE),
+)
 
 CURRENT_SURFACES = (
     "README.md",
@@ -51,8 +54,18 @@ DESCRIPTOR_SURFACES = (
     "docs-theme/main.html",
 )
 ACTIVE_POSITIONING_SURFACES = tuple(dict.fromkeys((*TAGLINE_SURFACES, *DESCRIPTOR_SURFACES)))
+ACTIVE_POSITIONING_SURFACES += (
+    "CONTRIBUTING.md",
+    "docs/architecture/overview.md",
+    "docs/assets/screenshots/dashboard.svg",
+    "docs/getting-started/faq.md",
+    "docs/getting-started/what-is.md",
+    "docs/project/release-notes-template.md",
+)
 REQUIRED_ASSETS = (
     "symbol.svg",
+    "symbol-mono-dark.svg",
+    "symbol-reversed.svg",
     "mark.svg",
     "mark-light.svg",
     "compact.svg",
@@ -60,6 +73,8 @@ REQUIRED_ASSETS = (
     "favicon.svg",
     "logo-dark.svg",
     "logo-light.svg",
+    "logo-mono-dark.svg",
+    "logo-reversed.svg",
     "tagline-lockup.svg",
     "github-avatar.svg",
     "hero.svg",
@@ -171,7 +186,7 @@ def main() -> None:
         if DESCRIPTOR not in _text(relative):
             errors.append(f"{relative} missing canonical positioning descriptor")
     for relative in ACTIVE_POSITIONING_SURFACES:
-        if RETIRED_POSITIONING in _text(relative):
+        if any(pattern.search(_text(relative)) for pattern in RETIRED_POSITIONING_PATTERNS):
             errors.append(f"{relative} contains retired positioning")
 
     brand_dir = ROOT / "docs" / "assets" / "brand"
@@ -215,9 +230,11 @@ def main() -> None:
     }
     any_doi = bool(re.search(r"10\.5281/zenodo\.\d+", "\n".join(doi_surfaces.values())))
     if concept_doi or version_doi or any_doi:
-        if not concept_doi or not version_doi or concept_doi == version_doi:
-            errors.append("CITATION.cff must define distinct concept and version DOIs")
-        else:
+        if not concept_doi:
+            errors.append("CITATION.cff must define the concept DOI")
+        elif version_doi:
+            if concept_doi == version_doi:
+                errors.append("CITATION.cff concept and version DOIs must be distinct")
             preferred_doi = _field(
                 "CITATION.cff",
                 r"(?ms)^preferred-citation:.*?^\s+doi:\s*([\"']?[^\"'\n]+)",
@@ -233,6 +250,26 @@ def main() -> None:
                 errors.append("README BibTeX citation is missing the version DOI")
             if codemeta.get("identifier") != f"https://doi.org/{version_doi}":
                 errors.append("codemeta.json identifier is not the version DOI")
+            if codemeta.get("sameAs") != f"https://doi.org/{concept_doi}":
+                errors.append("codemeta.json sameAs is not the concept DOI")
+        else:
+            preferred_doi = _field(
+                "CITATION.cff",
+                r"(?ms)^preferred-citation:.*?^\s+doi:\s*([\"']?[^\"'\n]+)",
+                "CITATION.cff preferred-citation DOI",
+            )
+            if preferred_doi != concept_doi:
+                errors.append(
+                    "CITATION.cff preferred-citation DOI is not the concept DOI "
+                    "for an unarchived release"
+                )
+            for relative, text in doi_surfaces.items():
+                if concept_doi not in text:
+                    errors.append(f"{relative} missing DOI {concept_doi}")
+            if concept_doi not in bibtex[:1200]:
+                errors.append("README BibTeX citation is missing the concept DOI")
+            if codemeta.get("identifier") != f"https://doi.org/{concept_doi}":
+                errors.append("codemeta.json identifier is not the concept DOI")
             if codemeta.get("sameAs") != f"https://doi.org/{concept_doi}":
                 errors.append("codemeta.json sameAs is not the concept DOI")
 

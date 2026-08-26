@@ -1509,13 +1509,14 @@ class TestSharedServicesUnit:
             result = run_literature(max_articles=5, disease_id="ra")
         assert result["total_articles"] == 0
         assert result["articles"] == []
+        assert result["candidate_support"] == {}
         assert result["status"] == "ready"
 
     def test_run_literature_with_gene_coverage(self):
         crossref = {
             "article_matches": [{"pmid": "1", "title": "test"}],
             "gene_coverage": {"BTK": {"articles": 2, "supporting_count": 1, "coverage_score": 50}},
-            "candidate_support": [],
+            "candidate_support": {},
         }
         with (
             patch(
@@ -1536,6 +1537,7 @@ class TestSharedServicesUnit:
             result = run_literature(max_articles=5, disease_id="ra", targeted=True)
         assert result["total_articles"] == 1
         assert result["gene_coverage"][0]["gene_id"] == "BTK"
+        assert result["candidate_support"] == {}
 
     def test_run_screening_blocked_raises(self):
         from med_research.exceptions import ModuleNotAvailableError
@@ -2665,7 +2667,18 @@ class TestOfflineAdapterRuns:
             ("semantic_search", {"query": "lupus", "top": 3}),
         ],
     )
-    def test_adapter_run_ra_offline(self, module_id: str, extra_opts: dict):
+    def test_adapter_run_ra_offline(
+        self,
+        module_id: str,
+        extra_opts: dict,
+        offline_pipeline_http_mocks,
+        monkeypatch,
+        semantic_fake_embedder,
+    ):
+        monkeypatch.setattr(
+            "med_research.pipeline.semantic_search.engine.SemanticSearchEngine._load_model",
+            lambda engine: setattr(engine, "model", semantic_fake_embedder),
+        )
         adapter = get_module(module_id)
         result = adapter.run("ra", use_cache=True, **extra_opts)
         assert result is not None

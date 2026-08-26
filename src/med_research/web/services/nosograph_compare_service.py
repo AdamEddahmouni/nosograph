@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
-from med_research.biomed.nosograph_compare.models import CompareResult
+from med_research.biomed.nosograph_compare.models import CompareResult, CompareV2Result
 from med_research.web.models.universal import (
     DimensionMissingDataView,
     DimensionOverlapView,
     NosoGraphCompareResultView,
+    NosoGraphCompareV2ResultView,
     ResearchDisclaimer,
 )
 
 _DISCLAIMER = ResearchDisclaimer()
+
+
+def to_compare_v2_view(result: CompareV2Result) -> NosoGraphCompareV2ResultView:
+    payload = result.model_dump(exclude={"disclaimer"})
+    return NosoGraphCompareV2ResultView.model_validate({**payload, "disclaimer": _DISCLAIMER})
 
 
 def to_compare_view(result: CompareResult) -> NosoGraphCompareResultView:

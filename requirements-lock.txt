@@ -101,7 +101,7 @@ numpy==2.4.6
     #   scipy
     #   shap
     #   xgboost
-nvidia-nccl-cu12==2.31.2
+nvidia-nccl-cu12==2.31.2 ; platform_system == "Linux"
     # via xgboost
 orjson==3.11.9
     # via -r requirements.in
@@ -190,7 +190,7 @@ urllib3==2.7.0
     # via requests
 uvicorn[standard]==0.51.0
     # via -r requirements.in
-uvloop==0.22.1
+uvloop==0.22.1 ; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy"
     # via uvicorn
 vine==5.1.0
     # via

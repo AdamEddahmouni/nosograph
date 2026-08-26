@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NosoGraph</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#08142D">
+    <meta name="description" content="NosoGraph local research dashboard for connected disease evidence and provenance.">
+    <title>NosoGraph Research Dashboard</title>
+    <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/lib/tom-select/tom-select.css">
 </head>
@@ -16,8 +17,8 @@
         <nav class="top-nav" id="top-nav">
             <div class="nav-brand">
                 <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">☰</button>
-                <span class="nav-logo">🧬</span>
-                <span class="nav-title">NosoGraph</span>
+                <img class="nav-logo" src="/brand/symbol.svg" alt="">
+                <span class="nav-title">Noso<span>Graph</span></span>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <div class="nav-disease-wrap">
@@ -53,28 +54,30 @@
             <div class="hero">
                 <div class="hero-layout">
                     <div class="hero-content">
-                        <h1>NosoGraph</h1>
+                        <p class="hero-kicker">Connected biomedical research</p>
+                        <h1>Noso<span>Graph</span></h1>
+                        <p class="hero-tagline">Disease Intelligence. Connected.</p>
                         <p class="subtitle">
-                            An open computational map of human disease for
-                            <span id="hero-disease-name" class="hero-disease-name">the selected disease</span>.
-                            Connect phenotypes, genes, mechanisms, pathways, treatments, trials, and literature
+                            Explore
+                            <span id="hero-disease-name" class="hero-disease-name">the selected disease</span>
+                            across phenotypes, genes, mechanisms, pathways, treatments, trials, and literature
                             with traceable evidence — research use only.
                         </p>
                         <div class="badges">
-                            <span class="hero-badge open">🧬 Open Science</span>
-                            <span class="hero-badge research">🔬 Research Tool</span>
+                            <span class="hero-badge open">Open source</span>
+                            <span class="hero-badge research">Research use only</span>
                             <span class="hero-badge python">Python 3.11+</span>
-                            <span class="hero-badge disease" id="hero-disease-badge">🦠 Selected disease</span>
-                            <span class="hero-badge api" id="api-badge">⚡ API …</span>
+                            <span class="hero-badge disease" id="hero-disease-badge">Selected disease</span>
+                            <span class="hero-badge api" id="api-badge">API …</span>
                         </div>
                     </div>
                     <div class="hero-actions" aria-label="Quick actions">
-                        <a href="#evidence-workspace" class="btn btn-primary">🚀 Run Workspace</a>
-                        <a href="#kg-explorer" class="btn btn-secondary">🕸️ Explore KG</a>
-                        <a href="#graph-analytics" class="btn btn-secondary">📊 Graph Analytics</a>
-                        <a href="#condition-comparison" class="btn btn-secondary">⚖️ Compare Conditions</a>
-                        <a href="#evidence-explorer" class="btn btn-secondary" id="hero-evidence-link">🔍 Evidence Explorer</a>
-                        <a href="/api/docs" class="btn btn-secondary" target="_blank" rel="noopener">📖 API Docs</a>
+                        <a href="#evidence-workspace" class="btn btn-primary">Run workspace</a>
+                        <a href="#kg-explorer" class="btn btn-secondary">Explore knowledge graph</a>
+                        <a href="#graph-analytics" class="btn btn-secondary">Graph analytics</a>
+                        <a href="#condition-comparison" class="btn btn-secondary">Compare conditions</a>
+                        <a href="#evidence-explorer" class="btn btn-secondary" id="hero-evidence-link">Evidence Explorer</a>
+                        <a href="/api/docs" class="btn btn-secondary" target="_blank" rel="noopener">API documentation</a>
                     </div>
                 </div>
             </div>
@@ -909,28 +912,32 @@
                     <div>
                         <span class="workspace-kicker">UNIVERSAL BIOMEDICAL · RESEARCH ONLY</span>
                         <h2 id="condition-comparison-title">Condition Comparison</h2>
-                        <p>Compare two imported conditions across phenotype, gene, mechanism, treatment, and evidence-coverage dimensions. Overlap summaries are research hypotheses — no universal similarity score.</p>
+                        <p>Compare 2–5 imported conditions across phenotype, gene, pathway, treatment, and evidence coverage. Inspect shared and distinct entities without treating unrecorded data as biological absence.</p>
                     </div>
                     <div class="condition-comparison-disclaimer" id="condition-comparison-disclaimer">⚠️ Research use only · condition similarity for exploratory analysis</div>
                 </div>
                 <div class="condition-comparison-panel" id="condition-comparison-panel" aria-busy="false">
                     <div class="condition-comparison-toolbar">
-                        <label class="condition-comparison-label" for="comparison-left-curie">Left condition</label>
-                        <select id="comparison-left-curie" class="condition-comparison-input" placeholder="Search conditions…" autocomplete="off"></select>
-                        <label class="condition-comparison-label" for="comparison-right-curie">Right condition</label>
-                        <select id="comparison-right-curie" class="condition-comparison-input" placeholder="Search conditions…" autocomplete="off"></select>
+                        <div class="condition-comparison-picker">
+                            <label class="condition-comparison-label" for="comparison-condition-curies">Select 2–5 imported conditions</label>
+                            <select id="comparison-condition-curies" class="condition-comparison-input" multiple placeholder="Search imported conditions…" autocomplete="off" aria-describedby="comparison-picker-help"></select>
+                            <p id="comparison-picker-help">Search by disease name or CURIE. Selection order does not affect the persisted result.</p>
+                        </div>
                         <fieldset class="condition-comparison-dimensions" id="comparison-dimensions">
                             <legend>Dimensions</legend>
                             <label><input type="checkbox" value="phenotype" checked> Phenotypes</label>
                             <label><input type="checkbox" value="gene" checked> Genes</label>
-                            <label><input type="checkbox" value="mechanism" checked> Mechanisms</label>
+                            <label><input type="checkbox" value="pathway" checked> Pathways</label>
                             <label><input type="checkbox" value="treatment" checked> Treatments</label>
-                            <label><input type="checkbox" value="evidence_coverage" checked> Evidence</label>
+                            <label><input type="checkbox" value="evidence_coverage" checked> Evidence coverage</label>
                         </fieldset>
-                        <button type="button" class="btn btn-primary" id="comparison-run-btn">Compare conditions</button>
+                        <div class="condition-comparison-actions">
+                            <button type="button" class="btn btn-primary" id="comparison-run-btn">Compare selected conditions</button>
+                            <span id="comparison-selection-status" aria-live="polite">Select at least two conditions.</span>
+                        </div>
                     </div>
                     <div class="condition-comparison-result" id="condition-comparison-result" aria-live="polite">
-                        <p class="condition-comparison-placeholder">Enter two condition CURIEs to run a persisted comparison research run.</p>
+                        <p class="condition-comparison-placeholder">Select 2–5 conditions and at least one dimension to create a persisted comparison report.</p>
                     </div>
                 </div>
             </section>

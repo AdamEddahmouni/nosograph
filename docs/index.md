@@ -9,8 +9,8 @@ description: Open-source research software for connecting disease knowledge, evi
   <div class="ng-shell ng-hero-grid">
     <div>
       <p class="ng-eyebrow ng-eyebrow--light">Open-source biomedical research software</p>
-      <h1 id="ng-hero-title">Noso<span class="ng-gradient-text">Graph</span></h1>
-      <h2>Disease Intelligence. Connected.</h2>
+      <h1 id="ng-hero-title" class="ng-visually-hidden">NosoGraph — Disease Intelligence. Connected.</h1>
+      <img class="ng-hero-lockup" src="assets/brand/tagline-lockup.svg" alt="" aria-hidden="true">
       <p class="ng-lede">Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.</p>
       <div class="ng-hero-actions" aria-label="Primary actions">
         <a class="ng-button ng-button--primary" href="getting-started/what-is/">Explore documentation</a>
@@ -161,7 +161,7 @@ description: Open-source research software for connecting disease knowledge, evi
 
 <section class="ng-maturity" aria-labelledby="ng-maturity-title">
   <div class="ng-shell">
-    <div class="ng-status-line"><span class="ng-status-badge">PUBLIC_ALPHA</span><span>Research software under active development. Snapshot: v0.1.0 · 2026-08-22.</span></div>
+    <div class="ng-status-line"><span class="ng-status-badge">PUBLIC_ALPHA</span><span>Research software under active development. Snapshot: v0.2.1 · 2026-08-22.</span></div>
     <h2 id="ng-maturity-title">What exists today—and what does not.</h2>
     <p class="ng-lede">Maturity labels are part of the product. They tell you how to interpret a surface before you use it.</p>
     <div class="ng-maturity-table-wrap">
@@ -172,7 +172,7 @@ description: Open-source research software for connecting disease knowledge, evi
           <tr><td>FastAPI API + dashboard</td><td>Beta</td><td>Working local research interface with async jobs and documented API surfaces.</td></tr>
           <tr><td>Evidence Explorer</td><td>Public alpha · included in v0.1.0</td><td>Read-only claim → evidence → provenance → source workflow.</td></tr>
           <tr><td>Evidence Workspace</td><td>Beta</td><td>Multi-source evidence assembled into claims and ranked hypotheses.</td></tr>
-          <tr><td>NosoGraph Compare</td><td>Experimental</td><td>Initial multidimensional comparison with explicit missingness.</td></tr>
+          <tr><td>NosoGraph Compare</td><td>Beta · released in v0.2.0</td><td>2–5-condition comparison with explicit missingness, claim drill-down, and deterministic exports.</td></tr>
           <tr><td>Public hosted demo</td><td>Planned</td><td>Not deployed; local Docker evaluation is the current route.</td></tr>
           <tr><td>Optional LLM enrichment</td><td>Experimental</td><td>Not required for core deterministic extraction and evidence workflows.</td></tr>
           <tr><td>FHIR / OMOP / Phenopackets</td><td>Not implemented</td><td>Future interoperability work, not current capability.</td></tr>
@@ -185,7 +185,7 @@ description: Open-source research software for connecting disease knowledge, evi
       <div class="ng-stat"><strong>6</strong><span>reference modules</span></div>
       <div class="ng-stat"><strong>8</strong><span>CI-validated modules</span></div>
       <div class="ng-stat"><strong>40+</strong><span>analysis pipelines</span></div>
-      <div class="ng-stat"><strong>2,391</strong><span>offline tests in v0.1.0 suite</span></div>
+      <div class="ng-stat"><strong>2,445</strong><span>offline tests selected in v0.2.1 suite</span></div>
     </div>
     <p class="ng-footnote">Snapshot source: <a href="generated/public-status.yaml">public-status.yaml</a>. Registry breadth is not curation depth; most registry modules are scaffolds.</p>
   </div>

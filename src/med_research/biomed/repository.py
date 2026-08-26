@@ -802,9 +802,9 @@ class BiomedicalRepository:
             ).fetchone()
             if existing is not None:
                 return self._row_to_run(existing)
-            connection.execute(
+            inserted = connection.execute(
                 """
-                INSERT INTO research_runs (
+                INSERT OR IGNORE INTO research_runs (
                     id, parent_run_id, run_type, status, fingerprint,
                     algorithm_id, algorithm_version, software_version,
                     parameters_json, snapshot_ids_json, claim_ids_json,
@@ -832,6 +832,16 @@ class BiomedicalRepository:
                     _dt_to_str(run.created_at),
                 ),
             )
+            if inserted.rowcount == 0:
+                existing = connection.execute(
+                    "SELECT * FROM research_runs WHERE fingerprint = ?",
+                    (fingerprint,),
+                ).fetchone()
+                if existing is None:
+                    raise BiomedicalValidationError(
+                        f"Research run {run.id} could not be created or replayed"
+                    )
+                return self._row_to_run(existing)
             for snapshot_id in run.snapshot_ids:
                 connection.execute(
                     "INSERT INTO research_run_snapshots (run_id, snapshot_id) VALUES (?, ?)",

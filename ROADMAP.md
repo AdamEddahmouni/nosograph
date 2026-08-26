@@ -2,9 +2,26 @@
 
 Status key: **STABLE** | **BETA** | **EXPERIMENTAL** | **PROTOTYPE** | **PLANNED** | **NOT_IMPLEMENTED**
 
-## Current release (v0.1.0 — Public-Alpha Baseline)
+## Current release (v0.2.1 — stabilization)
 
-Included in v0.1.0 (2026-08-22; originally developed on the legacy v2.4.0 prototype line):
+Included in v0.2.1 (2026-08-22; backward-compatible stabilization patch):
+
+- [x] Timezone-aware UTC timestamps (async queue, hypothesis agent, dossier flow) with compatible filename tokens
+- [x] Open Targets ingestion hardening (optional phase normalization, UUID snapshot typing)
+- [x] Compare V2 persisted-status validation at the storage boundary
+- [x] mypy ratchet extended to the recently shipped stabilization surfaces
+- [x] Technical-debt ledger refreshed with a prioritized active backlog
+
+Included in v0.2.0 (2026-08-22):
+
+- [x] Deterministic Compare V2 cohorts of 2–5 diseases
+- [x] Phenotype, gene, pathway, treatment, and evidence-coverage dimensions
+- [x] Explicit `NOT_RECORDED` versus `KNOWN_ABSENT` semantics and curation warnings
+- [x] Shared, distinct, and missing-data product panels
+- [x] Evidence Explorer drill-down and deterministic JSON/Markdown exports
+- [x] API, golden export, accessibility, and Playwright live-seam coverage
+
+Included in the v0.1.0 baseline (2026-08-22; originally developed on the legacy v2.4.0 prototype line):
 
 - [x] Evidence Explorer (claim → evidence → provenance → source workflow)
 - [x] Evidence Quality Model (ADR-001 structured dimensions)
@@ -36,7 +53,7 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 | Evidence Explorer (claim → evidence → provenance → source) | v0.1.0 | INCLUDED_IN_V0.1.0 |
 | Evidence Quality Model (structured dimensions) | v0.1.0 | INCLUDED_IN_V0.1.0 |
 | Playwright / UI reliability fixes | v0.1.0 | INCLUDED_IN_V0.1.0 (hosted validated) |
-| NosoGraph Compare V2 (2–5 diseases, exports, drill-down) | v0.2.0 | PLANNED |
+| NosoGraph Compare V2 | v0.2.0 | RELEASED_IN_V0.2.0; UI, exports, drill-down, API, and Playwright coverage complete |
 | Tier-gated Atlas navigation | v0.2.0 | PLANNED |
 
 ---

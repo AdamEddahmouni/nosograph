@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PGx Calculator</title>
+    <meta name="theme-color" content="#08142D" />
+    <title>Pharmacogenomics Calculator — NosoGraph</title>
+    <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/dashboard.css" />
 </head>
 <body>
+    <header class="satellite-header">
+        <div class="satellite-heading">
+            <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt=""><span>Noso<span>Graph</span></span></a>
+            <h2 class="satellite-title">Pharmacogenomics Calculator</h2>
+        </div>
+        <div class="satellite-links">
+            <a href="/patient_matching.html">Patient Matching</a>
+            <a href="/lead_opt.html">Lead Opt & ADMET</a>
+            <a href="/spatial.html">Spatial Omics</a>
+            <a href="/agent.html">Target Agent</a>
+        </div>
+    </header>
     <div class="container">
         <h1>Pharmacogenomics (PGx) Calculator</h1>
         <p>Enter gene‑allele mappings as JSON (e.g., {"CYP2D6": ["*1","*4"], "CYP2C19": ["*2"]})</p>
         <textarea id="genotype-input" rows="6" style="width:100%;font-family:monospace;" placeholder='{"CYP2D6": ["*1","*4"]}'></textarea>
         <br/>
         <button id="submit-btn" class="btn btn-primary">Evaluate</button>
-        <pre id="result" style="margin-top:1rem;background:#f8f8f8;padding:1rem;white-space:pre-wrap;"></pre>
+        <pre id="result" style="margin-top:1rem;background:var(--surface);border:1px solid var(--border);padding:1rem;white-space:pre-wrap;"></pre>
     </div>
     <script src="/js/pgx.js"></script>
 </body>

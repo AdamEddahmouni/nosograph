@@ -39,7 +39,9 @@ class TargetHypothesis:
     biomarkers: List[str]
     safety_considerations: List[str]
     recommended_assays: List[str]
-    generated_at: str = field(default_factory=lambda: datetime.datetime.utcnow().isoformat())
+    generated_at: str = field(
+        default_factory=lambda: datetime.datetime.now(datetime.timezone.utc).isoformat()
+    )
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

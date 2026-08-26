@@ -2384,8 +2384,7 @@ function resetKGExplorer() {
 
 let conditionSearchTimer = null;
 let activeConditionCurie = null;
-let comparisonLeftControl = null;
-let comparisonRightControl = null;
+let comparisonConditionControl = null;
 
 function setConditionExplorerBusy(isBusy) {
     const panel = document.getElementById('condition-explorer-panel');
@@ -2547,7 +2546,7 @@ async function renderConditionExplorer(curie) {
     }
 }
 
-function initConditionCurieTomSelect(selector) {
+function initConditionCurieTomSelect(selector, { multiple = false } = {}) {
     if (typeof TomSelect === 'undefined') return null;
     const element = document.querySelector(selector);
     if (!element) return null;
@@ -2556,6 +2555,8 @@ function initConditionCurieTomSelect(selector) {
         labelField: 'label',
         searchField: ['label', 'curie'],
         maxOptions: 20,
+        maxItems: 5,
+        plugins: multiple ? ['remove_button'] : [],
         create: false,
         placeholder: 'Search imported conditions…',
         load(query, callback) {
@@ -2579,19 +2580,19 @@ function initConditionCurieTomSelect(selector) {
     });
 }
 
-function setComparisonCurie(side, curie, label) {
-    const control = side === 'left' ? comparisonLeftControl : comparisonRightControl;
-    if (!control || !curie) return;
-    if (!control.options[curie]) {
-        control.addOption({ curie, label: label || curie });
+function addComparisonCurie(curie, label) {
+    if (!comparisonConditionControl || !curie) return;
+    if (!comparisonConditionControl.options[curie]) {
+        comparisonConditionControl.addOption({ curie, label: label || curie });
     }
-    control.setValue(curie, true);
+    comparisonConditionControl.addItem(curie, true);
+    updateComparisonSelectionStatus();
 }
 
 function openConditionComparison(leftCurie, rightCurie, leftLabel, rightLabel) {
     window.location.hash = 'condition-comparison';
-    if (leftCurie) setComparisonCurie('left', leftCurie, leftLabel);
-    if (rightCurie) setComparisonCurie('right', rightCurie, rightLabel);
+    if (leftCurie) addComparisonCurie(leftCurie, leftLabel);
+    if (rightCurie) addComparisonCurie(rightCurie, rightLabel);
 }
 
 async function loadBiomedImportStatus() {
@@ -3204,47 +3205,151 @@ function renderNosoGraphCompareResult(result) {
     const container = document.getElementById('condition-comparison-result');
     if (!container || !result) return;
     const disclaimer = escapeHtml(result.disclaimer?.text || 'For research and exploratory analysis only.');
-    const overlapHtml = (result.overlaps || []).map(item => {
-        const shared = (item.shared || []).map(v => `<span class="condition-chip">${escapeHtml(v)}</span>`).join('') || '<span class="condition-empty">none</span>';
-        const leftOnly = (item.unique_to_left || []).map(v => `<span class="condition-chip">${escapeHtml(v)}</span>`).join('') || '<span class="condition-empty">none</span>';
-        const rightOnly = (item.unique_to_right || []).map(v => `<span class="condition-chip">${escapeHtml(v)}</span>`).join('') || '<span class="condition-empty">none</span>';
-        const warnings = (item.warnings || []).map(v => `<li>${escapeHtml(v)}</li>`).join('');
-        return `<div class="condition-comparison-dimension">
-            <h4>${escapeHtml(item.dimension)}</h4>
-            <p class="condition-comparison-meta">missing left=${escapeHtml(item.missing_data?.left || 'UNKNOWN')} · right=${escapeHtml(item.missing_data?.right || 'UNKNOWN')} · evidence ${item.left_evidence_count}/${item.right_evidence_count}</p>
-            <div><strong>Shared</strong><div class="condition-chip-list">${shared}</div></div>
-            <div><strong>Left only</strong><div class="condition-chip-list">${leftOnly}</div></div>
-            <div><strong>Right only</strong><div class="condition-chip-list">${rightOnly}</div></div>
-            ${warnings ? `<ul>${warnings}</ul>` : ''}
-        </div>`;
-    }).join('') || '<p class="condition-comparison-placeholder">No dimension overlaps returned.</p>';
-    const curationWarnings = (result.curation_warnings || []).map(item => `<li>${escapeHtml(item)}</li>`).join('');
+    const conditions = (result.condition_curies || []).map(curie => ({
+        curie,
+        label: result.condition_labels?.[curie] || curie,
+    }));
+    const tabs = (result.dimension_results || []).map((item, index) => {
+        const selected = index === 0;
+        return `<button type="button" class="condition-comparison-tab" role="tab" id="comparison-tab-${escapeHtml(item.dimension)}" aria-controls="comparison-panel-${escapeHtml(item.dimension)}" aria-selected="${selected}" tabindex="${selected ? '0' : '-1'}" data-dimension="${escapeHtml(item.dimension)}">${escapeHtml(comparisonDimensionLabel(item.dimension))}</button>`;
+    }).join('');
+    const panels = (result.dimension_results || []).map((item, index) => renderComparisonDimensionPanel(result, item, index === 0)).join('');
+    const curationWarnings = (result.curation_warnings || []).map(item => `<li>${escapeHtml(item.message || item)}</li>`).join('');
+    const statusLabel = result.status === 'comparable' ? 'Comparison ready' : 'Sparse comparison ready';
+    const conditionChips = conditions.map(item => `<span class="condition-comparison-condition"><strong>${escapeHtml(item.label)}</strong><code>${escapeHtml(item.curie)}</code></span>`).join('');
     container.innerHTML = `
-        <p class="condition-comparison-score">${escapeHtml(result.status === 'comparable' ? 'Dimension overlap comparison' : 'Insufficient comparable data')}</p>
-        <p class="condition-comparison-meta">${escapeHtml(result.left_curie)} vs ${escapeHtml(result.right_curie)} · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)} · no universal similarity score</p>
-        ${curationWarnings ? `<ul class="condition-comparison-warnings">${curationWarnings}</ul>` : ''}
-        ${overlapHtml}
-        <p class="condition-comparison-meta">run_id: ${escapeHtml(result.run_id)} · fingerprint: ${escapeHtml(result.claim_set_fingerprint || 'n/a')}</p>
+        <header class="condition-comparison-report-header">
+            <div><p class="condition-comparison-eyebrow">${escapeHtml(statusLabel)}</p><h3>Evidence state comparison</h3><p>${conditions.length} conditions · ${result.dimensions?.length || 0} dimensions · no universal similarity score</p></div>
+            <div class="condition-comparison-export-actions">
+                <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/json" download="nosograph-comparison-${escapeHtml(result.run_id)}.json">Export JSON</a>
+                <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/markdown" download="nosograph-comparison-${escapeHtml(result.run_id)}.md">Export Markdown</a>
+            </div>
+        </header>
+        <div class="condition-comparison-condition-list" aria-label="Compared conditions">${conditionChips}</div>
+        ${curationWarnings ? `<details class="condition-comparison-warning-summary"><summary>${result.curation_warnings.length} curation warning${result.curation_warnings.length === 1 ? '' : 's'}</summary><ul>${curationWarnings}</ul></details>` : ''}
+        <div class="condition-comparison-tabs" role="tablist" aria-label="Comparison dimensions">${tabs}</div>
+        <div class="condition-comparison-tab-panels">${panels || '<p class="condition-comparison-placeholder">No dimension results returned.</p>'}</div>
+        <p class="condition-comparison-meta">Run <code>${escapeHtml(result.run_id)}</code> · fingerprint <code>${escapeHtml(result.claim_set_fingerprint || 'n/a')}</code> · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
         <p class="condition-comparison-disclaimer">${disclaimer}</p>`;
+    bindComparisonResultActions(container);
+}
+
+function comparisonDimensionLabel(dimension) {
+    return ({ phenotype: 'Phenotype', gene: 'Gene', pathway: 'Pathway', treatment: 'Treatment', evidence_coverage: 'Evidence coverage' })[dimension] || dimension;
+}
+
+function comparisonEntityRow(dimension, curie) {
+    return (dimension.entities || []).find(item => item.entity_curie === curie) || {
+        entity_curie: curie,
+        entity_label: curie,
+        states: {},
+        claim_ids_by_condition: {},
+    };
+}
+
+function renderComparisonClaimLinks(result, row, conditionCuries) {
+    return conditionCuries.map(conditionCurie => {
+        const ids = row.claim_ids_by_condition?.[conditionCurie] || [];
+        if (!ids.length) return '';
+        const conditionLabel = result.condition_labels?.[conditionCurie] || conditionCurie;
+        const links = ids.map((claimId, index) => `<a class="condition-claim-link" href="?claim_id=${encodeURIComponent(claimId)}#evidence-explorer" data-comparison-claim-id="${escapeHtml(claimId)}" aria-label="Open ${escapeHtml(conditionLabel)} claim ${index + 1} in Evidence Explorer">claim ${index + 1}</a>`).join('');
+        return `<span class="condition-comparison-claim-group"><span class="condition-comparison-claim-owner">${escapeHtml(conditionLabel)}</span>${links}</span>`;
+    }).filter(Boolean).join('');
+}
+
+function renderComparisonEntityCard(result, dimension, curie, conditionCuries) {
+    const row = comparisonEntityRow(dimension, curie);
+    const links = renderComparisonClaimLinks(result, row, conditionCuries);
+    return `<article class="condition-comparison-entity-card"><div><strong>${escapeHtml(row.entity_label || curie)}</strong><code>${escapeHtml(curie)}</code></div>${links ? `<div class="condition-comparison-claim-links">${links}</div>` : ''}</article>`;
+}
+
+function renderComparisonDimensionPanel(result, dimension, selected) {
+    const conditions = result.condition_curies || [];
+    const sharedAll = (dimension.shared_by_all || []).map(curie => renderComparisonEntityCard(result, dimension, curie, conditions)).join('');
+    const subset = (dimension.shared_by_subset || []).map(item => {
+        const labels = (item.condition_curies || []).map(curie => result.condition_labels?.[curie] || curie).join(' · ');
+        return `<div class="condition-comparison-subset"><p>${escapeHtml(labels)}</p>${renderComparisonEntityCard(result, dimension, item.entity_curie, item.condition_curies || [])}</div>`;
+    }).join('');
+    const shared = sharedAll || subset ? `${sharedAll}${subset}` : '<p class="condition-empty">No shared entities are recorded for this dimension.</p>';
+    const distinctGroups = conditions.map(curie => {
+        const entities = dimension.unique_by_condition?.[curie] || [];
+        if (!entities.length) return '';
+        const label = result.condition_labels?.[curie] || curie;
+        return `<section class="condition-comparison-condition-group"><h5>${escapeHtml(label)}</h5>${entities.map(entity => renderComparisonEntityCard(result, dimension, entity, [curie])).join('')}</section>`;
+    }).join('') || '<p class="condition-empty">No disease-distinct entities are recorded for this dimension.</p>';
+    const missingRows = (dimension.entities || []).map(row => {
+        const cells = conditions.filter(curie => ['KNOWN_ABSENT', 'NOT_RECORDED'].includes(row.states?.[curie])).map(curie => {
+            const state = row.states[curie];
+            const links = state === 'KNOWN_ABSENT' ? renderComparisonClaimLinks(result, row, [curie]) : '';
+            return `<div class="condition-state-cell state-${state.toLowerCase().replace('_', '-')}"><span>${escapeHtml(result.condition_labels?.[curie] || curie)}</span><strong>${state === 'KNOWN_ABSENT' ? 'Known absent' : 'Not recorded'}</strong>${links ? `<div class="condition-comparison-claim-links">${links}</div>` : ''}</div>`;
+        }).join('');
+        if (!cells) return '';
+        return `<article class="condition-missing-row"><header><strong>${escapeHtml(row.entity_label || row.entity_curie)}</strong><code>${escapeHtml(row.entity_curie)}</code></header><div>${cells}</div></article>`;
+    }).join('') || '<p class="condition-empty">No missing-data cells are recorded for this dimension.</p>';
+    const coverageRows = conditions.map(curie => {
+        const coverage = dimension.coverage_by_condition?.[curie];
+        if (!coverage) return '';
+        return `<tr><th scope="row">${escapeHtml(result.condition_labels?.[curie] || curie)}</th><td class="condition-comparison-number">${coverage.claim_count}</td><td class="condition-comparison-number">${coverage.positive_claim_count}</td><td class="condition-comparison-number">${coverage.negated_claim_count}</td><td class="condition-comparison-number">${coverage.evidence_count}</td><td class="condition-comparison-number">${coverage.source_count}</td></tr>`;
+    }).join('');
+    const warnings = (dimension.warnings || []).map(item => `<li>${escapeHtml(item.message || item)}</li>`).join('') || '<li>No warnings for this dimension.</li>';
+    return `<section class="condition-comparison-tab-panel" role="tabpanel" id="comparison-panel-${escapeHtml(dimension.dimension)}" aria-labelledby="comparison-tab-${escapeHtml(dimension.dimension)}" ${selected ? '' : 'hidden'}>
+        <div class="condition-comparison-panel-grid">
+            <section class="condition-comparison-state-panel shared" aria-labelledby="condition-comparison-shared-heading-${escapeHtml(dimension.dimension)}"><header><h3 id="condition-comparison-shared-heading-${escapeHtml(dimension.dimension)}">Shared</h3><p>Present in every disease or a named subset.</p></header><div class="condition-comparison-entity-list">${shared}</div></section>
+            <section class="condition-comparison-state-panel distinct" aria-labelledby="condition-comparison-distinct-heading-${escapeHtml(dimension.dimension)}"><header><h3 id="condition-comparison-distinct-heading-${escapeHtml(dimension.dimension)}">Distinct</h3><p>Recorded as present in one selected disease.</p></header><div class="condition-comparison-distinct-groups">${distinctGroups}</div></section>
+            <section class="condition-comparison-state-panel missing" aria-labelledby="condition-comparison-missing-heading-${escapeHtml(dimension.dimension)}"><header><h3 id="condition-comparison-missing-heading-${escapeHtml(dimension.dimension)}">Missing data</h3><p><strong>KNOWN_ABSENT</strong> is an explicit negated claim; <strong>NOT_RECORDED</strong> is unknown.</p></header><div class="condition-comparison-missing-list">${missingRows}</div></section>
+        </div>
+        <details class="condition-comparison-coverage" open><summary>Evidence coverage</summary><div class="condition-comparison-table-wrap"><table><thead><tr><th scope="col">Condition</th><th scope="col">Claims</th><th scope="col">Positive</th><th scope="col">Negated</th><th scope="col">Evidence</th><th scope="col">Sources</th></tr></thead><tbody>${coverageRows}</tbody></table></div></details>
+        <details class="condition-comparison-dimension-warnings"><summary>Dimension warnings (${dimension.warnings?.length || 0})</summary><ul>${warnings}</ul></details>
+    </section>`;
+}
+
+function bindComparisonResultActions(container) {
+    const tabs = [...container.querySelectorAll('[role="tab"]')];
+    const activate = tab => {
+        tabs.forEach(item => {
+            const active = item === tab;
+            item.setAttribute('aria-selected', String(active));
+            item.tabIndex = active ? 0 : -1;
+            const panel = container.querySelector(`#comparison-panel-${item.dataset.dimension}`);
+            if (panel) panel.hidden = !active;
+        });
+    };
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activate(tab));
+        tab.addEventListener('keydown', event => {
+            let nextIndex = null;
+            if (['ArrowRight', 'ArrowDown'].includes(event.key)) nextIndex = (index + 1) % tabs.length;
+            if (['ArrowLeft', 'ArrowUp'].includes(event.key)) nextIndex = (index - 1 + tabs.length) % tabs.length;
+            if (event.key === 'Home') nextIndex = 0;
+            if (event.key === 'End') nextIndex = tabs.length - 1;
+            if (nextIndex === null) return;
+            event.preventDefault();
+            const nextTab = tabs[nextIndex];
+            activate(nextTab);
+            nextTab.focus();
+        });
+    });
+    container.querySelectorAll('[data-comparison-claim-id]').forEach(link => link.addEventListener('click', event => {
+        event.preventDefault();
+        void openEvidenceExplorer(link.dataset.comparisonClaimId);
+    }));
 }
 
 function selectedComparisonDimensions() {
     const fieldset = document.getElementById('comparison-dimensions');
     if (!fieldset) {
-        return ['phenotype', 'gene', 'mechanism', 'treatment', 'evidence_coverage'];
+        return ['phenotype', 'gene', 'pathway', 'treatment', 'evidence_coverage'];
     }
     return [...fieldset.querySelectorAll('input[type="checkbox"]:checked')].map(input => input.value);
 }
 
 async function compareConditions() {
-    const leftInput = document.getElementById('comparison-left-curie');
-    const rightInput = document.getElementById('comparison-right-curie');
+    const input = document.getElementById('comparison-condition-curies');
     const container = document.getElementById('condition-comparison-result');
-    if (!leftInput || !rightInput || !container) return;
-    const left = comparisonLeftControl?.getValue() || leftInput.value.trim();
-    const right = comparisonRightControl?.getValue() || rightInput.value.trim();
-    if (!left || !right) {
-        container.innerHTML = '<p class="condition-comparison-placeholder">Enter both condition CURIEs before comparing.</p>';
+    if (!input || !container) return;
+    const conditions = selectedComparisonConditions();
+    if (conditions.length < 2 || conditions.length > 5) {
+        container.innerHTML = '<p class="condition-comparison-placeholder condition-comparison-error">Select 2–5 unique imported conditions before comparing.</p>';
         return;
     }
     const dimensions = selectedComparisonDimensions();
@@ -3255,10 +3360,10 @@ async function compareConditions() {
     setConditionComparisonBusy(true);
     container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Running NosoGraph compare…</p>';
     try {
-        const result = await apiFetch('/api/v1/nosograph/compare', {
+        const result = await apiFetch('/api/v1/nosograph/comparisons', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ left_curie: left, right_curie: right, dimensions }),
+            body: JSON.stringify({ condition_curies: conditions, dimensions }),
         });
         renderNosoGraphCompareResult(result);
     } catch (error) {
@@ -3268,22 +3373,31 @@ async function compareConditions() {
     }
 }
 
+function selectedComparisonConditions() {
+    const input = document.getElementById('comparison-condition-curies');
+    const selected = comparisonConditionControl?.getValue()
+        || [...(input?.selectedOptions || [])].map(option => option.value);
+    const values = Array.isArray(selected) ? selected : selected ? [selected] : [];
+    return [...new Set(values.filter(Boolean))];
+}
+
+function updateComparisonSelectionStatus() {
+    const status = document.getElementById('comparison-selection-status');
+    const button = document.getElementById('comparison-run-btn');
+    const count = selectedComparisonConditions().length;
+    if (status) status.textContent = count < 2 ? 'Select at least two conditions.' : `${count} of 5 conditions selected.`;
+    if (button) button.disabled = count < 2 || count > 5;
+}
+
 function initConditionComparison() {
     const button = document.getElementById('comparison-run-btn');
-    const leftInput = document.getElementById('comparison-left-curie');
-    const rightInput = document.getElementById('comparison-right-curie');
-    if (!button || !leftInput || !rightInput) return;
-    comparisonLeftControl = initConditionCurieTomSelect('#comparison-left-curie');
-    comparisonRightControl = initConditionCurieTomSelect('#comparison-right-curie');
+    const input = document.getElementById('comparison-condition-curies');
+    if (!button || !input) return;
+    comparisonConditionControl = initConditionCurieTomSelect('#comparison-condition-curies', { multiple: true });
+    comparisonConditionControl?.on('change', updateComparisonSelectionStatus);
     button.addEventListener('click', () => { void compareConditions(); });
-    [leftInput, rightInput].forEach(input => {
-        input.addEventListener('keydown', event => {
-            if (event.key === 'Enter') {
-                event.preventDefault();
-                void compareConditions();
-            }
-        });
-    });
+    input.addEventListener('change', updateComparisonSelectionStatus);
+    updateComparisonSelectionStatus();
 }
 
 // ── DuckDB Accelerated Graph Analytics Visualizer ────────────────────────
@@ -4534,7 +4648,7 @@ async function checkAPIStatus() {
             statApi.className = 'stat-value stat-color-green';
         }
         const badge = document.getElementById('api-badge');
-        if (badge && health.version) badge.textContent = `⚡ API v${health.version}`;
+        if (badge && health.version) badge.textContent = `API v${health.version}`;
         return health;
     } catch {
         if (indicator) {
@@ -4744,7 +4858,7 @@ function updateDiseaseDisplay() {
     const nameEl = document.getElementById('hero-disease-name');
     if (nameEl) nameEl.textContent = info.name;
     const badgeEl = document.getElementById('hero-disease-badge');
-    if (badgeEl) badgeEl.textContent = `🦠 ${info.label}`;
+    if (badgeEl) badgeEl.textContent = info.label;
     updateEvidenceExplorerDiseaseBridge();
 }
 

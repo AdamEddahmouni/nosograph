@@ -16,6 +16,7 @@ Open-source research software for connecting disease knowledge, evidence, and pr
 · [Cite](#citation)
 
 [![Release](https://img.shields.io/github/v/release/AdamEddahmouni/nosograph?display_name=tag)](https://github.com/AdamEddahmouni/nosograph/releases/latest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22055279.svg)](https://doi.org/10.5281/zenodo.22055279)
 [![Tests](https://github.com/AdamEddahmouni/nosograph/actions/workflows/test.yml/badge.svg)](https://github.com/AdamEddahmouni/nosograph/actions/workflows/test.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%20%7C%203.12-2F86FF.svg)](https://www.python.org/downloads/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-19D2C7.svg)](LICENSE)
@@ -27,7 +28,7 @@ Open-source research software for connecting disease knowledge, evidence, and pr
 
 ## At a glance
 
-**NosoGraph v0.1.0 · Public Alpha · snapshot 2026-08-22**
+**NosoGraph v0.2.1 · Public Alpha · snapshot 2026-08-22**
 
 | Repository-backed snapshot | Value |
 |---|---:|
@@ -36,7 +37,7 @@ Open-source research software for connecting disease knowledge, evidence, and pr
 | Reference modules | 6 |
 | CI-validated modules | 8 |
 | Analysis pipelines | 40+ |
-| Offline tests in the v0.1.0 suite | 2,391 |
+| Offline tests selected in the v0.2.1 suite | 2,445 |
 
 These values come from [`docs/generated/public-status.yaml`](docs/generated/public-status.yaml). **Registry breadth is not curation depth**: most registry modules are scaffolds.
 
@@ -76,7 +77,7 @@ Evidence records support claims; they are not automatic proof. Supporting and co
 | FastAPI API + dashboard | **Beta** | Local research interface and documented API routes |
 | Evidence Explorer | **Public Alpha** | Claim → evidence → provenance → source inspection; included in v0.1.0 |
 | Evidence Workspace | **Beta** | Multi-source evidence, claims, and ranked research hypotheses |
-| NosoGraph Compare | **Experimental** | Initial multidimensional comparison with explicit missingness |
+| NosoGraph Compare | **Beta** | Released in v0.2.0: deterministic 2–5-condition workflow with explicit missingness, claim drill-down, and JSON/Markdown exports |
 | Source synchronization | **Experimental** | Open Targets vertical slice and sync lifecycle |
 | Public hosted demo | **Planned** | Not deployed |
 | Optional LLM enrichment | **Experimental** | Not required for deterministic core workflows |
@@ -172,7 +173,7 @@ Do not submit secrets, PHI, or patient-identifiable data. Questions belong in [G
 
 ## Citation
 
-Cite the repository through GitHub’s citation UI or [`CITATION.cff`](CITATION.cff). The software is Apache-2.0; upstream biomedical datasets retain their own terms. A DOI will be added after Zenodo archival.
+Cite v0.2.1 with the all-versions concept DOI [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279) until a v0.2.1 archive record exists. The historical version DOI [10.5281/zenodo.22062925](https://doi.org/10.5281/zenodo.22062925) identifies v0.2.0 only, and the v0.1.0 version DOI is [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280). Canonical metadata is also available through GitHub’s citation UI and [`CITATION.cff`](CITATION.cff). The software is Apache-2.0; upstream biomedical datasets retain their own terms.
 
 ```bibtex
 @software{nosograph2026,
@@ -180,7 +181,8 @@ Cite the repository through GitHub’s citation UI or [`CITATION.cff`](CITATION.
   author  = {Eddahmouni, Adam and NosoGraph contributors},
   year    = {2026},
   url     = {https://github.com/AdamEddahmouni/nosograph},
-  version = {0.1.0}
+  version = {0.2.1},
+  doi     = {10.5281/zenodo.22055279}
 }
 ```
 
