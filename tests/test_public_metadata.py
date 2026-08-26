@@ -239,7 +239,7 @@ def test_public_site_uses_canonical_brand_and_accessible_naming() -> None:
 
     assert 'class="ng-visually-hidden"' in homepage
     assert "assets/brand/mark.svg" in config
-    assert 'md-header__button md-logo ng-brand' in header
+    assert "md-header__button md-logo ng-brand" in header
     assert 'aria-label="{{ config.site_name }}"' in header
     # Homepage full-bleed overrides are scoped by page context, not body:has().
     assert "html.ng-page-home .md-sidebar--primary" in stylesheet
