@@ -11,7 +11,7 @@ description: Frequently asked questions about NosoGraph scope, data, citation, a
 
 **Is NosoGraph medical advice?** No.
 
-**How many diseases does it support?** 10,407 registry modules in v0.1.0; 88 pass strict L2 validation. Counts: [public-status.yaml](../generated/public-status.yaml).
+**How many diseases does it support?** 10,407 registry modules in v0.2.1; 88 pass strict L2 validation. Counts: [public-status.yaml](../generated/public-status.yaml).
 
 **Are all diseases equally curated?** No. Registry ≠ curation depth.
 
@@ -35,7 +35,7 @@ description: Frequently asked questions about NosoGraph scope, data, citation, a
 
 **Can I deploy it myself?** Yes. [Deployment](../developers/deployment.md).
 
-**What is NosoGraph Compare?** An experimental multidimensional comparison slice.
+**What is NosoGraph Compare?** A beta workflow for deterministic two-to-five-disease comparisons with explicit missingness, evidence drill-down, and JSON/Markdown exports.
 
 **What is the Evidence Workspace?** A BETA workflow that assembles evidence into claims and ranked hypotheses.
 

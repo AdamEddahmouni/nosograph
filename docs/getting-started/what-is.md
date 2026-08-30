@@ -15,7 +15,7 @@ Inspect phenotypes, genes, mechanisms, pathways, treatments, trials, and literat
 
 ## Compare diseases
 
-Compare conditions on multiple dimensions. Comparison in v0.1.0 remains an experimental initial slice.
+Compare two to five conditions across phenotype, gene, pathway, treatment, and evidence coverage. In v0.2.0, Compare is a beta product workflow with explicit missingness, evidence drill-down, and deterministic exports.
 
 ## Trace claims
 

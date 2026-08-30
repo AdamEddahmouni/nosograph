@@ -109,6 +109,9 @@ Versioned read-only condition endpoints backed by the canonical biomedical store
 | GET | `/api/v1/snapshots` | List resource snapshots with active flags |
 | GET | `/api/v1/snapshots/{snapshot_id}/report` | Import report metadata for a snapshot |
 | POST | `/api/v1/nosograph/comparisons` | Deterministically compare 2–5 conditions across evidence-aware dimensions |
+| GET | `/api/v1/nosograph/comparisons/{run_id}` | Replay a completed persisted Compare V2 run |
+| GET | `/api/v1/nosograph/comparisons/{run_id}/exports/json` | Download the canonical V2 wire payload as deterministic JSON |
+| GET | `/api/v1/nosograph/comparisons/{run_id}/exports/markdown` | Download a deterministic, timestamp-free Markdown report |
 | POST | `/api/v1/nosograph/compare` | Deprecated two-condition projection of Compare V2 (`mechanism` maps to `pathway`) |
 | POST | `/api/v1/comparisons` | Compare two condition CURIEs and persist a research run |
 | GET | `/api/v1/comparisons/{run_id}` | Fetch a persisted comparison research run |
@@ -118,6 +121,10 @@ Versioned read-only condition endpoints backed by the canonical biomedical store
 | GET | `/api/v1/analytics/subgraph/{curie}` | Multi-hop subgraph traversal around an entity CURIE (`max_hops` 1–4, `limit` 1–500) |
 | GET | `/api/v1/biomed/pathways` | Find claim paths between a `start_curie` and `target_curie` (`max_depth` 1–5, `limit` 1–50) |
 | GET | `/api/v1/biomed/target-prioritization/{disease_curie}` | Rank targets for a disease by supporting/contradictory evidence and normalized centrality (`top_k` 1–50) |
+
+Compare V2 responses include `result_schema_version`, canonical condition and entity labels,
+exact claim IDs per condition, coverage, warnings, snapshot IDs, and a deterministic claim-set
+fingerprint. Result-schema versioning is independent of the biomedical algorithm version.
 
 Examples:
 
@@ -130,6 +137,9 @@ curl "http://127.0.0.1:8000/api/v1/snapshots?resource=mondo"
 curl -X POST "http://127.0.0.1:8000/api/v1/nosograph/comparisons" \
   -H "Content-Type: application/json" \
   -d '{"condition_curies":["MONDO:0007915","MONDO:0008390"],"dimensions":["phenotype","gene","pathway","treatment","evidence_coverage"]}'
+curl "http://127.0.0.1:8000/api/v1/nosograph/comparisons/{run_id}"
+curl -OJ "http://127.0.0.1:8000/api/v1/nosograph/comparisons/{run_id}/exports/json"
+curl -OJ "http://127.0.0.1:8000/api/v1/nosograph/comparisons/{run_id}/exports/markdown"
 curl -X POST "http://127.0.0.1:8000/api/v1/comparisons" \
   -H "Content-Type: application/json" \
   -d '{"left_curie":"MONDO:0007915","right_curie":"MONDO:0008390"}'
@@ -141,6 +151,9 @@ For the complete Compare V2 request, response, warning, replay, and missingness 
 `nosograph_compare_v2` run and returns that run ID in the response; the scored comparison lookup
 at `GET /api/v1/comparisons/{run_id}` only retrieves runs created by the separate scored
 `POST /api/v1/comparisons` endpoint.
+
+Compare V2 replay and export routes return HTTP 404 for missing or non-Compare runs and HTTP 409
+when the Compare run has not completed.
 
 CLI comparison and graph analytics:
 

@@ -26,7 +26,7 @@ NosoGraph is an open-source biomedical research platform for turning fragmented 
 
 The platform includes a stable task-oriented CLI, a local FastAPI dashboard, evidence exploration and workspace tools, disease comparison, source synchronization, and analysis pipelines. Maturity labels remain visible because registry breadth is not the same as deep curation, evidence is not automatic proof, and missing metadata should remain unknown rather than become false certainty.
 
-NosoGraph v0.1.0 is a public alpha for computational research and hypothesis generation. It is not medical advice, a diagnostic system, or clinical decision support. The software is Apache-2.0 licensed, runs locally, and welcomes contributions to code, documentation, source integrations, and disease curation.
+NosoGraph v0.2.0 is a public alpha for computational research and hypothesis generation. It is not medical advice, a diagnostic system, or clinical decision support. The software is Apache-2.0 licensed, runs locally, and welcomes contributions to code, documentation, source integrations, and disease curation.
 
 ## Calls to action
 
@@ -46,7 +46,7 @@ NosoGraph supports exploratory research and computational hypothesis generation.
 
 ## Maturity
 
-NosoGraph v0.1.0 is Public Alpha. The CLI is stable, the API/dashboard and Evidence Workspace are beta, Evidence Explorer is a public-alpha surface, Compare and source sync remain experimental, and no public hosted demo is deployed.
+NosoGraph v0.2.0 is Public Alpha. The CLI is stable; the API/dashboard, Evidence Workspace, and Compare workflow are beta; Evidence Explorer is a public-alpha surface; source sync remains experimental; and no public hosted demo is deployed.
 
 ## Do not say
 

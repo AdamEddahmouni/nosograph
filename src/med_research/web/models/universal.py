@@ -450,7 +450,9 @@ class EntityStateRowView(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     entity_curie: str
+    entity_label: str = ""
     states: dict[str, str] = Field(default_factory=dict)
+    claim_ids_by_condition: dict[str, list[UUID]] = Field(default_factory=dict)
 
 
 class DimensionComparisonView(BaseModel):
@@ -469,8 +471,10 @@ class NosoGraphCompareV2ResultView(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     run_id: UUID
+    result_schema_version: str
     status: ComparisonStatusLiteral
     condition_curies: list[str] = Field(default_factory=list)
+    condition_labels: dict[str, str] = Field(default_factory=dict)
     dimensions: list[str] = Field(default_factory=list)
     dimension_results: list[DimensionComparisonView] = Field(default_factory=list)
     curation_warnings: list[CompareWarningView] = Field(default_factory=list)

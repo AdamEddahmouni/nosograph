@@ -6,11 +6,15 @@ import importlib.util
 import re
 import subprocess
 import sys
+import tomllib
 from pathlib import Path
 
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
+CURRENT_VERSION = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"][
+    "version"
+]
 
 
 def _load_checker():
@@ -62,9 +66,50 @@ def test_rejects_stale_citation_page_version(monkeypatch: pytest.MonkeyPatch) ->
     _assert_overlay_fails(
         monkeypatch,
         "docs/project/citation.md",
-        citation.replace("0.1.0", "9.9.9"),
+        citation.replace(CURRENT_VERSION, "9.9.9"),
         r"docs/project/citation\.md version",
     )
+
+
+def test_accepts_future_release_before_zenodo_version_doi(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    checker = _load_checker()
+    original_text = checker._text
+    concept_doi = "10.5281/zenodo.22055279"
+    future_version = "9.8.7"
+
+    def overlay(path: str) -> str:
+        text = original_text(path)
+        if path == "CITATION.cff":
+            metadata, preferred = text.split("preferred-citation:", 1)
+            metadata = metadata.replace(
+                f"version: {CURRENT_VERSION}", f"version: {future_version}", 1
+            )
+            preferred = preferred.replace(
+                f"  version: {CURRENT_VERSION}", f"  version: {future_version}"
+            )
+            preferred = re.sub(r"(?m)^  doi:.*$", f'  doi: "{concept_doi}"', preferred, count=1)
+            return f"{metadata}preferred-citation:{preferred}"
+        if path == "codemeta.json":
+            evolved = text.replace(
+                f'"version": "{CURRENT_VERSION}"', f'"version": "{future_version}"'
+            )
+            return re.sub(
+                r'"identifier": "https://doi.org/10\.5281/zenodo\.\d+"',
+                f'"identifier": "https://doi.org/{concept_doi}"',
+                evolved,
+                count=1,
+            )
+        evolved = text.replace(f"v{CURRENT_VERSION}", f"v{future_version}").replace(
+            CURRENT_VERSION, future_version
+        )
+        if path in {"README.md", "docs/project/citation.md"}:
+            evolved = re.sub(r"10\.5281/zenodo\.\d+", concept_doi, evolved)
+        return evolved
+
+    monkeypatch.setattr(checker, "_text", overlay)
+    checker.main()
 
 
 def test_rejects_stale_codemeta_description(monkeypatch: pytest.MonkeyPatch) -> None:

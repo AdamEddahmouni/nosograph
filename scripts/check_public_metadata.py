@@ -230,9 +230,11 @@ def main() -> None:
     }
     any_doi = bool(re.search(r"10\.5281/zenodo\.\d+", "\n".join(doi_surfaces.values())))
     if concept_doi or version_doi or any_doi:
-        if not concept_doi or not version_doi or concept_doi == version_doi:
-            errors.append("CITATION.cff must define distinct concept and version DOIs")
-        else:
+        if not concept_doi:
+            errors.append("CITATION.cff must define the concept DOI")
+        elif version_doi:
+            if concept_doi == version_doi:
+                errors.append("CITATION.cff concept and version DOIs must be distinct")
             preferred_doi = _field(
                 "CITATION.cff",
                 r"(?ms)^preferred-citation:.*?^\s+doi:\s*([\"']?[^\"'\n]+)",
@@ -248,6 +250,26 @@ def main() -> None:
                 errors.append("README BibTeX citation is missing the version DOI")
             if codemeta.get("identifier") != f"https://doi.org/{version_doi}":
                 errors.append("codemeta.json identifier is not the version DOI")
+            if codemeta.get("sameAs") != f"https://doi.org/{concept_doi}":
+                errors.append("codemeta.json sameAs is not the concept DOI")
+        else:
+            preferred_doi = _field(
+                "CITATION.cff",
+                r"(?ms)^preferred-citation:.*?^\s+doi:\s*([\"']?[^\"'\n]+)",
+                "CITATION.cff preferred-citation DOI",
+            )
+            if preferred_doi != concept_doi:
+                errors.append(
+                    "CITATION.cff preferred-citation DOI is not the concept DOI "
+                    "for an unarchived release"
+                )
+            for relative, text in doi_surfaces.items():
+                if concept_doi not in text:
+                    errors.append(f"{relative} missing DOI {concept_doi}")
+            if concept_doi not in bibtex[:1200]:
+                errors.append("README BibTeX citation is missing the concept DOI")
+            if codemeta.get("identifier") != f"https://doi.org/{concept_doi}":
+                errors.append("codemeta.json identifier is not the concept DOI")
             if codemeta.get("sameAs") != f"https://doi.org/{concept_doi}":
                 errors.append("codemeta.json sameAs is not the concept DOI")
 

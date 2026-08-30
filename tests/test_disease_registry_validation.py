@@ -2,7 +2,29 @@
 
 from __future__ import annotations
 
-from med_research.diseases.base import Disease
+import shutil
+from pathlib import Path
+
+from med_research.diseases.base import Disease, invalidate_disease_cache
+
+
+def test_registry_discovery_excludes_transient_test_fixtures() -> None:
+    """A scaffold-test module created in the diseases tree must never be discoverable.
+
+    Concurrent test workers create and remove the zz_scaffold_test fixture while
+    the suite runs; discovery must exclude it so registry sampling is stable.
+    """
+    import med_research.diseases as diseases_pkg
+
+    fixture_dir = Path(diseases_pkg.__file__).parent / "zz_scaffold_test"
+    fixture_dir.mkdir(exist_ok=True)
+    (fixture_dir / "__init__.py").write_text("", encoding="utf-8")
+    try:
+        invalidate_disease_cache()
+        assert "zz_scaffold_test" not in Disease.list_all()
+    finally:
+        shutil.rmtree(fixture_dir, ignore_errors=True)
+        invalidate_disease_cache()
 
 
 def test_registry_disease_ids_format() -> None:

@@ -2,6 +2,87 @@
 
 ## [Unreleased]
 
+## [0.2.1] — 2026-08-22
+
+**NosoGraph v0.2.1 — Stabilization**
+
+Backward-compatible stabilization patch for the v0.2.0 Compare V2 milestone. No new features, no public API changes, and no changes to Compare V2 biomedical semantics, fingerprints, exports, or replay behavior.
+
+### Fixed
+
+- Timezone-aware UTC timestamps in the asynchronous job queue, target hypothesis agent, and dossier web flow; machine-facing serialized timestamps carry an explicit UTC offset while filename-safe tokens retain their exact `YYYYMMDDTHHMMSSZ` shape.
+- Open Targets ingestion normalizes optional phase data at an explicit boundary (integer/numeric-string phases become integers; missing, null, boolean, malformed, or unsupported values become no phase instead of crashing import) and types snapshot identifiers as UUID values with deterministic import behavior preserved.
+- Compare V2 validates persisted status at the storage boundary: `comparable` and `insufficient_data` round-trip unchanged; unknown stored statuses are invalid persisted data following the existing persistence-error path rather than a raw validation error or silent coercion to `insufficient_data`.
+- Disease discovery excludes the transient `zz_scaffold_test` test fixture so parallel test execution no longer leaks it into registry sampling.
+
+### Changed
+
+- The informational mypy ratchet (`make typecheck`) now covers the recently shipped stabilization surfaces (Open Targets import adapter, `biomed/nosograph_compare/`, dossier API/router/service); those files type-check cleanly.
+- Removed obsolete dossier-service type-suppression comments after confirming the optional WeasyPrint/ReportLab imports are typed correctly; PDF fallback behavior is unchanged.
+- Technical-debt ledger refreshed with a prioritized active backlog separating current open work from the completed historical audit.
+- Public package, runtime, citation, CodeMeta, roadmap, and documentation metadata advance to v0.2.1. v0.2.1 has no Zenodo archive record yet, so citation metadata uses the all-versions concept DOI; the v0.2.0 version DOI remains historical metadata for v0.2.0 only.
+
+### Known limitations
+
+- Third-party warnings remain visible and documented: FastAPI/Starlette TestClient's future `httpx2` migration and SHAP/Matplotlib color-map deprecations (dependency-family work deferred to the ledger).
+- The mypy ratchet across remaining legacy runtime boundaries (59 known errors in 45 previously checked files) continues as incremental debt work.
+
+### Verification
+
+```bash
+python -m ruff check src tests
+python -m ruff format --check src tests
+python scripts/lock_verify.py
+python scripts/check_imports.py
+python scripts/check_public_metadata.py
+python scripts/check_public_fonts.py
+python -m pytest tests/ -m "unit and not network and not slow" -q --tb=short -n auto --dist=loadscope --ignore=tests/test_evidence_workspace_browser.py
+python -m pytest tests/ -m "integration and not slow" -q --tb=short
+python -m mkdocs build --strict
+python -m med_research.cli disease validate sle|ra|ibd|ms|ss|ssc|t1d|ad --strict
+```
+
+## [0.2.0] — 2026-08-22
+
+**NosoGraph v0.2.0 — Compare V2**
+
+Compare V2 turns the experimental pairwise comparison slice into a deterministic product workflow for two through five diseases.
+
+### Added
+
+- Deterministic two-to-five-condition comparisons across phenotype, gene, pathway, treatment, and evidence-coverage dimensions.
+- Shared-by-all, shared-by-subset, disease-distinct, and explicit missing-data panels.
+- Evidence Explorer drill-down from comparison entities and conflicting assertions.
+- Canonical, timestamp-free JSON and Markdown comparison exports.
+- Persisted Compare result-schema versioning, golden JSON/export fixtures, API coverage, and Playwright product-flow coverage including a live browser-to-FastAPI seam.
+
+### Changed
+
+- Compare V2 distinguishes `NOT_RECORDED` from explicit `KNOWN_ABSENT` assertions and emits deterministic curation-asymmetry and conflicting-assertion warnings.
+- The canonical endpoint is `POST /api/v1/nosograph/comparisons`; the deprecated two-condition `POST /api/v1/nosograph/compare` projection remains available.
+- Public package, runtime, citation, CodeMeta, roadmap, and documentation metadata advance to v0.2.0.
+
+### Compatibility
+
+- Compare algorithm `nosograph-compare-v2` remains at `2.0.0`; its persisted result contract is versioned independently as schema `2.0`.
+- Existing historical comparison runs remain readable with conservative label and claim-link fallbacks. Identical requests under a newer result contract create a new deterministic run rather than replaying an incomplete payload.
+- The `nosograph` CLI remains canonical; `med-research` and `med_research` remain compatibility names during public alpha.
+
+### Known limitations
+
+- Results reflect imported active snapshots and curation depth; absent curation is never interpreted as biological absence.
+- NosoGraph remains research software and does not emit a universal disease-similarity score or clinical recommendations.
+- No public hosted demo is deployed.
+
+### Verification
+
+```bash
+make ci-local
+make test-browser
+python -m mkdocs build --strict
+python scripts/check_public_metadata.py
+```
+
 ## [0.1.0] — 2026-08-22
 
 **NosoGraph v0.1.0 — Public-Alpha Baseline**
