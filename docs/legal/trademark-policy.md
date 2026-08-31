@@ -1,3 +1,7 @@
+---
+description: How the NosoGraph name and brand may be used, and how to contact maintainers about trademark questions.
+---
+
 # Trademark Policy
 
 ## NosoGraph name

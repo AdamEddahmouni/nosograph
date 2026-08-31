@@ -1,3 +1,7 @@
+---
+description: Notices and licenses for third-party components included or integrated by NosoGraph.
+---
+
 # Third-Party Notices
 
 NosoGraph includes or integrates the following third-party components.

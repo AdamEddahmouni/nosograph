@@ -15,6 +15,6 @@ Label anything fixture-backed as a snapshot. Do not imply live coverage.
 
 ## Hosted demo (planned)
 
-Read-only, rate-limited, snapshot-backed design: [public demo architecture](../deployment/public-demo.md).
+Planned direction: a read-only, rate-limited, snapshot-backed service — designed but not implemented.
 
 A `nosograph demo` command is deferred so it does not collide with the P2 Evidence Explorer work. Track it as a follow-up.

@@ -6,7 +6,7 @@ NosoGraph bundles the three font families used by the public documentation site 
 
 | Family | Local file | Format | CSS weight range | License |
 |---|---|---|---:|---|
-| Sora | `Sora-Variable.ttf` | TrueType variable | 100–800 | SIL Open Font License 1.1 |
+| Sora | `Sora-Variable.woff2` | WOFF2 variable | 100–800 | SIL Open Font License 1.1 |
 | Inter | `InterVariable.woff2` | WOFF2 variable | 100–900 | SIL Open Font License 1.1 |
 | JetBrains Mono | `JetBrainsMono-Variable.woff2` | WOFF2 variable | 100–800 | SIL Open Font License 1.1 |
 
@@ -22,6 +22,6 @@ All three sources are pinned to upstream repository commits rather than floating
    python scripts/check_public_fonts.py
    ```
 
-4. Confirm that `docs/stylesheets/nosograph.css` still declares the matching local file and that no external font stylesheet or font URL has been introduced.
+4. Confirm that `docs/stylesheets/base.css` still declares the matching local file and that no external font stylesheet or font URL has been introduced.
 
 Do not add a font file without recording its license and source. Do not replace these local files with a runtime `fonts.googleapis.com` dependency.

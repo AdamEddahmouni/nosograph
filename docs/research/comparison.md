@@ -1,3 +1,7 @@
+---
+description: Comparing two to five diseases across canonical dimensions with the Compare workflow, including explicit missingness semantics.
+---
+
 # Cross-disease comparison
 
 

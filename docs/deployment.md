@@ -1,4 +1,11 @@
+---
+title: Self-hosted deployment
+description: Operate NosoGraph locally or on a private server with Docker Compose and explicit security boundaries.
+---
+
 # Self-Hosted Deployment
+
+This is the canonical deployment guide for local or privately operated NosoGraph instances. A public hosted demo is not deployed in v0.2.1. For first-time local setup, use [Installation](getting-started/install.md); for API routes, use the [API reference](api-reference.md).
 
 This guide covers running NosoGraph locally or on a private server with Docker Compose. For API details, see [api-reference.md](api-reference.md).
 
@@ -73,10 +80,7 @@ Gate release builds on an individual curated module instead:
 python -m med_research.cli disease validate sle --strict
 ```
 
-GitHub Actions runs on push/PR when the repository is **public** (free hosted runners).
-While private, quota may block jobs — see [public launch readiness](public-launch.md).
-Use `make ci-local` locally before pushing. The workflow does **not** run
-`disease validate --all --strict` (scaffolds fail that check by design).
+GitHub Actions runs on push/PR when the repository is **public** (free hosted runners). Use `make ci-local` locally before pushing. The workflow does not run `disease validate --all --strict` (scaffolds fail that check by design).
 
 ## Data persistence
 
@@ -101,7 +105,7 @@ For test/demo data, `make biomed-import-fixtures` loads the minimal checked-in f
 
 ## Research-only policy
 
-This platform is for **public biomedical knowledge and computational research**. Do not store or process patient-identifiable data (PHI). See [SECURITY.md](https://github.com/AdamEddahmouni/nosograph/blob/master/SECURITY.md) and [licensing.md](licensing.md).
+This platform is for **public biomedical knowledge and computational research**. Do not store or process patient-identifiable data (PHI). See [SECURITY.md](https://github.com/AdamEddahmouni/nosograph/blob/master/SECURITY.md) and [data licensing](legal/data-licenses.md).
 
 ## Troubleshooting
 

@@ -10,7 +10,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 FONT_DIR = ROOT / "docs" / "assets" / "fonts"
 MANIFEST_PATH = FONT_DIR / "manifest.json"
-CSS_PATH = ROOT / "docs" / "stylesheets" / "nosograph.css"
+CSS_PATH = ROOT / "docs" / "stylesheets" / "base.css"
 
 
 def _sha256(path: Path) -> str:
@@ -60,7 +60,7 @@ def main() -> None:
 
     css = CSS_PATH.read_text(encoding="utf-8") if CSS_PATH.is_file() else ""
     if not css:
-        errors.append("missing docs/stylesheets/nosograph.css")
+        errors.append("missing docs/stylesheets/base.css")
     for external_url in ("fonts.googleapis.com", "fonts.gstatic.com", "use.typekit.net"):
         if external_url in css:
             errors.append(f"CSS contains an external font dependency: {external_url}")

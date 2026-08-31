@@ -1,3 +1,7 @@
+---
+description: Architecture of the NosoGraph Evidence Explorer, the public-alpha interface for inspecting a claim's supporting and contradictory evidence.
+---
+
 # Evidence Explorer Architecture
 
 **Status:** P2 Wave 1 · PUBLIC_ALPHA  

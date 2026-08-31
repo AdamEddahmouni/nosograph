@@ -1,6 +1,15 @@
+---
+title: API and operations reference
+description: Run NosoGraph locally and use its FastAPI, biomedical, Compare, and Workspace API surfaces.
+---
+
 # API and operations reference
 
+**Scope:** local FastAPI server, versioned biomedical routes, Compare V2, Evidence Workspace jobs, and operational settings. This is the canonical API reference; the shorter [`using/api`](using/api.md) page remains as a compatibility entry point.
+
 The FastAPI application is `med_research.web.main:app`. It serves the dashboard at `/` and the OpenAPI surface under `/api`.
+
+> **Research use only.** API responses are computational research artifacts. Review source context, evidence direction, provenance, and missingness; do not treat an API response as diagnosis, treatment advice, or proof of causation.
 
 ## Start the server
 
@@ -119,12 +128,10 @@ Versioned read-only condition endpoints backed by the canonical biomedical store
 | GET | `/api/v1/analytics/targets/{curie}` | Prioritize disease targets using vectorized evidence and degree scoring (`top_k` 1–100) |
 | GET | `/api/v1/analytics/shared-mechanisms` | Compute shared biological pathways, genes, and Jaccard similarity between two condition CURIEs |
 | GET | `/api/v1/analytics/subgraph/{curie}` | Multi-hop subgraph traversal around an entity CURIE (`max_hops` 1–4, `limit` 1–500) |
-| GET | `/api/v1/biomed/pathways` | Find claim paths between a `start_curie` and `target_curie` (`max_depth` 1–5, `limit` 1–50) |
+| GET | `/api/v1/biomed/pathways` | Find claim paths between an entity pair (`max_depth` 1–5, `limit` 1–50) |
 | GET | `/api/v1/biomed/target-prioritization/{disease_curie}` | Rank targets for a disease by supporting/contradictory evidence and normalized centrality (`top_k` 1–50) |
 
-Compare V2 responses include `result_schema_version`, canonical condition and entity labels,
-exact claim IDs per condition, coverage, warnings, snapshot IDs, and a deterministic claim-set
-fingerprint. Result-schema versioning is independent of the biomedical algorithm version.
+Compare V2 responses include `result_schema_version`, canonical condition and entity labels, exact claim IDs per condition, coverage, warnings, snapshot IDs, and a deterministic claim-set fingerprint. Result-schema versioning is independent of the biomedical algorithm version.
 
 Examples:
 
@@ -146,14 +153,9 @@ curl -X POST "http://127.0.0.1:8000/api/v1/comparisons" \
 curl "http://127.0.0.1:8000/api/v1/comparisons/{run_id}"
 ```
 
-For the complete Compare V2 request, response, warning, replay, and missingness contract, see
-[NosoGraph Compare](using/compare.md). The V2 endpoint persists its own
-`nosograph_compare_v2` run and returns that run ID in the response; the scored comparison lookup
-at `GET /api/v1/comparisons/{run_id}` only retrieves runs created by the separate scored
-`POST /api/v1/comparisons` endpoint.
+For the complete Compare V2 request, response, warning, replay, and missingness contract, see [NosoGraph Compare](using/compare.md). The V2 endpoint persists its own `nosograph_compare_v2` run and returns that run ID in the response; the scored comparison lookup at `GET /api/v1/comparisons/{run_id}` only retrieves runs created by the separate scored `POST /api/v1/comparisons` endpoint.
 
-Compare V2 replay and export routes return HTTP 404 for missing or non-Compare runs and HTTP 409
-when the Compare run has not completed.
+Compare V2 replay and export routes return HTTP 404 for missing or non-Compare runs and HTTP 409 when the Compare run has not completed.
 
 CLI comparison and graph analytics:
 
@@ -170,7 +172,7 @@ Live condition/gene lookups against external providers use the `live` command:
 python -m med_research.cli live --target JAK2 --disease ra --source all
 ```
 
-`live` supports `opentargets`, `gtex`, `chembl`, `uniprot`, and `biorxiv` sources through the `pipeline.external` connectors. The biomedical store import CLI accepts `mondo`, `hp`, `hpoa`, `clinvar`, `openfda`, `go`, `reactome`, and `uberon` (ClinVar/openFDA use pinned fixtures by default; see `make biomed-import-clinvar`).
+`live` supports `opentargets`, `gtex`, `chembl`, `uniprot`, and `biorxiv` sources through the `pipeline.external` connectors. The biomedical store import CLI accepts `mondo`, `hp`, `hpoa`, `clinvar`, `openfda`, `go`, `reactome`, and `uberon`.
 
 Corpus readiness tiers (L0–L3) are reported by `med-research disease corpus-status` and exposed at `GET /api/system/corpus-status`. Disease list responses include `mondo_curie`, `efo_id`, and `readiness_tier` when available.
 
@@ -268,7 +270,7 @@ See [`evidence-workspace.md`](evidence-workspace.md) for the full request and do
 | `GET` | `/api/workspace/runs/{run_id}/graph` | Return the interactive evidence graph for candidates, claims, citations, pathways, and owned review decisions. |
 | `PUT` | `/api/workspace/runs/{run_id}/reviews` | Save a candidate decision, rationale, notes, tags, and “what changed my mind?” entry. |
 | `GET` | `/api/workspace/runs/{run_id}/review-bundle` | Download a citation-ready ZIP containing Markdown, CSV citations, exact dossier JSON, reviews, review events, and provenance. |
-| `GET` | `/api/workspace/candidate-history` | Track one candidate’s ranking, evidence additions/removals, and reviews across runs. |
+| `GET` | `/api/workspace/candidate-history` | Track one candidate's ranking, evidence additions/removals, and reviews across runs. |
 | `GET` | `/api/workspace/compare` | Compare runs with required `left` and `right` query parameters, including candidate evidence and review changes. |
 | `GET` | `/api/workspace/trends` | Trend run IDs, rankings, and candidate evidence changes; accepts repeated `run_ids` and `limit`. |
 
@@ -322,19 +324,19 @@ The exact parameter constraints and response schemas are authoritative in `/api/
 
 All registry-backed modules can be queued via the unified endpoint:
 
-`POST /api/jobs/{module_id}` — query parameters validated by `GenericModuleJobRequest` (`disease_id`, module-specific opts). Dispatches through `task_run_module` → `registry_service.run_module_job()` → `execute_module()`. Registered modules include `admet`, `crispr`, `multi_omics`, and `structure_3d` alongside the classic modules; the exact request options are generated from the registry catalog and surfaced in `/api/openapi.json`.
+`POST /api/jobs/{module_id}` — query parameters validated by `GenericModuleJobRequest` (`disease_id`, module-specific opts). Dispatches through `task_run_module` -> `registry_service.run_module_job()` -> `execute_module()`. Registered modules include `admet`, `crispr`, `multi_omics`, and `structure_3d` alongside the classic modules; the exact request options are generated from the registry catalog and surfaced in `/api/openapi.json`.
 
 Legacy aliases remain for dashboard compatibility: `/api/jobs/gwas`, `/api/jobs/enrichment`, `/api/jobs/ppi`, `/api/jobs/literature`, `/api/jobs/screening`, `/api/jobs/trials`, `/api/jobs/ml`, `/api/jobs/synergy`, and `/api/jobs/safety`. These thin wrappers delegate to the same `run_module` Celery task.
 
 `POST /api/jobs/workspace` accepts a JSON `ResearchRequest` body for evidence workspace dossiers.
 
-`POST /api/jobs/run-all` queues a full pipeline orchestration (mirrors CLI `run-all`). Query parameters: `disease_id`, `full`, `parallel`, `skip_ml`, `export_html`, `no_cache`. Dispatches `task_run_all` → `registry_service.run_all_pipeline()` → `scheduler.py` + `execute_module()`. Successful Celery results include `modules_completed`, `report_paths` (when `export_html=true`), and any per-module `errors`.
+`POST /api/jobs/run-all` queues a full pipeline orchestration (mirrors CLI `run-all`). Query parameters: `disease_id`, `full`, `parallel`, `skip_ml`, `export_html`, `no_cache`. Dispatches `task_run_all` -> `registry_service.run_all_pipeline()` -> `scheduler.py` + `execute_module()`. Successful Celery results include `modules_completed`, `report_paths` (when `export_html=true`), and any per-module `errors`.
 
 When `export_html=true` on `POST /api/jobs/{module_id}`, the Celery result includes `report_path` in the task result payload.
 
 ### Error responses
 
-Validation failures return HTTP 422 with Pydantic error detail. Blocked pipeline modules on synchronous routes raise `ModuleNotAvailableError` and return **HTTP 409** with `{ "detail": "...", "error_type": "ModuleNotAvailableError" }`. Other pipeline execution failures from job handlers use structured errors via `error_handlers.py`.
+Validation failures return HTTP 422 with Pydantic error detail. Blocked pipeline modules on synchronous routes raise `ModuleNotAvailableError` and return HTTP 409 with `{ "detail": "...", "error_type": "ModuleNotAvailableError" }`. Other pipeline execution failures from job handlers use structured errors via `error_handlers.py`.
 
 ## Cache administration
 
@@ -375,10 +377,10 @@ Export modules are configured in `src/med_research/web/routers/export.py`; a mis
 
 ```bash
 # Start Redis, the API, and the worker
- docker compose --profile full up --build
+docker compose --profile full up --build
 
 # Run a CLI command in the pipeline container
- docker compose --profile cli run --rm pipeline diseases
+docker compose --profile cli run --rm pipeline diseases
 ```
 
 The Compose `web` service exposes port 8000. The `worker` service runs `celery -A med_research.web.tasks.analysis_tasks worker --loglevel=info --concurrency=2`, and the `beat` service runs the one required scheduler process. Do not run multiple Beat instances against the same deployment.

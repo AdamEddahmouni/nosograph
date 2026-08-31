@@ -1,3 +1,7 @@
+---
+description: How the SyncService imports, refreshes, and reports on biomedical sources, including dry-run validation before production sync.
+---
+
 # Biomedical Source Sync Lifecycle
 
 Production sync is orchestrated by `med_research.biomed.sync.SyncService` and exposed via:

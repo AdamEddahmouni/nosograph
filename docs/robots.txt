@@ -1,0 +1,7 @@
+# NosoGraph public site: crawling allowed for published documentation.
+# Internal QA fixtures (style-test) are excluded from the build entirely.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://adameddahmouni.github.io/nosograph/sitemap.xml

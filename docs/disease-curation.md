@@ -1,3 +1,7 @@
+---
+description: The repeatable validate–coverage–refresh workflow for keeping NosoGraph disease modules research-ready, including scaffold curation rules.
+---
+
 # Disease Curation Playbook
 
 This guide documents the repeatable workflow for keeping disease modules research-ready before adding new diseases or shipping major pipeline changes.

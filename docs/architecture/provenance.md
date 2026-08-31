@@ -1,3 +1,7 @@
+---
+description: The provenance schema NosoGraph attaches to every claim — source, snapshot, import run, and fingerprints — so evidence can be traced to origin.
+---
+
 # Provenance Model
 
 ## Schema

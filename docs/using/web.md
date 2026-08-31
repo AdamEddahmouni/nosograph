@@ -1,3 +1,7 @@
+---
+description: Running the local NosoGraph dashboard — Condition Explorer, Evidence Workspace, corpus health, and comparison in one web interface.
+---
+
 # Web interface
 
 Start `nosograph serve` or Docker `full` profile and open http://127.0.0.1:8000. The dashboard includes Condition Explorer, Evidence Workspace, corpus health, comparison, and module runners.

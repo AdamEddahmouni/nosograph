@@ -1,3 +1,7 @@
+---
+description: How NosoGraph uses MONDO disease identifiers and HPO phenotype annotations, with license compliance requirements for both.
+---
+
 # How NosoGraph uses MONDO and HPO
 
 MONDO provides disease identifiers and hierarchy. HPO/HPOA provide phenotype terms and annotations. NosoGraph imports these into the universal biomedical store and uses them in comparison and disease modules where curated.

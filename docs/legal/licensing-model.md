@@ -1,3 +1,7 @@
+---
+description: The NosoGraph licensing model — Apache-2.0 software, source-specific upstream data terms, and what each applies to.
+---
+
 # Licensing Model
 
 ## Software (Apache-2.0)

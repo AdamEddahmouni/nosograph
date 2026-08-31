@@ -1,56 +1,38 @@
 (() => {
-  const graph = document.querySelector("[data-ng-graph]");
-  if (!graph) return;
+  const trace = document.querySelector("[data-ng-evidence-trace]");
+  if (!trace) return;
 
-  const nodes = [...graph.querySelectorAll("[data-node]")];
-  const edges = [...graph.querySelectorAll("[data-from][data-to]")];
-  const status = graph.querySelector("[data-graph-status]");
-  const labels = Object.fromEntries(nodes.map((node) => [node.dataset.node, node.dataset.label || node.dataset.node]));
+  const steps = [...trace.querySelectorAll("[data-ng-trace-step]")];
+  const inspector = trace.querySelector("[data-ng-trace-detail], .ng-trace-inspector");
+  if (!inspector || !steps.length) return;
 
-  const clearState = () => {
-    nodes.forEach((node) => node.classList.remove("is-active", "is-muted"));
-    edges.forEach((edge) => edge.classList.remove("is-active", "is-muted"));
+  const details = {
+    disease: ["Disease context", "systemic lupus erythematosus", "MONDO:0007915 · reference disease module"],
+    claim: ["Typed claim", "condition associated with an entity", "predicate: associated_with · association is not causation"],
+    evidence: ["Evidence direction", "SUPPORTS", "direction is not a truth verdict · other directions may coexist"],
+    source: ["Study / source", "NOT_RECORDED", "study identifier and upstream source are not established by this illustration"],
+    provenance: ["Provenance", "snapshot context", "snapshot identifier and fingerprint: NOT_RECORDED"],
   };
 
-  const focusNode = (node) => {
-    const id = node.dataset.node;
-    const connected = edges.filter((edge) => edge.dataset.from === id || edge.dataset.to === id);
-    const connectedIds = new Set([id]);
-    connected.forEach((edge) => {
-      connectedIds.add(edge.dataset.from);
-      connectedIds.add(edge.dataset.to);
+  const select = (step) => {
+    const key = step.dataset.ngTraceStep;
+    const detail = details[key];
+    if (!detail) return;
+    steps.forEach((candidate) => {
+      const selected = candidate === step;
+      candidate.classList.toggle("is-selected", selected);
+      candidate.setAttribute("aria-pressed", String(selected));
     });
-
-    nodes.forEach((candidate) => {
-      candidate.classList.toggle("is-active", candidate === node);
-      candidate.classList.toggle("is-muted", !connectedIds.has(candidate.dataset.node));
-    });
-    edges.forEach((edge) => {
-      edge.classList.toggle("is-active", connected.includes(edge));
-      edge.classList.toggle("is-muted", !connected.includes(edge));
-    });
-
-    if (status) status.textContent = `${labels[id]} focused. Connected relationships are highlighted.`;
+    const label = inspector.querySelector(".ng-trace-inspector-label");
+    const value = inspector.querySelector(".ng-trace-inspector-value");
+    const meta = inspector.querySelector(".ng-trace-inspector-meta");
+    if (label) label.textContent = detail[0];
+    if (value) value.textContent = detail[1];
+    if (meta) meta.textContent = detail[2];
   };
 
-  nodes.forEach((node) => {
-    node.addEventListener("mouseenter", () => focusNode(node));
-    node.addEventListener("focus", () => focusNode(node));
-    node.addEventListener("click", () => focusNode(node));
-    node.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        focusNode(node);
-      }
-      if (event.key === "Escape") {
-        clearState();
-        if (status) status.textContent = "Graph focus cleared. Select a labeled entity to trace relationships.";
-      }
-    });
-  });
-
-  graph.addEventListener("mouseleave", () => {
-    clearState();
-    if (status) status.textContent = "Select a labeled entity to trace relationships.";
+  steps.forEach((step) => {
+    step.addEventListener("click", () => select(step));
+    step.addEventListener("focus", () => select(step));
   });
 })();
