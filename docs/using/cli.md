@@ -1,3 +1,8 @@
+---
+title: CLI
+description: Command-line reference for validating registries, building evidence, and running NosoGraph pipelines locally.
+---
+
 # CLI
 
 Canonical command: `nosograph` (legacy alias `med-research`).

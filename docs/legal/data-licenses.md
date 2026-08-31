@@ -1,3 +1,7 @@
+---
+description: License and attribution requirements for every third-party biomedical data source integrated by NosoGraph.
+---
+
 # Data Licenses
 
 Third-party biomedical data integrated by NosoGraph. **Comply with each provider before redistributing derived datasets.**

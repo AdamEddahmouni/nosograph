@@ -1,0 +1,156 @@
+/* ==========================================================================
+   NosoGraph design tokens — single source of truth.
+   Load order: tokens.css → base.css → components.css → docs.css → home.css
+   Components/docs/home must consume tokens, never raw hex values.
+   Legacy aliases (marked LEGACY) keep the pre-foundation homepage rendering
+   until its rebuild stage; they map to the new precise values.
+   ========================================================================== */
+
+:root {
+  /* ---- Identity palette ---- */
+  --ng-deep-navy: #08142d;
+  --ng-navy-layer: #102246;
+  --ng-navy-raised: #16294f;
+  --ng-teal: #19d2c7;
+  --ng-blue: #2f86ff;
+  --ng-violet: #7252f4;
+  --ng-slate: #73819a;
+  --ng-mist: #dce4ef;
+  --ng-white: #f8fbff;
+
+  /* ---- Semantic surfaces & ink (light = reading room, default) ---- */
+  --ng-bg: #f8fbff;
+  --ng-surface: #ffffff;
+  --ng-surface-alt: #eef3f9;
+  --ng-ink: #122344;
+  --ng-ink-soft: #40516e;
+  --ng-ink-muted: #5b6b85;
+  --ng-surface-alt: #eef3f9;
+  --ng-elevated: #ffffff; /* per-scheme declaration: var() aliases resolve at :root, so scheme-dependent tokens can never be aliases */
+  --ng-border: #cbd6e5;
+  --ng-border-strong: #9eafc6;
+  --ng-hover: #e6f8f6;
+
+  /* ---- Status & feedback ---- */
+  --ng-focus: #19d2c7;
+  --ng-success: #147d61;
+  --ng-warning: #9a5d00;
+  --ng-error: #b42318;
+  --ng-info: #1f5fae;
+  --ng-link: #1f5fae;
+  --ng-link-hover: #17498a;
+
+  /* ---- Evidence states (color + shape; shapes differ for monochrome) ---- */
+  --ng-ev-supports: #0e7c6b;
+  --ng-ev-contradicts: #b42318;
+  --ng-ev-inconclusive: #9a5d00;
+  --ng-ev-unasserted: #5b6b85;
+  --ng-provenance: #5b3fd6; /* violet, text-safe on light */
+
+  /* ---- Diagram primitives ---- */
+  --ng-edge: #6d8eb9;
+  --ng-node-disease: #19d2c7;
+  --ng-node-evidence: #dce4ef;
+  --ng-node-source: #7252f4;
+
+  /* ---- Typography ---- */
+  --ng-font-display: "Sora", "Inter", "Segoe UI", sans-serif;
+  --ng-font-text: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  --ng-font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --ng-text-micro: 0.75rem;   /* 12px floor for meaningful metadata */
+  --ng-text-sm: 0.8125rem;    /* 13px inspectable metadata */
+  --ng-text-md: 0.875rem;     /* 14px compact UI */
+  --ng-text-ui: 0.9375rem;    /* 15px secondary UI */
+  --ng-text-base: 1rem;       /* 16px body */
+  --ng-text-lede: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --ng-text-h3: clamp(1.1875rem, 1.08rem + 0.5vw, 1.4375rem);
+  --ng-text-h2: clamp(1.75rem, 1.35rem + 1.9vw, 2.5rem);
+  --ng-text-display: clamp(2.375rem, 1.7rem + 3.1vw, 3.625rem);
+
+  --ng-leading-display: 1.06;
+  --ng-leading-tight: 1.25;
+  --ng-leading-body: 1.65;
+  --ng-leading-lede: 1.6;
+  --ng-tracking-display: -0.02em;
+  --ng-tracking-caps: 0.08em;
+
+  /* ---- Spacing (4px scale, named by px) ---- */
+  --ng-sp-4: 4px;
+  --ng-sp-8: 8px;
+  --ng-sp-12: 12px;
+  --ng-sp-16: 16px;
+  --ng-sp-24: 24px;
+  --ng-sp-32: 32px;
+  --ng-sp-48: 48px;
+  --ng-sp-64: 64px;
+  --ng-sp-96: 96px;
+  --ng-sp-128: 128px;
+
+  --ng-space-inline: var(--ng-sp-16);
+  --ng-space-section-dense: clamp(3rem, 2.5rem + 1.25vw, 4rem);   /* 48–64 data/product */
+  --ng-space-section: clamp(4rem, 3rem + 2.5vw, 6rem);            /* 64–96 narrative */
+  --ng-space-major: clamp(6rem, 4.5rem + 3.75vw, 8rem);           /* 96–128 hero/anchor */
+
+  /* ---- Layout ---- */
+  --ng-width-reading: 72ch;
+  --ng-width-standard: 1200px;
+  --ng-gutter: clamp(1rem, 4vw, 3rem);
+
+  /* ---- Geometry ---- */
+  --ng-radius-xs: 2px;
+  --ng-radius-sm: 4px;
+  --ng-radius-md: 8px;
+  --ng-radius-pill: 999px;
+
+  /* ---- Elevation (rare) ---- */
+  --ng-shadow-plate: 0 8px 24px rgba(8, 20, 45, 0.16);
+  --ng-shadow-overlay: 0 12px 40px rgba(8, 20, 45, 0.28);
+
+  /* ---- Motion ---- */
+  --ng-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ng-fast: 160ms;
+  --ng-normal: 240ms;
+
+  /* ---- MkDocs Material bridges ---- */
+  --md-primary-fg-color: var(--ng-blue);
+  --md-accent-fg-color: var(--ng-teal);
+  --md-typeset-a-color: var(--ng-link);
+
+  /* ---- LEGACY aliases (pre-foundation homepage; remove at rebuild). Static values only — scheme-dependent tokens must be declared per scheme. ---- */
+  --ng-radius-lg: var(--ng-radius-md);
+  --ng-shadow: var(--ng-shadow-plate);
+  --ng-container: var(--ng-width-standard);
+  --ng-section-space: clamp(4rem, 9vw, 8rem);
+  --ng-normal: 240ms;
+}
+
+/* ---- Dark scheme (chassis) ---- */
+[data-md-color-scheme="slate"] {
+  --ng-bg: #08142d;
+  --ng-surface: #0d1a35;
+  --ng-surface-alt: #102246;
+  --ng-elevated: #16294f;
+  --ng-ink: #f8fbff;
+  --ng-ink-soft: #dce4ef;
+  --ng-ink-muted: #a9b8ce;
+  --ng-border: #2f4770;
+  --ng-border-strong: #5875a0;
+  --ng-hover: #14324a;
+  --ng-success: #4cc38a;
+  --ng-warning: #e8b04b;
+  --ng-error: #ff9c8f;
+  --ng-info: #7cb8ff;
+  --ng-link: var(--ng-teal);
+  --ng-link-hover: #6ff0e6;
+  --ng-ev-supports: #19d2c7;
+  --ng-ev-contradicts: #ff9c8f;
+  --ng-ev-inconclusive: #e8b04b;
+  --ng-ev-unasserted: #a9b8ce;
+  --ng-provenance: #a892ff;
+  --md-default-bg-color: var(--ng-deep-navy);
+  --md-default-fg-color: var(--ng-ink);
+  --md-default-fg-color--light: var(--ng-ink-soft);
+  --md-default-fg-color--lighter: var(--ng-ink-muted);
+  --md-typeset-a-color: var(--ng-link);
+}

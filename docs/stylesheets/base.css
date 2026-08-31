@@ -1,0 +1,94 @@
+/* ==========================================================================
+   NosoGraph base — fonts, document defaults, global a11y motion rules.
+   Scope: everything EXCEPT components, Material shell, homepage layout.
+   ========================================================================== */
+
+/* ---- Self-hosted variable fonts (manifest-pinned; see assets/fonts/manifest.json) ---- */
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("../assets/fonts/Sora-Variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("../assets/fonts/JetBrainsMono-Variable.woff2") format("woff2");
+}
+
+/* ---- Document defaults ---- */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--ng-bg);
+  color: var(--ng-ink);
+  font-family: var(--ng-font-text);
+  font-synthesis: none;
+}
+
+.md-typeset {
+  font-family: var(--ng-font-text);
+  font-synthesis: none;
+}
+
+.md-typeset code,
+.md-typeset pre {
+  font-family: var(--ng-font-mono);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.ng-display {
+  font-family: var(--ng-font-display);
+  letter-spacing: var(--ng-tracking-display);
+}
+
+/* ---- Utilities ---- */
+.ng-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ---- Selection ---- */
+::selection {
+  background: var(--ng-teal);
+  color: var(--ng-deep-navy);
+}
+
+/* ---- Reduced motion: core information never depends on animation ---- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

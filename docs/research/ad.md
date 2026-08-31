@@ -1,3 +1,7 @@
+---
+description: A research walkthrough for Alzheimer disease using the ad module, with validation commands and coverage caveats.
+---
+
 # Alzheimer disease
 
 

@@ -1,10 +1,15 @@
+---
+title: Citation
+description: Cite the current NosoGraph release with the all-versions concept DOI and repository metadata.
+---
+
 # Citation
 
-Canonical metadata: repository `CITATION.cff` (version **0.2.1**, URL `https://github.com/AdamEddahmouni/nosograph`). README BibTeX must match.
+Use the repository `CITATION.cff` for canonical software metadata. The current version **0.2.1**. Because no v0.2.1 archive record exists yet, cite the all-versions concept DOI:
 
-- Preferred v0.2.1 citation: [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279) (all-versions concept DOI; v0.2.1 has no archive record yet).
-- Historical v0.2.0 archive: [10.5281/zenodo.22062925](https://doi.org/10.5281/zenodo.22062925) (version DOI — identifies v0.2.0 only, not v0.2.1).
-- Historical v0.1.0 archive: [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280) (version DOI).
+- [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279) — concept DOI for NosoGraph versions.
+- [10.5281/zenodo.22062925](https://doi.org/10.5281/zenodo.22062925) — historical v0.2.0 version DOI only.
+- [10.5281/zenodo.22055280](https://doi.org/10.5281/zenodo.22055280) — historical v0.1.0 version DOI only.
 
 ```bibtex
 @software{nosograph2026,
@@ -17,4 +22,6 @@ Canonical metadata: repository `CITATION.cff` (version **0.2.1**, URL `https://g
 }
 ```
 
-See the completed [Zenodo setup record](zenodo-setup.md) for integration details and archived releases.
+Apache-2.0 applies to NosoGraph source code. Imported biomedical datasets and upstream records retain their own licenses and terms; see [data licensing](../legal/data-licenses.md). Cite upstream resources separately when your research uses them.
+
+For project provenance and public metadata ownership, see [source of truth](source-of-truth.md).

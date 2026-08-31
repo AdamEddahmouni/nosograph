@@ -1,3 +1,7 @@
+---
+description: How a disease is represented in NosoGraph — a slug-keyed module with MONDO alignment, JSON knowledge-graph files, and config overlays.
+---
+
 # Diseases
 
 A disease in NosoGraph is a module keyed by a slug (for example `sle`) aligned to identifiers such as MONDO where recorded. Modules contain JSON knowledge-graph files plus Python config overlays.

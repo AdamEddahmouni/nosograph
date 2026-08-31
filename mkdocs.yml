@@ -5,6 +5,37 @@ repo_url: https://github.com/AdamEddahmouni/nosograph
 repo_name: AdamEddahmouni/nosograph
 edit_uri: edit/master/docs/
 docs_dir: docs
+exclude_docs: |
+  style-test.md
+  # Internal audit reports and historical launch checklists
+  audits/
+  # Internal engineering plans/specs (published in the repository, not on the site)
+  superpowers/
+  # Internal roadmap planning archive (public roadmap lives at project/roadmap.md)
+  roadmaps/
+  # Internal press-kit drafts referencing launch-copy planning material
+  media/
+  # Internal release-readiness process page
+  public-launch.md
+  # Legacy v2.x prototype lineage records (pre-public-alpha versioning; see project/releases.md)
+  release-notes/v2.3.0.md
+  release-notes/v2.4.0.md
+  project/launch-copy.md
+  project/github-discussions-seed.md
+  project/github-public-settings.md
+  project/adoption-metrics.md
+  project/openssf-readiness.md
+  project/release-notes-template.md
+  project/zenodo-setup.md
+  architecture/commercialization-boundaries.md
+  architecture/decisions/
+  # Internal engineering design for a future hosted demo (not an offered product)
+  deployment/public-demo.md
+  # Asset-directory READMEs are repository documentation, not site pages
+  assets/brand/README.md
+  # Source captures kept for the internal style fixture; superseded by WebP on public pages
+  assets/screenshots/
+  assets/fonts/README.md
 copyright: NosoGraph is research software. Not medical advice. Apache-2.0 source license.
 
 theme:
@@ -13,6 +44,8 @@ theme:
   logo: assets/brand/mark.svg
   favicon: assets/brand/favicon.svg
   font: false
+  icon:
+    repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -30,21 +63,29 @@ theme:
         name: Switch to light mode
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
-    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.tabs.link
     - toc.follow
 
-extra_css:
-  - stylesheets/nosograph.css
 extra_javascript:
   - javascripts/home.js
 
+extra_css:
+  - stylesheets/tokens.css
+  - stylesheets/base.css
+  - stylesheets/components.css
+  - stylesheets/docs.css
+  - stylesheets/home.css
+
 plugins:
   - search
+
+hooks:
+  - scripts/site_hooks.py
 
 markdown_extensions:
   - admonition
@@ -65,28 +106,32 @@ extra:
   generator: false
 
 nav:
-  - Overview:
-      - Home: index.md
+  - Start:
       - What is NosoGraph?: getting-started/what-is.md
+      - Home: index.md
       - Installation: getting-started/install.md
+      - Docker: getting-started/docker.md
       - Five-minute tutorial: getting-started/tutorial.md
       - Demo and hosted status: getting-started/demo.md
       - FAQ: getting-started/faq.md
-      - Current status: project/status.md
-  - Research:
+  - Use:
       - Web interface: using/web.md
       - Evidence Explorer: using/evidence-explorer.md
-      - Evidence Workspace: using/evidence-workspace.md
-      - Research examples:
+      - Compare conditions: using/compare.md
+      - Evidence Workspace: evidence-workspace.md
+      - Walkthroughs:
           - SLE: research/sle.md
           - Rheumatoid arthritis: research/ra.md
           - Alzheimer disease: research/ad.md
           - Cross-disease comparison: research/comparison.md
           - Evidence tracing: research/evidence-tracing.md
           - Drug repurposing: research/repurposing.md
-      - Validation: using/validation.md
-      - Research-use boundary: project/security.md
-  - Concepts:
+      - Operate:
+          - CLI: using/cli.md
+          - API reference: api-reference.md
+          - Source sync: using/source-sync.md
+          - Validation: using/validation.md
+  - Understand:
       - Diseases: concepts/diseases.md
       - Disease registry: concepts/registry.md
       - Curation tiers: concepts/curation-tiers.md
@@ -97,36 +142,35 @@ nav:
       - Hypotheses: concepts/hypotheses.md
       - Graphs vs ontologies: concepts/graph-vs-ontology.md
       - MONDO and HPO: concepts/mondo-hpo.md
-  - Data:
-      - Sources: data/sources.md
-      - Coverage: data/coverage.md
-      - Provenance: data/provenance.md
-      - Update cadence: data/update-cadence.md
-      - Licensing: data/licensing.md
-  - Using NosoGraph:
-      - CLI: using/cli.md
-      - API: using/api.md
-      - Source sync: using/source-sync.md
-  - Developers:
-      - Architecture: developers/architecture.md
+      - Data & sources:
+          - Sources: data/sources.md
+          - Coverage: data/coverage.md
+          - Data provenance: data/provenance.md
+          - Update cadence: data/update-cadence.md
+          - Licensing: data/licensing.md
+  - Develop:
+      - Architecture overview: architecture/overview.md
       - Evidence Explorer architecture: architecture/evidence-explorer.md
-      - Data model: developers/data-model.md
+      - Data model: architecture/data-model.md
+      - Source sync lifecycle: architecture/source-sync-lifecycle.md
       - Local development: developers/local.md
       - Testing: developers/testing.md
-      - Deployment: developers/deployment.md
-  - Contributing:
-      - Getting started: contributing/index.md
-      - Code: contributing/code.md
-      - Disease curation: contributing/curation.md
-      - Data sources: contributing/sources.md
-      - Governance: contributing/governance.md
+      - Self-hosted deployment: deployment.md
   - Project:
+      - Status: project/status.md
       - Roadmap: project/roadmap.md
       - Current releases: project/releases.md
       - Security: project/security.md
       - Citation: project/citation.md
       - License: project/license.md
       - Source of truth: project/source-of-truth.md
+      - Contributing:
+          - Getting started: contributing/index.md
+          - Code: contributing/code.md
+          - Disease curation: contributing/curation.md
+          - Data sources: contributing/sources.md
+          - Governance: contributing/governance.md
+          - Good first issues: project/good-first-issues.md
 
 validation:
   nav:

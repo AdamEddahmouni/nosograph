@@ -177,6 +177,12 @@ def main() -> None:
     for relative in CURRENT_SURFACES:
         text = _text(relative)
         if f"v{version}" not in text and version not in text:
+            if relative == "docs/index.md" and "{{NG_VERSION}}" in text:
+                if _status_version() != version:
+                    errors.append(
+                        "docs/index.md {{NG_VERSION}} placeholder requires matching public-status.yaml"
+                    )
+                continue
             errors.append(f"{relative} does not mention current version {version}")
 
     for relative in TAGLINE_SURFACES:

@@ -1,3 +1,7 @@
+---
+description: Validating disease modules with nosograph validate commands, and what the strict validation gate does and does not cover.
+---
+
 # Validation
 
 ```bash

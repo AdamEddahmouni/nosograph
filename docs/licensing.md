@@ -1,3 +1,8 @@
+---
+title: Licensing overview
+description: How Apache-2.0 applies to NosoGraph source code, how upstream data-provider terms apply to integrated biomedical data, and where the authoritative legal documents live.
+---
+
 # Licensing
 
 > **NosoGraph** source code is Apache-2.0. This page summarizes software and data licensing; authoritative detail lives under `docs/legal/`.

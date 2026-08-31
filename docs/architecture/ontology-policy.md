@@ -1,3 +1,7 @@
+---
+description: Why NosoGraph builds on standard biomedical ontologies — MONDO, HPO, GO, Reactome, Uberon — and how ontology snapshots are pinned for reproducibility.
+---
+
 # Ontology Policy
 
 ## Principles

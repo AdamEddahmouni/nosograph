@@ -1,3 +1,7 @@
+---
+description: How NosoGraph structures disease modules, claims, evidence, provenance, and runtime databases across versioned sources and local builds.
+---
+
 # Data Model
 
 ## Disease module schema
@@ -67,9 +71,9 @@ SQLite (default `data/evidence_workspace.sqlite3`):
 | Workspace DB | `data/evidence_workspace.sqlite3` | No |
 | Batch reports | `data/reports/` | Partial |
 
-## Corpus statistics (2026-08-20)
+## Corpus statistics (v0.2.1 snapshot)
 
-- **10,407** registry modules
-- **8** CI-validated curated (original set)
-- **~45** promoted L2 modules (test gate)
-- **23** L3 expression-curated modules
+- **10,407** registry modules — broad registry coverage, not equivalent to curation depth
+- **8** CI-validated curated diseases (original set)
+- **{{NG_L2_STRICT_VALIDATED}}** strict L2-validated modules
+- **2** L3 expression-curated modules (sampled status report; not a full-corpus curation count)

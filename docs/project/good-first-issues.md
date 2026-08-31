@@ -1,3 +1,7 @@
+---
+description: Curated starter issues in the NosoGraph repository, labeled by area and scoped for new contributors.
+---
+
 # Suggested good first issues
 
 Created on 2026-08-22 with labels `good first issue`, `help wanted`, and the listed area labels. Do **not** label architecture refactors as first issues.
