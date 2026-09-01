@@ -359,3 +359,17 @@ def test_launch_copy_uses_current_public_release() -> None:
     assert f"NosoGraph v{CURRENT_VERSION} is Public Alpha" in launch_copy
     assert "NosoGraph v0.2.0 is a public alpha" not in launch_copy
     assert "NosoGraph v0.2.0 is Public Alpha" not in launch_copy
+
+
+def test_documentation_gate_is_strict_and_checks_shipped_site() -> None:
+    makefile = (ROOT / "Makefile").read_text(encoding="utf-8")
+    workflow = (ROOT / ".github" / "workflows" / "docs.yml").read_text(
+        encoding="utf-8"
+    )
+
+    assert "python -m mkdocs build --strict" in makefile
+    assert "python scripts/check_public_site_consistency.py" in makefile
+    assert "python scripts/check_public_metadata.py" in workflow
+    assert "python scripts/check_public_fonts.py" in workflow
+    assert "python -m mkdocs build --strict" in workflow
+    assert "python scripts/check_public_site_consistency.py" in workflow

@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts check-public-site
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -310,13 +310,19 @@ check-public-metadata:  ## Verify README / CITATION / version consistency
 check-public-fonts:  ## Verify bundled fonts, licenses, checksums, and CSS loading
 	python scripts/check_public_fonts.py
 
+check-public-site:  ## Verify built Pages metadata, sitemap, robots, and canonical URLs
+	python scripts/check_public_site_consistency.py
+
 docs-serve:  ## Serve the MkDocs documentation site locally
 	python -m pip install -r requirements-docs.txt
 	python -m mkdocs serve
 
-docs-build:  ## Build the documentation site
+docs-build:  ## Build and verify the MkDocs documentation site
 	python -m pip install -r requirements-docs.txt
-	python -m mkdocs build
+	python scripts/check_public_metadata.py
+	python scripts/check_public_fonts.py
+	python -m mkdocs build --strict
+	python scripts/check_public_site_consistency.py
 
 # ── Biomedical store ─────────────────────────────────────────────────────
 
