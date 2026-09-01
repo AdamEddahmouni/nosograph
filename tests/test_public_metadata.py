@@ -330,3 +330,32 @@ def test_documentation_homepage_routes_both_audiences() -> None:
     assert ".ng-audience-routes" in stylesheet
     assert "Registered integrations" not in homepage
     assert "<strong>17</strong> registered integrations" not in homepage
+
+
+def test_supporting_public_surfaces_route_new_contributors() -> None:
+    contributing = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
+    support = (ROOT / ".github" / "SUPPORT.md").read_text(encoding="utf-8")
+    pull_request = (ROOT / ".github" / "pull_request_template.md").read_text(
+        encoding="utf-8"
+    )
+    settings = (ROOT / "docs" / "project" / "github-public-settings.md").read_text(
+        encoding="utf-8"
+    )
+
+    assert "## Your first contribution" in contributing
+    assert "project/good-first-issues.md" in support
+    assert "project/status.md" in support
+    assert "make docs-build" in pull_request
+    assert "Open-source research software for connecting disease knowledge" in settings
+    assert "https://adameddahmouni.github.io/nosograph/" in settings
+
+
+def test_launch_copy_uses_current_public_release() -> None:
+    launch_copy = (ROOT / "docs" / "project" / "launch-copy.md").read_text(
+        encoding="utf-8"
+    )
+
+    assert f"NosoGraph v{CURRENT_VERSION} is a public alpha" in launch_copy
+    assert f"NosoGraph v{CURRENT_VERSION} is Public Alpha" in launch_copy
+    assert "NosoGraph v0.2.0 is a public alpha" not in launch_copy
+    assert "NosoGraph v0.2.0 is Public Alpha" not in launch_copy

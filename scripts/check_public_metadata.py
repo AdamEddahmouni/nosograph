@@ -27,6 +27,7 @@ CURRENT_SURFACES = (
     "docs/getting-started/demo.md",
     "docs/getting-started/faq.md",
     "docs/media/README.md",
+    "docs/project/launch-copy.md",
     "docs/project/citation.md",
     "docs/project/github-public-settings.md",
     "docs/project/releases.md",

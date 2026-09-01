@@ -23,7 +23,8 @@
 
 - [ ] `make lint` (or N/A for docs-only)
 - [ ] `make test-offline` (or N/A for docs-only)
-- [ ] `python scripts/check_public_metadata.py` if README/CITATION/version changed
+- [ ] `python scripts/check_public_metadata.py` if README, citation, release, or public copy changed
+- [ ] `make docs-build` if documentation, theme, or public-site files changed
 - [ ] Additional:
 
 ## Screenshots

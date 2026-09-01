@@ -2,6 +2,15 @@
 
 Code cannot apply these. Maintainer actions only.
 
+## Canonical About values
+
+- **Description:** Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.
+- **Website:** https://adameddahmouni.github.io/nosograph/
+- **Social preview:** `docs/assets/brand/social-preview.png` (1280×640)
+- **Primary topics:** `biomedical-knowledge-graph`, `bioinformatics`, `disease-ontology`, `evidence-synthesis`, `fastapi`, `knowledge-graph`, `open-source`, `python`, `research-software`, `systems-biology`
+
+Treat these values as the maintainer checklist whenever positioning or the social preview changes.
+
 ## Completed in this repository (2026-08-22)
 
 - Public repo `AdamEddahmouni/nosograph`
