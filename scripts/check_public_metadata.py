@@ -117,6 +117,14 @@ def _status_version() -> str:
     )
 
 
+def _status_release_date() -> str:
+    return _field(
+        "docs/generated/public-status.yaml",
+        r'(?m)^release_date:\s*"([^"]+)"',
+        "public-status.yaml release_date",
+    )
+
+
 def _status_metric(field: str) -> str:
     return _field(
         "docs/generated/public-status.yaml",
@@ -192,6 +200,10 @@ def main() -> None:
     for label, marker in readme_snapshot_markers.values():
         if marker not in readme:
             errors.append(f"README.md {label} do not match public-status.yaml")
+    if f"repository snapshot {_status_release_date()}" not in readme:
+        errors.append(
+            "README.md snapshot date does not match public-status.yaml release_date"
+        )
 
     for label, actual in {
         "CITATION.cff version": citation_version,

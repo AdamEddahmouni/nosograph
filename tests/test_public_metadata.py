@@ -299,3 +299,16 @@ def test_rejects_stale_readme_public_metric(monkeypatch: pytest.MonkeyPatch) -> 
         readme.replace("10,407", "10,406"),
         "README.md registry modules",
     )
+
+
+def test_rejects_stale_readme_snapshot_date(monkeypatch: pytest.MonkeyPatch) -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    _assert_overlay_fails(
+        monkeypatch,
+        "README.md",
+        readme.replace(
+            "repository snapshot 2026-08-22",
+            "repository snapshot 2026-08-21",
+        ),
+        "README.md snapshot date",
+    )
