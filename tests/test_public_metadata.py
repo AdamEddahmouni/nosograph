@@ -267,3 +267,35 @@ def test_media_kit_contains_reusable_approved_marketing_copy() -> None:
     assert "## 50-word boilerplate" in launch_copy
     assert "## 150-word boilerplate" in launch_copy
     assert "## Calls to action" in launch_copy
+
+
+def test_readme_is_a_balanced_repository_front_door() -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+    required = (
+        "docs/assets/product/evidence-explorer.webp",
+        "## What you can do",
+        "## Choose your path",
+        "## Quick start",
+        "### For researchers",
+        "### For developers and contributors",
+        "Public alpha · research use only",
+    )
+    for marker in required:
+        assert marker in readme
+
+    assert "## At a glance" not in readme
+    assert "## Researcher path" not in readme
+    assert "## Developer path" not in readme
+    assert readme.index("## What you can do") < readme.index("## Quick start")
+    assert readme.index("## Choose your path") < readme.index("## Quick start")
+
+
+def test_rejects_stale_readme_public_metric(monkeypatch: pytest.MonkeyPatch) -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    _assert_overlay_fails(
+        monkeypatch,
+        "README.md",
+        readme.replace("10,407", "10,406"),
+        "README.md registry modules",
+    )

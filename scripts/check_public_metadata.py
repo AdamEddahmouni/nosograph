@@ -81,6 +81,17 @@ REQUIRED_ASSETS = (
     "social-preview.svg",
     "social-preview.png",
 )
+REQUIRED_SURFACE_MARKERS = {
+    "README.md": (
+        "docs/assets/product/evidence-explorer.webp",
+        "## What you can do",
+        "## Choose your path",
+        "## Quick start",
+        "### For researchers",
+        "### For developers and contributors",
+        "Public alpha · research use only",
+    ),
+}
 
 
 def _text(relative: str) -> str:
@@ -103,6 +114,14 @@ def _status_version() -> str:
         "docs/generated/public-status.yaml",
         r'(?m)^version:\s*"([^"]+)"',
         "public-status.yaml version",
+    )
+
+
+def _status_metric(field: str) -> str:
+    return _field(
+        "docs/generated/public-status.yaml",
+        rf'(?m)^  {re.escape(field)}:\s*"?([^"\n]+)"?\s*$',
+        f"public-status.yaml metric {field}",
     )
 
 
@@ -141,6 +160,38 @@ def main() -> None:
     )
     readme = _text("README.md")
     errors: list[str] = []
+
+    readme_snapshot_markers = {
+        "registry_modules": (
+            "registry modules",
+            f"| Registry modules | {int(_status_metric('registry_modules')):,} |",
+        ),
+        "l2_strict_validated": (
+            "L2-validated modules",
+            "| Strict L2-validated modules | "
+            f"{int(_status_metric('l2_strict_validated')):,} |",
+        ),
+        "reference_tier": (
+            "reference modules",
+            f"| Reference modules | {int(_status_metric('reference_tier')):,} |",
+        ),
+        "ci_validated": (
+            "CI-validated modules",
+            f"| CI-validated modules | {int(_status_metric('ci_validated')):,} |",
+        ),
+        "offline_tests": (
+            "offline tests",
+            f"| Offline tests selected in the v{version} suite | "
+            f"{int(_status_metric('offline_tests')):,} |",
+        ),
+        "analysis_pipelines": (
+            "analysis pipelines",
+            f"{_status_metric('analysis_pipelines')} analysis pipelines",
+        ),
+    }
+    for label, marker in readme_snapshot_markers.values():
+        if marker not in readme:
+            errors.append(f"README.md {label} do not match public-status.yaml")
 
     for label, actual in {
         "CITATION.cff version": citation_version,
@@ -194,6 +245,12 @@ def main() -> None:
     for relative in ACTIVE_POSITIONING_SURFACES:
         if any(pattern.search(_text(relative)) for pattern in RETIRED_POSITIONING_PATTERNS):
             errors.append(f"{relative} contains retired positioning")
+
+    for relative, markers in REQUIRED_SURFACE_MARKERS.items():
+        text = _text(relative)
+        for marker in markers:
+            if marker not in text:
+                errors.append(f"{relative} missing required public marker: {marker}")
 
     brand_dir = ROOT / "docs" / "assets" / "brand"
     for asset in REQUIRED_ASSETS:
