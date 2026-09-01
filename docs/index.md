@@ -67,6 +67,27 @@ description: Open-source research software for connecting disease knowledge, evi
   </div>
 </section>
 
+<section class="ng-audience-routes" aria-labelledby="ng-audience-title">
+  <div class="ng-shell">
+    <div class="ng-audience-heading">
+      <p class="ng-kicker">Choose your path</p>
+      <h2 id="ng-audience-title">Inspect the evidence or extend the system.</h2>
+    </div>
+    <nav class="ng-audience-grid" aria-label="Audience routes">
+      <a href="#researchers">
+        <span>For researchers</span>
+        <strong>Follow claims to evidence and source context.</strong>
+        <small>Explore diseases, compare conditions, and inspect provenance →</small>
+      </a>
+      <a href="#developers">
+        <span>For developers and contributors</span>
+        <strong>Run locally, inspect the model, and add to it.</strong>
+        <small>Use the CLI and API, extend sources, validate, and contribute →</small>
+      </a>
+    </nav>
+  </div>
+</section>
+
 <section class="ng-credibility-rail" aria-labelledby="ng-credibility-title">
   <div class="ng-shell">
     <div class="ng-credibility-heading">
@@ -77,7 +98,7 @@ description: Open-source research software for connecting disease knowledge, evi
     <dl class="ng-credibility-stats">
       <div><dt>L2-validated modules</dt><dd>{{NG_L2_STRICT_VALIDATED}}</dd></div>
       <div><dt>Selected offline tests</dt><dd>{{NG_OFFLINE_TESTS}}</dd></div>
-      <div><dt>Registered integrations</dt><dd>17</dd></div>
+      <div><dt>Research boundary</dt><dd>Research only</dd></div>
       <div><dt>License</dt><dd>Apache-2.0</dd></div>
       <div><dt>Concept DOI</dt><dd><a href="project/citation/">10.5281/zenodo.22055279</a></dd></div>
     </dl>
@@ -121,7 +142,7 @@ description: Open-source research software for connecting disease knowledge, evi
   <div class="ng-shell">
     <div class="ng-sources-heading">
       <div><p class="ng-kicker">Source ecosystem</p><h2 id="ng-sources-title">Source context stays visible.</h2></div>
-      <p class="ng-sources-count"><strong>17</strong> registered integrations<br><span>Representative resources shown below.</span></p>
+      <p class="ng-sources-count"><strong>Source matrix</strong><br><span>Representative resources shown below.</span></p>
     </div>
     <div class="ng-source-table-wrap">
       <table class="ng-source-table">
@@ -189,7 +210,7 @@ description: Open-source research software for connecting disease knowledge, evi
   </div>
 </section>
 
-<section class="ng-research-workflow ng-context-section" aria-labelledby="ng-research-workflow-title">
+<section class="ng-research-workflow ng-context-section" id="researchers" aria-labelledby="ng-research-workflow-title">
   <div class="ng-shell">
     <div class="ng-workflow-heading">
       <div><p class="ng-kicker">Researcher workflow</p><h2 id="ng-research-workflow-title">Start with a question. Follow the evidence.</h2></div>

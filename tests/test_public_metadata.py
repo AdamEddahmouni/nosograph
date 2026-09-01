@@ -312,3 +312,21 @@ def test_rejects_stale_readme_snapshot_date(monkeypatch: pytest.MonkeyPatch) -> 
         ),
         "README.md snapshot date",
     )
+
+
+def test_documentation_homepage_routes_both_audiences() -> None:
+    homepage = (ROOT / "docs/index.md").read_text(encoding="utf-8")
+    stylesheet = (ROOT / "docs/stylesheets/home.css").read_text(encoding="utf-8")
+
+    for marker in (
+        'class="ng-audience-routes"',
+        'href="#researchers"',
+        'href="#developers"',
+        'id="researchers"',
+        'id="developers"',
+        'id="contribute"',
+    ):
+        assert marker in homepage
+    assert ".ng-audience-routes" in stylesheet
+    assert "Registered integrations" not in homepage
+    assert "<strong>17</strong> registered integrations" not in homepage

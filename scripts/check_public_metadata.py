@@ -91,6 +91,20 @@ REQUIRED_SURFACE_MARKERS = {
         "### For developers and contributors",
         "Public alpha · research use only",
     ),
+    "docs/index.md": (
+        'class="ng-audience-routes"',
+        'href="#researchers"',
+        'href="#developers"',
+        'id="researchers"',
+        'id="developers"',
+        'id="contribute"',
+    ),
+}
+FORBIDDEN_SURFACE_MARKERS = {
+    "docs/index.md": (
+        "Registered integrations",
+        "<strong>17</strong> registered integrations",
+    ),
 }
 
 
@@ -263,6 +277,12 @@ def main() -> None:
         for marker in markers:
             if marker not in text:
                 errors.append(f"{relative} missing required public marker: {marker}")
+
+    for relative, markers in FORBIDDEN_SURFACE_MARKERS.items():
+        text = _text(relative)
+        for marker in markers:
+            if marker in text:
+                errors.append(f"{relative} contains forbidden public marker: {marker}")
 
     brand_dir = ROOT / "docs" / "assets" / "brand"
     for asset in REQUIRED_ASSETS:
