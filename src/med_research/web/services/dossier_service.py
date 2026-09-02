@@ -1,9 +1,8 @@
 import datetime
 import json
 import logging
-from pathlib import Path
-
 from html import escape
+from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 

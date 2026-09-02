@@ -15,7 +15,6 @@ from med_research.exceptions import (
     MedResearchError,
     ModuleNotAvailableError,
 )
-from med_research.web.config import DEBUG
 
 logger = logging.getLogger(__name__)
 

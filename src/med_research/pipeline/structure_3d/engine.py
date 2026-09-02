@@ -92,7 +92,9 @@ def resolve_uniprot_id(target_identifier: str) -> tuple[str, str]:
         return name, KNOWN_UNIPROT_MAP[norm_name]
 
     # Check if raw looks like a UniProt accession (e.g. P01375, Q5VWK5, A0A024RBG1)
-    if re.match(r"^[OPQ][0-9][A-Z0-9]{3}[0-9]$", raw) or re.match(r"^[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}$", raw):
+    if re.match(r"^[OPQ][0-9][A-Z0-9]{3}[0-9]$", raw) or re.match(
+        r"^[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}$", raw
+    ):
         rev = {v: k for k, v in KNOWN_UNIPROT_MAP.items()}
         return rev.get(raw, raw), raw
 
