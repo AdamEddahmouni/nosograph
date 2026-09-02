@@ -6,7 +6,8 @@ mypy>=1.8
 pip-tools>=7.4
 playwright>=1.48,<2
 # Optional semantic-search integrations are exercised by the offline suite.
-chromadb>=1.5
+# Pinned below 0.4.17 to stay clear of CVE-2026-45829/45830/45831/45833.
+chromadb==0.4.16
 sentence-transformers>=5.0
 # Supports asyncio-aware pytest configuration used by async integration tests.
 pytest-asyncio>=0.24

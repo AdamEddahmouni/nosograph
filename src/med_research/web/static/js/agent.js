@@ -11,10 +11,22 @@ document.addEventListener("DOMContentLoaded", () => {
     return headers;
   }
 
+  function escapeHtml(text) {
+    return String(text == null ? '' : text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+  }
+
   function appendUserMessage(text) {
     const div = document.createElement("div");
     div.className = "chat-bubble chat-user";
-    div.innerHTML = `<strong>You:</strong> ${text}`;
+    const strong = document.createElement("strong");
+    strong.textContent = "You:";
+    div.appendChild(strong);
+    div.appendChild(document.createTextNode(" " + escapeHtml(text)));
     messagesContainer.appendChild(div);
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
   }
@@ -22,7 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function appendAgentMessage(html) {
     const div = document.createElement("div");
     div.className = "chat-bubble chat-agent";
-    div.innerHTML = `<strong>Translational Research Agent:</strong><br/>${html}`;
+    const strong = document.createElement("strong");
+    strong.textContent = "Translational Research Agent:";
+    div.appendChild(strong);
+    div.appendChild(document.createElement("br"));
+    div.innerHTML += "<br>" + html;
     messagesContainer.appendChild(div);
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
   }
@@ -84,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       appendAgentMessage(html);
     } catch (err) {
-      appendAgentMessage(`<span style="color:#dc2626;">Error: ${err.message}</span>`);
+      appendAgentMessage(`<span style="color:#dc2626;">Error: ${escapeHtml(err.message)}</span>`);
     }
   });
 
@@ -101,9 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
         body: JSON.stringify({ query: text, disease_id: document.getElementById("agent-disease").value }),
       });
       const data = await res.json();
-      appendAgentMessage(data.answer.replace(/\n/g, "<br/>"));
+      appendAgentMessage(escapeHtml(data.answer).replace(/\n/g, "<br>"));
     } catch (err) {
-      appendAgentMessage(`<span style="color:#dc2626;">Error: ${err.message}</span>`);
+      appendAgentMessage(`<span style="color:#dc2626;">Error: ${escapeHtml(err.message)}</span>`);
     }
   }
 
