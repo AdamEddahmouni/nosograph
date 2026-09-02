@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
     return headers;
   }
 
+  function escapeHtml(text) {
+    const map = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+    return String(text).replace(/[&<>"']/g, ch => map[ch]);
+  }
+
   let currentSpots = [];
   let hoveredSpot = null;
 
@@ -85,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hoveredSpot) {
       const g = document.getElementById("primary-gene").value;
       const expr = (hoveredSpot.features && hoveredSpot.features[g]) || 0;
-      spotInfo.innerHTML = `<strong>${hoveredSpot.barcode}</strong> (${hoveredSpot.region}) | ${g}: <span style="color:#0284c7;font-weight:700;">${expr}</span> | (x: ${hoveredSpot.x}, y: ${hoveredSpot.y})`;
+      spotInfo.innerHTML = `<strong>${escapeHtml(hoveredSpot.barcode)}</strong> (${escapeHtml(hoveredSpot.region)}) | ${escapeHtml(g)}: <span style="color:#0284c7;font-weight:700;">${expr}</span> | (x: ${hoveredSpot.x}, y: ${hoveredSpot.y})`;
     } else {
       spotInfo.textContent = "Hover over spots for barcode & coordinates";
     }
