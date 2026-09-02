@@ -103,7 +103,12 @@ def set_session_cookie(response: Response, researcher_id: str) -> None:
 
 
 def clear_session_cookie(response: Response) -> None:
-    response.delete_cookie(SESSION_COOKIE, path="/")
+    response.delete_cookie(
+        SESSION_COOKIE,
+        path="/",
+        secure=not _debug(),
+        samesite="lax",
+    )
 
 
 def _local_users() -> dict[str, str]:
