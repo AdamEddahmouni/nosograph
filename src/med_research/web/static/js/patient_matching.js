@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (err) {
       resultsContainer.innerHTML = `
         <div style="background:#fee2e2;color:#991b1b;padding:1rem;border-radius:8px;">
-          <strong>Error running match:</strong> ${err.message}
+          <strong>Error running match:</strong> ${escapeHtml(err.message)}
         </div>
       `;
     }

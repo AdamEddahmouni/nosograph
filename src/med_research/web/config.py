@@ -188,8 +188,8 @@ DASHBOARD_CSP_POLICY = (
     "form-action 'self'; "
     "script-src 'self'; "
     "script-src-attr 'none'; "
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
-    "font-src 'self' https://fonts.gstatic.com; "
+    "style-src 'self' 'unsafe-inline'; "
+    "font-src 'self'; "
     "img-src 'self' data: blob:; "
     "connect-src 'self' ws: wss:"
 )

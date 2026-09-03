@@ -3,6 +3,9 @@ name: Source sync dry-run
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   opentargets-dry-run:
     runs-on: ubuntu-latest

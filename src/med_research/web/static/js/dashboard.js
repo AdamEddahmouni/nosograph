@@ -269,7 +269,7 @@ async function runModule(module) {
         }
     } catch (e) {
         resultEl.className = 'module-result visible error';
-        resultEl.innerHTML = `<strong>Error:</strong> ${e.message}`;
+        resultEl.innerHTML = `<strong>Error:</strong> ${escapeHtml(e.message)}`;
     }
 }
 
@@ -488,12 +488,11 @@ async function runNetworkAnalysis() {
             ['Algorithm', comm.algorithm],
         ]);
     } catch (e) {
-        resultEl.className = 'module-result visible error';
-        resultEl.innerHTML = `<strong>Error:</strong> ${e.message}`;
+        resultEl.className = 'module-result visible error';        resultEl.innerHTML = `<strong>Error:</strong> ${escapeHtml(e.message)}`;
     }
-}
+  }
 
-function updateElapsed(startTime) {
+  function updateElapsed(startTime) {
     const elapsed = Math.round((Date.now() - startTime) / 1000);
     return elapsed < 60 ? `${elapsed}s` : `${Math.round(elapsed / 60)}m ${elapsed % 60}s`;
 }
@@ -977,7 +976,7 @@ function generateDossier() {
             resultDiv.innerHTML = links;
         })
         .catch(err => {
-            resultDiv.innerHTML = `<span class="error">Error: ${err.message}</span>`;
+            resultDiv.innerHTML = `<span class="error">Error: ${escapeHtml(err.message)}</span>`;
         });
 }
 
@@ -1651,7 +1650,7 @@ async function runCrossDisease() {
         renderCrossDiseaseComparison(data);
     } catch (err) {
         resultEl.className = 'module-result visible error';
-        resultEl.innerHTML = `<strong>Error:</strong> ${err.message}`;
+        resultEl.innerHTML = `<strong>Error:</strong> ${escapeHtml(err.message)}`;
     }
 }
 
@@ -2010,7 +2009,7 @@ async function initKGExplorer() {
         updateKGStats();
         setupKGControls();
     } catch (e) {
-        canvas.innerHTML = `<div class="kg-loading"><strong style="color:#f87171;">⚠️ ${e.message}</strong></div>`;
+        canvas.innerHTML = `<div class="kg-loading"><strong style="color:#f87171;">⚠️ ${escapeHtml(e.message)}</strong></div>`;
     }
 }
 
@@ -4103,7 +4102,7 @@ async function showKGNodeDetail(nodeId) {
         const d = await apiFetch(`/api/kg/node/${encodeURIComponent(nodeId)}?disease=${encodeURIComponent(disease)}`);
         renderKGDetail(panel, d);
     } catch (e) {
-        panel.innerHTML = `<strong style="color:#f87171;font-size:0.8rem;">⚠️ ${e.message}</strong>`;
+        panel.innerHTML = `<strong style="color:#f87171;font-size:0.8rem;">⚠️ ${escapeHtml(e.message)}</strong>`;
     }
 }
 

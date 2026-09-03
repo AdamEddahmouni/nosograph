@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (err) {
       resultsContainer.innerHTML = `
         <div style="background:#fee2e2;color:#991b1b;padding:1rem;border-radius:8px;">
-          <strong>Error analyzing molecule:</strong> ${err.message}
+          <strong>Error analyzing molecule:</strong> ${escapeHtml(err.message)}
         </div>
       `;
     }
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `;
     } catch (err) {
-      resultsContainer.innerHTML = `<div style="background:#fee2e2;color:#991b1b;padding:1rem;border-radius:8px;">${err.message}</div>`;
+      resultsContainer.innerHTML = `<div style="background:#fee2e2;color:#991b1b;padding:1rem;border-radius:8px;">${escapeHtml(err.message)}</div>`;
     }
   });
 });

@@ -1,6 +1,7 @@
 import datetime
 import json
 import logging
+from html import escape
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -57,9 +58,9 @@ def render_dossier_html(module_data: dict) -> str:
         sections = []
         for mod_name, content in module_data.items():
             if isinstance(content, dict):
-                body = f"<pre><code>{json.dumps(content, indent=2)}</code></pre>"
+                body = f"<pre><code>{escape(json.dumps(content, indent=2))}</code></pre>"
             else:
-                body = str(content)
+                body = str(escape(content))
             sections.append(
                 {
                     "id": mod_name,
@@ -84,9 +85,9 @@ def render_dossier_html(module_data: dict) -> str:
         for k, v in module_data.items():
             html_parts.append(f"<h2>{k}</h2>")
             if isinstance(v, dict):
-                html_parts.append(f"<pre><code>{json.dumps(v, indent=2)}</code></pre>")
+                html_parts.append(f"<pre><code>{escape(json.dumps(v, indent=2))}</code></pre>")
             else:
-                html_parts.append(f"<div>{v}</div>")
+                html_parts.append(f"<div>{escape(str(v))}</div>")
         html_parts.append("</body></html>")
         return "\n".join(html_parts)
 
