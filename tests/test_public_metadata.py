@@ -267,3 +267,109 @@ def test_media_kit_contains_reusable_approved_marketing_copy() -> None:
     assert "## 50-word boilerplate" in launch_copy
     assert "## 150-word boilerplate" in launch_copy
     assert "## Calls to action" in launch_copy
+
+
+def test_readme_is_a_balanced_repository_front_door() -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+    required = (
+        "docs/assets/product/evidence-explorer.webp",
+        "## What you can do",
+        "## Choose your path",
+        "## Quick start",
+        "### For researchers",
+        "### For developers and contributors",
+        "Public alpha · research use only",
+    )
+    for marker in required:
+        assert marker in readme
+
+    assert "## At a glance" not in readme
+    assert "## Researcher path" not in readme
+    assert "## Developer path" not in readme
+    assert readme.index("## What you can do") < readme.index("## Quick start")
+    assert readme.index("## Choose your path") < readme.index("## Quick start")
+
+
+def test_rejects_stale_readme_public_metric(monkeypatch: pytest.MonkeyPatch) -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    _assert_overlay_fails(
+        monkeypatch,
+        "README.md",
+        readme.replace("10,407", "10,406"),
+        "README.md registry modules",
+    )
+
+
+def test_rejects_stale_readme_snapshot_date(monkeypatch: pytest.MonkeyPatch) -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    _assert_overlay_fails(
+        monkeypatch,
+        "README.md",
+        readme.replace(
+            "repository snapshot 2026-08-22",
+            "repository snapshot 2026-08-21",
+        ),
+        "README.md snapshot date",
+    )
+
+
+def test_documentation_homepage_routes_both_audiences() -> None:
+    homepage = (ROOT / "docs/index.md").read_text(encoding="utf-8")
+    stylesheet = (ROOT / "docs/stylesheets/home.css").read_text(encoding="utf-8")
+
+    for marker in (
+        'class="ng-audience-routes"',
+        'href="#researchers"',
+        'href="#developers"',
+        'id="researchers"',
+        'id="developers"',
+        'id="contribute"',
+    ):
+        assert marker in homepage
+    assert ".ng-audience-routes" in stylesheet
+    assert "Registered integrations" not in homepage
+    assert "<strong>17</strong> registered integrations" not in homepage
+
+
+def test_supporting_public_surfaces_route_new_contributors() -> None:
+    contributing = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
+    support = (ROOT / ".github" / "SUPPORT.md").read_text(encoding="utf-8")
+    pull_request = (ROOT / ".github" / "pull_request_template.md").read_text(
+        encoding="utf-8"
+    )
+    settings = (ROOT / "docs" / "project" / "github-public-settings.md").read_text(
+        encoding="utf-8"
+    )
+
+    assert "## Your first contribution" in contributing
+    assert "project/good-first-issues.md" in support
+    assert "project/status.md" in support
+    assert "make docs-build" in pull_request
+    assert "Open-source research software for connecting disease knowledge" in settings
+    assert "https://adameddahmouni.github.io/nosograph/" in settings
+
+
+def test_launch_copy_uses_current_public_release() -> None:
+    launch_copy = (ROOT / "docs" / "project" / "launch-copy.md").read_text(
+        encoding="utf-8"
+    )
+
+    assert f"NosoGraph v{CURRENT_VERSION} is a public alpha" in launch_copy
+    assert f"NosoGraph v{CURRENT_VERSION} is Public Alpha" in launch_copy
+    assert "NosoGraph v0.2.0 is a public alpha" not in launch_copy
+    assert "NosoGraph v0.2.0 is Public Alpha" not in launch_copy
+
+
+def test_documentation_gate_is_strict_and_checks_shipped_site() -> None:
+    makefile = (ROOT / "Makefile").read_text(encoding="utf-8")
+    workflow = (ROOT / ".github" / "workflows" / "docs.yml").read_text(
+        encoding="utf-8"
+    )
+
+    assert "python -m mkdocs build --strict" in makefile
+    assert "python scripts/check_public_site_consistency.py" in makefile
+    assert "python scripts/check_public_metadata.py" in workflow
+    assert "python scripts/check_public_fonts.py" in workflow
+    assert "python -m mkdocs build --strict" in workflow
+    assert "python scripts/check_public_site_consistency.py" in workflow

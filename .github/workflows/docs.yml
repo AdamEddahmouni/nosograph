@@ -9,6 +9,11 @@ on:
       - "docs-theme/**"
       - "requirements-docs.txt"
       - "README.md"
+      - "scripts/check_public_*.py"
+      - "tests/test_public_metadata.py"
+      - "pyproject.toml"
+      - "CITATION.cff"
+      - "codemeta.json"
       - ".github/workflows/docs.yml"
   pull_request:
   workflow_dispatch:
@@ -35,8 +40,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-docs.txt
-      - name: Build documentation
-        run: mkdocs build
+      - name: Validate public metadata
+        run: python scripts/check_public_metadata.py
+      - name: Validate bundled fonts
+        run: python scripts/check_public_fonts.py
+      - name: Build documentation strictly
+        run: python -m mkdocs build --strict
+      - name: Validate shipped site
+        run: python scripts/check_public_site_consistency.py
       - name: Upload Pages artifact
         if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
         uses: actions/upload-pages-artifact@v5
