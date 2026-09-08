@@ -27,11 +27,14 @@ from med_research.web.config import (
     HOST,
     OPENAPI_ENABLED,
     PORT,
+    parse_demo_snapshot_manifest,
+    parse_demo_snapshot_path,
 )
 from med_research.web.error_handlers import register_error_handlers
 from med_research.web.middleware import (
     AuthMiddleware,
     DashboardCSPMiddleware,
+    DemoModeMiddleware,
     RateLimitMiddleware,
     RequestBodySizeLimitMiddleware,
 )
@@ -51,20 +54,35 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     setup_logging(level=logging.DEBUG if DEBUG else logging.INFO)
     import os
 
-    if not DEBUG and not os.environ.get("API_KEY"):
+    from med_research.web.demo_mode import is_demo_mode
+
+    if not DEBUG and not os.environ.get("API_KEY") and not is_demo_mode():
         raise RuntimeError(
             "API_KEY must be set when DEBUG=false. "
             "Set API_KEY in production deployments or enable DEBUG=true for local development."
         )
-    logger.info("Pre-loading knowledge graph...")
-    from med_research.web.dependencies import get_knowledge_graph
+    if is_demo_mode():
+        from med_research.web.demo_snapshot import validate_demo_snapshot
 
-    G = get_knowledge_graph()
-    logger.info(
-        "Knowledge graph loaded: %s nodes, %s edges",
-        G.number_of_nodes(),
-        G.number_of_edges(),
-    )
+        snapshot = validate_demo_snapshot(
+            parse_demo_snapshot_path(),
+            parse_demo_snapshot_manifest(),
+        )
+        logger.info(
+            "Demo snapshot validated: %s (%s)",
+            snapshot.database_path,
+            snapshot.manifest["snapshot_version"],
+        )
+    else:
+        logger.info("Pre-loading knowledge graph...")
+        from med_research.web.dependencies import get_knowledge_graph
+
+        G = get_knowledge_graph()
+        logger.info(
+            "Knowledge graph loaded: %s nodes, %s edges",
+            G.number_of_nodes(),
+            G.number_of_edges(),
+        )
 
     yield
 
@@ -99,6 +117,7 @@ app.add_middleware(
 
 app.add_middleware(RequestBodySizeLimitMiddleware)
 app.add_middleware(AuthMiddleware)
+app.add_middleware(DemoModeMiddleware)
 app.add_middleware(DashboardCSPMiddleware)
 app.add_middleware(RateLimitMiddleware)
 

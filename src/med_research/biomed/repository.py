@@ -154,8 +154,8 @@ def _snapshot_list_sql(where: str) -> str:
 
 # Dynamic INSERT/SELECT fragments use typed model field names, not user input.
 class BiomedicalRepository:
-    def __init__(self, path: Path) -> None:
-        self.database = BiomedicalDatabase(path)
+    def __init__(self, path: Path, *, read_only: bool = False) -> None:
+        self.database = BiomedicalDatabase(path, read_only=read_only)
 
     def initialize(self) -> None:
         self.database.initialize()

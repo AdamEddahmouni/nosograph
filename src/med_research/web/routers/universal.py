@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Annotated
+from typing import Annotated, Literal
 from uuid import UUID
 
 from fastapi import APIRouter, HTTPException, Query, Response
@@ -34,6 +34,8 @@ from med_research.web.models.universal import (
     ConditionSummary,
     EntitySummaryView,
     ImportReportView,
+    NosoGraphComparePreviewRequest,
+    NosoGraphComparePreviewResultView,
     NosoGraphCompareRequest,
     NosoGraphCompareResultView,
     NosoGraphCompareV2Request,
@@ -211,6 +213,51 @@ def nosograph_compare_v2(
         raise HTTPException(status_code=422, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+def _preview_compare_view(
+    payload: NosoGraphComparePreviewRequest, repository: BiomedicalRepositoryDep
+) -> NosoGraphComparePreviewResultView:
+    try:
+        result = NosoGraphCompareService(repository).compare_many_preview(
+            payload.condition_curies,
+            dimensions=payload.dimensions,
+        )
+        return nosograph_compare_service.to_compare_preview_view(result)
+    except BiomedicalValidationError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@router.post("/nosograph/comparisons/preview", response_model=NosoGraphComparePreviewResultView)
+def nosograph_compare_preview(
+    payload: NosoGraphComparePreviewRequest,
+    repository: BiomedicalRepositoryDep,
+) -> NosoGraphComparePreviewResultView:
+    return _preview_compare_view(payload, repository)
+
+
+@router.post("/nosograph/comparisons/preview/export")
+def export_nosograph_comparison_preview(
+    payload: NosoGraphComparePreviewRequest,
+    repository: BiomedicalRepositoryDep,
+    format: Literal["json", "markdown"] = Query(...),
+) -> Response:
+    result = _preview_compare_view(payload, repository)
+    if format == "json":
+        return Response(
+            content=render_compare_json(result),
+            media_type="application/json",
+            headers={
+                "Content-Disposition": 'attachment; filename="nosograph-comparison-preview.json"'
+            },
+        )
+    return Response(
+        content=render_compare_markdown(result),
+        media_type="text/markdown",
+        headers={"Content-Disposition": 'attachment; filename="nosograph-comparison-preview.md"'},
+    )
 
 
 def _persisted_compare_view(

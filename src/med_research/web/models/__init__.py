@@ -16,6 +16,12 @@ class HealthResponse(BaseModel):
     timestamp: str = Field(default_factory=lambda: datetime.now().isoformat())
 
 
+class DemoModeMetadata(BaseModel):
+    demo_mode: bool
+    snapshot_path: str = ""
+    snapshot_version: str = ""
+
+
 class ComponentStatus(BaseModel):
     status: str
     detail: str | None = None
@@ -26,6 +32,7 @@ class ReadyResponse(BaseModel):
     version: str = Field(default_factory=lambda: __version__)
     timestamp: str = Field(default_factory=lambda: datetime.now().isoformat())
     components: dict[str, ComponentStatus]
+    demo: dict[str, Any] | None = None
 
 
 class JobStatus(BaseModel):

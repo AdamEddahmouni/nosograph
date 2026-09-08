@@ -6,6 +6,7 @@ from med_research.biomed.identifiers import canonical_json
 from med_research.web.models.universal import (
     DimensionComparisonView,
     EntityStateRowView,
+    NosoGraphComparePreviewResultView,
     NosoGraphCompareV2ResultView,
 )
 
@@ -18,13 +19,16 @@ _DIMENSION_TITLES = {
 }
 
 
-def render_json(result: NosoGraphCompareV2ResultView) -> bytes:
+CompareExportView = NosoGraphCompareV2ResultView | NosoGraphComparePreviewResultView
+
+
+def render_json(result: CompareExportView) -> bytes:
     """Return the exact API wire payload as canonical UTF-8 JSON with one final LF."""
     payload = result.model_dump(mode="json")
     return (canonical_json(payload) + "\n").encode("utf-8")
 
 
-def render_markdown(result: NosoGraphCompareV2ResultView) -> bytes:
+def render_markdown(result: CompareExportView) -> bytes:
     """Render a timestamp-free, byte-stable research report."""
     lines = [
         "# NosoGraph comparison",
@@ -73,9 +77,7 @@ def render_markdown(result: NosoGraphCompareV2ResultView) -> bytes:
     return "\n".join(lines).encode("utf-8")
 
 
-def _render_dimension(
-    result: NosoGraphCompareV2ResultView, dimension: DimensionComparisonView
-) -> list[str]:
+def _render_dimension(result: CompareExportView, dimension: DimensionComparisonView) -> list[str]:
     title = _DIMENSION_TITLES.get(dimension.dimension, dimension.dimension)
     rows = {item.entity_curie: item for item in dimension.entities}
     lines = [f"## {_escape(title)}", "", "### Shared", ""]

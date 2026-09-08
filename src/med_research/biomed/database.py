@@ -11,15 +11,25 @@ from med_research.biomed.schema import SCHEMA_DDL, SCHEMA_VERSION
 
 
 class BiomedicalDatabase:
-    def __init__(self, path: Path) -> None:
-        self.path = path
+    def __init__(self, path: Path, *, read_only: bool = False) -> None:
+        self.path = Path(path)
+        self.read_only = read_only
 
     def connect(self) -> sqlite3.Connection:
-        self.path.parent.mkdir(parents=True, exist_ok=True)
-        connection = sqlite3.connect(self.path)
+        if self.read_only:
+            if not self.path.is_file():
+                raise FileNotFoundError(self.path)
+            connection = sqlite3.connect(
+                f"file:{self.path.resolve()}?mode=ro",
+                uri=True,
+            )
+        else:
+            self.path.parent.mkdir(parents=True, exist_ok=True)
+            connection = sqlite3.connect(self.path)
         connection.row_factory = sqlite3.Row
         connection.execute("PRAGMA foreign_keys = ON")
-        connection.execute("PRAGMA journal_mode = WAL")
+        if not self.read_only:
+            connection.execute("PRAGMA journal_mode = WAL")
         connection.execute("PRAGMA busy_timeout = 5000")
         return connection
 

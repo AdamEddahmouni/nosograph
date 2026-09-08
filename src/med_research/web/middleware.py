@@ -6,10 +6,17 @@ from fastapi import Request
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
-from starlette.types import ASGIApp
+from starlette.types import ASGIApp, Receive, Scope, Send
 
 from med_research.web.api_key import extract_api_key_from_headers
 from med_research.web.config import AUTH_TRUSTED_PROXY_IPS, DASHBOARD_CSP_MODE, DASHBOARD_CSP_POLICY
+from med_research.web.demo_mode import (
+    DEMO_WS_CLOSE_CODE,
+    DEMO_WS_CLOSE_REASON,
+    demo_read_only_response,
+    is_demo_allowed_path,
+    is_demo_mode,
+)
 from med_research.web.rate_limit import (
     InMemoryRateLimitStore,
     RateLimitStore,
@@ -42,6 +49,49 @@ def _get_client_ip(request: Request) -> str:
 
 
 MAX_REQUEST_BODY_BYTES = int(os.environ.get("MAX_REQUEST_BODY_BYTES", str(10 * 1024 * 1024)))
+
+
+class DemoModeMiddleware:
+    """Deny-by-default public demo policy for HTTP and WebSocket.
+
+    Pure ASGI so WebSocket upgrades are rejected before route handlers or
+    Celery ``AsyncResult`` polling. HTTP uses the same allow-list as
+    ``is_demo_allowed_path``.
+    """
+
+    def __init__(self, app: ASGIApp) -> None:
+        self.app = app
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
+        if not is_demo_mode():
+            await self.app(scope, receive, send)
+            return
+
+        if scope["type"] == "websocket":
+            await self._reject_websocket(receive, send)
+            return
+
+        if scope["type"] == "http":
+            path = scope.get("path") or "/"
+            method = scope.get("method") or "GET"
+            if is_demo_allowed_path(str(path), str(method)):
+                await self.app(scope, receive, send)
+                return
+            await demo_read_only_response()(scope, receive, send)
+            return
+
+        await self.app(scope, receive, send)
+
+    async def _reject_websocket(self, receive: Receive, send: Send) -> None:
+        message = await receive()
+        if message["type"] == "websocket.connect":
+            await send(
+                {
+                    "type": "websocket.close",
+                    "code": DEMO_WS_CLOSE_CODE,
+                    "reason": DEMO_WS_CLOSE_REASON,
+                }
+            )
 
 
 class DashboardCSPMiddleware(BaseHTTPMiddleware):
