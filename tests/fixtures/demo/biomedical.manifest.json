@@ -1,0 +1,49 @@
+{
+  "fixtures": [
+    {
+      "checksum": "sha256:53ec9a18d2662b3c0005007d93297503f720246dd680eddf56125ed729a14495",
+      "name": "minimal.json",
+      "resource": "mondo"
+    },
+    {
+      "checksum": "sha256:6d561f1c6280c6da93172eb04cfa716e56adf5f89574140174168d8395f64941",
+      "name": "minimal.json",
+      "resource": "hp"
+    },
+    {
+      "checksum": "sha256:c1f9e70b1a8afeabc773146b05464a682c3b20894bffc06f6d9136dfe5e34368",
+      "name": "minimal.tsv",
+      "resource": "hpoa"
+    }
+  ],
+  "generated_at": "2026-09-03",
+  "resources": [
+    {
+      "checksum": "sha256:53ec9a18d2662b3c0005007d93297503f720246dd680eddf56125ed729a14495",
+      "resource_name": "mondo",
+      "snapshot_id": "997e785b-a060-50a8-a3a8-319a1b99e8af"
+    },
+    {
+      "checksum": "sha256:6d561f1c6280c6da93172eb04cfa716e56adf5f89574140174168d8395f64941",
+      "resource_name": "hp",
+      "snapshot_id": "8b9e571b-a0ed-599e-89e4-68b8169a30fa"
+    },
+    {
+      "checksum": "sha256:c1f9e70b1a8afeabc773146b05464a682c3b20894bffc06f6d9136dfe5e34368",
+      "resource_name": "hpoa",
+      "snapshot_id": "e434d22a-3367-5551-a87e-e9d614ea16a9"
+    }
+  ],
+  "schema_version": 1,
+  "snapshot_version": "demo-c261bb954d784035",
+  "supported_disease_ids": [
+    "sle",
+    "ra",
+    "ibd",
+    "ms",
+    "ss",
+    "ssc",
+    "t1d",
+    "ad"
+  ]
+}
