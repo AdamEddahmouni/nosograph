@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts check-public-site
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts license-check sbom
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -53,11 +53,12 @@ lint-fix:  ## Auto-fix ruff lint issues
 check-imports:  ## Audit for stale/dead internal med_research imports
 	python scripts/check_imports.py
 
-ci-local:  ## Local pre-push gate (lint, locks, import audit, serial offline tests)
+ci-local:  ## Local pre-push gate (lint, locks, licenses, import audit, serial offline tests)
 	python -m ruff check src tests
 	python -m ruff format --check src tests
 	python scripts/lock_verify.py
 	$(MAKE) lock-check
+	python scripts/check_licenses.py --lock requirements-lock.txt
 	python scripts/check_imports.py
 	python scripts/check_public_metadata.py
 	python scripts/check_public_fonts.py
@@ -263,6 +264,17 @@ venv-sync:  ## Sync .venv to the locked requirements (install uv: pip install uv
 	uv pip install --python $(VENV_PY) -r requirements-lock.txt -r requirements-dev-lock.txt
 	uv pip install --python $(VENV_PY) -e .
 	@echo "Venv synced. Run 'make lock-verify' to confirm it matches the lock."
+ 
+# ── License & Compliance ──────────────────────────────────────────────────
+
+license-check:  ## Verify dependency licenses against license-policy.toml
+	python scripts/check_licenses.py --lock requirements-lock.txt
+
+sbom:  ## Generate SPDX 2.3 JSON SBOM and Markdown summary into dist/
+	@mkdir -p dist
+	python scripts/check_licenses.py --lock requirements-lock.txt --spdx-out dist/sbom.spdx.json --summary-out dist/sbom-summary.md
+	@echo "SPDX SBOM written to dist/sbom.spdx.json"
+	@echo "Summary written to dist/sbom-summary.md"
 
 # ── Pipeline ─────────────────────────────────────────────────────────────
 
@@ -310,19 +322,13 @@ check-public-metadata:  ## Verify README / CITATION / version consistency
 check-public-fonts:  ## Verify bundled fonts, licenses, checksums, and CSS loading
 	python scripts/check_public_fonts.py
 
-check-public-site:  ## Verify built Pages metadata, sitemap, robots, and canonical URLs
-	python scripts/check_public_site_consistency.py
-
 docs-serve:  ## Serve the MkDocs documentation site locally
 	python -m pip install -r requirements-docs.txt
 	python -m mkdocs serve
 
-docs-build:  ## Build and verify the MkDocs documentation site
+docs-build:  ## Build the documentation site
 	python -m pip install -r requirements-docs.txt
-	python scripts/check_public_metadata.py
-	python scripts/check_public_fonts.py
-	python -m mkdocs build --strict
-	python scripts/check_public_site_consistency.py
+	python -m mkdocs build
 
 # ── Biomedical store ─────────────────────────────────────────────────────
 

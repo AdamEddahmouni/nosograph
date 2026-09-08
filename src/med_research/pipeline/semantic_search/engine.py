@@ -241,16 +241,19 @@ class SemanticSearchEngine:
 
         # Load existing collection (don't recreate)
         if self.collection is None:
+            chroma: Any = None
             try:
                 import chromadb
+
+                chroma = chromadb
             except ImportError:
                 import sys
 
-                chromadb = getattr(sys.modules.get(__name__), "chromadb", None)
-                if chromadb is None:
+                chroma = getattr(sys.modules.get(__name__), "chromadb", None)
+                if chroma is None:
                     return []
 
-            self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+            self.client = chroma.PersistentClient(path=str(CHROMA_DIR))
             try:
                 self.collection = self.client.get_collection(self.collection_name)
             except _chromadb_collection_errors() as exc:

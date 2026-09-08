@@ -78,7 +78,7 @@ class NetworkPharmacologyModule(BasePipelineModule[NetworkModuleResult]):
         results: NetworkModuleResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.network_pharmacology.report import (
             generate_html_report,

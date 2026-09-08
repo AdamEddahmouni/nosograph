@@ -350,7 +350,7 @@ def print_analysis(results: NetworkAnalysis) -> None:
         f"   Avg Clustering: {gm.get('avg_clustering', 0)}  |  Assortativity: {gm.get('assortativity', 0)}"
     )
 
-    com = results.get("communities") or {}
+    com: Any = results.get("communities") or {}
     if com:
         logger.info(
             f"\n🔗 Community Detection ({com.get('algorithm')}, modularity={com.get('modularity')}):"

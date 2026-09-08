@@ -2,13 +2,17 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from html import escape
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from med_research.diseases.base import Disease
 
+if TYPE_CHECKING:
+    from med_research.pipeline.provenance import ProvenanceMetadata
 
-def provenance_footer_html(provenance: dict[str, Any] | None) -> str:
+
+def provenance_footer_html(provenance: ProvenanceMetadata | Mapping[str, Any] | None) -> str:
     """Render a concise reproducibility footer from build_provenance() output."""
     if not provenance:
         return ""
@@ -55,7 +59,7 @@ def render_report(
     context: dict[str, Any],
     disease_id: str = "sle",
     *,
-    provenance: dict[str, Any] | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Render a Jinja2 report template with disease labels and provenance footer."""
     from med_research.templates import env as template_env
