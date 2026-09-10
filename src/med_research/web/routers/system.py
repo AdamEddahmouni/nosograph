@@ -163,7 +163,9 @@ async def ready() -> JSONResponse | dict[str, Any]:
                     "status": "error",
                     "version": __version__,
                     "timestamp": datetime.now().isoformat(),
-                    "components": {"snapshot": {"status": "error", "detail": str(exc)}},
+                    "components": {
+                        "snapshot": {"status": "error", "detail": "Demo snapshot validation failed"}
+                    },
                     "demo": {
                         "demo_mode": True,
                         "snapshot_version": _os.environ.get("DEMO_SNAPSHOT_VERSION", ""),
