@@ -72,7 +72,9 @@ def test_ready_does_not_crash_when_manifest_is_missing(demo_client, monkeypatch)
     body = response.json()
     assert body["demo"]["demo_mode"] is True
     assert body["components"]["snapshot"]["status"] == "error"
-    assert "manifest" in body["components"]["snapshot"]["detail"].lower()
+    # Error detail is generic; filesystem paths must not be exposed publicly.
+    assert body["components"]["snapshot"]["detail"] == "Demo snapshot validation failed"
+    assert "nonexistent-manifest.json" not in response.text
 
 
 def test_ready_outside_demo_mode_has_no_demo_block(client, monkeypatch):
