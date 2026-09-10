@@ -1,4 +1,4 @@
-﻿"""System API router ΓÇö health checks, platform stats, disease registry."""
+"""System API router — health checks, platform stats, disease registry."""
 
 import logging
 from datetime import datetime
@@ -123,7 +123,7 @@ def _check_knowledge_graph() -> dict[str, str]:
 
 @router.get("/api/ready", response_model=ReadyResponse)
 async def ready() -> JSONResponse | dict[str, Any]:
-    """Readiness probe ΓÇö verifies Redis, Celery, workspace DB, and KG preload.
+    """Readiness probe — verifies Redis, Celery, workspace DB, and KG preload.
 
     When the process is running in demo mode, the response also carries a small
     ``demo`` block with snapshot lineage and the supported demo disease IDs.
