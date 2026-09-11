@@ -1,0 +1,27 @@
+/* NosoGraph Brand System v1 — identity tokens.
+   Semantic status colors intentionally live outside this file. */
+
+:root {
+  --ng-brand-deep-navy: #08142D;
+  --ng-brand-navy-layer: #102246;
+  --ng-brand-teal: #19D2C7;
+  --ng-brand-blue: #2F86FF;
+  --ng-brand-violet: #7252F4;
+  --ng-brand-slate: #73819A;
+  --ng-brand-mist: #DCE4EF;
+  --ng-brand-white: #F8FBFF;
+
+  --ng-brand-gradient: linear-gradient(
+    135deg,
+    var(--ng-brand-teal) 0%,
+    var(--ng-brand-blue) 52%,
+    var(--ng-brand-violet) 100%
+  );
+
+  --ng-brand-font-display: "Sora", "Inter", system-ui, sans-serif;
+  --ng-brand-font-text: "Inter", system-ui, sans-serif;
+  --ng-brand-font-data: "JetBrains Mono", ui-monospace, monospace;
+
+  --ng-brand-radius-icon: 21.875%;
+  --ng-brand-clearspace-logo: 0.25em;
+}
