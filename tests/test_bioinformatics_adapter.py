@@ -50,7 +50,8 @@ class TestGwasAdapter(BioinformaticsAdapterContract):
     @pytest.fixture(autouse=True)
     def _offline_gwas_catalog(self, monkeypatch):
         """Exercise the real engine and adapter without calling GWAS Catalog."""
-        from med_research.cache import NS_GWAS, cache_get as real_cache_get
+        from med_research.cache import NS_GWAS
+        from med_research.cache import cache_get as real_cache_get
 
         offline_cache = {
             "gwas_results": {
