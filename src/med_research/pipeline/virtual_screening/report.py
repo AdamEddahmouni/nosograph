@@ -15,6 +15,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Mapping
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 try:
@@ -31,7 +32,10 @@ except ImportError:
 
 
 def generate_screening_report(
-    results: Mapping[str, Any], disease_id: str = "sle", *, provenance: dict | None = None
+    results: Mapping[str, Any],
+    disease_id: str = "sle",
+    *,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate an HTML report from virtual screening results."""
 

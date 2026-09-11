@@ -348,8 +348,10 @@ DRUG_CELL_TYPES = {
 
 ALL_DRUG_AFFECTED_GENES: dict[str, frozenset[str]] = {
     drug_id: frozenset(
-        DRUG_TARGET_GENES.get(drug_id, [])
-        + DRUG_PATHWAY_REVERSAL.get(drug_id, {}).get("downregulated_genes", [])
+        [
+            *DRUG_TARGET_GENES.get(drug_id, []),
+            *DRUG_PATHWAY_REVERSAL.get(drug_id, {}).get("downregulated_genes", []),
+        ]
     )
     for drug_id in set(DRUG_TARGET_GENES) | set(DRUG_PATHWAY_REVERSAL)
 }

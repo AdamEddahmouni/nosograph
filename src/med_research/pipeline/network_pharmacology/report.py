@@ -8,9 +8,12 @@ Generates a standalone HTML report with:
   - Bridge node analysis
 """
 
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 
@@ -18,7 +21,7 @@ def generate_html_report(
     results: dict,
     disease_id: str = "sle",
     *,
-    provenance: dict | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate a standalone HTML report and return the path."""
 

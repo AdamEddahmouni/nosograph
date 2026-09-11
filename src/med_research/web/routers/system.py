@@ -3,7 +3,7 @@
 import logging
 from datetime import datetime
 from pathlib import Path
-from typing import Annotated, Any
+from typing import Annotated, Any, cast
 
 import redis
 from fastapi import APIRouter, Depends, Query
@@ -142,7 +142,7 @@ async def disease_registry() -> DiseasesResponse:
     if _DISEASE_REGISTRY_CACHE["response"] is not None and (
         now - _DISEASE_REGISTRY_CACHE["time"] < 60.0
     ):
-        return _DISEASE_REGISTRY_CACHE["response"]
+        return cast(DiseasesResponse, _DISEASE_REGISTRY_CACHE["response"])
 
     from med_research.diseases.base import Disease
     from med_research.diseases.context import (

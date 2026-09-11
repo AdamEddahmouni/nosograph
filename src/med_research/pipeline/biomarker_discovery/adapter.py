@@ -54,7 +54,7 @@ class BiomarkerDiscoveryModule(BasePipelineModule[BiomarkerResults]):
         results: BiomarkerResults,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.biomarker_discovery.report import generate_html_report
 

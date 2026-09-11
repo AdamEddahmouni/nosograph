@@ -47,7 +47,7 @@ class GwasModule(BasePipelineModule[GwasResult]):
         results: GwasResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 
@@ -111,7 +111,7 @@ class EnrichmentModule(BasePipelineModule[EnrichmentResult]):
         results: EnrichmentResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 
@@ -181,7 +181,7 @@ class PpiModule(BasePipelineModule[PpiResult]):
         results: PpiResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.bioinformatics.report import generate_bioinformatics_report
 

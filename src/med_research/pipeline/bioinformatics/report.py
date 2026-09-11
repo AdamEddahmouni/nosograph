@@ -14,10 +14,12 @@ import base64
 import io
 import math
 import os
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 try:
@@ -43,7 +45,7 @@ def generate_bioinformatics_report(
     gwas_crossref: dict | None = None,
     disease_id: str = "sle",
     *,
-    provenance: dict | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """
     Generate a standalone HTML bioinformatics report.

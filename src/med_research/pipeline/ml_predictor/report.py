@@ -9,10 +9,12 @@ Generates a standalone HTML report with:
 
 import base64
 import io
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 try:
@@ -32,7 +34,7 @@ def generate_ml_report(
     results: dict,
     disease_id: str = "sle",
     *,
-    provenance: dict | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate an HTML report from ML prediction results."""
     output_path = Path(__file__).parent / "ml_report.html"
