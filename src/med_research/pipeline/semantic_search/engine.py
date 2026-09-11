@@ -50,9 +50,14 @@ def _chromadb_collection_errors() -> tuple:
     """Exception types raised when a Chroma collection is missing."""
     if CHROMADB_AVAILABLE:
         try:
+            import chromadb.errors as chroma_errors
             from chromadb.errors import NotFoundError
 
-            return (NotFoundError, ValueError, RuntimeError)
+            errors: list[type[BaseException]] = [NotFoundError]
+            invalid_cls = getattr(chroma_errors, "InvalidCollectionException", None)
+            if invalid_cls is not None:
+                errors.insert(0, invalid_cls)
+            return (*errors, ValueError, RuntimeError)
         except ImportError:
             pass
     return (ValueError, RuntimeError)
