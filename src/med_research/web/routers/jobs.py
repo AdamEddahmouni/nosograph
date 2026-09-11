@@ -20,6 +20,11 @@ from med_research.web.api_key import (
     is_api_key_required,
     validate_api_key,
 )
+from med_research.web.demo_mode import (
+    DEMO_WS_CLOSE_CODE,
+    DEMO_WS_CLOSE_REASON,
+    is_demo_mode,
+)
 from med_research.web.dependencies import safe_serialize
 from med_research.web.identity import DEFAULT_RESEARCHER_ID, get_researcher_id
 from med_research.web.models import JobStatus, JobSubmitResponse
@@ -457,6 +462,10 @@ async def job_websocket(websocket: WebSocket, job_id: str) -> None:
     Connects to Celery's AsyncResult and pushes state changes
     every 500ms until the job reaches a terminal state.
     """
+    if is_demo_mode():
+        await websocket.close(code=DEMO_WS_CLOSE_CODE, reason=DEMO_WS_CLOSE_REASON)
+        return
+
     if is_api_key_required():
         api_key = extract_api_key_from_query(
             websocket.query_params

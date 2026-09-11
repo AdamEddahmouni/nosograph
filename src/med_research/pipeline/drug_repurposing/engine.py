@@ -465,15 +465,17 @@ def score_candidates(
     scored: list[RepurposingCandidate] = []
     drugs = load_drugs(disease_id)  # Load active-disease drugs for AE matching
 
+    ae_scorer: Any = None
     try:
         from med_research.pipeline.adverse_events.profiler import (
             compute_adverse_event_score,
             load_profiles,
         )
 
+        ae_scorer = compute_adverse_event_score
         loaded_profiles = load_profiles()
     except (ImportError, OSError, ValueError, KeyError):
-        compute_adverse_event_score = None
+        ae_scorer = None
         loaded_profiles = {}
 
     for i, candidate in enumerate(candidates, 1):
@@ -493,7 +495,7 @@ def score_candidates(
 
         # Compute adverse event score from profiler if available
         adverse_score = candidate.get("safety_score", 5)
-        if compute_adverse_event_score is not None and loaded_profiles:
+        if ae_scorer is not None and loaded_profiles:
             try:
                 # Match by drug ID from the KG drugs dict (same IDs as profiles)
                 for drug_id, drug_data in drugs.items():
@@ -502,9 +504,7 @@ def score_candidates(
                         or candidate["drug_name"].lower().split("(")[0].strip()
                         in drug_data.get("name", "").lower()
                     ):
-                        profile_result = compute_adverse_event_score(
-                            loaded_profiles.get(drug_id, {}), disease_id
-                        )
+                        profile_result = ae_scorer(loaded_profiles.get(drug_id, {}), disease_id)
                         if profile_result and "composite_safety_score" in profile_result:
                             adverse_score = profile_result["composite_safety_score"]
                         break

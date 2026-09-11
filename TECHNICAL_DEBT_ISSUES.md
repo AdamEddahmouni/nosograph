@@ -9,10 +9,11 @@ fixed by v0.2.1.
 
 ### A1. Continue the incremental mypy ratchet across remaining runtime boundaries
 
-- **Impact/rationale:** `make typecheck` is informational only (`.github/workflows/test.yml` runs `make typecheck || true`). The expanded v0.2.1 scope (170 files) still reports **59 pre-existing errors in 45 legacy files**, so typing regressions can land silently in those boundaries.
-- **Evidence:** Fresh `mypy` run over the full explicit Makefile file list on the v0.2.1 tree: `Found 59 errors in 45 files`. Error-code breakdown: `override` ×21, `arg-type` ×18, `return-value` ×7, `assignment` ×5, `no-any-return` ×4, single `attr-defined`/`typeddict-unknown-key`/`var-annotated`/`operator`/`str-bytes-safe` items. All nine stabilization-surface files added by v0.2.1 pass with zero errors; these errors were verified present before the v0.2.1 changes (base commit `fc5e5f7a1`).
-- **Acceptance criteria:** `python -m mypy <full Makefile list>` exits 0 without new ignores; the CI job drops `|| true` and becomes a required check; each batch of fixes lands with tests where behavior is affected.
-- **Recommended release target:** v0.3.0 (incremental batches; do not attempt a repository-wide strict conversion in one step).
+> **Resolved 2026-09-06 (v0.3.0).** All 60 pre-existing mypy errors across 46 legacy runtime files have been fixed without new ignores or type suppression. `BasePipelineModule.report()` and all 18 pipeline module adapters are strictly aligned on `provenance: ProvenanceMetadata | None = None`. All pipeline `generate_*_report` and `render_report` helpers accept `ProvenanceMetadata | Mapping[str, Any] | None`. Web routers return typed Pydantic models / TypedDicts matching `pipeline.results`. `python -m mypy <full Makefile list>` exits 0 across all 170 source files. In `.github/workflows/test.yml`, `continue-on-error: true` and `|| true` have been removed, making `make typecheck` a required, non-ignoring CI gate.
+
+- **Impact/rationale:** `make typecheck` is now a required, blocking gate on every CI push/PR.
+- **Evidence:** `python -m mypy <full Makefile list>` outputs: `Success: no issues found in 170 source files` (exit code 0).
+- **Acceptance criteria:** Met in full. CI job enforces `make typecheck` strictly.
 
 ### A2. Plan and test the FastAPI/Starlette TestClient migration to `httpx2`
 

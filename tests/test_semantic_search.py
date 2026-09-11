@@ -147,6 +147,62 @@ def test_load_articles_reads_per_disease_cache(tmp_path, monkeypatch):
     assert loaded[0]["pmid"] == "9"
 
 
+def test_chromadb_collection_errors_includes_missing_collection_types():
+    """Helper catches ChromaDB missing-collection errors across versions."""
+    from med_research.pipeline.semantic_search.engine import _chromadb_collection_errors
+
+    errors = _chromadb_collection_errors()
+    if CHROMADB_AVAILABLE:
+        from chromadb.errors import NotFoundError
+
+        assert NotFoundError in errors
+        try:
+            from chromadb.errors import InvalidCollectionException
+
+            assert InvalidCollectionException in errors
+        except ImportError:
+            pass
+
+
+def test_search_returns_empty_when_collection_missing(monkeypatch, tmp_path):
+    """search() returns [] when get_collection raises a missing-collection error."""
+    import chromadb
+
+    import med_research.pipeline.semantic_search.engine as engine_mod
+    from med_research.diseases.coverage import ModuleCoverage
+    from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
+
+    class MissingCollectionError(Exception):
+        pass
+
+    original_helper = engine_mod._chromadb_collection_errors
+    monkeypatch.setattr(
+        engine_mod,
+        "_chromadb_collection_errors",
+        lambda: (*original_helper(), MissingCollectionError),
+    )
+
+    class FakeClient:
+        def get_collection(self, name):
+            raise MissingCollectionError(f"Collection {name} does not exist.")
+
+    fake_cov = ModuleCoverage(
+        disease_id="ra",
+        module="semantic",
+        level="full",
+        status="ok",
+        curated_inputs=[],
+        warnings=[],
+    )
+    monkeypatch.setattr(engine_mod, "resolve_semantic_coverage", lambda d: fake_cov)
+    monkeypatch.setattr(engine_mod, "_check_deps", lambda: True)
+    monkeypatch.setattr(engine_mod, "CHROMA_DIR", tmp_path / "chroma")
+    monkeypatch.setattr(chromadb, "PersistentClient", lambda path: FakeClient())
+
+    engine = SemanticSearchEngine(disease_id="ra")
+    assert engine.search("jak inhibitors", top_k=5) == []
+
+
 def test_search_uses_per_disease_collection(monkeypatch):
     """search/get_indexed_count look up the disease-specific collection."""
     looked_up = []

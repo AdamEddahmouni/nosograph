@@ -63,7 +63,7 @@ class CrossDiseaseModule(BasePipelineModule[CrossDiseaseResult | ComparativeModu
         results: CrossDiseaseResult | ComparativeModulesResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.cross_disease.report import generate_html_report
 

@@ -69,7 +69,7 @@ class LiteratureMiningModule(BasePipelineModule[LiteratureMiningResult]):
         results: LiteratureMiningResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.literature_mining.report import generate_literature_report
 

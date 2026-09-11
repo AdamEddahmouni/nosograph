@@ -89,6 +89,8 @@ class SynergyPair(TypedDict, total=False):
     safety_non_overlap: float
     combined_evidence: float
     composite_score: float
+    loewe_combination_index: float
+    bliss_excess: float
     drug_a_type: str
     drug_b_type: str
     drug_a_mechanism: str
@@ -491,6 +493,7 @@ class EvidenceGatherResult(TypedDict, total=False):
     results_by_source: dict[str, Any]
     crossref: dict[str, Any]
     all_results: list[dict[str, Any]]
+    results: list[dict[str, Any]]
     generated_at: str
     coverage: dict[str, Any]
     status: str

@@ -50,9 +50,14 @@ def _chromadb_collection_errors() -> tuple:
     """Exception types raised when a Chroma collection is missing."""
     if CHROMADB_AVAILABLE:
         try:
+            import chromadb.errors as chroma_errors
             from chromadb.errors import NotFoundError
 
-            return (NotFoundError, ValueError, RuntimeError)
+            errors: list[type[BaseException]] = [NotFoundError]
+            invalid_cls = getattr(chroma_errors, "InvalidCollectionException", None)
+            if invalid_cls is not None:
+                errors.insert(0, invalid_cls)
+            return (*errors, ValueError, RuntimeError)
         except ImportError:
             pass
     return (ValueError, RuntimeError)
@@ -241,16 +246,19 @@ class SemanticSearchEngine:
 
         # Load existing collection (don't recreate)
         if self.collection is None:
+            chroma: Any = None
             try:
                 import chromadb
+
+                chroma = chromadb
             except ImportError:
                 import sys
 
-                chromadb = getattr(sys.modules.get(__name__), "chromadb", None)
-                if chromadb is None:
+                chroma = getattr(sys.modules.get(__name__), "chromadb", None)
+                if chroma is None:
                     return []
 
-            self.client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+            self.client = chroma.PersistentClient(path=str(CHROMA_DIR))
             try:
                 self.collection = self.client.get_collection(self.collection_name)
             except _chromadb_collection_errors() as exc:

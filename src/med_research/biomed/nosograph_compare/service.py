@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
+from dataclasses import dataclass
 from typing import Any, cast
 from uuid import UUID
 
@@ -11,6 +12,7 @@ from med_research.biomed.errors import RunTransitionError
 from med_research.biomed.identifiers import fingerprint_json, normalize_curie
 from med_research.biomed.models import EntityType, ResearchRun, ResearchRunCreate, RunStatus
 from med_research.biomed.nosograph_compare.engine import (
+    CohortContext,
     build_cohort_context,
     compare_dimension,
     dimension_has_comparable_data,
@@ -21,7 +23,9 @@ from med_research.biomed.nosograph_compare.models import (
     LEGACY_DEFAULT_DIMENSIONS,
     CompareResult,
     CompareStatus,
+    CompareV2PreviewResult,
     CompareV2Result,
+    CompareWarning,
     ConditionCoverage,
     DimensionComparison,
     DimensionMissingData,
@@ -50,6 +54,17 @@ class CompareRunIncompleteError(RuntimeError):
     """Raised when a persisted Compare V2 run has no completed result."""
 
 
+@dataclass(frozen=True)
+class _ComputedComparison:
+    conditions: list[str]
+    selected: list[str]
+    context: CohortContext
+    dimension_results: list[DimensionComparison]
+    warnings: list[CompareWarning]
+    status: CompareStatus
+    claim_set_fingerprint: str
+
+
 class NosoGraphCompareService:
     def __init__(self, repository: BiomedicalRepository) -> None:
         self._repository = repository
@@ -60,44 +75,10 @@ class NosoGraphCompareService:
         *,
         dimensions: list[str] | None = None,
     ) -> CompareV2Result:
-        normalized = sorted({normalize_curie(item) for item in condition_curies})
-        if not 2 <= len(normalized) <= 5:
-            raise ValueError("Comparison requires 2 to 5 unique conditions")
-        conditions = sorted({self._resolve_condition(item) for item in normalized})
-        if len(conditions) < 2:
-            raise ValueError("Comparison requires 2 to 5 unique conditions")
-        selected = _canonical_dimensions(dimensions)
-        context = build_cohort_context(self._repository, conditions)
-        dimension_results = [compare_dimension(context, item) for item in selected]
-        warnings = sorted(
-            [warning for item in dimension_results for warning in item.warnings],
-            key=lambda item: (
-                item.dimension,
-                item.code,
-                item.entity_curie or "",
-                tuple(item.condition_curies),
-            ),
-        )
-        status = (
-            "comparable"
-            if any(dimension_has_comparable_data(item) for item in dimension_results)
-            else "insufficient_data"
-        )
-        claim_set_fingerprint = fingerprint_json(
-            {
-                "algorithm_version": _ALGORITHM_VERSION,
-                "result_schema_version": COMPARE_RESULT_SCHEMA_VERSION,
-                "conditions": [
-                    {
-                        "curie": curie,
-                        "fingerprint": context.fingerprints[curie].fingerprint,
-                    }
-                    for curie in conditions
-                ],
-                "dimensions": selected,
-                "snapshot_ids": [str(item) for item in context.snapshot_ids],
-            }
-        )
+        computed = self._compute_comparison(condition_curies, dimensions=dimensions)
+        conditions = computed.conditions
+        selected = computed.selected
+        context = computed.context
         spec = ResearchRunCreate(
             run_type=_RUN_TYPE,
             algorithm_id=_ALGORITHM_ID,
@@ -110,26 +91,13 @@ class NosoGraphCompareService:
                 "condition_fingerprints": {
                     curie: context.fingerprints[curie].fingerprint for curie in conditions
                 },
-                "claim_set_fingerprint": claim_set_fingerprint,
+                "claim_set_fingerprint": computed.claim_set_fingerprint,
             },
             snapshot_ids=list(context.snapshot_ids),
             claim_ids=context.claim_ids,
             input_query=f"{'|'.join(conditions)}::{','.join(selected)}",
         )
-        payload = {
-            "result_schema_version": COMPARE_RESULT_SCHEMA_VERSION,
-            "status": status,
-            "condition_curies": conditions,
-            "condition_labels": context.condition_labels,
-            "dimensions": selected,
-            "dimension_results": [item.model_dump(mode="json") for item in dimension_results],
-            "curation_warnings": [item.model_dump(mode="json") for item in warnings],
-            "snapshot_ids": [str(item) for item in context.snapshot_ids],
-            "claim_set_fingerprint": claim_set_fingerprint,
-            "algorithm_id": _ALGORITHM_ID,
-            "algorithm_version": _ALGORITHM_VERSION,
-            "disclaimer": _DISCLAIMER,
-        }
+        payload = _comparison_payload(computed)
         run = self._repository.create_research_run(spec)
         if run.status is RunStatus.FAILED:
             raise RuntimeError(_failed_run_message(run))
@@ -156,6 +124,30 @@ class NosoGraphCompareService:
         if run.status is not RunStatus.COMPLETED or run.result is None:
             raise RuntimeError(f"Comparison run {run.id} did not produce a completed result")
         return _v2_result_from_run(run)
+
+    def compare_many_preview(
+        self,
+        condition_curies: list[str],
+        *,
+        dimensions: list[str] | None = None,
+    ) -> CompareV2PreviewResult:
+        computed = self._compute_comparison(condition_curies, dimensions=dimensions)
+        return CompareV2PreviewResult(
+            run_id=None,
+            preview=True,
+            result_schema_version=COMPARE_RESULT_SCHEMA_VERSION,
+            status=computed.status,
+            condition_curies=computed.conditions,
+            condition_labels=computed.context.condition_labels,
+            dimensions=computed.selected,
+            dimension_results=computed.dimension_results,
+            curation_warnings=computed.warnings,
+            snapshot_ids=list(computed.context.snapshot_ids),
+            claim_set_fingerprint=computed.claim_set_fingerprint,
+            algorithm_id=_ALGORITHM_ID,
+            algorithm_version=_ALGORITHM_VERSION,
+            disclaimer=_DISCLAIMER,
+        )
 
     def get_comparison(self, run_id: UUID) -> CompareV2Result:
         run = self._repository.get_research_run(run_id)
@@ -235,6 +227,77 @@ class NosoGraphCompareService:
         if view is None or view.entity.entity_type is not EntityType.CONDITION:
             raise ValueError(f"Unresolved condition CURIE: {normalized}")
         return normalized
+
+    def _compute_comparison(
+        self,
+        condition_curies: Sequence[str],
+        *,
+        dimensions: list[str] | None = None,
+    ) -> _ComputedComparison:
+        normalized = sorted({normalize_curie(item) for item in condition_curies})
+        if not 2 <= len(normalized) <= 5:
+            raise ValueError("Comparison requires 2 to 5 unique conditions")
+        conditions = sorted({self._resolve_condition(item) for item in normalized})
+        if len(conditions) < 2:
+            raise ValueError("Comparison requires 2 to 5 unique conditions")
+        selected = _canonical_dimensions(dimensions)
+        context = build_cohort_context(self._repository, conditions)
+        dimension_results = [compare_dimension(context, item) for item in selected]
+        warnings = sorted(
+            [warning for item in dimension_results for warning in item.warnings],
+            key=lambda item: (
+                item.dimension,
+                item.code,
+                item.entity_curie or "",
+                tuple(item.condition_curies),
+            ),
+        )
+        status: CompareStatus = (
+            "comparable"
+            if any(dimension_has_comparable_data(item) for item in dimension_results)
+            else "insufficient_data"
+        )
+        claim_set_fingerprint = fingerprint_json(
+            {
+                "algorithm_version": _ALGORITHM_VERSION,
+                "result_schema_version": COMPARE_RESULT_SCHEMA_VERSION,
+                "conditions": [
+                    {
+                        "curie": curie,
+                        "fingerprint": context.fingerprints[curie].fingerprint,
+                    }
+                    for curie in conditions
+                ],
+                "dimensions": selected,
+                "snapshot_ids": [str(item) for item in context.snapshot_ids],
+            }
+        )
+        return _ComputedComparison(
+            conditions=conditions,
+            selected=selected,
+            context=context,
+            dimension_results=dimension_results,
+            warnings=warnings,
+            status=status,
+            claim_set_fingerprint=claim_set_fingerprint,
+        )
+
+
+def _comparison_payload(computed: _ComputedComparison) -> dict[str, Any]:
+    return {
+        "result_schema_version": COMPARE_RESULT_SCHEMA_VERSION,
+        "status": computed.status,
+        "condition_curies": computed.conditions,
+        "condition_labels": computed.context.condition_labels,
+        "dimensions": computed.selected,
+        "dimension_results": [item.model_dump(mode="json") for item in computed.dimension_results],
+        "curation_warnings": [item.model_dump(mode="json") for item in computed.warnings],
+        "snapshot_ids": [str(item) for item in computed.context.snapshot_ids],
+        "claim_set_fingerprint": computed.claim_set_fingerprint,
+        "algorithm_id": _ALGORITHM_ID,
+        "algorithm_version": _ALGORITHM_VERSION,
+        "disclaimer": _DISCLAIMER,
+    }
 
 
 def _canonical_dimensions(dimensions: list[str] | None) -> list[str]:

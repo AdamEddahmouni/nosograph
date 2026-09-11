@@ -75,7 +75,7 @@ class DrugRepurposingModule(BasePipelineModule[RepurposingResults]):
         results: RepurposingResults,
         disease_id: str,
         *,
-        provenance: dict[str, Any] | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.drug_repurposing.engine import (
             identify_untargeted_genes,

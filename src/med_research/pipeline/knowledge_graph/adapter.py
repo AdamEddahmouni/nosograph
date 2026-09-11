@@ -41,7 +41,7 @@ class KnowledgeGraphModule(BasePipelineModule[nx.MultiDiGraph]):
         results: nx.MultiDiGraph,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.knowledge_graph.builder import export_for_web
 
