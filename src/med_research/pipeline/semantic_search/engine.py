@@ -50,7 +50,7 @@ def _chromadb_collection_errors() -> tuple:
     """Exception types raised when a Chroma collection is missing."""
     if CHROMADB_AVAILABLE:
         try:
-            from chromadb.errors import NotFoundError  # type: ignore[attr-defined]
+            from chromadb.errors import NotFoundError
 
             return (NotFoundError, ValueError, RuntimeError)
         except ImportError:
