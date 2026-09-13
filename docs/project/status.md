@@ -22,7 +22,7 @@ NosoGraph is open-source research software for connecting biomedical knowledge, 
 | Reference modules | 6 | full-corpus |
 | CI-validated modules | 8 | full-corpus; hosted CI `--strict` |
 | Registered pipeline adapters | 25 | full-corpus (`list_modules()`) |
-| Offline tests selected in v0.2.1 suite | 2,445 | snapshot |
+| Offline tests selected in v0.2.1 suite | 2,445 | snapshot (suite has grown; not a live collect-gate) |
 
 Authoritative file: [`public-status.yaml`](../generated/public-status.yaml). Regeneration: `python scripts/refresh_public_status.py`. Harvest drift: `python scripts/check_registry_harvest.py`. Definitions: [coverage](../data/coverage.md).
 

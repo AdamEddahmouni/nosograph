@@ -29,6 +29,7 @@ def test_dashboard_has_skip_link_named_logo_and_landmarks() -> None:
     assert 'href="#main-content"' in html
     assert 'alt="NosoGraph"' in html
     assert 'id="main-content"' in html
+    assert 'tabindex="-1"' in html
     assert "<header>" in html
     assert '<nav class="top-nav"' in html
     assert "<footer>" in html
@@ -51,6 +52,8 @@ def test_satellites_have_skip_link_disclaimer_and_named_logo() -> None:
         assert 'class="skip-link"' in html, name
         assert 'alt="NosoGraph"' in html, name
         assert 'id="main-content"' in html, name
+        assert 'tabindex="-1"' in html, name
+        assert "<header" in html, name
         lowered = html.lower()
         assert "research" in lowered, name
         assert "phi" in lowered or "protected health" in lowered, name

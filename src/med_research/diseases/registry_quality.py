@@ -16,9 +16,14 @@ NON_DISEASE_BLOCKLIST: frozenset[str] = frozenset(
     }
 )
 
+# Heuristic for GO biological-process / measurement-response slugs that are
+# not disease modules. This is a generation boundary: new scaffolds must not
+# be admitted. Historical on-disk modules are classified in harvest_registry
+# (A–E) and are not bulk-deleted.
 _GO_PROCESS_PATTERNS = re.compile(
     r"(?:^|_)(?:positive|negative|regulation)_of_|"
     r"(?:^|_)response_to_|"
+    r"(?:^|_)trait_in_response_to_|"
     r"(?:^|_)sensory_perception_of_|"
     r"(?:^|_)biological_process",
     re.I,
@@ -35,6 +40,18 @@ def looks_like_go_process_slug(disease_id: str) -> bool:
     if is_blocked_slug(slug):
         return True
     return bool(_GO_PROCESS_PATTERNS.search(slug))
+
+
+def should_refuse_new_scaffold(disease_id: str) -> bool:
+    """True when ``disease add`` / batch_scaffold must not create a new module.
+
+    ``zz_scaffold_test`` is a test-owned fixture that is blocked from discovery
+    but still generated inside the diseases tree by unit tests.
+    """
+    slug = (disease_id or "").strip().lower()
+    if slug == "zz_scaffold_test":
+        return False
+    return looks_like_go_process_slug(slug)
 
 
 def has_valid_disease_identifier(entry: dict[str, Any]) -> bool:

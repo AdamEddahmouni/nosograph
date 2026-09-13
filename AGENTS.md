@@ -80,10 +80,11 @@ if it exists only locally or unpushed. GitHub Pages is not the app.
 - After PR #102: `make typecheck` is an explicit Makefile file-list ratchet.
   CI has a standalone `typecheck` job that runs `make typecheck` strictly (no
   `continue-on-error` / `|| true`). The Tests aggregator (`required-tests`)
-  still needs `lint`, `security`, `test`, and `integration-tests` only —
-  typecheck is **not** in that `needs:` list. License policy audit and SPDX
-  SBOM generation run in the `security` job (which the aggregator does
-  require). Published package version remains `0.2.1`.
+  needs `lint`, `security`, `test`, `integration-tests`, and `typecheck`.
+  Typecheck is therefore **merge-blocking** transitively via the required
+  `Tests` check (no GitHub ruleset UI change; approvals stay 0). License
+  policy audit and SPDX SBOM generation run in the `security` job (which the
+  aggregator does require). Published package version remains `0.2.1`.
 - `disease validate --all --strict` is **not** a merge gate: the 10k scaffold
   registry is expected to exit non-zero. Hosted CI validates the original
   curated eight (`sle` … `ad`) only.

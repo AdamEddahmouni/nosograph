@@ -61,7 +61,7 @@ See [README.md](README.md) for alternative install paths and CLI usage.
 
   Prefer `make ci-local` over `make lint` + `make test-offline` alone (those skip format, lock, license, import, metadata, and harvest checks).
 - Fill out the pull request template checklist
-- Ensure GitHub Actions `Tests` passes on your PR (public repos receive free hosted runners). The standalone `typecheck` job is strict but **not** currently merge-blocking.
+- Ensure GitHub Actions `Tests` passes on your PR (public repos receive free hosted runners). `Tests` includes `typecheck` via the aggregator `needs:` list, so a red mypy ratchet fails the required check. Required approvals remain 0.
 
 ## Security
 

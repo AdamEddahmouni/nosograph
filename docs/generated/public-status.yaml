@@ -47,11 +47,11 @@ metric_kind:
 metric_scope:
   l2_strict_validated: "n=500 alphabetical Disease.list_all() sample from the v0.2.1 status report; not a full-corpus L2-strict count"
   l3_expression_curated: "n=500 alphabetical sample; only ad and acute_myeloid_leukemia of the 23 CURATED_CONSENSUS_DISEASES members fall in that window. compute_tier() assigns L3 to all 23 consensus members (l3_consensus_membership)."
-  offline_tests: "v0.2.1 release suite selected by the offline pytest gate; not re-collected at every SHA"
+  offline_tests: "v0.2.1 release suite selected by the offline pytest gate (2026-08-22). Not re-collected at every SHA. Suite growth since that snapshot is new unit modules (DEMO_MODE, dashboard a11y, harvest, license SBOM, public-metadata, CSP), not an environment flake. Do not encode a live collect integer in CI."
   analysis_pipelines: "Registered BasePipelineModule adapters from pipeline.registry.list_modules(); not every package under pipeline/"
 notes:
   - Registry coverage is not equivalent to curation depth.
   - L2=88 and L3=2 are n=500 samples. Do not read them as full-corpus curation counts.
   - l3_consensus_membership is the full CURATED_CONSENSUS_DISEASES set (23).
-  - Offline test count is the v0.2.1 release suite (2445 unit tests selected by the offline gate).
+  - Offline test count is the v0.2.1 release snapshot (2445). Live selection has grown by about 34 tests from new unit modules since that tag (DEMO_MODE, a11y, harvest, license SBOM, public-metadata, CSP). Passed vs collected can differ by skips; do not treat a one-off collect as a merge-gate integer. Re-collect with `python scripts/refresh_public_status.py --offline-tests` only at a labeled snapshot SHA.
   - analysis_pipelines is the registered adapter catalog (25), replacing the older "40+" package-count slogan.

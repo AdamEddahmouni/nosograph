@@ -224,6 +224,80 @@ def _verify_live_public_status(errors: list[str]) -> str:
     return "live runtime metrics verified"
 
 
+METRIC_INVARIANT_SURFACES = (
+    "README.md",
+    "docs/data/coverage.md",
+    "docs/project/status.md",
+    "docs/getting-started/demo.md",
+    "docs/getting-started/what-is.md",
+    "docs/architecture/overview.md",
+    "docs/deployment.md",
+)
+
+PAGES_AS_APP_PATTERNS = (
+    re.compile(r"GitHub Pages hosts the (?:FastAPI|dashboard|application)", re.I),
+    re.compile(r"the (?:FastAPI|dashboard) (?:is|runs) on GitHub Pages", re.I),
+    re.compile(r"hosted (?:public )?demo on GitHub Pages", re.I),
+    re.compile(r"the app is on (?:GitHub )?Pages", re.I),
+)
+
+
+def _verify_metric_invariants(errors: list[str]) -> None:
+    """Fast copy/yaml invariants: stale counters, sample-as-corpus, Pages-as-app.
+
+    Live integer checks for discoverable/harvest/adapters live in
+    ``_verify_live_public_status``. Offline test counts stay a labeled snapshot
+    (do not assert a live pytest collect integer — it moves with the suite).
+    """
+    yaml_text = _text("docs/generated/public-status.yaml")
+    if re.search(r"(?m)^  registry_modules:\s*10407\s*$", yaml_text):
+        errors.append(
+            "public-status.yaml must not treat 10407 as a live registry_modules "
+            "counter. Run: python scripts/refresh_public_status.py"
+        )
+    if re.search(r"(?m)^  analysis_pipelines:\s*40\+?\s*$", yaml_text):
+        errors.append(
+            "public-status.yaml analysis_pipelines must be the registered adapter "
+            "count, not the retired 40+ slogan. Run: python scripts/refresh_public_status.py"
+        )
+    if "offline_tests: snapshot" not in yaml_text:
+        errors.append(
+            "offline_tests must remain metric_kind: snapshot. Do not encode a live "
+            "pytest collect integer. Refresh labels via docs/generated/public-status.yaml."
+        )
+    if "l2_strict_validated: sample" not in yaml_text:
+        errors.append(
+            "l2_strict_validated must remain metric_kind: sample (n=500), not full-corpus."
+        )
+    if "l3_expression_curated: sample" not in yaml_text:
+        errors.append(
+            "l3_expression_curated must remain metric_kind: sample (n=500), not full-corpus."
+        )
+    if "n=500" not in yaml_text:
+        errors.append(
+            "public-status.yaml L2/L3 metric_scope must keep the n=500 sample label. "
+            "Do not present 88/2 as full-corpus."
+        )
+    readme = _text("README.md")
+    if "| Discoverable modules | 10,407 |" in readme:
+        errors.append(
+            "README.md must not present 10,407 as the live discoverable-module count. "
+            "Run: python scripts/refresh_public_status.py"
+        )
+    if "40+ analysis pipelines" in readme and "retired" not in readme.lower():
+        errors.append(
+            "README.md still uses the retired 40+ pipelines slogan. "
+            "Use registered pipeline adapters from public-status.yaml."
+        )
+    for relative in METRIC_INVARIANT_SURFACES:
+        text = _text(relative)
+        for pattern in PAGES_AS_APP_PATTERNS:
+            if pattern.search(text):
+                errors.append(
+                    f"{relative} treats GitHub Pages as the app. Pages is MkDocs docs only."
+                )
+
+
 def main() -> None:
     project = _pyproject()
     version = str(project["version"])
@@ -426,6 +500,7 @@ def main() -> None:
                 errors.append("codemeta.json sameAs is not the concept DOI")
 
     live_status = _verify_live_public_status(errors)
+    _verify_metric_invariants(errors)
 
     if errors:
         raise SystemExit("public metadata check failed:\n- " + "\n- ".join(errors))
