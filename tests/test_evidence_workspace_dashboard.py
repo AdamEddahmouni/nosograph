@@ -2,6 +2,7 @@ import asyncio
 import json
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import pytest
 from fastapi.testclient import TestClient
@@ -210,7 +211,16 @@ def test_dashboard_csp_mode_adds_an_enforcing_policy(monkeypatch):
     policy = response.headers["content-security-policy"]
     assert "script-src 'self'" in policy
     assert "script-src-attr 'none'" in policy
-    assert "cdnjs.cloudflare.com" in policy
+    script_src = next(
+        part.strip() for part in policy.split(";") if part.strip().startswith("script-src ")
+    )
+    script_tokens = script_src.split()[1:]
+    allowed_script_hosts = {
+        urlsplit(token).hostname
+        for token in script_tokens
+        if urlsplit(token).scheme in {"http", "https"}
+    }
+    assert allowed_script_hosts == {"cdnjs.cloudflare.com"}
     assert "ws:" in policy
     assert "unsafe-eval" not in policy
 

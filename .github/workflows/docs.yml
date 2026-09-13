@@ -40,6 +40,8 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-docs.txt
+      # Copy/yaml/positioning always. Live Disease.list_all() verification
+      # runs only when med_research is importable (Tests lint / make ci-local).
       - name: Validate public metadata
         run: python scripts/check_public_metadata.py
       - name: Validate bundled fonts

@@ -314,6 +314,49 @@ def test_rejects_stale_readme_snapshot_date(monkeypatch: pytest.MonkeyPatch) -> 
     )
 
 
+def test_live_metrics_skipped_when_package_missing(monkeypatch: pytest.MonkeyPatch) -> None:
+    checker = _load_checker()
+    monkeypatch.setattr(checker, "_package_importable", lambda _name: False)
+    checker.main()
+
+
+def test_copy_drift_fails_when_package_missing(monkeypatch: pytest.MonkeyPatch) -> None:
+    checker = _load_checker()
+    monkeypatch.setattr(checker, "_package_importable", lambda _name: False)
+    original_text = checker._text
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+    def overlay(path: str) -> str:
+        if path == "README.md":
+            return readme.replace(
+                "| Discoverable modules | 10,404 |",
+                "| Discoverable modules | 10,403 |",
+            )
+        return original_text(path)
+
+    monkeypatch.setattr(checker, "_text", overlay)
+    with pytest.raises(SystemExit, match="README.md discoverable modules"):
+        checker.main()
+
+
+def test_live_metric_mismatch_fails_when_package_present(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    checker = _load_checker()
+    assert checker._package_importable("med_research")
+    original_text = checker._text
+
+    def overlay(path: str) -> str:
+        text = original_text(path)
+        if path == "docs/generated/public-status.yaml":
+            return text.replace("discoverable_modules: 10404", "discoverable_modules: 1")
+        return text
+
+    monkeypatch.setattr(checker, "_text", overlay)
+    with pytest.raises(SystemExit, match="discoverable_modules"):
+        checker.main()
+
+
 def test_documentation_homepage_routes_both_audiences() -> None:
     homepage = (ROOT / "docs/index.md").read_text(encoding="utf-8")
     stylesheet = (ROOT / "docs/stylesheets/home.css").read_text(encoding="utf-8")
@@ -365,3 +408,7 @@ def test_documentation_gate_is_strict_and_checks_shipped_site() -> None:
     assert "python scripts/check_public_fonts.py" in workflow
     assert "python -m mkdocs build --strict" in workflow
     assert "python scripts/check_public_site_consistency.py" in workflow
+    assert "pip install -r requirements-docs.txt" in workflow
+    # Docs job stays on the docs toolchain. Live metric imports run only when
+    # med_research is installed (Tests lint / make ci-local).
+    assert "pip install -e" not in workflow
