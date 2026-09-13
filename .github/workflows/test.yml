@@ -235,7 +235,9 @@ jobs:
   required-tests:
     name: Tests
     if: always()
-    needs: [lint, security, test, integration-tests]
+    # typecheck is merge-blocking via this aggregator (ruleset requires "Tests").
+    # Approvals stay 0; do not weaken the mypy ratchet.
+    needs: [lint, security, test, integration-tests, typecheck]
     runs-on: ubuntu-latest
     steps:
       - name: Verify required jobs succeeded
@@ -250,7 +252,11 @@ jobs:
           jobs = json.loads(os.environ["REQUIRED_RESULTS"])
           results = {name: details["result"] for name, details in jobs.items()}
           print(results)
-          sys.exit(0 if all(result == "success" for result in results.values()) else 1)
+          failed = [name for name, result in results.items() if result != "success"]
+          if failed:
+              print("required Tests aggregator failed:", ", ".join(failed))
+              sys.exit(1)
+          sys.exit(0)
           PY
 
   slow-tests:

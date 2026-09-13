@@ -412,3 +412,9 @@ def test_documentation_gate_is_strict_and_checks_shipped_site() -> None:
     # Docs job stays on the docs toolchain. Live metric imports run only when
     # med_research is installed (Tests lint / make ci-local).
     assert "pip install -e" not in workflow
+
+
+def test_typecheck_is_merge_blocking_via_tests_aggregator() -> None:
+    workflow = (ROOT / ".github" / "workflows" / "test.yml").read_text(encoding="utf-8")
+    assert "needs: [lint, security, test, integration-tests, typecheck]" in workflow
+    assert "continue-on-error" not in workflow.split("typecheck:", 1)[1].split("security:", 1)[0]

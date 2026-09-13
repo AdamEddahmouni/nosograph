@@ -20,7 +20,7 @@ Treat these values as the maintainer checklist whenever positioning or the socia
 - Canonical About description and GitHub Pages homepage
 - Custom 1280×640 social preview from `docs/assets/brand/social-preview.png`
 - Private vulnerability reporting enabled. Secret scanning and push protection are **documented** as enabled; this environment could not re-verify via GitHub API (null/403). Do not treat them as proven from this file.
-- `master` ruleset (`master protection`): required checks **`Tests`** and **`Documentation`**; **0** approving reviews; stale reviews are **not** dismissed on push; thread resolution required; branch must be up to date. `typecheck` is a strict CI job and is **not** a ruleset required check.
+- `master` ruleset (`master protection`): required checks **`Tests`** and **`Documentation`**; **0** approving reviews; stale reviews are **not** dismissed on push; thread resolution required; branch must be up to date. `typecheck` is a strict CI job and is **merge-blocking** because the `Tests` aggregator lists it in `needs:` (not a separate ruleset context). Required approvals remain 0.
 - Eight [good-first issues](good-first-issues.md), two research-focused categories, and five [seed Discussions](github-discussions-seed.md)
 - NosoGraph pinned on the maintainer profile
 - Zenodo release archival enabled; concept DOI [10.5281/zenodo.22055279](https://doi.org/10.5281/zenodo.22055279), historical version DOIs for [v0.2.0](https://doi.org/10.5281/zenodo.22062925) and [v0.1.0](https://doi.org/10.5281/zenodo.22055280) (v0.2.1 has no archive record yet)

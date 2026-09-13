@@ -92,7 +92,7 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 | Item | Status |
 |------|--------|
-| mypy ratchet | **Implemented and CI-enforced** on an explicit 170-file Makefile list (`make typecheck` job, strict). **Not merge-blocking**: the job is not in the `Tests` aggregator `needs:` list and is not a ruleset required check. Issue #55 remains open. |
+| mypy ratchet | **Implemented, CI-enforced, and merge-blocking** via the `Tests` aggregator `needs:` list (`make typecheck` job, strict Makefile file-list). Not a separate ruleset required check; required PR approvals remain **0**. Issue #55 tracker may still be open. |
 | Automated SPDX license report in CI | **Completed and CI-enforced** (security job, required by `Tests` aggregator). GitHub issue #59 may still be open as a tracker leftover. |
 | PyPI publish workflow | PLANNED (#60). Neither `med-research` nor `nosograph` is published. |
 | CodeQL | GitHub default/dynamic scanning has been observed to run; **no workflow file in this repo**. Not a ruleset required check. Scope was not verified via admin API in this environment (403). |
