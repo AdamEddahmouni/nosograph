@@ -133,9 +133,7 @@ def test_token_files_are_in_parity() -> None:
         missing_in_docs = set(app[scope]) - set(docs[scope])
         assert not missing_in_app, f"{scope}: tokens missing in app copy: {missing_in_app}"
         assert not missing_in_docs, f"{scope}: tokens missing in docs copy: {missing_in_docs}"
-        diverged = {
-            name for name in docs[scope] if docs[scope][name] != app[scope][name]
-        }
+        diverged = {name for name in docs[scope] if docs[scope][name] != app[scope][name]}
         assert not diverged, f"{scope}: values diverged: {diverged}"
 
 
@@ -143,49 +141,117 @@ def test_required_token_categories(scopes: dict[str, dict[str, str]]) -> None:
     root = scopes[":root"]
     expected = {
         # typography
-        "--ng-font-display", "--ng-font-text", "--ng-font-mono",
-        "--ng-text-micro", "--ng-text-sm", "--ng-text-md", "--ng-text-ui",
-        "--ng-text-base", "--ng-text-lede", "--ng-text-h3", "--ng-text-h2",
+        "--ng-font-display",
+        "--ng-font-text",
+        "--ng-font-mono",
+        "--ng-text-micro",
+        "--ng-text-sm",
+        "--ng-text-md",
+        "--ng-text-ui",
+        "--ng-text-base",
+        "--ng-text-lede",
+        "--ng-text-h3",
+        "--ng-text-h2",
         "--ng-text-display",
-        "--ng-leading-display", "--ng-leading-tight", "--ng-leading-body",
-        "--ng-leading-lede", "--ng-tracking-display", "--ng-tracking-caps",
-        "--ng-weight-regular", "--ng-weight-medium", "--ng-weight-semibold",
+        "--ng-leading-display",
+        "--ng-leading-tight",
+        "--ng-leading-body",
+        "--ng-leading-lede",
+        "--ng-tracking-display",
+        "--ng-tracking-caps",
+        "--ng-weight-regular",
+        "--ng-weight-medium",
+        "--ng-weight-semibold",
         "--ng-weight-bold",
         # spacing
-        "--ng-sp-4", "--ng-sp-8", "--ng-sp-12", "--ng-sp-16", "--ng-sp-24",
-        "--ng-sp-32", "--ng-sp-48", "--ng-sp-64", "--ng-sp-96", "--ng-sp-128",
-        "--ng-space-inline", "--ng-space-section",
+        "--ng-sp-4",
+        "--ng-sp-8",
+        "--ng-sp-12",
+        "--ng-sp-16",
+        "--ng-sp-24",
+        "--ng-sp-32",
+        "--ng-sp-48",
+        "--ng-sp-64",
+        "--ng-sp-96",
+        "--ng-sp-128",
+        "--ng-space-inline",
+        "--ng-space-section",
         # radii, borders, elevation
-        "--ng-radius-xs", "--ng-radius-sm", "--ng-radius-md", "--ng-radius-pill",
-        "--ng-border-w", "--ng-border-w-strong", "--ng-border-w-accent",
-        "--ng-shadow-plate", "--ng-shadow-overlay",
+        "--ng-radius-xs",
+        "--ng-radius-sm",
+        "--ng-radius-md",
+        "--ng-radius-pill",
+        "--ng-border-w",
+        "--ng-border-w-strong",
+        "--ng-border-w-accent",
+        "--ng-shadow-plate",
+        "--ng-shadow-overlay",
         # surfaces + semantic ink
-        "--ng-bg", "--ng-surface", "--ng-surface-alt", "--ng-elevated",
-        "--ng-ink", "--ng-ink-soft", "--ng-ink-muted",
-        "--ng-border", "--ng-border-strong", "--ng-scrim",
+        "--ng-bg",
+        "--ng-surface",
+        "--ng-surface-alt",
+        "--ng-elevated",
+        "--ng-ink",
+        "--ng-ink-soft",
+        "--ng-ink-muted",
+        "--ng-border",
+        "--ng-border-strong",
+        "--ng-scrim",
         # brand (signal only) + status
-        "--ng-deep-navy", "--ng-teal", "--ng-blue", "--ng-violet",
+        "--ng-deep-navy",
+        "--ng-teal",
+        "--ng-blue",
+        "--ng-violet",
         "--ng-brand-gradient",
-        "--ng-success", "--ng-warning", "--ng-error", "--ng-info",
+        "--ng-success",
+        "--ng-warning",
+        "--ng-error",
+        "--ng-info",
         # evidence semantics (never the brand spectrum)
-        "--ng-ev-supports", "--ng-ev-contradicts", "--ng-ev-inconclusive",
-        "--ng-ev-unasserted", "--ng-provenance",
+        "--ng-ev-supports",
+        "--ng-ev-contradicts",
+        "--ng-ev-inconclusive",
+        "--ng-ev-unasserted",
+        "--ng-provenance",
         # data-viz categorical palette
-        "--ng-data-1", "--ng-data-2", "--ng-data-3", "--ng-data-4",
-        "--ng-data-5", "--ng-data-6", "--ng-data-7", "--ng-data-8",
+        "--ng-data-1",
+        "--ng-data-2",
+        "--ng-data-3",
+        "--ng-data-4",
+        "--ng-data-5",
+        "--ng-data-6",
+        "--ng-data-7",
+        "--ng-data-8",
         # focus ring + interaction states + links
-        "--ng-focus", "--ng-focus-ring", "--ng-focus-ring-width",
+        "--ng-focus",
+        "--ng-focus-ring",
+        "--ng-focus-ring-width",
         "--ng-focus-ring-offset",
-        "--ng-hover", "--ng-active", "--ng-disabled-opacity",
-        "--ng-link", "--ng-link-hover",
+        "--ng-hover",
+        "--ng-active",
+        "--ng-disabled-opacity",
+        "--ng-link",
+        "--ng-link-hover",
         # layout widths + breakpoints
-        "--ng-width-reading", "--ng-width-standard", "--ng-width-wide",
+        "--ng-width-reading",
+        "--ng-width-standard",
+        "--ng-width-wide",
         "--ng-gutter",
-        "--ng-bp-sm", "--ng-bp-md", "--ng-bp-lg", "--ng-bp-xl",
+        "--ng-bp-sm",
+        "--ng-bp-md",
+        "--ng-bp-lg",
+        "--ng-bp-xl",
         # motion + z-index
-        "--ng-ease", "--ng-fast", "--ng-normal", "--ng-slow",
-        "--ng-z-sticky", "--ng-z-dropdown", "--ng-z-overlay", "--ng-z-modal",
-        "--ng-z-toast", "--ng-z-skip-link",
+        "--ng-ease",
+        "--ng-fast",
+        "--ng-normal",
+        "--ng-slow",
+        "--ng-z-sticky",
+        "--ng-z-dropdown",
+        "--ng-z-overlay",
+        "--ng-z-modal",
+        "--ng-z-toast",
+        "--ng-z-skip-link",
     }
     missing = expected - set(root)
     assert not missing, f"missing tokens: {sorted(missing)}"
@@ -242,8 +308,8 @@ def test_wcag_aa_text_contrast(scope: str, scopes: dict[str, dict[str, str]]) ->
 
 
 @pytest.mark.parametrize("scope", [":root", "dark"])
-def test_wcag_aa_focus_ring_chrome_contrast(
-    scope: str, scopes: dict[str, dict[str, str]]
-) -> None:
-    ratio = _contrast(_resolve(scopes, scope, "--ng-focus-ring"), _resolve(scopes, scope, "--ng-bg"))
+def test_wcag_aa_focus_ring_chrome_contrast(scope: str, scopes: dict[str, dict[str, str]]) -> None:
+    ratio = _contrast(
+        _resolve(scopes, scope, "--ng-focus-ring"), _resolve(scopes, scope, "--ng-bg")
+    )
     assert ratio >= 3.0, f"{scope} --ng-focus-ring on --ng-bg: {ratio:.2f}:1 < 3:1"
