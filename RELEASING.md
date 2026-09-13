@@ -63,4 +63,4 @@ PyPI publishing is not configured in CI. If distributing via PyPI in the future,
 
 ## Security releases
 
-For security fixes, follow [SECURITY.md](SECURITY.md): coordinate privately, land the fix on `main`, tag a patch release, and publish a GitHub Security Advisory.
+For security fixes, follow [SECURITY.md](SECURITY.md): coordinate privately, land the fix on `master` (workflows also listen to `main`), tag a patch release, and publish a GitHub Security Advisory.

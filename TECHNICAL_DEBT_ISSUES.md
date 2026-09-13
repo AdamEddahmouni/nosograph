@@ -9,11 +9,11 @@ fixed by v0.2.1.
 
 ### A1. Continue the incremental mypy ratchet across remaining runtime boundaries
 
-> **Resolved 2026-09-06 (v0.3.0).** All 60 pre-existing mypy errors across 46 legacy runtime files have been fixed without new ignores or type suppression. `BasePipelineModule.report()` and all 18 pipeline module adapters are strictly aligned on `provenance: ProvenanceMetadata | None = None`. All pipeline `generate_*_report` and `render_report` helpers accept `ProvenanceMetadata | Mapping[str, Any] | None`. Web routers return typed Pydantic models / TypedDicts matching `pipeline.results`. `python -m mypy <full Makefile list>` exits 0 across all 170 source files. In `.github/workflows/test.yml`, `continue-on-error: true` and `|| true` have been removed, making `make typecheck` a required, non-ignoring CI gate.
+> **Resolved on `master` via PR #102; published package version remains 0.2.1.** All 60 pre-existing mypy errors across 46 legacy runtime files have been fixed without new ignores or type suppression. `BasePipelineModule.report()` and all 18 pipeline module adapters are strictly aligned on `provenance: ProvenanceMetadata | None = None`. All pipeline `generate_*_report` and `render_report` helpers accept `ProvenanceMetadata | Mapping[str, Any] | None`. Web routers return typed Pydantic models / TypedDicts matching `pipeline.results`. `python -m mypy <full Makefile list>` exits 0 across all 170 source files. In `.github/workflows/test.yml`, `continue-on-error: true` and `|| true` have been removed, so the standalone `typecheck` job runs `make typecheck` strictly. The Tests aggregator (`required-tests`) still needs `lint`, `security`, `test`, and `integration-tests` only — typecheck is not in that `needs:` list. Do not call this a published v0.3.0.
 
-- **Impact/rationale:** `make typecheck` is now a required, blocking gate on every CI push/PR.
-- **Evidence:** `python -m mypy <full Makefile list>` outputs: `Success: no issues found in 170 source files` (exit code 0).
-- **Acceptance criteria:** Met in full. CI job enforces `make typecheck` strictly.
+- **Impact/rationale:** `make typecheck` is an explicit Makefile file-list ratchet. After PR #102 the CI `typecheck` job is strict; it is not a blocking Tests-aggregator check.
+- **Evidence:** `python -m mypy <full Makefile list>` outputs: `Success: no issues found in 170 source files` (exit code 0). Pre-#102, CI ran `make typecheck || true` and the v0.2.1 tree reported 59 errors in 45 files.
+- **Acceptance criteria:** Met for the ratchet and the standalone CI job. Published package version remains 0.2.1.
 
 ### A2. Plan and test the FastAPI/Starlette TestClient migration to `httpx2`
 
@@ -38,10 +38,11 @@ fixed by v0.2.1.
 
 ### A5. Add a reproducible SPDX/SBOM license report to release gates
 
-- **Impact/rationale:** Releases ship without a generated license bill-of-materials, so license regressions in the lock files are caught manually rather than by a gate.
-- **Evidence:** No SBOM/SPDX generation exists in `Makefile`, `.github/workflows/test.yml`, or `RELEASING.md`.
-- **Acceptance criteria:** A pinned tool emits a reproducible SPDX report from the lock files; `make ci-local` (or a dedicated gate) fails on license drift; the report artifact is attached to release handoff documentation.
-- **Recommended release target:** v0.3.0.
+> **Resolved on `master` via PR #102; published package version remains 0.2.1.** `scripts/check_licenses.py` and `license-policy.toml` gate locked dependency licenses. `make license-check` / `make sbom` exist; `make ci-local` runs the license policy audit. The Tests `security` job runs the license check and uploads an SPDX 2.3 JSON SBOM (`dist/sbom.spdx.json`) plus Markdown summary. Because `security` is in the Tests aggregator `needs:` list, license-check/SBOM is in CI as a required aggregator dependency. Do not call this a published v0.3.0.
+
+- **Impact/rationale:** License regressions in the lock files are caught by CI and `make ci-local` rather than only by manual review.
+- **Evidence:** `Makefile` (`license-check`, `sbom`, `ci-local`), `.github/workflows/test.yml` security job SPDX step, `docs/legal/third-party-notices.md`. ROADMAP engineering-hygiene: Automated SPDX license report in CI = COMPLETED.
+- **Acceptance criteria:** Met on `master` via PR #102. Published package version remains 0.2.1.
 
 ### A6. Add trusted PyPI publishing with provenance and a dry-run validation path
 

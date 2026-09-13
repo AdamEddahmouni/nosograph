@@ -24,7 +24,7 @@ The release metadata records 2,445 offline tests selected in the v0.2.1 release 
 | `make test-offline` | Python environment | Fast unit tier without Redis. |
 | `make test-integration` | Redis | Integration behavior across async and persistence boundaries. |
 | `make test-browser` | Playwright Chromium | Deterministic dashboard and Evidence Explorer workflows. |
-| `make typecheck` | Mypy environment | Informational typecheck while the backlog is cleared. |
+| `make typecheck` | Mypy environment | Explicit Makefile file-list ratchet. After PR #102, CI has a strict standalone `typecheck` job (no `continue-on-error`). The Tests aggregator currently requires `lint`, `security`, `test`, and `integration-tests` only — typecheck is not in that `needs:` list. License-check/SBOM runs in the `security` job. `make ci-local` runs lint, locks, license policy, import/metadata/font checks, and serial offline pytest; it does not run typecheck or Playwright. |
 
 For a single pytest test, pass `-n 0` because the project config enables xdist by default. Browser tests that exercise the dashboard are separate from the offline CLI path.
 

@@ -312,7 +312,7 @@ All routes below are `GET` unless stated otherwise. Disease-query support is lis
 | `/api/cross-disease/similarity` | — | Disease similarity matrix. |
 | `/api/cross-disease/drugs` | `top` | Multi-disease drug rankings. |
 | `/api/cross-disease/modules` | `top_synergy` | Comparative module results. |
-| `/api/system/diseases` | — | Discovered disease registry and counts (10,403 modules). |
+| `/api/system/diseases` | — | Discovered disease registry and counts (10,407 modules). |
 | `/api/system/corpus-status` | — | Corpus readiness tier aggregate from latest batch report. |
 | `/api/system/modules` | `disease` (default `sle`) | Pipeline module catalog (registry module IDs, aliases, request schemas, contracts). |
 | `/api/ready` | — | Readiness check across Redis, Celery, workspace DB, and KG preload. |

@@ -27,9 +27,9 @@ During the transition from `med-research`:
 | Name | Policy |
 |------|--------|
 | NosoGraph | **RENAME_NOW** for public docs and messaging |
-| `med-research` CLI | **KEEP_FOR_COMPATIBILITY** until v3.0 |
-| `med_research` Python import | **KEEP_FOR_COMPATIBILITY** until v3.0 |
-| GitHub repo `med-research` | Rename deferred to maintainer |
+| `med-research` CLI | **KEEP_FOR_COMPATIBILITY** (sunset version not decided; see [package naming](../project/package-naming.md)) |
+| `med_research` Python import | **KEEP_FOR_COMPATIBILITY** (sunset version not decided; see [package naming](../project/package-naming.md)) |
+| GitHub remote `AdamEddahmouni/nosograph` | Canonical public repository |
 
 ## Logo
 
