@@ -5,6 +5,7 @@ from med_research.diseases.registry_quality import (
     is_blocked_slug,
     is_disease_like_entry,
     looks_like_go_process_slug,
+    should_refuse_new_scaffold,
 )
 
 
@@ -14,6 +15,10 @@ def test_blocked_slugs() -> None:
     assert looks_like_go_process_slug("trait_in_response_to_apixaban")
     assert not is_blocked_slug("sle")
     assert not looks_like_go_process_slug("sle")
+    assert should_refuse_new_scaffold("response_to_stimulus")
+    assert should_refuse_new_scaffold("positive_regulation_of_ovulation")
+    assert not should_refuse_new_scaffold("zz_scaffold_test")
+    assert not should_refuse_new_scaffold("sle")
 
 
 def test_disease_like_entry_requires_identifier_or_name() -> None:

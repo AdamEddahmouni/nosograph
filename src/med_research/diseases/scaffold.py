@@ -1146,9 +1146,9 @@ def scaffold_disease(
     if not disease_id or not name:
         raise ValueError("disease_id and name are required")
 
-    from med_research.diseases.registry_quality import looks_like_go_process_slug
+    from med_research.diseases.registry_quality import should_refuse_new_scaffold
 
-    if looks_like_go_process_slug(disease_id):
+    if should_refuse_new_scaffold(disease_id):
         raise ValueError(
             f"Refusing to scaffold {disease_id!r}: slug looks like a GO biological "
             "process, response-to, or trait-in-response module. Historical on-disk "
@@ -2336,7 +2336,7 @@ def batch_scaffold(
     import time
 
     from med_research.diseases.base import Disease
-    from med_research.diseases.registry_quality import looks_like_go_process_slug
+    from med_research.diseases.registry_quality import should_refuse_new_scaffold
 
     diseases = load_disease_registry(registry_path)
 
@@ -2368,7 +2368,7 @@ def batch_scaffold(
         name = entry.get("name", did)
         efo = entry.get("efo_id")
 
-        if looks_like_go_process_slug(did):
+        if should_refuse_new_scaffold(did):
             logger.info(
                 "[%d/%d] ⏭️  %s — GO/response/trait slug, skipping (harvest exclusion)",
                 idx,

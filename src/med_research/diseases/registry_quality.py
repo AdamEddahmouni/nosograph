@@ -42,6 +42,18 @@ def looks_like_go_process_slug(disease_id: str) -> bool:
     return bool(_GO_PROCESS_PATTERNS.search(slug))
 
 
+def should_refuse_new_scaffold(disease_id: str) -> bool:
+    """True when ``disease add`` / batch_scaffold must not create a new module.
+
+    ``zz_scaffold_test`` is a test-owned fixture that is blocked from discovery
+    but still generated inside the diseases tree by unit tests.
+    """
+    slug = (disease_id or "").strip().lower()
+    if slug == "zz_scaffold_test":
+        return False
+    return looks_like_go_process_slug(slug)
+
+
 def has_valid_disease_identifier(entry: dict[str, Any]) -> bool:
     efo = str(entry.get("efo_id") or "").strip()
     mondo = str(entry.get("mondo_id") or "").strip()
