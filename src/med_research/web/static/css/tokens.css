@@ -22,9 +22,6 @@
    is a BRAND SIGNAL ONLY. It must never encode evidence strength, causality,
    safety, or clinical status. Evidence semantics use the dedicated
    --ng-ev-* tokens; status uses --ng-success/-warning/-error/-info.
-
-   LEGACY aliases (marked LEGACY) keep the pre-foundation homepage rendering
-   until its rebuild stage; they map to the new precise values.
    ========================================================================== */
 
 :root {
@@ -161,6 +158,7 @@
   --ng-radius-xs: 2px;
   --ng-radius-sm: 4px;
   --ng-radius-md: 8px;
+  --ng-radius-lg: 12px;
   --ng-radius-pill: 999px;
 
   /* ---- Borders ---- */
@@ -198,12 +196,6 @@
   --md-primary-fg-color: var(--ng-blue);
   --md-accent-fg-color: var(--ng-teal);
   --md-typeset-a-color: var(--ng-link);
-
-  /* ---- LEGACY aliases (pre-foundation homepage; remove at rebuild). Static values only — scheme-dependent tokens must be declared per scheme. ---- */
-  --ng-radius-lg: var(--ng-radius-md);
-  --ng-shadow: var(--ng-shadow-plate);
-  --ng-container: var(--ng-width-standard);
-  --ng-section-space: clamp(4rem, 9vw, 8rem);
 }
 
 /* ---- Dark scheme (chassis) — docs "slate" palette toggle, or app pages
