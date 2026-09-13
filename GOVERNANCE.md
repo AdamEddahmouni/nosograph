@@ -32,7 +32,7 @@ Maintainers cut releases per [RELEASING.md](RELEASING.md). No automated PyPI pub
 ## Branding policy
 
 - Public docs use **NosoGraph**
-- `med-research` / `med_research` remain compatibility aliases until v3.0 (see [trademark policy](docs/legal/trademark-policy.md))
+- `med-research` / `med_research` remain compatibility aliases on the v0.x line (see [trademark policy](docs/legal/trademark-policy.md) and the unresolved sunset note in [package naming](docs/project/package-naming.md))
 
 ## Conflict resolution
 

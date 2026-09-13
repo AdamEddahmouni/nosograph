@@ -7,7 +7,7 @@ description: Current NosoGraph release, maturity, repository metrics, and suppor
 
 **NosoGraph v0.2.1 · Public Alpha · 2026-08-22**
 
-NosoGraph is open-source research software for connecting biomedical knowledge, evidence, and provenance. It is for research use only, not medical advice, diagnosis, or clinical decision support.
+NosoGraph is open-source research software for connecting biomedical knowledge, evidence, and provenance. It is for research use only, not medical advice, diagnosis, or clinical decision support. Live documentation is whatever SHA GitHub Pages currently serves from `master`; the FastAPI dashboard is local. Community/patient posting is not implemented.
 
 ## Repository snapshot
 

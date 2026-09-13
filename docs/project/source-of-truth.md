@@ -4,6 +4,8 @@ description: Which repository artifact owns each class of public fact — versio
 
 # Documentation source of truth
 
+Live documentation is whatever SHA GitHub Pages currently serves from `master`. The FastAPI dashboard is local (not hosted on Pages). Community/patient posting is not implemented.
+
 | Artifact | Owns |
 |----------|------|
 | README.md | Public overview |

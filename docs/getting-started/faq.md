@@ -11,7 +11,7 @@ description: Frequently asked questions about NosoGraph scope, data, citation, a
 
 **Is NosoGraph medical advice?** No.
 
-**How many diseases does it support?** 10,407 registry modules in v0.2.1; 88 pass strict L2 validation. Counts: [public-status.yaml](../generated/public-status.yaml).
+**How many disease modules are in the registry?** 10,407 registry modules in v0.2.1, mostly scaffolds; 88 pass strict L2 validation. Registry breadth is not "supported diseases." Counts: [public-status.yaml](../generated/public-status.yaml).
 
 **Are all diseases equally curated?** No. Registry ≠ curation depth.
 
