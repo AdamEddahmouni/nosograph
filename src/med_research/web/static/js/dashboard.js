@@ -34,6 +34,8 @@ const activeJobs = {};
 const activeSockets = {};
 let workspaceSubmissionActive = false;
 let workspaceReviews = {};
+let demoState = null;
+let lastComparisonPayload = null;
 
 function setWorkspaceSubmissionState(state) {
     const form = document.getElementById('workspace-form');
@@ -3216,21 +3218,61 @@ function renderNosoGraphCompareResult(result) {
     const curationWarnings = (result.curation_warnings || []).map(item => `<li>${escapeHtml(item.message || item)}</li>`).join('');
     const statusLabel = result.status === 'comparable' ? 'Comparison ready' : 'Sparse comparison ready';
     const conditionChips = conditions.map(item => `<span class="condition-comparison-condition"><strong>${escapeHtml(item.label)}</strong><code>${escapeHtml(item.curie)}</code></span>`).join('');
+    const isPreview = Boolean(result.preview);
+    const runLabel = isPreview ? 'preview (not persisted)' : escapeHtml(result.run_id);
+    const exportActions = isPreview
+        ? `<button type="button" class="btn btn-secondary btn-sm" data-preview-export="json">Export JSON</button>
+           <button type="button" class="btn btn-secondary btn-sm" data-preview-export="markdown">Export Markdown</button>`
+        : `<a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/json" download="nosograph-comparison-${escapeHtml(result.run_id)}.json">Export JSON</a>
+           <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/markdown" download="nosograph-comparison-${escapeHtml(result.run_id)}.md">Export Markdown</a>`;
     container.innerHTML = `
         <header class="condition-comparison-report-header">
             <div><p class="condition-comparison-eyebrow">${escapeHtml(statusLabel)}</p><h3>Evidence state comparison</h3><p>${conditions.length} conditions · ${result.dimensions?.length || 0} dimensions · no universal similarity score</p></div>
-            <div class="condition-comparison-export-actions">
-                <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/json" download="nosograph-comparison-${escapeHtml(result.run_id)}.json">Export JSON</a>
-                <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/markdown" download="nosograph-comparison-${escapeHtml(result.run_id)}.md">Export Markdown</a>
-            </div>
+            <div class="condition-comparison-export-actions">${exportActions}</div>
         </header>
         <div class="condition-comparison-condition-list" aria-label="Compared conditions">${conditionChips}</div>
         ${curationWarnings ? `<details class="condition-comparison-warning-summary"><summary>${result.curation_warnings.length} curation warning${result.curation_warnings.length === 1 ? '' : 's'}</summary><ul>${curationWarnings}</ul></details>` : ''}
         <div class="condition-comparison-tabs" role="tablist" aria-label="Comparison dimensions">${tabs}</div>
         <div class="condition-comparison-tab-panels">${panels || '<p class="condition-comparison-placeholder">No dimension results returned.</p>'}</div>
-        <p class="condition-comparison-meta">Run <code>${escapeHtml(result.run_id)}</code> · fingerprint <code>${escapeHtml(result.claim_set_fingerprint || 'n/a')}</code> · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
+        <p class="condition-comparison-meta">Run <code>${runLabel}</code> · fingerprint <code>${escapeHtml(result.claim_set_fingerprint || 'n/a')}</code> · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
         <p class="condition-comparison-disclaimer">${disclaimer}</p>`;
+    container.querySelectorAll('[data-preview-export]').forEach(button => {
+        button.addEventListener('click', () => {
+            void exportComparisonPreview(button.dataset.previewExport);
+        });
+    });
     bindComparisonResultActions(container);
+}
+
+async function exportComparisonPreview(format) {
+    if (!lastComparisonPayload) return;
+    try {
+        const response = await fetch(`/api/v1/nosograph/comparisons/preview/export?format=${encodeURIComponent(format)}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(lastComparisonPayload),
+        });
+        if (!response.ok) {
+            throw new Error(`Export failed (HTTP ${response.status})`);
+        }
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = format === 'json' ? 'nosograph-comparison-preview.json' : 'nosograph-comparison-preview.md';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        const container = document.getElementById('condition-comparison-result');
+        if (container) {
+            container.insertAdjacentHTML(
+                'beforeend',
+                `<p class="condition-comparison-placeholder condition-comparison-error">Export failed: ${escapeHtml(error.message)}</p>`
+            );
+        }
+    }
 }
 
 function comparisonDimensionLabel(dimension) {
@@ -3358,11 +3400,14 @@ async function compareConditions() {
     }
     setConditionComparisonBusy(true);
     container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Running NosoGraph compare…</p>';
+    const preview = Boolean(demoState && demoState.demo_mode);
+    lastComparisonPayload = { condition_curies: conditions, dimensions };
+    const endpoint = preview ? '/api/v1/nosograph/comparisons/preview' : '/api/v1/nosograph/comparisons';
     try {
-        const result = await apiFetch('/api/v1/nosograph/comparisons', {
+        const result = await apiFetch(endpoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ condition_curies: conditions, dimensions }),
+            body: JSON.stringify(lastComparisonPayload),
         });
         renderNosoGraphCompareResult(result);
     } catch (error) {
@@ -4922,10 +4967,6 @@ function setupDashboardActions() {
                 if (value) void openEvidenceExplorer(value);
                 break;
             }
-            case 'evidence-filter-change': {
-                if (activeEvidenceClaimId) void loadEvidenceExplorerClaim(activeEvidenceClaimId);
-                break;
-            }
             default: break;
         }
     });
@@ -4935,6 +4976,9 @@ function setupDashboardActions() {
         if (!control) return;
         if (control.dataset.action === 'disease-change') onDiseaseChange(control.value);
         if (control.dataset.action === 'workspace-trends-render') renderWorkspaceTrends();
+        if (control.dataset.action === 'evidence-filter-change' && activeEvidenceClaimId) {
+            void loadEvidenceExplorerClaim(activeEvidenceClaimId);
+        }
     });
 
     document.addEventListener('submit', event => {
@@ -4946,6 +4990,63 @@ function setupDashboardActions() {
 
 function getActiveDisease() {
     return window.localStorage.getItem('active-disease') || '';
+}
+
+// ── Public demo mode ─────────────────────────────────────────────────────
+
+async function loadDemoState() {
+    try {
+        const meta = await apiFetch('/api/demo_mode');
+        demoState = {
+            demo_mode: Boolean(meta && meta.demo_mode),
+            snapshot_version: (meta && meta.snapshot_version) || '',
+            dataset_date: '',
+            supported_disease_ids: [],
+        };
+        if (demoState.demo_mode) {
+            try {
+                const ready = await apiFetch('/api/ready');
+                const demo = (ready && ready.demo) || {};
+                demoState.dataset_date = demo.dataset_date || '';
+                demoState.supported_disease_ids = Array.isArray(demo.supported_disease_ids)
+                    ? demo.supported_disease_ids
+                    : [];
+            } catch {
+                // Readiness is informational for the banner; base demo state stays.
+            }
+        }
+    } catch {
+        demoState = {
+            demo_mode: false,
+            snapshot_version: '',
+            dataset_date: '',
+            supported_disease_ids: [],
+        };
+    }
+    return demoState;
+}
+
+function applyDemoUi() {
+    if (!demoState || !demoState.demo_mode) return;
+    const banner = document.getElementById('demo-banner');
+    if (banner) {
+        const date = demoState.dataset_date || 'fixed research snapshot';
+        const version = demoState.snapshot_version || '';
+        banner.classList.remove('hidden');
+        banner.innerHTML = `PUBLIC DEMO · FIXED RESEARCH SNAPSHOT · DATA DATE: ${escapeHtml(date)}${version ? ` · SNAPSHOT ${escapeHtml(version)}` : ''} · READ-ONLY · RESEARCH USE ONLY`;
+    }
+    // Hide mutation-capable surfaces; the server still denies their requests.
+    const hiddenSelectors = [
+        '#jobs-tab',
+        '.nav-link[data-nav="evidence-workspace"]',
+        '.nav-link[data-nav="modules"]',
+        '.nav-link[data-nav="export"]',
+        '#hero-workspace-btn',
+        '#evidence-workspace',
+    ];
+    hiddenSelectors.forEach(selector => {
+        document.querySelectorAll(selector).forEach(el => el.classList.add('hidden'));
+    });
 }
 
 function pickDefaultDiseaseId(diseases) {
@@ -4965,6 +5066,10 @@ async function loadDiseaseSelector() {
     try {
         const data = await apiFetch('/api/system/diseases');
         diseases = (data && data.diseases) || [];
+        if (demoState && demoState.demo_mode && demoState.supported_disease_ids.length) {
+            const supported = new Set(demoState.supported_disease_ids);
+            diseases = diseases.filter(item => supported.has(item.id));
+        }
         diseaseCache.list = diseases;
         fetched = true;
     } catch {
@@ -5193,6 +5298,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupDashboardActions();
     setupNavUi();
     const linkedParams = new URLSearchParams(window.location.search);
+    await loadDemoState();
+    applyDemoUi();
     await loadDiseaseSelector();
     updateDiseaseDisplay();
     await checkAPIStatus();
@@ -5209,14 +5316,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     void loadCorpusStatus();
     handleUniversalDeepLinks();
     loadExportGrid();
-    loadWorkspaceAuth();
-    loadWorkspaceHistory();
-    loadWorkspaceTrends();
-    loadWorkspaceNotificationSettings();
-    loadWorkspaceAlerts();
-    if (linkedParams.get('digest_key')) window.setTimeout(previewWorkspaceDigest, 250);
+    if (!(demoState && demoState.demo_mode)) {
+        loadWorkspaceAuth();
+        loadWorkspaceHistory();
+        loadWorkspaceTrends();
+        loadWorkspaceNotificationSettings();
+        loadWorkspaceAlerts();
+        if (linkedParams.get('digest_key')) window.setTimeout(previewWorkspaceDigest, 250);
+    }
 
     setInterval(checkAPIStatus, 30000);
     setInterval(loadPlatformStats, 60000);
-    setInterval(loadWorkspaceAlerts, 60000);
+    if (!(demoState && demoState.demo_mode)) {
+        setInterval(loadWorkspaceAlerts, 60000);
+    }
+    document.body.dataset.booted = 'true';
 });

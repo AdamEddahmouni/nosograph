@@ -1,0 +1,47 @@
+# ── NosoGraph — Public Read-Only Demo (one container) ──────────────────────
+# Immutable demo image; no Redis, Celery, Beat, or writable ./data mount.
+# The packaged snapshot is baked into the image at build time.
+#
+# Usage:
+#   docker compose -f docker-compose.demo.yml up --build
+#   open http://localhost:8000
+#   docker compose -f docker-compose.demo.yml down
+#
+# Production notes:
+#   - Set DEBUG=false, DEMO_MODE=true, and a strong operator API_KEY.
+#   - CORS_ORIGINS must list the public origin (no wildcard for the demo).
+#   - The platform-injected PORT (e.g. Heroku) is honored via ${PORT}.
+
+name: nosograph-demo
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.demo
+    image: nosograph-demo:latest
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"
+    environment:
+      - PORT=${PORT:-8000}
+      - DEBUG=false
+      - DEMO_MODE=true
+      - DEMO_SNAPSHOT_PATH=/app/data/demo/biomedical.sqlite3
+      - DEMO_SNAPSHOT_MANIFEST=/app/data/demo/biomedical.manifest.json
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:8000}
+      - API_KEY=${API_KEY:-}
+      - DASHBOARD_CSP_MODE=enforce
+      - RATE_LIMIT_REQUESTS=${RATE_LIMIT_REQUESTS:-60}
+      - RATE_LIMIT_WINDOW=${RATE_LIMIT_WINDOW:-60}
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import os, urllib.request; urllib.request.urlopen(f'http://127.0.0.1:{os.environ.get(\"PORT\", \"8000\")}/api/health', timeout=3)",
+        ]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
