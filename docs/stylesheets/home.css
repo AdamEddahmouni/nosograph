@@ -59,6 +59,9 @@ html.ng-page-home .md-content__inner {
 }
 
 .ng-dark {
+  /* Dark bands in the light scheme need the dark scheme's teal focus ring;
+     the light ring is ~1.5:1 on deep navy (below the WCAG 2.4.11 3:1 floor). */
+  --ng-focus-ring: var(--ng-teal);
   color: var(--ng-white);
   background: var(--ng-deep-navy);
 }

@@ -400,6 +400,13 @@
   border-radius: var(--ng-radius-xs);
 }
 
+/* Always-dark chrome (navy header/footer in BOTH schemes) needs the dark
+   scheme's teal ring: the light-scheme ring is only ~1.5:1 on deep navy,
+   below the WCAG 2.4.11 3:1 focus-indicator floor. */
+:is(.md-header, .md-footer) {
+  --ng-focus-ring: var(--ng-teal);
+}
+
 /* 4. Documentation reading shell */
 .ng-doc-frame {
   max-width: var(--ng-width-standard);
@@ -813,6 +820,8 @@
 
 @media screen and (max-width: 76.234375em) {
   .md-sidebar--primary {
+    /* Dark drawer chrome needs the dark scheme's teal focus ring (3:1 floor). */
+    --ng-focus-ring: var(--ng-teal);
     background: var(--ng-navy-layer);
     border-right: 1px solid color-mix(in srgb, var(--ng-mist) 12%, transparent);
   }
