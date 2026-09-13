@@ -27,8 +27,15 @@ def _load_public_status() -> dict | None:
     if not version or not isinstance(metrics, dict):
         return None
     required_metrics = {
-        "l2_strict_validated": metrics.get("l2_strict_validated"),
-        "offline_tests": metrics.get("offline_tests"),
+        key: metrics.get(key)
+        for key in (
+            "l2_strict_validated",
+            "offline_tests",
+            "registry_modules",
+            "ci_validated",
+            "reference_tier",
+            "registered_pipeline_adapters",
+        )
     }
     if any(value in (None, "") for value in required_metrics.values()):
         return None
@@ -78,7 +85,15 @@ def on_post_build(*, config, **kwargs):
     return config
 
 
-_TOKENS = ("{{NG_L2_STRICT_VALIDATED}}", "{{NG_OFFLINE_TESTS}}", "{{NG_VERSION}}")
+_TOKENS = (
+    "{{NG_L2_STRICT_VALIDATED}}",
+    "{{NG_OFFLINE_TESTS}}",
+    "{{NG_VERSION}}",
+    "{{NG_REGISTRY_MODULES}}",
+    "{{NG_CI_VALIDATED}}",
+    "{{NG_REFERENCE_TIER}}",
+    "{{NG_ADAPTERS}}",
+)
 
 
 def on_page_markdown(markdown, page, config, **kwargs):
@@ -97,6 +112,10 @@ def on_page_markdown(markdown, page, config, **kwargs):
         "{{NG_L2_STRICT_VALIDATED}}": str(metrics["l2_strict_validated"]),
         "{{NG_OFFLINE_TESTS}}": f"{int(metrics['offline_tests']):,}",
         "{{NG_VERSION}}": str(status["version"]),
+        "{{NG_REGISTRY_MODULES}}": f"{int(metrics['registry_modules']):,}",
+        "{{NG_CI_VALIDATED}}": str(metrics["ci_validated"]),
+        "{{NG_REFERENCE_TIER}}": str(metrics["reference_tier"]),
+        "{{NG_ADAPTERS}}": str(metrics["registered_pipeline_adapters"]),
     }
     for token, value in replacements.items():
         markdown = markdown.replace(token, value)

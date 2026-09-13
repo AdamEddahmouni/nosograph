@@ -216,6 +216,21 @@ def discover_condition_curies(base_url: str, *, count: int = 2) -> list[str]:
     return curies
 
 
+def _trigger_scroll_reveals(page: Any) -> None:
+    """Scroll through the page so IntersectionObserver-gated reveals fire before
+    a full-page screenshot (which would otherwise race the observer callbacks)."""
+    page.evaluate(
+        """async () => {
+            const step = Math.max(200, Math.floor(window.innerHeight * 0.6));
+            for (let y = 0; y <= document.body.scrollHeight; y += step) {
+                window.scrollTo(0, y);
+                await new Promise((resolve) => setTimeout(resolve, 60));
+            }
+            window.scrollTo(0, 0);
+        }"""
+    )
+
+
 def _shoot(page: Any, shot: Shot, url: str, out_dir: Path) -> CaptureRecord:
     page.set_viewport_size({"width": shot.width, "height": shot.height})
     page.goto(url, wait_until="networkidle", timeout=60_000)
@@ -225,6 +240,8 @@ def _shoot(page: Any, shot: Shot, url: str, out_dir: Path) -> CaptureRecord:
         page.click(shot.click_selector, timeout=15_000)
         if shot.result_selector:
             page.wait_for_selector(shot.result_selector, timeout=60_000)
+    if shot.full_page:
+        _trigger_scroll_reveals(page)
     page.wait_for_timeout(shot.settle_ms)
     target = out_dir / f"{shot.name}.png"
     page.screenshot(path=str(target), full_page=shot.full_page, animations="disabled")
