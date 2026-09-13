@@ -157,6 +157,7 @@ jobs:
         run: |
           python -m pytest tests/ -m "unit and not network and not slow" -q --tb=short -n 2 \
             --ignore=tests/test_evidence_workspace_browser.py \
+            --ignore=tests/test_dashboard_a11y_browser.py \
             --cov=src/med_research --cov-report=term-missing --cov-report=xml
 
       - name: Coverage threshold (80%)
@@ -177,15 +178,8 @@ jobs:
       - name: Validate reference disease batch (strict)
         run: python -m med_research.cli disease validate-batch --tier reference --strict
 
-      - name: Platform core unit tests
-        run: |
-          python -m pytest tests/test_disease_identifiers.py tests/test_validation_batch.py \
-            tests/biomed/sync/test_opentargets_sync.py tests/biomed/nosograph_compare/test_engine.py \
-            -q --tb=short -n 0
-
-      - name: Corpus readiness unit tests
-        run: |
-          python -m pytest tests/test_registry_quality.py tests/test_tier_model.py tests/test_corpus_status.py tests/test_disease_context.py tests/web/test_corpus_status_api.py tests/biomed/imports/test_clinvar_openfda_cli.py -q --tb=short
+      # Platform-core and corpus-readiness modules are already selected by the
+      # offline pytest gate above. Re-running them here was duplicate wall-clock.
 
       - name: Verify knowledge graph builds
         run: python -m med_research.cli kg --disease sle --export

@@ -357,6 +357,38 @@ def test_live_metric_mismatch_fails_when_package_present(
         checker.main()
 
 
+def test_rejects_historical_10407_as_live_registry_metric(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    yaml_text = (ROOT / "docs" / "generated" / "public-status.yaml").read_text(encoding="utf-8")
+    _assert_overlay_fails(
+        monkeypatch,
+        "docs/generated/public-status.yaml",
+        yaml_text.replace("registry_modules: 10404", "registry_modules: 10407"),
+        "10407",
+    )
+
+
+def test_rejects_l2_sample_labeled_as_full_corpus(monkeypatch: pytest.MonkeyPatch) -> None:
+    yaml_text = (ROOT / "docs" / "generated" / "public-status.yaml").read_text(encoding="utf-8")
+    _assert_overlay_fails(
+        monkeypatch,
+        "docs/generated/public-status.yaml",
+        yaml_text.replace("l2_strict_validated: sample", "l2_strict_validated: full-corpus"),
+        "l2_strict_validated must remain metric_kind: sample",
+    )
+
+
+def test_rejects_pages_as_app_copy(monkeypatch: pytest.MonkeyPatch) -> None:
+    overview = (ROOT / "docs" / "architecture" / "overview.md").read_text(encoding="utf-8")
+    _assert_overlay_fails(
+        monkeypatch,
+        "docs/architecture/overview.md",
+        overview + "\nGitHub Pages hosts the FastAPI dashboard.\n",
+        "treats GitHub Pages as the app",
+    )
+
+
 def test_documentation_homepage_routes_both_audiences() -> None:
     homepage = (ROOT / "docs/index.md").read_text(encoding="utf-8")
     stylesheet = (ROOT / "docs/stylesheets/home.css").read_text(encoding="utf-8")
