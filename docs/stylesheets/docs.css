@@ -46,7 +46,7 @@
 
 .ng-header-grid .ng-brand .ng-mark {
   width: auto;
-  height: 26px;
+  height: 32px; /* brand minimum for the detailed mark (docs/assets/brand/README.md) */
   border-radius: var(--ng-radius-xs);
 }
 
@@ -395,8 +395,8 @@
 
 /* 3. Global keyboard focus — one low-specificity rule covers content links, header, tabs, nav, and homepage elements alike. Outline is never removed. */
 :focus-visible {
-  outline: 3px solid var(--ng-focus);
-  outline-offset: 2px;
+  outline: var(--ng-focus-ring-width) solid var(--ng-focus-ring);
+  outline-offset: var(--ng-focus-ring-offset);
   border-radius: var(--ng-radius-xs);
 }
 

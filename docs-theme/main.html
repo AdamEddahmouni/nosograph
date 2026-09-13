@@ -12,7 +12,8 @@
 <link rel="preload" href="{{ 'assets/fonts/InterVariable.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ 'assets/fonts/JetBrainsMono-Variable.woff2' | url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ 'assets/fonts/Sora-Variable.woff2' | url }}" as="font" type="font/woff2" crossorigin>
-<link rel="icon" href="{{ config.site_url }}assets/brand/favicon.svg" type="image/svg+xml">
+{# Favicon: emitted once by Material base.html from theme.favicon (relative,
+   works in local builds) — do not re-declare an absolute copy here. #}
 <meta name="theme-color" content="#08142D">
 <meta property="og:title" content="{{ ng_meta_title }}">
 <meta property="og:description" content="{{ page.meta.description if page and page.meta and page.meta.description else config.site_description }}">
