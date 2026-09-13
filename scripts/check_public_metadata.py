@@ -186,12 +186,12 @@ def main() -> None:
 
     readme_snapshot_markers = {
         "registry_modules": (
-            "registry modules",
-            f"| Registry modules | {int(_status_metric('registry_modules')):,} |",
+            "discoverable modules",
+            f"| Discoverable modules | {int(_status_metric('registry_modules')):,} |",
         ),
         "l2_strict_validated": (
             "L2-validated modules",
-            "| Strict L2-validated modules | "
+            "| Strict L2-validated modules (n=500 sample) | "
             f"{int(_status_metric('l2_strict_validated')):,} |",
         ),
         "reference_tier": (
@@ -207,18 +207,16 @@ def main() -> None:
             f"| Offline tests selected in the v{version} suite | "
             f"{int(_status_metric('offline_tests')):,} |",
         ),
-        "analysis_pipelines": (
-            "analysis pipelines",
-            f"{_status_metric('analysis_pipelines')} analysis pipelines",
+        "registered_pipeline_adapters": (
+            "registered pipeline adapters",
+            f"{int(_status_metric('registered_pipeline_adapters'))} registered pipeline adapters",
         ),
     }
     for label, marker in readme_snapshot_markers.values():
         if marker not in readme:
             errors.append(f"README.md {label} do not match public-status.yaml")
     if f"repository snapshot {_status_release_date()}" not in readme:
-        errors.append(
-            "README.md snapshot date does not match public-status.yaml release_date"
-        )
+        errors.append("README.md snapshot date does not match public-status.yaml release_date")
 
     for label, actual in {
         "CITATION.cff version": citation_version,
@@ -368,6 +366,43 @@ def main() -> None:
                 errors.append("codemeta.json identifier is not the concept DOI")
             if codemeta.get("sameAs") != f"https://doi.org/{concept_doi}":
                 errors.append("codemeta.json sameAs is not the concept DOI")
+
+    try:
+        from med_research.diseases.base import Disease
+        from med_research.diseases.harvest_registry import harvest_ids
+        from med_research.diseases.identifiers import CI_VALIDATED_DISEASES, REFERENCE_DISEASES
+        from med_research.pipeline.gene_expression.geo import CURATED_CONSENSUS_DISEASES
+        from med_research.pipeline.registry import list_modules
+
+        live = {
+            "discoverable_modules": len(Disease.list_all()),
+            "harvest_registry_entries": len(harvest_ids()),
+            "ci_validated": len(CI_VALIDATED_DISEASES),
+            "reference_tier": len(REFERENCE_DISEASES),
+            "l3_consensus_membership": len(CURATED_CONSENSUS_DISEASES),
+            "registered_pipeline_adapters": len(list_modules()),
+        }
+        headline = int(_status_metric("registry_modules"))
+        if headline != live["discoverable_modules"]:
+            errors.append(
+                "public-status.yaml registry_modules "
+                f"{headline} != Disease.list_all() {live['discoverable_modules']}"
+            )
+        for field, actual in live.items():
+            expected = int(_status_metric(field))
+            if expected != actual:
+                errors.append(
+                    f"public-status.yaml {field} {expected} != live {actual}. "
+                    "Run: python scripts/refresh_public_status.py"
+                )
+        adapters = int(_status_metric("analysis_pipelines"))
+        if adapters != live["registered_pipeline_adapters"]:
+            errors.append(
+                "public-status.yaml analysis_pipelines "
+                f"{adapters} != list_modules() {live['registered_pipeline_adapters']}"
+            )
+    except Exception as exc:
+        errors.append(f"live public-status verification failed: {exc}")
 
     if errors:
         raise SystemExit("public metadata check failed:\n- " + "\n- ".join(errors))

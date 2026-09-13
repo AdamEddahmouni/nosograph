@@ -296,8 +296,8 @@ def test_rejects_stale_readme_public_metric(monkeypatch: pytest.MonkeyPatch) -> 
     _assert_overlay_fails(
         monkeypatch,
         "README.md",
-        readme.replace("10,407", "10,406"),
-        "README.md registry modules",
+        readme.replace("| Discoverable modules | 10,404 |", "| Discoverable modules | 10,403 |"),
+        "README.md discoverable modules",
     )
 
 

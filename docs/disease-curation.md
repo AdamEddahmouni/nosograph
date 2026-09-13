@@ -6,7 +6,7 @@ description: The repeatable validate–coverage–refresh workflow for keeping N
 
 This guide documents the repeatable workflow for keeping disease modules research-ready before adding new diseases or shipping major pipeline changes.
 
-The registry contains **10,407 disease modules**: **88** L2 pipeline-ready modules (strict-validated at v0.1.0), a small L3 expression-curated set, and more than 10,000 Open Targets auto-generated scaffolds. This playbook applies to the curated set; scaffolds must be curated (below) before they are treated as research-ready.
+The registry has **10,404 discoverable modules** (plus two blocked on-disk directories). The public L2=88 / L3=2 figures are an **n=500 sample**; expression-consensus membership is 23; **8** modules are CI-validated and **6** are reference. Most of the corpus is Open Targets auto-generated scaffolds. This playbook applies to the curated set; scaffolds must be curated (below) before they are treated as research-ready. Counts: [coverage](data/coverage.md).
 
 ## Validate → coverage → refresh cycle
 

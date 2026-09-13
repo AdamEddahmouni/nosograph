@@ -1,0 +1,208 @@
+"""Harvest-catalog reconciliation against on-disk disease modules.
+
+``disease_registry.json`` is the Open Targets **harvest catalog**, not the live
+discoverable-module inventory. Curated modules were created as on-disk packages
+(short slugs such as ``sle`` / ``ra``) and were never admitted by the harvest
+merge, because ``batch_scaffold`` skips directories that already exist.
+
+This module is the authoritative process for:
+
+- admitting on-disk **disease-like** modules that are missing from the catalog
+- documenting **intentional exclusions** (blocked slugs, GO-like / response
+  traits that remain on disk for historical reasons)
+- producing an inexpensive drift report for CI
+
+Regenerate the committed catalog with::
+
+    python scripts/reconcile_harvest_registry.py
+"""
+
+from __future__ import annotations
+
+from typing import Any
+
+from med_research.diseases.base import Disease
+from med_research.diseases.identifiers import CI_VALIDATED_DISEASES, REFERENCE_DISEASES
+from med_research.diseases.registry_quality import is_blocked_slug, looks_like_go_process_slug
+from med_research.diseases.scaffold import load_disease_registry, sanitize_id, save_disease_registry
+
+# Harvest JSON uses long OT/MONDO-style slugs; curated packages use short ids.
+# Copy identifier fields from the sibling harvest row when admitting the short slug.
+HARVEST_SIBLING_IDS: dict[str, str] = {
+    "sle": "systemic_lupus_erythematosus",
+    "ra": "rheumatoid_arthritis",
+    "ms": "multiple_sclerosis",
+    "ss": "sjogren_syndrome",
+    "ssc": "systemic_scleroderma",
+    "t1d": "type_1_diabetes_mellitus",
+    "t2d": "type_2_diabetes_mellitus",
+    "ibd": "inflammatory_bowel_disease",
+    "ad": "alzheimer_disease",
+    "als": "amyotrophic_lateral_sclerosis",
+    "as": "ankylosing_spondylitis",
+    "pd": "parkinson_disease",
+}
+
+REQUIRED_HARVEST_SLUGS: frozenset[str] = frozenset(CI_VALIDATED_DISEASES) | frozenset(
+    REFERENCE_DISEASES
+)
+
+INTENTIONAL_HARVEST_EXCLUSIONS: dict[str, str] = {
+    "positive_regulation_of_ovulation": (
+        "Blocked non-disease slug (GO biological process); discovery also excludes it."
+    ),
+    "sensory_perception_of_sound": (
+        "Blocked non-disease slug (GO biological process); discovery also excludes it."
+    ),
+    "zz_scaffold_test": (
+        "Test-owned scaffold fixture; never a committed harvest or discovery entry."
+    ),
+}
+
+
+def harvest_ids(entries: list[dict[str, Any]] | None = None) -> set[str]:
+    rows = entries if entries is not None else load_disease_registry()
+    return {sanitize_id(entry.get("id", "")) for entry in rows if sanitize_id(entry.get("id", ""))}
+
+
+def should_exclude_from_harvest(disease_id: str) -> bool:
+    """Return True when a slug must not be admitted to the harvest catalog."""
+    slug = sanitize_id(disease_id)
+    if not slug:
+        return True
+    if is_blocked_slug(slug):
+        return True
+    return looks_like_go_process_slug(slug)
+
+
+def exclusion_reason(disease_id: str) -> str:
+    slug = sanitize_id(disease_id)
+    if slug in INTENTIONAL_HARVEST_EXCLUSIONS:
+        return INTENTIONAL_HARVEST_EXCLUSIONS[slug]
+    if is_blocked_slug(slug):
+        return "Blocked non-disease slug."
+    if looks_like_go_process_slug(slug):
+        return (
+            "GO-like / response-to / trait-in-response slug. On-disk historically, "
+            "but not a disease module for the harvest catalog."
+        )
+    return ""
+
+
+def _profile_name(disease_id: str) -> str:
+    try:
+        return str(Disease(disease_id).profile.name or disease_id)
+    except Exception:
+        return disease_id.replace("_", " ")
+
+
+def _entry_from_sibling(slug: str, sibling: dict[str, Any] | None, *, name: str) -> dict[str, Any]:
+    entry: dict[str, Any] = {
+        "id": slug,
+        "name": name,
+        "resolution_source": "on_disk_reconcile",
+        "resolution_confidence": 1.0,
+    }
+    if sibling:
+        if sibling.get("category"):
+            entry["category"] = sibling["category"]
+        if sibling.get("efo_id"):
+            entry["efo_id"] = sibling["efo_id"]
+        if sibling.get("mondo_id"):
+            entry["mondo_id"] = sibling["mondo_id"]
+    return entry
+
+
+def proposed_harvest_entries(
+    entries: list[dict[str, Any]] | None = None,
+    *,
+    discoverable: list[str] | None = None,
+) -> list[dict[str, Any]]:
+    """Build harvest rows for discoverable disease-like modules missing from JSON."""
+    rows = list(entries if entries is not None else load_disease_registry())
+    by_id = {sanitize_id(item.get("id", "")): item for item in rows}
+    present = set(by_id)
+    missing: list[dict[str, Any]] = []
+    for slug in discoverable if discoverable is not None else Disease.list_all():
+        if slug in present or should_exclude_from_harvest(slug):
+            continue
+        sibling_id = HARVEST_SIBLING_IDS.get(slug)
+        sibling = by_id.get(sibling_id) if sibling_id else None
+        missing.append(_entry_from_sibling(slug, sibling, name=_profile_name(slug)))
+    return missing
+
+
+def drift_report(
+    entries: list[dict[str, Any]] | None = None,
+    *,
+    discoverable: list[str] | None = None,
+) -> dict[str, Any]:
+    """Return an inexpensive harvest-vs-disk drift report (no network)."""
+    rows = list(entries if entries is not None else load_disease_registry())
+    catalog = harvest_ids(rows)
+    disk = list(discoverable if discoverable is not None else Disease.list_all())
+    disk_set = set(disk)
+    proposed = proposed_harvest_entries(rows, discoverable=disk)
+    excluded_on_disk = sorted(
+        slug for slug in disk if should_exclude_from_harvest(slug) and slug not in catalog
+    )
+    required_missing = sorted(
+        slug for slug in sorted(REQUIRED_HARVEST_SLUGS) if slug not in catalog
+    )
+    blocked_in_catalog = sorted(slug for slug in catalog if is_blocked_slug(slug))
+    return {
+        "discoverable": len(disk),
+        "harvest_entries": len(catalog),
+        "required_missing": required_missing,
+        "disease_like_missing": [item["id"] for item in proposed],
+        "intentional_exclusions_on_disk": excluded_on_disk,
+        "blocked_in_catalog": blocked_in_catalog,
+        "harvest_not_on_disk": sorted(catalog - disk_set),
+    }
+
+
+def format_drift_errors(report: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    if report["required_missing"]:
+        errors.append(
+            "CI-validated/reference slugs missing from disease_registry.json: "
+            + ", ".join(report["required_missing"])
+        )
+    if report["disease_like_missing"]:
+        errors.append(
+            "Disease-like on-disk modules missing from disease_registry.json: "
+            + ", ".join(report["disease_like_missing"])
+            + ". Run: python scripts/reconcile_harvest_registry.py"
+        )
+    if report["blocked_in_catalog"]:
+        errors.append(
+            "Blocked slugs present in disease_registry.json: "
+            + ", ".join(report["blocked_in_catalog"])
+        )
+    return errors
+
+
+def reconcile_harvest_registry(
+    entries: list[dict[str, Any]] | None = None,
+    *,
+    discoverable: list[str] | None = None,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Return (updated catalog, newly admitted rows). Does not write disk."""
+    rows = list(entries if entries is not None else load_disease_registry())
+    proposed = proposed_harvest_entries(rows, discoverable=discoverable)
+    if proposed:
+        rows.extend(proposed)
+    return rows, proposed
+
+
+def apply_harvest_reconciliation() -> dict[str, Any]:
+    """Admit missing disease-like on-disk modules into the committed catalog."""
+    rows, proposed = reconcile_harvest_registry()
+    if proposed:
+        save_disease_registry(rows)
+        from med_research.diseases.identifiers import invalidate_identifier_cache
+
+        invalidate_identifier_cache()
+    report = drift_report(rows)
+    report["admitted"] = [item["id"] for item in proposed]
+    return report

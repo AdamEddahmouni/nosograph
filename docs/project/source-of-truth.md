@@ -15,7 +15,7 @@ Live documentation is whatever SHA GitHub Pages currently serves from `master`. 
 | docs/audits/ | Validation / release evidence |
 | CHANGELOG.md | Version history |
 | CITATION.cff | Canonical citation |
-| docs/generated/public-status.yaml | Current public metric numbers and release snapshot |
+| docs/generated/public-status.yaml | Current public metric numbers and release snapshot. Distinct counts (discoverable / on-disk / harvest / sample L2/L3) live here. Regenerate live full-corpus fields with `python scripts/refresh_public_status.py`. |
 | CONTRIBUTING.md | Contribution workflow |
 | GOVERNANCE.md | Governance |
 | SECURITY.md | Vulnerability reporting |

@@ -61,6 +61,7 @@ ci-local:  ## Local pre-push gate (lint, locks, licenses, import audit, serial o
 	python scripts/check_licenses.py --lock requirements-lock.txt
 	python scripts/check_imports.py
 	python scripts/check_public_metadata.py
+	python scripts/check_registry_harvest.py
 	python scripts/check_public_fonts.py
 	python -m pytest tests/ -m "unit and not network and not slow" -q --tb=short -n 0 --ignore=tests/test_evidence_workspace_browser.py
 
@@ -81,6 +82,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/rate_limiter.py \
 	src/med_research/diseases/base.py \
 	src/med_research/diseases/coverage.py \
+	src/med_research/diseases/harvest_registry.py \
 	src/med_research/diseases/schemas.py \
 	src/med_research/pipeline/adverse_events/adapter.py \
 	src/med_research/pipeline/adverse_events/profiler.py \
@@ -318,6 +320,7 @@ docker-test:  ## Run tests inside Docker
 
 check-public-metadata:  ## Verify README / CITATION / version consistency
 	python scripts/check_public_metadata.py
+	python scripts/check_registry_harvest.py
 
 check-public-fonts:  ## Verify bundled fonts, licenses, checksums, and CSS loading
 	python scripts/check_public_fonts.py
