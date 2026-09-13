@@ -14,7 +14,7 @@ Thank you for helping improve **NosoGraph — Disease Intelligence. Connected.**
 
 1. Choose a scoped [`good first issue`](docs/project/good-first-issues.md) or open a [Discussion](https://github.com/AdamEddahmouni/nosograph/discussions) before proposing a large change.
 2. Follow the setup below and run the smallest relevant test while you work.
-3. Run `make ci-local` before opening a pull request (`make lint` + `make test-offline` do **not** cover format, locks, licenses, imports, metadata, harvest drift, or serial `-n 0`). Documentation changes should also run `make docs-build`.
+3. Run `make ci-local` before opening a pull request (`make lint` + `make test-offline` do **not** cover format, locks, licenses, imports, metadata, harvest drift, or serial `-n 0`). `make test-integration` needs Redis and uses Celery eager mode like hosted CI (no worker required for that target). Documentation changes should also run `make docs-build`.
 4. Explain the user or research impact, validation performed, and any data/provenance implications in the pull request template.
 
 Documentation-only, source-integration, and disease-curation contributions are welcome; you do not need to modify the application runtime to contribute.

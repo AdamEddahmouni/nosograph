@@ -22,9 +22,10 @@ The release metadata records 2,445 offline tests selected in the v0.2.1 release 
 | Command | Requirement | Purpose |
 |---|---|---|
 | `make test-offline` | Python environment | Fast unit tier without Redis. |
-| `make test-integration` | Redis | Integration behavior across async and persistence boundaries. |
+| `make test-integration` | Redis | Offline integration (fixture-backed). The target sets `CELERY_TASK_ALWAYS_EAGER=true` like hosted CI, so job-lifecycle tests do not need a Celery worker. A live worker is still required for production-shaped async jobs. |
 | `make test-browser` | Playwright Chromium | Deterministic dashboard and Evidence Explorer workflows. |
-| `make typecheck` | Mypy environment | Explicit Makefile file-list ratchet. After PR #102, CI has a strict standalone `typecheck` job (no `continue-on-error`). The Tests aggregator currently requires `lint`, `security`, `test`, and `integration-tests` only — typecheck is not in that `needs:` list. License-check/SBOM runs in the `security` job. `make ci-local` runs lint, locks, license policy, import/metadata/font checks, and serial offline pytest; it does not run typecheck or Playwright. |
+| `make typecheck` | Mypy environment | Explicit Makefile file-list ratchet. After PR #102, CI has a strict standalone `typecheck` job (no `continue-on-error`). The Tests aggregator currently requires `lint`, `security`, `test`, and `integration-tests` only — typecheck is not in that `needs:` list and is **not** merge-blocking. License-check/SBOM runs in the `security` job. `make ci-local` runs lint, locks, license policy, import/metadata/font/harvest checks, and serial offline pytest; it does not run typecheck or Playwright. |
+| `python scripts/check_registry_harvest.py` | Python environment | Harvest catalog vs on-disk disease-module drift (also part of `make ci-local` and the lint job). |
 
 For a single pytest test, pass `-n 0` because the project config enables xdist by default. Browser tests that exercise the dashboard are separate from the offline CLI path.
 

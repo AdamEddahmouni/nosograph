@@ -34,6 +34,12 @@ test-unit:  ## Run unit tests only (fast, offline)
 	python -m pytest tests/ -m "unit" -q --tb=line
 
 test-integration:  ## Run offline integration tests (fixture-backed, no live APIs)
+	# Match hosted CI: eager Celery so job-lifecycle tests do not need a worker.
+	# Redis is still required for the rate-limit and persistence fixtures.
+	CELERY_TASK_ALWAYS_EAGER=true \
+	CELERY_TASK_STORE_EAGER_RESULT=true \
+	CELERY_TASK_EAGER_PROPAGATES=false \
+	DEBUG=true \
 	python -m pytest tests/ -m "integration and not slow" -q --tb=short
 
 test-integration-all:  ## Run integration and slow tests (may hit external APIs)
