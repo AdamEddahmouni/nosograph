@@ -1,8 +1,11 @@
 """Evidence Gatherer HTML Report Generator."""
 
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 
@@ -19,9 +22,9 @@ def escape_html(value):
 
 
 def generate_html_report(
-    gathered: dict,
+    gathered: Mapping[str, Any],
     *,
-    provenance: dict | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
     disease_id: str | None = None,
 ) -> str:
     """Generate multi-source evidence gathering report."""

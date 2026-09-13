@@ -240,8 +240,8 @@ def build_workspace_graph(
 
     # Reuse the existing KG path explanations, preserving pathway node types when
     # the disease pathway catalog identifies an intermediate node.
-    pathway_by_id: dict[str, dict[str, Any]] = {}
-    pathway_by_name: dict[str, dict[str, Any]] = {}
+    pathway_by_id: dict[str, Any] = {}
+    pathway_by_name: dict[str, Any] = {}
     try:
         from med_research.pipeline.knowledge_graph.config import load_pathways
 
@@ -270,17 +270,19 @@ def build_workspace_graph(
         previous = path_candidate_node
         for index, path_id in enumerate(path_ids[1:], start=1):
             label = path_labels[index] if index < len(path_labels) else str(path_id)
-            pathway = pathway_by_id.get(_key(path_id)) or pathway_by_name.get(_key(label))
-            node_type = "pathway" if pathway or "pathway" in label.lower() else "knowledge_graph"
+            matched_pathway = pathway_by_id.get(_key(path_id)) or pathway_by_name.get(_key(label))
+            node_type = (
+                "pathway" if matched_pathway or "pathway" in label.lower() else "knowledge_graph"
+            )
             graph_node = _node_id(node_type, path_id)
             add_node(
                 graph_node,
                 node_type,
-                pathway.get("name", label) if pathway else label,
+                matched_pathway.get("name", label) if matched_pathway else label,
                 subtitle="Knowledge-graph pathway"
                 if node_type == "pathway"
                 else "Knowledge-graph node",
-                description=pathway.get("description", "") if pathway else "",
+                description=matched_pathway.get("description", "") if matched_pathway else "",
                 metadata={"node_id": path_id, "path_position": index, "source": "knowledge graph"},
             )
             relationships = explanation.get("relationship_labels", [])

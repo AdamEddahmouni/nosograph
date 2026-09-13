@@ -45,7 +45,7 @@ class DrugSynergyModule(BasePipelineModule[SynergyResults]):
         results: SynergyResults,
         disease_id: str,
         *,
-        provenance: dict[str, Any] | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.drug_synergy.report import generate_html_report
 

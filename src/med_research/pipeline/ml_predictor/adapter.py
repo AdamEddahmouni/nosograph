@@ -52,7 +52,7 @@ class MlPredictorModule(BasePipelineModule[MlPredictionResult]):
         results: MlPredictionResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.ml_predictor.report import generate_ml_report
 

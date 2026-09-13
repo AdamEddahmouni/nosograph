@@ -71,7 +71,7 @@ class EvidenceWorkspaceModule(BasePipelineModule[EvidenceDossier]):
         results: EvidenceDossier,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.evidence_workspace.report import write_html
 

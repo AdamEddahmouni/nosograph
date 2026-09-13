@@ -1795,7 +1795,7 @@ class TestAPIHardening:
         from med_research.exceptions import MedResearchError
         from med_research.web import error_handlers
 
-        monkeypatch.setattr(error_handlers, "DEBUG", False)
+        monkeypatch.setattr(error_handlers, "DEBUG", False, raising=False)
         response = error_handlers._error_response(500, MedResearchError("secret internal detail"))
         payload = json.loads(response.body)
         assert payload["detail"] == "An internal server error occurred."

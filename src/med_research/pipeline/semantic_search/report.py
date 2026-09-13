@@ -1,8 +1,11 @@
 """Semantic Search HTML Report Generator."""
 
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 
@@ -24,7 +27,7 @@ def generate_semantic_report(
     indexed_count: int,
     disease_id: str = "sle",
     *,
-    provenance: dict | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate semantic search results report."""
     context = disease_context(disease_id)

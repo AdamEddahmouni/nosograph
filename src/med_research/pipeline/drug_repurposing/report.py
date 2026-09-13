@@ -8,10 +8,12 @@ Generates a beautiful standalone HTML report with:
   - Interactive score breakdowns
 """
 
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 
@@ -22,7 +24,7 @@ def generate_html_report(
     G: Any,
     disease_id: str = "sle",
     *,
-    provenance: dict | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate a standalone report for the requested disease."""
 

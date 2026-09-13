@@ -91,7 +91,7 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 | Item | Status |
 |------|--------|
 | mypy ratchet (61 → 45 → 25) | PLANNED |
-| Automated SPDX license report in CI | PLANNED |
+| Automated SPDX license report in CI | COMPLETED (SPDX 2.3 JSON + license gate in CI security job) |
 | PyPI publish workflow | PLANNED |
 
 ---

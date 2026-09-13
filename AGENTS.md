@@ -67,9 +67,9 @@ if it exists only locally or unpushed. GitHub Pages is not the app.
 - Playwright browser tests (`tests/test_evidence_workspace_browser.py`, slow
   tier) need a browser: `python -m playwright install chromium` (one-off; cached
   in `~/.cache/ms-playwright`).
-- Local pre-push gate: `make ci-local` (lint, lock verify, import/metadata/font
-  checks, serial offline pytest). It does **not** run `make typecheck` or
-  Playwright.
+- Local pre-push gate: `make ci-local` (ruff check/format, lock verify,
+  lock-check, license policy audit, import/metadata/font checks, serial offline
+  pytest). It does **not** run `make typecheck` or Playwright.
 
 ### GitHub Actions
 - **Public OSS:** hosted Actions are free on public repositories (standard
@@ -77,13 +77,13 @@ if it exists only locally or unpushed. GitHub Pages is not the app.
   tests run weekly or via `workflow_dispatch`.
 - **Private forks** of a public repo still consume the fork owner's Actions
   quota.
-- `make typecheck` exists (explicit Makefile file list / mypy ratchet). CI has a
-  `typecheck` job (`continue-on-error: true` on current `master`, running
-  `make typecheck || true`). The Tests aggregator (`required-tests`) currently
-  requires `lint`, `security`, `test`, and `integration-tests` only — typecheck
-  is **not** a blocking Tests aggregator gate on `master`. Open PR #102 proposes
-  making license SBOM + typecheck blocking. Published package version remains
-  `0.2.1`.
+- After PR #102: `make typecheck` is an explicit Makefile file-list ratchet.
+  CI has a standalone `typecheck` job that runs `make typecheck` strictly (no
+  `continue-on-error` / `|| true`). The Tests aggregator (`required-tests`)
+  still needs `lint`, `security`, `test`, and `integration-tests` only —
+  typecheck is **not** in that `needs:` list. License policy audit and SPDX
+  SBOM generation run in the `security` job (which the aggregator does
+  require). Published package version remains `0.2.1`.
 - `disease validate --all --strict` is **not** a merge gate: the 10k scaffold
   registry is expected to exit non-zero. Hosted CI validates the original
   curated eight (`sle` … `ad`) only.

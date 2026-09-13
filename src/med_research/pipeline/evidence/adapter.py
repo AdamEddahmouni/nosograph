@@ -78,7 +78,7 @@ class EvidenceGathererModule(BasePipelineModule[EvidenceGatherResult]):
         results: EvidenceGatherResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.evidence.gatherer_report import generate_html_report
 
@@ -145,7 +145,7 @@ class LLMExtractorModule(BasePipelineModule[EvidenceExtractionResult]):
         results: EvidenceExtractionResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.evidence.extractor_report import generate_html_report
 
@@ -232,7 +232,7 @@ class EvidenceMonitorModule(BasePipelineModule[EvidenceMonitorResult]):
         results: EvidenceMonitorResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.evidence.monitor import compare_snapshots
         from med_research.pipeline.evidence.monitor_report import generate_html_report

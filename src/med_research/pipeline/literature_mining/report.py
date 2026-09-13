@@ -7,9 +7,12 @@ Generates a standalone HTML report showing:
   - Top articles ranked by knowledge graph relevance
 """
 
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 
@@ -19,7 +22,7 @@ def generate_literature_report(
     candidates: list,
     disease_id: str = "sle",
     *,
-    provenance: dict | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate an HTML report from disease-specific literature results."""
 

@@ -54,10 +54,8 @@ jobs:
       - name: Check public metadata consistency
         run: python scripts/check_public_metadata.py
 
-  # Non-blocking until TECHNICAL_DEBT_ISSUES.md typing backlog is cleared.
   typecheck:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -75,8 +73,8 @@ jobs:
           pip install -r requirements-dev-lock.txt
           pip install -e .
 
-      - name: Run mypy (informational)
-        run: make typecheck || true
+      - name: Run mypy
+        run: make typecheck
 
   security:
     runs-on: ubuntu-latest
@@ -103,6 +101,24 @@ jobs:
         run: |
           bandit -c .bandit -r src/med_research -ll \
             -x tests,src/med_research/diseases,src/med_research/pipeline/dossier
+
+      - name: Check license bill-of-materials and generate SPDX SBOM
+        run: |
+          python scripts/check_licenses.py \
+            --lock requirements-lock.txt \
+            --spdx-out dist/sbom.spdx.json \
+            --summary-out dist/sbom-summary.md \
+            --github-summary
+
+      - name: Upload SPDX SBOM artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: spdx-sbom
+          path: |
+            dist/sbom.spdx.json
+            dist/sbom-summary.md
+          if-no-files-found: error
+          retention-days: 30
 
   test:
     runs-on: ubuntu-latest

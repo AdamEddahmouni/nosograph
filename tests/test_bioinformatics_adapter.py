@@ -47,6 +47,68 @@ class TestGwasAdapter(BioinformaticsAdapterContract):
     provenance_sources = ["gwas_catalog"]
     provenance_scoring = {"analysis": "gwas_crossref"}
 
+    @pytest.fixture(autouse=True)
+    def _offline_gwas_catalog(self, monkeypatch):
+        """Exercise the real engine and adapter without calling GWAS Catalog."""
+        from med_research.cache import NS_GWAS
+        from med_research.cache import cache_get as real_cache_get
+
+        offline_cache = {
+            "gwas_results": {
+                "gene_associations": {
+                    "PTPN22": {
+                        "n_studies": 4,
+                        "best_p_value": 1e-10,
+                        "studies": [
+                            {
+                                "accession": "GCST900010",
+                                "title": "RA GWAS meta-analysis",
+                                "pubmed_id": "12345678",
+                                "p_value": 1e-10,
+                            }
+                        ],
+                    },
+                },
+                "total_studies_analyzed": 4,
+                "total_associations": 42,
+                "study_details": [],
+                "snp_data": [],
+            },
+            "crossref": {
+                "validated": {
+                    "PTPN22": {
+                        "gene_id": "PTPN22",
+                        "name": "Protein Tyrosine Phosphatase Non-Receptor Type 22",
+                        "category": "Immune Signaling",
+                        "odds_ratio": 6.0,
+                        "chromosome": "1p13.2",
+                        "n_gwas_studies": 4,
+                        "gwas_best_p": 1e-10,
+                        "gwas_studies": [],
+                    }
+                },
+                "novel": {},
+                "missing": {},
+                "n_validated": 1,
+                "n_novel": 0,
+                "n_missing": 0,
+            },
+        }
+
+        def fake_cache_get(namespace, disease_id, *args, **kwargs):
+            if namespace == NS_GWAS:
+                return offline_cache
+            return real_cache_get(namespace, disease_id, *args, **kwargs)
+
+        monkeypatch.setattr(
+            "med_research.pipeline.bioinformatics.gwas.search_gwas_studies",
+            lambda *_args, **_kwargs: [],
+        )
+        monkeypatch.setattr(
+            "med_research.pipeline.bioinformatics.gwas.cache_get",
+            fake_cache_get,
+        )
+
     def test_run_matches_engine(self):
         module = self.module_cls()
         disease_id = self.disease_id

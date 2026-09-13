@@ -1,4 +1,4 @@
-"""Evidence Gatherer service layer."""
+from typing import cast
 
 from med_research.pipeline.results import EvidenceGatherResult
 from med_research.web.services.registry_service import dispatch_sync_module
@@ -23,4 +23,4 @@ def run_evidence_gather(
     )
     if "all_results" in result and "results" not in result:
         result["results"] = result["all_results"]
-    return result
+    return cast(EvidenceGatherResult, result)
