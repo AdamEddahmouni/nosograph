@@ -58,7 +58,12 @@ When exposing the API beyond localhost:
 - Set `DEBUG=false` and a strong `API_KEY`
 - Set `AUTH_SESSION_SECRET` (or rely on `API_KEY` as fallback) for workspace sessions
 - Restrict `CORS_ORIGINS` to trusted front-end origins
+- Keep `DASHBOARD_CSP_MODE=enforce` unless you have a documented reason to disable it
+- Leave `RATE_LIMIT_FAIL_CLOSED=false` unless you prefer 429s during a Redis outage
+- Leave `DEMO_MODE=false` unless you are operating an intentional read-only instance
 - Place the API behind a reverse proxy with TLS
+- Do not treat public GET biomedical APIs as authenticated; they stay public when `API_KEY` is set
 - Do not commit `.env` files or API keys to version control
+- This repository does not establish HIPAA, GDPR, or FDA compliance
 
 See [docs/deployment.md](docs/deployment.md) and [docs/api-reference.md](docs/api-reference.md) for environment variable reference.

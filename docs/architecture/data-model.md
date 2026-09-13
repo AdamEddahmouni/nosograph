@@ -73,7 +73,7 @@ SQLite (default `data/evidence_workspace.sqlite3`):
 
 ## Corpus statistics (v0.2.1 snapshot)
 
-- **10,407** registry modules — broad registry coverage, not equivalent to curation depth
+- **10,404** discoverable modules — broad registry coverage, not equivalent to curation depth (see [coverage](../data/coverage.md))
 - **8** CI-validated curated diseases (original set)
-- **{{NG_L2_STRICT_VALIDATED}}** strict L2-validated modules
-- **2** L3 expression-curated modules (sampled status report; not a full-corpus curation count)
+- **{{NG_L2_STRICT_VALIDATED}}** strict L2-validated modules (n=500 sample)
+- **2** L3 expression-curated modules (n=500 sample; consensus membership is 23)

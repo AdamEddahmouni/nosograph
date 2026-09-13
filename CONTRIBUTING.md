@@ -14,7 +14,7 @@ Thank you for helping improve **NosoGraph — Disease Intelligence. Connected.**
 
 1. Choose a scoped [`good first issue`](docs/project/good-first-issues.md) or open a [Discussion](https://github.com/AdamEddahmouni/nosograph/discussions) before proposing a large change.
 2. Follow the setup below and run the smallest relevant test while you work.
-3. Run `make ci-local` before opening a pull request; documentation changes should also run `make docs-build`.
+3. Run `make ci-local` before opening a pull request (`make lint` + `make test-offline` do **not** cover format, locks, licenses, imports, metadata, harvest drift, or serial `-n 0`). Documentation changes should also run `make docs-build`.
 4. Explain the user or research impact, validation performed, and any data/provenance implications in the pull request template.
 
 Documentation-only, source-integration, and disease-curation contributions are welcome; you do not need to modify the application runtime to contribute.
@@ -59,9 +59,9 @@ See [README.md](README.md) for alternative install paths and CLI usage.
   make ci-local
   ```
 
-  (`make lint` + `make test-offline` cover most of the same checks.)
+  Prefer `make ci-local` over `make lint` + `make test-offline` alone (those skip format, lock, license, import, metadata, and harvest checks).
 - Fill out the pull request template checklist
-- Ensure GitHub Actions `Tests` passes on your PR (public repos receive free hosted runners)
+- Ensure GitHub Actions `Tests` passes on your PR (public repos receive free hosted runners). The standalone `typecheck` job is strict but **not** currently merge-blocking.
 
 ## Security
 
@@ -78,7 +78,7 @@ make test-offline
 Equivalent:
 
 ```bash
-python -m pytest tests/ -m "unit and not network" -q
+python -m pytest tests/ -m "unit and not network and not slow" -q
 ```
 
 Fast unit tests (excluding `slow` and `integration`):

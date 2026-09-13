@@ -5,7 +5,7 @@ description: A repository-aligned view of NosoGraph's sources, domain stores, ev
 
 # Architecture overview
 
-NosoGraph is a Python research platform whose local runtime connects source data to structured disease and biomedical records, evidence-aware services, and user-facing interfaces. This page provides the developer mental model; the [API reference](../api-reference.md) and [data model](data-model.md) provide the operational details.
+NosoGraph is a Python research platform whose local runtime connects source data to structured disease and biomedical records, evidence-aware services, and user-facing interfaces. **GitHub Pages is the MkDocs documentation site, not this runtime.** This page provides the developer mental model; the [API reference](../api-reference.md) and [data model](data-model.md) provide the operational details.
 
 > **Research scope.** The platform exposes computational research artifacts. It is not a diagnostic system or clinical decision-support system.
 

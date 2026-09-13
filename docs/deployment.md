@@ -5,9 +5,25 @@ description: Operate NosoGraph locally or on a private server with Docker Compos
 
 # Self-Hosted Deployment
 
-This is the canonical deployment guide for local or privately operated NosoGraph instances. A public hosted demo is not deployed in v0.2.1. For first-time local setup, use [Installation](getting-started/install.md); for API routes, use the [API reference](api-reference.md).
+This is the canonical deployment guide for local or privately operated NosoGraph instances. **A public hosted demo is not deployed.** GitHub Pages is documentation only. For first-time local setup, use [Installation](getting-started/install.md); for API routes, use the [API reference](api-reference.md).
 
-This guide covers running NosoGraph locally or on a private server with Docker Compose. For API details, see [api-reference.md](api-reference.md).
+This platform is research software. It is not HIPAA/GDPR/FDA certified by this repository.
+
+## Security assumptions (self-host)
+
+These are practical defaults, not a compliance program:
+
+| Control | Default | Intent |
+|---------|---------|--------|
+| `DEBUG=false` | Requires `API_KEY` | Fail-fast outside local debug |
+| Dashboard CSP | `DASHBOARD_CSP_MODE=enforce` | Dashboard + satellite HTML. Allows `'self'` plus cdnjs for 3Dmol/Cytoscape. Pipeline HTML reports may still load Google Fonts and are **not** covered by this document CSP. |
+| Rate limit | 60 req / 60s / IP | Redis when reachable; **in-memory fallback** if Redis is down. `RATE_LIMIT_FAIL_CLOSED=false` is **intentional** so a Redis outage does not make the app unusable. Set `true` only if you would rather 429 than fail open. |
+| GET APIs | Public except `PROTECTED_PREFIXES` | When `API_KEY` is set, mutations and `/api/jobs`, `/api/llm/extract`, `/api/evidence/gather`, `/api/system/cache` require the key. Other GETs stay public **by design** for local research. Do not assume this is safe on the public internet. |
+| `DEMO_MODE` | `false` | Opt-in read-only guard. Not a hosted demo. |
+| Researcher auth | `AUTH_MODE=local` | Cookie sessions or trusted proxy. Not SSO. DEBUG uses a weak session fallback — do not expose DEBUG. |
+| Redis in Compose | published `6379:6379` | Bind to localhost in production; do not expose Redis to the internet. |
+
+No new authentication system is introduced. This is not a multi-tenant SaaS.
 
 ## Prerequisites
 
@@ -44,10 +60,13 @@ This guide covers running NosoGraph locally or on a private server with Docker C
 | `AUTH_SESSION_SECRET` | empty | Random secret for workspace sessions |
 | `CORS_ORIGINS` | localhost origins | Your front-end origin(s) only |
 | `CELERY_BROKER_URL` | `redis://localhost:6379/0` | Internal Redis URL |
+| `DASHBOARD_CSP` / `DASHBOARD_CSP_MODE` | `true` / `enforce` | `off` only if you must disable document CSP |
+| `RATE_LIMIT_FAIL_CLOSED` | `false` | `true` only if Redis outage should 429 instead of in-memory fallback |
+| `DEMO_MODE` | `false` | `true` only for an intentional read-only instance |
 | `OPENAPI_ENABLED` | follows `DEBUG` | `false` to hide `/api/docs` |
 | `BIOMEDICAL_DB_PATH` | `<repo>/data/biomedical.sqlite3` | Persistent volume path for the universal biomedical store |
 
-See [.env.example](https://github.com/AdamEddahmouni/nosograph/blob/master/.env.example) for the full list.
+See [.env.example](https://github.com/AdamEddahmouni/nosograph/blob/master/.env.example) for the full list. `DEMO_MODE` must stay false unless you are operating an intentional read-only instance. There is no hosted public app.
 
 ## Authentication modes
 

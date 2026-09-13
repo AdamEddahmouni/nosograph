@@ -21,9 +21,11 @@
 
 ## Validation
 
+- [ ] `make ci-local` (preferred local gate)
 - [ ] `make lint` (or N/A for docs-only)
 - [ ] `make test-offline` (or N/A for docs-only)
 - [ ] `python scripts/check_public_metadata.py` if README, citation, release, or public copy changed
+- [ ] `python scripts/check_registry_harvest.py` if disease modules or `disease_registry.json` changed
 - [ ] `make docs-build` if documentation, theme, or public-site files changed
 - [ ] Additional:
 
