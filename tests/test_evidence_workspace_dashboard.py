@@ -210,8 +210,21 @@ def test_dashboard_csp_mode_adds_an_enforcing_policy(monkeypatch):
     policy = response.headers["content-security-policy"]
     assert "script-src 'self'" in policy
     assert "script-src-attr 'none'" in policy
+    assert "cdnjs.cloudflare.com" in policy
     assert "ws:" in policy
     assert "unsafe-eval" not in policy
+
+
+def test_dashboard_csp_covers_satellite_html(monkeypatch):
+    from med_research.web import middleware
+    from med_research.web.main import app
+
+    monkeypatch.setattr(middleware, "DASHBOARD_CSP_MODE", "enforce")
+    with TestClient(app) as client:
+        response = client.get("/pgx.html")
+
+    assert response.status_code == 200
+    assert "content-security-policy" in response.headers
 
 
 def test_workspace_task_rejects_incomplete_disease_configuration(monkeypatch):

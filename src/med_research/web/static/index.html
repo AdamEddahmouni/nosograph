@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="/lib/tom-select/tom-select.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div id="app">
 
         <!-- ── Navigation ───────────────────────────────────────────── -->
+        <header>
         <nav class="top-nav" id="top-nav">
             <div class="nav-brand">
                 <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">☰</button>
-                <img class="nav-logo" src="/brand/symbol.svg" alt="">
+                <img class="nav-logo" src="/brand/symbol.svg" alt="NosoGraph">
                 <span class="nav-title">Noso<span>Graph</span></span>
             </div>
             <div class="nav-menu" id="nav-menu">
@@ -43,12 +45,13 @@
                     <a href="/agent.html" class="nav-link">Target Agent</a>
                     <a href="/pgx.html" class="nav-link">PGx</a>
                     <a href="/api/docs" class="nav-link" target="_blank" rel="noopener">API Docs</a>
-                    <a href="/api/health" class="nav-link nav-status" id="api-status" title="API Status">●</a>
+                    <a href="/api/health" class="nav-link nav-status" id="api-status" title="API Status" aria-label="API status">●</a>
                 </div>
             </div>
         </nav>
+        </header>
 
-        <div class="container">
+        <main id="main-content" class="container">
 
             <!-- ── Hero ──────────────────────────────────────────────── -->
             <div class="hero">
@@ -1296,6 +1299,8 @@
                 </div>
             </div>
         </div>
+
+        </main>
 
         <!-- ── Footer ──────────────────────────────────────────────── -->
         <footer>

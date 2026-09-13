@@ -135,6 +135,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/main.py \
 	src/med_research/web/error_handlers.py \
 	src/med_research/web/middleware.py \
+	src/med_research/web/demo_mode.py \
 	src/med_research/web/rate_limit.py \
 	src/med_research/web/models/adverse_events.py \
 	src/med_research/web/models/bioinformatics.py \

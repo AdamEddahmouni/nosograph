@@ -36,28 +36,30 @@
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="app-layout">
     <header class="satellite-header">
       <div class="satellite-heading">
-        <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt=""><span>Noso<span>Graph</span></span></a>
-        <h2 class="satellite-title">Clinical Trial Patient Matching Engine</h2>
+        <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
+        <p class="satellite-title">Clinical Trial Patient Matching Engine</p>
       </div>
-      <div class="satellite-links">
-        <a href="/lead_opt.html">Lead Opt & ADMET</a>
+      <nav class="satellite-links" aria-label="Research tools">
+        <a href="/lead_opt.html">Lead Opt &amp; ADMET</a>
         <a href="/spatial.html">Spatial Omics</a>
         <a href="/pgx.html">PGx</a>
         <a href="/agent.html">Target Agent</a>
-      </div>
+      </nav>
     </header>
 
-    <main class="main-content" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
-      <p id="research-disclaimer" role="note" style="background:#fff7ed;border:1px solid #fdba74;color:#9a3412;padding:0.75rem 1rem;border-radius:6px;margin:0 0 1.25rem;">
+    <main id="main-content" class="main-content" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
+      <p id="research-disclaimer" class="research-disclaimer" role="note">
         Research simulation only. Use synthetic or de-identified research vectors.
         Do not upload protected health information or real patient records.
         Match scores are computational hypotheses, not eligibility determinations or care advice.
         Submitted vectors are not persisted.
       </p>
-      <div style="display:grid;grid-template-columns:360px 1fr;gap:2rem;">
+      <h1 class="workspace-sr-only">Clinical trial patient matching</h1>
+      <div class="satellite-layout">
         <!-- Left Column: Patient Profile Form -->
         <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
           <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Patient Clinical Vector</h3>

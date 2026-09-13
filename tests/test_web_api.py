@@ -1714,6 +1714,15 @@ class TestAPIHardening:
             )
         assert resp.status_code == 200
 
+    def test_get_health_and_diseases_remain_public_when_api_key_set(self, client, monkeypatch):
+        import med_research.web.middleware as mw
+
+        monkeypatch.setattr(mw, "API_KEY", "test-secret")
+        health = client.get("/api/health")
+        diseases = client.get("/api/system/diseases")
+        assert health.status_code == 200
+        assert diseases.status_code == 200
+
     def test_rate_limit_middleware_returns_429(self, client, monkeypatch):
         import med_research.web.middleware as mw
 
