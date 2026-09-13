@@ -4641,6 +4641,7 @@ async function checkAPIStatus() {
             indicator.textContent = '●';
             indicator.className = 'nav-link nav-status online';
             indicator.title = 'API Connected';
+            indicator.setAttribute('aria-label', 'API status: connected');
         }
         if (statApi) {
             statApi.textContent = 'Online';
@@ -4654,6 +4655,7 @@ async function checkAPIStatus() {
             indicator.textContent = '●';
             indicator.className = 'nav-link nav-status offline';
             indicator.title = 'API Disconnected';
+            indicator.setAttribute('aria-label', 'API status: disconnected');
         }
         if (statApi) {
             statApi.textContent = 'Offline';

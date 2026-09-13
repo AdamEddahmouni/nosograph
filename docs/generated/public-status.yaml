@@ -1,19 +1,57 @@
 # Canonical public metrics for README / docs / metadata checks.
-# Update this file in the same release as pyproject.toml and CITATION.cff.
+# Full-corpus counts: python scripts/refresh_public_status.py
+# Harvest catalog:     python scripts/reconcile_harvest_registry.py
+# Consistency gate:    python scripts/check_public_metadata.py
+#                      python scripts/check_registry_harvest.py
+#
+# Distinct counts are not interchangeable:
+#   discoverable_modules     = Disease.list_all() (excludes blocked slugs)
+#   on_disk_module_dirs      = diseases/* with __init__.py + config.py (includes blocked)
+#   harvest_registry_entries = unique ids in disease_registry.json (OT harvest catalog)
+#   registry_modules          = public headline = discoverable_modules
+#
+# Historical 10,407 was discoverable (10,404) plus the 3-id blocklist
+# (including the zz_scaffold_test fixture that is not a committed directory).
+# It is not a live counter.
 version: "0.2.1"
 maturity: PUBLIC_ALPHA
 release_date: "2026-08-22"
 repository: "https://github.com/AdamEddahmouni/nosograph"
 python: ["3.11", "3.12"]
 metrics:
-  registry_modules: 10407
+  registry_modules: 10404
+  discoverable_modules: 10404
+  on_disk_module_dirs: 10406
+  harvest_registry_entries: 10391
   l2_strict_validated: 88
   l3_expression_curated: 2
+  l3_consensus_membership: 23
   reference_tier: 6
   ci_validated: 8
-  analysis_pipelines: "40+"
+  registered_pipeline_adapters: 25
+  analysis_pipelines: 25
   offline_tests: 2445
+metric_kind:
+  registry_modules: full-corpus
+  discoverable_modules: full-corpus
+  on_disk_module_dirs: full-corpus
+  harvest_registry_entries: full-corpus
+  l2_strict_validated: sample
+  l3_expression_curated: sample
+  l3_consensus_membership: full-corpus
+  reference_tier: full-corpus
+  ci_validated: full-corpus
+  registered_pipeline_adapters: full-corpus
+  analysis_pipelines: full-corpus
+  offline_tests: snapshot
+metric_scope:
+  l2_strict_validated: "n=500 alphabetical Disease.list_all() sample from the v0.2.1 status report; not a full-corpus L2-strict count"
+  l3_expression_curated: "n=500 alphabetical sample; only ad and acute_myeloid_leukemia of the 23 CURATED_CONSENSUS_DISEASES members fall in that window. compute_tier() assigns L3 to all 23 consensus members (l3_consensus_membership)."
+  offline_tests: "v0.2.1 release suite selected by the offline pytest gate; not re-collected at every SHA"
+  analysis_pipelines: "Registered BasePipelineModule adapters from pipeline.registry.list_modules(); not every package under pipeline/"
 notes:
   - Registry coverage is not equivalent to curation depth.
-  - L3 count is from the sampled status report; it is not a full-corpus curation count.
+  - L2=88 and L3=2 are n=500 samples. Do not read them as full-corpus curation counts.
+  - l3_consensus_membership is the full CURATED_CONSENSUS_DISEASES set (23).
   - Offline test count is the v0.2.1 release suite (2445 unit tests selected by the offline gate).
+  - analysis_pipelines is the registered adapter catalog (25), replacing the older "40+" package-count slogan.

@@ -6,10 +6,22 @@ from fastapi import Request
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
-from starlette.types import ASGIApp
+from starlette.types import ASGIApp, Receive, Scope, Send
 
 from med_research.web.api_key import extract_api_key_from_headers
-from med_research.web.config import AUTH_TRUSTED_PROXY_IPS, DASHBOARD_CSP_MODE, DASHBOARD_CSP_POLICY
+from med_research.web.config import (
+    AUTH_TRUSTED_PROXY_IPS,
+    DASHBOARD_CSP_MODE,
+    DASHBOARD_CSP_PATHS,
+    DASHBOARD_CSP_POLICY,
+)
+from med_research.web.demo_mode import (
+    DEMO_WS_CLOSE_CODE,
+    DEMO_WS_CLOSE_REASON,
+    demo_read_only_response,
+    is_demo_allowed_path,
+    is_demo_mode,
+)
 from med_research.web.rate_limit import (
     InMemoryRateLimitStore,
     RateLimitStore,
@@ -44,22 +56,64 @@ def _get_client_ip(request: Request) -> str:
 MAX_REQUEST_BODY_BYTES = int(os.environ.get("MAX_REQUEST_BODY_BYTES", str(10 * 1024 * 1024)))
 
 
+class DemoModeMiddleware:
+    """Deny-by-default public demo policy for HTTP and WebSocket.
+
+    Inactive unless ``DEMO_MODE`` is an explicit opt-in. Pure ASGI so
+    WebSocket upgrades are rejected before route handlers.
+    """
+
+    def __init__(self, app: ASGIApp) -> None:
+        self.app = app
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
+        if not is_demo_mode():
+            await self.app(scope, receive, send)
+            return
+
+        if scope["type"] == "websocket":
+            await self._reject_websocket(receive, send)
+            return
+
+        if scope["type"] == "http":
+            path = scope.get("path") or "/"
+            method = scope.get("method") or "GET"
+            if is_demo_allowed_path(str(path), str(method)):
+                await self.app(scope, receive, send)
+                return
+            await demo_read_only_response()(scope, receive, send)
+            return
+
+        await self.app(scope, receive, send)
+
+    async def _reject_websocket(self, receive: Receive, send: Send) -> None:
+        message = await receive()
+        if message["type"] == "websocket.connect":
+            await send(
+                {
+                    "type": "websocket.close",
+                    "code": DEMO_WS_CLOSE_CODE,
+                    "reason": DEMO_WS_CLOSE_REASON,
+                }
+            )
+
+
 class DashboardCSPMiddleware(BaseHTTPMiddleware):
-    """Attach the opt-in CSP to the dashboard document only.
+    """Attach CSP to the dashboard and satellite HTML documents.
 
     API responses and downloaded reports keep their existing headers. The
-    policy blocks inline script/event attributes while allowing the dashboard's
-    external local JavaScript, WebSocket progress stream, and Google font CSS.
+    default policy allows self-hosted JS/CSS/fonts plus the cdnjs scripts
+    already referenced by the dashboard (3Dmol, Cytoscape).
     """
 
     async def dispatch(
         self, request: Request, call_next: Callable[[Request], Awaitable[Response]]
     ) -> Response:
         response = await call_next(request)
-        if DASHBOARD_CSP_MODE in {"enforce", "report-only"} and request.url.path in {
-            "/",
-            "/index.html",
-        }:
+        if (
+            DASHBOARD_CSP_MODE in {"enforce", "report-only"}
+            and request.url.path in DASHBOARD_CSP_PATHS
+        ):
             header = (
                 "Content-Security-Policy"
                 if DASHBOARD_CSP_MODE == "enforce"
@@ -90,10 +144,13 @@ class RequestBodySizeLimitMiddleware(BaseHTTPMiddleware):
 
 
 class AuthMiddleware(BaseHTTPMiddleware):
-    """Simple API key check on protected write/mutation endpoints.
+    """API key check on protected write/mutation endpoints.
 
-    If API_KEY is not set, authentication is disabled (dev mode).
-    All GET/read endpoints remain public regardless.
+    If API_KEY is not set, authentication is disabled (local/dev).
+
+    When API_KEY is set, mutations and the prefixes in PROTECTED_PREFIXES
+    require the key. Other GET APIs stay public **by design** for local and
+    self-host research use. This is not a hosted multi-tenant auth system.
     """
 
     def __init__(self, app: ASGIApp) -> None:

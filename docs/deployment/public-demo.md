@@ -26,4 +26,4 @@ Showcase `sle`, `ra`, `ad` because they are CI-validated with richer fixtures—
 
 ## Next action
 
-Implement `DEMO_MODE` in a dedicated P2-aligned issue; do not ship an unsafe open proxy.
+`DEMO_MODE` is implemented as a default-off opt-in on this branch. Do not deploy a public instance without a snapshot dataset, abuse budget, and operator authorization. Do not ship an unsafe open proxy.

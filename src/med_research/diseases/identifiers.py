@@ -63,6 +63,15 @@ def _load_registry_indexes() -> tuple[dict[str, str], dict[str, str], frozenset[
     mondo_index: dict[str, str] = {}
     efo_index: dict[str, str] = {}
     slugs: set[str] = set()
+
+    def _prefer_ci(index: dict[str, str], key: str, slug: str) -> None:
+        existing = index.get(key)
+        if existing is None:
+            index[key] = slug
+            return
+        if slug in CI_VALIDATED_DISEASES and existing not in CI_VALIDATED_DISEASES:
+            index[key] = slug
+
     for entry in load_disease_registry():
         slug = sanitize_id(entry.get("id", ""))
         if not slug:
@@ -70,10 +79,10 @@ def _load_registry_indexes() -> tuple[dict[str, str], dict[str, str], frozenset[
         slugs.add(slug)
         mondo = str(entry.get("mondo_id") or "").strip().upper()
         if mondo.startswith("MONDO:"):
-            mondo_index[mondo] = slug
+            _prefer_ci(mondo_index, mondo, slug)
         efo = str(entry.get("efo_id") or "").strip().upper().replace("EFO:", "EFO_")
         if efo.startswith("EFO_"):
-            efo_index[efo] = slug
+            _prefer_ci(efo_index, efo, slug)
 
     _registry_slug_by_mondo = mondo_index
     _registry_slug_by_efo = efo_index

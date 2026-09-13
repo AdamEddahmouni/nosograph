@@ -5,13 +5,13 @@ description: Frequently asked questions about NosoGraph scope, data, citation, a
 
 # FAQ
 
-**What is NosoGraph?** Disease Intelligence. Connected. Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.
+**NosoGraph v0.2.1.** Disease Intelligence. Connected. Open-source research software for connecting disease knowledge, evidence, and provenance across biomedical sources.
 
 **Who is it for?** Researchers, developers, students, curators, and institutions evaluating open research software.
 
 **Is NosoGraph medical advice?** No.
 
-**How many disease modules are in the registry?** 10,407 registry modules in v0.2.1, mostly scaffolds; 88 pass strict L2 validation. Registry breadth is not "supported diseases." Counts: [public-status.yaml](../generated/public-status.yaml).
+**How many disease modules are in the registry?** 10,404 discoverable modules (`Disease.list_all()`) in the current snapshot; 10,406 on-disk directories including two blocked slugs; 10,391 harvest-catalog ids. Public L2=88 and L3=2 are an **n=500 sample**. Registry breadth is not "supported diseases." Counts: [public-status.yaml](../generated/public-status.yaml) and [coverage](../data/coverage.md).
 
 **Are all diseases equally curated?** No. Registry ≠ curation depth.
 

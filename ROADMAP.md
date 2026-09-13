@@ -2,6 +2,8 @@
 
 Status key: **STABLE** | **BETA** | **EXPERIMENTAL** | **PROTOTYPE** | **PLANNED** | **NOT_IMPLEMENTED**
 
+Use these labels honestly: **implemented** (code on `master`), **tested**, **CI-enforced**, **merge-blocking**, **documented**, **deployed**, **publicly available**. Related code existing is not “done.”
+
 ## Current release (v0.2.1 — stabilization)
 
 Included in v0.2.1 (2026-08-22; backward-compatible stabilization patch):
@@ -32,13 +34,13 @@ Shipped in v2.3.0 (2026-08-21):
 
 - [x] Disease-general core (explicit disease selection, identifier resolution)
 - [x] Canonical `nosograph` CLI alias (legacy `med-research` retained)
-- [x] Batch strict validation and curation tiers (88/88 L2 strict-valid)
+- [x] Batch strict validation and curation tiers
 - [x] NosoGraph Compare initial vertical slice (engine + API + dashboard panel)
 - [x] Claim/evidence/provenance API traceability (golden trace)
 - [x] Source-sync framework + Open Targets dry-run (hosted workflow proven)
 - [x] P1-0 hosted CI baseline
 
-**Maturity:** PUBLIC_ALPHA · Registry ~10,407 scaffolds ≠ deep curation.
+**Maturity:** PUBLIC_ALPHA · ~10,404 discoverable modules, mostly scaffolds ≠ deep curation. Public L2=88 / L3=2 are an n=500 sample.
 
 Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadmap-assessment.md) · Engineering plan: [P2 master plan](docs/roadmaps/p2-master-plan.md)
 
@@ -50,11 +52,11 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 | Item | Target release | Status |
 |------|----------------|--------|
-| Evidence Explorer (claim → evidence → provenance → source) | v0.1.0 | INCLUDED_IN_V0.1.0 |
-| Evidence Quality Model (structured dimensions) | v0.1.0 | INCLUDED_IN_V0.1.0 |
-| Playwright / UI reliability fixes | v0.1.0 | INCLUDED_IN_V0.1.0 (hosted validated) |
+| Evidence Explorer (claim → evidence → provenance → source) | v0.1.0 | INCLUDED_IN_V0.1.0 (implemented, tested, documented; needs a local biomedical store) |
+| Evidence Quality Model (structured dimensions) | v0.1.0 | INCLUDED_IN_V0.1.0 (code + heuristics; ADR-001 file is still missing) |
+| Playwright / UI reliability fixes | v0.1.0 | INCLUDED_IN_V0.1.0 (hosted slow suite, not merge-blocking) |
 | NosoGraph Compare V2 | v0.2.0 | RELEASED_IN_V0.2.0; UI, exports, drill-down, API, and Playwright coverage complete |
-| Tier-gated Atlas navigation | v0.2.0 | PLANNED |
+| Tier-gated Atlas navigation | v0.2.0 | PLANNED (v0.2.0 shipped without Atlas) |
 
 ---
 
@@ -62,12 +64,12 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 | Item | Status |
 |------|--------|
-| Public read-only demo (`DEMO_MODE`, safe dataset) | PLANNED |
-| Source sync expansion (HPOA, MONDO, ClinicalTrials.gov) | PLANNED |
-| Phenopacket export prototype | PLANNED |
+| Public read-only demo (`DEMO_MODE`, safe dataset) | `DEMO_MODE` **implemented** as a local/self-host opt-in (default off). **Not deployed.** No hosted public app. Snapshot dataset / `nosograph demo` still PLANNED. |
+| Source sync expansion (HPOA, MONDO, ClinicalTrials.gov) | Importers exist; **sync registration** still PLANNED (Open Targets is the registered sync source) |
+| Phenopacket export prototype | PLANNED / `NOT_IMPLEMENTED` |
 | Python SDK (OpenAPI-generated) | PLANNED |
-| Literature intelligence foundation | PLANNED |
-| Deep reference disease curation (L3) | PLANNED |
+| Literature intelligence foundation | **Implemented** as `literature_mining` + workspace PubMed connectors (tested in unit/integration as applicable). Productized “intelligence layer” still PLANNED. |
+| Deep reference disease curation (L3) | Consensus membership **23** (code). Public L3=2 is an n=500 sample. Full-corpus L3 depth still PLANNED. |
 
 ---
 
@@ -77,12 +79,12 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 |------|--------|
 | Contradiction engine (contextual disagreement) | PLANNED |
 | Knowledge-gap engine | PLANNED |
-| Research Workbench (full investigations) | PLANNED |
+| Research Workbench (full investigations) | PLANNED (Evidence Workspace is a precursor) |
 | Temporal disease trajectories | PLANNED |
 | Computational model registry | NOT_IMPLEMENTED |
-| Package rename (`med-research` → `nosograph` on PyPI) | PLANNED before v1.0.0 |
-| Official NosoGraph logo & public documentation site | INCLUDED_IN_V0.1.0 |
-| GitHub Discussions Q&A | PLANNED (seed copy in docs/project/github-discussions-seed.md) |
+| Package rename (`med-research` → `nosograph` on PyPI) | PLANNED before v1.0.0; PyPI name/sunset **not decided** |
+| Official NosoGraph logo & public documentation site | INCLUDED_IN_V0.1.0 (MkDocs on GitHub Pages — **docs only**, not the app) |
+| GitHub Discussions Q&A | GitHub Discussions **enabled**. In-product community posting **NOT_IMPLEMENTED**. Seed copy still PLANNED as a product surface. |
 
 ---
 
@@ -90,9 +92,12 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 | Item | Status |
 |------|--------|
-| mypy ratchet (61 → 45 → 25) | PLANNED |
-| Automated SPDX license report in CI | COMPLETED (SPDX 2.3 JSON + license gate in CI security job) |
-| PyPI publish workflow | PLANNED |
+| mypy ratchet | **Implemented and CI-enforced** on an explicit 170-file Makefile list (`make typecheck` job, strict). **Not merge-blocking**: the job is not in the `Tests` aggregator `needs:` list and is not a ruleset required check. Issue #55 remains open. |
+| Automated SPDX license report in CI | **Completed and CI-enforced** (security job, required by `Tests` aggregator). GitHub issue #59 may still be open as a tracker leftover. |
+| PyPI publish workflow | PLANNED (#60). Neither `med-research` nor `nosograph` is published. |
+| CodeQL | GitHub default/dynamic scanning has been observed to run; **no workflow file in this repo**. Not a ruleset required check. Scope was not verified via admin API in this environment (403). |
+| Secret scanning / push protection | Documented as enabled in maintainer notes. **Not re-verified** here (GitHub API returned null / 403). Not changed. |
+| Required PR approvals | Ruleset `master protection` requires **0** approvals (not 1). Docs below match the ruleset; repository settings were **not** changed. |
 
 ---
 
@@ -111,7 +116,7 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 Measurable gates before beta promotion:
 
-- Public read-only demo live with `DEMO_MODE`
+- Public read-only demo **live** with `DEMO_MODE` (**not** merely the flag existing in source)
 - Evidence Explorer usable on ci_validated diseases
 - Compare V2 workflow with exports and explicit missingness
 - Required CI green; Playwright slow suite ≥90% pass
@@ -126,7 +131,7 @@ Contributor-driven — not pre-complete. See [docs/disease-curation.md](docs/dis
 
 Target: grow L2/L3 corpus via validated PRs, not bulk auto-promotion of scaffolds.
 
-**v2.3.0 baseline:** 88/88 L2 modules pass strict validation; registry size (10,407) ≠ curation depth.
+**v2.3.0 sampled baseline:** 88 L2 modules passed strict validation in an n=500 sample; discoverable size (~10,404) ≠ curation depth. See [coverage](docs/data/coverage.md).
 
 ---
 

@@ -15,8 +15,8 @@ CURATION_TIER_DEFINITIONS: dict[str, str] = {
     ),
     "L0": "No usable knowledge-graph data (missing profile/genes/drugs/pathways/relationships).",
     "L1": "Partial KG and/or config gaps; strict validation fails.",
-    "L2": "Strict validation pass — pipeline-ready curated corpus (~45 modules target).",
-    "L3": "Research-ready deep corpus with expression consensus or equivalent depth (~23 modules).",
+    "L2": "Strict validation pass — pipeline-ready. The public L2=88 figure is an n=500 sample, not a corpus target.",
+    "L3": "Expression-consensus membership (CURATED_CONSENSUS_DISEASES, 23 ids). Public L3=2 is an n=500 sample.",
     "ci_validated": (
         "One of eight core modules (sle, ra, ms, ss, ssc, t1d, ibd, ad) validated "
         "with ``med-research disease validate --strict`` on every CI run."

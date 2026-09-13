@@ -12,6 +12,19 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 HOST = os.environ.get("HOST", "0.0.0.0")  # nosec B104 - bind address is env-overridable
 PORT = int(os.environ.get("PORT", "8000"))
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
+
+
+def parse_demo_mode(value: str | None = None) -> bool:
+    """Return True only for an explicit DEMO_MODE opt-in.
+
+    Unset, empty, ``false``, ``0``, and ``no`` stay off. There is no hosted
+    public app; this flag is a future-demo guard for self-host operators.
+    """
+    raw = os.environ.get("DEMO_MODE", "") if value is None else str(value)
+    return raw.strip().lower() in {"1", "true", "yes", "on"}
+
+
+DEMO_MODE = parse_demo_mode()
 OPENAPI_ENABLED = (
     os.environ.get(
         "OPENAPI_ENABLED",
@@ -172,21 +185,35 @@ CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND", "redis://localho
 CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "http://localhost:3000").split(",")
 
 # ── Dashboard security ────────────────────────────────────────────────────
-# The dashboard has no inline event handlers or scripts. Opt into an enforcing
-# or report-only policy at the reverse-proxy boundary without changing the UI.
-# ``DASHBOARD_CSP=true`` is retained as a concise opt-in for local deployments;
-# ``DASHBOARD_CSP_MODE`` also accepts ``off``, ``report-only``, or ``enforce``.
+# The dashboard has no inline event handlers or scripts. Self-host default is
+# enforce. ``DASHBOARD_CSP=false`` turns it off. ``DASHBOARD_CSP=true`` remains
+# an alias for enforce. ``DASHBOARD_CSP_MODE`` also accepts ``off``,
+# ``report-only``, or ``enforce``.
 DASHBOARD_CSP_MODE = os.environ.get(
     "DASHBOARD_CSP_MODE",
-    "enforce" if os.environ.get("DASHBOARD_CSP", "false").lower() == "true" else "off",
+    "enforce" if os.environ.get("DASHBOARD_CSP", "true").lower() == "true" else "off",
 ).lower()
+DASHBOARD_CSP_PATHS = frozenset(
+    {
+        "/",
+        "/index.html",
+        "/agent.html",
+        "/lead_opt.html",
+        "/patient_matching.html",
+        "/pgx.html",
+        "/spatial.html",
+    }
+)
+# Dashboard JS/CSS/fonts are self-hosted. cdnjs is required for the 3Dmol and
+# Cytoscape scripts already loaded by index.html (SRI attributes stay in HTML).
+# Pipeline HTML reports that still load Google Fonts are not these documents.
 DASHBOARD_CSP_POLICY = (
     "default-src 'self'; "
     "base-uri 'self'; "
     "object-src 'none'; "
     "frame-ancestors 'self'; "
     "form-action 'self'; "
-    "script-src 'self'; "
+    "script-src 'self' https://cdnjs.cloudflare.com; "
     "script-src-attr 'none'; "
     "style-src 'self' 'unsafe-inline'; "
     "font-src 'self'; "

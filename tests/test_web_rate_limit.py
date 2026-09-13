@@ -117,6 +117,18 @@ class TestRedisRateLimitStore:
         assert allowed is True
         assert retry == 0.0
 
+    def test_redis_error_fails_closed_when_configured(self, monkeypatch):
+        monkeypatch.setattr("med_research.web.rate_limit.RATE_LIMIT_FAIL_CLOSED", True)
+        store, _ = self._store([1, 0])
+
+        def boom(**kwargs):
+            raise redis.exceptions.RedisError("backend down")
+
+        store._script = boom
+        allowed, retry = store.check("ip", limit=60, window=60, now=1000.0)
+        assert allowed is False
+        assert retry == 60.0
+
 
 # ── Factory / fallback ──────────────────────────────────────────────────────
 

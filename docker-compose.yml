@@ -123,6 +123,10 @@ services:
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
       - REDIS_RATE_LIMIT_URL=redis://redis:6379/0
       - USE_CACHE=true
+      - DASHBOARD_CSP_MODE=${DASHBOARD_CSP_MODE:-enforce}
+      - DEMO_MODE=${DEMO_MODE:-false}
+      # Redis outage must not brick the API: fail-open unless RATE_LIMIT_FAIL_CLOSED=true
+      - RATE_LIMIT_FAIL_CLOSED=${RATE_LIMIT_FAIL_CLOSED:-false}
     depends_on:
       redis:
         condition: service_healthy

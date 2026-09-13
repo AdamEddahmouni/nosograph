@@ -32,6 +32,7 @@ from med_research.web.error_handlers import register_error_handlers
 from med_research.web.middleware import (
     AuthMiddleware,
     DashboardCSPMiddleware,
+    DemoModeMiddleware,
     RateLimitMiddleware,
     RequestBodySizeLimitMiddleware,
 )
@@ -101,6 +102,8 @@ app.add_middleware(RequestBodySizeLimitMiddleware)
 app.add_middleware(AuthMiddleware)
 app.add_middleware(DashboardCSPMiddleware)
 app.add_middleware(RateLimitMiddleware)
+# Last added runs first: DEMO_MODE (default off) must reject before handlers.
+app.add_middleware(DemoModeMiddleware)
 
 register_error_handlers(app)
 

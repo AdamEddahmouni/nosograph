@@ -35,7 +35,7 @@
 |---|---|---|
 | Explore evidence | Follow disease context through typed claims, evidence direction, source context, and provenance | Public Alpha |
 | Compare conditions | Compare two to five conditions with explicit missingness and deterministic JSON/Markdown exports | Beta |
-| Build research workflows | Use the CLI, FastAPI surface, disease modules, and 40+ analysis pipelines locally | Stable CLI · Beta API |
+| Build research workflows | Use the CLI, FastAPI surface, disease modules, and 25 registered pipeline adapters locally | Stable CLI · Beta API |
 | Extend the graph | Add disease curation, source adapters, validation, documentation, and analysis code | Open source |
 
 NosoGraph complements upstream resources such as MONDO, HPO, PubMed, ClinicalTrials.gov, Open Targets, and GWAS Catalog. It does not replace them or turn associations into causal conclusions.
@@ -85,13 +85,18 @@ Evidence records support claims; they are not automatic proof. Supporting, contr
 
 | Repository-backed measure | Value |
 |---|---:|
-| Registry modules | 10,407 |
-| Strict L2-validated modules | 88 |
+| Discoverable modules | 10,404 |
+| On-disk module directories | 10,406 |
+| Harvest catalog entries | 10,391 |
+| Strict L2-validated modules (n=500 sample) | 88 |
+| L3 expression-curated (n=500 sample) | 2 |
+| Expression-consensus membership | 23 |
 | Reference modules | 6 |
 | CI-validated modules | 8 |
+| Registered pipeline adapters | 25 |
 | Offline tests selected in the v0.2.1 suite | 2,445 |
 
-Values come from [`docs/generated/public-status.yaml`](docs/generated/public-status.yaml). Registry breadth is not curation depth: most registry modules are scaffolds. See the [current project status](docs/project/status.md) for capability-level maturity and limitations.
+Values come from [`docs/generated/public-status.yaml`](docs/generated/public-status.yaml). **Discoverable ≠ harvest JSON ≠ curation depth.** Most modules are Open Targets scaffolds. L2=88 and L3=2 are an n=500 alphabetical sample, not a full-corpus count; the expression-consensus set is 23. The stale public figure 10,407 was discoverable (10,404) plus the 3-id blocklist (including a test-only fixture). Regenerate live counts with `python scripts/refresh_public_status.py`. See [coverage](docs/data/coverage.md).
 
 ## Contributing
 

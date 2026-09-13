@@ -37,9 +37,9 @@ NosoGraph complements upstream resources such as MONDO, HPO/HPOA, PubMed, Clinic
 
 ## Current scope
 
-NosoGraph is **Public Alpha**. The CLI is the most stable task-oriented surface; the API and dashboard are Beta, Evidence Explorer is Public Alpha, Compare and Evidence Workspace are Beta, and Open Targets synchronization plus optional LLM enrichment are Experimental. A public hosted demo is planned but not deployed. FHIR, OMOP, and Phenopackets are not implemented.
+NosoGraph is **Public Alpha**. The CLI is the most stable task-oriented surface; the API and dashboard are Beta (local/self-host only — **not** GitHub Pages), Evidence Explorer is Public Alpha, Compare and Evidence Workspace are Beta, and Open Targets synchronization plus optional LLM enrichment are Experimental. A public hosted demo is **not deployed**. `DEMO_MODE` exists as a default-off opt-in. FHIR, OMOP, and Phenopackets are not implemented. The package is not on PyPI.
 
-The registry contains 10,407 modules, but registry breadth is not curation depth. Smaller explicitly tracked subsets carry validation or reference status; see [Current status](../project/status.md) and [coverage](../data/coverage.md).
+The registry has 10,404 discoverable modules; harvest JSON and on-disk directories are different counts. Registry breadth is not curation depth. Public L2=88 and L3=2 are an n=500 sample. See [Current status](../project/status.md) and [coverage](../data/coverage.md).
 
 ## Continue
 

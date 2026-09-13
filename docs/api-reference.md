@@ -200,7 +200,7 @@ Additional environment settings:
 | `LOCAL_AUTH_USERS` | empty | Development-only JSON map such as `{"alice":"password"}` or comma-separated `alice=password` accounts. Store it as a deployment secret. |
 | `AUTH_SESSION_SECRET` | empty | HMAC secret for local researcher session cookies; required outside `DEBUG` unless `API_KEY` is used as a fallback. |
 | `AUTH_TRUSTED_PROXY_IPS` | empty | Comma-separated proxy source IPs allowed to provide `X-Authenticated-User`, `X-Auth-Request-User`, or `Remote-User` when `AUTH_MODE=proxy`. |
-| `DASHBOARD_CSP_MODE` | `off` | Dashboard document CSP mode: `off`, `report-only`, or `enforce`. `DASHBOARD_CSP=true` is an alias for `enforce`. |
+| `DASHBOARD_CSP_MODE` | `enforce` | Dashboard and satellite HTML CSP: `off`, `report-only`, or `enforce`. `DASHBOARD_CSP=true` is an alias for `enforce`; `DASHBOARD_CSP=false` turns it off. |
 
 Researcher ownership is server-derived. In `AUTH_MODE=local`, call `POST /api/auth/login` with a configured local account; the API sets an expiring HttpOnly session cookie. In `AUTH_MODE=proxy`, the application accepts an identity header only from a source address listed in `AUTH_TRUSTED_PROXY_IPS`. The historical `X-Researcher-ID` header is accepted only in `DEBUG=true` compatibility mode and is never an authentication mechanism in production.
 
@@ -312,7 +312,7 @@ All routes below are `GET` unless stated otherwise. Disease-query support is lis
 | `/api/cross-disease/similarity` | — | Disease similarity matrix. |
 | `/api/cross-disease/drugs` | `top` | Multi-disease drug rankings. |
 | `/api/cross-disease/modules` | `top_synergy` | Comparative module results. |
-| `/api/system/diseases` | — | Discovered disease registry and counts (10,407 modules). |
+| `/api/system/diseases` | — | Discovered disease registry and counts (`Disease.list_all()`, currently 10,404). |
 | `/api/system/corpus-status` | — | Corpus readiness tier aggregate from latest batch report. |
 | `/api/system/modules` | `disease` (default `sle`) | Pipeline module catalog (registry module IDs, aliases, request schemas, contracts). |
 | `/api/ready` | — | Readiness check across Redis, Celery, workspace DB, and KG preload. |

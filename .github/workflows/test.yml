@@ -54,6 +54,9 @@ jobs:
       - name: Check public metadata consistency
         run: python scripts/check_public_metadata.py
 
+      - name: Check harvest catalog vs on-disk modules
+        run: python scripts/check_registry_harvest.py
+
   typecheck:
     runs-on: ubuntu-latest
     steps:
