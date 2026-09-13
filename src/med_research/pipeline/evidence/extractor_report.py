@@ -2,17 +2,19 @@
 HTML report generator for LLM Evidence Extractor results.
 """
 
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 
 def generate_html_report(
-    results: dict,
+    results: Mapping[str, Any],
     *,
-    provenance: dict | None = None,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
     disease_id: str | None = None,
 ) -> str:
     """Generate a standalone HTML report from LLM extraction results.

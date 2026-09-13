@@ -2536,7 +2536,7 @@ def cmd_live(args):
     return 0
 
 
-def main():
+def main() -> int:
     # Emoji/unicode output on Windows consoles (matches gwas.py/builder.py)
     if sys.platform == "win32":
         try:
@@ -2593,9 +2593,11 @@ def main():
 
     handler = handlers.get(args.command)
     if handler:
-        return handler(args)
+        res = handler(args)
+        return int(res) if isinstance(res, int) else 0
     if getattr(args, "registry_module_id", None):
-        return cmd_registry_module(args)
+        res = cmd_registry_module(args)
+        return int(res) if isinstance(res, int) else 0
 
     parser.print_help()
     return 0

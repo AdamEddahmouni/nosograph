@@ -335,12 +335,8 @@ def test_documentation_homepage_routes_both_audiences() -> None:
 def test_supporting_public_surfaces_route_new_contributors() -> None:
     contributing = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
     support = (ROOT / ".github" / "SUPPORT.md").read_text(encoding="utf-8")
-    pull_request = (ROOT / ".github" / "pull_request_template.md").read_text(
-        encoding="utf-8"
-    )
-    settings = (ROOT / "docs" / "project" / "github-public-settings.md").read_text(
-        encoding="utf-8"
-    )
+    pull_request = (ROOT / ".github" / "pull_request_template.md").read_text(encoding="utf-8")
+    settings = (ROOT / "docs" / "project" / "github-public-settings.md").read_text(encoding="utf-8")
 
     assert "## Your first contribution" in contributing
     assert "project/good-first-issues.md" in support
@@ -351,9 +347,7 @@ def test_supporting_public_surfaces_route_new_contributors() -> None:
 
 
 def test_launch_copy_uses_current_public_release() -> None:
-    launch_copy = (ROOT / "docs" / "project" / "launch-copy.md").read_text(
-        encoding="utf-8"
-    )
+    launch_copy = (ROOT / "docs" / "project" / "launch-copy.md").read_text(encoding="utf-8")
 
     assert f"NosoGraph v{CURRENT_VERSION} is a public alpha" in launch_copy
     assert f"NosoGraph v{CURRENT_VERSION} is Public Alpha" in launch_copy
@@ -363,9 +357,7 @@ def test_launch_copy_uses_current_public_release() -> None:
 
 def test_documentation_gate_is_strict_and_checks_shipped_site() -> None:
     makefile = (ROOT / "Makefile").read_text(encoding="utf-8")
-    workflow = (ROOT / ".github" / "workflows" / "docs.yml").read_text(
-        encoding="utf-8"
-    )
+    workflow = (ROOT / ".github" / "workflows" / "docs.yml").read_text(encoding="utf-8")
 
     assert "python -m mkdocs build --strict" in makefile
     assert "python scripts/check_public_site_consistency.py" in makefile

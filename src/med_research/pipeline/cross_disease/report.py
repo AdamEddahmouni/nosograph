@@ -10,13 +10,20 @@ Generates a standalone HTML report with:
 """
 
 import json
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import render_report
 
 
-def generate_html_report(results: dict, *, provenance: dict | None = None) -> str:
+def generate_html_report(
+    results: Mapping[str, Any],
+    *,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
+) -> str:
     """Generate a standalone HTML report and return the path."""
 
     output_path = Path(__file__).parent / "report.html"

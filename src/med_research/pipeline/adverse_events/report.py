@@ -10,14 +10,20 @@ Generates a standalone HTML report with:
 Rendered via the shared Jinja2 template infrastructure (templates/reports/).
 """
 
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 
 def generate_html_report(
-    safety_results: list, disease_id: str = "sle", *, provenance: dict | None = None
+    safety_results: list,
+    disease_id: str = "sle",
+    *,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate a standalone HTML report for the active disease.
 

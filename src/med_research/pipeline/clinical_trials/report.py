@@ -9,8 +9,12 @@ Generates a standalone HTML report showing:
 
 import base64
 import io
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
+from typing import Any
+
+from med_research.pipeline.provenance import ProvenanceMetadata
 
 try:
     import matplotlib
@@ -53,7 +57,10 @@ STATUS_COLORS = {
 
 
 def generate_ct_report(
-    results: dict, disease_id: str = "sle", *, provenance: dict | None = None
+    results: Mapping[str, Any],
+    disease_id: str = "sle",
+    *,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate an HTML report from disease-specific trial results."""
     output_path = Path(__file__).parent / "ct_report.html"

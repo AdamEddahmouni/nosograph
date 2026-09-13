@@ -21,7 +21,9 @@ See `requirements-lock.txt` for the complete pinned dependency set with versions
 | matplotlib | PSF-based | Plotting |
 | rdkit (optional) | BSD | Cheminformatics |
 
-Run `pip-licenses` locally for a full SPDX report (not automated in CI).
+Automated license bill-of-materials checking and SPDX 2.3 JSON SBOM generation are enforced in CI via `scripts/check_licenses.py` against `license-policy.toml`.
+- Run `make license-check` locally to verify that all locked dependencies comply with the license policy.
+- Run `make sbom` to generate an ISO/IEC 5962:2021 compliant SPDX 2.3 JSON document (`dist/sbom.spdx.json`) and Markdown inventory (`dist/sbom-summary.md`).
 
 ## JavaScript (dashboard)
 

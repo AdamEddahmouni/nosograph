@@ -68,7 +68,7 @@ class VirtualScreeningModule(BasePipelineModule[ScreeningResult | UntargetedGene
         results: ScreeningResult | UntargetedGenesResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.virtual_screening.report import generate_screening_report
 

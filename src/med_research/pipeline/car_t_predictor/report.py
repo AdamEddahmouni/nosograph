@@ -1,9 +1,12 @@
 """CAR-T Response Predictor HTML Report Generator."""
 
 import json
+from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
+from med_research.pipeline.provenance import ProvenanceMetadata
 from med_research.pipeline.reporting import disease_context, render_report
 
 
@@ -21,7 +24,10 @@ def escape_html(value):
 
 
 def generate_html_report(
-    results: list, disease_id: str = "sle", *, provenance: dict | None = None
+    results: list,
+    disease_id: str = "sle",
+    *,
+    provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate an HTML report for CAR-T response prediction results."""
     now = datetime.now().strftime("%B %d, %Y at %H:%M")

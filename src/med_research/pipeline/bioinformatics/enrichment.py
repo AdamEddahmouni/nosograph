@@ -16,6 +16,7 @@ import argparse
 import json
 import logging
 import os
+from collections.abc import Mapping
 from pathlib import Path
 from typing import Any, cast
 
@@ -278,7 +279,7 @@ def run_enrichment(
 
 
 def cross_reference_with_kg_pathways(
-    enrichment_results: dict, kg_pathways: dict, disease_id: str = "sle"
+    enrichment_results: Mapping[str, Any], kg_pathways: Mapping[str, Any], disease_id: str = "sle"
 ) -> dict:
     """
     Cross-reference enrichment terms with knowledge graph pathways.

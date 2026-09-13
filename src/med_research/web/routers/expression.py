@@ -1,9 +1,10 @@
 """Gene Expression Correlation API router."""
 
-from typing import Annotated, Any
+from typing import Annotated
 
 from fastapi import APIRouter, Depends, Query
 
+from med_research.pipeline.results import ExpressionAnalysisResponse
 from med_research.web.disease_params import resolve_optional_query_disease
 from med_research.web.models.expression import ExpressionCorrelationResponse
 from med_research.web.services.expression_service import run_correlation_analysis
@@ -17,7 +18,7 @@ ResolvedDisease = Annotated[str, Depends(resolve_optional_query_disease)]
 async def correlate_expression(
     disease_id: ResolvedDisease,
     top_n: int = Query(26, ge=1, le=26, description="Number of top drugs to return"),
-) -> dict[str, Any]:
+) -> ExpressionAnalysisResponse:
     """Correlate drugs against a disease's curated gene expression signature.
 
     Returns scored drugs ranked by composite gene expression reversal score

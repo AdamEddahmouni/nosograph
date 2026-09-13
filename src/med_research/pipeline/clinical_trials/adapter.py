@@ -47,7 +47,7 @@ class ClinicalTrialsModule(BasePipelineModule[TrialRunResult]):
         results: TrialRunResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.clinical_trials.report import generate_ct_report
 

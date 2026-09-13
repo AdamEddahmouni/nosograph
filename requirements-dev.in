@@ -10,5 +10,5 @@ mypy>=1.8
 pip-tools>=7.6.1
 responses>=0.25
 playwright>=1.62,<2
-chromadb>=0.4,<0.4.17  # CVE-2026-45829/45830/45831/45833 avoid
+chromadb>=0.5.23,<1.0  # server-mode CVEs (CVE-2026-45829/45830/45831/45833) do not apply to embedded PersistentClient usage
 sentence-transformers>=5.7.0,<6

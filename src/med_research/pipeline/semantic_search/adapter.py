@@ -62,7 +62,7 @@ class SemanticSearchModule(BasePipelineModule[SemanticSearchResult]):
         results: SemanticSearchResult,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.semantic_search.report import generate_semantic_report
 

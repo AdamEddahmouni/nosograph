@@ -50,7 +50,7 @@ class GeneExpressionModule(BasePipelineModule[ExpressionResults]):
         results: ExpressionResults,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.gene_expression.correlator import (
             _normalize_signature,

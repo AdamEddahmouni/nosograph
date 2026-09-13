@@ -47,9 +47,9 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   The `Tests` workflow runs on push/PR to `master`/`main`; slow/live tests run weekly
   or via `workflow_dispatch`.
 - **Private forks** of a public repo still consume the fork owner's Actions quota.
-- Local pre-push gate: `make ci-local` (matches hosted lint + offline pytest; serial,
-  skips Playwright browser tests).
-- `make typecheck` is informational only in CI until the mypy backlog in
-  `TECHNICAL_DEBT_ISSUES.md` is cleared.
+- Local pre-push gate: `make ci-local` (matches hosted lint, license policy audit,
+  and offline pytest; serial, skips Playwright browser tests).
+- `make typecheck` is an enforced, blocking merge gate in CI covering all
+  170 pipeline, adapter, and service boundary files.
 - `disease validate --all --strict` is **not** a merge gate: the 10k scaffold registry is
   expected to exit non-zero. Hosted CI validates the original curated eight (`sle` … `ad`) only.

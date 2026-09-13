@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 class EntityContext:
     """Gene metadata lookup for literature summary display."""
 
-    genes: dict[str, Any]
+    genes: dict[str, dict[str, Any]]
 
     @classmethod
     def from_results(

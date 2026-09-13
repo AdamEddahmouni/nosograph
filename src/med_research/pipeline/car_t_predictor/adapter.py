@@ -44,7 +44,7 @@ class CarTPredictorModule(BasePipelineModule[CarTResults]):
         results: CarTResults,
         disease_id: str,
         *,
-        provenance: dict | None = None,
+        provenance: ProvenanceMetadata | None = None,
     ) -> Path:
         from med_research.pipeline.car_t_predictor.report import generate_html_report
 
