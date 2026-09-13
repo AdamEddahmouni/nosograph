@@ -16,9 +16,14 @@ NON_DISEASE_BLOCKLIST: frozenset[str] = frozenset(
     }
 )
 
+# Heuristic for GO biological-process / measurement-response slugs that are
+# not disease modules. This is a generation boundary: new scaffolds must not
+# be admitted. Historical on-disk modules are classified in harvest_registry
+# (A–E) and are not bulk-deleted.
 _GO_PROCESS_PATTERNS = re.compile(
     r"(?:^|_)(?:positive|negative|regulation)_of_|"
     r"(?:^|_)response_to_|"
+    r"(?:^|_)trait_in_response_to_|"
     r"(?:^|_)sensory_perception_of_|"
     r"(?:^|_)biological_process",
     re.I,

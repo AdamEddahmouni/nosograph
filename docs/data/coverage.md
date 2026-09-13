@@ -32,7 +32,7 @@ python scripts/reconcile_harvest_registry.py          # admit missing disease-li
 python scripts/reconcile_harvest_registry.py --check   # CI drift gate
 ```
 
-**Intentional harvest exclusions:** blocked slugs and GO-like / `response_to_*` / `trait_in_response_to_*` directories that remain on disk historically. They must not be hand-appended to the catalog. CI-validated and reference slugs **must** be present.
+**Intentional harvest exclusions:** blocked slugs and GO-like / `response_to_*` / `trait_in_response_to_*` directories that remain on disk historically. They must not be hand-appended to the catalog. CI-validated and reference slugs **must** be present. The 13 discoverable GO/response dirs are classified A–E in `harvest_registry.ON_DISK_GO_RESPONSE_EXCLUSIONS` (none are category C; none were deleted). New GO-like scaffolds are refused. See [registry](../concepts/registry.md).
 
 ## L2 / L3 (do not collapse)
 

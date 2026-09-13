@@ -1146,6 +1146,16 @@ def scaffold_disease(
     if not disease_id or not name:
         raise ValueError("disease_id and name are required")
 
+    from med_research.diseases.registry_quality import looks_like_go_process_slug
+
+    if looks_like_go_process_slug(disease_id):
+        raise ValueError(
+            f"Refusing to scaffold {disease_id!r}: slug looks like a GO biological "
+            "process, response-to, or trait-in-response module. Historical on-disk "
+            "exclusions stay until a dedicated curation PR. See harvest_registry "
+            "ON_DISK_GO_RESPONSE_EXCLUSIONS."
+        )
+
     root = target_dir or (_diseases_root() / disease_id)
     data_dir = root / "data"
     if root.exists() and any(root.iterdir()) and not overwrite:
@@ -2326,6 +2336,7 @@ def batch_scaffold(
     import time
 
     from med_research.diseases.base import Disease
+    from med_research.diseases.registry_quality import looks_like_go_process_slug
 
     diseases = load_disease_registry(registry_path)
 
@@ -2356,6 +2367,16 @@ def batch_scaffold(
         did = sanitize_id(entry.get("id", ""))
         name = entry.get("name", did)
         efo = entry.get("efo_id")
+
+        if looks_like_go_process_slug(did):
+            logger.info(
+                "[%d/%d] ⏭️  %s — GO/response/trait slug, skipping (harvest exclusion)",
+                idx,
+                total,
+                did,
+            )
+            skipped.append({"disease_id": did, "name": name, "reason": "go_like_or_response_trait"})
+            continue
 
         if did in existing or (_diseases_root() / did).exists():
             logger.info("[%d/%d] ⏭️  %s — already exists, skipping", idx, total, did)

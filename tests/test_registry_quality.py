@@ -11,7 +11,9 @@ from med_research.diseases.registry_quality import (
 def test_blocked_slugs() -> None:
     assert is_blocked_slug("positive_regulation_of_ovulation")
     assert looks_like_go_process_slug("response_to_stimulus")
+    assert looks_like_go_process_slug("trait_in_response_to_apixaban")
     assert not is_blocked_slug("sle")
+    assert not looks_like_go_process_slug("sle")
 
 
 def test_disease_like_entry_requires_identifier_or_name() -> None:
