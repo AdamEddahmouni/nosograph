@@ -21,3 +21,14 @@ Local evaluation builds pass `DOCKER_SKIP_DISEASE_VALIDATE=1` so image build doe
 Compose project name is `nosograph` (container names like `nosograph-web-1`). The image tag remains `med-research:latest` as an internal/compatibility name matching the Python distribution; it is not a public rename of NosoGraph.
 
 Production hardening: see [self-hosted deployment](../deployment.md).
+
+## Read-only demo profile
+
+Local fixture snapshot + `DEMO_MODE=true` (not a hosted public app):
+
+```bash
+docker compose --profile demo run --rm pipeline demo build
+docker compose --profile demo up web-demo --build
+```
+
+Dashboard: http://localhost:8000. See [Demo](demo.md) and the operator notes in the repository at `docs/deployment/local-demo-operator.md`.
