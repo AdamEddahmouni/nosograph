@@ -152,8 +152,7 @@ def test_motion_preferences_toggle_smooth_scroll_and_durations(
     """Motion allowed: smooth scroll + token durations. Reduced: both off."""
     page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
     assert (
-        page.evaluate("() => getComputedStyle(document.documentElement).scrollBehavior")
-        == "smooth"
+        page.evaluate("() => getComputedStyle(document.documentElement).scrollBehavior") == "smooth"
     )
     assert page.evaluate("() => ngScrollBehavior()") == "smooth"
     duration = page.locator(".nav-link").first.evaluate(
@@ -163,8 +162,7 @@ def test_motion_preferences_toggle_smooth_scroll_and_durations(
 
     page.emulate_media(reduced_motion="reduce")
     assert (
-        page.evaluate("() => getComputedStyle(document.documentElement).scrollBehavior")
-        == "auto"
+        page.evaluate("() => getComputedStyle(document.documentElement).scrollBehavior") == "auto"
     )
     assert page.evaluate("() => ngScrollBehavior()") == "auto"
     killed = page.evaluate("() => getComputedStyle(document.body).animationDuration")

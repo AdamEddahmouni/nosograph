@@ -151,9 +151,7 @@ def test_docs_home_reveal_gating_follows_motion_preference(page: Page, docs_serv
     )
 
 
-def test_docs_home_reduced_motion_never_hides_content(
-    reduced_page: Page, docs_server: str
-) -> None:
+def test_docs_home_reduced_motion_never_hides_content(reduced_page: Page, docs_server: str) -> None:
     reduced_page.goto(f"{docs_server}/", wait_until="domcontentloaded")
     # home.js must not add the gating class under reduced motion. The class is
     # added synchronously at parse time when allowed, so its absence after
