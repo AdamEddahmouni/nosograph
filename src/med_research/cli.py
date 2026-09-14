@@ -2408,7 +2408,7 @@ PIPELINE_STEPS_FULL = [
 ]
 
 
-def cmd_demo(args) -> int:
+def cmd_demo(args: Any) -> int:
     """Build or serve the local fixture-backed read-only demo."""
     import os
 
@@ -2436,7 +2436,9 @@ def cmd_demo(args) -> int:
         output = DEFAULT_DEMO_DB_PATH
         if not output.is_file():
             if args.skip_build:
-                logger.error("Demo snapshot missing at %s (pass without --skip-build to build)", output)
+                logger.error(
+                    "Demo snapshot missing at %s (pass without --skip-build to build)", output
+                )
                 return 1
             try:
                 build_demo_snapshot(output, fixture_root=DEFAULT_FIXTURE_ROOT)
@@ -2456,7 +2458,7 @@ def cmd_demo(args) -> int:
             args.host,
             args.port,
         )
-        return cmd_serve(args)
+        return cast(int, cmd_serve(args))
 
     logger.error("Unknown demo action: %s", getattr(args, "demo_action", None))
     return 1
