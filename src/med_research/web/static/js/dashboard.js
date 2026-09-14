@@ -526,7 +526,7 @@ function settleJob(jobId, success, errorMessage = '') {
 
 function renderJobResult(module, resultEl, result) {
     if (!result) {
-        resultEl.innerHTML = '<div class="result-header">✅ Analysis Complete</div>';
+        resultEl.innerHTML = '<div class="result-header">Analysis complete</div>';
         return;
     }
 
@@ -656,9 +656,9 @@ function reviewControls(item, candidateType) {
     const review = workspaceReviews[key] || {};
     const tags = (review.tags || []).join(', ');
     return `<details class="workspace-review-card" data-candidate-id="${escapeHtml(item.candidate_id)}" data-candidate-type="${candidateType}">
-        <summary>📝 Researcher review${review.decision && review.decision !== 'unreviewed' ? ` · ${escapeHtml(review.decision)}` : ''}</summary>
+        <summary>Researcher review${review.decision && review.decision !== 'unreviewed' ? ` · ${escapeHtml(review.decision)}` : ''}</summary>
         <div class="workspace-review-fields">
-            <label>Decision<select data-review-field="decision"><option value="unreviewed" ${review.decision === 'unreviewed' || !review.decision ? 'selected' : ''}>Unreviewed</option><option value="pinned" ${review.decision === 'pinned' ? 'selected' : ''}>📌 Pin candidate</option><option value="rejected" ${review.decision === 'rejected' ? 'selected' : ''}>✕ Reject candidate</option></select></label>
+            <label>Decision<select data-review-field="decision"><option value="unreviewed" ${review.decision === 'unreviewed' || !review.decision ? 'selected' : ''}>Unreviewed</option><option value="pinned" ${review.decision === 'pinned' ? 'selected' : ''}>Pin candidate</option><option value="rejected" ${review.decision === 'rejected' ? 'selected' : ''}>Reject candidate</option></select></label>
             <label>Tags<input data-review-field="tags" maxlength="500" value="${escapeHtml(tags)}" placeholder="e.g. validate, safety, follow-up"></label>
             <label>Rationale<textarea data-review-field="rationale" maxlength="2000" rows="2" placeholder="Why did you make this decision?">${escapeHtml(review.rationale || '')}</textarea></label>
             <label>Notes<textarea data-review-field="notes" maxlength="5000" rows="2" placeholder="Research notes and next steps">${escapeHtml(review.notes || '')}</textarea></label>
@@ -907,13 +907,13 @@ function renderWorkspaceResult(el, payload) {
     const request = dossier.request || {};
     const sourceLabels = (request.sources || []).map(workspaceSourceLabel).join(', ') || 'not recorded';
     el.innerHTML = `
-        <div class="workspace-result-head"><div><strong>✅ Dossier ready</strong><small>${escapeHtml(dossier.run_id || '')} · ${evidence.length} evidence · ${claims.length} claims</small></div><div class="workspace-export-links"><button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="download-json">⬇ JSON</button>
-<button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="open-html">📄 HTML</button><button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="download-bundle">📦 Review bundle</button></div></div>
+        <div class="workspace-result-head"><div><strong>Dossier ready</strong><small>${escapeHtml(dossier.run_id || '')} · ${evidence.length} evidence · ${claims.length} claims</small></div><div class="workspace-export-links"><button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="download-json">JSON</button>
+<button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="open-html">HTML</button><button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="download-bundle">Review bundle</button></div></div>
         <div class="workspace-summary-grid"><div><b>${drugs.length}</b><span>drug candidates</span></div><div><b>${targets.length}</b><span>target candidates</span></div><div><b>${evidence.length}</b><span>evidence records</span></div><div><b>${warningCount}</b><span>warnings</span></div></div>
         <div class="workspace-provenance"><strong>Reproducibility</strong><span>Fingerprint: <code>${escapeHtml(provenance.fingerprint || 'not available')}</code></span><span>Research question: ${escapeHtml(request.question || 'not recorded')}</span><span>Sources: ${escapeHtml(sourceLabels)}</span><span>Disease: ${escapeHtml(request.disease_id || 'not recorded')}</span><span>Mode: ${escapeHtml(provenance.cache_or_live || dossier.manifest?.cache_or_live || 'unknown')}</span><button class="btn btn-secondary btn-sm" type="button" data-workspace-result-action="copy-fingerprint">Copy fingerprint</button></div>
         <div class="workspace-source-statuses">${sourceStatus || '<span class="workspace-muted">No source status available.</span>'}</div>
         <div class="workspace-quality-summary"><strong>Evidence quality:</strong> ${Object.entries(qualitySummary).filter(([key]) => !['totalScore', 'total'].includes(key)).map(([tier, count]) => `<span>${escapeHtml(tier.replace('_', ' '))}: ${count}</span>`).join('') || '<span>not classified</span>'}<span>average score: ${qualityAverage}</span></div>
-        <div class="workspace-result-columns"><section><h4>💊 Prioritized drugs</h4>${rankingRows(drugs, 'No drug ranking available.', 'drug')}</section><section><h4>🧬 Prioritized targets</h4>${rankingRows(targets, 'No target ranking available.', 'target')}</section></div>
+        <div class="workspace-result-columns"><section><h4>Prioritized drugs</h4>${rankingRows(drugs, 'No drug ranking available.', 'drug')}</section><section><h4>Prioritized targets</h4>${rankingRows(targets, 'No target ranking available.', 'target')}</section></div>
         <details><summary>Claims, citations, and confidence (${claims.length})</summary><div class="workspace-claims">${claimRows || '<p class="workspace-muted">No claims extracted.</p>'}</div></details>
         <details><summary>Knowledge-graph explanations (${paths.length})</summary><div class="workspace-claims">${pathRows || '<p class="workspace-muted">No graph explanations available.</p>'}</div></details>
         ${warningRows ? `<details><summary>Warnings (${warningCount})</summary><ul class="workspace-notices">${warningRows}</ul></details>` : ''}
@@ -1018,7 +1018,7 @@ function workspaceTrendPoint(item, runId) {
 function renderWorkspaceTrendTable(kind, runs, series) {
     const container = document.getElementById('workspace-trend-table');
     if (!container) return;
-    const exportButton = '<button class="btn btn-secondary btn-sm" type="button" data-action="workspace-trends-export">⬇ Download CSV</button>';
+    const exportButton = '<button class="btn btn-secondary btn-sm" type="button" data-action="workspace-trends-export">Download CSV</button>';
     if (!runs.length || !series.length) {
         container.innerHTML = `<div class="workspace-trend-table-head"><h4>Tabular trend data</h4>${exportButton}</div><p class="workspace-muted">No ${escapeHtml(kind)} trend data is available yet.</p>`;
         return;
@@ -1401,7 +1401,7 @@ function submitWorkspace(event) {
 }
 
 function renderModuleResult(rows) {
-    let html = '<div class="result-header">✅ Analysis Complete</div>';
+    let html = '<div class="result-header">Analysis complete</div>';
     for (const [label, value] of rows) {
         html += `<div class="result-row"><span class="result-label">${label}</span><span class="result-value">${formatNumber(value)}</span></div>`;
     }
@@ -1430,7 +1430,7 @@ function renderRepurposeResult(el, data) {
     }
     const top = data.candidates?.[0];
     const multiOmicsChips = top?.variant_functional_score
-        ? `<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;"><span class="variant-impact-chip">🧬 Top Variant Score: ${top.variant_functional_score}/10</span><span class="gtex-tpm-chip">🩺 GTEx Concordance: ${Math.round((top.gtex_tissue_concordance || 0.8) * 100)}%</span></div>`
+        ? `<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;"><span class="variant-impact-chip">Top Variant Score: ${top.variant_functional_score}/10</span><span class="gtex-tpm-chip">GTEx Concordance: ${Math.round((top.gtex_tissue_concordance || 0.8) * 100)}%</span></div>`
         : '';
     el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Candidates Scored', data.total],
@@ -1546,9 +1546,9 @@ function renderMonitorResult(el, data) {
     }
     el.innerHTML = renderCoveragePanel(data.coverage) + renderModuleResult([
         ['Total Changes', data.total_changes],
-        ['🔴 High Alerts', high],
-        ['🟡 Medium Alerts', med],
-        ['🟢 Low Alerts', low],
+        ['High-severity alerts', high],
+        ['Medium-severity alerts', med],
+        ['Low-severity alerts', low],
         ['Hours Elapsed', (data.hours_elapsed || 0).toFixed(1) + 'h'],
     ]);
 }
@@ -1603,13 +1603,13 @@ function renderJobQueue() {
         const job = activeJobs[id];
         const shortId = id.slice(0, 12) + '…';
         const hasSocket = !!activeSockets[id];
-        const streamIcon = hasSocket ? '⚡' : '📡';
+        const streamIcon = hasSocket ? 'live' : 'poll';
         return `
             <div class="job-item">
                 <div class="job-info">
-                    <span class="job-module" style="background:rgba(129,140,248,0.1);color:#818cf8;">${job.module}</span>
+                    <span class="job-module">${job.module}</span>
                     <code style="font-size:0.72rem;color:var(--text-muted);">${shortId}</code>
-                    <span title="${hasSocket ? 'WebSocket streaming' : 'HTTP polling'}" style="font-size:0.65rem;">${streamIcon}</span>
+                    <span title="${hasSocket ? 'WebSocket streaming' : 'HTTP polling'}" class="job-stream">${streamIcon}</span>
                 </div>
                 <div class="job-status ${job.status}">
                     ${job.status === 'STARTED' ? '<span class="spinner" style="margin-right:6px;"></span>' : ''}
@@ -1802,10 +1802,10 @@ function renderCrossDiseaseComparison(data) {
     }).join('');
 
     section.innerHTML = `
-        <h2 class="section-title"><span>🌐</span> Cross-Disease Comparison</h2>
+        <h2 class="section-title"><span class="section-kicker">Cross-disease</span>Cross-Disease Comparison</h2>
 
         <div class="cd-card">
-            <h3>🧬 Gene × Disease Association Heatmap <span style="font-weight:400;color:var(--text-muted);font-size:0.78rem;">(odds ratio by presence)</span></h3>
+            <h3>Gene × Disease Association Heatmap <span class="cd-h3-note">(odds ratio by presence)</span></h3>
             <table class="cd-table">
                 <thead><tr>
                     <th>Gene</th><th>Coverage</th>
@@ -1822,7 +1822,7 @@ function renderCrossDiseaseComparison(data) {
         </div>
 
         <div class="cd-card">
-            <h3>🔗 Disease Similarity Matrix <span style="font-weight:400;color:var(--text-muted);font-size:0.78rem;">(shared-biology Jaccard)</span></h3>
+            <h3>Disease Similarity Matrix <span class="cd-h3-note">(shared-biology Jaccard)</span></h3>
             <table class="cd-table" style="min-width:360px;">
                 <thead><tr><th></th>${simHeader}</tr></thead>
                 <tbody>${simRows}</tbody>
@@ -1830,7 +1830,7 @@ function renderCrossDiseaseComparison(data) {
         </div>
 
         <div class="cd-card">
-            <h3>💊 Multi-Disease Repurposing Candidates</h3>
+            <h3>Multi-Disease Repurposing Candidates</h3>
             ${drugRows || '<p style="color:var(--text-muted);font-size:0.8rem;">No multi-disease drug data.</p>'}
         </div>
     `;
@@ -1929,14 +1929,14 @@ function renderModuleComparison(data) {
     }).join('');
 
     section.innerHTML = `
-        <h2 class="section-title"><span>⚖️</span> Cross-Disease Module Comparison</h2>
+        <h2 class="section-title"><span class="section-kicker">Cross-disease</span>Cross-Disease Module Comparison</h2>
         <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:14px;">
             Biomarker discovery, gene-expression correlation, and drug synergy scored independently for
             every disease — stacked side by side so cross-disease patterns are visible at a glance.
         </p>
 
         <div class="cd-card">
-            <h3>🧬 Biomarker × Disease <span style="font-weight:400;color:var(--text-muted);font-size:0.78rem;">(composite score, ${bmTable.total} genes)</span></h3>
+            <h3>Biomarker × Disease <span class="cd-h3-note">(composite score, ${bmTable.total} genes)</span></h3>
             <table class="cd-table">
                 <thead><tr>${bmTable.header}</tr></thead>
                 <tbody>${bmTable.body}</tbody>
@@ -1944,7 +1944,7 @@ function renderModuleComparison(data) {
         </div>
 
         <div class="cd-card">
-            <h3>🧬 Expression Correlation × Disease <span style="font-weight:400;color:var(--text-muted);font-size:0.78rem;">(composite score, ${exTable.total} drugs)</span></h3>
+            <h3>Expression Correlation × Disease <span class="cd-h3-note">(composite score, ${exTable.total} drugs)</span></h3>
             <table class="cd-table">
                 <thead><tr>${exTable.header}</tr></thead>
                 <tbody>${exTable.body}</tbody>
@@ -1952,7 +1952,7 @@ function renderModuleComparison(data) {
         </div>
 
         <div class="cd-card">
-            <h3>🔗 Top Synergy Pairs per Disease</h3>
+            <h3>Top Synergy Pairs per Disease</h3>
             <table class="cd-table" style="min-width:480px;">
                 <thead><tr><th>Rank</th>${syHeader}</tr></thead>
                 <tbody>${syRows}</tbody>
@@ -2009,14 +2009,14 @@ async function initKGExplorer() {
         updateKGStats();
         setupKGControls();
     } catch (e) {
-        canvas.innerHTML = `<div class="kg-loading"><strong style="color:#f87171;">⚠️ ${escapeHtml(e.message)}</strong></div>`;
+        canvas.innerHTML = `<div class="kg-loading"><strong style="color:var(--ng-error);">${escapeHtml(e.message)}</strong></div>`;
     }
 }
 
 function buildKGNetwork() {
     const canvas = document.getElementById('kg-canvas');
     if (!canvas || typeof vis === 'undefined') {
-        canvas.innerHTML = `<div class="kg-loading"><strong style="color:#f87171;">⚠️ vis-network library not loaded</strong></div>`;
+        canvas.innerHTML = `<div class="kg-loading"><strong style="color:var(--ng-error);">vis-network library not loaded</strong></div>`;
         return;
     }
 
@@ -2159,7 +2159,7 @@ function toggleKGPhysics() {
     kgNetwork.setOptions({ physics: { enabled: kgPhysicsEnabled } });
     const btn = document.getElementById('kg-physics-toggle');
     if (btn) {
-        btn.textContent = kgPhysicsEnabled ? '⏸ Pause Physics' : '▶ Resume Physics';
+        btn.textContent = kgPhysicsEnabled ? 'Pause Physics' : 'Resume Physics';
         btn.classList.toggle('active-overlay', !kgPhysicsEnabled);
     }
 }
@@ -2323,15 +2323,15 @@ async function runMultiDiseaseComparison() {
         });
         tableHtml += `</tbody></table>`;
 
-        let drugsHtml = `<div style="margin-top:20px;"><h4>💊 Top Multi-Disease Drug Candidates</h4><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;">`;
+        let drugsHtml = `<div style="margin-top:20px;"><h4>Top Multi-Disease Drug Candidates</h4><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;">`;
         drugs.slice(0, 10).forEach(d => {
             drugsHtml += `<div class="kg-rel" style="background:var(--surface);padding:8px 12px;border-radius:8px;border:1px solid var(--border);"><strong>${escapeHtml(d.name || d.id)}</strong> <span class="rel-type" style="margin-left:6px;">${(d.score || d.disease_count || 0)}</span></div>`;
         });
         drugsHtml += `</div></div>`;
 
-        resultDiv.innerHTML = `<div><h3>📊 Pairwise Jaccard Similarity Matrix</h3>${tableHtml}${drugsHtml}</div>`;
+        resultDiv.innerHTML = `<div><h3>Pairwise Jaccard Similarity Matrix</h3>${tableHtml}${drugsHtml}</div>`;
     } catch (e) {
-        resultDiv.innerHTML = `<p class="condition-comparison-placeholder" style="color:#f87171;">⚠️ ${escapeHtml(e.message)}</p>`;
+        resultDiv.innerHTML = `<p class="condition-comparison-placeholder" style="color:var(--ng-error);">${escapeHtml(e.message)}</p>`;
     }
 }
 
@@ -2703,7 +2703,7 @@ async function loadCorpusStatus(resetPage = false) {
         }
     } catch (error) {
         if (tableBody) {
-            tableBody.innerHTML = `<tr><td colspan="7" style="text-align:center;padding:24px;color:#f87171;">⚠️ Failed to load corpus status: ${escapeHtml(error.message)}</td></tr>`;
+            tableBody.innerHTML = `<tr><td colspan="7" style="text-align:center;padding:24px;color:var(--ng-error);">Failed to load corpus status: ${escapeHtml(error.message)}</td></tr>`;
         }
     }
 }
@@ -2800,8 +2800,8 @@ function renderCorpusTable(diseases) {
                     </div>
                 </td>
                 <td>
-                    <span style="font-size:0.78rem;font-weight:600;color:${symptoms ? '#34d399' : 'var(--text-muted)'};">
-                        ${symptoms ? `🩺 ${symptoms}` : '—'}
+                    <span style="font-size:0.78rem;font-weight:600;color:${symptoms ? 'var(--ng-success)' : 'var(--text-muted)'};">
+                        ${symptoms ? `${symptoms} recorded` : '—'}
                     </span>
                 </td>
                 <td>${gaps || '<span style="color:#4ade80;font-size:0.75rem;">None (Complete)</span>'}${extraGaps}</td>
@@ -3552,8 +3552,8 @@ function renderTargetPrioritization(res) {
                 <td>
                     <div style="display:flex;flex-direction:column;gap:4px;">
                         <div style="display:flex;gap:6px;align-items:center;">
-                            <span class="plddt-badge ${plddtClass}">⚡ ${plddt}% pLDDT</span>
-                            <span class="pocket-chip">📦 ${pocketVol} Å³</span>
+                            <span class="plddt-badge ${plddtClass}">${plddt}% pLDDT</span>
+                            <span class="pocket-chip">${pocketVol} Å³</span>
                         </div>
                         <div>
                             <span class="druggability-pill ${tierClass}">Docking: ${dockingScore} · ${tierLabel}</span>
@@ -3570,7 +3570,7 @@ function renderTargetPrioritization(res) {
                 </td>
                 <td style="text-align:right;">
                     <button type="button" class="btn btn-secondary btn-sm" data-action="inspect-3d-pocket" data-target="${escapeHtml(r.target_curie)}" data-label="${escapeHtml(r.target_label || r.target_curie)}" style="font-size:0.75rem;padding:3px 8px;">
-                        🔬 3D Pocket
+                        3D Pocket
                     </button>
                 </td>
             </tr>
@@ -3651,11 +3651,11 @@ async function openStructure3DModal(targetIdentifier, targetLabel) {
             <div class="struct-3d-wrapper">
                 <div id="alphafold-3d-canvas" class="struct-3d-canvas"></div>
                 <div class="struct-3d-controls">
-                    <button type="button" class="struct-control-btn active" id="btn-3d-cartoon" title="Cartoon View">🧬 Cartoon</button>
-                    <button type="button" class="struct-control-btn" id="btn-3d-surface" title="Solvent Accessible Surface">🌐 Surface</button>
-                    <button type="button" class="struct-control-btn" id="btn-3d-box" title="AutoDock Vina Bounding Grid">📦 Vina Grid</button>
-                    <button type="button" class="struct-control-btn" id="btn-3d-spin" title="Auto Rotate">🔄 Spin</button>
-                    <button type="button" class="struct-control-btn" id="btn-3d-reset" title="Reset Camera">🎯 Reset</button>
+                    <button type="button" class="struct-control-btn active" id="btn-3d-cartoon" title="Cartoon View">Cartoon</button>
+                    <button type="button" class="struct-control-btn" id="btn-3d-surface" title="Solvent Accessible Surface">Surface</button>
+                    <button type="button" class="struct-control-btn" id="btn-3d-box" title="AutoDock Vina Bounding Grid">Vina Grid</button>
+                    <button type="button" class="struct-control-btn" id="btn-3d-spin" title="Auto Rotate">Spin</button>
+                    <button type="button" class="struct-control-btn" id="btn-3d-reset" title="Reset Camera">Reset</button>
                 </div>
                 <div class="struct-3d-legend">
                     <span style="font-weight:600;margin-right:2px;">pLDDT:</span>
@@ -3729,7 +3729,7 @@ async function openStructure3DModal(targetIdentifier, targetLabel) {
         }, 50);
 
     } catch (err) {
-        modalBody.innerHTML = `<p class="condition-explorer-placeholder" style="color:#f87171;">⚠️ Failed to load structure: ${escapeHtml(err.message)}</p>`;
+        modalBody.innerHTML = `<p class="condition-explorer-placeholder" style="color:var(--ng-error);">Failed to load structure: ${escapeHtml(err.message)}</p>`;
     }
 }
 
@@ -4102,7 +4102,7 @@ async function showKGNodeDetail(nodeId) {
         const d = await apiFetch(`/api/kg/node/${encodeURIComponent(nodeId)}?disease=${encodeURIComponent(disease)}`);
         renderKGDetail(panel, d);
     } catch (e) {
-        panel.innerHTML = `<strong style="color:#f87171;font-size:0.8rem;">⚠️ ${escapeHtml(e.message)}</strong>`;
+        panel.innerHTML = `<strong style="color:var(--ng-error);font-size:0.8rem;">${escapeHtml(e.message)}</strong>`;
     }
 }
 
@@ -4128,9 +4128,9 @@ function renderKGDetail(panel, d) {
         <span class="kg-node-type" style="background:${color}22;color:${color};">${typeLabel}</span>
         <div class="kg-field"><div class="kg-field-label">Node ID</div><div class="kg-field-value"><code style="font-size:0.72rem;">${escapeHtml(d.id)}</code></div></div>
         ${fields.join('')}
-        ${incoming ? `<div class="kg-section"><h5>⬅ Incoming (${d.incoming.length})</h5>${incoming}</div>` : ''}
-        ${outgoing ? `<div class="kg-section"><h5>➡ Outgoing (${d.outgoing.length})</h5>${outgoing}</div>` : ''}
-        <button type="button" class="btn btn-primary btn-sm" style="margin-top:14px;width:100%;" data-action="kg-expand-neighbors" data-node-id="${escapeHtml(d.id)}">🔍 Expand 2-Hop Subgraph</button>
+        ${incoming ? `<div class="kg-section"><h5>Incoming (${d.incoming.length})</h5>${incoming}</div>` : ''}
+        ${outgoing ? `<div class="kg-section"><h5>Outgoing (${d.outgoing.length})</h5>${outgoing}</div>` : ''}
+        <button type="button" class="btn btn-primary btn-sm" style="margin-top:14px;width:100%;" data-action="kg-expand-neighbors" data-node-id="${escapeHtml(d.id)}">Expand 2-Hop Subgraph</button>
     `;
 }
 
@@ -4139,7 +4139,7 @@ function clearKGDetail() {
     if (!panel) return;
     panel.innerHTML = `
         <div class="kg-detail-placeholder">
-            <div style="font-size:2rem;margin-bottom:8px;">🕸️</div>
+            <img src="/brand/mark.svg" alt="" width="40" height="40">
             <p>Select a node to inspect its drugs, pathways, and connections.</p>
         </div>`;
 }
@@ -4175,18 +4175,18 @@ function updateKGStats() {
 // ── Data Export ───────────────────────────────────────────────────────────
 
 const EXPORT_MODULES = [
-    ['repurpose', '💊 Drug Repurposing'],
-    ['cart', '🔬 CAR-T Scores'],
-    ['biomarker', '🧬 Biomarkers'],
-    ['trials', '📋 Clinical Trials'],
-    ['cross-disease', '🌐 Cross-Disease'],
-    ['synergy', '🔗 Drug Synergy'],
-    ['safety', '🛡️ Safety Scores'],
-    ['expression', '🧬 Expression'],
-    ['ml', '🧠 ML Predictions'],
-    ['screening', '🔬 Screening'],
-    ['network', '🌐 Network'],
-    ['literature', '📚 Literature'],
+    ['repurpose', 'Drug Repurposing'],
+    ['cart', 'CAR-T Scores'],
+    ['biomarker', 'Biomarkers'],
+    ['trials', 'Clinical Trials'],
+    ['cross-disease', 'Cross-Disease'],
+    ['synergy', 'Drug Synergy'],
+    ['safety', 'Safety Scores'],
+    ['expression', 'Expression'],
+    ['ml', 'ML Predictions'],
+    ['screening', 'Screening'],
+    ['network', 'Network'],
+    ['literature', 'Literature'],
 ];
 
 async function loadExportGrid() {
@@ -4207,8 +4207,8 @@ async function loadExportGrid() {
         <div class="export-item ${available ? '' : 'unavailable'}" title="${available ? `Export ${label}` : 'Run this module first to generate results'}">
             <span class="export-label">${label}</span>
             <div class="export-actions">
-                <a href="/api/export/json/${mod}" class="btn btn-secondary btn-sm">⬇ JSON</a>
-                <a href="/api/export/report/${mod}" class="btn btn-secondary btn-sm" target="_blank">📄 HTML</a>
+                <a href="/api/export/json/${mod}" class="btn btn-secondary btn-sm">JSON</a>
+                <a href="/api/export/report/${mod}" class="btn btn-secondary btn-sm" target="_blank">HTML</a>
             </div>
         </div>`).join('');
 }
@@ -4315,13 +4315,13 @@ async function openDiseaseManager() {
     const info = activeDiseaseInfo();
     section.innerHTML = `
         <div class="manage-header">
-            <h3>🛠️ Manage Disease Module — <span id="manage-disease-name">${escapeHtml(info.name)}</span></h3>
-            <button type="button" class="btn btn-secondary btn-sm" data-action="disease-manager-close">✕ Close</button>
+            <h3>Manage Disease Module — <span id="manage-disease-name">${escapeHtml(info.name)}</span></h3>
+            <button type="button" class="btn btn-secondary btn-sm" data-action="disease-manager-close">Close</button>
         </div>
         <div class="manage-summary" id="manage-summary"><span class="spinner"></span> Loading module…</div>
         <div class="manage-body">
             <div class="manage-block">
-                <h4>🔄 Refresh &amp; Prune</h4>
+                <h4>Refresh &amp; Prune</h4>
                 <p class="manage-hint">
                     Re-pull genes/drugs/pathways from GWAS Catalog, Open Targets, and Reactome, then drop
                     entities no source reported. A preview is always shown first — nothing is written until
@@ -4334,17 +4334,17 @@ async function openDiseaseManager() {
                     <label class="manage-opt"><input type="checkbox" id="mng-no-cache"> Bypass cache</label>
                 </div>
                 <div class="manage-actions">
-                    <button type="button" class="btn btn-primary" id="mng-prune-btn" data-action="disease-manager-prune">▶ Run Refresh &amp; Prune Preview</button>
+                    <button type="button" class="btn btn-primary" id="mng-prune-btn" data-action="disease-manager-prune">Run Refresh &amp; Prune Preview</button>
                 </div>
                 <div class="manage-result" id="mng-prune-result"></div>
             </div>
             <div class="manage-block">
-                <h4>🗂️ Backup History</h4>
+                <h4>Backup History</h4>
                 <p class="manage-hint">Prunes are snapshotted to <code>data/backups/</code>. Restore re-merges a backup verbatim — curated fields intact.</p>
                 <div id="mng-backups"><span class="spinner"></span> Loading backups…</div>
             </div>
             <div class="manage-block manage-block-full">
-                <h4>📜 Activity Log</h4>
+                <h4>Activity Log</h4>
                 <p class="manage-hint">Every prune and restore is recorded server-side to <code>data/audit_log.jsonl</code> — timestamp, entities removed/restored, and the backup involved — so module changes are fully traceable.</p>
                 <div class="audit-list" id="mng-audit"><span class="spinner"></span> Loading activity…</div>
             </div>
@@ -4371,12 +4371,12 @@ async function loadManageSummary() {
         ]);
         const entry = (registry.diseases || []).find(d => d.id === id) || {};
         el.innerHTML = `
-            <div class="manage-chip">🧬 <b>${entry.genes ?? '…'}</b> genes</div>
-            <div class="manage-chip">💊 <b>${entry.drugs ?? '…'}</b> drugs</div>
-            <div class="manage-chip">🗺️ <b>${entry.pathways ?? '…'}</b> pathways</div>
-            <div class="manage-chip">🗂️ <b>${backups.count ?? 0}</b> backup${backups.count === 1 ? '' : 's'}</div>`;
+            <div class="manage-chip"><b>${entry.genes ?? '…'}</b> genes</div>
+            <div class="manage-chip"><b>${entry.drugs ?? '…'}</b> drugs</div>
+            <div class="manage-chip"><b>${entry.pathways ?? '…'}</b> pathways</div>
+            <div class="manage-chip"><b>${backups.count ?? 0}</b> backup${backups.count === 1 ? '' : 's'}</div>`;
     } catch (e) {
-        el.innerHTML = `<span class="manage-err">⚠️ ${escapeHtml(e.message)}</span>`;
+        el.innerHTML = `<span class="manage-err">${escapeHtml(e.message)}</span>`;
     }
 }
 
@@ -4409,7 +4409,7 @@ async function loadManageBackups() {
             </div>`;
         }).join('');
     } catch (e) {
-        el.innerHTML = `<span class="manage-err">⚠️ ${escapeHtml(e.message)}</span>`;
+        el.innerHTML = `<span class="manage-err">${escapeHtml(e.message)}</span>`;
     }
 }
 
@@ -4447,7 +4447,7 @@ async function loadManageAudit() {
         }).join('') +
         (data.count > entries.length ? `<div class="manage-sub">Showing the last ${entries.length} of ${data.count} recorded actions.</div>` : '');
     } catch (e) {
-        el.innerHTML = `<span class="manage-err">⚠️ ${escapeHtml(e.message)}</span>`;
+        el.innerHTML = `<span class="manage-err">${escapeHtml(e.message)}</span>`;
     }
 }
 
@@ -4512,12 +4512,12 @@ async function runPrunePreview() {
 
     if (totalPrune === 0) {
         resultEl.className = 'manage-result visible success';
-        resultEl.innerHTML = `<strong>✅ Nothing to prune.</strong> Every existing entity was re-reported by at least one source.<br><span class="manage-sub">${mergeLines}</span>`;
+        resultEl.innerHTML = `<strong>Nothing to prune.</strong> Every existing entity was re-reported by at least one source.<br><span class="manage-sub">${mergeLines}</span>`;
         return;
     }
 
     const sourceChips = Object.entries(preview.sources || {})
-        .map(([s, ok]) => `${ok ? '✅' : '⚠️'} ${escapeHtml(s)}`).join(' ');
+        .map(([s, ok]) => `${ok ? 'OK' : 'MISSING'} · ${escapeHtml(s)}`).join('  ');
     const pruneChips = [
         ...pruneGenes.map(g => `<span class="candidate-chip gene">${escapeHtml(g)}</span>`),
         ...pruneDrugs.map(d => `<span class="candidate-chip drug">${escapeHtml(d)}</span>`),
@@ -4526,11 +4526,11 @@ async function runPrunePreview() {
     const body = `
         <p class="modal-note"><b>Sources:</b> ${sourceChips || '—'}</p>
         <p class="modal-note"><b>Merge (refresh):</b><br>${mergeLines}</p>
-        <p class="modal-note warn">⚠️ <b>${pruneGenes.length} gene${pruneGenes.length === 1 ? '' : 's'} and ${pruneDrugs.length} drug${pruneDrugs.length === 1 ? '' : 's'} would be removed</b> — no source reported them on this run. Every removed entity is backed up to <code>data/backups/</code> and can be restored verbatim later.</p>
+        <p class="modal-note warn"><b>${pruneGenes.length} gene${pruneGenes.length === 1 ? '' : 's'} and ${pruneDrugs.length} drug${pruneDrugs.length === 1 ? '' : 's'} would be removed</b> — no source reported them on this run. Every removed entity is backed up to <code>data/backups/</code> and can be restored verbatim later.</p>
         <div class="candidate-list">${pruneChips}</div>`;
 
     const confirmed = await openModal({
-        title: '⚠️ Refresh & Prune Preview',
+        title: 'Refresh & Prune Preview',
         body,
         confirmText: `Apply Prune (${totalPrune})`,
         cancelText: 'Cancel',
@@ -4554,7 +4554,7 @@ async function runPrunePreview() {
         const p = res.prune || {};
         resultEl.className = 'manage-result visible success';
         resultEl.innerHTML = `
-            <strong>✅ Prune applied.</strong> Removed ${p.genes?.length || 0} gene(s) and ${p.drugs?.length || 0} drug(s).
+            <strong>Prune applied.</strong> Removed ${p.genes?.length || 0} gene(s) and ${p.drugs?.length || 0} drug(s).
             ${p.backup ? `<br><span class="manage-sub">Backup: <code>${escapeHtml(p.backup)}</code></span>` : ''}`;
         showToast(`Prune complete — ${p.genes?.length || 0} gene(s), ${p.drugs?.length || 0} drug(s) removed and backed up.`);
         refreshManage();
@@ -4601,11 +4601,11 @@ async function previewRestore(index) {
     const bodyHtml = `
         <p class="modal-note">Backup: <code>${escapeHtml(filename)}</code></p>
         <p class="modal-note"><b>${nGenes} gene${nGenes === 1 ? '' : 's'}, ${nDrugs} drug${nDrugs === 1 ? '' : 's'}</b> would be restored verbatim (curated fields intact); <b>${nSkipped}</b> already present and skipped.</p>
-        ${pathways.length ? `<p class="modal-note">🔗 Re-attached to ${pathways.length} pathway(s): <span class="manage-sub">${pathways.slice(0, 10).map(escapeHtml).join(', ')}</span></p>` : ''}
+        ${pathways.length ? `<p class="modal-note">Re-attached to ${pathways.length} pathway(s): <span class="manage-sub">${pathways.slice(0, 10).map(escapeHtml).join(', ')}</span></p>` : ''}
         ${nGenes ? `<div class="candidate-list">${(restored.genes || []).map(g => `<span class="candidate-chip gene">${escapeHtml(g)}</span>`).join(' ')}</div>` : ''}`;
 
     const confirmed = await openModal({
-        title: '↩ Restore from backup',
+        title: 'Restore from backup',
         body: bodyHtml,
         confirmText: 'Restore',
         cancelText: 'Cancel',
@@ -5178,8 +5178,8 @@ async function loadMultiDiseaseNetwork() {
                     <div style="margin-bottom:4px;"><strong>Degree:</strong> ${d.degree || 0} connections</div>
                     <div style="margin-bottom:4px;"><strong>Diseases:</strong> ${escapeHtml(assocs)}</div>
                     ${d.mechanism ? `<div style="margin-top:6px;"><strong>Mechanism:</strong> ${escapeHtml(d.mechanism)}</div>` : ''}
-                    ${d.is_shared_hub ? `<div style="margin-top:6px;color:#e879f9;font-weight:600;">✨ Multi-Disease Target Hub</div>` : ''}
-                    ${d.is_repurposing_bridge ? `<div style="margin-top:6px;color:#38bdf8;font-weight:600;">🔄 Drug Repurposing Bridge</div>` : ''}
+                    ${d.is_shared_hub ? `<div style="margin-top:6px;color:var(--ng-data-3);font-weight:600;">Multi-Disease Target Hub</div>` : ''}
+                    ${d.is_repurposing_bridge ? `<div style="margin-top:6px;color:var(--ng-data-7);font-weight:600;">Drug Repurposing Bridge</div>` : ''}
                 `;
             }
         });

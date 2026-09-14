@@ -18,18 +18,23 @@
         <!-- ── Navigation ───────────────────────────────────────────── -->
         <header>
         <nav class="top-nav" id="top-nav">
-            <div class="nav-brand">
-                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">☰</button>
-                <img class="nav-logo" src="/brand/symbol.svg" alt="NosoGraph">
-                <span class="nav-title">Noso<span>Graph</span></span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
+            <div class="nav-primary">
+                <div class="nav-brand">
+                    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">☰</button>
+                    <img class="nav-logo" src="/brand/symbol.svg" alt="NosoGraph">
+                    <span class="nav-title">Noso<span>Graph</span></span>
+                </div>
                 <div class="nav-disease-wrap">
                     <select id="disease-selector" class="nav-select" aria-label="Select disease">
                         <option value="" disabled>Loading diseases…</option>
                     </select>
                 </div>
-                <div class="nav-links">
+                <div class="nav-meta">
+                    <a href="/api/health" class="nav-link nav-status" id="api-status" title="API Status" aria-label="API status">●</a>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-links nav-links--sections">
                     <a href="#evidence-workspace" class="nav-link" data-nav="evidence-workspace">Workspace</a>
                     <a href="#modules" class="nav-link" data-nav="modules">Modules</a>
                     <a href="#kg-explorer" class="nav-link" data-nav="kg-explorer">KG</a>
@@ -40,14 +45,16 @@
                     <a href="#graph-analytics" class="nav-link" data-nav="graph-analytics">Analytics</a>
                     <a href="#export" class="nav-link" data-nav="export">Export</a>
                     <a href="#jobs" class="nav-link" id="jobs-tab" data-nav="jobs">Jobs <span id="job-count" class="job-badge hidden">0</span></a>
+                </div>
+                <div class="nav-links nav-links--tools">
                     <a href="/patient_matching.html" class="nav-link">Patient Matching</a>
                     <a href="/lead_opt.html" class="nav-link">Lead Opt</a>
                     <a href="/spatial.html" class="nav-link">Spatial Omics</a>
                     <a href="/agent.html" class="nav-link">Target Agent</a>
                     <a href="/pgx.html" class="nav-link">PGx</a>
                     <a href="/api/docs" class="nav-link" target="_blank" rel="noopener">API Docs</a>
-                    <a href="/api/health" class="nav-link nav-status" id="api-status" title="API Status" aria-label="API status">●</a>
                 </div>
+                <span class="nav-instance">Local · Research use only</span>
             </div>
         </nav>
         </header>
@@ -58,7 +65,7 @@
             <div class="hero">
                 <div class="hero-layout">
                     <div class="hero-content">
-                        <p class="hero-kicker">Connected biomedical research</p>
+                        <p class="hero-kicker">Local research workspace</p>
                         <h1>Noso<span>Graph</span></h1>
                         <p class="hero-tagline">Disease Intelligence. Connected.</p>
                         <p class="subtitle">
@@ -77,11 +84,9 @@
                     </div>
                     <div class="hero-actions" aria-label="Quick actions">
                         <a href="#evidence-workspace" class="btn btn-primary">Run workspace</a>
-                        <a href="#kg-explorer" class="btn btn-secondary">Explore knowledge graph</a>
-                        <a href="#graph-analytics" class="btn btn-secondary">Graph analytics</a>
+                        <a href="#kg-explorer" class="btn btn-secondary">Knowledge graph</a>
                         <a href="#condition-comparison" class="btn btn-secondary">Compare conditions</a>
                         <a href="#evidence-explorer" class="btn btn-secondary" id="hero-evidence-link">Evidence Explorer</a>
-                        <a href="/api/docs" class="btn btn-secondary" target="_blank" rel="noopener">API documentation</a>
                     </div>
                 </div>
             </div>
@@ -92,18 +97,15 @@
                     <h3 class="stats-group-title">Platform</h3>
                     <div class="stats-grid stats-grid-platform" id="stats-grid-platform">
                         <div class="stat-card" data-stat="diseases">
-                            <div class="stat-icon">🦠</div>
-                            <div class="stat-value stat-color-cyan" id="stat-diseases">…</div>
+                            <div class="stat-value" id="stat-diseases">…</div>
                             <div class="stat-label">Diseases Registered</div>
                         </div>
                         <div class="stat-card" data-stat="modules">
-                            <div class="stat-icon">🧪</div>
-                            <div class="stat-value stat-color-cyan" id="stat-modules">…</div>
+                            <div class="stat-value" id="stat-modules">…</div>
                             <div class="stat-label">Analysis Modules</div>
                         </div>
                         <div class="stat-card" data-stat="api-status">
-                            <div class="stat-icon">⚡</div>
-                            <div class="stat-value stat-color-green" id="stat-api-status">…</div>
+                            <div class="stat-value" id="stat-api-status">…</div>
                             <div class="stat-label">API Status</div>
                         </div>
                     </div>
@@ -112,33 +114,27 @@
                     <h3 class="stats-group-title" id="stats-disease-title">Selected Disease</h3>
                     <div class="stats-grid stats-grid-disease" id="stats-grid-disease">
                         <div class="stat-card" data-stat="kg-nodes">
-                            <div class="stat-icon">🕸️</div>
-                            <div class="stat-value stat-color-green" id="stat-kg-nodes">…</div>
+                            <div class="stat-value" id="stat-kg-nodes">…</div>
                             <div class="stat-label">KG Nodes</div>
                         </div>
                         <div class="stat-card" data-stat="edges">
-                            <div class="stat-icon">🔗</div>
-                            <div class="stat-value stat-color-yellow" id="stat-edges">…</div>
+                            <div class="stat-value" id="stat-edges">…</div>
                             <div class="stat-label">KG Relationships</div>
                         </div>
                         <div class="stat-card" data-stat="genes">
-                            <div class="stat-icon">🧬</div>
-                            <div class="stat-value stat-color-purple" id="stat-genes">…</div>
+                            <div class="stat-value" id="stat-genes">…</div>
                             <div class="stat-label" id="stat-genes-label">Associated Genes</div>
                         </div>
                         <div class="stat-card" data-stat="drugs">
-                            <div class="stat-icon">💊</div>
-                            <div class="stat-value stat-color-blue" id="stat-drugs">…</div>
+                            <div class="stat-value" id="stat-drugs">…</div>
                             <div class="stat-label">Associated Drugs</div>
                         </div>
                         <div class="stat-card" data-stat="pathways">
-                            <div class="stat-icon">🛤️</div>
-                            <div class="stat-value stat-color-orange" id="stat-pathways">…</div>
+                            <div class="stat-value" id="stat-pathways">…</div>
                             <div class="stat-label">Pathways</div>
                         </div>
                         <div class="stat-card" data-stat="candidates">
-                            <div class="stat-icon">🎯</div>
-                            <div class="stat-value stat-color-pink" id="stat-candidates">…</div>
+                            <div class="stat-value" id="stat-candidates">…</div>
                             <div class="stat-label">Repurposing Candidates</div>
                         </div>
                     </div>
@@ -153,7 +149,7 @@
                         <h2 id="workspace-title">Evidence-to-Hypothesis Workspace</h2>
                         <p>Turn a research question into a traceable, computationally prioritized dossier across PubMed and ClinicalTrials.gov.</p>
                     </div>
-                    <div class="workspace-disclaimer">⚠️ Research use only · not medical advice</div>
+                    <div class="workspace-disclaimer">Research use only · not medical advice</div>
                 </div>
                 <form id="workspace-form" class="workspace-form" data-action="workspace-submit" aria-describedby="workspace-submit-status">
                     <label class="workspace-question">
@@ -175,23 +171,23 @@
                         <label class="workspace-check"><input id="workspace-enable-llm" type="checkbox" checked> Optional LLM enrichment</label>
                     </div>
                     <div class="workspace-actions">
-                        <button class="btn btn-primary" type="submit" id="workspace-submit">🚀 Run workspace</button>
+                        <button class="btn btn-primary" type="submit" id="workspace-submit">Run workspace</button>
                         <span class="workspace-hint" id="workspace-submit-status" role="status" aria-live="polite">Ready for a new research question.</span>
                     </div>
                 </form>
                 <div id="workspace-result" class="workspace-result" role="region" aria-label="Workspace result" aria-live="polite" aria-atomic="false"></div>
                 <div class="workspace-history-shell" id="workspace-history">
-                    <div class="workspace-history-head"><h3>🗂️ Saved research runs</h3><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-history-refresh">↻ Refresh</button></div>
+                    <div class="workspace-history-head"><h3>Saved research runs</h3><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-history-refresh">↻ Refresh</button></div>
                     <div id="workspace-history-list" class="workspace-history-list" role="region" aria-label="Saved research runs" aria-live="polite"><span class="workspace-muted">No saved runs loaded yet.</span></div>
                     <section id="workspace-alerts" class="workspace-alerts" aria-labelledby="workspace-alerts-title">
-                        <div class="workspace-alerts-head"><h3 id="workspace-alerts-title">🔔 Review reminders <span id="workspace-alert-count" class="workspace-alert-count"></span></h3><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-alerts-refresh">↻ Refresh</button></div>
+                        <div class="workspace-alerts-head"><h3 id="workspace-alerts-title">Review reminders <span id="workspace-alert-count" class="workspace-alert-count"></span></h3><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-alerts-refresh">↻ Refresh</button></div>
                         <div class="workspace-notification-settings"><label>Email <input id="workspace-alert-email" type="email" maxlength="320" placeholder="researcher@example.org"></label><label>Slack webhook <input id="workspace-alert-slack" type="password" maxlength="500" placeholder="https://hooks.slack.com/services/…" autocomplete="new-password"></label><label class="workspace-alert-check"><input id="workspace-alert-email-enabled" type="checkbox" checked> Email</label><label class="workspace-alert-check"><input id="workspace-alert-slack-enabled" type="checkbox" checked> Slack</label><label>Score drop <input id="workspace-alert-score-threshold" type="number" min="0" max="100" step="0.1" value="0" title="0 disables score-drop-only alerts"></label><label>Rank movement <input id="workspace-alert-rank-threshold" type="number" min="0" max="100" step="1" value="0" title="0 disables rank-change-only alerts"></label><label>Quality change <input id="workspace-alert-quality-threshold" type="number" min="0" max="1" step="0.01" value="0" title="0 disables quality-change-only alerts"></label><label class="workspace-alert-check"><input id="workspace-weekly-digest-enabled" type="checkbox"> Weekly digest</label><label>Day <select id="workspace-digest-weekday"><option value="0">Mon</option><option value="1">Tue</option><option value="2">Wed</option><option value="3">Thu</option><option value="4">Fri</option><option value="5">Sat</option><option value="6">Sun</option></select></label><label>Time <input id="workspace-digest-time" type="time" value="09:00"></label><label>Timezone <input id="workspace-digest-timezone" type="text" maxlength="64" value="UTC" placeholder="America/New_York"></label><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-notifications-save">Save notifications</button><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-digest-preview">Preview digest</button><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-digest-send">Send digest now</button><span id="workspace-alert-settings-status" class="workspace-muted" role="status"></span><span id="workspace-alert-delivery-status" class="workspace-muted" role="status"></span><span id="workspace-digest-delivery-status" class="workspace-muted" role="status"></span></div>
                         <div id="workspace-alert-list" class="workspace-alert-list"><span class="workspace-muted">No evidence alerts yet.</span></div><div id="workspace-digest-preview" class="workspace-digest-preview" hidden></div>
                     </section>
                     <div id="workspace-compare" class="workspace-compare" role="region" aria-label="Workspace run comparison" aria-live="polite" aria-atomic="true"></div>
                     <section id="workspace-trends" class="workspace-trends" aria-labelledby="workspace-trends-title">
                         <div class="workspace-trends-head">
-                            <div><h3 id="workspace-trends-title">📈 Evidence trends</h3><p class="workspace-muted">Track candidate scores, confidence, evidence volume, and source coverage across saved runs.</p></div>
+                            <div><h3 id="workspace-trends-title">Evidence trends</h3><p class="workspace-muted">Track candidate scores, confidence, evidence volume, and source coverage across saved runs.</p></div>
                             <div class="workspace-trend-controls"><label>View <select id="workspace-trend-kind" data-action="workspace-trends-render"><option value="drug">Drugs</option><option value="target">Targets</option></select></label><label>Candidate <select id="workspace-trend-candidate" data-action="workspace-trends-render"><option value="">All candidates</option></select></label><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-trends-update">↻ Update</button></div>
                         </div>
                         <div id="workspace-trend-status" class="workspace-muted" role="status" aria-live="polite">Loading trend data…</div>
@@ -201,7 +197,7 @@
                     </section>
                     <section id="workspace-evidence-graph" class="workspace-evidence-graph" aria-labelledby="workspace-evidence-graph-title">
                         <div class="workspace-graph-head">
-                            <div><h3 id="workspace-evidence-graph-title">🕸️ Evidence graph</h3><p class="workspace-muted">Explore how candidates connect to claims, citations, pathways, and your review decisions.</p></div>
+                            <div><h3 id="workspace-evidence-graph-title">Evidence graph</h3><p class="workspace-muted">Explore how candidates connect to claims, citations, pathways, and your review decisions.</p></div>
                             <div class="workspace-graph-controls"><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-graph-fit">Fit graph</button><button class="btn btn-secondary btn-sm" type="button" data-action="workspace-graph-refresh">↻ Refresh</button></div>
                         </div>
                         <div class="workspace-graph-legend"><span><i class="graph-dot candidate"></i>Candidate</span><span><i class="graph-dot claim"></i>Claim</span><span><i class="graph-dot citation"></i>Citation</span><span><i class="graph-dot pathway"></i>Pathway</span><span><i class="graph-dot decision"></i>Review decision</span></div>
@@ -213,15 +209,15 @@
 
             <!-- ── Modules ───────────────────────────────────────────── -->
             <h2 class="section-title" id="modules">
-                <span>🧰</span> Analysis Modules
+                <span class="section-kicker">Pipeline</span>Analysis Modules
             </h2>
 
             <div class="modules-grid" id="modules-grid">
                 <!-- Knowledge Graph -->
                 <div class="module-card kg" data-module="kg">
                     <div class="module-card-header">
-                        <div class="module-icon kg">🕸️</div>
                         <div>
+                            <span class="module-id">module · kg</span>
                             <h3>Knowledge Graph</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 1 <span class="module-coverage-badge coverage-badge coverage-partial">Coverage loading…</span></span>
                         </div>
@@ -236,8 +232,8 @@
                         <span class="tag purple">Interactive</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="kg">🔍 Query Graph</button>
-                        <button type="button" class="btn btn-secondary" data-action="scroll-explorer">🕸️ Explore Graph</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="kg">Query Graph</button>
+                        <button type="button" class="btn btn-secondary" data-action="scroll-explorer">Explore Graph</button>
                     </div>
                     <div class="module-result" id="result-kg"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
                 </div>
@@ -245,8 +241,8 @@
                 <!-- Drug Repurposing -->
                 <div class="module-card dr" data-module="repurpose">
                     <div class="module-card-header">
-                        <div class="module-icon dr">💊</div>
                         <div>
+                            <span class="module-id">module · repurpose</span>
                             <h3>Drug Repurposing</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 3 <span class="module-coverage-badge coverage-badge coverage-partial">Coverage loading…</span></span>
                         </div>
@@ -261,8 +257,8 @@
                         <span class="tag green">Gene-Targeted</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="repurpose">💊 Score Candidates</button>
-                        <a href="/api/export/report/repurpose" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="repurpose">Score Candidates</button>
+                        <a href="/api/export/report/repurpose" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-repurpose"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease-aware scoring</span></div></div>
                 </div>
@@ -270,8 +266,8 @@
                 <!-- Bioinformatics -->
                 <div class="module-card bio" data-module="bioinformatics">
                     <div class="module-card-header">
-                        <div class="module-icon bio">🧬</div>
                         <div>
+                            <span class="module-id">module · bioinformatics</span>
                             <h3>Bioinformatics</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 2 <span class="module-coverage-badge coverage-badge coverage-partial">Coverage loading…</span></span>
                         </div>
@@ -287,19 +283,19 @@
                         <span class="tag blue">STRING</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="bioinformatics">🧬 Run All</button>
-                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="gwas">🧬 GWAS</button>
-                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="enrichment">📈 Enrich</button>
-                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="ppi">🔗 PPI</button>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="bioinformatics">Run All</button>
+                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="gwas">GWAS</button>
+                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="enrichment">Enrich</button>
+                        <button type="button" class="btn btn-secondary" data-action="module-run" data-module="ppi">PPI</button>
                     </div>
                     <div class="module-result" id="result-bioinformatics"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
                 </div>
 
                 <!-- Evidence Monitor -->
-                <div class="module-card" style="--card-accent:#06b6d4;" data-module="monitor">
+                <div class="module-card" data-module="monitor">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(6,182,212,0.12);">📡</div>
                         <div>
+                            <span class="module-id">module · monitor</span>
                             <h3>Evidence Monitor</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 19</span>
                         </div>
@@ -314,17 +310,17 @@
                         <span class="tag blue">Continuous</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="monitor">📡 Check Alerts</button>
-                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="monitor" title="Use the Evidence Workspace for dossier reports">📊 Workspace</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="monitor">Check Alerts</button>
+                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="monitor" title="Use the Evidence Workspace for dossier reports">Workspace</a>
                     </div>
                     <div class="module-result" id="result-monitor"></div>
                 </div>
 
                 <!-- LLM Extractor -->
-                <div class="module-card" style="--card-accent:#8b5cf6;" data-module="extractor">
+                <div class="module-card" data-module="extractor">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(139,92,246,0.12);">🤖</div>
                         <div>
+                            <span class="module-id">module · extractor</span>
                             <h3>LLM Extractor</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 18</span>
                         </div>
@@ -339,17 +335,17 @@
                         <span class="tag green">Evidence Levels</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="extractor">🤖 Extract Evidence</button>
-                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="extractor" title="Use the Evidence Workspace for dossier reports">📊 Workspace</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="extractor">Extract Evidence</button>
+                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="extractor" title="Use the Evidence Workspace for dossier reports">Workspace</a>
                     </div>
                     <div class="module-result" id="result-extractor"></div>
                 </div>
 
                 <!-- Evidence Gatherer -->
-                <div class="module-card" style="--card-accent:#f59e0b;" data-module="evidence">
+                <div class="module-card" data-module="evidence">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(245,158,11,0.12);">🌐</div>
                         <div>
+                            <span class="module-id">module · evidence</span>
                             <h3>Evidence Gatherer</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 17</span>
                         </div>
@@ -364,16 +360,16 @@
                         <span class="tag green">5 Sources</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="evidence">🌐 Gather Evidence</button>
-                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="evidence" title="Use the Evidence Workspace for dossier reports">📊 Workspace</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="evidence">Gather Evidence</button>
+                        <a href="#evidence-workspace" class="btn btn-secondary module-report-link" data-report-module="evidence" title="Use the Evidence Workspace for dossier reports">Workspace</a>
                     </div>
                     <div class="module-result" id="result-evidence"></div>
                 </div>
 
-                <div class="module-card" style="--card-accent:#818cf8;" data-module="semantic">
+                <div class="module-card" data-module="semantic">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(129,140,248,0.12);">🧠</div>
                         <div>
+                            <span class="module-id">module · semantic</span>
                             <h3>Semantic Search</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 16</span>
                         </div>
@@ -388,8 +384,8 @@
                         <span class="tag green">Semantic</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="semantic">🧠 Semantic Search</button>
-                        <a href="/api/export/modules" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="semantic">Semantic Search</button>
+                        <a href="/api/export/modules" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-semantic"></div>
                 </div>
@@ -397,8 +393,8 @@
                 <!-- Literature Mining -->
                 <div class="module-card lit" data-module="literature">
                     <div class="module-card-header">
-                        <div class="module-icon lit">📚</div>
                         <div>
+                            <span class="module-id">module · literature</span>
                             <h3>Literature Mining</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 4</span>
                         </div>
@@ -413,8 +409,8 @@
                         <span class="tag blue">BioPython</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="literature">📚 Mine Literature</button>
-                        <a href="/api/export/report/literature" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="literature">Mine Literature</button>
+                        <a href="/api/export/report/literature" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-literature"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease-specific sources</span></div></div>
                 </div>
@@ -422,8 +418,8 @@
                 <!-- Virtual Screening -->
                 <div class="module-card vs" data-module="screening">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(245,158,11,0.12);">🔬</div>
                         <div>
+                            <span class="module-id">module · screening</span>
                             <h3>Virtual Screening</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 6</span>
                         </div>
@@ -439,17 +435,17 @@
                         <span class="tag green">26 Compounds</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="screening">🔬 Screen</button>
-                        <a href="/api/export/report/screening" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="screening">Screen</button>
+                        <a href="/api/export/report/screening" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-screening"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Coverage shown after run</span></div></div>
                 </div>
 
                 <!-- ML Predictor -->
-                <div class="module-card" style="--card-accent:#818cf8;" data-module="ml">
+                <div class="module-card" data-module="ml">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(129,140,248,0.12);">🧠</div>
                         <div>
+                            <span class="module-id">module · ml</span>
                             <h3>ML Target Predictor</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 7</span>
                         </div>
@@ -464,17 +460,17 @@
                         <span class="tag green">Feature Engineering</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="ml">🧠 Predict Targets</button>
-                        <a href="/api/export/report/ml" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="ml">Predict Targets</button>
+                        <a href="/api/export/report/ml" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-ml"></div>
                 </div>
 
                 <!-- CAR-T Predictor -->
-                <div class="module-card" style="--card-accent:#dc2626;" data-module="cart">
+                <div class="module-card" data-module="cart">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(220,38,38,0.12);">🔬</div>
                         <div>
+                            <span class="module-id">module · car-t</span>
                             <h3>CAR-T Predictor</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 14</span>
                         </div>
@@ -489,17 +485,17 @@
                         <span class="tag blue">Immune Reset</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="cart">🔬 Score Genes</button>
-                        <a href="/api/export/report/cart" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="cart">Score Genes</button>
+                        <a href="/api/export/report/cart" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-cart"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Curated therapy rubric</span></div></div>
                 </div>
 
                 <!-- Biomarker Discovery -->
-                <div class="module-card" style="--card-accent:#22d3ee;" data-module="biomarker">
+                <div class="module-card" data-module="biomarker">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(34,211,238,0.12);">🧬</div>
                         <div>
+                            <span class="module-id">module · biomarker</span>
                             <h3>Biomarker Discovery</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 15</span>
                         </div>
@@ -514,17 +510,17 @@
                         <span class="tag green">5 Platforms</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="biomarker">🧬 Discover Biomarkers</button>
-                        <a href="/api/export/report/biomarker" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="biomarker">Discover Biomarkers</button>
+                        <a href="/api/export/report/biomarker" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-biomarker"></div>
                 </div>
 
                 <!-- Gene Expression Correlation -->
-                <div class="module-card" style="--card-accent:#a78bfa;" data-module="expression">
+                <div class="module-card" data-module="expression">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(167,139,250,0.12);">🧬</div>
                         <div>
+                            <span class="module-id">module · expression</span>
                             <h3>Gene Expression</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 12</span>
                         </div>
@@ -539,17 +535,17 @@
                         <span class="tag green">26 Drugs</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="expression">🧬 Correlate Expression</button>
-                        <a href="/api/export/report/expression" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="expression">Correlate Expression</button>
+                        <a href="/api/export/report/expression" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-expression"></div>
                 </div>
 
                 <!-- Network Pharmacology -->
-                <div class="module-card" style="--card-accent:#22d3ee;" data-module="network">
+                <div class="module-card" data-module="network">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(34,211,238,0.12);">🌐</div>
                         <div>
+                            <span class="module-id">module · network</span>
                             <h3>Network Pharmacology</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 11</span>
                         </div>
@@ -564,17 +560,17 @@
                         <span class="tag green">Bridge Nodes</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="network-analysis">🌐 Analyze Network</button>
-                        <a href="/api/export/report/network" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="network-analysis">Analyze Network</button>
+                        <a href="/api/export/report/network" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-network"></div>
                 </div>
 
                 <!-- Safety Profiling -->
-                <div class="module-card" style="--card-accent:#4ade80;" data-module="safety">
+                <div class="module-card" data-module="safety">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(74,222,128,0.12);">🛡️</div>
                         <div>
+                            <span class="module-id">module · safety</span>
                             <h3>Safety Profiling</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 10</span>
                         </div>
@@ -589,17 +585,17 @@
                         <span class="tag pink">Black Box Warnings</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="safety">🛡️ Safety Check</button>
-                        <a href="/api/export/report/safety" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="safety">Safety Check</button>
+                        <a href="/api/export/report/safety" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-safety"><div class="coverage-panel"><span class="coverage-badge coverage-partial">Disease symptoms &amp; risk</span></div></div>
                 </div>
 
                 <!-- Drug Synergy -->
-                <div class="module-card" style="--card-accent:#f59e0b;" data-module="synergy">
+                <div class="module-card" data-module="synergy">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(245,158,11,0.12);">🔗</div>
                         <div>
+                            <span class="module-id">module · synergy</span>
                             <h3>Drug Synergy</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 9</span>
                         </div>
@@ -614,17 +610,17 @@
                         <span class="tag blue">Synergy Scoring</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="synergy">🔗 Find Synergies</button>
-                        <a href="/api/export/report/synergy" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="synergy">Find Synergies</button>
+                        <a href="/api/export/report/synergy" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-synergy"></div>
                 </div>
 
                 <!-- Cross-Disease Analysis -->
-                <div class="module-card" style="--card-accent:#c084fc;" data-module="cross-disease">
+                <div class="module-card" data-module="cross-disease">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(192,132,252,0.12);">🌐</div>
                         <div>
+                            <span class="module-id">module · cross-disease</span>
                             <h3>Cross-Disease Analysis</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 22</span>
                         </div>
@@ -639,18 +635,18 @@
                         <span class="tag green">Multi-Disease Scoring</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="cross-disease">🌐 Analyze Cross-Disease</button>
-                        <button type="button" class="btn btn-secondary" data-action="module-comparison">⚖️ Compare Modules</button>
-                        <a href="/api/export/report/cross-disease" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="cross-disease">Analyze Cross-Disease</button>
+                        <button type="button" class="btn btn-secondary" data-action="module-comparison">Compare Modules</button>
+                        <a href="/api/export/report/cross-disease" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-cross-disease"><span class="placeholder">Click to analyze</span></div>
                 </div>
 
                 <!-- Clinical Trials -->
-                <div class="module-card" style="--card-accent:#60a5fa;" data-module="trials">
+                <div class="module-card" data-module="trials">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(96,165,250,0.12);">📋</div>
                         <div>
+                            <span class="module-id">module · trials</span>
                             <h3>Clinical Trials</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Phase 8</span>
                         </div>
@@ -665,17 +661,17 @@
                         <span class="tag pink">MoA</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="trials">📋 Track Trials</button>
-                        <a href="/api/export/report/trials" class="btn btn-secondary">📊 Report</a>
+                        <button type="button" class="btn btn-primary" data-action="module-run" data-module="trials">Track Trials</button>
+                        <a href="/api/export/report/trials" class="btn btn-secondary">Report</a>
                     </div>
                     <div class="module-result" id="result-trials"></div>
                 </div>
 
                 <!-- Manage Disease Module -->
-                <div class="module-card" style="--card-accent:#f87171;">
+                <div class="module-card">
                     <div class="module-card-header">
-                        <div class="module-icon" style="background:rgba(248,113,113,0.12);">🛠️</div>
                         <div>
+                            <span class="module-id">admin</span>
                             <h3>Manage Disease Module</h3>
                             <span class="module-phase"><span class="status-dot complete"></span>Admin</span>
                         </div>
@@ -692,7 +688,7 @@
                         <span class="tag green">Backups</span>
                     </div>
                     <div class="actions">
-                        <button type="button" class="btn btn-primary" data-action="disease-manager-open">🛠️ Manage Module</button>
+                        <button type="button" class="btn btn-primary" data-action="disease-manager-open">Manage Module</button>
                     </div>
                     <div class="module-result" id="result-manage"></div>
                 </div>
@@ -718,9 +714,9 @@
                     <div>
                         <span class="workspace-kicker">OPERATOR · CORPUS READINESS &amp; QUALITY</span>
                         <h2 id="corpus-status-title">Disease Corpus Health &amp; Tier Browser</h2>
-                        <p>Explore 10,403 disease modules across L0–L3 validation tiers, track data completeness, and inspect curation gaps.</p>
+                        <p>Explore 10,404 disease modules across L0–L3 validation tiers, track data completeness, and inspect curation gaps.</p>
                     </div>
-                    <div style="display:flex;gap:8px;align-items:center;">
+                    <div class="corpus-head-actions">
                         <button type="button" class="btn btn-secondary btn-sm" id="corpus-refresh-btn">↻ Refresh Corpus</button>
                     </div>
                 </div>
@@ -728,37 +724,37 @@
                 <!-- Tier Distribution Metric Cards -->
                 <div class="corpus-tier-grid" id="corpus-tier-cards" aria-label="Corpus Tier Distribution">
                     <div class="corpus-tier-card tier-all active" data-tier="">
-                        <div class="tier-header"><span class="tier-label">All Modules</span><span>📦</span></div>
+                        <div class="tier-header"><span class="tier-label">All Modules</span><span class="tier-code">ALL</span></div>
                         <div class="tier-count" id="tier-count-all">…</div>
                         <div class="tier-desc">Total registered diseases</div>
                     </div>
                     <div class="corpus-tier-card tier-l3" data-tier="L3">
-                        <div class="tier-header"><span class="tier-label">Tier L3</span><span>🌟</span></div>
+                        <div class="tier-header"><span class="tier-label">Tier L3</span><span class="tier-code">L3</span></div>
                         <div class="tier-count" id="tier-count-l3">…</div>
                         <div class="tier-desc">Research Ready · Curated</div>
                     </div>
                     <div class="corpus-tier-card tier-l2" data-tier="L2">
-                        <div class="tier-header"><span class="tier-label">Tier L2</span><span>⚡</span></div>
+                        <div class="tier-header"><span class="tier-label">Tier L2</span><span class="tier-code">L2</span></div>
                         <div class="tier-count" id="tier-count-l2">…</div>
                         <div class="tier-desc">Pipeline Ready · Full KG</div>
                     </div>
                     <div class="corpus-tier-card tier-l1" data-tier="L1">
-                        <div class="tier-header"><span class="tier-label">Tier L1</span><span>📊</span></div>
+                        <div class="tier-header"><span class="tier-label">Tier L1</span><span class="tier-code">L1</span></div>
                         <div class="tier-count" id="tier-count-l1">…</div>
                         <div class="tier-desc">Partial Knowledge Graph</div>
                     </div>
                     <div class="corpus-tier-card tier-l0" data-tier="L0">
-                        <div class="tier-header"><span class="tier-label">Tier L0</span><span>🌱</span></div>
+                        <div class="tier-header"><span class="tier-label">Tier L0</span><span class="tier-code">L0</span></div>
                         <div class="tier-count" id="tier-count-l0">…</div>
                         <div class="tier-desc">Base Scaffold Module</div>
                     </div>
                     <div class="corpus-tier-card tier-blocked" data-tier="blocked">
-                        <div class="tier-header"><span class="tier-label">Blocked</span><span>⚠️</span></div>
+                        <div class="tier-header"><span class="tier-label">Blocked</span><span class="tier-code">BLK</span></div>
                         <div class="tier-count" id="tier-count-blocked">…</div>
                         <div class="tier-desc">Validation / Slug issues</div>
                     </div>
                     <div class="corpus-tier-card tier-symptoms" data-tier="symptoms">
-                        <div class="tier-header"><span class="tier-label">Symptoms</span><span>🩺</span></div>
+                        <div class="tier-header"><span class="tier-label">Symptoms</span><span class="tier-code">SYM</span></div>
                         <div class="tier-count" id="tier-count-symptoms">…</div>
                         <div class="tier-desc">Clinical phenotypes active</div>
                     </div>
@@ -817,14 +813,14 @@
                     <div id="corpus-pagination-summary">Showing 0–0 of 0 diseases</div>
                     <div class="corpus-pagination-controls">
                         <button type="button" class="btn btn-secondary btn-sm" id="corpus-prev-page" disabled>Previous</button>
-                        <span id="corpus-page-num" style="font-weight:600;font-size:0.8rem;padding:0 8px;">Page 1</span>
+                        <span id="corpus-page-num" class="corpus-page-num">Page 1</span>
                         <button type="button" class="btn btn-secondary btn-sm" id="corpus-next-page" disabled>Next</button>
                     </div>
                 </div>
 
                 <!-- Top Configuration Gaps Breakdown -->
-                <div style="padding:16px 20px;border-top:1px solid var(--border);background:var(--surface);">
-                    <h4 style="margin:0 0 10px;font-size:0.82rem;text-transform:uppercase;color:var(--text-muted);letter-spacing:0.04em;">Top Missing Configuration Gaps Across Catalog</h4>
+                <div class="corpus-gaps-footer">
+                    <h4 class="corpus-gaps-title">Top Missing Configuration Gaps Across Catalog</h4>
                     <div id="corpus-gaps-breakdown" class="condition-chip-list">
                         <span class="condition-empty">Loading gap breakdown…</span>
                     </div>
@@ -838,7 +834,7 @@
                         <h2 id="condition-explorer-title">Condition Explorer</h2>
                         <p>Search imported ontology conditions, inspect hierarchy, and review supporting evidence and contradictory evidence without a hand-authored disease module.</p>
                     </div>
-                    <div class="condition-explorer-disclaimer" id="condition-explorer-disclaimer">⚠️ Research use only · not medical advice</div>
+                    <div class="condition-explorer-disclaimer" id="condition-explorer-disclaimer">Research use only · not medical advice</div>
                 </div>
                 <div class="condition-explorer-panel" id="condition-explorer-panel" aria-busy="false">
                     <div class="condition-explorer-toolbar">
@@ -870,7 +866,7 @@
                         <h2 id="evidence-explorer-title">Evidence Explorer</h2>
                         <p>Inspect why NosoGraph asserts a relationship: supporting and contradictory evidence, quality context, provenance, and source links.</p>
                     </div>
-                    <div class="evidence-explorer-disclaimer">⚠️ Research use only · associations are not causation</div>
+                    <div class="evidence-explorer-disclaimer">Research use only · associations are not causation</div>
                 </div>
                 <div class="evidence-explorer-panel" id="evidence-explorer-panel" aria-busy="false">
                     <div class="evidence-explorer-toolbar">
@@ -918,7 +914,7 @@
                         <h2 id="condition-comparison-title">Condition Comparison</h2>
                         <p>Compare 2–5 imported conditions across phenotype, gene, pathway, treatment, and evidence coverage. Inspect shared and distinct entities without treating unrecorded data as biological absence.</p>
                     </div>
-                    <div class="condition-comparison-disclaimer" id="condition-comparison-disclaimer">⚠️ Research use only · condition similarity for exploratory analysis</div>
+                    <div class="condition-comparison-disclaimer" id="condition-comparison-disclaimer">Research use only · condition similarity for exploratory analysis</div>
                 </div>
                 <div class="condition-comparison-panel" id="condition-comparison-panel" aria-busy="false">
                     <div class="condition-comparison-toolbar">
@@ -953,7 +949,7 @@
                         <h2 id="multi-disease-comparison-title">Multi-Disease Comparative Matrix & Target Overlap</h2>
                         <p>Analyze shared therapeutic targets, pathway cross-talk, and pairwise Jaccard disease similarity across curated autoimmune modules.</p>
                     </div>
-                    <div class="condition-comparison-disclaimer">⚠️ Multi-disease therapeutic hypotheses</div>
+                    <div class="condition-comparison-disclaimer">Multi-disease therapeutic hypotheses</div>
                 </div>
                 <div class="condition-comparison-panel">
                     <div class="multi-disease-toolbar">
@@ -967,7 +963,7 @@
                             <label><input type="checkbox" value="t1d" checked> T1D</label>
                             <label><input type="checkbox" value="ibd" checked> IBD</label>
                         </div>
-                        <button type="button" class="btn btn-primary" id="multi-disease-run-btn" data-action="run-multi-disease-comparison">📊 Generate Comparison Matrix</button>
+                        <button type="button" class="btn btn-primary" id="multi-disease-run-btn" data-action="run-multi-disease-comparison">Generate Comparison Matrix</button>
                     </div>
                     <div class="multi-disease-body" id="multi-disease-result" aria-live="polite">
                         <p class="condition-comparison-placeholder">Click 'Generate Comparison Matrix' to calculate pairwise similarity and shared target networks.</p>
@@ -983,14 +979,14 @@
                         <h2 id="graph-analytics-title">Graph Analytics &amp; Target Prioritization</h2>
                         <p>High-throughput pathfinding, target vulnerability ranking, and biological cross-talk powered by the DuckDB vectorized engine.</p>
                     </div>
-                    <div class="condition-comparison-disclaimer">⚠️ Research hypotheses &amp; graph analytics</div>
+                    <div class="condition-comparison-disclaimer">Research hypotheses &amp; graph analytics</div>
                 </div>
 
                 <!-- Live DuckDB Summary Stats Banner -->
-                <div style="padding:0 20px;">
+                <div class="analytics-stack">
                     <div class="biomed-stats-banner" id="biomed-stats-banner">
                         <div class="biomed-stats-banner-title">
-                            <span>⚡ Live Knowledge Graph Summary (DuckDB Accelerated)</span>
+                            <span>Live Knowledge Graph Summary · DuckDB</span>
                             <button type="button" class="btn btn-secondary btn-sm" id="biomed-stats-refresh-btn">↻ Refresh Stats</button>
                         </div>
                         <div class="biomed-stats-cards">
@@ -1011,31 +1007,30 @@
                                 <div class="box-label">Ontology Snapshots</div>
                             </div>
                         </div>
-                        <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:6px;">Entity Type Distribution:</div>
+                        <div class="biomed-dist-label">Entity Type Distribution</div>
                         <div class="biomed-dist-group" id="bio-entity-dist">
                             <span class="biomed-dist-chip">Loading distribution…</span>
                         </div>
                     </div>
-                </div>
 
                 <!-- Card 1: Claim Pathway Explorer -->
-                <div class="condition-comparison-panel" style="margin-bottom:24px;">
-                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
-                        <h3 style="margin:0;font-size:1.05rem;">🕸️ Claim Pathway Explorer</h3>
-                        <button type="button" class="btn btn-secondary btn-sm" id="path-use-active-btn">📍 Use Active Disease</button>
+                <div class="analytics-card">
+                    <div class="analytics-card-head">
+                        <h3>Claim Pathway Explorer</h3>
+                        <button type="button" class="btn btn-secondary btn-sm" id="path-use-active-btn">Use Active Disease</button>
                     </div>
                     <div class="biomed-preset-pills">
-                        <span style="font-size:0.75rem;color:var(--text-muted);">Quick presets:</span>
+                        <span class="biomed-preset-label">Quick presets</span>
                         <button type="button" class="biomed-preset-btn" data-start="MONDO:0007915" data-target="UNIPROT:P01375">SLE → TNF</button>
                         <button type="button" class="biomed-preset-btn" data-start="MONDO:0008383" data-target="UNIPROT:P23458">RA → JAK1</button>
                         <button type="button" class="biomed-preset-btn" data-start="MONDO:0005301" data-target="UNIPROT:P15391">MS → CD19</button>
                         <button type="button" class="biomed-preset-btn" data-start="MONDO:0005265" data-target="UNIPROT:Q5VWK5">IBD → IL23R</button>
                     </div>
-                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
+                    <div class="analytics-controls">
                         <label class="condition-comparison-label" for="path-start-curie">Start CURIE</label>
-                        <input type="text" id="path-start-curie" class="condition-explorer-search" style="max-width:220px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
+                        <input type="text" id="path-start-curie" class="condition-explorer-search" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
                         <label class="condition-comparison-label" for="path-target-curie">Target CURIE</label>
-                        <input type="text" id="path-target-curie" class="condition-explorer-search" style="max-width:220px;" value="UNIPROT:P01375" placeholder="e.g. UNIPROT:P01375">
+                        <input type="text" id="path-target-curie" class="condition-explorer-search" value="UNIPROT:P01375" placeholder="e.g. UNIPROT:P01375">
                         <label class="condition-comparison-label" for="path-max-depth">Max Depth</label>
                         <select id="path-max-depth" class="condition-explorer-depth">
                             <option value="1">1</option>
@@ -1046,20 +1041,20 @@
                         </select>
                         <button type="button" class="btn btn-primary" id="pathways-run-btn">Find Pathways</button>
                     </div>
-                    <div class="condition-comparison-result" id="pathways-result" aria-live="polite" style="margin-top:12px;">
+                    <div class="condition-comparison-result" id="pathways-result" aria-live="polite">
                         <p class="condition-comparison-placeholder">Enter start and target CURIEs to discover canonical claim paths.</p>
                     </div>
                 </div>
 
                 <!-- Card 2: Target Vulnerability Ranking -->
-                <div class="condition-comparison-panel" style="margin-bottom:24px;">
-                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
-                        <h3 style="margin:0;font-size:1.05rem;">🎯 Target Vulnerability &amp; Prioritization Ranking</h3>
-                        <button type="button" class="btn btn-secondary btn-sm" id="target-use-active-btn">📍 Use Active Disease</button>
+                <div class="analytics-card">
+                    <div class="analytics-card-head">
+                        <h3>Target Vulnerability &amp; Prioritization Ranking</h3>
+                        <button type="button" class="btn btn-secondary btn-sm" id="target-use-active-btn">Use Active Disease</button>
                     </div>
-                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
+                    <div class="analytics-controls">
                         <label class="condition-comparison-label" for="target-rank-disease">Disease CURIE</label>
-                        <input type="text" id="target-rank-disease" class="condition-explorer-search" style="max-width:260px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
+                        <input type="text" id="target-rank-disease" class="condition-explorer-search" value="MONDO:0007915" placeholder="e.g. MONDO:0007915">
                         <label class="condition-comparison-label" for="target-rank-top-k">Top K</label>
                         <select id="target-rank-top-k" class="condition-explorer-depth">
                             <option value="5">5</option>
@@ -1069,64 +1064,66 @@
                         </select>
                         <button type="button" class="btn btn-primary" id="target-rank-run-btn">Rank Targets</button>
                     </div>
-                    <div class="condition-comparison-result" id="target-rank-result" aria-live="polite" style="margin-top:12px;">
+                    <div class="condition-comparison-result" id="target-rank-result" aria-live="polite">
                         <p class="condition-comparison-placeholder">Enter a disease CURIE to calculate target vulnerability rankings.</p>
                     </div>
                 </div>
 
                 <!-- Card 3: Vectorized Shared Mechanisms & Cross-Talk -->
-                <div class="condition-comparison-panel" style="margin-bottom:24px;">
-                    <h3 style="margin-top:0;font-size:1.05rem;margin-bottom:12px;">🔬 Vectorized Shared Mechanism &amp; Cross-Talk</h3>
-                    <p class="desc" style="margin-bottom:14px;">Compute overlapping biological pathways, target genes, and Jaccard similarity between two conditions via DuckDB.</p>
-                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
+                <div class="analytics-card">
+                    <h3 class="analytics-title">Vectorized Shared Mechanism &amp; Cross-Talk</h3>
+                    <p class="desc">Compute overlapping biological pathways, target genes, and Jaccard similarity between two conditions via DuckDB.</p>
+                    <div class="analytics-controls">
                         <label class="condition-comparison-label" for="shared-curie-a">Condition A</label>
-                        <input type="text" id="shared-curie-a" class="condition-explorer-search" style="max-width:220px;" value="MONDO:0007915" placeholder="e.g. MONDO:0007915 (SLE)">
+                        <input type="text" id="shared-curie-a" class="condition-explorer-search" value="MONDO:0007915" placeholder="e.g. MONDO:0007915 (SLE)">
                         <label class="condition-comparison-label" for="shared-curie-b">Condition B</label>
-                        <input type="text" id="shared-curie-b" class="condition-explorer-search" style="max-width:220px;" value="MONDO:0008383" placeholder="e.g. MONDO:0008383 (RA)">
+                        <input type="text" id="shared-curie-b" class="condition-explorer-search" value="MONDO:0008383" placeholder="e.g. MONDO:0008383 (RA)">
                         <button type="button" class="btn btn-primary" id="shared-run-btn">Analyze Overlap</button>
                     </div>
-                    <div class="condition-comparison-result" id="shared-mech-result" aria-live="polite" style="margin-top:12px;">
+                    <div class="condition-comparison-result" id="shared-mech-result" aria-live="polite">
                         <p class="condition-comparison-placeholder">Select two condition CURIEs to evaluate shared pathway and gene networks.</p>
                     </div>
                 </div>
 
                 <!-- Card 4: Cross-Disease Similarity Heatmap & Matrix -->
-                <div class="condition-comparison-panel">
-                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
-                        <h3 style="margin:0;font-size:1.05rem;">📊 Vectorized Cross-Disease Similarity Matrix (DuckDB)</h3>
+                <div class="analytics-card">
+                    <div class="analytics-card-head">
+                        <h3>Cross-Disease Similarity Matrix (DuckDB)</h3>
                         <div class="biomed-preset-pills">
-                            <span style="font-size:0.75rem;color:var(--text-muted);">Clusters:</span>
+                            <span class="biomed-preset-label">Clusters</span>
                             <button type="button" class="biomed-preset-btn matrix-cluster-btn" data-curies="MONDO:0007915,MONDO:0008383,MONDO:0005301,MONDO:0005265">Autoimmune</button>
                             <button type="button" class="biomed-preset-btn matrix-cluster-btn" data-curies="MONDO:0005010,MONDO:0005260,MONDO:0005015,MONDO:0005311">Cardiovascular</button>
                             <button type="button" class="biomed-preset-btn matrix-cluster-btn" data-curies="MONDO:0004975,MONDO:0005180,MONDO:0004976,MONDO:0007739">Neuro</button>
                             <button type="button" class="biomed-preset-btn matrix-cluster-btn" data-curies="MONDO:0018076,MONDO:0005109,MONDO:0005136">Infectious</button>
                         </div>
                     </div>
-                    <p class="desc" style="margin-bottom:14px;">Compute vectorized pairwise Jaccard biological overlap across multi-condition cohorts in real time using DuckDB.</p>
-                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;">
+                    <p class="desc">Compute vectorized pairwise Jaccard biological overlap across multi-condition cohorts in real time using DuckDB.</p>
+                    <div class="analytics-controls">
                         <label class="condition-comparison-label" for="matrix-curies-input">Disease CURIEs</label>
-                        <input type="text" id="matrix-curies-input" class="condition-explorer-search" style="flex:1;min-width:320px;" value="MONDO:0007915,MONDO:0008383,MONDO:0005301,MONDO:0005265" placeholder="Comma-separated CURIEs (e.g. MONDO:0007915,MONDO:0008383)">
+                        <input type="text" id="matrix-curies-input" class="condition-explorer-search analytics-grow" value="MONDO:0007915,MONDO:0008383,MONDO:0005301,MONDO:0005265" placeholder="Comma-separated CURIEs (e.g. MONDO:0007915,MONDO:0008383)">
                         <button type="button" class="btn btn-primary" id="matrix-run-btn">Compute Matrix</button>
                     </div>
-                    <div class="condition-comparison-result" id="matrix-result" aria-live="polite" style="margin-top:12px;">
+                    <div class="condition-comparison-result" id="matrix-result" aria-live="polite">
                         <p class="condition-comparison-placeholder">Select a cluster preset or enter disease CURIEs to compute the similarity matrix.</p>
                     </div>
+                </div>
+
                 <!-- Card 5: Interactive Cytoscape.js Multi-Disease Network Topology -->
-                <div class="condition-comparison-panel" style="margin-top:24px;">
-                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;">
-                        <h3 style="margin:0;font-size:1.05rem;">🌐 Interactive Multi-Disease Topology &amp; Hub Explorer (Cytoscape.js)</h3>
+                <div class="analytics-card">
+                    <div class="analytics-card-head">
+                        <h3>Multi-Disease Topology &amp; Hub Explorer</h3>
                         <div class="biomed-preset-pills">
-                            <span style="font-size:0.75rem;color:var(--text-muted);">Cohorts:</span>
+                            <span class="biomed-preset-label">Cohorts</span>
                             <button type="button" class="biomed-preset-btn cy-cohort-btn" data-diseases="sle,ra,ms,ibd">Autoimmune Core</button>
                             <button type="button" class="biomed-preset-btn cy-cohort-btn" data-diseases="nsclc,colorectal_cancer,triple_neg_breast_cancer,pancreatic_ductal_adenocarcinoma">Oncology Wave 4</button>
                             <button type="button" class="biomed-preset-btn cy-cohort-btn" data-diseases="major_depressive_disorder,schizophrenia,bipolar_disorder,epilepsy">Neuro / CNS</button>
                             <button type="button" class="biomed-preset-btn cy-cohort-btn" data-diseases="cystic_fibrosis,sickle_cell_anemia,huntington_disease,spinal_muscular_atrophy">Rare / Neuromuscular</button>
                         </div>
                     </div>
-                    <p class="desc" style="margin-bottom:14px;">Explore multi-disease target hub centrality, drug repurposing bridges, and shared therapeutic pathways rendered via dynamic force-directed layouts.</p>
-                    <div class="condition-comparison-toolbar" style="flex-wrap:wrap;gap:12px;margin-bottom:12px;">
+                    <p class="desc">Explore multi-disease target hub centrality, drug repurposing bridges, and shared therapeutic pathways rendered via dynamic force-directed layouts.</p>
+                    <div class="analytics-controls analytics-controls--mb">
                         <label class="condition-comparison-label" for="cy-diseases-input">Diseases</label>
-                        <input type="text" id="cy-diseases-input" class="condition-explorer-search" style="flex:1;min-width:240px;" value="sle,ra,ms,ibd" placeholder="Comma-separated disease IDs (e.g. sle,ra,ms,ibd)">
+                        <input type="text" id="cy-diseases-input" class="condition-explorer-search analytics-grow" value="sle,ra,ms,ibd" placeholder="Comma-separated disease IDs (e.g. sle,ra,ms,ibd)">
                         <label class="condition-comparison-label" for="cy-layout-select">Layout</label>
                         <select id="cy-layout-select" class="condition-explorer-depth">
                             <option value="cose" selected>Force-Directed (CoSE)</option>
@@ -1135,46 +1132,47 @@
                             <option value="circle">Circle</option>
                             <option value="grid">Grid</option>
                         </select>
-                        <label style="display:flex;align-items:center;gap:6px;font-size:0.82rem;color:var(--text-muted);cursor:pointer;">
+                        <label class="analytics-check">
                             <input type="checkbox" id="cy-shared-only-check"> Shared Hubs Only
                         </label>
                         <button type="button" class="btn btn-primary" id="cy-render-btn">Render Topology</button>
-                        <button type="button" class="btn btn-secondary btn-sm" id="cy-fit-btn">🔍 Fit View</button>
-                        <button type="button" class="btn btn-secondary btn-sm" id="cy-export-png-btn">📷 Export PNG</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="cy-fit-btn">Fit View</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="cy-export-png-btn">Export PNG</button>
                     </div>
 
                     <!-- Legend & Summary Banner -->
-                    <div id="cy-summary-bar" style="display:flex;justify-content:space-between;align-items:center;padding:8px 14px;background:var(--surface2);border-radius:6px;margin-bottom:12px;font-size:0.8rem;border:1px solid var(--border);">
-                        <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+                    <div id="cy-summary-bar" class="cy-summary-bar">
+                        <div class="cy-summary-stats">
                             <span><strong id="cy-stat-nodes">0</strong> Nodes</span>
                             <span><strong id="cy-stat-edges">0</strong> Edges</span>
-                            <span><strong id="cy-stat-hubs" style="color:#e879f9;">0</strong> Shared Target Hubs</span>
+                            <span><strong id="cy-stat-hubs" class="cy-hub-count">0</strong> Shared Target Hubs</span>
                         </div>
-                        <div style="display:flex;gap:12px;align-items:center;">
-                            <span><span class="dot" style="background:#f43f5e;display:inline-block;width:10px;height:10px;border-radius:50%;"></span> Disease</span>
-                            <span><span class="dot" style="background:#4ade80;display:inline-block;width:10px;height:10px;border-radius:50%;"></span> Gene</span>
-                            <span><span class="dot" style="background:#e879f9;display:inline-block;width:10px;height:10px;border-radius:50%;"></span> Shared Hub</span>
-                            <span><span class="dot" style="background:#60a5fa;display:inline-block;width:10px;height:10px;border-radius:50%;"></span> Drug</span>
+                        <div class="cy-legend">
+                            <span><span class="dot dot-disease"></span> Disease</span>
+                            <span><span class="dot dot-gene"></span> Gene</span>
+                            <span><span class="dot dot-hub"></span> Shared Hub</span>
+                            <span><span class="dot dot-drug"></span> Drug</span>
                         </div>
                     </div>
 
                     <!-- Visual Canvas & Sidebar Split -->
-                    <div style="display:flex;gap:16px;min-height:540px;position:relative;">
-                        <div id="cy-canvas" style="flex:1;height:540px;background:var(--bg);border:1px solid var(--border);border-radius:8px;position:relative;">
-                            <div id="cy-loading" class="kg-loading" style="display:none;position:absolute;inset:0;background:rgba(15,23,42,0.8);z-index:10;display:flex;align-items:center;justify-content:center;color:var(--text);">
+                    <div class="cy-layout">
+                        <div id="cy-canvas" class="cy-canvas-wrap">
+                            <div id="cy-loading" class="kg-loading" hidden>
                                 <span class="spinner"></span> Rendering multi-disease network topology…
                             </div>
                         </div>
-                        <div id="cy-inspector" style="width:280px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px;font-size:0.82rem;display:flex;flex-direction:column;gap:10px;">
-                            <div style="font-weight:700;font-size:0.95rem;border-bottom:1px solid var(--border);padding-bottom:6px;display:flex;justify-content:space-between;align-items:center;">
-                                <span>🎯 Element Inspector</span>
-                                <span id="cy-elem-type-badge" class="badge" style="background:var(--surface);font-size:0.7rem;">None</span>
+                        <div id="cy-inspector" class="cy-inspector">
+                            <div class="cy-inspector-head">
+                                <span>Element Inspector</span>
+                                <span id="cy-elem-type-badge" class="badge">None</span>
                             </div>
-                            <div id="cy-inspector-body" style="color:var(--text-muted);line-height:1.5;">
+                            <div id="cy-inspector-body" class="cy-inspector-body">
                                 Click on any disease, gene target hub, or drug bridge node to inspect connectivity and disease sharing.
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </section>
 
@@ -1182,17 +1180,17 @@
 
             <!-- ── Knowledge Graph Explorer ─────────────────────────── -->
             <h2 class="section-title" id="kg-explorer">
-                <span>🕸️</span> Knowledge Graph Explorer
+                <span class="section-kicker">Graph</span>Knowledge Graph Explorer
             </h2>
 
             <div class="kg-explorer">
                 <div class="kg-toolbar">
                     <input type="search" id="kg-search" class="kg-search" placeholder="Search nodes (e.g. TLR7, JAK1, belimumab)…" autocomplete="off">
                     <div class="kg-filters">
-                        <label class="kg-filter"><input type="checkbox" data-type="gene" checked> <span class="dot" style="background:#4ade80;"></span> Genes</label>
-                        <label class="kg-filter"><input type="checkbox" data-type="drug" checked> <span class="dot" style="background:#60a5fa;"></span> Drugs</label>
-                        <label class="kg-filter"><input type="checkbox" data-type="pathway" checked> <span class="dot" style="background:#f59e0b;"></span> Pathways</label>
-                        <label class="kg-filter"><input type="checkbox" data-type="disease" checked> <span class="dot" style="background:#f43f5e;"></span> Diseases</label>
+                        <label class="kg-filter"><input type="checkbox" data-type="gene" checked> <span class="dot dot-gene"></span> Genes</label>
+                        <label class="kg-filter"><input type="checkbox" data-type="drug" checked> <span class="dot dot-drug"></span> Drugs</label>
+                        <label class="kg-filter"><input type="checkbox" data-type="pathway" checked> <span class="dot dot-pathway"></span> Pathways</label>
+                        <label class="kg-filter"><input type="checkbox" data-type="disease" checked> <span class="dot dot-disease"></span> Diseases</label>
                     </div>
                     <div class="kg-edge-filters">
                         <span class="kg-sub-label">Edges:</span>
@@ -1202,11 +1200,11 @@
                         <label class="kg-filter-sm"><input type="checkbox" data-edge-type="symptom_of" checked> Symptom</label>
                     </div>
                     <div class="kg-extra-controls">
-                        <button type="button" class="btn btn-secondary btn-sm" id="kg-physics-toggle" data-action="kg-toggle-physics">⏸ Pause Physics</button>
-                        <button type="button" class="btn btn-secondary btn-sm" id="kg-centrality-toggle" data-action="kg-toggle-centrality">📊 Centrality</button>
-                        <button type="button" class="btn btn-secondary btn-sm" id="kg-community-toggle" data-action="kg-toggle-communities">🎨 Communities</button>
-                        <button type="button" class="btn btn-secondary btn-sm" id="kg-export-png" data-action="kg-export-png">📷 Export PNG</button>
-                        <button type="button" class="btn btn-secondary btn-sm" id="kg-reset" data-action="kg-reset">🔄 Reset</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-physics-toggle" data-action="kg-toggle-physics">Pause Physics</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-centrality-toggle" data-action="kg-toggle-centrality">Centrality</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-community-toggle" data-action="kg-toggle-communities">Communities</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-export-png" data-action="kg-export-png">Export PNG</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="kg-reset" data-action="kg-reset">Reset</button>
                     </div>
                 </div>
                 <div class="kg-body">
@@ -1217,7 +1215,7 @@
                     </div>
                     <aside class="kg-detail" id="kg-detail">
                         <div class="kg-detail-placeholder">
-                            <div style="font-size:2rem;margin-bottom:8px;">🕸️</div>
+                            <img src="/brand/mark.svg" alt="" width="40" height="40">
                             <p>Select a node to inspect its drugs, pathways, and connections.</p>
                         </div>
                     </aside>
@@ -1227,16 +1225,16 @@
 
             <!-- ── Job Queue ─────────────────────────────────────────── -->
             <h2 class="section-title" id="jobs" style="display:none;">
-                <span>📋</span> Job Queue <span id="jobs-header-count" class="job-badge" style="margin-left:8px;">0</span>
+                <span class="section-kicker">Operations</span>Job Queue <span id="jobs-header-count" class="job-badge" style="margin-left:8px;">0</span>
             </h2>
             <div id="job-queue" class="job-queue" style="display:none;"></div>
 
             <!-- ── Data Export ──────────────────────────────────────── -->
             <h2 class="section-title" id="export">
-                <span>📦</span> Data & Report Export
+                <span class="section-kicker">Data</span>Data &amp; Report Export
             </h2>
             <div class="cd-card" id="export-card">
-                <p style="color:var(--text-muted);font-size:0.82rem;margin-bottom:14px;">
+                <p class="export-intro">
                     Download the latest computed results as JSON (machine-readable) or grab the rendered
                     HTML report. JSON exports work whenever a module has been run at least once.
                 </p>
@@ -1244,9 +1242,9 @@
             </div>
 
             <!-- ── Quick Start ───────────────────────────────────────── -->
-            <h2 class="section-title"><span>🚀</span> Quick Start</h2>
+            <h2 class="section-title"><span class="section-kicker">Reference</span>Quick Start</h2>
             <div class="quickstart">
-                <h3>🖥️ CLI Quick Start</h3>
+                <h3>CLI quick start</h3>
                 <div class="code-block">
 <span class="comment"># Run the full pipeline</span>
 <span class="cmd">python</span> main.py run-all --export-html
@@ -1260,7 +1258,7 @@
             </div>
 
             <div class="quickstart">
-                <h3>🌐 API Quick Start</h3>
+                <h3>API quick start</h3>
                 <div class="code-block">
 <span class="comment"># Start the API server</span>
 <span class="cmd">python</span> -m med_research.cli serve --host 127.0.0.1 --port 8000
@@ -1269,32 +1267,31 @@
 <span class="cmd">uvicorn</span> med_research.web.main:app --host 127.0.0.1 --port 8000
 
 <span class="comment"># Interactive docs at /api/docs</span>
-<div class="dossier-section" style="margin-top:16px;">
-    <h3>Regulatory Dossier</h3>
-    <p>Generate a comprehensive IND‑ready dossier compiling all pipeline results.</p>
-    <button type="button" class="btn btn-primary" id="generate-dossier-btn" data-action="generate-dossier">Generate Regulatory Dossier</button>
-    <div id="dossier-result" class="dossier-result" style="margin-top:8px;"></div>
-</div>
+                </div>
+                <div class="dossier-section">
+                    <h3>Regulatory Dossier</h3>
+                    <p>Generate a comprehensive IND‑ready dossier compiling all pipeline results.</p>
+                    <button type="button" class="btn btn-primary" id="generate-dossier-btn" data-action="generate-dossier">Generate Regulatory Dossier</button>
+                    <div id="dossier-result" class="dossier-result"></div>
+                </div>
             </div>
-
-        </div>
 
         <!-- ── 3D AlphaFold Structure & Binding Pocket Modal ───────── -->
         <div id="structure-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="structure-modal-title">
-            <div class="modal-card" style="max-width:720px;width:95%;">
-                <div class="modal-header" style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--border);">
-                    <h3 id="structure-modal-title" style="margin:0;font-size:1.1rem;display:flex;align-items:center;gap:8px;">
-                        <span>🔬</span> <span id="struct-target-title">Target Structure &amp; Pocket Characterization</span>
+            <div class="modal-card modal-card--wide">
+                <div class="modal-header">
+                    <h3 id="structure-modal-title" class="modal-title">
+                        <span id="struct-target-title">Target Structure &amp; Pocket Characterization</span>
                     </h3>
-                    <button type="button" class="btn btn-secondary btn-sm" id="structure-modal-close" aria-label="Close modal" style="padding:2px 8px;">✕</button>
+                    <button type="button" class="btn btn-secondary btn-sm" id="structure-modal-close" aria-label="Close modal">✕</button>
                 </div>
-                <div class="modal-body" id="structure-modal-body" style="padding:20px;max-height:70vh;overflow-y:auto;">
+                <div class="modal-body" id="structure-modal-body">
                     <p class="condition-explorer-placeholder">Loading 3D structure &amp; AlphaFold pocket data…</p>
                 </div>
-                <div class="modal-footer" style="display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-top:1px solid var(--border);background:var(--surface2);">
-                    <div style="display:flex;gap:8px;">
-                        <a id="struct-cif-link" href="#" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">📥 AlphaFold mmCIF</a>
-                        <a id="struct-pae-link" href="#" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">📊 PAE Matrix JSON</a>
+                <div class="modal-footer modal-footer--split">
+                    <div class="sat-actions-row">
+                        <a id="struct-cif-link" href="#" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">AlphaFold mmCIF</a>
+                        <a id="struct-pae-link" href="#" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">PAE Matrix JSON</a>
                     </div>
                     <button type="button" class="btn btn-primary btn-sm" id="structure-modal-done">Done</button>
                 </div>
@@ -1315,8 +1312,8 @@
                 <a href="/api/export/report/ml">ML Predictor</a>
                 <a href="/api/docs">API Docs</a>
             </div>
-            <p style="margin-bottom:6px;">NosoGraph · Disease Intelligence. Connected.</p>
-            <p style="color:#6b7280;">
+            <p class="footer-brand">NosoGraph · Disease Intelligence. Connected.</p>
+            <p class="footer-note">
                 Research use only. Computational outputs are not medical advice, diagnosis, or clinical decision support.
                 Report security issues privately. Do not submit secrets, PHI, or patient-identifiable data.
             </p>
