@@ -29,6 +29,7 @@ from med_research.biomed.nosograph_compare.models import (
     MissingDataReason,
 )
 from med_research.biomed.repository import BiomedicalRepository
+from med_research.biomed.store_readiness import require_schema_initialized
 
 _DISCLAIMER = (
     "For research and exploratory analysis only. Dimension overlaps summarize imported "
@@ -60,6 +61,7 @@ class NosoGraphCompareService:
         *,
         dimensions: list[str] | None = None,
     ) -> CompareV2Result:
+        require_schema_initialized(self._repository)
         normalized = sorted({normalize_curie(item) for item in condition_curies})
         if not 2 <= len(normalized) <= 5:
             raise ValueError("Comparison requires 2 to 5 unique conditions")

@@ -13,9 +13,12 @@ from med_research.web.config import BIOMEDICAL_DB_PATH
 
 @lru_cache(maxsize=1)
 def _default_repository() -> BiomedicalRepository:
-    repository = BiomedicalRepository(BIOMEDICAL_DB_PATH)
-    repository.initialize()
-    return repository
+    """Open the configured store path without auto-initializing schema.
+
+    Operators run ``biomed init`` explicitly; read routes degrade to empty states
+    until the store file and schema exist (see issue #65 / Phase 4 WS3).
+    """
+    return BiomedicalRepository(BIOMEDICAL_DB_PATH)
 
 
 def get_biomedical_repository() -> BiomedicalRepository:
