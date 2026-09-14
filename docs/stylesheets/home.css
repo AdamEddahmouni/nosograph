@@ -128,6 +128,11 @@ html.ng-page-home .md-content__inner {
     radial-gradient(circle at 12% 88%, rgba(25, 210, 199, 0.07), transparent 42%);
   content: "";
   pointer-events: none;
+  /* Deliberate ambient identity moment: transform-only drift on the landing
+     hero (not a dense research screen). The 18s loop period is intentional —
+     slower than any interaction token — and base.css forces it to 0.01ms
+     under prefers-reduced-motion. ease-in-out stays symmetric for the
+     alternate direction; --ng-ease would skew the loop. */
   animation: ng-hero-ambient 18s ease-in-out infinite alternate;
 }
 
@@ -154,7 +159,7 @@ html.ng-page-home .md-content__inner {
 }
 
 .ng-homepage .ng-hero-copy > * {
-  animation: ng-hero-rise 560ms var(--ng-ease) both;
+  animation: ng-hero-rise var(--ng-slow) var(--ng-ease) both;
 }
 
 .ng-homepage .ng-hero-copy > *:nth-child(2) { animation-delay: 80ms; }
@@ -223,7 +228,7 @@ html.ng-page-home .md-content__inner {
   background: var(--ng-navy-layer);
   box-shadow: var(--ng-shadow-plate);
   text-align: left;
-  animation: ng-hero-rise 640ms var(--ng-ease) 160ms both;
+  animation: ng-hero-rise var(--ng-slow) var(--ng-ease) 160ms both;
 }
 
 .ng-homepage .ng-hero-trace-head {
@@ -1382,7 +1387,7 @@ html.ng-page-home .md-content__inner {
 html.ng-motion .ng-homepage section:not(.ng-hero) > .ng-shell {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 480ms var(--ng-ease), transform 480ms var(--ng-ease);
+  transition: opacity var(--ng-slow) var(--ng-ease), transform var(--ng-slow) var(--ng-ease);
 }
 
 html.ng-motion .ng-homepage section.is-visible > .ng-shell {

@@ -546,7 +546,7 @@ textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
     color: transparent !important;
     background: linear-gradient(90deg, var(--ng-surface-alt) 25%, var(--ng-elevated) 50%, var(--ng-surface-alt) 75%);
     background-size: 200% 100%;
-    animation: statShimmer 1.2s ease-in-out infinite;
+    animation: statShimmer 1.2s var(--ng-ease) infinite;
     border-radius: var(--ng-radius-xs);
     min-height: 1.7rem;
     display: inline-block;
@@ -1711,7 +1711,8 @@ footer .footer-note { color: var(--ng-ink-muted); max-width: 640px; margin: 6px 
 .vuln-evidence-pill.pos { background: color-mix(in srgb, var(--ng-ev-supports) 12%, transparent); color: var(--ng-ev-supports); }
 .vuln-evidence-pill.neg { background: color-mix(in srgb, var(--ng-ev-contradicts) 12%, transparent); color: var(--ng-ev-contradicts); }
 .vuln-progress-track { height: 6px; background: var(--ng-surface-alt); border: 1px solid var(--ng-border); border-radius: var(--ng-radius-pill); overflow: hidden; position: relative; }
-.vuln-progress-fill { height: 100%; background: var(--ng-teal); transition: width var(--ng-normal) var(--ng-ease); }
+/* Fill animates on the compositor (transform), never layout (width). */
+.vuln-progress-fill { height: 100%; width: 100%; background: var(--ng-teal); transform: scaleX(0); transform-origin: left center; transition: transform var(--ng-normal) var(--ng-ease); }
 .shared-mech-panel { background: var(--ng-surface-alt); border: 1px solid var(--ng-border); border-radius: var(--ng-radius-md); padding: 16px; margin-top: 14px; }
 .shared-mech-score { font-size: 1.8rem; font-weight: 650; font-family: var(--ng-font-display); color: var(--ng-teal); margin: 4px 0; font-variant-numeric: tabular-nums; }
 
@@ -1844,7 +1845,7 @@ footer .footer-note { color: var(--ng-ink-muted); max-width: 640px; margin: 6px 
 
 /* ── Speed graph ───────────────────────────────────────────────────────── */
 .speed-indicator { display: flex; gap: 4px; align-items: flex-end; height: 20px; }
-.speed-bar { width: 16px; border-radius: 2px; background: var(--ng-teal); transition: height var(--ng-normal) var(--ng-ease); cursor: pointer; }
+.speed-bar { width: 16px; border-radius: 2px; background: var(--ng-teal); transition: transform var(--ng-normal) var(--ng-ease); cursor: pointer; }
 .speed-bar:hover { filter: brightness(1.25); }
 
 /* ── Data Export ───────────────────────────────────────────────────────── */

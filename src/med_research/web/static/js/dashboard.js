@@ -176,6 +176,13 @@ function escapeHtml(text) {
         .replace(/'/g, '&#39;');
 }
 
+// Interaction-triggered scrolling must honor the reduced-motion preference
+// (WCAG 2.3.3): an explicit behavior:'smooth' argument bypasses the CSS
+// media query, so pick the behavior in JS at call time.
+function ngScrollBehavior() {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+}
+
 function workspaceDateLabel(value) {
     const text = String(value || '').trim();
     return text ? text.slice(0, 10) : 'Unknown date';
@@ -1311,7 +1318,7 @@ async function openWorkspaceRun(runId) {
         const payload = await apiFetch(`/api/workspace/runs/${encodeURIComponent(runId)}`);
         if (!payload.dossier) throw new Error(payload.error || 'This run has no dossier');
         renderWorkspaceResult(document.getElementById('workspace-result'), { dossier: payload.dossier, html: payload.html || '' });
-        document.getElementById('workspace-result').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        document.getElementById('workspace-result').scrollIntoView({ behavior: ngScrollBehavior(), block: 'center' });
     } catch (error) {
         showToast(`Could not open run: ${error.message}`, 'error');
     }
@@ -1834,7 +1841,7 @@ function renderCrossDiseaseComparison(data) {
             ${drugRows || '<p style="color:var(--text-muted);font-size:0.8rem;">No multi-disease drug data.</p>'}
         </div>
     `;
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    section.scrollIntoView({ behavior: ngScrollBehavior(), block: 'start' });
 }
 
 // ── Comparative Module View (biomarker / expression / synergy × 7 diseases) ──
@@ -1959,7 +1966,7 @@ function renderModuleComparison(data) {
             </table>
         </div>
     `;
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    section.scrollIntoView({ behavior: ngScrollBehavior(), block: 'start' });
 }
 
 // ── Knowledge Graph Explorer ────────────────────────────────────────────
@@ -1989,7 +1996,7 @@ let kgRawElements = null;
 function scrollToExplorer() {
     const el = document.getElementById('kg-explorer');
     if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.scrollIntoView({ behavior: ngScrollBehavior(), block: 'start' });
         initKGExplorer();
     }
 }
@@ -3563,7 +3570,7 @@ function renderTargetPrioritization(res) {
                 <td style="width:140px;">
                     <div style="display:flex;align-items:center;gap:8px;">
                         <div class="vuln-progress-track" style="flex:1;">
-                            <div class="vuln-progress-fill" style="width:${vulnPct}%;"></div>
+                            <div class="vuln-progress-fill" style="transform:scaleX(${vulnPct / 100});"></div>
                         </div>
                         <span style="font-weight:700;font-size:0.82rem;min-width:32px;">${vulnPct}%</span>
                     </div>
@@ -4349,7 +4356,7 @@ async function openDiseaseManager() {
                 <div class="audit-list" id="mng-audit"><span class="spinner"></span> Loading activity…</div>
             </div>
         </div>`;
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    section.scrollIntoView({ behavior: ngScrollBehavior(), block: 'start' });
     loadManageSummary();
     loadManageBackups();
     loadManageAudit();
