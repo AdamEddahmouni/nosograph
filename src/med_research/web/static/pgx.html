@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#08142D" />
+    <meta name="description" content="NosoGraph pharmacogenomics calculator for research-use genotype interpretations.">
     <title>Pharmacogenomics Calculator — NosoGraph</title>
     <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/tokens.css" />
@@ -21,20 +22,38 @@
             <a href="/lead_opt.html">Lead Opt &amp; ADMET</a>
             <a href="/spatial.html">Spatial Omics</a>
             <a href="/agent.html">Target Agent</a>
+            <a href="/pgx.html" aria-current="page">PGx</a>
         </nav>
     </header>
-    <main id="main-content" class="container" tabindex="-1">
+    <main id="main-content" class="main-content" tabindex="-1">
         <p class="research-disclaimer" role="note">
             Research software only. PGx interpretations are computational hypotheses, not prescribing
             advice or clinical pharmacogenomic reports. Do not submit secrets, PHI, or patient-identifiable data.
         </p>
-        <h1>Pharmacogenomics (PGx) Calculator</h1>
-        <p>Enter gene‑allele mappings as JSON (e.g., {"CYP2D6": ["*1","*4"], "CYP2C19": ["*2"]})</p>
-        <label for="genotype-input">Genotype JSON</label>
-        <textarea id="genotype-input" rows="6" style="width:100%;font-family:monospace;" placeholder='{"CYP2D6": ["*1","*4"]}'></textarea>
-        <br/>
-        <button id="submit-btn" class="btn btn-primary">Evaluate</button>
-        <pre id="result" style="margin-top:1rem;background:var(--surface);border:1px solid var(--border);padding:1rem;white-space:pre-wrap;"></pre>
+        <div class="sat-page-head" role="presentation">
+            <span class="ng-eyebrow">Research tool · PGx</span>
+            <h1>Pharmacogenomics (PGx) Calculator</h1>
+            <p class="sat-page-sub">Compute metabolizer-status hypotheses from gene–allele mappings against the built-in CPIC-style rule table.</p>
+        </div>
+        <div class="satellite-layout">
+            <section class="sat-card" aria-labelledby="pgx-input-title">
+                <h3 id="pgx-input-title">Genotype Input</h3>
+                <p class="sat-note">Enter gene‑allele mappings as JSON, e.g. <code>{"CYP2D6": ["*1","*4"], "CYP2C19": ["*2"]}</code></p>
+                <div class="sat-field">
+                    <label for="genotype-input">Genotype JSON</label>
+                    <textarea id="genotype-input" rows="6" class="sat-mono" placeholder='{"CYP2D6": ["*1","*4"]}'></textarea>
+                </div>
+                <div class="sat-actions">
+                    <button id="submit-btn" class="btn btn-primary">Evaluate</button>
+                </div>
+            </section>
+            <section aria-labelledby="pgx-result-title">
+                <div class="sat-card">
+                    <h3 id="pgx-result-title">Interpretation Result</h3>
+                    <pre id="result" class="pgx-result" aria-live="polite">Submit a genotype to compute metabolizer-status hypotheses.</pre>
+                </div>
+            </section>
+        </div>
     </main>
     <script src="/js/pgx.js"></script>
 </body>
