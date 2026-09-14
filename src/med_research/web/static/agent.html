@@ -1,112 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#08142D" />
+  <meta name="description" content="NosoGraph target hypothesis generator with literature reasoning for research use.">
   <title>Target Hypothesis Generator — NosoGraph</title>
   <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/tokens.css" />
   <link rel="stylesheet" href="/css/dashboard.css" />
-  <style>
-    .chat-bubble {
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      line-height: 1.5;
-      font-size: 0.9rem;
-    }
-    .chat-user {
-      background: #e0f2fe;
-      color: #0369a1;
-      margin-left: 2rem;
-      border: 1px solid #bae6fd;
-    }
-    .chat-agent {
-      background: #ffffff;
-      color: #1e293b;
-      margin-right: 2rem;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-    }
-    .badge-evidence {
-      display: inline-block;
-      padding: 0.2rem 0.5rem;
-      font-size: 0.75rem;
-      border-radius: 4px;
-      background: #f1f5f9;
-      color: #475569;
-      margin-right: 0.4rem;
-    }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="app-layout">
-    <header class="satellite-header">
-      <div class="satellite-heading">
-        <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
-        <p class="satellite-title">Target Hypothesis &amp; Literature Reasoning</p>
-      </div>
-      <nav class="satellite-links" aria-label="Research tools">
-        <a href="/patient_matching.html">Patient Matching</a>
-        <a href="/lead_opt.html">Lead Opt &amp; ADMET</a>
-        <a href="/spatial.html">Spatial Omics</a>
-        <a href="/pgx.html">PGx</a>
-      </nav>
-    </header>
+  <header class="satellite-header">
+    <div class="satellite-heading">
+      <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
+      <p class="satellite-title">Target Hypothesis &amp; Literature Reasoning</p>
+    </div>
+    <nav class="satellite-links" aria-label="Research tools">
+      <a href="/patient_matching.html">Patient Matching</a>
+      <a href="/lead_opt.html">Lead Opt &amp; ADMET</a>
+      <a href="/spatial.html">Spatial Omics</a>
+      <a href="/agent.html" aria-current="page">Target Agent</a>
+      <a href="/pgx.html">PGx</a>
+    </nav>
+  </header>
 
-    <main id="main-content" class="main-content" tabindex="-1" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
-      <p class="research-disclaimer" role="note">
-        Research software only. Generated hypotheses are not medical advice, diagnosis, or treatment recommendations.
-        Do not submit secrets, PHI, or patient-identifiable data.
-      </p>
-      <h1 class="workspace-sr-only">Target hypothesis generator</h1>
-      <div class="satellite-layout">
-        <!-- Left: Quick Target Hypothesis Generator -->
-        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
-          <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Target Hypothesis Generator</h3>
+  <main id="main-content" class="main-content" tabindex="-1">
+    <p class="research-disclaimer" role="note">
+      Research software only. Generated hypotheses are not medical advice, diagnosis, or treatment recommendations.
+      Do not submit secrets, PHI, or patient-identifiable data.
+    </p>
+    <h1 class="workspace-sr-only">Target hypothesis generator</h1>
+    <div class="satellite-layout">
+      <!-- Left: Quick Target Hypothesis Generator -->
+      <section class="sat-card" aria-labelledby="agent-form-title">
+        <h3 id="agent-form-title">Target Hypothesis Generator</h3>
 
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Disease Context</label>
-            <select id="agent-disease" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
-              <option value="melanoma">Melanoma</option>
-              <option value="nsclc">Non-Small Cell Lung Cancer (NSCLC)</option>
-              <option value="glioblastoma">Glioblastoma (GBM)</option>
-              <option value="sle">Systemic Lupus Erythematosus</option>
-              <option value="ra">Rheumatoid Arthritis</option>
-            </select>
+        <div class="sat-field">
+          <label for="agent-disease">Disease Context</label>
+          <select id="agent-disease">
+            <option value="melanoma">Melanoma</option>
+            <option value="nsclc">Non-Small Cell Lung Cancer (NSCLC)</option>
+            <option value="glioblastoma">Glioblastoma (GBM)</option>
+            <option value="sle">Systemic Lupus Erythematosus</option>
+            <option value="ra">Rheumatoid Arthritis</option>
+          </select>
+        </div>
+
+        <div class="sat-field">
+          <label for="target-gene">Gene Target Symbol</label>
+          <input type="text" id="target-gene" value="BRAF" />
+        </div>
+
+        <div class="sat-actions">
+          <button id="generate-hyp-btn" class="btn btn-primary">Synthesize Target Hypothesis</button>
+        </div>
+      </section>
+
+      <!-- Right: Interactive Chat / Agent Rationale Stream -->
+      <section class="sat-card sat-chat-card" aria-labelledby="agent-chat-title">
+        <h3 id="agent-chat-title">Agent Dialogue &amp; Structured Rationale</h3>
+
+        <div id="chat-messages" class="sat-chat-stream">
+          <div class="chat-bubble chat-agent">
+            <strong>Translational Research Agent:</strong> Select a target gene and disease, or ask any translational question (e.g. <em>"Why is BRAF a validated driver in melanoma and what are the resistance mechanisms?"</em>).
           </div>
+        </div>
 
-          <div style="margin-bottom:1.5rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Gene Target Symbol</label>
-            <input type="text" id="target-gene" value="BRAF" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
-          </div>
-
-          <button id="generate-hyp-btn" style="width:100%;background:#0284c7;color:#fff;font-weight:600;padding:0.75rem;border:none;border-radius:6px;cursor:pointer;">
-            🤖 Synthesize Target Hypothesis
-          </button>
-        </section>
-
-        <!-- Right: Interactive Chat / Agent Rationale Stream -->
-        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;display:flex;flex-direction:column;min-height:550px;">
-          <h3 style="margin-top:0;font-size:1.15rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Agent Dialogue & Structured Rationale</h3>
-
-          <div id="chat-messages" style="flex:1;overflow-y:auto;padding-right:0.5rem;max-height:450px;">
-            <div class="chat-bubble chat-agent">
-              <strong>Translational Research Agent:</strong> Hello! Select a target gene and disease or ask any translational question (e.g. <em>"Why is BRAF a validated driver in melanoma and what are the resistance mechanisms?"</em>).
-            </div>
-          </div>
-
-          <div style="margin-top:1rem;display:flex;gap:0.5rem;">
-            <input type="text" id="user-chat-input" placeholder="Ask the scientific research agent..." style="flex:1;padding:0.75rem;border:1px solid #cbd5e1;border-radius:6px;" />
-            <button id="send-chat-btn" style="background:#0f172a;color:#fff;font-weight:600;padding:0.75rem 1.5rem;border:none;border-radius:6px;cursor:pointer;">
-              Send
-            </button>
-          </div>
-        </section>
-      </div>
-    </main>
-  </div>
+        <div class="sat-chat-input-row">
+          <input type="text" id="user-chat-input" placeholder="Ask the scientific research agent…" aria-label="Chat with the research agent" />
+          <button id="send-chat-btn" class="btn btn-primary">Send</button>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <script src="/js/agent.js"></script>
 </body>

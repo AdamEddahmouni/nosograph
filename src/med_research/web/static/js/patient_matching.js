@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Synthetic generator failed", err);
     } finally {
       synthBtn.disabled = false;
-      synthBtn.textContent = "🎲 Generate Random Synthetic Patient";
+      synthBtn.textContent = "Generate Random Synthetic Patient";
     }
   });
 
@@ -69,9 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     resultsContainer.innerHTML = `
-      <div style="background:#fff;padding:2rem;text-align:center;border-radius:8px;border:1px solid #e2e8f0;">
-        <span class="spinner" style="display:inline-block;width:24px;height:24px;border:3px solid #cbd5e1;border-top-color:#0284c7;border-radius:50%;animation:spin 1s linear infinite;"></span>
-        <p style="margin-top:0.75rem;color:#64748b;">Evaluating inclusion criteria, biomarker signatures, and travel distances...</p>
+      <div class="sat-loading-box">
+        <span class="spinner"></span>
+        <p>Evaluating inclusion criteria, biomarker signatures, and travel distances…</p>
       </div>
     `;
 
@@ -91,42 +91,42 @@ document.addEventListener("DOMContentLoaded", () => {
       summaryDiv.textContent = `Found ${data.eligible_trials_count} eligible of ${data.total_trials_evaluated} candidate protocols`;
 
       if (!data.matches || data.matches.length === 0) {
-        resultsContainer.innerHTML = `<div style="background:#fff;padding:1.5rem;border-radius:8px;">No matching trials found.</div>`;
+        resultsContainer.innerHTML = `<div class="sat-empty">No matching trials found for this research vector.</div>`;
         return;
       }
 
       resultsContainer.innerHTML = data.matches.map(m => `
         <div class="match-card">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <div class="match-head">
             <div>
               <span class="eligible-badge ${m.is_eligible ? 'badge-pass' : 'badge-fail'}">
-                ${m.is_eligible ? '✓ ELIGIBLE' : '✕ INELIGIBLE'}
+                ${m.is_eligible ? 'ELIGIBLE' : 'INELIGIBLE'}
               </span>
-              <span style="margin-left:0.5rem;font-weight:600;color:#64748b;font-size:0.85rem;">${m.trial_id} (${m.phase})</span>
-              <h4 style="margin:0.5rem 0 0.25rem;font-size:1.05rem;color:#0f172a;">${m.title}</h4>
+              <span class="match-id">${m.trial_id} (${m.phase})</span>
+              <h4 class="match-title">${m.title}</h4>
             </div>
-            <div style="text-align:right;">
+            <div class="sat-score">
               <div class="score-meter">${Math.round(m.overall_match_score * 100)}%</div>
-              <div style="font-size:0.75rem;color:#64748b;">Match Score</div>
+              <div class="sat-score-lbl">Match Score</div>
             </div>
           </div>
 
-          <div style="margin-top:0.75rem;font-size:0.85rem;color:#475569;display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;background:#f8fafc;padding:0.75rem;border-radius:6px;">
+          <div class="match-criteria">
             <div>
               <strong>Inclusion Criteria Met:</strong>
-              <ul style="margin:0.25rem 0 0;padding-left:1.2rem;">
+              <ul>
                 ${m.inclusion_reasons && m.inclusion_reasons.length > 0 ? m.inclusion_reasons.map(r => `<li>${r}</li>`).join('') : '<li>Baseline criteria satisfied</li>'}
               </ul>
             </div>
             <div>
               <strong>Violations / Prohibitions:</strong>
-              <ul style="margin:0.25rem 0 0;padding-left:1.2rem;color:${m.exclusion_violations && m.exclusion_violations.length > 0 ? '#b91c1c' : '#15803d'};">
+              <ul class="${m.exclusion_violations && m.exclusion_violations.length > 0 ? 'violations' : 'clean'}">
                 ${m.exclusion_violations && m.exclusion_violations.length > 0 ? m.exclusion_violations.map(v => `<li>${v}</li>`).join('') : '<li>None (Passed)</li>'}
               </ul>
             </div>
           </div>
 
-          <div style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;display:flex;justify-content:space-between;">
+          <div class="match-foot">
             <span>Estimated Site Proximity: <strong>${m.distance_km} km</strong></span>
             <span>Target Indication: <strong>${payload.disease.toUpperCase()}</strong></span>
           </div>
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `).join("");
     } catch (err) {
       resultsContainer.innerHTML = `
-        <div style="background:#fee2e2;color:#991b1b;padding:1rem;border-radius:8px;">
+        <div class="sat-error-box">
           <strong>Error running match:</strong> ${escapeHtml(err.message)}
         </div>
       `;

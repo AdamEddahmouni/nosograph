@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     resultsContainer.innerHTML = `
-      <div style="background:#fff;padding:2rem;text-align:center;border-radius:8px;border:1px solid #e2e8f0;">
-        <span class="spinner" style="display:inline-block;width:24px;height:24px;border:3px solid #cbd5e1;border-top-color:#0284c7;border-radius:50%;animation:spin 1s linear infinite;"></span>
-        <p style="margin-top:0.75rem;color:#64748b;">Computing physicochemical descriptors, CYP liabilities, and ADMET radar...</p>
+      <div class="sat-loading-box">
+        <span class="spinner"></span>
+        <p>Computing physicochemical descriptors, CYP liabilities, and ADMET radar…</p>
       </div>
     `;
 
@@ -57,17 +57,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const p = data.properties;
 
       resultsContainer.innerHTML = `
-        <div class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
-          <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f1f5f9;padding-bottom:1rem;">
+        <div class="sat-result-card">
+          <div class="sat-result-head">
             <div>
-              <h3 style="margin:0;font-size:1.3rem;color:#0f172a;">${data.compound_name}</h3>
-              <div style="font-family:monospace;font-size:0.8rem;color:#64748b;margin-top:0.25rem;word-break:break-all;">${data.smiles}</div>
+              <h3 class="sat-result-name">${data.compound_name}</h3>
+              <div class="sat-result-sub">${data.smiles}</div>
             </div>
-            <div style="text-align:right;">
-              <div style="font-size:1.8rem;font-weight:800;color:${data.composite_score >= 70 ? '#16a34a' : (data.composite_score >= 50 ? '#d97706' : '#dc2626')};">
+            <div class="sat-score">
+              <div class="sat-score-val ${data.composite_score >= 70 ? 'good' : (data.composite_score >= 50 ? 'mid' : 'bad')}">
                 ${data.composite_score}/100
               </div>
-              <div style="font-size:0.75rem;color:#64748b;">Drug-Likeness Score</div>
+              <div class="sat-score-lbl">Drug-Likeness Score</div>
             </div>
           </div>
 
@@ -100,17 +100,17 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
 
           <!-- ADMET Radar Bars -->
-          <div style="margin-top:1.5rem;background:#f8fafc;padding:1.25rem;border-radius:6px;">
-            <h4 style="margin:0 0 1rem;font-size:0.95rem;color:#334155;">Multi-Objective ADMET Property Profile</h4>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <div class="sat-panel">
+            <h4>Multi-Objective ADMET Property Profile</h4>
+            <div class="sat-panel-grid">
               ${Object.entries(data.admet_radar).map(([k, v]) => `
                 <div>
-                  <div style="display:flex;justify-content:space-between;font-size:0.8rem;">
+                  <div class="sat-bar-row">
                     <span>${k}</span>
-                    <span style="font-weight:600;">${Math.round(v * 100)}%</span>
+                    <span class="num">${Math.round(v * 100)}%</span>
                   </div>
                   <div class="bar-outer">
-                    <div class="bar-inner" style="width:${Math.round(v * 100)}%;background:${v > 0.5 ? '#0284c7' : '#e11d48'};"></div>
+                    <div class="bar-inner ${v > 0.5 ? '' : 'risk'}" style="width:${Math.round(v * 100)}%;"></div>
                   </div>
                 </div>
               `).join('')}
@@ -118,22 +118,22 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
 
           <!-- Toxicity Liabilities -->
-          <div style="margin-top:1rem;display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;font-size:0.85rem;">
-            <div style="padding:0.75rem;border-radius:6px;background:${p.cyp3a4_inhibit ? '#fee2e2' : '#f0fdf4'};color:${p.cyp3a4_inhibit ? '#991b1b' : '#166534'};">
-              <strong>CYP3A4 Inhibition:</strong> ${p.cyp3a4_inhibit ? '⚠️ Alert Detected' : '✓ Negative'}
+          <div class="sat-alert-grid">
+            <div class="sat-alert ${p.cyp3a4_inhibit ? 'warn' : 'ok'}">
+              <strong>CYP3A4 Inhibition:</strong> ${p.cyp3a4_inhibit ? 'Alert detected' : 'Negative'}
             </div>
-            <div style="padding:0.75rem;border-radius:6px;background:${p.cyp2d6_inhibit ? '#fee2e2' : '#f0fdf4'};color:${p.cyp2d6_inhibit ? '#991b1b' : '#166534'};">
-              <strong>CYP2D6 Inhibition:</strong> ${p.cyp2d6_inhibit ? '⚠️ Alert Detected' : '✓ Negative'}
+            <div class="sat-alert ${p.cyp2d6_inhibit ? 'warn' : 'ok'}">
+              <strong>CYP2D6 Inhibition:</strong> ${p.cyp2d6_inhibit ? 'Alert detected' : 'Negative'}
             </div>
-            <div style="padding:0.75rem;border-radius:6px;background:${p.herg_risk ? '#fee2e2' : '#f0fdf4'};color:${p.herg_risk ? '#991b1b' : '#166534'};">
-              <strong>hERG Cardiotox Risk:</strong> ${p.herg_risk ? '⚠️ High Liability' : '✓ Low Risk'}
+            <div class="sat-alert ${p.herg_risk ? 'warn' : 'ok'}">
+              <strong>hERG Cardiotox Risk:</strong> ${p.herg_risk ? 'High liability' : 'Low risk'}
             </div>
           </div>
         </div>
       `;
     } catch (err) {
       resultsContainer.innerHTML = `
-        <div style="background:#fee2e2;color:#991b1b;padding:1rem;border-radius:8px;">
+        <div class="sat-error-box">
           <strong>Error analyzing molecule:</strong> ${escapeHtml(err.message)}
         </div>
       `;
@@ -149,9 +149,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     resultsContainer.innerHTML = `
-      <div style="background:#fff;padding:2rem;text-align:center;border-radius:8px;border:1px solid #e2e8f0;">
-        <span class="spinner" style="display:inline-block;width:24px;height:24px;border:3px solid #cbd5e1;border-top-color:#0284c7;border-radius:50%;animation:spin 1s linear infinite;"></span>
-        <p style="margin-top:0.75rem;color:#64748b;">Batch processing ${lines.length} candidate molecules...</p>
+      <div class="sat-loading-box">
+        <span class="spinner"></span>
+        <p>Batch processing ${lines.length} candidate molecules…</p>
       </div>
     `;
 
@@ -164,30 +164,30 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = await res.json();
 
       resultsContainer.innerHTML = `
-        <div class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
-          <h3 style="margin-top:0;font-size:1.15rem;">Batch Screening Results (${data.passed_count} Passed / ${data.total_screened} Total)</h3>
-          <table style="width:100%;border-collapse:collapse;margin-top:1rem;font-size:0.85rem;">
+        <div class="sat-result-card">
+          <h3 class="sat-result-name">Batch Screening Results (${data.passed_count} Passed / ${data.total_screened} Total)</h3>
+          <table class="sat-table">
             <thead>
-              <tr style="background:#f1f5f9;text-align:left;">
-                <th style="padding:0.5rem;">Rank</th>
-                <th style="padding:0.5rem;">SMILES</th>
-                <th style="padding:0.5rem;">Score</th>
-                <th style="padding:0.5rem;">MW</th>
-                <th style="padding:0.5rem;">LogP</th>
-                <th style="padding:0.5rem;">Lipinski</th>
-                <th style="padding:0.5rem;">BBB</th>
+              <tr>
+                <th>Rank</th>
+                <th>SMILES</th>
+                <th>Score</th>
+                <th>MW</th>
+                <th>LogP</th>
+                <th>Lipinski</th>
+                <th>BBB</th>
               </tr>
             </thead>
             <tbody>
               ${data.ranked_candidates.map((c, idx) => `
-                <tr style="border-bottom:1px solid #e2e8f0;">
-                  <td style="padding:0.5rem;font-weight:700;">#${idx + 1}</td>
-                  <td style="padding:0.5rem;font-family:monospace;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${c.smiles}</td>
-                  <td style="padding:0.5rem;font-weight:700;color:${c.composite_score >= 70 ? '#16a34a' : '#d97706'};">${c.composite_score}</td>
-                  <td style="padding:0.5rem;">${c.mw}</td>
-                  <td style="padding:0.5rem;">${c.logp}</td>
-                  <td style="padding:0.5rem;">${c.lipinski_pass ? '✓' : '✗'}</td>
-                  <td style="padding:0.5rem;">${c.bbb_pass ? '✓' : '✗'}</td>
+                <tr>
+                  <td class="num">#${idx + 1}</td>
+                  <td class="mono" title="${c.smiles}">${c.smiles}</td>
+                  <td class="num ${c.composite_score >= 70 ? 'good' : 'mid'}">${c.composite_score}</td>
+                  <td>${c.mw}</td>
+                  <td>${c.logp}</td>
+                  <td class="${c.lipinski_pass ? 'pass-tag' : 'fail-tag'}">${c.lipinski_pass ? 'PASS' : 'FAIL'}</td>
+                  <td class="${c.bbb_pass ? 'pass-tag' : 'fail-tag'}">${c.bbb_pass ? 'YES' : 'NO'}</td>
                 </tr>
               `).join('')}
             </tbody>
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `;
     } catch (err) {
-      resultsContainer.innerHTML = `<div style="background:#fee2e2;color:#991b1b;padding:1rem;border-radius:8px;">${escapeHtml(err.message)}</div>`;
+      resultsContainer.innerHTML = `<div class="sat-error-box">${escapeHtml(err.message)}</div>`;
     }
   });
 });

@@ -3,6 +3,11 @@
    Consumes tokens.css (--ng-*). No Material overrides, no page layout.
    ========================================================================== */
 
+/* Eyebrow / kicker — section metadata label. px-sized: Material's 125% root
+   font-size inflates rem tokens ~25%, which would break the 12px floor. */
+.ng-eyebrow { display:block; margin:0; color:var(--ng-link); font:700 12px/1.3 var(--ng-font-mono); letter-spacing:var(--ng-tracking-caps); text-transform:uppercase; }
+.ng-eyebrow--light { color:var(--ng-teal); }
+
 /* Buttons */
 .md-typeset .ng-btn { display:inline-flex; align-items:center; justify-content:center; gap:var(--ng-sp-8); min-height:2.75rem; padding:.7rem 1.15rem; border:1px solid transparent; border-radius:var(--ng-radius-sm); background:none; font-family:var(--ng-font-text); font-weight:600; font-size:var(--ng-text-md); letter-spacing:.01em; text-decoration:none; cursor:pointer; transition:background-color var(--ng-fast) var(--ng-ease),border-color var(--ng-fast) var(--ng-ease),color var(--ng-fast) var(--ng-ease); }
 .md-typeset .ng-btn--primary { background:var(--ng-teal); color:var(--ng-deep-navy); }
@@ -12,6 +17,9 @@
 .md-typeset .ng-btn--on-dark { color:var(--ng-white); }
 .md-typeset .ng-btn--text { min-height:auto; padding-inline:0; border:0; color:var(--ng-link); }
 .md-typeset .ng-btn--text:hover { color:var(--ng-link-hover); text-decoration:underline; text-underline-offset:3px; }
+.md-typeset .ng-btn--ghost { border-color:var(--ng-border); color:var(--ng-ink-soft); }
+.md-typeset .ng-btn--ghost:hover { border-color:var(--ng-border-strong); color:var(--ng-ink); background:var(--ng-hover); }
+.md-typeset .ng-btn--sm { min-height:2.25rem; padding:.45rem .85rem; font-size:var(--ng-text-sm); }
 
 /* Status / maturity */
 .ng-chip { display:inline-flex; align-items:center; padding:.28rem .7rem; border:1px solid transparent; border-radius:var(--ng-radius-pill); font-family:var(--ng-font-mono); font-weight:600; font-size:var(--ng-text-micro); text-transform:uppercase; letter-spacing:.06em; line-height:1.2; }
@@ -65,3 +73,12 @@ table.ng-table { width:100%; border-collapse:collapse; font-size:var(--ng-text-u
 .ng-table tbody tr:last-child td { border-bottom:0; }
 .ng-table tbody tr:hover { background:var(--ng-hover); }
 .ng-num { text-align:right; font-variant-numeric:tabular-nums; }
+
+/* Stat rail — honest metric strip (values + labels + optional kind). */
+.ng-statrail { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); border-top:1px solid var(--ng-border-strong); border-left:1px solid var(--ng-border); }
+.ng-stat { min-width:0; padding:var(--ng-sp-16); border-right:1px solid var(--ng-border); border-bottom:1px solid var(--ng-border); background:var(--ng-surface); }
+.ng-stat__value { display:block; color:var(--ng-ink); font:650 clamp(20px,2vw,28px)/1.05 var(--ng-font-display); font-variant-numeric:tabular-nums; letter-spacing:-0.02em; overflow-wrap:anywhere; }
+.ng-stat__label { display:block; margin-top:6px; color:var(--ng-ink-soft); font:500 11px/1.4 var(--ng-font-mono); letter-spacing:.02em; }
+
+/* Hairline divider. */
+.ng-hairline { border:0; border-top:1px solid var(--ng-border); margin:var(--ng-sp-32) 0; }

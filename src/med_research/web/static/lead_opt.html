@@ -1,118 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#08142D" />
+  <meta name="description" content="NosoGraph in silico lead optimization and ADMET profiler for research use.">
   <title>Lead Optimization & ADMET — NosoGraph</title>
   <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/tokens.css" />
   <link rel="stylesheet" href="/css/dashboard.css" />
-  <style>
-    .metric-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 0.75rem;
-      margin: 1rem 0;
-    }
-    .metric-box {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      padding: 0.75rem;
-      border-radius: 6px;
-      text-align: center;
-    }
-    .metric-box .val {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #0f172a;
-    }
-    .metric-box .lbl {
-      font-size: 0.75rem;
-      color: #64748b;
-      margin-top: 0.2rem;
-    }
-    .pass-tag { color: #16a34a; font-weight: 600; }
-    .fail-tag { color: #dc2626; font-weight: 600; }
-    .bar-outer {
-      background: #e2e8f0;
-      height: 8px;
-      border-radius: 4px;
-      overflow: hidden;
-      margin-top: 4px;
-    }
-    .bar-inner {
-      height: 100%;
-      background: #0284c7;
-    }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="app-layout">
-    <header class="satellite-header">
-      <div class="satellite-heading">
-        <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
-        <p class="satellite-title">In Silico Lead Optimization &amp; ADMET Profiler</p>
-      </div>
-      <nav class="satellite-links" aria-label="Research tools">
-        <a href="/patient_matching.html">Patient Matching</a>
-        <a href="/spatial.html">Spatial Omics</a>
-        <a href="/pgx.html">PGx</a>
-        <a href="/agent.html">Target Agent</a>
-      </nav>
-    </header>
+  <header class="satellite-header">
+    <div class="satellite-heading">
+      <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
+      <p class="satellite-title">In Silico Lead Optimization &amp; ADMET Profiler</p>
+    </div>
+    <nav class="satellite-links" aria-label="Research tools">
+      <a href="/patient_matching.html">Patient Matching</a>
+      <a href="/lead_opt.html" aria-current="page">Lead Opt &amp; ADMET</a>
+      <a href="/spatial.html">Spatial Omics</a>
+      <a href="/agent.html">Target Agent</a>
+      <a href="/pgx.html">PGx</a>
+    </nav>
+  </header>
 
-    <main id="main-content" class="main-content" tabindex="-1" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
-      <p class="research-disclaimer" role="note">
-        Research software only. ADMET and druggability scores are computational hypotheses, not safety
-        assessments or development advice. Do not submit secrets, PHI, or patient-identifiable data.
-      </p>
-      <h1 class="workspace-sr-only">Lead optimization and ADMET profiler</h1>
-      <div class="satellite-layout">
-        <!-- Left: Input Form -->
-        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
-          <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Molecule & SMILES Input</h3>
-          
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Compound Label</label>
-            <input type="text" id="compound-name" value="Vemurafenib Analogue-A" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+  <main id="main-content" class="main-content" tabindex="-1">
+    <p class="research-disclaimer" role="note">
+      Research software only. ADMET and druggability scores are computational hypotheses, not safety
+      assessments or development advice. Do not submit secrets, PHI, or patient-identifiable data.
+    </p>
+    <h1 class="workspace-sr-only">Lead optimization and ADMET profiler</h1>
+    <div class="satellite-layout">
+      <!-- Left: Input Form -->
+      <section class="sat-card" aria-labelledby="lead-form-title">
+        <h3 id="lead-form-title">Molecule &amp; SMILES Input</h3>
+
+        <div class="sat-field">
+          <label for="compound-name">Compound Label</label>
+          <input type="text" id="compound-name" value="Vemurafenib Analogue-A" />
+        </div>
+
+        <div class="sat-field">
+          <label for="smiles-input">SMILES String</label>
+          <textarea id="smiles-input" rows="4" class="sat-mono">CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5</textarea>
+        </div>
+
+        <div class="sat-actions-row" role="group" aria-label="Example compounds">
+          <button id="preset-vemurafenib" class="sat-preset-btn">Vemurafenib</button>
+          <button id="preset-osimertinib" class="sat-preset-btn">Osimertinib</button>
+          <button id="preset-temozolomide" class="sat-preset-btn">Temozolomide</button>
+        </div>
+
+        <div class="sat-actions">
+          <button id="eval-lead-btn" class="btn btn-primary">Screen ADMET &amp; Druggability</button>
+        </div>
+
+        <hr class="ng-hairline" />
+
+        <h4 class="sat-subhead">Batch SMILES Screening</h4>
+        <div class="sat-field">
+          <label for="batch-smiles-input">Batch SMILES (one per line)</label>
+          <textarea id="batch-smiles-input" rows="3" class="sat-mono" placeholder="Paste multiple SMILES (one per line)…"></textarea>
+        </div>
+        <div class="sat-actions">
+          <button id="eval-batch-btn" class="btn btn-secondary">Run Batch Screen</button>
+        </div>
+      </section>
+
+      <!-- Right: Results & ADMET Breakdown -->
+      <section aria-labelledby="lead-results-title">
+        <h2 class="workspace-sr-only" id="lead-results-title">ADMET results</h2>
+        <div id="lead-results-container" aria-live="polite">
+          <div class="sat-empty">
+            Enter a candidate SMILES structure and run <strong>Screen ADMET &amp; Druggability</strong> to view Lipinski rule compliance, BBB score, CYP inhibition alerts, and synthetic accessibility.
           </div>
-
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">SMILES String</label>
-            <textarea id="smiles-input" rows="4" style="width:100%;padding:0.5rem;font-family:monospace;font-size:0.85rem;border:1px solid #cbd5e1;border-radius:4px;">CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5</textarea>
-          </div>
-
-          <div style="display:flex;gap:0.5rem;margin-bottom:1.5rem;">
-            <button id="preset-vemurafenib" style="font-size:0.75rem;padding:0.3rem 0.6rem;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:4px;cursor:pointer;">Vemurafenib</button>
-            <button id="preset-osimertinib" style="font-size:0.75rem;padding:0.3rem 0.6rem;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:4px;cursor:pointer;">Osimertinib</button>
-            <button id="preset-temozolomide" style="font-size:0.75rem;padding:0.3rem 0.6rem;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:4px;cursor:pointer;">Temozolomide</button>
-          </div>
-
-          <button id="eval-lead-btn" style="width:100%;background:#0284c7;color:#fff;font-weight:600;padding:0.75rem;border:none;border-radius:6px;cursor:pointer;margin-bottom:1rem;">
-            ⚡ Screen ADMET & Druggability
-          </button>
-
-          <hr style="border:0;border-top:1px solid #e2e8f0;margin:1.5rem 0;" />
-
-          <h4 style="margin:0 0 0.5rem;font-size:0.95rem;">Batch SMILES Screening</h4>
-          <textarea id="batch-smiles-input" rows="3" placeholder="Paste multiple SMILES (one per line)..." style="width:100%;padding:0.5rem;font-family:monospace;font-size:0.8rem;border:1px solid #cbd5e1;border-radius:4px;margin-bottom:0.5rem;"></textarea>
-          <button id="eval-batch-btn" style="width:100%;background:#475569;color:#fff;font-weight:600;padding:0.5rem;border:none;border-radius:6px;cursor:pointer;">
-            📊 Run Batch Screen
-          </button>
-        </section>
-
-        <!-- Right: Results & ADMET Breakdown -->
-        <section>
-          <div id="lead-results-container">
-            <div style="background:#fff;padding:2rem;text-align:center;border-radius:8px;border:1px dashed #cbd5e1;color:#64748b;">
-              Enter a candidate SMILES structure and click <strong>Screen ADMET & Druggability</strong> to view Lipinski rule compliance, BBB score, CYP inhibition alerts, and synthetic accessibility.
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <script src="/js/lead_opt.js"></script>
 </body>

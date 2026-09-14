@@ -46,7 +46,7 @@
 
 .ng-header-grid .ng-brand .ng-mark {
   width: auto;
-  height: 26px;
+  height: 32px; /* brand minimum for the detailed mark (docs/assets/brand/README.md) */
   border-radius: var(--ng-radius-xs);
 }
 
@@ -395,9 +395,16 @@
 
 /* 3. Global keyboard focus — one low-specificity rule covers content links, header, tabs, nav, and homepage elements alike. Outline is never removed. */
 :focus-visible {
-  outline: 3px solid var(--ng-focus);
-  outline-offset: 2px;
+  outline: var(--ng-focus-ring-width) solid var(--ng-focus-ring);
+  outline-offset: var(--ng-focus-ring-offset);
   border-radius: var(--ng-radius-xs);
+}
+
+/* Always-dark chrome (navy header/footer in BOTH schemes) needs the dark
+   scheme's teal ring: the light-scheme ring is only ~1.5:1 on deep navy,
+   below the WCAG 2.4.11 3:1 focus-indicator floor. */
+:is(.md-header, .md-footer) {
+  --ng-focus-ring: var(--ng-teal);
 }
 
 /* 4. Documentation reading shell */
@@ -489,6 +496,14 @@
   font-weight: 600;
 }
 
+/* Page header: the h1 anchors the article with a hairline, separating the
+   title block from the body flow. */
+.ng-doc-frame .md-content__inner > h1:first-child {
+  padding-bottom: var(--ng-sp-16);
+  border-bottom: 1px solid var(--ng-border);
+  margin-bottom: var(--ng-sp-24);
+}
+
 /* 6. Links — color everywhere, underline scoped to article content only so nav/sidebar/tab links stay clean. */
 .md-typeset a {
   color: var(--ng-link);
@@ -507,6 +522,39 @@
 
 .md-content a:hover {
   text-decoration-color: currentColor;
+}
+
+/* 6b. Blockquotes — hairline leader, upright text (scientific voice, not
+   stock italic). Used for research-scope callouts across the walkthroughs. */
+.md-typeset blockquote {
+  margin: var(--ng-sp-24) 0;
+  padding: 2px 0 2px var(--ng-sp-16);
+  border-left: 2px solid var(--ng-border-strong);
+  color: var(--ng-ink-soft);
+  font-style: normal;
+}
+
+.md-typeset blockquote strong {
+  color: var(--ng-ink);
+}
+
+/* 6c. Horizontal rules, search marks, keyboard keys — tokenized hairlines. */
+.md-typeset hr {
+  border-top: 1px solid var(--ng-border);
+}
+
+.md-typeset mark {
+  background: color-mix(in srgb, var(--ng-teal) 26%, transparent);
+  color: inherit;
+}
+
+.md-typeset kbd {
+  border: 1px solid var(--ng-border-strong);
+  border-radius: var(--ng-radius-xs);
+  background: var(--ng-surface);
+  color: var(--ng-ink-soft);
+  box-shadow: none;
+  font-family: var(--ng-font-mono);
 }
 
 /* 7. Code surfaces — hairline plates, no neon. Material syntax highlighting and copy behavior remain native. */
@@ -567,8 +615,15 @@
   word-break: normal;
 }
 
-/* 8. Tables — hairline scientific grid mirroring the .ng-table system. */
-.md-typeset .md-typeset__scrollwrap { overflow-x: auto; }
+/* 8. Tables — hairline scientific grid mirroring the .ng-table system,
+   presented as a rounded plate with an inset header band. */
+.md-typeset .md-typeset__scrollwrap {
+  overflow-x: auto;
+  border: 1px solid var(--ng-border);
+  border-radius: var(--ng-radius-md);
+  background: var(--ng-surface);
+}
+.md-typeset .md-typeset__scrollwrap table { margin: 0; }
 .md-typeset table:not(.ng-homepage table) { display: table; overflow: visible; }
 .md-typeset table th:first-child { color: var(--ng-ink); }
 .md-typeset table code { overflow-wrap:anywhere; }
@@ -602,14 +657,15 @@
 }
 
 
-/* 9. Admonitions — semantic, flat, and role-preserving. Material's native
-   disclosure and icon behavior remain intact. */
+/* 9. Admonitions — semantic, flat, and role-preserving. Type colors map to
+   status tokens (never the brand spectrum); Material's native disclosure and
+   icon behavior remain intact. */
 .md-typeset .admonition,
 .md-typeset details {
   border: 0;
-  border-left: 2px solid var(--md-admonition-fg-color, var(--ng-border-strong));
+  border-left: 2px solid var(--ng-adm-fg, var(--ng-border-strong));
   border-radius: var(--ng-radius-sm);
-  background: color-mix(in srgb, var(--md-admonition-bg-color, var(--ng-surface-alt)) 58%, var(--ng-surface));
+  background: color-mix(in srgb, var(--ng-adm-fg, var(--ng-border-strong)) 7%, var(--ng-surface));
   box-shadow: none;
 }
 .md-typeset .admonition-title,
@@ -619,7 +675,15 @@
   font-family: var(--ng-font-text);
   font-weight: 650;
 }
-.md-typeset .admonition-title::before { color: var(--md-admonition-fg-color, var(--ng-link)); }
+.md-typeset .admonition-title::before { color: var(--ng-adm-fg, var(--ng-link)); }
+
+/* Type → status token mapping (pymdownx/Material type classes). */
+.md-typeset :is(.admonition.note, .admonition.info, details.note, details.info) { --ng-adm-fg: var(--ng-info); }
+.md-typeset :is(.admonition.tip, .admonition.success, .admonition.check, details.tip, details.success, details.check) { --ng-adm-fg: var(--ng-success); }
+.md-typeset :is(.admonition.warning, .admonition.caution, .admonition.attention, details.warning, details.caution, details.attention) { --ng-adm-fg: var(--ng-warning); }
+.md-typeset :is(.admonition.danger, .admonition.error, .admonition.failure, .admonition.fail, .admonition.bug, details.danger, details.error, details.failure, details.fail, details.bug) { --ng-adm-fg: var(--ng-error); }
+.md-typeset :is(.admonition.abstract, .admonition.example, .admonition.question, details.abstract, details.example, details.question) { --ng-adm-fg: var(--ng-provenance); }
+.md-typeset :is(.admonition.quote, details.quote) { --ng-adm-fg: var(--ng-border-strong); }
 
 /* Existing Material sizing follows. */
 .md-typeset :is(.admonition, details) {
@@ -670,6 +734,52 @@
   text-transform: uppercase;
 }
 
+/* 11b. Primary sidebar (desktop reading room): active page gets a teal rail
+   marker, mirroring the compact drawer (not color-only). */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-nav__link--active {
+    position: relative;
+    box-shadow: inset 2px 0 0 var(--ng-teal);
+  }
+
+  .md-sidebar--primary .md-nav__list {
+    /* quiet track for the rail */
+    border-left: 1px solid var(--ng-border);
+    margin-left: 0.6rem;
+  }
+
+  .md-sidebar--primary .md-nav--primary > .md-nav__list {
+    border-left: 0;
+    margin-left: 0;
+  }
+}
+
+/* 11c. Table-of-contents sidebar: quiet track, teal active rail, readable
+   nested levels. Pairs with toc.follow scrollspy. */
+.md-sidebar--secondary .md-nav__list {
+  border-left: 1px solid var(--ng-border);
+}
+
+.md-sidebar--secondary .md-nav__link {
+  color: var(--ng-ink-muted);
+  font-size: var(--ng-text-sm);
+  transition: color var(--ng-fast) var(--ng-ease);
+}
+
+.md-sidebar--secondary .md-nav__link:hover {
+  color: var(--ng-ink);
+}
+
+.md-sidebar--secondary .md-nav__link--active {
+  color: var(--ng-link);
+  font-weight: 600;
+  box-shadow: inset 2px 0 0 var(--ng-teal);
+}
+
+.md-sidebar--secondary .md-nav__title {
+  color: var(--ng-ink-muted);
+}
+
 /* 12. Footer — unbranded footer gets the navy chrome in BOTH schemes. (.md-copyright is Material's class for the copyright line.) */
 .md-footer {
   background: var(--ng-deep-navy);
@@ -710,6 +820,8 @@
 
 @media screen and (max-width: 76.234375em) {
   .md-sidebar--primary {
+    /* Dark drawer chrome needs the dark scheme's teal focus ring (3:1 floor). */
+    --ng-focus-ring: var(--ng-teal);
     background: var(--ng-navy-layer);
     border-right: 1px solid color-mix(in srgb, var(--ng-mist) 12%, transparent);
   }

@@ -133,3 +133,153 @@ def test_prefers_reduced_motion_shortens_transitions(page: Page, static_server: 
     raw = duration.strip().lower()
     seconds = float(raw[:-2]) / 1000.0 if raw.endswith("ms") else float(raw.rstrip("s"))
     assert seconds < 0.05
+
+
+def _max_seconds(raw: str) -> float:
+    """Parse a (possibly comma-separated) computed CSS time list to seconds."""
+    values = []
+    for part in raw.split(","):
+        part = part.strip().lower()
+        if not part:
+            continue
+        values.append(float(part[:-2]) / 1000.0 if part.endswith("ms") else float(part.rstrip("s")))
+    return max(values, default=0.0)
+
+
+def test_motion_preferences_toggle_smooth_scroll_and_durations(
+    page: Page, static_server: str
+) -> None:
+    """Motion allowed: smooth scroll + token durations. Reduced: both off."""
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    assert (
+        page.evaluate("() => getComputedStyle(document.documentElement).scrollBehavior") == "smooth"
+    )
+    assert page.evaluate("() => ngScrollBehavior()") == "smooth"
+    duration = page.locator(".nav-link").first.evaluate(
+        "el => getComputedStyle(el).transitionDuration"
+    )
+    assert abs(_max_seconds(duration) - 0.16) < 0.001  # --ng-fast
+
+    page.emulate_media(reduced_motion="reduce")
+    assert (
+        page.evaluate("() => getComputedStyle(document.documentElement).scrollBehavior") == "auto"
+    )
+    assert page.evaluate("() => ngScrollBehavior()") == "auto"
+    killed = page.evaluate("() => getComputedStyle(document.body).animationDuration")
+    assert _max_seconds(killed) < 0.05
+
+
+def test_mobile_nav_disclosure_escape_and_focus_return(page: Page, static_server: str) -> None:
+    page.set_viewport_size({"width": 375, "height": 812})
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    toggle = page.locator("#nav-toggle")
+    menu = page.locator("#nav-menu")
+    expect(toggle).to_be_visible()
+    expect(toggle).to_have_attribute("aria-expanded", "false")
+    expect(toggle).to_have_attribute("aria-controls", "nav-menu")
+    expect(menu).to_be_hidden()
+
+    # Keyboard open: Enter on the focused toggle.
+    toggle.focus()
+    page.keyboard.press("Enter")
+    expect(toggle).to_have_attribute("aria-expanded", "true")
+    expect(menu).to_be_visible()
+
+    # Keyboard order from the toggle runs through the primary bar into the
+    # open menu (DOM order): disease selector, API status, first section link.
+    # (The selector is a Tom-Select combobox when JS upgrades it, hence the
+    # "-ts-control" suffix on the focusable input.)
+    labels = []
+    for _ in range(3):
+        page.keyboard.press("Tab")
+        labels.append(
+            page.evaluate(
+                "() => document.activeElement "
+                "&& (document.activeElement.id || document.activeElement.textContent.trim())"
+            )
+        )
+    assert labels[0].startswith("disease-selector")
+    assert labels[1:] == ["api-status", "Workspace"]
+
+    # Escape closes the menu and returns focus to the toggle.
+    page.keyboard.press("Escape")
+    expect(toggle).to_have_attribute("aria-expanded", "false")
+    expect(menu).to_be_hidden()
+    page.wait_for_function(
+        "() => document.activeElement && document.activeElement.id === 'nav-toggle'"
+    )
+
+
+def test_mobile_nav_closes_after_link_activation(page: Page, static_server: str) -> None:
+    page.set_viewport_size({"width": 375, "height": 812})
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    toggle = page.locator("#nav-toggle")
+    menu = page.locator("#nav-menu")
+    toggle.click()
+    expect(menu).to_be_visible()
+    page.locator(".nav-links--sections .nav-link").first.click()
+    expect(menu).to_be_hidden()
+    expect(toggle).to_have_attribute("aria-expanded", "false")
+    # Hiding the focused link would strand focus on <body>; the disclosure
+    # returns it to the toggle instead.
+    page.wait_for_function(
+        "() => document.activeElement && document.activeElement.id === 'nav-toggle'"
+    )
+
+
+def test_dashboard_keyboard_order_desktop(page: Page, static_server: str) -> None:
+    """At desktop widths the hidden toggle drops out of the tab order."""
+    page.set_viewport_size({"width": 1440, "height": 900})
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    expect(page.locator("#nav-toggle")).to_be_hidden()
+    order = []
+    for _ in range(4):
+        page.keyboard.press("Tab")
+        order.append(
+            page.evaluate(
+                "() => document.activeElement "
+                "&& (document.activeElement.id || document.activeElement.textContent.trim())"
+            )
+        )
+    assert order[0] == "Skip to content"
+    assert order[1].startswith("disease-selector")
+    assert order[2:] == ["api-status", "Workspace"]
+
+
+def test_pgx_form_keyboard_flow(page: Page, static_server: str) -> None:
+    """End-to-end keyboard pass on a satellite: skip link → form → submit."""
+    page.goto(f"{static_server}/pgx.html", wait_until="domcontentloaded")
+    expect(page.locator("#result")).to_have_attribute("aria-live", "polite")
+    order = []
+    for _ in range(9):
+        page.keyboard.press("Tab")
+        order.append(
+            page.evaluate(
+                "() => document.activeElement "
+                "&& (document.activeElement.id || document.activeElement.textContent.trim())"
+            )
+        )
+    assert order == [
+        "Skip to content",
+        "NosoGraph",
+        "Patient Matching",
+        "Lead Opt & ADMET",
+        "Spatial Omics",
+        "Target Agent",
+        "PGx",
+        "genotype-input",
+        "submit-btn",
+    ]
+    # Shift+Tab back to the textarea; invalid JSON is handled fully
+    # client-side (deterministic, offline), then Tab → Enter submits.
+    page.keyboard.press("Shift+Tab")
+    page.wait_for_function(
+        "() => document.activeElement && document.activeElement.id === 'genotype-input'"
+    )
+    page.keyboard.type("{not json")
+    page.keyboard.press("Tab")
+    page.wait_for_function(
+        "() => document.activeElement && document.activeElement.id === 'submit-btn'"
+    )
+    page.keyboard.press("Enter")
+    expect(page.locator("#result")).to_contain_text("Invalid JSON")

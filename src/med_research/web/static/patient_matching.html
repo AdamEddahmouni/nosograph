@@ -1,143 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#08142D" />
+  <meta name="description" content="NosoGraph clinical trial patient matching simulation for research use.">
   <title>Clinical Trial Patient Matching — NosoGraph</title>
   <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/tokens.css" />
   <link rel="stylesheet" href="/css/dashboard.css" />
-  <style>
-    .match-card {
-      background: var(--bg-surface, #ffffff);
-      border: 1px solid var(--border-color, #e2e8f0);
-      border-radius: 8px;
-      padding: 1.25rem;
-      margin-bottom: 1rem;
-      transition: box-shadow 0.2s ease;
-    }
-    .match-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    }
-    .eligible-badge {
-      display: inline-block;
-      padding: 0.25rem 0.6rem;
-      font-size: 0.75rem;
-      font-weight: 600;
-      border-radius: 9999px;
-    }
-    .badge-pass { background: #dcfce7; color: #166534; }
-    .badge-fail { background: #fee2e2; color: #991b1b; }
-    .score-meter {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #0284c7;
-    }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="app-layout">
-    <header class="satellite-header">
-      <div class="satellite-heading">
-        <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
-        <p class="satellite-title">Clinical Trial Patient Matching Engine</p>
-      </div>
-      <nav class="satellite-links" aria-label="Research tools">
-        <a href="/lead_opt.html">Lead Opt &amp; ADMET</a>
-        <a href="/spatial.html">Spatial Omics</a>
-        <a href="/pgx.html">PGx</a>
-        <a href="/agent.html">Target Agent</a>
-      </nav>
-    </header>
+  <header class="satellite-header">
+    <div class="satellite-heading">
+      <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
+      <p class="satellite-title">Clinical Trial Patient Matching Engine</p>
+    </div>
+    <nav class="satellite-links" aria-label="Research tools">
+      <a href="/patient_matching.html" aria-current="page">Patient Matching</a>
+      <a href="/lead_opt.html">Lead Opt &amp; ADMET</a>
+      <a href="/spatial.html">Spatial Omics</a>
+      <a href="/agent.html">Target Agent</a>
+      <a href="/pgx.html">PGx</a>
+    </nav>
+  </header>
 
-    <main id="main-content" class="main-content" tabindex="-1" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
-      <p id="research-disclaimer" class="research-disclaimer" role="note">
-        Research simulation only. Use synthetic or de-identified research vectors.
-        Do not upload protected health information or real patient records.
-        Match scores are computational hypotheses, not eligibility determinations or care advice.
-        Submitted vectors are not persisted.
-      </p>
-      <h1 class="workspace-sr-only">Clinical trial patient matching</h1>
-      <div class="satellite-layout">
-        <!-- Left Column: Patient Profile Form -->
-        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
-          <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Patient Clinical Vector</h3>
-          
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Patient ID</label>
-            <input type="text" id="patient-id" value="PT-1082" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
+  <main id="main-content" class="main-content" tabindex="-1">
+    <p id="research-disclaimer" class="research-disclaimer" role="note">
+      Research simulation only. Use synthetic or de-identified research vectors.
+      Do not upload protected health information or real patient records.
+      Match scores are computational hypotheses, not eligibility determinations or care advice.
+      Submitted vectors are not persisted.
+    </p>
+    <h1 class="workspace-sr-only">Clinical trial patient matching</h1>
+    <div class="satellite-layout">
+      <!-- Left Column: Patient Profile Form -->
+      <section class="sat-card" aria-labelledby="patient-form-title">
+        <h3 id="patient-form-title">Patient Clinical Vector</h3>
+
+        <div class="sat-field">
+          <label for="patient-id">Patient ID</label>
+          <input type="text" id="patient-id" value="PT-1082" />
+        </div>
+
+        <div class="sat-field-grid">
+          <div class="sat-field">
+            <label for="patient-age">Age</label>
+            <input type="number" id="patient-age" value="54" />
           </div>
-
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1rem;">
-            <div>
-              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Age</label>
-              <input type="number" id="patient-age" value="54" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
-            </div>
-            <div>
-              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Sex</label>
-              <select id="patient-sex" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
-                <option value="F">Female</option>
-                <option value="M">Male</option>
-              </select>
-            </div>
-          </div>
-
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Primary Indication</label>
-            <select id="patient-disease" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
-              <option value="melanoma">Cutaneous Melanoma</option>
-              <option value="nsclc">Non-Small Cell Lung Cancer (NSCLC)</option>
-              <option value="glioblastoma">Glioblastoma (GBM)</option>
-              <option value="sle">Systemic Lupus Erythematosus</option>
-              <option value="ra">Rheumatoid Arthritis</option>
+          <div class="sat-field">
+            <label for="patient-sex">Sex</label>
+            <select id="patient-sex">
+              <option value="F">Female</option>
+              <option value="M">Male</option>
             </select>
           </div>
+        </div>
 
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">ECOG Performance Status</label>
-            <select id="patient-ecog" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
-              <option value="0">0 — Fully Active</option>
-              <option value="1" selected>1 — Restricted Strenuous</option>
-              <option value="2">2 — Ambulatory Capable</option>
-              <option value="3">3 — Limited Self-Care</option>
-            </select>
+        <div class="sat-field">
+          <label for="patient-disease">Primary Indication</label>
+          <select id="patient-disease">
+            <option value="melanoma">Cutaneous Melanoma</option>
+            <option value="nsclc">Non-Small Cell Lung Cancer (NSCLC)</option>
+            <option value="glioblastoma">Glioblastoma (GBM)</option>
+            <option value="sle">Systemic Lupus Erythematosus</option>
+            <option value="ra">Rheumatoid Arthritis</option>
+          </select>
+        </div>
+
+        <div class="sat-field">
+          <label for="patient-ecog">ECOG Performance Status</label>
+          <select id="patient-ecog">
+            <option value="0">0 — Fully Active</option>
+            <option value="1" selected>1 — Restricted Strenuous</option>
+            <option value="2">2 — Ambulatory Capable</option>
+            <option value="3">3 — Limited Self-Care</option>
+          </select>
+        </div>
+
+        <div class="sat-field">
+          <label for="patient-biomarkers">Biomarkers (JSON)</label>
+          <textarea id="patient-biomarkers" rows="3" class="sat-mono">{"BRAF_V600E": true, "PD_L1": 0.70, "EGFR_L858R": false}</textarea>
+        </div>
+
+        <div class="sat-field">
+          <label for="patient-prior-tx">Prior Therapies (comma-separated)</label>
+          <input type="text" id="patient-prior-tx" value="Nivolumab, Ipilimumab" />
+        </div>
+
+        <div class="sat-actions">
+          <button id="run-matching-btn" class="btn btn-primary">Evaluate Matching Trials</button>
+          <button id="synth-cohort-btn" class="btn btn-secondary">Generate Random Synthetic Patient</button>
+        </div>
+      </section>
+
+      <!-- Right Column: Matched Trials Stream -->
+      <section aria-labelledby="matching-title">
+        <div class="sat-results-head">
+          <h3 id="matching-title">Matched Clinical Protocols</h3>
+          <div id="matching-summary" class="sat-summary" role="status" aria-live="polite">Ready to match</div>
+        </div>
+
+        <div id="results-container">
+          <div class="sat-empty">
+            Configure patient features and run <strong>Evaluate Matching Trials</strong> to compute inclusion/exclusion screening and geographic distance scores.
           </div>
-
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Biomarkers (JSON)</label>
-            <textarea id="patient-biomarkers" rows="3" style="width:100%;padding:0.5rem;font-family:monospace;font-size:0.85rem;border:1px solid #cbd5e1;border-radius:4px;">{"BRAF_V600E": true, "PD_L1": 0.70, "EGFR_L858R": false}</textarea>
-          </div>
-
-          <div style="margin-bottom:1.5rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Prior Therapies (comma-separated)</label>
-            <input type="text" id="patient-prior-tx" value="Nivolumab, Ipilimumab" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
-          </div>
-
-          <button id="run-matching-btn" style="width:100%;background:#0284c7;color:#fff;font-weight:600;padding:0.75rem;border:none;border-radius:6px;cursor:pointer;margin-bottom:0.75rem;">
-            🔍 Evaluate Matching Trials
-          </button>
-          <button id="synth-cohort-btn" style="width:100%;background:#f1f5f9;color:#334155;font-weight:600;padding:0.5rem;border:1px solid #cbd5e1;border-radius:6px;cursor:pointer;">
-            🎲 Generate Random Synthetic Patient
-          </button>
-        </section>
-
-        <!-- Right Column: Matched Trials Stream -->
-        <section>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
-            <h3 style="margin:0;font-size:1.2rem;">Matched Clinical Protocols</h3>
-            <div id="matching-summary" style="font-size:0.9rem;color:#64748b;">Ready to match</div>
-          </div>
-
-          <div id="results-container">
-            <div style="background:#fff;padding:2rem;text-align:center;border-radius:8px;border:1px dashed #cbd5e1;color:#64748b;">
-              Configure patient features and click <strong>Evaluate Matching Trials</strong> to compute inclusion/exclusion screening and geographic distance scores.
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <script src="/js/patient_matching.js"></script>
 </body>

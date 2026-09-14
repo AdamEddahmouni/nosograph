@@ -60,21 +60,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const h = data.hypothesis;
 
       const html = `
-        <div style="margin-top:0.5rem;">
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <span style="font-size:1.1rem;font-weight:700;color:#0284c7;">Target Hypothesis: ${h.target_gene} in ${h.disease_name}</span>
-            <span style="background:#e0f2fe;color:#0369a1;padding:0.2rem 0.6rem;border-radius:9999px;font-weight:700;font-size:0.75rem;">
+        <div class="agent-hyp">
+          <div class="agent-hyp-head">
+            <span class="agent-hyp-title">Target Hypothesis: ${h.target_gene} in ${h.disease_name}</span>
+            <span class="agent-hyp-confidence">
               ${Math.round(h.overall_confidence * 100)}% Confidence
             </span>
           </div>
 
-          <p style="margin:0.5rem 0 0.75rem;color:#334155;background:#f8fafc;padding:0.75rem;border-radius:6px;border-left:3px solid #0284c7;">
+          <p class="agent-hyp-moa">
             ${h.mechanism_of_action_hypothesis}
           </p>
 
           <div style="margin-bottom:0.75rem;">
-            <strong>Multi-Omics & Relational Evidence:</strong>
-            <ul style="margin:0.25rem 0;padding-left:1.2rem;">
+            <strong>Multi-Omics &amp; Relational Evidence:</strong>
+            <ul class="agent-hyp-list">
               ${h.supporting_evidence.map(e => `
                 <li>
                   <span class="badge-evidence">${e.source_type}</span>
@@ -84,15 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul>
           </div>
 
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;font-size:0.8rem;background:#f1f5f9;padding:0.75rem;border-radius:6px;margin-bottom:0.75rem;">
+          <div class="agent-hyp-grid">
             <div>
               <strong>Druggability Assessment:</strong><br/>
-              • Small Molecule: ${h.druggability_assessment.tractability_small_molecule}<br/>
-              • Antibody / Biologic: ${h.druggability_assessment.tractability_antibody}
+              · Small Molecule: ${h.druggability_assessment.tractability_small_molecule}<br/>
+              · Antibody / Biologic: ${h.druggability_assessment.tractability_antibody}
             </div>
             <div>
               <strong>Recommended Assays:</strong><br/>
-              ${h.recommended_assays.slice(0, 2).map(a => `• ${a}`).join('<br/>')}
+              ${h.recommended_assays.slice(0, 2).map(a => `· ${a}`).join('<br/>')}
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       appendAgentMessage(html);
     } catch (err) {
-      appendAgentMessage(`<span style="color:#dc2626;">Error: ${escapeHtml(err.message)}</span>`);
+      appendAgentMessage(`<span class="agent-error">Error: ${escapeHtml(err.message)}</span>`);
     }
   });
 
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = await res.json();
       appendAgentMessage(escapeHtml(data.answer).replace(/\n/g, "<br>"));
     } catch (err) {
-      appendAgentMessage(`<span style="color:#dc2626;">Error: ${escapeHtml(err.message)}</span>`);
+      appendAgentMessage(`<span class="agent-error">Error: ${escapeHtml(err.message)}</span>`);
     }
   }
 

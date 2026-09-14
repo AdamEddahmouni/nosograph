@@ -218,8 +218,15 @@ def test_product_surfaces_use_the_canonical_nosograph_identity() -> None:
     assert "fonts.googleapis.com" not in dashboard
     assert "⚡ API v" not in dashboard_js
     assert "🦠 ${info.label}" not in dashboard_js
+    assert 'href="/css/tokens.css"' in dashboard
+    app_tokens_css = (ROOT / "src/med_research/web/static/css/tokens.css").read_text(
+        encoding="utf-8"
+    )
     for color in ("#08142d", "#102246", "#19d2c7", "#2f86ff", "#7252f4"):
-        assert color in dashboard_css.lower()
+        assert color in app_tokens_css.lower()
+    assert re.search(r"#[0-9a-f]{3,8}\b", dashboard_css, re.IGNORECASE) is None
+    for token_ref in ("var(--ng-deep-navy)", "var(--ng-teal)", "var(--ng-violet)"):
+        assert token_ref in dashboard_css
     for font in (
         "InterVariable.woff2",
         "JetBrainsMono-Variable.woff2",

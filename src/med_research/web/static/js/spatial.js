@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hoveredSpot) {
       const g = document.getElementById("primary-gene").value;
       const expr = (hoveredSpot.features && hoveredSpot.features[g]) || 0;
-      spotInfo.innerHTML = `<strong>${escapeHtml(hoveredSpot.barcode)}</strong> (${escapeHtml(hoveredSpot.region)}) | ${escapeHtml(g)}: <span style="color:#0284c7;font-weight:700;">${expr}</span> | (x: ${hoveredSpot.x}, y: ${hoveredSpot.y})`;
+      spotInfo.innerHTML = `<strong>${escapeHtml(hoveredSpot.barcode)}</strong> (${escapeHtml(hoveredSpot.region)}) | ${escapeHtml(g)}: <span style="color:var(--ng-teal);font-weight:700;">${expr}</span> | (x: ${hoveredSpot.x}, y: ${hoveredSpot.y})`;
     } else {
       spotInfo.textContent = "Hover over spots for barcode & coordinates";
     }
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Failed to load spatial data: " + err.message);
     } finally {
       loadBtn.disabled = false;
-      loadBtn.textContent = "🔬 Load & Compute Spatial Metrics";
+      loadBtn.textContent = "Load & Compute Spatial Metrics";
     }
   });
 

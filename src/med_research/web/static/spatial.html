@@ -1,137 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#08142D" />
+  <meta name="description" content="NosoGraph spatial transcriptomics spot viewer for research use.">
   <title>Spatial Transcriptomics Viewer — NosoGraph</title>
   <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/tokens.css" />
   <link rel="stylesheet" href="/css/dashboard.css" />
-  <style>
-    #spatial-canvas {
-      background: #0f172a;
-      border-radius: 8px;
-      cursor: crosshair;
-      box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
-    }
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.8rem;
-    }
-    .legend-color {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-    }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="app-layout">
-    <header class="satellite-header">
-      <div class="satellite-heading">
-        <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
-        <p class="satellite-title">Spatial Transcriptomics &amp; Spot Co-Localization</p>
-      </div>
-      <nav class="satellite-links" aria-label="Research tools">
-        <a href="/patient_matching.html">Patient Matching</a>
-        <a href="/lead_opt.html">Lead Opt &amp; ADMET</a>
-        <a href="/pgx.html">PGx</a>
-        <a href="/agent.html">Target Agent</a>
-      </nav>
-    </header>
+  <header class="satellite-header">
+    <div class="satellite-heading">
+      <a class="satellite-brand" href="/"><img src="/brand/symbol.svg" alt="NosoGraph"><span>Noso<span>Graph</span></span></a>
+      <p class="satellite-title">Spatial Transcriptomics &amp; Spot Co-Localization</p>
+    </div>
+    <nav class="satellite-links" aria-label="Research tools">
+      <a href="/patient_matching.html">Patient Matching</a>
+      <a href="/lead_opt.html">Lead Opt &amp; ADMET</a>
+      <a href="/spatial.html" aria-current="page">Spatial Omics</a>
+      <a href="/agent.html">Target Agent</a>
+      <a href="/pgx.html">PGx</a>
+    </nav>
+  </header>
 
-    <main id="main-content" class="main-content" tabindex="-1" style="max-width:1200px;margin:2rem auto;padding:0 1rem;">
-      <p class="research-disclaimer" role="note">
-        Research software only. Spatial metrics are computational illustrations, not clinical imaging
-        or diagnostic results. Do not submit secrets, PHI, or patient-identifiable data.
-      </p>
-      <h1 class="workspace-sr-only">Spatial transcriptomics viewer</h1>
-      <div class="satellite-layout">
-        <!-- Left: Controls -->
-        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
-          <h3 style="margin-top:0;font-size:1.1rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;">Visium Spot Parameters</h3>
+  <main id="main-content" class="main-content" tabindex="-1">
+    <p class="research-disclaimer" role="note">
+      Research software only. Spatial metrics are computational illustrations, not clinical imaging
+      or diagnostic results. Do not submit secrets, PHI, or patient-identifiable data.
+    </p>
+    <h1 class="workspace-sr-only">Spatial transcriptomics viewer</h1>
+    <div class="satellite-layout">
+      <!-- Left: Controls -->
+      <section class="sat-card" aria-labelledby="spatial-form-title">
+        <h3 id="spatial-form-title">Visium Spot Parameters</h3>
 
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Disease / Tissue Sample</label>
-            <select id="spatial-disease" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
-              <option value="melanoma">Cutaneous Melanoma (Invasive Margin)</option>
-              <option value="nsclc">NSCLC (Tumor-Immune Microenvironment)</option>
-              <option value="glioblastoma">Glioblastoma (Perivascular Infiltration)</option>
-            </select>
+        <div class="sat-field">
+          <label for="spatial-disease">Disease / Tissue Sample</label>
+          <select id="spatial-disease">
+            <option value="melanoma">Cutaneous Melanoma (Invasive Margin)</option>
+            <option value="nsclc">NSCLC (Tumor-Immune Microenvironment)</option>
+            <option value="glioblastoma">Glioblastoma (Perivascular Infiltration)</option>
+          </select>
+        </div>
+
+        <div class="sat-field">
+          <label for="primary-gene">Primary Gene (Moran's I Autocorrelation)</label>
+          <select id="primary-gene">
+            <option value="CD274">CD274 (PD-L1 Immune Checkpoint)</option>
+            <option value="PDCD1">PDCD1 (PD-1 Infiltrating T-Cells)</option>
+            <option value="BRAF">BRAF (Driver Oncogene)</option>
+            <option value="CD8A">CD8A (Cytotoxic T-Lymphocytes)</option>
+            <option value="EGFR">EGFR (Receptor Tyrosine Kinase)</option>
+          </select>
+        </div>
+
+        <div class="sat-field">
+          <label>Ligand-Receptor Pair</label>
+          <div class="sat-field-grid">
+            <input type="text" id="ligand-gene" value="CD274" aria-label="Ligand gene" />
+            <input type="text" id="receptor-gene" value="PDCD1" aria-label="Receptor gene" />
           </div>
+        </div>
 
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Primary Gene (Moran's I Autocorrelation)</label>
-            <select id="primary-gene" style="width:100%;padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;">
-              <option value="CD274">CD274 (PD-L1 Immune Checkpoint)</option>
-              <option value="PDCD1">PDCD1 (PD-1 Infiltrating T-Cells)</option>
-              <option value="BRAF">BRAF (Driver Oncogene)</option>
-              <option value="CD8A">CD8A (Cytotoxic T-Lymphocytes)</option>
-              <option value="EGFR">EGFR (Receptor Tyrosine Kinase)</option>
-            </select>
+        <div class="sat-field">
+          <label for="spatial-radius">Interaction Radius (&mu;m)</label>
+          <input type="range" id="spatial-radius" min="50" max="300" value="150" />
+          <div class="range-row">
+            <span>50 &mu;m</span>
+            <span id="radius-val">150 &mu;m</span>
+            <span>300 &mu;m</span>
           </div>
+        </div>
 
-          <div style="margin-bottom:1rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Ligand-Receptor Pair</label>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;">
-              <input type="text" id="ligand-gene" value="CD274" style="padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
-              <input type="text" id="receptor-gene" value="PDCD1" style="padding:0.5rem;border:1px solid #cbd5e1;border-radius:4px;" />
-            </div>
+        <div class="sat-actions">
+          <button id="load-spatial-btn" class="btn btn-primary">Load &amp; Compute Spatial Metrics</button>
+        </div>
+      </section>
+
+      <!-- Right: 2D Spot Canvas & Metrics -->
+      <section class="sat-card" aria-labelledby="spatial-map-title">
+        <div class="sat-results-head sat-results-head--wrap">
+          <div>
+            <h3 id="spatial-map-title">2D Spatial Expression Map</h3>
+            <div id="spot-info" class="sat-summary">Hover over spots for barcode &amp; coordinates</div>
           </div>
-
-          <div style="margin-bottom:1.5rem;">
-            <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">Interaction Radius (&mu;m)</label>
-            <input type="range" id="spatial-radius" min="50" max="300" value="150" style="width:100%;" />
-            <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:#64748b;">
-              <span>50 &mu;m</span>
-              <span id="radius-val">150 &mu;m</span>
-              <span>300 &mu;m</span>
-            </div>
+          <div class="sat-legend-row" aria-label="Expression legend">
+            <span class="legend-item"><span class="legend-color" style="background:#3b82f6;"></span> Low</span>
+            <span class="legend-item"><span class="legend-color" style="background:#eab308;"></span> Mid</span>
+            <span class="legend-item"><span class="legend-color" style="background:#ef4444;"></span> High Expression</span>
           </div>
+        </div>
 
-          <button id="load-spatial-btn" style="width:100%;background:#0284c7;color:#fff;font-weight:600;padding:0.75rem;border:none;border-radius:6px;cursor:pointer;margin-bottom:0.75rem;">
-            🔬 Load & Compute Spatial Metrics
-          </button>
-        </section>
+        <div class="spatial-canvas-wrap">
+          <canvas id="spatial-canvas" width="600" height="420" role="img" aria-label="Spatial expression spot map"></canvas>
+        </div>
 
-        <!-- Right: 2D Spot Canvas & Metrics -->
-        <section class="card" style="background:#fff;padding:1.5rem;border-radius:8px;border:1px solid #e2e8f0;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
-            <div>
-              <h3 style="margin:0;font-size:1.15rem;">2D Spatial Expression Map</h3>
-              <div id="spot-info" style="font-size:0.8rem;color:#64748b;margin-top:0.2rem;">Hover over spots for barcode & coordinates</div>
-            </div>
-            <div style="display:flex;gap:1rem;">
-              <div class="legend-item"><div class="legend-color" style="background:#3b82f6;"></div> Low</div>
-              <div class="legend-item"><div class="legend-color" style="background:#eab308;"></div> Mid</div>
-              <div class="legend-item"><div class="legend-color" style="background:#ef4444;"></div> High Expression</div>
-            </div>
+        <!-- Statistical Metrics Panel -->
+        <div id="spatial-metrics-panel" class="spatial-metrics">
+          <div class="spatial-metric-cell">
+            <div class="spatial-metric-lbl">Moran's I Autocorrelation</div>
+            <div id="moran-score" class="spatial-metric-val">--</div>
+            <div id="moran-pattern" class="spatial-metric-sub">Run Load &amp; Compute</div>
           </div>
-
-          <div style="text-align:center;">
-            <canvas id="spatial-canvas" width="600" height="420" role="img" aria-label="Spatial expression spot map"></canvas>
+          <div class="spatial-metric-cell">
+            <div class="spatial-metric-lbl">Ligand-Receptor Co-Localization</div>
+            <div id="lr-score" class="spatial-metric-val">--</div>
+            <div id="lr-density" class="spatial-metric-sub">Spatial Interaction Strength</div>
           </div>
-
-          <!-- Statistical Metrics Panel -->
-          <div id="spatial-metrics-panel" style="margin-top:1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-            <div style="background:#f8fafc;padding:1rem;border-radius:6px;border:1px solid #e2e8f0;">
-              <div style="font-size:0.8rem;color:#64748b;">Moran's I Autocorrelation</div>
-              <div id="moran-score" style="font-size:1.4rem;font-weight:700;color:#0284c7;">--</div>
-              <div id="moran-pattern" style="font-size:0.8rem;color:#475569;margin-top:0.2rem;">Click 'Load & Compute'</div>
-            </div>
-            <div style="background:#f8fafc;padding:1rem;border-radius:6px;border:1px solid #e2e8f0;">
-              <div style="font-size:0.8rem;color:#64748b;">Ligand-Receptor Co-Localization</div>
-              <div id="lr-score" style="font-size:1.4rem;font-weight:700;color:#059669;">--</div>
-              <div id="lr-density" style="font-size:0.8rem;color:#475569;margin-top:0.2rem;">Spatial Interaction Strength</div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <script src="/js/spatial.js"></script>
 </body>
