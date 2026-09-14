@@ -69,6 +69,16 @@ DOCS_SHOTS: tuple[Shot, ...] = (
 APP_SHOTS: tuple[Shot, ...] = (
     Shot("app-dashboard-1440", "/", 1440),
     Shot("app-dashboard-375", "/", 375, height=812),
+    # Mobile nav disclosure open state (Stage 4: Esc/focus-return behavior).
+    Shot(
+        "app-dashboard-375-nav-open",
+        "/",
+        375,
+        height=812,
+        full_page=False,
+        click_selector="#nav-toggle",
+        result_selector="#nav-menu.is-open",
+    ),
     Shot("app-satellite-pgx-1440", "/pgx.html", 1440),
 )
 

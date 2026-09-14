@@ -4804,9 +4804,32 @@ function setupNavUi() {
     const toggle = document.getElementById('nav-toggle');
     const menu = document.getElementById('nav-menu');
     if (toggle && menu) {
-        toggle.addEventListener('click', () => {
-            const open = menu.classList.toggle('is-open');
+        const setMenuOpen = (open) => {
+            menu.classList.toggle('is-open', open);
             toggle.setAttribute('aria-expanded', String(open));
+        };
+        toggle.addEventListener('click', () => {
+            setMenuOpen(!menu.classList.contains('is-open'));
+        });
+        // Esc collapses the disclosure and returns focus to its toggle, so
+        // keyboard users are never stranded inside a dismissed menu.
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && menu.classList.contains('is-open')) {
+                setMenuOpen(false);
+                toggle.focus();
+            }
+        });
+        // Activating a link collapses the menu so it cannot cover the target
+        // section on small screens. Hiding the focused link would drop focus
+        // to <body>, so return it to the disclosure toggle (same target as
+        // Esc) — predictable for keyboard users, ring-free for pointer users.
+        // Deferred to the next task: the browser's own click-gesture focus
+        // handling settles after this handler runs.
+        menu.addEventListener('click', (event) => {
+            if (event.target instanceof Element && event.target.closest('a')) {
+                setMenuOpen(false);
+                window.setTimeout(() => toggle.focus(), 0);
+            }
         });
     }
 

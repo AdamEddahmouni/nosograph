@@ -7,6 +7,7 @@ research disclaimers in the committed HTML.
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pytest
@@ -64,3 +65,61 @@ def test_pgx_heading_and_input_label() -> None:
     html = (ROOT / "pgx.html").read_text(encoding="utf-8")
     assert "<h1>" in html
     assert 'for="genotype-input"' in html
+
+
+def test_nav_toggle_is_a_wired_disclosure_button() -> None:
+    """The mobile nav toggle must reference its menu and default to collapsed."""
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    assert 'id="nav-toggle"' in html
+    assert 'aria-expanded="false"' in html
+    assert 'aria-controls="nav-menu"' in html
+    assert 'id="nav-menu"' in html
+
+
+def test_nav_js_supports_escape_close_and_focus_return() -> None:
+    """Contract for the disclosure keyboard behavior verified in the browser tier."""
+    js = (ROOT / "js" / "dashboard.js").read_text(encoding="utf-8")
+    assert '"Escape"' in js or "'Escape'" in js
+    assert "aria-expanded" in js
+    assert "toggle.focus()" in js
+
+
+def test_satellite_navs_are_named_and_mark_current_page() -> None:
+    for name in SATELLITES:
+        html = (ROOT / name).read_text(encoding="utf-8")
+        assert 'aria-label="Research tools"' in html, name
+        assert 'aria-current="page"' in html, name
+
+
+_LAYOUT_TRANSITION_PROPS = frozenset(
+    {
+        "all",
+        "width",
+        "height",
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "margin",
+        "padding",
+        "flex",
+        "grid",
+    }
+)
+
+
+def test_dashboard_css_transitions_stay_off_layout_properties() -> None:
+    """Motion safety (WCAG 2.3.3): animate compositor properties only.
+
+    Layout-animating transitions (width/height/...) cause reflow churn and
+    vestibular-unfriendly movement on dense research screens; use transform
+    or opacity instead.
+    """
+    css = (ROOT / "css" / "dashboard.css").read_text(encoding="utf-8")
+    offenders: list[str] = []
+    for match in re.finditer(r"transition\s*:\s*([^;]+);", css):
+        for part in match.group(1).split(","):
+            tokens = part.strip().split()
+            if tokens and tokens[0] in _LAYOUT_TRANSITION_PROPS:
+                offenders.append(tokens[0])
+    assert not offenders, f"layout-property transitions found: {offenders}"
