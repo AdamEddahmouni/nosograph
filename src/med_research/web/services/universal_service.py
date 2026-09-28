@@ -37,6 +37,7 @@ from med_research.web.models.universal import (
     ResearchDisclaimer,
     SnapshotSummary,
 )
+from med_research.web.services.biomed_store_readiness import empty_paged_response
 
 _DISCLAIMER = ResearchDisclaimer()
 
@@ -48,6 +49,8 @@ def search_conditions(
     limit: int = 50,
     offset: int = 0,
 ) -> PagedResponse[EntitySummaryView]:
+    if not repository.is_schema_initialized():
+        return empty_paged_response(limit=limit, offset=offset)
     page = repository.search_entities(
         query,
         entity_type=EntityType.CONDITION,
@@ -145,6 +148,8 @@ def list_condition_claims(
     limit: int = 50,
     offset: int = 0,
 ) -> PagedResponse[ConditionClaimView]:
+    if not repository.is_schema_initialized():
+        return empty_paged_response(limit=limit, offset=offset)
     claims = repository.list_claims(curie, predicate=predicate)
     items = [_claim_view(repository, claim_view) for claim_view in claims]
     if evidence_direction is not None:
@@ -175,6 +180,8 @@ def list_snapshots(
     limit: int = 50,
     offset: int = 0,
 ) -> PagedResponse[SnapshotSummary]:
+    if not repository.is_schema_initialized():
+        return empty_paged_response(limit=limit, offset=offset)
     page = repository.list_snapshots(resource_name=resource_name, limit=limit, offset=offset)
     active = {snapshot.id for snapshot in repository.list_active_snapshots()}
     items = [_snapshot_summary(snapshot, active=snapshot.id in active) for snapshot in page.items]
@@ -259,6 +266,8 @@ def list_claim_evidence(
     limit: int = 50,
     offset: int = 0,
 ) -> PagedResponse[ClaimEvidenceDetailView]:
+    if not repository.is_schema_initialized():
+        return empty_paged_response(limit=limit, offset=offset)
     claim_view = repository.get_claim_by_id(claim_id)
     if claim_view is None:
         return PagedResponse(

@@ -232,9 +232,11 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/biomed/legacy/manifest.py \
 	src/med_research/biomed/legacy/projector.py \
 	src/med_research/biomed/legacy/report.py \
+	src/med_research/biomed/store_readiness.py \
 	src/med_research/web/dependencies_biomed.py \
 	src/med_research/web/models/universal.py \
 	src/med_research/web/routers/universal.py \
+	src/med_research/web/services/biomed_store_readiness.py \
 	src/med_research/web/services/universal_service.py \
 	src/med_research/web/services/comparison_service.py \
 	src/med_research/biomed/imports/opentargets_adapter.py \

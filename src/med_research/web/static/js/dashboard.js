@@ -2606,6 +2606,12 @@ async function loadBiomedImportStatus() {
     if (!panel) return;
     try {
         const data = await apiFetch('/api/v1/snapshots?limit=50');
+        if (data.store_state?.status === 'uninitialized') {
+            const hint = data.store_state.initialization_hint
+                || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.';
+            panel.innerHTML = `<p class="condition-explorer-placeholder">Canonical biomedical store is not initialized. ${escapeHtml(hint)}</p>`;
+            return;
+        }
         if (!data.items?.length) {
             panel.innerHTML = '<p class="condition-explorer-placeholder">No imported snapshots found. Run biomed import fixtures or full import.</p>';
             return;
