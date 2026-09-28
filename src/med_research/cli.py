@@ -7,6 +7,8 @@ Usage:
     nosograph --help
     nosograph diseases
     nosograph disease validate sle --strict
+    nosograph demo build
+    nosograph demo serve --host 127.0.0.1 --port 8000
     nosograph serve --host 127.0.0.1 --port 8000
 
 Legacy alias: med-research (same implementation). Python import: med_research.
@@ -795,6 +797,40 @@ def _build_parser() -> argparse.ArgumentParser:
     serve.add_argument("--port", type=int, default=8000)
     serve.add_argument("--reload", action="store_true")
 
+    demo = sub.add_parser(
+        "demo",
+        help="Build or run the local read-only demo (fixture snapshot; not a hosted product)",
+    )
+    demo_sub = demo.add_subparsers(dest="demo_action", required=True)
+    demo_build = demo_sub.add_parser(
+        "build",
+        help="Build the ci_validated-focused biomedical demo snapshot from checked-in fixtures",
+    )
+    demo_build.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="SQLite output path (default: data/demo/biomedical.sqlite3)",
+    )
+    demo_build.add_argument(
+        "--fixture-root",
+        type=Path,
+        default=None,
+        help="Fixture root (default: tests/fixtures/biomed)",
+    )
+    demo_serve = demo_sub.add_parser(
+        "serve",
+        help="Serve dashboard with DEMO_MODE=true and the demo snapshot (local only)",
+    )
+    demo_serve.add_argument("--host", default="127.0.0.1")
+    demo_serve.add_argument("--port", type=int, default=8000)
+    demo_serve.add_argument("--reload", action="store_true")
+    demo_serve.add_argument(
+        "--skip-build",
+        action="store_true",
+        help="Do not rebuild the snapshot when the database file is missing",
+    )
+
     test = sub.add_parser("test", help="Run the test suite")
     test.add_argument("--path", "-p", default="tests/")
     test.add_argument("--verbose", "-v", action="store_true", default=True)
@@ -879,7 +915,7 @@ def cmd_modules(args):
         "Core": ["kg", "repurpose", "bioinformatics", "literature", "screening", "trials", "ml"],
         "Advanced": ["synergy", "safety", "network", "expression", "cart", "biomarker"],
         "Evidence": ["workspace", "semantic", "evidence", "extractor", "monitor"],
-        "Meta": ["disease", "cross-disease", "serve", "test"],
+        "Meta": ["disease", "cross-disease", "demo", "serve", "test"],
     }
     logger.info("\nAvailable Pipeline Modules:")
     for category, cmds in modules.items():
@@ -2372,6 +2408,62 @@ PIPELINE_STEPS_FULL = [
 ]
 
 
+def cmd_demo(args: Any) -> int:
+    """Build or serve the local fixture-backed read-only demo."""
+    import os
+
+    from med_research.demo.snapshot import (
+        DEFAULT_DEMO_DB_PATH,
+        DEFAULT_FIXTURE_ROOT,
+        DemoSnapshotError,
+        build_demo_snapshot,
+        manifest_path_for,
+    )
+
+    if args.demo_action == "build":
+        output = Path(args.output) if args.output else DEFAULT_DEMO_DB_PATH
+        fixture_root = Path(args.fixture_root) if args.fixture_root else DEFAULT_FIXTURE_ROOT
+        try:
+            written = build_demo_snapshot(output, fixture_root=fixture_root)
+        except DemoSnapshotError as exc:
+            logger.error("%s", exc)
+            return 1
+        logger.info("Wrote demo snapshot to %s", written)
+        logger.info("Wrote manifest to %s", manifest_path_for(written))
+        return 0
+
+    if args.demo_action == "serve":
+        output = DEFAULT_DEMO_DB_PATH
+        if not output.is_file():
+            if args.skip_build:
+                logger.error(
+                    "Demo snapshot missing at %s (pass without --skip-build to build)", output
+                )
+                return 1
+            try:
+                build_demo_snapshot(output, fixture_root=DEFAULT_FIXTURE_ROOT)
+            except DemoSnapshotError as exc:
+                logger.error("%s", exc)
+                return 1
+        os.environ["DEMO_MODE"] = "true"
+        db_path = str(output.resolve())
+        os.environ["BIOMEDICAL_DB_PATH"] = db_path
+        import med_research.web.config as web_config
+        from med_research.web.dependencies_biomed import reset_biomedical_repository
+
+        web_config.BIOMEDICAL_DB_PATH = Path(db_path)
+        reset_biomedical_repository()
+        logger.info(
+            "Starting read-only demo at http://%s:%s (DEMO_MODE=true; Pages is not this app)",
+            args.host,
+            args.port,
+        )
+        return cast(int, cmd_serve(args))
+
+    logger.error("Unknown demo action: %s", getattr(args, "demo_action", None))
+    return 1
+
+
 def cmd_serve(args):
     """Start the web API server."""
     import uvicorn
@@ -2585,6 +2677,7 @@ def main() -> int:
         "monitor": cmd_monitor,
         "cross-disease": cmd_cross_disease,
         "run-all": cmd_run_all,
+        "demo": cmd_demo,
         "serve": cmd_serve,
         "test": cmd_test,
         "cache": cmd_cache,
