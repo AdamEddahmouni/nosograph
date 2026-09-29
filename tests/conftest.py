@@ -2,12 +2,14 @@
 Shared test fixtures for the Lupus Research Platform test suite.
 """
 
+import ctypes
 import json
 import logging
 import os
 from pathlib import Path
 
 import pytest
+from _pytest.config import Config
 
 from med_research.pipeline.knowledge_graph.config import load_genes
 
@@ -28,6 +30,80 @@ os.environ["OPENAPI_ENABLED"] = "true"
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"
+_MIB = 1024 * 1024
+_RESERVED_MEMORY_MB = 1024
+_MEMORY_PER_WORKER_MB = 600
+
+
+def _available_memory_mb() -> int | None:
+    """Return currently available physical memory in MiB, or None if unknown."""
+    try:
+        if os.name == "nt":
+
+            class MemoryStatus(ctypes.Structure):
+                _fields_ = [
+                    ("dwLength", ctypes.c_ulong),
+                    ("dwMemoryLoad", ctypes.c_ulong),
+                    ("ullTotalPhys", ctypes.c_ulonglong),
+                    ("ullAvailPhys", ctypes.c_ulonglong),
+                    ("ullTotalPageFile", ctypes.c_ulonglong),
+                    ("ullAvailPageFile", ctypes.c_ulonglong),
+                    ("ullTotalVirtual", ctypes.c_ulonglong),
+                    ("ullAvailVirtual", ctypes.c_ulonglong),
+                    ("ullAvailExtendedVirtual", ctypes.c_ulonglong),
+                ]
+
+            status = MemoryStatus()
+            status.dwLength = ctypes.sizeof(status)
+            if not ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(status)):
+                return None
+            return int(status.ullAvailPhys // _MIB)
+
+        sysconf = getattr(os, "sysconf", None)
+        if sysconf is None:
+            return None
+        available_pages = sysconf("SC_AVPHYS_PAGES")
+        page_size = sysconf("SC_PAGE_SIZE")
+        return int(available_pages * page_size // _MIB)
+    except (AttributeError, OSError, TypeError, ValueError):
+        return None
+
+
+def _xdist_worker_budget_workers() -> int | None:
+    """Return a conservative worker count only when memory should cap xdist."""
+    memory_mb = _available_memory_mb()
+    if memory_mb is None:
+        return None
+    budget = max(1, (memory_mb - _RESERVED_MEMORY_MB) // _MEMORY_PER_WORKER_MB)
+    return int(budget)
+
+
+def pytest_xdist_auto_num_workers(config: Config | None) -> int | None:
+    """Cap xdist's auto worker pool when available memory is the tighter limit."""
+    if os.environ.get("PYTEST_XDIST_AUTO_NUM_WORKERS"):
+        return None
+    budget = _xdist_worker_budget_workers()
+    cpu_count = os.cpu_count() or 1
+    return budget if budget is not None and budget < cpu_count else None
+
+
+@pytest.fixture(scope="session", autouse=True)
+def report_dir(tmp_path_factory):
+    """Redirect generated reports to a worker-private temporary directory."""
+    from med_research.pipeline.reporting import REPORT_DIR_ENV_VAR
+
+    worker = os.environ.get("PYTEST_XDIST_WORKER", "main")
+    root = tmp_path_factory.mktemp("med-research-reports") / worker
+    root.mkdir(parents=True, exist_ok=True)
+    previous = os.environ.get(REPORT_DIR_ENV_VAR)
+    os.environ[REPORT_DIR_ENV_VAR] = str(root)
+    try:
+        yield root
+    finally:
+        if previous is None:
+            os.environ.pop(REPORT_DIR_ENV_VAR, None)
+        else:
+            os.environ[REPORT_DIR_ENV_VAR] = previous
 
 
 @pytest.hookimpl(hookwrapper=True)

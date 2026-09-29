@@ -78,24 +78,26 @@ def _assert_module_outcome(module_id: str, disease_id: str, result) -> None:
 
 MODULE_REPORT_PATHS: dict[str, Path] = {
     "knowledge_graph": PIPELINE_ROOT / "knowledge_graph/web",
-    "drug_repurposing": PIPELINE_ROOT / "drug_repurposing/report.html",
-    "gwas": PIPELINE_ROOT / "bioinformatics/bioinformatics_report.html",
-    "enrichment": PIPELINE_ROOT / "bioinformatics/bioinformatics_report.html",
-    "ppi": PIPELINE_ROOT / "bioinformatics/bioinformatics_report.html",
-    "literature_mining": PIPELINE_ROOT / "literature_mining/literature_report.html",
-    "virtual_screening": PIPELINE_ROOT / "virtual_screening/screening_report.html",
-    "clinical_trials": PIPELINE_ROOT / "clinical_trials/ct_report.html",
-    "drug_synergy": PIPELINE_ROOT / "drug_synergy/report.html",
-    "adverse_events": PIPELINE_ROOT / "adverse_events/report.html",
-    "network_pharmacology": PIPELINE_ROOT / "network_pharmacology/report.html",
-    "gene_expression": PIPELINE_ROOT / "gene_expression/report.html",
-    "car_t_predictor": PIPELINE_ROOT / "car_t_predictor/report.html",
-    "biomarker_discovery": PIPELINE_ROOT / "biomarker_discovery/report.html",
-    "cross_disease": PIPELINE_ROOT / "cross_disease/report.html",
+    "drug_repurposing": Path("drug_repurposing/report.html"),
+    "gwas": Path("bioinformatics/bioinformatics_report.html"),
+    "enrichment": Path("bioinformatics/bioinformatics_report.html"),
+    "ppi": Path("bioinformatics/bioinformatics_report.html"),
+    "literature_mining": Path("literature_mining/literature_report.html"),
+    "virtual_screening": Path("virtual_screening/screening_report.html"),
+    "clinical_trials": Path("clinical_trials/ct_report.html"),
+    "drug_synergy": Path("drug_synergy/report.html"),
+    "adverse_events": Path("adverse_events/report.html"),
+    "network_pharmacology": Path("network_pharmacology/report.html"),
+    "gene_expression": Path("gene_expression/report.html"),
+    "car_t_predictor": Path("car_t_predictor/report.html"),
+    "biomarker_discovery": Path("biomarker_discovery/report.html"),
+    "cross_disease": Path("cross_disease/report.html"),
 }
 
 
-def _assert_report_path(module_id: str, disease_id: str, report_path: Path | None) -> None:
+def _assert_report_path(
+    module_id: str, disease_id: str, report_path: Path | None, report_dir: Path
+) -> None:
     expected = MODULE_REPORT_PATHS.get(module_id)
     assert expected is not None, f"No report mapping for {module_id}"
     if module_id == "knowledge_graph":
@@ -103,6 +105,7 @@ def _assert_report_path(module_id: str, disease_id: str, report_path: Path | Non
         if report_path is not None:
             assert report_path == expected / f"graph_data_{disease_id}.json"
     else:
+        expected = report_dir / expected
         assert expected.exists(), f"Missing report for {module_id}: {expected}"
         if report_path is not None:
             assert report_path == expected
@@ -129,7 +132,9 @@ class TestFullPipelineExportHtml:
         assert exit_code == 0, caplog.text
         assert "Pipeline complete" in caplog.text
 
-    def test_each_run_all_module_dispatch(self, offline_pipeline_http_mocks, disease_id):
+    def test_each_run_all_module_dispatch(
+        self, offline_pipeline_http_mocks, disease_id, report_dir
+    ):
         for module_id in _run_all_module_ids():
             result = execute_module(
                 module_id,
@@ -142,13 +147,15 @@ class TestFullPipelineExportHtml:
                 assert result.data is not None, f"{module_id}@{disease_id} missing result payload"
                 if isinstance(result.data, (dict, list)):
                     assert len(result.data) > 0, f"{module_id}@{disease_id} returned empty result"
-                _assert_report_path(module_id, disease_id, result.report_path)
+                _assert_report_path(module_id, disease_id, result.report_path, report_dir)
 
 
 class TestSleFullPipelineArtifacts:
     """Focused sle run-all artifact gate (network mocked at HTTP boundaries)."""
 
-    def test_sle_run_all_modules_produce_results_and_reports(self, offline_pipeline_http_mocks):
+    def test_sle_run_all_modules_produce_results_and_reports(
+        self, offline_pipeline_http_mocks, report_dir
+    ):
         disease_id = "sle"
         for module_id in _run_all_module_ids():
             result = execute_module(
@@ -162,4 +169,4 @@ class TestSleFullPipelineArtifacts:
                 assert result.data is not None
                 if isinstance(result.data, (dict, list)):
                     assert len(result.data) > 0
-                _assert_report_path(module_id, disease_id, result.report_path)
+                _assert_report_path(module_id, disease_id, result.report_path, report_dir)

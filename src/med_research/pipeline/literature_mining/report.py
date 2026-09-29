@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 from med_research.pipeline.provenance import ProvenanceMetadata
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 
 def generate_literature_report(
@@ -26,7 +26,7 @@ def generate_literature_report(
 ) -> str:
     """Generate an HTML report from disease-specific literature results."""
 
-    output_path = Path(__file__).parent / "literature_report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "literature_report.html"
     context = disease_context(disease_id)
     stats = results["stats"]
     candidate_support = results["candidate_support"]
