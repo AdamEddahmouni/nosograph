@@ -93,7 +93,10 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [],
-    "low_risk": [],
+    "low_risk": [
+        "elx-02",
+    ],
+    "undetermined_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

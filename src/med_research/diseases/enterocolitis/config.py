@@ -93,35 +93,39 @@ CAR_T_SCORES = {
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
     "high_risk": [
+        "docetaxel",
+        "docetaxel anhydrous",
         "gemcitabine",
         "paclitaxel",
     ],
     "moderate_risk": [
-        "acetaminophen",
-        "alverine",
+        "drotaverine",
+    ],
+    "low_risk": [
         "amitriptyline",
         "cilansetron",
         "cisapride",
+        "mesalamine",
+        "metoclopramide",
+        "mosapride",
+        "phloroglucinol",
+        "somatostatin",
+    ],
+    "undetermined_risk": [
+        "acetaminophen",
+        "alverine",
         "clebopride",
         "clidinium bromide",
         "diphemanil",
-        "docetaxel",
-        "docetaxel anhydrous",
-        "drotaverine",
         "emricasan",
         "esomeprazole",
+        "fibrinogen, human",
         "imipramine",
         "itopride",
         "mepenzolate",
-        "metoclopramide",
         "mk-4721",
-        "mosapride",
         "oxyphencyclimine",
         "oxyphenonium",
-    ],
-    "low_risk": [
-        "mesalamine",
-        "phloroglucinol",
     ],
 }
 

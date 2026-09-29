@@ -1,0 +1,407 @@
+{
+  "schema_version": "1",
+  "disease_id": "x_linked_intellectual_disability_hedera_type",
+  "source": "class_level_inference_from_disease_drug_catalog",
+  "coverage_level": "partial",
+  "curated_inputs": [
+    "disease_drug_catalog"
+  ],
+  "inferred_inputs": [
+    "drug_class_adverse_event_patterns",
+    "drug_class_tier_mapping",
+    "drug_symptom_overlap"
+  ],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments.",
+    "Adverse-event lists are class-level summaries, not label-derived contraindications or pharmacovigilance counts.",
+    "Validate current labels and patient-specific contraindications before use.",
+    "4 drug(s) have no recognisable pharmacologic class and no adverse-effect text: their empty adverse-event lists mean 'not known', not 'none'.",
+    "3 drug(s) are classified undetermined_risk: their absence from a risk tier is a gap in inference, not evidence of safety.",
+    "No curated symptom list was available, so disease_overlap_ae is empty."
+  ],
+  "default_profile": {
+    "common_ae": [
+      "abdominal pain",
+      "confusion",
+      "constipation",
+      "diarrhoea",
+      "dizziness",
+      "headache",
+      "hypertension",
+      "nausea",
+      "somnolence",
+      "tachycardia",
+      "tremor"
+    ],
+    "severe_ae": [
+      "cardiac arrhythmia",
+      "cardiac conduction disturbance",
+      "clostridioides difficile infection",
+      "dependence",
+      "hypertension",
+      "nephrotoxicity",
+      "neurotoxicity",
+      "ototoxicity",
+      "psychiatric events",
+      "qt prolongation",
+      "respiratory depression",
+      "sepsis",
+      "serotonin syndrome",
+      "weight loss"
+    ],
+    "disease_overlap_ae": [],
+    "black_box_warnings": [],
+    "severity_burden": 0,
+    "chronic_use_safety": 10,
+    "disease_specific_risk": 1.0,
+    "monitoring_required": "Class-level inference only: verify current labels and disease-specific contraindications before use.",
+    "evidence_grade": "inferred_class_default"
+  },
+  "drug_safety_tiers": {
+    "high_risk": [],
+    "moderate_risk": [
+      "everolimus",
+      "pentoxifylline"
+    ],
+    "low_risk": [
+      "alprazolam",
+      "ataluren",
+      "carbamazepine",
+      "cenobamate",
+      "clobazam",
+      "clonazepam",
+      "dexmedetomidine",
+      "diazepam",
+      "eslicarbazepine acetate",
+      "fenfluramine",
+      "ganaxolone",
+      "lacosamide",
+      "lamotrigine",
+      "lorazepam",
+      "metformin",
+      "oxcarbazepine",
+      "phenacemide",
+      "phenytoin",
+      "rufinamide",
+      "topiramate",
+      "zonisamide"
+    ],
+    "undetermined_risk": [
+      "felbamate",
+      "ketamine",
+      "perampanel"
+    ]
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL108",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1201754",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL16",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL220492",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL256997",
+      "common_ae": [
+        "nausea",
+        "diarrhoea",
+        "abdominal pain"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "ototoxicity",
+        "clostridioides difficile infection"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL3989949",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL452",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL58323",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL628",
+      "common_ae": [
+        "nausea",
+        "diarrhoea",
+        "headache"
+      ],
+      "severe_ae": [
+        "weight loss",
+        "psychiatric events"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL741",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL750",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL778",
+      "common_ae": [
+        "tremor",
+        "tachycardia",
+        "headache"
+      ],
+      "severe_ae": [
+        "cardiac arrhythmia",
+        "hypertension"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL87992",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL918",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL12",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1568698",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1908360",
+      "common_ae": [
+        "tremor",
+        "headache",
+        "hypertension"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "sepsis",
+        "neurotoxicity"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL580",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL661",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL70418",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL87493",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1068",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    }
+  ]
+}

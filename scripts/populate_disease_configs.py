@@ -14,6 +14,12 @@ Drug safety tiers (DRUG_SAFETY_RISK):
   - high_risk: interferons, anti-TNF, checkpoint inhibitors, known inducers.
   - moderate_risk: broad immunomodulators / biologics with secondary-autoimmunity signal.
   - low_risk: established disease-standard therapies and supportive care.
+  - undetermined_risk: drugs whose class could not be resolved. These are kept
+    explicitly rather than dropped, because an absent drug is scored as
+    zero-risk downstream, which is a false safety signal.
+
+Tier classification is owned by ``med_research.diseases.safety_scaffold`` so
+this script and the package cannot drift apart.
 
 Usage:
     python scripts/populate_disease_configs.py --all --report
@@ -26,15 +32,18 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Sequence
+
+from med_research.diseases import safety_scaffold
+from med_research.diseases.base import Disease
+from med_research.exceptions import ConfigurationError
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
-from med_research.diseases.base import Disease
 
 DISEASE_IDS = tuple(Disease.list_all())
+RISK_TIERS = safety_scaffold.RISK_TIERS
 
 SLE_DIMENSION_KEYS = frozenset(
     {
@@ -60,28 +69,6 @@ _CATEGORY_RULES: list[tuple[tuple[str, ...], float]] = [
     (("interferon", "ifn", "type i interferon"), 5.0),
     (("fibrosis", "tgf", "ecm", "erosion", "osteoclast", "barrier", "epithelial"), 4.0),
 ]
-
-_HIGH_RISK_PATTERNS = re.compile(
-    r"interferon|anti-tnf|tnf inhibitor|tnf-alpha|checkpoint|alemtuzumab|"
-    r"natalizumab|bleomycin|procainamide|hydralazine|isoniazid|minocycline|"
-    r"pentamidine|diazoxide|paclitaxel|gemcitabine|bromocriptine|"
-    r"ustekinumab|infliximab|adalimumab|etanercept|certolizumab|golimumab",
-    re.I,
-)
-_MODERATE_PATTERNS = re.compile(
-    r"jak inhibitor|janus kinase|azathioprine|methotrexate|sulfasalazine|"
-    r"teriflunomide|dimethyl fumarate|cladribine|penicillamine|mercaptopurine|"
-    r"tofacitinib|belimumab|rituximab|fingolimod|hydroxychloroquine|"
-    r"glucocorticoid|corticosteroid|prednisone|mycophenolate|cyclosporine|"
-    r"thalidomide|levamisole|gold salt|budesonide|thiazide",
-    re.I,
-)
-_LOW_PATTERNS = re.compile(
-    r"nsaid|mesalamine|insulin|metformin|ace inhibitor|proton pump|"
-    r"pilocarpine|cevimeline|iloprost|calcium channel|glatiramer|"
-    r"hydroxychloroquine|statins|oral contraceptive",
-    re.I,
-)
 
 
 def _category_base_score(category: str) -> float:
@@ -120,55 +107,26 @@ def derive_car_t_scores(genes_payload: dict, disease_id: str) -> dict[str, dict[
     return scores
 
 
-def _drug_text(drug: dict) -> str:
-    parts = [
-        drug.get("id", ""),
-        drug.get("name", ""),
-        drug.get("type", ""),
-        drug.get("target", ""),
-        drug.get("mechanism", ""),
-        drug.get("category", ""),
-        drug.get("adverse_effects", ""),
-    ]
-    return " ".join(str(p) for p in parts if p)
-
-
 def classify_drug_tier(drug: dict) -> str | None:
-    """Return high_risk, moderate_risk, low_risk, or None when unclassified."""
-    text = _drug_text(drug)
-    if _HIGH_RISK_PATTERNS.search(text):
-        return "high_risk"
-    if _LOW_PATTERNS.search(text):
-        return "low_risk"
-    if _MODERATE_PATTERNS.search(text):
-        return "moderate_risk"
-    if re.search(r"biologic|monoclonal|antibody|fusion protein", text, re.I):
-        return "moderate_risk"
-    if re.search(r"dmard|immunosuppress|small molecule", text, re.I):
-        return "moderate_risk"
-    return None
+    """Return high_risk, moderate_risk, low_risk, or None when unclassified.
+
+    Compatibility shim for callers expecting ``None`` for an unclassifiable
+    drug. New code should use
+    :func:`med_research.diseases.safety_scaffold.classify_drug_tier`, which
+    reports an explicit ``undetermined_risk`` tier instead.
+    """
+    tier, basis = safety_scaffold.classify_drug_tier(drug)
+    return None if basis == "undetermined" else tier
 
 
 def derive_drug_safety_risk(drugs_payload: dict) -> dict[str, list[str]]:
-    tiers: dict[str, list[str]] = {
-        "high_risk": [],
-        "moderate_risk": [],
-        "low_risk": [],
-    }
-    for drug in drugs_payload.get("drugs", []):
-        drug_id = drug.get("id")
-        if not drug_id:
-            continue
-        label = drug.get("name", drug_id).split("(")[0].strip().lower()
-        tier = classify_drug_tier(drug)
-        if tier is None:
-            continue
-        entry = label if label else drug_id
-        if entry not in tiers[tier]:
-            tiers[tier].append(entry)
-    for tier in tiers:
-        tiers[tier] = sorted(tiers[tier])
-    return tiers
+    """Bucket every drug by inferred safety tier; nothing is dropped.
+
+    Delegates to :mod:`med_research.diseases.safety_scaffold`, which retains
+    unclassifiable drugs under ``undetermined_risk``. This function historically
+    dropped them, leaving the safety profiler to treat those drugs as zero-risk.
+    """
+    return safety_scaffold.derive_drug_safety_risk(drugs_payload)
 
 
 def derive_screening_profile(
@@ -181,9 +139,7 @@ def derive_screening_profile(
     for pathway in pathways_payload.get("pathways", [])[:10]:
         name = str(pathway.get("name", "")).lower()
         pathway_keywords.extend(
-            token
-            for token in name.replace("/", " ").replace("-", " ").split()
-            if len(token) > 3
+            token for token in name.replace("/", " ").replace("-", " ").split() if len(token) > 3
         )
     pathway_keywords = sorted(set(pathway_keywords))[:10] or ["immune", "inflammation"]
 
@@ -223,11 +179,19 @@ def _format_screening_block(profile: dict[str, Any]) -> str:
         if isinstance(value, str):
             lines.append(f'    "{key}": "{value}",')
         elif isinstance(value, list):
+            if not value:
+                # Empty containers stay on one line: ruff format would collapse
+                # them, and generated configs must pass `ruff format --check`.
+                lines.append(f'    "{key}": [],')
+                continue
             lines.append(f'    "{key}": [')
             for item in value:
                 lines.append(f'        "{item}",')
             lines.append("    ],")
         elif isinstance(value, dict):
+            if not value:
+                lines.append(f'    "{key}": {{}},')
+                continue
             lines.append(f'    "{key}": {{')
             for sub_key, sub_value in value.items():
                 lines.append(f'        "{sub_key}": {sub_value},')
@@ -274,7 +238,7 @@ def _compare_car_t(existing: dict, derived: dict, strict: bool = False) -> list[
 def _compare_risk(existing: dict, derived: dict, strict: bool = False) -> list[str]:
     issues: list[str] = []
     if strict:
-        for tier in ("high_risk", "moderate_risk", "low_risk"):
+        for tier in RISK_TIERS:
             existing_set = {x.lower() for x in (existing.get(tier) or [])}
             derived_set = {x.lower() for x in (derived.get(tier) or [])}
             if not existing_set and derived_set:
@@ -347,18 +311,45 @@ def _format_car_t_block(scores: dict[str, dict[str, float]]) -> str:
         return "CAR_T_SCORES = {}\n"
     lines = ["CAR_T_SCORES = {"]
     for category in sorted(scores.keys()):
+        genes = scores[category]
+        if not genes:
+            # ruff format collapses empty containers to one line; emit that shape
+            # so a generated config passes `ruff format --check` untouched.
+            lines.append(f'    "{category}": {{}},')
+            continue
         lines.append(f'    "{category}": {{')
-        for gene_id, score in sorted(scores[category].items()):
+        for gene_id, score in sorted(genes.items()):
             lines.append(f'        "{gene_id}": {score},')
         lines.append("    },")
     lines.append("}")
     return "\n".join(lines) + "\n"
 
 
+def _duplicate_assignments(text: str) -> list[str]:
+    """Names assigned more than once at module level, in source order.
+
+    A repeated assignment means a derived block was appended alongside a curated
+    one instead of replacing it, and the later block silently wins at import
+    time. Writing in that state destroys curated data, so callers must refuse.
+    """
+    names = re.findall(r"^([A-Z][A-Z0-9_]*)\s*=", text, re.MULTILINE)
+    seen: set[str] = set()
+    duplicates: list[str] = []
+    for name in names:
+        if name in seen and name not in duplicates:
+            duplicates.append(name)
+        seen.add(name)
+    return duplicates
+
+
 def _format_risk_block(risk: dict[str, list[str]]) -> str:
     lines = ["DRUG_SAFETY_RISK = {"]
-    for tier in ("high_risk", "moderate_risk", "low_risk"):
+    for tier in RISK_TIERS:
         items = risk.get(tier) or []
+        if not items:
+            # Keep empty tiers on one line so ruff format leaves the file alone.
+            lines.append(f'    "{tier}": [],')
+            continue
         lines.append(f'    "{tier}": [')
         for item in items:
             lines.append(f'        "{item}",')
@@ -370,27 +361,47 @@ def _format_risk_block(risk: dict[str, list[str]]) -> str:
     return "\n".join(lines)
 
 
-def write_config_sections(disease_id: str, dry_run: bool = False) -> Path:
-    """Replace CAR_T_SCORES and risk blocks in config.py for non-SLE diseases."""
+def write_config_sections(
+    disease_id: str,
+    dry_run: bool = False,
+    sections: Sequence[str] = ("car_t", "risk", "screening"),
+) -> Path:
+    """Replace CAR_T_SCORES, risk, and screening blocks in config.py.
+
+    ``sections`` limits which blocks are rewritten, so a caller that only wants
+    the drug-safety derivation cannot clobber a hand-curated CAR-T or screening
+    section. Non-SLE diseases only.
+    """
     if disease_id == "sle":
         raise ValueError("SLE config is manually curated; use --report only for sle")
 
+    wanted = set(sections)
+    unknown = wanted - {"car_t", "risk", "screening"}
+    if unknown:
+        raise ValueError(f"Unknown config section(s): {sorted(unknown)}")
+
     data_dir = SRC / "med_research" / "diseases" / disease_id / "data"
     config_path = SRC / "med_research" / "diseases" / disease_id / "config.py"
-    genes = _load_json(data_dir / "genes.json")
-    drugs = _load_json(data_dir / "drugs.json")
-    pathways = _load_json(data_dir / "pathways.json")
-
-    car_t = derive_car_t_scores(genes, disease_id)
-    risk = derive_drug_safety_risk(drugs)
-    screening = derive_screening_profile(pathways, drugs, disease_id)
 
     text = config_path.read_text(encoding="utf-8")
-    car_t_block = _format_car_t_block(car_t)
-    risk_block = _format_risk_block(risk)
-    screening_block = _format_screening_block(screening)
+    if "car_t" in wanted:
+        car_t_block = _format_car_t_block(
+            derive_car_t_scores(_load_json(data_dir / "genes.json"), disease_id)
+        )
+    if "risk" in wanted:
+        risk_block = _format_risk_block(
+            derive_drug_safety_risk(_load_json(data_dir / "drugs.json"))
+        )
+    if "screening" in wanted:
+        screening_block = _format_screening_block(
+            derive_screening_profile(
+                _load_json(data_dir / "pathways.json"),
+                _load_json(data_dir / "drugs.json"),
+                disease_id,
+            )
+        )
 
-    if "CAR_T_SCORES = {" in text:
+    if "car_t" in wanted and "CAR_T_SCORES = {" in text:
         start = text.index("CAR_T_SCORES = {")
         end = text.index("\n\n", start)
         # Find end of CAR_T block (closing brace at start of line)
@@ -412,10 +423,11 @@ def write_config_sections(disease_id: str, dry_run: bool = False) -> Path:
         "DISEASE_SPECIFIC_RISK = ",
     )
     risk_start = None
-    for marker in risk_markers:
-        if marker in text:
-            risk_start = text.index(marker)
-            break
+    if "risk" in wanted:
+        for marker in risk_markers:
+            if marker in text:
+                risk_start = text.index(marker)
+                break
     if risk_start is not None:
         section_end = len(text)
         for marker in ("SCREENING_PROFILE = {", "# ── Clinical trials", "TRIAL_QUERY"):
@@ -424,7 +436,7 @@ def write_config_sections(disease_id: str, dry_run: bool = False) -> Path:
                 section_end = min(section_end, pos)
         text = text[:risk_start] + risk_block + "\n\n" + text[section_end:]
 
-    if "SCREENING_PROFILE = {" in text:
+    if "screening" in wanted and "SCREENING_PROFILE = {" in text:
         start = text.index("SCREENING_PROFILE = {")
         depth = 0
         end = start
@@ -437,6 +449,14 @@ def write_config_sections(disease_id: str, dry_run: bool = False) -> Path:
                     end = idx + 1
                     break
         text = text[:start] + screening_block.rstrip() + text[end:]
+
+    duplicates = _duplicate_assignments(text)
+    if duplicates:
+        raise ConfigurationError(
+            f"Refusing to write {config_path}: replacement left duplicate "
+            f"assignments for {', '.join(duplicates)}. The config has a curated "
+            "block this tool does not know how to merge; fix it by hand first."
+        )
 
     if not dry_run:
         config_path.write_text(text, encoding="utf-8")

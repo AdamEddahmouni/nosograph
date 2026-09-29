@@ -418,6 +418,35 @@ def _build_parser() -> argparse.ArgumentParser:
     dbulk.add_argument("--skip-reactome", action="store_true", help="Skip Reactome fetch")
     dbulk.add_argument("--overwrite", action="store_true", help="Regenerate existing modules")
 
+    dbackfill = disease_sub.add_parser(
+        "backfill",
+        help="Fill scaffolded config gaps from local data (symptoms, drug safety)",
+    )
+    dbackfill.add_argument(
+        "--symptoms",
+        action="store_true",
+        help="Fill empty SYMPTOMS lists from HPO / Open Targets phenotypes",
+    )
+    dbackfill.add_argument(
+        "--safety",
+        action="store_true",
+        help="Derive DRUG_SAFETY_RISK and write data/adverse_events.json",
+    )
+    dbackfill.add_argument("--all", action="store_true", help="Run every backfill step")
+    dbackfill.add_argument("--limit", type=int, help="Maximum modules to process")
+    dbackfill.add_argument("--disease-ids", nargs="+", help="Explicit disease ids to process")
+    dbackfill.add_argument(
+        "--workers", type=int, default=1, help="Parallel workers for the symptom step"
+    )
+    dbackfill.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Rewrite adverse_events.json files that already exist",
+    )
+    dbackfill.add_argument(
+        "--dry-run", action="store_true", help="Report what would change without writing"
+    )
+
     dcorpus = disease_sub.add_parser("corpus-status", help="Show corpus readiness tier report")
     dcorpus.add_argument("--json", action="store_true", help="Emit JSON report")
     dcorpus.add_argument("--limit", type=int, help="Limit diseases scanned")
@@ -1162,6 +1191,79 @@ def cmd_disease(args):
             return 1
         print_bulk_harvest_summary(report)
         return 1 if report["failed"] and not report["succeeded"] else 0
+
+    if args.disease_action == "backfill":
+        from med_research.diseases.safety_scaffold import (
+            write_adverse_events_file,
+            write_risk_config_section,
+        )
+        from med_research.diseases.symptom_harvester import harvest_all_symptoms
+
+        do_symptoms = bool(args.all or args.symptoms)
+        do_safety = bool(args.all or args.safety)
+        if not do_symptoms and not do_safety:
+            logger.error("❌ backfill needs --symptoms, --safety, or --all")
+            return 2
+        if args.dry_run:
+            logger.info("🔍 dry run — no files will be written")
+
+        ids = list(args.disease_ids) if args.disease_ids else None
+        errors: list[str] = []
+        if do_symptoms:
+            report = harvest_all_symptoms(
+                write=not args.dry_run,
+                limit=args.limit,
+                disease_ids=ids,
+                workers=args.workers,
+            )
+            logger.info(
+                "\n🩺 Symptom backfill: %s/%s populated (%s)",
+                report["populated"],
+                report["total"],
+                report["by_source"],
+            )
+
+        if do_safety:
+            from med_research.diseases.scaffold import load_disease_registry, sanitize_id
+
+            targets = ids
+            if targets is None:
+                targets = [sanitize_id(e.get("id", "")) for e in load_disease_registry()]
+            if args.limit:
+                targets = targets[: args.limit]
+
+            risk_written: list[str] = []
+            ae_written: list[str] = []
+            skipped: list[str] = []
+            for disease_id in targets:
+                try:
+                    path = write_risk_config_section(disease_id, dry_run=args.dry_run)
+                    if path is not None:
+                        risk_written.append(disease_id)
+                    ae_path = write_adverse_events_file(
+                        disease_id,
+                        overwrite=args.overwrite,
+                        dry_run=args.dry_run,
+                    )
+                    if ae_path is not None:
+                        ae_written.append(disease_id)
+                    if path is None and ae_path is None:
+                        skipped.append(disease_id)
+                except Exception as exc:  # keep going: one bad module must not abort a corpus run
+                    errors.append(f"{disease_id}: {exc}")
+            logger.info(
+                "\n🛡️  Safety backfill: risk block written for %s, "
+                "adverse_events.json for %s, unchanged %s, errors %s",
+                len(risk_written),
+                len(ae_written),
+                len(skipped),
+                len(errors),
+            )
+            for line in errors[:20]:
+                logger.warning("    %s", line)
+            if len(errors) > 20:
+                logger.warning("    … and %s more", len(errors) - 20)
+        return 1 if errors else 0
 
     if args.disease_action == "refresh":
         from med_research.diseases.scaffold import (

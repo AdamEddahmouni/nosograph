@@ -1,0 +1,66 @@
+{
+  "schema_version": "1",
+  "disease_id": "cerebellar_degeneration",
+  "source": "class_level_inference_from_disease_drug_catalog",
+  "coverage_level": "partial",
+  "curated_inputs": [
+    "disease_drug_catalog"
+  ],
+  "inferred_inputs": [
+    "drug_class_adverse_event_patterns",
+    "drug_class_tier_mapping",
+    "drug_symptom_overlap"
+  ],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments.",
+    "Adverse-event lists are class-level summaries, not label-derived contraindications or pharmacovigilance counts.",
+    "Validate current labels and patient-specific contraindications before use.",
+    "1 drug(s) have no recognisable pharmacologic class and no adverse-effect text: their empty adverse-event lists mean 'not known', not 'none'.",
+    "1 drug(s) are classified undetermined_risk: their absence from a risk tier is a gap in inference, not evidence of safety.",
+    "No curated symptom list was available, so disease_overlap_ae is empty."
+  ],
+  "default_profile": {
+    "common_ae": [
+      "constipation",
+      "dizziness",
+      "headache"
+    ],
+    "severe_ae": [
+      "qt prolongation",
+      "serotonin syndrome"
+    ],
+    "disease_overlap_ae": [],
+    "black_box_warnings": [],
+    "severity_burden": 0,
+    "chronic_use_safety": 10,
+    "disease_specific_risk": 1.0,
+    "monitoring_required": "Class-level inference only: verify current labels and disease-specific contraindications before use.",
+    "evidence_grade": "inferred_class_default"
+  },
+  "drug_safety_tiers": {
+    "high_risk": [],
+    "moderate_risk": [],
+    "low_risk": [
+      "pimavanserin"
+    ],
+    "undetermined_risk": [
+      "dextromethorphan"
+    ]
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL2111101",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    }
+  ]
+}
