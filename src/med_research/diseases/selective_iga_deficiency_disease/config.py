@@ -93,15 +93,16 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [
         "alemtuzumab",
+        "fludarabine phosphate",
     ],
     "moderate_risk": [
         "cyclosporine",
-        "fludarabine phosphate",
         "mycophenolate mofetil",
         "sirolimus",
         "tacrolimus anhydrous",
     ],
     "low_risk": [],
+    "undetermined_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

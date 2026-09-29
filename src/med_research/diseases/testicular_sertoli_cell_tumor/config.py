@@ -67,17 +67,20 @@ CAR_T_SCORES = {
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
     "high_risk": [
-        "paclitaxel",
-    ],
-    "moderate_risk": [
         "docetaxel",
         "docetaxel anhydrous",
         "etoposide",
-        "methotrexate",
+        "paclitaxel",
         "vinblastine",
         "vinblastine sulfate",
     ],
+    "moderate_risk": [
+        "filgrastim",
+        "methotrexate",
+        "pegfilgrastim",
+    ],
     "low_risk": [],
+    "undetermined_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

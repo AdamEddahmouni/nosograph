@@ -93,6 +93,10 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
+        "everolimus",
+        "pentoxifylline",
+    ],
+    "low_risk": [
         "alprazolam",
         "ataluren",
         "carbamazepine",
@@ -102,25 +106,23 @@ DRUG_SAFETY_RISK = {
         "dexmedetomidine",
         "diazepam",
         "eslicarbazepine acetate",
-        "everolimus",
-        "felbamate",
         "fenfluramine",
         "ganaxolone",
-        "ketamine",
         "lacosamide",
         "lamotrigine",
         "lorazepam",
+        "metformin",
         "oxcarbazepine",
-        "pentoxifylline",
-        "perampanel",
         "phenacemide",
         "phenytoin",
         "rufinamide",
         "topiramate",
         "zonisamide",
     ],
-    "low_risk": [
-        "metformin",
+    "undetermined_risk": [
+        "felbamate",
+        "ketamine",
+        "perampanel",
     ],
 }
 

@@ -1,0 +1,400 @@
+{
+  "schema_version": "1",
+  "disease_id": "testicular_non_seminomatous_germ_cell_tumor",
+  "source": "class_level_inference_from_disease_drug_catalog",
+  "coverage_level": "partial",
+  "curated_inputs": [
+    "disease_drug_catalog"
+  ],
+  "inferred_inputs": [
+    "drug_class_adverse_event_patterns",
+    "drug_class_tier_mapping",
+    "drug_symptom_overlap"
+  ],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments.",
+    "Adverse-event lists are class-level summaries, not label-derived contraindications or pharmacovigilance counts.",
+    "Validate current labels and patient-specific contraindications before use.",
+    "28 drug(s) have no recognisable pharmacologic class and no adverse-effect text: their empty adverse-event lists mean 'not known', not 'none'.",
+    "26 drug(s) are classified undetermined_risk: their absence from a risk tier is a gap in inference, not evidence of safety.",
+    "No curated symptom list was available, so disease_overlap_ae is empty."
+  ],
+  "default_profile": {
+    "common_ae": [
+      "abdominal pain",
+      "alopecia",
+      "diarrhoea",
+      "fatigue",
+      "flu-like symptoms",
+      "headache",
+      "hypertension",
+      "injection site reaction",
+      "mucositis",
+      "myalgia",
+      "myelosuppression",
+      "nausea"
+    ],
+    "severe_ae": [
+      "bradycardia",
+      "cholelithiasis",
+      "depression",
+      "hepatotoxicity",
+      "interstitial lung disease",
+      "myelosuppression",
+      "neutropenic sepsis",
+      "peripheral neuropathy",
+      "pure red cell aplasia",
+      "thromboembolism",
+      "thyroid dysfunction",
+      "tumour lysis syndrome"
+    ],
+    "disease_overlap_ae": [],
+    "black_box_warnings": [],
+    "severity_burden": 2.0,
+    "chronic_use_safety": 8.0,
+    "disease_specific_risk": 4.8,
+    "monitoring_required": "Class-level inference only: verify current labels and disease-specific contraindications before use.",
+    "evidence_grade": "inferred_class_default"
+  },
+  "drug_safety_tiers": {
+    "high_risk": [
+      "clofarabine",
+      "eribulin",
+      "eribulin mesylate",
+      "fludarabine phosphate",
+      "gemcitabine hydrochloride",
+      "ixabepilone",
+      "peginterferon alfa-2a",
+      "topotecan hydrochloride",
+      "vinflunine"
+    ],
+    "moderate_risk": [
+      "alectinib",
+      "crenolanib",
+      "dacomitinib anhydrous",
+      "dasatinib",
+      "foretinib",
+      "regorafenib",
+      "ruxolitinib",
+      "sunitinib malate"
+    ],
+    "low_risk": [
+      "metformin",
+      "metformin hydrochloride",
+      "octreotide"
+    ],
+    "undetermined_risk": [
+      "amuvatinib",
+      "axitinib",
+      "bevacizumab",
+      "birinapant",
+      "blinatumomab",
+      "ceritinib",
+      "dextromethorphan hydrobromide",
+      "esomeprazole",
+      "famitinib",
+      "farletuzumab",
+      "golvatinib",
+      "leronlimab",
+      "lirilumab",
+      "mocetinostat",
+      "molibresib",
+      "niraparib",
+      "nirogacestat",
+      "onalespib",
+      "pazopanib hydrochloride",
+      "pevonedistat",
+      "rabeprazole",
+      "raltitrexed",
+      "rucaparib",
+      "sorafenib",
+      "tosedostat",
+      "vandetanib"
+    ]
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL1096882",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "mucositis",
+        "myelosuppression"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "hepatotoxicity",
+        "tumour lysis syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1201560",
+      "common_ae": [
+        "flu-like symptoms",
+        "fatigue",
+        "myalgia"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "depression",
+        "thyroid dysfunction"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1201752",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "alopecia",
+        "peripheral neuropathy"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "neutropenic sepsis",
+        "peripheral neuropathy"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1230609",
+      "common_ae": [
+        "rash",
+        "diarrhoea",
+        "fatigue",
+        "nausea"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "interstitial lung disease",
+        "thromboembolism"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1421",
+      "common_ae": [
+        "rash",
+        "diarrhoea",
+        "fatigue",
+        "nausea"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "interstitial lung disease",
+        "thromboembolism"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1567",
+      "common_ae": [
+        "headache",
+        "hypertension",
+        "injection site reaction"
+      ],
+      "severe_ae": [
+        "thromboembolism",
+        "pure red cell aplasia"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1607",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "mucositis",
+        "myelosuppression"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "hepatotoxicity",
+        "tumour lysis syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1637",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "mucositis",
+        "myelosuppression"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "hepatotoxicity",
+        "tumour lysis syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1680",
+      "common_ae": [
+        "diarrhoea",
+        "abdominal pain",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cholelithiasis",
+        "bradycardia"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1683544",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "alopecia",
+        "peripheral neuropathy"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "neutropenic sepsis",
+        "peripheral neuropathy"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1683590",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "alopecia",
+        "peripheral neuropathy"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "neutropenic sepsis",
+        "peripheral neuropathy"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1738797",
+      "common_ae": [
+        "rash",
+        "diarrhoea",
+        "fatigue",
+        "nausea"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "interstitial lung disease",
+        "thromboembolism"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1750",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "mucositis",
+        "myelosuppression"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "hepatotoxicity",
+        "tumour lysis syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1789941",
+      "common_ae": [
+        "rash",
+        "diarrhoea",
+        "fatigue",
+        "nausea"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "interstitial lung disease",
+        "thromboembolism"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1946170",
+      "common_ae": [
+        "rash",
+        "diarrhoea",
+        "fatigue",
+        "nausea"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "interstitial lung disease",
+        "thromboembolism"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL2105728",
+      "common_ae": [
+        "rash",
+        "diarrhoea",
+        "fatigue",
+        "nausea"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "interstitial lung disease",
+        "thromboembolism"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL2110725",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "alopecia",
+        "peripheral neuropathy"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "neutropenic sepsis",
+        "peripheral neuropathy"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL2110732",
+      "common_ae": [
+        "rash",
+        "diarrhoea",
+        "fatigue",
+        "nausea"
+      ],
+      "severe_ae": [
+        "hepatotoxicity",
+        "interstitial lung disease",
+        "thromboembolism"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    }
+  ]
+}

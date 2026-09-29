@@ -12,7 +12,7 @@ import re
 from dataclasses import dataclass, field
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Optional, cast
 
 from med_research.logging_config import get_logger
 
@@ -69,7 +69,8 @@ class OpenTargetsBulkStore:
         if not path.is_file():
             return {}
         try:
-            return json.loads(path.read_text(encoding="utf-8"))
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            return cast(dict[str, Any], payload) if isinstance(payload, dict) else {}
         except (json.JSONDecodeError, OSError):
             logger.warning("Could not read bulk manifest at %s", path)
             return {}
@@ -112,7 +113,13 @@ class OpenTargetsBulkStore:
             self._conn.close()
             self._conn = None
 
-    def _query(self, sql: str, params: list[Any] = None) -> list[dict]:
+    def _query(
+        self,
+        sql: str,
+        params: list[Any] | None = None,
+        *,
+        raise_on_error: bool = False,
+    ) -> list[dict[str, Any]]:
         if params is None:
             params = []
         try:
@@ -121,10 +128,14 @@ class OpenTargetsBulkStore:
             cols = [d[0] for d in result.description]
             return [dict(zip(cols, row, strict=False)) for row in result.fetchall()]
         except Exception as exc:
+            if raise_on_error:
+                raise
             logger.warning("Bulk store query failed: %s", exc)
             return []
 
-    def _read_table(self, table: str, where: str = "", params: list[Any] = None) -> list[dict]:
+    def _read_table(
+        self, table: str, where: str = "", params: list[Any] | None = None
+    ) -> list[dict[str, Any]]:
         if params is None:
             params = []
         glob = self._parquet_glob(table)
@@ -236,16 +247,24 @@ class OpenTargetsBulkStore:
                     return resolved
         return None
 
-    def _glob_column_names(self, glob: Optional[str]) -> set[str]:
+    def _glob_column_names(
+        self,
+        glob: Optional[str],
+        *,
+        raise_on_error: bool = False,
+        refresh: bool = False,
+    ) -> set[str]:
         if not glob:
             return set()
-        if glob in self._cols_cache:
+        if glob in self._cols_cache and not refresh:
             return self._cols_cache[glob]
         rows = self._query(
-            _duckdb_parquet_sql(glob, "DESCRIBE SELECT * FROM read_parquet('{glob}') LIMIT 1")
+            _duckdb_parquet_sql(glob, "DESCRIBE SELECT * FROM read_parquet('{glob}') LIMIT 1"),
+            raise_on_error=raise_on_error,
         )
         cols = {str(row.get("column_name", "")) for row in rows}
-        self._cols_cache[glob] = cols
+        if cols or not raise_on_error:
+            self._cols_cache[glob] = cols
         return cols
 
     def _disease_row_by_id(self, disease_id: str) -> dict[str, Any]:
@@ -403,12 +422,14 @@ class OpenTargetsBulkStore:
                 return drugs[:limit]
         return []
 
-    def get_phenotypes(self, disease_id: str, limit: int = 15) -> list[str]:
+    def get_phenotypes(
+        self, disease_id: str, limit: int = 15, *, raise_on_error: bool = False
+    ) -> list[str]:
         """Return human-readable phenotype labels for a disease."""
         glob = self._parquet_glob("disease_phenotype")
         if not glob:
             return []
-        cols = self._glob_column_names(glob)
+        cols = self._glob_column_names(glob, raise_on_error=raise_on_error, refresh=raise_on_error)
         id_param = normalize_disease_id(disease_id)
         if "phenotypeLabel" in cols:
             sql = _duckdb_parquet_sql(
@@ -416,14 +437,14 @@ class OpenTargetsBulkStore:
                 "SELECT phenotypeLabel AS label FROM read_parquet('{glob}') "
                 "WHERE diseaseId = ? ORDER BY frequency DESC LIMIT ?",
             )
-            rows = self._query(sql, [id_param, limit])
+            rows = self._query(sql, [id_param, limit], raise_on_error=raise_on_error)
             labels = [str(r["label"]) for r in rows if r.get("label")]
         else:
             sql = _duckdb_parquet_sql(
                 glob,
                 "SELECT phenotype FROM read_parquet('{glob}') WHERE disease = ? LIMIT ?",
             )
-            rows = self._query(sql, [id_param, limit])
+            rows = self._query(sql, [id_param, limit], raise_on_error=raise_on_error)
             hpo_labels = _hpo_label_map()
             labels = []
             for row in rows:

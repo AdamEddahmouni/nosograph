@@ -93,14 +93,22 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
+        "sildenafil",
+        "somatropin",
+    ],
+    "low_risk": [],
+    "undetermined_risk": [
+        "choriogonadotropin alfa",
         "clomiphene",
         "clomiphene citrate",
         "dydrogesterone",
         "ethinyl estradiol",
+        "follitropin",
+        "lutropin alfa",
+        "menotropins",
         "progesterone",
-        "sildenafil",
+        "urofollitropin",
     ],
-    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

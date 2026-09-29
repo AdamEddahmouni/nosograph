@@ -95,20 +95,24 @@ DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
         "aminophylline",
-        "amiodarone",
-        "epinephrine",
+        "epoetin alfa",
         "hydrocortisone",
-        "ketamine",
-        "lidocaine",
         "methylprednisolone",
-        "nitric oxide",
-        "rocuronium",
-        "rocuronium bromide",
         "theophylline",
     ],
     "low_risk": [
+        "epinephrine",
         "iloprost",
         "insulin human",
+        "lidocaine",
+    ],
+    "undetermined_risk": [
+        "amiodarone",
+        "ketamine",
+        "nitric oxide",
+        "rocuronium",
+        "rocuronium bromide",
+        "vasopressin",
     ],
 }
 

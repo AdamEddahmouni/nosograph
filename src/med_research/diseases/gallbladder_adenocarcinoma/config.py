@@ -92,10 +92,14 @@ CAR_T_SCORES = {
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
     "high_risk": [],
-    "moderate_risk": [
+    "moderate_risk": [],
+    "low_risk": [
+        "lutetium oxodotreotide",
+        "lutetium oxodotreotide lu-177",
+    ],
+    "undetermined_risk": [
         "triapine",
     ],
-    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
