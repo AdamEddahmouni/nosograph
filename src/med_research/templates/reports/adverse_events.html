@@ -29,7 +29,7 @@
         .hero .date { color: #787890; font-size: 0.8rem; margin-top: 8px; }
 
         .stats-grid {
-            display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px;
             margin-bottom: 32px;
         }
         .stat-card {
@@ -77,6 +77,7 @@
         td { padding: 11px 16px; border-bottom: 1px solid #1a1a24; }
         tr:hover td { background: rgba(74,222,128,0.02); }
         .rank { font-weight: 700; color: #787890; font-size: 1rem; min-width: 28px; }
+        .insufficient-evidence { color: #fbbf24; font-weight: 600; }
         .bbw-badge {
             display: inline-block; padding: 2px 8px; border-radius: 12px;
             font-size: 0.68rem; font-weight: 600; background: rgba(248,113,113,0.12);
@@ -137,8 +138,8 @@
 
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-value" style="color:#4ade80;">{{ "%.1f"|format(ctx_2) }}</div>
-                <div class="stat-label">Average Safety Score</div>
+                <div class="stat-value" style="color:#4ade80;">{{ "%.1f"|format(ctx_2) if ctx_2 is not none else "—" }}</div>
+                <div class="stat-label">Average Safety Score ({{ ctx_scored }} scored)</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value" style="color:#f87171;">{{ ctx_3 }}</div>
@@ -149,7 +150,11 @@
                 <div class="stat-label">Drugs with Disease-Specific Risk</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" style="color:#818cf8;">{{ ctx_0 }}</div>
+                <div class="stat-value" style="color:#818cf8;">{{ ctx_unscored }}</div>
+                <div class="stat-label">Insufficient Evidence ({{ ctx_unscored }} unscored)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color:#a78bfa;">{{ ctx_0 }}</div>
                 <div class="stat-label">Total Drugs Profiled</div>
             </div>
         </div>
@@ -164,9 +169,9 @@
             <table>
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>Rank</th>
                         <th>Drug</th>
-                        <th>Safety Score</th>
+                        <th>Safety Score / Status</th>
                         <th>Disease Overlap</th>
                         <th>Severity</th>
                         <th>Chronic Use</th>
@@ -205,13 +210,4 @@
         </footer>
     </div>
 </body>
-</html>"""
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(html)
-
-    return str(output_path)
-
-
-def escape_html(text: str) -> str:
-    """Escape HTML special characters.
+</html>

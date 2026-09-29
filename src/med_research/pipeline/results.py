@@ -29,14 +29,15 @@ class AdverseEventScore(TypedDict):
     drug_id: str
     drug_name: str
     disease_id: str
-    disease_symptom_overlap_score: float
-    disease_overlap_score: float
-    lupus_symptom_overlap_score: float
-    severity_burden_score: float
-    chronic_use_safety_score: float
-    disease_specific_risk_score: float
-    dil_risk_score: float
-    composite_safety_score: float
+    score_status: str
+    disease_symptom_overlap_score: float | None
+    disease_overlap_score: float | None
+    lupus_symptom_overlap_score: float | None
+    severity_burden_score: float | None
+    chronic_use_safety_score: float | None
+    disease_specific_risk_score: float | None
+    dil_risk_score: float | None
+    composite_safety_score: float | None
     n_disease_overlap_ae: int
     disease_overlap_ae: list[str]
     n_lupus_overlap_ae: int
@@ -786,6 +787,9 @@ class MultiOmicsItem(TypedDict, total=False):
     scrna_enrichment: float
     gwas_risk_weight: float
     bulk_concordance: float
+    coloc_pp4: float
+    coloc_tissue: str
+    is_colocalized: bool
     composite_score: float
     tier: str
 

@@ -1515,19 +1515,24 @@ def cmd_safety(args):
         results = [profile]
         logger.info(f"\n🛡️  Safety Profile: {profile['drug_name']}")
         logger.info(f"   Disease:                  {args.disease}")
-        logger.info(f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}")
-        logger.info(
-            f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Severity Burden:           {profile.get('severity_burden_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Chronic Use Safety:        {profile.get('chronic_use_safety_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Disease-Specific Risk:     {profile.get('disease_specific_risk_score', 'N/A')}/10"
-        )
+        if profile.get("score_status") == "insufficient_evidence":
+            logger.info("   Safety Score:             Insufficient evidence.")
+        else:
+            logger.info(
+                f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}"
+            )
+            logger.info(
+                f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10"
+            )
         logger.info(f"   Black Box Warnings:        {profile.get('black_box_warnings', [])}")
         logger.info(f"   Disease Overlap AEs:       {profile.get('disease_overlap_ae', [])}")
     else:
@@ -1535,10 +1540,16 @@ def cmd_safety(args):
         if not result.success:
             return _exit_from_result(result, context="Safety analysis")
         results = result.data or []
-        summary = get_safety_summary(disease_id=args.disease)
+        summary = get_safety_summary(disease_id=args.disease, results=results)
         logger.info(f"Total drugs ({args.disease}): {summary['total_drugs']}")
-        logger.info(f"Avg safety score: {summary['avg_safety_score']:.1f}")
-        print_analysis(results[:15])
+        logger.info(
+            "Scored drugs: %s | Insufficient evidence: %s",
+            summary["scored_drugs"],
+            summary["unscored_drugs"],
+        )
+        average = summary["avg_safety_score"]
+        logger.info("Avg safety score: %s", f"{average:.1f}" if average is not None else "—")
+        print_analysis(results)
 
     return 0
 

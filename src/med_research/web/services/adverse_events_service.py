@@ -46,6 +46,8 @@ def run_safety_profiling(
     reporter("Formatting safety results", 2, 2)
     return {
         "total_drugs": summary["total_drugs"],
+        "scored_drugs": summary["scored_drugs"],
+        "unscored_drugs": summary["unscored_drugs"],
         "avg_safety_score": summary["avg_safety_score"],
         "safest_drug": summary["safest_drug"],
         "safest_score": summary["safest_score"],

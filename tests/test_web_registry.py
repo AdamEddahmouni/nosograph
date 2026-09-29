@@ -1112,7 +1112,12 @@ class TestCliCoverageBoost:
         monkeypatch.setattr(network_analyzer, "print_analysis", lambda *a, **k: None)
         monkeypatch.setattr(
             "med_research.pipeline.adverse_events.profiler.get_safety_summary",
-            lambda **kwargs: {"total_drugs": 0, "avg_safety_score": 0.0},
+            lambda **kwargs: {
+                "total_drugs": 0,
+                "scored_drugs": 0,
+                "unscored_drugs": 0,
+                "avg_safety_score": None,
+            },
         )
         monkeypatch.setattr(
             "med_research.pipeline.adverse_events.profiler.print_analysis",
