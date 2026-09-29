@@ -616,7 +616,8 @@ function renderJobResult(module, resultEl, result) {
         case 'safety':
             resultEl.innerHTML = coveragePanel + renderModuleResult([
                 ['Drugs Profiled', result.total_drugs],
-                ['Avg Safety Score', result.avg_safety_score?.toFixed(2)],
+                ['Avg Safety Score', result.avg_safety_score == null ? '—' : result.avg_safety_score.toFixed(2)],
+                ['Unscored (insufficient evidence)', result.unscored_drugs ?? 0],
                 ['Safest Drug', result.safest_drug?.split('(')[0].trim() || '—'],
                 ['Drugs with BBW', result.drugs_with_bbw],
                 ['Disease-Specific Risk Drugs', result.drugs_with_disease_specific_risk ?? result.drugs_with_dil_risk],
