@@ -282,6 +282,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/api_key.py \
 	src/med_research/web/config.py \
 	src/med_research/web/demo_mode.py \
+	src/med_research/web/demo_snapshot.py \
 	src/med_research/web/dependencies.py \
 	src/med_research/web/dependencies_biomed.py \
 	src/med_research/web/disease_params.py \

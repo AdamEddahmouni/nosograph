@@ -1,0 +1,51 @@
+name: Public demo deploy (manual)
+
+# Manual-only deployment of the single-container public demo image to Heroku.
+# Never runs on ordinary pushes or pull requests. Requires two repository
+# secrets; the job fails loudly when either is absent.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require deployment secrets
+        if: ${{ secrets.HEROKU_API_KEY == '' || secrets.HEROKU_APP_NAME == '' }}
+        run: |
+          echo "::error::HEROKU_API_KEY and HEROKU_APP_NAME repository secrets must be configured before deploying the public demo."
+          exit 1
+
+      - uses: actions/checkout@v7
+
+      - name: Build demo image
+        run: docker build -f Dockerfile.demo -t registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web .
+
+      - name: Log in to Heroku Container Registry
+        run: echo "${{ secrets.HEROKU_API_KEY }}" | docker login --username=_ --password-stdin registry.heroku.com
+
+      - name: Push demo image
+        run: docker push registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web
+
+      - name: Install Heroku CLI
+        run: curl https://cli-assets.heroku.com/install.sh | sh
+
+      - name: Release web process
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:release web --app "${{ secrets.HEROKU_APP_NAME }}"
+
+      - name: Smoke check health and readiness
+        env:
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+        run: |
+          URL="https://$HEROKU_APP_NAME.herokuapp.com"
+          curl --fail --retry 10 --retry-connrefused --retry-delay 5 "$URL/api/health"
+          curl --fail "$URL/api/ready"
+          curl --fail -X POST "$URL/api/v1/nosograph/comparisons/preview" \
+            -H 'Content-Type: application/json' \
+            -d '{"condition_curies":["MONDO:0007915","MONDO:0004992"],"dimensions":["phenotype"]}'

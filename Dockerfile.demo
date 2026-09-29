@@ -1,0 +1,48 @@
+# ── NosoGraph — Public Read-Only Demo Image ──────────────────────────────────
+# Single-container immutable demo: FastAPI dashboard + API running in
+# DEMO_MODE against a fixture-built biomedical snapshot. No Redis, Celery,
+# Beat, external databases, or paid API keys are required.
+#
+# Build:   docker build -f Dockerfile.demo -t nosograph-demo .
+# Run:     docker compose -f docker-compose.demo.yml up --build
+
+# ── Base ────────────────────────────────────────────────────────────────────
+FROM python:3.11-slim AS base
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+WORKDIR /app
+
+# ── Dependencies ────────────────────────────────────────────────────────────
+FROM base AS deps
+
+COPY requirements-lock.txt pyproject.toml ./
+RUN pip install --upgrade pip && \
+    pip install -r requirements-lock.txt
+
+# ── Runtime ─────────────────────────────────────────────────────────────────
+FROM deps AS runtime
+
+COPY . .
+RUN pip install --no-deps -e .
+
+# Bake the immutable fixture-backed snapshot into the image. The manifest is
+# written next to the database by build_demo_snapshot.py; startup validates
+# both and refuses to boot if they are missing or inconsistent.
+ENV DEMO_SNAPSHOT_PATH=/app/data/demo/biomedical.sqlite3 \
+    DEMO_SNAPSHOT_MANIFEST=/app/data/demo/biomedical.manifest.json
+RUN python scripts/build_demo_snapshot.py --output "$DEMO_SNAPSHOT_PATH"
+
+RUN useradd -m appuser && chown -R appuser:appuser /app
+USER appuser
+
+EXPOSE 8000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
+  CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3)"
+
+ENTRYPOINT ["python", "-m", "med_research.cli"]
+CMD ["serve", "--host", "0.0.0.0"]
