@@ -18,6 +18,7 @@ import argparse
 import functools
 import logging
 from pathlib import Path
+from typing import Any, cast
 
 from med_research.pipeline.progress import StandardProgress, _tick, cli_progress
 from med_research.pipeline.results import AdverseEventScore
@@ -160,6 +161,31 @@ def _merge_profile(
     return profile
 
 
+def _undetermined_drug_tokens(payload: dict) -> set[str]:
+    """Return exact normalized names/IDs classified as undetermined."""
+    tiers = payload.get("drug_safety_tiers", {})
+    entries = tiers.get("undetermined_risk", []) if isinstance(tiers, dict) else []
+    tokens: set[str] = set()
+    fields = ("drug_id", "id", "name", "drug")
+    for entry in entries if isinstance(entries, list) else []:
+        values = (
+            [entry]
+            if isinstance(entry, str)
+            else [entry.get(field) for field in fields]
+            if isinstance(entry, dict)
+            else []
+        )
+        for value in values:
+            if isinstance(value, str) and value.strip():
+                tokens.add(" ".join(value.casefold().split()))
+    return tokens
+
+
+def _has_insufficient_evidence(profile: dict) -> bool:
+    """Return whether a profile has no numeric safety evidence to score."""
+    return profile.get("score_status") == "insufficient_evidence"
+
+
 def load_profiles(disease_id: str = "sle") -> dict:
     """Load profiles for the selected disease's drug catalog.
 
@@ -173,6 +199,7 @@ def load_profiles(disease_id: str = "sle") -> dict:
         for profile in payload.get("profiles", [])
         if isinstance(profile, dict) and profile.get("drug_id")
     }
+    undetermined_tokens = _undetermined_drug_tokens(payload)
 
     if disease_id == "sle" and not explicit:
         legacy = _get_default_profiles()
@@ -181,6 +208,14 @@ def load_profiles(disease_id: str = "sle") -> dict:
             for drug_id, profile in legacy.items()
         }
         for profile in profiles.values():
+            profile_tokens = {
+                " ".join(str(value).casefold().split())
+                for value in (profile.get("drug_id", ""), profile.get("drug_name", ""))
+                if value
+            }
+            profile["score_status"] = (
+                "insufficient_evidence" if profile_tokens & undetermined_tokens else "scored"
+            )
             _validate_profile_values(profile, disease_id)
         return profiles
 
@@ -193,13 +228,22 @@ def load_profiles(disease_id: str = "sle") -> dict:
         drug_id = str(drug.get("id", ""))
         if not drug_id:
             continue
-        profiles[drug_id] = _merge_profile(
+        profile = _merge_profile(
             defaults,
             explicit.get(drug_id, {}),
             drug,
             disease_id,
             payload,
         )
+        drug_tokens = {
+            " ".join(str(value).casefold().split())
+            for value in (drug_id, profile.get("drug_name", ""))
+            if value
+        }
+        profile["score_status"] = (
+            "insufficient_evidence" if drug_tokens & undetermined_tokens else "scored"
+        )
+        profiles[drug_id] = profile
         _validate_profile_values(profiles[drug_id], disease_id)
     return profiles
 
@@ -1060,10 +1104,42 @@ def score_dil_risk(profile: dict, disease_id: str = "sle") -> float:
 
 
 def compute_adverse_event_score(profile: dict, disease_id: str = "sle") -> AdverseEventScore:
-    """Compute the adverse event safety score for a single drug.
+    """Compute the adverse event safety score for a single drug."""
+    overlap_ae = profile.get("disease_overlap_ae", profile.get("lupus_overlap_ae", []))
+    result_metadata: dict[str, Any] = {
+        "drug_id": profile["drug_id"],
+        "drug_name": profile["drug_name"],
+        "disease_id": disease_id,
+        "score_status": (
+            "insufficient_evidence" if _has_insufficient_evidence(profile) else "scored"
+        ),
+        "n_disease_overlap_ae": count_disease_symptom_overlap(profile, disease_id),
+        "disease_overlap_ae": overlap_ae,
+        "n_lupus_overlap_ae": count_disease_symptom_overlap(profile, disease_id),
+        "lupus_overlap_ae": overlap_ae,
+        "evidence_grade": profile.get("evidence_grade", "inferred_class_default"),
+        "profile_source": profile.get("profile_source", "disease_adverse_events.json"),
+        "profile_curated_inputs": profile.get("profile_curated_inputs", []),
+        "profile_inferred_inputs": profile.get("profile_inferred_inputs", []),
+        "limitations": profile.get("limitations", []),
+        "black_box_warnings": profile.get("black_box_warnings", []),
+        "monitoring_required": profile.get("monitoring_required", ""),
+        "n_severe_ae": len(profile.get("severe_ae", [])),
+    }
+    score_fields = (
+        "disease_symptom_overlap_score",
+        "disease_overlap_score",
+        "lupus_symptom_overlap_score",
+        "severity_burden_score",
+        "chronic_use_safety_score",
+        "disease_specific_risk_score",
+        "dil_risk_score",
+        "composite_safety_score",
+    )
+    if _has_insufficient_evidence(profile):
+        null_scores = dict.fromkeys(score_fields)
+        return cast(AdverseEventScore, {**result_metadata, **null_scores})
 
-    Returns dict with individual dimension scores and composite score.
-    """
     disease_overlap = score_disease_overlap(profile, disease_id)
     severity = score_severity_burden(profile)
     chronic = score_chronic_safety(profile)
@@ -1083,33 +1159,20 @@ def compute_adverse_event_score(profile: dict, disease_id: str = "sle") -> Adver
         + disease_risk * weights["disease_specific_risk"]
     )
 
-    return {
-        "drug_id": profile["drug_id"],
-        "drug_name": profile["drug_name"],
-        "disease_id": disease_id,
-        "disease_symptom_overlap_score": round(disease_overlap, 1),
-        "disease_overlap_score": round(disease_overlap, 1),
-        "lupus_symptom_overlap_score": round(disease_overlap, 1),
-        "severity_burden_score": round(severity, 1),
-        "chronic_use_safety_score": round(chronic, 1),
-        "disease_specific_risk_score": round(disease_risk, 1),
-        "dil_risk_score": round(disease_risk, 1),
-        "composite_safety_score": round(composite, 2),
-        "n_disease_overlap_ae": count_disease_symptom_overlap(profile, disease_id),
-        "disease_overlap_ae": profile.get(
-            "disease_overlap_ae", profile.get("lupus_overlap_ae", [])
-        ),
-        "n_lupus_overlap_ae": count_disease_symptom_overlap(profile, disease_id),
-        "lupus_overlap_ae": profile.get("disease_overlap_ae", profile.get("lupus_overlap_ae", [])),
-        "evidence_grade": profile.get("evidence_grade", "inferred_class_default"),
-        "profile_source": profile.get("profile_source", "disease_adverse_events.json"),
-        "profile_curated_inputs": profile.get("profile_curated_inputs", []),
-        "profile_inferred_inputs": profile.get("profile_inferred_inputs", []),
-        "limitations": profile.get("limitations", []),
-        "black_box_warnings": profile.get("black_box_warnings", []),
-        "monitoring_required": profile.get("monitoring_required", ""),
-        "n_severe_ae": len(profile.get("severe_ae", [])),
-    }
+    return cast(
+        AdverseEventScore,
+        {
+            **result_metadata,
+            "disease_symptom_overlap_score": round(disease_overlap, 1),
+            "disease_overlap_score": round(disease_overlap, 1),
+            "lupus_symptom_overlap_score": round(disease_overlap, 1),
+            "severity_burden_score": round(severity, 1),
+            "chronic_use_safety_score": round(chronic, 1),
+            "disease_specific_risk_score": round(disease_risk, 1),
+            "dil_risk_score": round(disease_risk, 1),
+            "composite_safety_score": round(composite, 2),
+        },
+    )
 
 
 def score_all_drugs(
@@ -1145,7 +1208,15 @@ def score_all_drugs(
     for _drug_id, profile in profiles.items():
         results.append(compute_adverse_event_score(profile, disease_id))
 
-    results.sort(key=lambda x: x["composite_safety_score"], reverse=True)
+    results.sort(
+        key=lambda result: (
+            result["score_status"] == "scored",
+            result["composite_safety_score"]
+            if result["composite_safety_score"] is not None
+            else -1.0,
+        ),
+        reverse=True,
+    )
 
     _tick(progress_callback, "saving profiles", 1, 2)
     profiles_by_drug = {result["drug_id"]: result for result in results}
@@ -1184,7 +1255,27 @@ def get_drug_profile(drug_id: str, disease_id: str = "sle") -> dict:
 def get_safety_summary(disease_id: str = "sle", results: list | None = None) -> dict:
     """Get safety summary statistics for the active disease."""
     results = score_all_drugs(disease_id=disease_id) if results is None else results
-    scores = [r["composite_safety_score"] for r in results]
+    scored_results = [
+        result
+        for result in results
+        if result.get("score_status", "scored") == "scored"
+        and result.get("composite_safety_score") is not None
+    ]
+    scores: list[float] = [
+        float(score)
+        for result in scored_results
+        if isinstance((score := result.get("composite_safety_score")), (int, float))
+    ]
+    safest = max(
+        scored_results,
+        key=lambda result: float(result.get("composite_safety_score") or 0.0),
+        default=None,
+    )
+    riskiest = min(
+        scored_results,
+        key=lambda result: float(result.get("composite_safety_score") or 0.0),
+        default=None,
+    )
 
     from med_research.diseases.coverage import module_coverage
 
@@ -1197,16 +1288,26 @@ def get_safety_summary(disease_id: str = "sle", results: list | None = None) -> 
     return {
         "disease_id": disease_id,
         "total_drugs": len(results),
-        "avg_safety_score": round(sum(scores) / len(scores), 2) if scores else 0,
-        "safest_drug": results[0]["drug_name"] if results else "",
-        "safest_score": results[0]["composite_safety_score"] if results else 0,
-        "riskiest_drug": results[-1]["drug_name"] if results else "",
-        "riskiest_score": results[-1]["composite_safety_score"] if results else 0,
+        "scored_drugs": len(scored_results),
+        "unscored_drugs": len(results) - len(scored_results),
+        "avg_safety_score": round(sum(scores) / len(scores), 2) if scores else None,
+        "safest_drug": safest["drug_name"] if safest else "",
+        "safest_score": safest["composite_safety_score"] if safest else None,
+        "riskiest_drug": riskiest["drug_name"] if riskiest else "",
+        "riskiest_score": riskiest["composite_safety_score"] if riskiest else None,
         "drugs_with_bbw": sum(1 for r in results if r.get("black_box_warnings")),
         "drugs_with_disease_specific_risk": sum(
-            1 for r in results if r["disease_specific_risk_score"] < 10.0
+            1
+            for r in scored_results
+            if isinstance((risk_score := r.get("disease_specific_risk_score")), (int, float))
+            and risk_score < 10.0
         ),
-        "drugs_with_dil_risk": sum(1 for r in results if r["disease_specific_risk_score"] < 10.0),
+        "drugs_with_dil_risk": sum(
+            1
+            for r in scored_results
+            if isinstance((risk_score := r.get("disease_specific_risk_score")), (int, float))
+            and risk_score < 10.0
+        ),
         "coverage": coverage.to_dict(),
         "status": "limited_coverage"
         if coverage.level == "partial"
@@ -1227,21 +1328,43 @@ def print_analysis(results: list) -> None:
     disease_id = results[0].get("disease_id", "sle") if results else "sle"
     summary = get_safety_summary(disease_id=disease_id, results=results)
     logger.info(f"\n  Total drugs profiled for {disease_id}: {summary['total_drugs']}")
-    logger.info(f"  Average safety score: {summary['avg_safety_score']}")
-    logger.info(f"  Safest drug: {summary['safest_drug']} ({summary['safest_score']:.1f})")
-    logger.info(f"  Riskiest drug: {summary['riskiest_drug']} ({summary['riskiest_score']:.1f})")
+    logger.info(
+        "  Scored drugs: %s | Insufficient evidence: %s",
+        summary["scored_drugs"],
+        summary["unscored_drugs"],
+    )
+    average = summary["avg_safety_score"]
+    logger.info("  Average safety score: %s", f"{average:.1f}" if average is not None else "—")
+    safest_score = summary["safest_score"]
+    riskiest_score = summary["riskiest_score"]
+    safest = f"{summary['safest_drug']} ({safest_score:.1f})" if safest_score is not None else "—"
+    riskiest = (
+        f"{summary['riskiest_drug']} ({riskiest_score:.1f})" if riskiest_score is not None else "—"
+    )
+    logger.info("  Safest drug: %s", safest)
+    logger.info("  Riskiest drug: %s", riskiest)
     logger.info(f"  Drugs with black box warnings: {summary['drugs_with_bbw']}")
     logger.info(
         f"  Drugs with disease-specific risk: {summary['drugs_with_disease_specific_risk']}"
     )
 
+    scored_results = [
+        result
+        for result in results
+        if result.get("score_status", "scored") == "scored"
+        and result.get("composite_safety_score") is not None
+    ]
     logger.info("\n  Top 10 safest drugs:")
-    for i, r in enumerate(results[:10], 1):
+    if not scored_results:
+        logger.info("    Insufficient evidence.")
+    for i, r in enumerate(scored_results[:10], 1):
         bbw = f" [BBW: {len(r['black_box_warnings'])}]" if r.get("black_box_warnings") else ""
         logger.info(f"    {i:2d}. {r['drug_name']} — {r['composite_safety_score']:.1f}{bbw}")
 
     logger.info("\n  Bottom 5 highest-risk drugs:")
-    for i, r in enumerate(results[-5:], 1):
+    if not scored_results:
+        logger.info("    Insufficient evidence.")
+    for i, r in enumerate(scored_results[-5:], 1):
         bbw = f" [BBW: {len(r['black_box_warnings'])}]" if r.get("black_box_warnings") else ""
         logger.info(f"    {i:2d}. {r['drug_name']} — {r['composite_safety_score']:.1f}{bbw}")
 
@@ -1259,21 +1382,24 @@ def main():
         profile = get_drug_profile(args.drug, disease_id=args.disease)
         if profile and profile.get("status") != "blocked" and profile.get("drug_name"):
             logger.info(f"\n🛡️  Safety Profile: {profile['drug_name']}")
-            logger.info(
-                f"   Composite Safety Score: {profile.get('composite_safety_score', 'N/A')}"
-            )
-            logger.info(
-                f"   Disease Symptom Overlap: {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
-            )
-            logger.info(
-                f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10"
-            )
-            logger.info(
-                f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10"
-            )
-            logger.info(
-                f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10"
-            )
+            if profile.get("score_status") == "insufficient_evidence":
+                logger.info("   Safety Score:             Insufficient evidence.")
+            else:
+                logger.info(
+                    f"   Composite Safety Score: {profile.get('composite_safety_score', 'N/A')}"
+                )
+                logger.info(
+                    f"   Disease Symptom Overlap: {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
+                )
+                logger.info(
+                    f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10"
+                )
+                logger.info(
+                    f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10"
+                )
+                logger.info(
+                    f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10"
+                )
             logger.info(f"   Black Box Warnings:      {profile.get('black_box_warnings', [])}")
             logger.info(f"   Disease Overlap AEs:      {profile.get('disease_overlap_ae', [])}")
         else:
