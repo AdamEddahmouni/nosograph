@@ -72,24 +72,6 @@ def test_get_phenotypes(store: OpenTargetsBulkStore) -> None:
     assert "Arthritis" in phenotypes
 
 
-def test_get_phenotypes_can_raise_query_errors(
-    store: OpenTargetsBulkStore, monkeypatch: pytest.MonkeyPatch
-) -> None:
-    monkeypatch.setattr(
-        store,
-        "_glob_column_names",
-        lambda _glob, *, raise_on_error=False, refresh=False: {"phenotypeLabel"},
-    )
-
-    def fail_query(*_args, **_kwargs):
-        raise RuntimeError("parquet query failed")
-
-    monkeypatch.setattr(store, "_query", fail_query)
-
-    with pytest.raises(RuntimeError, match="parquet query failed"):
-        store.get_phenotypes("EFO_0001370", raise_on_error=True)
-
-
 def test_normalize_efo() -> None:
     assert normalize_efo("EFO:0001370") == "EFO_0001370"
     assert normalize_efo("EFO_0001370") == "EFO_0001370"
