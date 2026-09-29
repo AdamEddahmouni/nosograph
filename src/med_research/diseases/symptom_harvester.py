@@ -204,10 +204,7 @@ def local_symptom_source_availability(
         if store is None:
             store = OpenTargetsBulkStore()
         phenotype_glob = store._parquet_glob("disease_phenotype")
-        ot_phenotype = bool(
-            phenotype_glob
-            and store._glob_column_names(phenotype_glob, raise_on_error=True, refresh=True)
-        )
+        ot_phenotype = bool(phenotype_glob and store._glob_column_names(phenotype_glob))
     except Exception:
         logger.debug("Local Open Targets phenotype availability check failed", exc_info=True)
         ot_phenotype = False
