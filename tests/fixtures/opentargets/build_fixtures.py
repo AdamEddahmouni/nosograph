@@ -97,7 +97,9 @@ def main() -> None:
         "path": str(OUT),
     }
     manifest_file = OUT.parent.parent / "manifest.json"
-    manifest_file.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    # Pin LF endings: text mode on Windows would otherwise emit CRLF and dirty
+    # this tracked fixture on every local test run.
+    manifest_file.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"Fixtures written to {OUT}")
 
 
