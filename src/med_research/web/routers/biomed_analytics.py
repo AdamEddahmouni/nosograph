@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, cast
 
 from fastapi import APIRouter, Query
 
@@ -94,7 +94,7 @@ def get_target_structure(
     """Retrieve 3D protein structure, AlphaFold pLDDT scores, domain boundaries, and binding pocket details."""
     from med_research.pipeline.structure_3d.engine import get_target_3d_structure
 
-    return get_target_3d_structure(target_id=target_identifier)
+    return cast(dict[str, Any], get_target_3d_structure(target_id=target_identifier))
 
 
 @router.get("/analytics/summary")

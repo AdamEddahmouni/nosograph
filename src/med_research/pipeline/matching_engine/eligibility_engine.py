@@ -18,7 +18,7 @@ from __future__ import annotations
 
 import ast
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, cast
 
 from pydantic import BaseModel, ConfigDict
 
@@ -75,8 +75,11 @@ class EligibilityEngine:
     def _load_rules(rules_text: str) -> List[Dict[str, Any]]:
         # Rules are stored as stringified list of dicts; safely evaluate.
         try:
-            return ast.literal_eval(rules_text)  # type: ignore[arg-type]
-        except Exception:
+            parsed = ast.literal_eval(rules_text)
+            if not isinstance(parsed, list):
+                return []
+            return cast(List[Dict[str, Any]], parsed)
+        except (ValueError, SyntaxError, TypeError):
             # If parsing fails, return empty list – the engine will treat as no rules.
             return []
 
@@ -89,13 +92,16 @@ class EligibilityEngine:
         eligible = True
 
         # Helper to fetch a numeric feature from patient.
-        def get_feature(section: str, key: str, default=None):
-            return getattr(patient, section, {}).get(key, default)
+        def get_feature(section: str, key: str, default: Any = None) -> Any:
+            features = getattr(patient, section, {})
+            if not isinstance(features, dict):
+                return default
+            return features.get(key, default)
 
         # Process inclusion rules – missing required criteria incurs penalty.
         for rule in inc_rules:
             rtype = rule.get("type")
-            weight = self.weights.get(rtype, 1.0)
+            weight = self.weights.get(str(rtype), 1.0)
             passed = True
             if rtype == "age":
                 age = get_feature("demographic", "age")
@@ -145,7 +151,7 @@ class EligibilityEngine:
         # Process exclusion rules – any failure makes patient ineligible immediately.
         for rule in exc_rules:
             rtype = rule.get("type")
-            weight = self.weights.get(rtype, 1.0)
+            weight = self.weights.get(str(rtype), 1.0)
             failed = False
             if rtype == "age":
                 age = get_feature("demographic", "age")

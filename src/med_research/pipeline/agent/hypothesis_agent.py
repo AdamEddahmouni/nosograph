@@ -13,7 +13,7 @@ from collections.abc import Mapping, Sequence
 from dataclasses import asdict, dataclass, field
 from typing import Any, Dict, List, Optional
 
-from med_research.diseases.base import Disease
+from med_research.diseases.base import Disease, DiseaseProfile
 
 logger = logging.getLogger(__name__)
 
@@ -48,25 +48,30 @@ class TargetHypothesis:
 
 
 def _records(payload: Any, key: str) -> list[dict[str, Any]]:
-    """Unwrap disease JSON payloads (`{"genes": [...]}`) into record lists."""
+    """Unwrap disease JSON payloads (``{"genes": [...]}``) into record lists."""
     if isinstance(payload, Sequence) and not isinstance(payload, (str, bytes)):
-        return [item for item in payload if isinstance(item, Mapping)]
-    if isinstance(payload, Mapping):
+        candidates = payload
+    elif isinstance(payload, Mapping):
         nested = payload.get(key, [])
-        if isinstance(nested, Sequence) and not isinstance(nested, (str, bytes)):
-            return [item for item in nested if isinstance(item, Mapping)]
-    return []
+        candidates = (
+            nested if isinstance(nested, Sequence) and not isinstance(nested, (str, bytes)) else ()
+        )
+    else:
+        return []
+    return [dict(item) for item in candidates if isinstance(item, Mapping)]
 
 
 class TargetHypothesisAgent:
     """Autonomous agent synthesizing evidence for a drug target in a specific disease."""
 
-    def __init__(self, disease_id: str):
+    def __init__(self, disease_id: str) -> None:
         self.disease_id = disease_id
+        self.disease: Disease | None
+        self.profile: DiseaseProfile | None
         try:
             self.disease = Disease(disease_id)
-            self.profile = self.disease.load_profile()
-        except Exception:
+            self.profile = self.disease.profile
+        except (ValueError, OSError, KeyError, TypeError):
             self.disease = None
             self.profile = None
 

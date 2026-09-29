@@ -12,7 +12,7 @@ import re
 from dataclasses import dataclass, field
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Optional, cast
 
 from med_research.logging_config import get_logger
 
@@ -69,7 +69,7 @@ class OpenTargetsBulkStore:
         if not path.is_file():
             return {}
         try:
-            return json.loads(path.read_text(encoding="utf-8"))
+            return cast(dict, json.loads(path.read_text(encoding="utf-8")))
         except (json.JSONDecodeError, OSError):
             logger.warning("Could not read bulk manifest at %s", path)
             return {}
@@ -112,7 +112,7 @@ class OpenTargetsBulkStore:
             self._conn.close()
             self._conn = None
 
-    def _query(self, sql: str, params: list[Any] = None) -> list[dict]:
+    def _query(self, sql: str, params: list[Any] | None = None) -> list[dict]:
         if params is None:
             params = []
         try:
@@ -124,7 +124,9 @@ class OpenTargetsBulkStore:
             logger.warning("Bulk store query failed: %s", exc)
             return []
 
-    def _read_table(self, table: str, where: str = "", params: list[Any] = None) -> list[dict]:
+    def _read_table(
+        self, table: str, where: str = "", params: list[Any] | None = None
+    ) -> list[dict]:
         if params is None:
             params = []
         glob = self._parquet_glob(table)

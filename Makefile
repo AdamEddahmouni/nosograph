@@ -74,43 +74,123 @@ ci-local:  ## Local pre-push gate (lint, locks, licenses, import audit, serial o
 
 typecheck:  ## Run mypy on the expanded type-check scope
 	python -m mypy \
-	src/med_research/pipeline/dispatch.py \
-	src/med_research/pipeline/gateway.py \
-	src/med_research/pipeline/provenance.py \
-	src/med_research/pipeline/progress.py \
-	src/med_research/pipeline/registry.py \
-	src/med_research/pipeline/base.py \
-	src/med_research/pipeline/scheduler.py \
-	src/med_research/pipeline/results.py \
-	src/med_research/pipeline/adapter_options.py \
-	src/med_research/exceptions.py \
-	src/med_research/pipeline_errors.py \
+	src/med_research/__init__.py \
+	src/med_research/biomed/__init__.py \
+	src/med_research/biomed/analytics/__init__.py \
+	src/med_research/biomed/analytics/duckdb_engine.py \
+	src/med_research/biomed/comparison/__init__.py \
+	src/med_research/biomed/comparison/algorithm.py \
+	src/med_research/biomed/comparison/fingerprint.py \
+	src/med_research/biomed/comparison/hpo.py \
+	src/med_research/biomed/comparison/models.py \
+	src/med_research/biomed/comparison/service.py \
+	src/med_research/biomed/database.py \
+	src/med_research/biomed/errors.py \
+	src/med_research/biomed/evidence_quality.py \
+	src/med_research/biomed/graph.py \
+	src/med_research/biomed/graph_analytics.py \
+	src/med_research/biomed/identifiers.py \
+	src/med_research/biomed/imports/__init__.py \
+	src/med_research/biomed/imports/chembl_adapter.py \
+	src/med_research/biomed/imports/clinvar_adapter.py \
+	src/med_research/biomed/imports/contracts.py \
+	src/med_research/biomed/imports/go_adapter.py \
+	src/med_research/biomed/imports/hpo.py \
+	src/med_research/biomed/imports/hpoa.py \
+	src/med_research/biomed/imports/json_io.py \
+	src/med_research/biomed/imports/models.py \
+	src/med_research/biomed/imports/mondo.py \
+	src/med_research/biomed/imports/openfda_adapter.py \
+	src/med_research/biomed/imports/opentargets_adapter.py \
+	src/med_research/biomed/imports/pubchem_adapter.py \
+	src/med_research/biomed/imports/reactome_adapter.py \
+	src/med_research/biomed/imports/service.py \
+	src/med_research/biomed/imports/uberon_adapter.py \
+	src/med_research/biomed/legacy/__init__.py \
+	src/med_research/biomed/legacy/adapter.py \
+	src/med_research/biomed/legacy/checksums.py \
+	src/med_research/biomed/legacy/compat.py \
+	src/med_research/biomed/legacy/manifest.py \
+	src/med_research/biomed/legacy/projector.py \
+	src/med_research/biomed/legacy/report.py \
+	src/med_research/biomed/models.py \
+	src/med_research/biomed/nosograph_compare/__init__.py \
+	src/med_research/biomed/nosograph_compare/dimensions.py \
+	src/med_research/biomed/nosograph_compare/engine.py \
+	src/med_research/biomed/nosograph_compare/models.py \
+	src/med_research/biomed/nosograph_compare/service.py \
+	src/med_research/biomed/repository.py \
+	src/med_research/biomed/schema.py \
+	src/med_research/biomed/sync/__init__.py \
+	src/med_research/biomed/sync/contracts.py \
+	src/med_research/biomed/sync/lifecycle.py \
+	src/med_research/biomed/sync/models.py \
+	src/med_research/biomed/sync/registry.py \
+	src/med_research/biomed/sync/sources/__init__.py \
+	src/med_research/biomed/sync/sources/opentargets.py \
 	src/med_research/cache.py \
-	src/med_research/rate_limiter.py \
+	src/med_research/cli.py \
 	src/med_research/diseases/base.py \
 	src/med_research/diseases/coverage.py \
 	src/med_research/diseases/harvest_registry.py \
 	src/med_research/diseases/schemas.py \
+	src/med_research/exceptions.py \
+	src/med_research/logging_config.py \
+	src/med_research/pipeline/__init__.py \
+	src/med_research/pipeline/adapter_options.py \
+	src/med_research/pipeline/admet/__init__.py \
+	src/med_research/pipeline/admet/adapter.py \
+	src/med_research/pipeline/admet/engine.py \
+	src/med_research/pipeline/adverse_events/__init__.py \
 	src/med_research/pipeline/adverse_events/adapter.py \
 	src/med_research/pipeline/adverse_events/profiler.py \
+	src/med_research/pipeline/adverse_events/report.py \
+	src/med_research/pipeline/agent/hypothesis_agent.py \
+	src/med_research/pipeline/async_queue.py \
+	src/med_research/pipeline/base.py \
+	src/med_research/pipeline/bioinformatics/__init__.py \
 	src/med_research/pipeline/bioinformatics/adapter.py \
 	src/med_research/pipeline/bioinformatics/enrichment.py \
 	src/med_research/pipeline/bioinformatics/gwas.py \
 	src/med_research/pipeline/bioinformatics/ppi.py \
+	src/med_research/pipeline/bioinformatics/report.py \
+	src/med_research/pipeline/biomarker_discovery/__init__.py \
 	src/med_research/pipeline/biomarker_discovery/adapter.py \
 	src/med_research/pipeline/biomarker_discovery/discover.py \
+	src/med_research/pipeline/biomarker_discovery/report.py \
+	src/med_research/pipeline/car_t_predictor/__init__.py \
 	src/med_research/pipeline/car_t_predictor/adapter.py \
 	src/med_research/pipeline/car_t_predictor/predictor.py \
+	src/med_research/pipeline/car_t_predictor/report.py \
+	src/med_research/pipeline/clinical_trials/__init__.py \
 	src/med_research/pipeline/clinical_trials/adapter.py \
+	src/med_research/pipeline/clinical_trials/report.py \
 	src/med_research/pipeline/clinical_trials/tracker.py \
+	src/med_research/pipeline/crispr/__init__.py \
+	src/med_research/pipeline/crispr/adapter.py \
+	src/med_research/pipeline/crispr/engine.py \
+	src/med_research/pipeline/cross_disease/__init__.py \
 	src/med_research/pipeline/cross_disease/adapter.py \
+	src/med_research/pipeline/cross_disease/analyzer.py \
+	src/med_research/pipeline/cross_disease/report.py \
+	src/med_research/pipeline/dispatch.py \
+	src/med_research/pipeline/drug_repurposing/__init__.py \
 	src/med_research/pipeline/drug_repurposing/adapter.py \
 	src/med_research/pipeline/drug_repurposing/engine.py \
+	src/med_research/pipeline/drug_repurposing/report.py \
+	src/med_research/pipeline/drug_synergy/__init__.py \
 	src/med_research/pipeline/drug_synergy/adapter.py \
 	src/med_research/pipeline/drug_synergy/engine.py \
+	src/med_research/pipeline/drug_synergy/report.py \
+	src/med_research/pipeline/evidence/__init__.py \
 	src/med_research/pipeline/evidence/adapter.py \
 	src/med_research/pipeline/evidence/extractor.py \
+	src/med_research/pipeline/evidence/extractor_report.py \
 	src/med_research/pipeline/evidence/gatherer.py \
+	src/med_research/pipeline/evidence/gatherer_report.py \
+	src/med_research/pipeline/evidence/monitor.py \
+	src/med_research/pipeline/evidence/monitor_report.py \
+	src/med_research/pipeline/evidence_workspace/__init__.py \
 	src/med_research/pipeline/evidence_workspace/adapter.py \
 	src/med_research/pipeline/evidence_workspace/extraction.py \
 	src/med_research/pipeline/evidence_workspace/graph.py \
@@ -119,31 +199,97 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/pipeline/evidence_workspace/schemas.py \
 	src/med_research/pipeline/evidence_workspace/sources.py \
 	src/med_research/pipeline/evidence_workspace/workspace.py \
+	src/med_research/pipeline/external/__init__.py \
+	src/med_research/pipeline/external/biorxiv.py \
+	src/med_research/pipeline/external/chembl_uniprot.py \
+	src/med_research/pipeline/external/client.py \
+	src/med_research/pipeline/external/gtex.py \
+	src/med_research/pipeline/external/opentargets.py \
+	src/med_research/pipeline/gateway.py \
+	src/med_research/pipeline/gene_expression/__init__.py \
 	src/med_research/pipeline/gene_expression/adapter.py \
 	src/med_research/pipeline/gene_expression/correlator.py \
+	src/med_research/pipeline/gene_expression/geo.py \
+	src/med_research/pipeline/gene_expression/report.py \
+	src/med_research/pipeline/gene_expression/signature.py \
+	src/med_research/pipeline/gene_expression/single_cell.py \
+	src/med_research/pipeline/knowledge_graph/__init__.py \
 	src/med_research/pipeline/knowledge_graph/adapter.py \
 	src/med_research/pipeline/knowledge_graph/builder.py \
+	src/med_research/pipeline/knowledge_graph/config.py \
+	src/med_research/pipeline/knowledge_graph/network_analytics.py \
+	src/med_research/pipeline/lead_opt/__init__.py \
+	src/med_research/pipeline/lead_opt/app.py \
+	src/med_research/pipeline/lead_opt/jobs.py \
+	src/med_research/pipeline/lead_opt/pipeline.py \
+	src/med_research/pipeline/lead_opt/utils.py \
+	src/med_research/pipeline/literature_mining/__init__.py \
 	src/med_research/pipeline/literature_mining/adapter.py \
+	src/med_research/pipeline/literature_mining/content_extractor.py \
 	src/med_research/pipeline/literature_mining/crossref.py \
 	src/med_research/pipeline/literature_mining/miner.py \
+	src/med_research/pipeline/literature_mining/ner.py \
+	src/med_research/pipeline/literature_mining/report.py \
+	src/med_research/pipeline/matching_engine/__init__.py \
+	src/med_research/pipeline/matching_engine/clinical_trials_parser.py \
+	src/med_research/pipeline/matching_engine/eligibility_engine.py \
+	src/med_research/pipeline/matching_engine/match_scoring.py \
+	src/med_research/pipeline/matching_engine/patient_profiling.py \
+	src/med_research/pipeline/ml_predictor/__init__.py \
 	src/med_research/pipeline/ml_predictor/adapter.py \
 	src/med_research/pipeline/ml_predictor/predictor.py \
+	src/med_research/pipeline/ml_predictor/report.py \
+	src/med_research/pipeline/multi_omics/__init__.py \
+	src/med_research/pipeline/multi_omics/adapter.py \
+	src/med_research/pipeline/multi_omics/engine.py \
+	src/med_research/pipeline/network_pharmacology/__init__.py \
 	src/med_research/pipeline/network_pharmacology/adapter.py \
 	src/med_research/pipeline/network_pharmacology/analyzer.py \
+	src/med_research/pipeline/network_pharmacology/report.py \
+	src/med_research/pipeline/pharmacogenomics/__init__.py \
+	src/med_research/pipeline/pharmacogenomics/parser.py \
+	src/med_research/pipeline/pharmacogenomics/phenotype.py \
+	src/med_research/pipeline/progress.py \
+	src/med_research/pipeline/provenance.py \
+	src/med_research/pipeline/registry.py \
+	src/med_research/pipeline/reporting.py \
+	src/med_research/pipeline/results.py \
+	src/med_research/pipeline/scheduler.py \
+	src/med_research/pipeline/semantic_search/__init__.py \
 	src/med_research/pipeline/semantic_search/adapter.py \
 	src/med_research/pipeline/semantic_search/engine.py \
+	src/med_research/pipeline/semantic_search/report.py \
+	src/med_research/pipeline/spatial_transcriptomics.py \
+	src/med_research/pipeline/structure_3d/__init__.py \
+	src/med_research/pipeline/structure_3d/adapter.py \
+	src/med_research/pipeline/structure_3d/engine.py \
+	src/med_research/pipeline/virtual_screening/__init__.py \
 	src/med_research/pipeline/virtual_screening/adapter.py \
 	src/med_research/pipeline/virtual_screening/docking.py \
+	src/med_research/pipeline/virtual_screening/report.py \
 	src/med_research/pipeline/virtual_screening/screening.py \
 	src/med_research/pipeline/virtual_screening/screening_strategy.py \
 	src/med_research/pipeline/virtual_screening/vina_setup.py \
-	src/med_research/cli.py \
-	src/med_research/web/dependencies.py \
-	src/med_research/web/main.py \
-	src/med_research/web/error_handlers.py \
-	src/med_research/web/middleware.py \
+	src/med_research/pipeline_errors.py \
+	src/med_research/rate_limiter.py \
+	src/med_research/templates/__init__.py \
+	src/med_research/treatments/__init__.py \
+	src/med_research/types.py \
+	src/med_research/web/__init__.py \
+	src/med_research/web/api/__init__.py \
+	src/med_research/web/api/dossier.py \
+	src/med_research/web/api/pgx.py \
+	src/med_research/web/api_key.py \
+	src/med_research/web/config.py \
 	src/med_research/web/demo_mode.py \
-	src/med_research/web/rate_limit.py \
+	src/med_research/web/dependencies.py \
+	src/med_research/web/dependencies_biomed.py \
+	src/med_research/web/disease_params.py \
+	src/med_research/web/error_handlers.py \
+	src/med_research/web/identity.py \
+	src/med_research/web/main.py \
+	src/med_research/web/middleware.py \
+	src/med_research/web/models/__init__.py \
 	src/med_research/web/models/adverse_events.py \
 	src/med_research/web/models/bioinformatics.py \
 	src/med_research/web/models/biomarker.py \
@@ -160,39 +306,55 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/models/semantic.py \
 	src/med_research/web/models/shared.py \
 	src/med_research/web/models/synergy.py \
+	src/med_research/web/models/universal.py \
 	src/med_research/web/models/workspace.py \
+	src/med_research/web/rate_limit.py \
+	src/med_research/web/routers/__init__.py \
 	src/med_research/web/routers/adverse_events.py \
+	src/med_research/web/routers/agent.py \
 	src/med_research/web/routers/analysis.py \
 	src/med_research/web/routers/auth.py \
-	src/med_research/web/routers/biomarker.py \
 	src/med_research/web/routers/bioinformatics.py \
+	src/med_research/web/routers/biomarker.py \
+	src/med_research/web/routers/biomed_analytics.py \
 	src/med_research/web/routers/car_t.py \
 	src/med_research/web/routers/cross_disease.py \
 	src/med_research/web/routers/disease_admin.py \
+	src/med_research/web/routers/dossier.py \
 	src/med_research/web/routers/evidence.py \
-	src/med_research/web/routers/expression.py \
 	src/med_research/web/routers/export.py \
+	src/med_research/web/routers/expression.py \
 	src/med_research/web/routers/extractor.py \
 	src/med_research/web/routers/jobs.py \
 	src/med_research/web/routers/kg.py \
+	src/med_research/web/routers/lead_opt.py \
 	src/med_research/web/routers/monitor.py \
+	src/med_research/web/routers/patient_matching.py \
 	src/med_research/web/routers/repurpose.py \
 	src/med_research/web/routers/semantic.py \
+	src/med_research/web/routers/spatial.py \
+	src/med_research/web/routers/stream.py \
 	src/med_research/web/routers/synergy.py \
 	src/med_research/web/routers/system.py \
+	src/med_research/web/routers/universal.py \
 	src/med_research/web/routers/workspace.py \
+	src/med_research/web/services/__init__.py \
 	src/med_research/web/services/adverse_events_service.py \
 	src/med_research/web/services/auth.py \
 	src/med_research/web/services/bioinformatics_service.py \
 	src/med_research/web/services/biomarker_service.py \
 	src/med_research/web/services/car_t_service.py \
+	src/med_research/web/services/comparison_service.py \
 	src/med_research/web/services/cross_disease_service.py \
 	src/med_research/web/services/disease_admin_service.py \
+	src/med_research/web/services/dossier_service.py \
 	src/med_research/web/services/evidence_service.py \
 	src/med_research/web/services/expression_service.py \
 	src/med_research/web/services/extractor_service.py \
 	src/med_research/web/services/kg_service.py \
 	src/med_research/web/services/monitor_service.py \
+	src/med_research/web/services/nosograph_compare_export.py \
+	src/med_research/web/services/nosograph_compare_service.py \
 	src/med_research/web/services/notifications.py \
 	src/med_research/web/services/registry_service.py \
 	src/med_research/web/services/repurpose_service.py \
@@ -201,51 +363,11 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/services/semantic_service.py \
 	src/med_research/web/services/shared_services.py \
 	src/med_research/web/services/synergy_service.py \
+	src/med_research/web/services/universal_service.py \
 	src/med_research/web/services/workspace_graph.py \
 	src/med_research/web/services/workspace_store.py \
-	src/med_research/web/tasks/analysis_tasks.py \
-	src/med_research/biomed/__init__.py \
-	src/med_research/biomed/database.py \
-	src/med_research/biomed/errors.py \
-	src/med_research/biomed/graph.py \
-	src/med_research/biomed/identifiers.py \
-	src/med_research/biomed/models.py \
-	src/med_research/biomed/repository.py \
-	src/med_research/biomed/schema.py \
-	src/med_research/biomed/comparison/__init__.py \
-	src/med_research/biomed/comparison/algorithm.py \
-	src/med_research/biomed/comparison/fingerprint.py \
-	src/med_research/biomed/comparison/hpo.py \
-	src/med_research/biomed/comparison/models.py \
-	src/med_research/biomed/comparison/service.py \
-	src/med_research/biomed/imports/__init__.py \
-	src/med_research/biomed/imports/contracts.py \
-	src/med_research/biomed/imports/hpo.py \
-	src/med_research/biomed/imports/hpoa.py \
-	src/med_research/biomed/imports/models.py \
-	src/med_research/biomed/imports/mondo.py \
-	src/med_research/biomed/imports/service.py \
-	src/med_research/biomed/legacy/__init__.py \
-	src/med_research/biomed/legacy/adapter.py \
-	src/med_research/biomed/legacy/checksums.py \
-	src/med_research/biomed/legacy/compat.py \
-	src/med_research/biomed/legacy/manifest.py \
-	src/med_research/biomed/legacy/projector.py \
-	src/med_research/biomed/legacy/report.py \
-	src/med_research/web/dependencies_biomed.py \
-	src/med_research/web/models/universal.py \
-	src/med_research/web/routers/universal.py \
-	src/med_research/web/services/universal_service.py \
-	src/med_research/web/services/comparison_service.py \
-	src/med_research/biomed/imports/opentargets_adapter.py \
-	src/med_research/biomed/nosograph_compare/__init__.py \
-	src/med_research/biomed/nosograph_compare/dimensions.py \
-	src/med_research/biomed/nosograph_compare/engine.py \
-	src/med_research/biomed/nosograph_compare/models.py \
-	src/med_research/biomed/nosograph_compare/service.py \
-	src/med_research/web/api/dossier.py \
-	src/med_research/web/routers/dossier.py \
-	src/med_research/web/services/dossier_service.py
+	src/med_research/web/tasks/__init__.py \
+	src/med_research/web/tasks/analysis_tasks.py
 
 # ── Locked dependencies ────────────────────────────────────────────────────
 # The dev lock is compiled against the runtime lock (-c requirements-lock.txt)

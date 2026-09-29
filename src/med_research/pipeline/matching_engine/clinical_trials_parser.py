@@ -18,14 +18,14 @@ from __future__ import annotations
 import re
 import zipfile
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 
 try:
     from lxml import etree
 except ImportError:
-    import xml.etree.ElementTree as etree  # type: ignore
+    import xml.etree.ElementTree as etree
 
 from dataclasses import dataclass, field
 
@@ -37,7 +37,7 @@ try:
     Base = declarative_base()
 except ImportError:
     HAS_SQLALCHEMY = False
-    Base = object  # type: ignore
+    Base = object
 
 if HAS_SQLALCHEMY:
 
@@ -76,8 +76,8 @@ else:
         detailed_description: str = ""
         inclusion_criteria: str = ""
         exclusion_criteria: str = ""
-        inclusion_rules: any = field(default_factory=list)
-        exclusion_rules: any = field(default_factory=list)
+        inclusion_rules: Any = field(default_factory=list)
+        exclusion_rules: Any = field(default_factory=list)
         phase: str = ""
         status: str = ""
         id: Optional[int] = None
@@ -140,7 +140,7 @@ class TrialCriteriaParser:
         r"(creatinine|bilirubin|alt|ast)\s*(>=|<=|=|>|<)\s*([0-9.]+)\s*(mg/dl|units?)", re.I
     )
 
-    def _parse_section(self, text: str) -> List[Dict]:
+    def _parse_section(self, text: str) -> List[Dict[str, Any]]:
         rules: List[Dict] = []
         # Age
         for m in self.AGE_RE.finditer(text):
@@ -167,7 +167,7 @@ class TrialCriteriaParser:
             )
         return rules
 
-    def parse(self, trial_xml: etree._Element) -> Tuple[List[Dict], List[Dict]]:
+    def parse(self, trial_xml: etree._Element) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
         """Extract inclusion and exclusion rule lists from a ``FullStudy`` element.
 
         Returns ``(inclusion_rules, exclusion_rules)``.
@@ -233,7 +233,7 @@ class TrialCriteriaParser:
             trials.append(trial)
         return trials
 
-    def bulk_load(self, xml_dir: Path, session) -> int:
+    def bulk_load(self, xml_dir: Path, session: Any) -> int:
         """Iterate over all ``.xml`` files in ``xml_dir`` and insert trials.
 
         Returns the number of trials inserted.
@@ -249,13 +249,13 @@ class TrialCriteriaParser:
 
 
 # Helper to create a DB session – used by the CLI script.
-def get_engine(db_url: str = "sqlite:///clinical_trials.db"):
+def get_engine(db_url: str = "sqlite:///clinical_trials.db") -> Any:
     if not HAS_SQLALCHEMY:
         raise RuntimeError("SQLAlchemy is required for database session helpers.")
     return create_engine(db_url, echo=False, future=True)
 
 
-def get_session(engine=None):
+def get_session(engine: Any = None) -> Any:
     if not HAS_SQLALCHEMY:
         raise RuntimeError("SQLAlchemy is required for database session helpers.")
     engine = engine or get_engine()

@@ -786,6 +786,9 @@ class MultiOmicsItem(TypedDict, total=False):
     scrna_enrichment: float
     gwas_risk_weight: float
     bulk_concordance: float
+    coloc_pp4: float
+    coloc_tissue: str
+    is_colocalized: bool
     composite_score: float
     tier: str
 

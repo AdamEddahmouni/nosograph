@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- The mypy ratchet (`make typecheck`) expands from 173 to 295 files in two waves: first the hardened pipeline modules (`pipeline/agent`, `pipeline/external`, `pipeline/lead_opt/pipeline.py`, `pipeline/matching_engine`, `pipeline/pharmacogenomics`, `pipeline/semantic_search/__init__.py`) and the `web/api/pgx`, `web/routers/biomed_analytics`, and `web/routers/stream` web surfaces, then all remaining tracked `src/med_research` modules outside the generated `diseases/` scaffold registry (109 files, including `pipeline/reporting.py`, `web/config.py`, `web/api_key.py`, `biomed/analytics`, `biomed/sync`, `biomed/imports` adapters, and the `web/routers/agent`, `lead_opt`, `patient_matching`, and `spatial` surfaces); the full list type-checks cleanly. The generated disease-scaffold tree (~20,800 files) remains intentionally out of scope.
+
 ## [0.2.1] — 2026-08-22
 
 **NosoGraph v0.2.1 — Stabilization**
