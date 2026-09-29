@@ -21,11 +21,18 @@ class ComponentStatus(BaseModel):
     detail: str | None = None
 
 
+class DemoModeMetadata(BaseModel):
+    demo_mode: bool
+    snapshot_path: str = ""
+    snapshot_version: str = ""
+
+
 class ReadyResponse(BaseModel):
     status: str
     version: str = Field(default_factory=lambda: __version__)
     timestamp: str = Field(default_factory=lambda: datetime.now().isoformat())
     components: dict[str, ComponentStatus]
+    demo: dict[str, Any] | None = None
 
 
 class JobStatus(BaseModel):

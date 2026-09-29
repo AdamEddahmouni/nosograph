@@ -370,6 +370,46 @@ textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
     color: color-mix(in srgb, var(--ng-ink-muted) 75%, transparent);
 }
 
+/* Public demo banner — only rendered when /api/demo_mode reports demo_mode. */
+.demo-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+    margin: 0 0 16px;
+    padding: 10px 14px;
+    border: 1px solid color-mix(in srgb, var(--ng-teal) 34%, transparent);
+    border-left: var(--ng-border-w-accent) solid var(--ng-teal);
+    border-radius: var(--ng-radius-lg);
+    background: color-mix(in srgb, var(--ng-teal) 8%, var(--ng-surface-alt));
+    font: 600 var(--ng-text-micro)/1.4 var(--ng-font-mono);
+    color: var(--ng-ink);
+}
+
+.demo-banner[hidden] { display: none; }
+
+.demo-banner-tag {
+    flex-shrink: 0;
+    padding: 2px 8px;
+    border-radius: var(--ng-radius-pill);
+    background: var(--ng-teal);
+    color: var(--ng-bg);
+    font: 700 0.62rem/1.4 var(--ng-font-mono);
+    letter-spacing: var(--ng-tracking-caps);
+    text-transform: uppercase;
+}
+
+.demo-banner-copy { flex: 1 1 18rem; color: color-mix(in srgb, var(--ng-ink) 82%, transparent); }
+
+.demo-banner-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+
+.demo-banner-field {
+    color: var(--ng-ink-muted);
+    letter-spacing: var(--ng-tracking-caps);
+    text-transform: uppercase;
+    font-size: 0.68rem;
+}
+
 /* API status: dot glyph (JS-owned textContent) + CSS label */
 .nav-status {
     display: inline-flex;
