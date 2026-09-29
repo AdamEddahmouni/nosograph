@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Optional, cast
 
 from med_research.diseases.base import Disease
 from med_research.diseases.registry_quality import is_blocked_slug
@@ -110,4 +110,4 @@ def write_corpus_baseline(
 def load_status_report(path: Path = DEFAULT_STATUS_PATH) -> dict[str, Any]:
     if not path.is_file():
         return {}
-    return json.loads(path.read_text(encoding="utf-8"))
+    return cast(dict[str, Any], json.loads(path.read_text(encoding="utf-8")))
