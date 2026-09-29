@@ -32,7 +32,7 @@ def build_multi_disease_network(
     for d_id in disease_ids:
         try:
             d = Disease(d_id)
-            d_name = d.name
+            d_name = d.get_display_name()
         except Exception:
             d_name = d_id.replace("_", " ").title()
 
@@ -54,11 +54,12 @@ def build_multi_disease_network(
         try:
             genes_data = load_genes(d_id)
             genes = genes_data.get("genes", [])
-            gene_ids = set()
+            gene_ids: set[str] = set()
             for g in genes:
-                gid = g.get("id") or g.get("gene_id") or g.get("name")
-                if not gid:
+                gid_value = g.get("id") or g.get("gene_id") or g.get("name")
+                if not isinstance(gid_value, str) or not gid_value:
                     continue
+                gid = gid_value
                 gene_ids.add(gid)
                 g_node_id = f"gene:{gid}"
                 if g_node_id not in nodes_map:
@@ -97,11 +98,12 @@ def build_multi_disease_network(
         try:
             drugs_data = load_drugs(d_id)
             drugs = drugs_data.get("drugs", [])
-            drug_ids = set()
+            drug_ids: set[str] = set()
             for dr in drugs:
-                drid = dr.get("id") or dr.get("name")
-                if not drid:
+                drid_value = dr.get("id") or dr.get("name")
+                if not isinstance(drid_value, str) or not drid_value:
                     continue
+                drid = drid_value
                 drug_ids.add(drid)
                 dr_node_id = f"drug:{drid}"
                 if dr_node_id not in nodes_map:
@@ -135,7 +137,11 @@ def build_multi_disease_network(
                 }
 
                 # Drug -> Target Gene edges
-                for target in dr.get("targets", []):
+                raw_targets = dr.get("targets", [])
+                targets = raw_targets if isinstance(raw_targets, list) else []
+                for target in targets:
+                    if not isinstance(target, str):
+                        continue
                     g_node_id = f"gene:{target}"
                     if g_node_id in nodes_map:
                         dt_edge = f"{dr_node_id}->{g_node_id}"

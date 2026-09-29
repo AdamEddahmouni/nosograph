@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, cast
 
 from .client import fetch_json
 
@@ -37,7 +37,8 @@ class OpenTargetsClient:
             msg = f"Open Targets GraphQL error: {response['errors'][0].get('message')}"
             logger.error(msg)
             raise RuntimeError(msg)
-        return response.get("data", {})
+        data = response.get("data", {})
+        return cast(Dict[str, Any], data) if isinstance(data, dict) else {}
 
     def get_target_details(self, target_symbol: str) -> Dict[str, Any]:
         """Retrieve target details by gene symbol (e.g., JAK2, STAT3, TNF)."""

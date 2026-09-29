@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Dict, List, TypedDict
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
@@ -30,15 +30,24 @@ class PGxResult(BaseModel):
     dosing_guidance: str
 
 
+class ParsedStarAllele(TypedDict):
+    gene: str
+    alleles: list[str]
+
+
 @router.post("/evaluate", response_model=List[PGxResult])
-def evaluate_pgx(payload: GenotypeInput):
+def evaluate_pgx(payload: GenotypeInput) -> List[PGxResult]:
     results: List[PGxResult] = []
     for gene, alleles in payload.genotypes.items():
         try:
             # Validate and normalize via parser (ensures gene exists and alleles are known)
             parsed = parse_star_allele(gene, "/".join(alleles))
-            phenotype = phenotype_from_alleles(parsed["gene"], parsed["alleles"])
-            guidance = dosing_recommendation(parsed["gene"], phenotype)
+            parsed_gene = str(parsed["gene"])
+            parsed_alleles = parsed["alleles"]
+            if not isinstance(parsed_alleles, list):
+                raise ValueError("Parsed alleles must be a list")
+            phenotype = phenotype_from_alleles(parsed_gene, parsed_alleles)
+            guidance = dosing_recommendation(parsed_gene, phenotype)
             results.append(
                 PGxResult(gene=gene.upper(), phenotype=phenotype, dosing_guidance=guidance)
             )

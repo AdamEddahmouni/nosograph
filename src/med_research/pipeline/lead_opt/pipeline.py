@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import logging
 import re
-from typing import List
+from typing import Any, List
 
 import numpy as np
 import pandas as pd
@@ -19,9 +19,18 @@ try:
     from rdkit import Chem
     from rdkit.Chem import Crippen, Descriptors, Lipinski
 
+    # RDKit exposes generated descriptor functions dynamically; its stubs do not
+    # enumerate the runtime API consistently across supported releases.
+    _DESCRIPTORS: Any = Descriptors
+    _CRIPPEN: Any = Crippen
+    _LIPINSKI: Any = Lipinski
+
     HAS_RDKIT = True
 except ImportError:
     HAS_RDKIT = False
+    _DESCRIPTORS = None
+    _CRIPPEN = None
+    _LIPINSKI = None
     logger.info("RDKit not installed; using built-in physicochemical descriptor heuristics.")
 
 # Optional import for SA Score
@@ -113,10 +122,10 @@ def _calc_descriptors(smi: str) -> dict | None:
             mol = Chem.MolFromSmiles(smi)
             if mol is None:
                 return None
-            mw = float(Descriptors.MolWt(mol))
-            logp = float(Crippen.MolLogP(mol))
-            hbd = int(Lipinski.NumHDonors(mol))
-            hba = int(Lipinski.NumHAcceptors(mol))
+            mw = float(_DESCRIPTORS.MolWt(mol))
+            logp = float(_CRIPPEN.MolLogP(mol))
+            hbd = int(_LIPINSKI.NumHDonors(mol))
+            hba = int(_LIPINSKI.NumHAcceptors(mol))
             lipinski_pass = bool((mw <= 500) and (logp <= 5) and (hbd <= 5) and (hba <= 10))
             bbb_pass = bool((logp > 2) and (mw < 450))
 

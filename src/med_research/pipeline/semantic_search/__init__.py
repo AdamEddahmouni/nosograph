@@ -1,12 +1,12 @@
 """Semantic Literature Search — Embedding-based PubMed search."""
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
     from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
 
 
-def __getattr__(name: str):
+def __getattr__(name: str) -> Any:
     if name == "SemanticSearchEngine":
         from med_research.pipeline.semantic_search.engine import SemanticSearchEngine
 
