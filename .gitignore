@@ -166,3 +166,9 @@ mypy-files.txt
 # CI-generated validation reports (recompute at release; see docs/audits/v2.3.0-release.md)
 data/reports/validation_l2_full.json
 data/tmp_test_biomed.sqlite3
+
+# Local scratch / demo build output / visual-capture artifacts (never committed)
+.superpowers/
+.tmp-demo/
+artifacts/
+.pytest-tmp/

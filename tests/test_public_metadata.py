@@ -208,6 +208,9 @@ def test_product_surfaces_use_the_canonical_nosograph_identity() -> None:
     dashboard_css = (ROOT / "src/med_research/web/static/css/dashboard.css").read_text(
         encoding="utf-8"
     )
+    dashboard_tokens = (ROOT / "src/med_research/web/static/css/tokens.css").read_text(
+        encoding="utf-8"
+    )
     dashboard_js = (ROOT / "src/med_research/web/static/js/dashboard.js").read_text(
         encoding="utf-8"
     )
@@ -219,7 +222,9 @@ def test_product_surfaces_use_the_canonical_nosograph_identity() -> None:
     assert "⚡ API v" not in dashboard_js
     assert "🦠 ${info.label}" not in dashboard_js
     for color in ("#08142d", "#102246", "#19d2c7", "#2f86ff", "#7252f4"):
-        assert color in dashboard_css.lower()
+        assert color in dashboard_tokens.lower()
+    assert "--bg: var(--ng-bg)" in dashboard_css
+    assert "--accent: var(--ng-teal)" in dashboard_css
     for font in (
         "InterVariable.woff2",
         "JetBrainsMono-Variable.woff2",
