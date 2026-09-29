@@ -13,14 +13,13 @@ as a combined report when all modules have been run.
 import base64
 import io
 import math
-import os
 from collections.abc import Mapping
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 from med_research.pipeline.provenance import ProvenanceMetadata
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 try:
     import matplotlib
@@ -53,7 +52,7 @@ def generate_bioinformatics_report(
     Any combination of results can be provided — the report will
     only show sections for available data.
     """
-    output_path = Path(__file__).parent / "bioinformatics_report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "bioinformatics_report.html"
     context = disease_context(disease_id)
 
     # ── Enrichment section ───────────────────────────────────────────────
@@ -947,8 +946,8 @@ def _generate_ppi_interactive(ppi_graph: dict, hub_scores: list) -> str:
         )
 
     # Save standalone HTML
-    output_path = Path(__file__).parent / "data" / "ppi_interactive.html"
-    os.makedirs(output_path.parent, exist_ok=True)
+    output_path = report_output_dir(Path(__file__).parent) / "data" / "ppi_interactive.html"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     net.save_graph(str(output_path))
 
     return str(output_path)

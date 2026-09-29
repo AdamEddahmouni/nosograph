@@ -14,9 +14,9 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent
 DISEASES = ("sle", "ra", "ibd")
 
 REPORT_PATHS = {
-    "repurpose": PROJECT_ROOT / "src/med_research/pipeline/drug_repurposing/report.html",
-    "synergy": PROJECT_ROOT / "src/med_research/pipeline/drug_synergy/report.html",
-    "safety": PROJECT_ROOT / "src/med_research/pipeline/adverse_events/report.html",
+    "repurpose": Path("drug_repurposing/report.html"),
+    "synergy": Path("drug_synergy/report.html"),
+    "safety": Path("adverse_events/report.html"),
 }
 
 pytestmark = [pytest.mark.integration]
@@ -49,7 +49,7 @@ def _assert_disease_report(disease_id: str, html: str) -> None:
 class TestOfflinePipelineE2E:
     """Run the core offline chain via direct CLI handler imports."""
 
-    def test_kg_export_repurpose_synergy_safety_with_html(self, disease_id):
+    def test_kg_export_repurpose_synergy_safety_with_html(self, disease_id, report_dir):
         from med_research.cli import cmd_kg, cmd_repurpose, cmd_safety, cmd_synergy
 
         assert run_cli_handler(cmd_kg, "kg", "--disease", disease_id, "--export") == 0
@@ -88,7 +88,8 @@ class TestOfflinePipelineE2E:
             == 0
         )
 
-        for label, path in REPORT_PATHS.items():
+        for label, relative_path in REPORT_PATHS.items():
+            path = report_dir / relative_path
             assert path.exists(), f"Missing {label} report at {path}"
             _assert_disease_report(disease_id, path.read_text(encoding="utf-8"))
 
