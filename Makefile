@@ -282,7 +282,6 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/api_key.py \
 	src/med_research/web/config.py \
 	src/med_research/web/demo_mode.py \
-	src/med_research/web/demo_snapshot.py \
 	src/med_research/web/dependencies.py \
 	src/med_research/web/dependencies_biomed.py \
 	src/med_research/web/disease_params.py \
@@ -290,7 +289,8 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/identity.py \
 	src/med_research/web/main.py \
 	src/med_research/web/middleware.py \
-	src/med_research/web/models/__init__.py \	src/med_research/web/models/adverse_events.py \
+	src/med_research/web/models/__init__.py \
+	src/med_research/web/models/adverse_events.py \
 	src/med_research/web/models/bioinformatics.py \
 	src/med_research/web/models/biomarker.py \
 	src/med_research/web/models/car_t.py \
