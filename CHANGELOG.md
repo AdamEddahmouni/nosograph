@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- The mypy ratchet (`make typecheck`) expands from 173 to 186 files, adding the hardened pipeline modules (`pipeline/agent`, `pipeline/external`, `pipeline/lead_opt`, `pipeline/matching_engine`, `pipeline/pharmacogenomics`, `pipeline/semantic_search/__init__.py`) and the `web/api/pgx`, `web/routers/biomed_analytics`, and `web/routers/stream` web surfaces; the full list type-checks cleanly.
+
 ## [0.2.1] — 2026-08-22
 
 **NosoGraph v0.2.1 — Stabilization**

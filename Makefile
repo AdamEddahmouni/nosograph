@@ -93,6 +93,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/diseases/schemas.py \
 	src/med_research/pipeline/adverse_events/adapter.py \
 	src/med_research/pipeline/adverse_events/profiler.py \
+	src/med_research/pipeline/agent/hypothesis_agent.py \
 	src/med_research/pipeline/bioinformatics/adapter.py \
 	src/med_research/pipeline/bioinformatics/enrichment.py \
 	src/med_research/pipeline/bioinformatics/gwas.py \
@@ -119,19 +120,28 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/pipeline/evidence_workspace/schemas.py \
 	src/med_research/pipeline/evidence_workspace/sources.py \
 	src/med_research/pipeline/evidence_workspace/workspace.py \
+	src/med_research/pipeline/external/opentargets.py \
 	src/med_research/pipeline/gene_expression/adapter.py \
 	src/med_research/pipeline/gene_expression/correlator.py \
 	src/med_research/pipeline/knowledge_graph/adapter.py \
 	src/med_research/pipeline/knowledge_graph/builder.py \
+	src/med_research/pipeline/knowledge_graph/network_analytics.py \
+	src/med_research/pipeline/lead_opt/pipeline.py \
 	src/med_research/pipeline/literature_mining/adapter.py \
 	src/med_research/pipeline/literature_mining/crossref.py \
 	src/med_research/pipeline/literature_mining/miner.py \
+	src/med_research/pipeline/matching_engine/clinical_trials_parser.py \
+	src/med_research/pipeline/matching_engine/eligibility_engine.py \
+	src/med_research/pipeline/matching_engine/patient_profiling.py \
 	src/med_research/pipeline/ml_predictor/adapter.py \
 	src/med_research/pipeline/ml_predictor/predictor.py \
 	src/med_research/pipeline/network_pharmacology/adapter.py \
 	src/med_research/pipeline/network_pharmacology/analyzer.py \
+	src/med_research/pipeline/pharmacogenomics/parser.py \
+	src/med_research/pipeline/pharmacogenomics/phenotype.py \
 	src/med_research/pipeline/semantic_search/adapter.py \
 	src/med_research/pipeline/semantic_search/engine.py \
+	src/med_research/pipeline/semantic_search/__init__.py \
 	src/med_research/pipeline/virtual_screening/adapter.py \
 	src/med_research/pipeline/virtual_screening/docking.py \
 	src/med_research/pipeline/virtual_screening/screening.py \
@@ -164,6 +174,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/routers/adverse_events.py \
 	src/med_research/web/routers/analysis.py \
 	src/med_research/web/routers/auth.py \
+	src/med_research/web/routers/biomed_analytics.py \
 	src/med_research/web/routers/biomarker.py \
 	src/med_research/web/routers/bioinformatics.py \
 	src/med_research/web/routers/car_t.py \
@@ -178,6 +189,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/web/routers/monitor.py \
 	src/med_research/web/routers/repurpose.py \
 	src/med_research/web/routers/semantic.py \
+	src/med_research/web/routers/stream.py \
 	src/med_research/web/routers/synergy.py \
 	src/med_research/web/routers/system.py \
 	src/med_research/web/routers/workspace.py \
@@ -244,6 +256,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/biomed/nosograph_compare/models.py \
 	src/med_research/biomed/nosograph_compare/service.py \
 	src/med_research/web/api/dossier.py \
+	src/med_research/web/api/pgx.py \
 	src/med_research/web/routers/dossier.py \
 	src/med_research/web/services/dossier_service.py
 
