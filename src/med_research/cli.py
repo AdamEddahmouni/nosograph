@@ -418,6 +418,35 @@ def _build_parser() -> argparse.ArgumentParser:
     dbulk.add_argument("--skip-reactome", action="store_true", help="Skip Reactome fetch")
     dbulk.add_argument("--overwrite", action="store_true", help="Regenerate existing modules")
 
+    dbackfill = disease_sub.add_parser(
+        "backfill",
+        help="Fill scaffolded config gaps from local data (symptoms, drug safety)",
+    )
+    dbackfill.add_argument(
+        "--symptoms",
+        action="store_true",
+        help="Fill empty SYMPTOMS lists from HPO / Open Targets phenotypes",
+    )
+    dbackfill.add_argument(
+        "--safety",
+        action="store_true",
+        help="Derive DRUG_SAFETY_RISK and write data/adverse_events.json",
+    )
+    dbackfill.add_argument("--all", action="store_true", help="Run every backfill step")
+    dbackfill.add_argument("--limit", type=int, help="Maximum modules to process")
+    dbackfill.add_argument("--disease-ids", nargs="+", help="Explicit disease ids to process")
+    dbackfill.add_argument(
+        "--workers", type=int, default=1, help="Parallel workers for the symptom step"
+    )
+    dbackfill.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Rewrite adverse_events.json files that already exist",
+    )
+    dbackfill.add_argument(
+        "--dry-run", action="store_true", help="Report what would change without writing"
+    )
+
     dcorpus = disease_sub.add_parser("corpus-status", help="Show corpus readiness tier report")
     dcorpus.add_argument("--json", action="store_true", help="Emit JSON report")
     dcorpus.add_argument("--limit", type=int, help="Limit diseases scanned")
@@ -1163,6 +1192,79 @@ def cmd_disease(args):
         print_bulk_harvest_summary(report)
         return 1 if report["failed"] and not report["succeeded"] else 0
 
+    if args.disease_action == "backfill":
+        from med_research.diseases.safety_scaffold import (
+            write_adverse_events_file,
+            write_risk_config_section,
+        )
+        from med_research.diseases.symptom_harvester import harvest_all_symptoms
+
+        do_symptoms = bool(args.all or args.symptoms)
+        do_safety = bool(args.all or args.safety)
+        if not do_symptoms and not do_safety:
+            logger.error("❌ backfill needs --symptoms, --safety, or --all")
+            return 2
+        if args.dry_run:
+            logger.info("🔍 dry run — no files will be written")
+
+        ids = list(args.disease_ids) if args.disease_ids else None
+        errors: list[str] = []
+        if do_symptoms:
+            report = harvest_all_symptoms(
+                write=not args.dry_run,
+                limit=args.limit,
+                disease_ids=ids,
+                workers=args.workers,
+            )
+            logger.info(
+                "\n🩺 Symptom backfill: %s/%s populated (%s)",
+                report["populated"],
+                report["total"],
+                report["by_source"],
+            )
+
+        if do_safety:
+            from med_research.diseases.scaffold import load_disease_registry, sanitize_id
+
+            targets = ids
+            if targets is None:
+                targets = [sanitize_id(e.get("id", "")) for e in load_disease_registry()]
+            if args.limit:
+                targets = targets[: args.limit]
+
+            risk_written: list[str] = []
+            ae_written: list[str] = []
+            skipped: list[str] = []
+            for disease_id in targets:
+                try:
+                    path = write_risk_config_section(disease_id, dry_run=args.dry_run)
+                    if path is not None:
+                        risk_written.append(disease_id)
+                    ae_path = write_adverse_events_file(
+                        disease_id,
+                        overwrite=args.overwrite,
+                        dry_run=args.dry_run,
+                    )
+                    if ae_path is not None:
+                        ae_written.append(disease_id)
+                    if path is None and ae_path is None:
+                        skipped.append(disease_id)
+                except Exception as exc:  # keep going: one bad module must not abort a corpus run
+                    errors.append(f"{disease_id}: {exc}")
+            logger.info(
+                "\n🛡️  Safety backfill: risk block written for %s, "
+                "adverse_events.json for %s, unchanged %s, errors %s",
+                len(risk_written),
+                len(ae_written),
+                len(skipped),
+                len(errors),
+            )
+            for line in errors[:20]:
+                logger.warning("    %s", line)
+            if len(errors) > 20:
+                logger.warning("    … and %s more", len(errors) - 20)
+        return 1 if errors else 0
+
     if args.disease_action == "refresh":
         from med_research.diseases.scaffold import (
             print_refresh_summary,
@@ -1515,19 +1617,24 @@ def cmd_safety(args):
         results = [profile]
         logger.info(f"\n🛡️  Safety Profile: {profile['drug_name']}")
         logger.info(f"   Disease:                  {args.disease}")
-        logger.info(f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}")
-        logger.info(
-            f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Severity Burden:           {profile.get('severity_burden_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Chronic Use Safety:        {profile.get('chronic_use_safety_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Disease-Specific Risk:     {profile.get('disease_specific_risk_score', 'N/A')}/10"
-        )
+        if profile.get("score_status") == "insufficient_evidence":
+            logger.info("   Safety Score:             Insufficient evidence.")
+        else:
+            logger.info(
+                f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}"
+            )
+            logger.info(
+                f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10"
+            )
         logger.info(f"   Black Box Warnings:        {profile.get('black_box_warnings', [])}")
         logger.info(f"   Disease Overlap AEs:       {profile.get('disease_overlap_ae', [])}")
     else:
@@ -1535,10 +1642,16 @@ def cmd_safety(args):
         if not result.success:
             return _exit_from_result(result, context="Safety analysis")
         results = result.data or []
-        summary = get_safety_summary(disease_id=args.disease)
+        summary = get_safety_summary(disease_id=args.disease, results=results)
         logger.info(f"Total drugs ({args.disease}): {summary['total_drugs']}")
-        logger.info(f"Avg safety score: {summary['avg_safety_score']:.1f}")
-        print_analysis(results[:15])
+        logger.info(
+            "Scored drugs: %s | Insufficient evidence: %s",
+            summary["scored_drugs"],
+            summary["unscored_drugs"],
+        )
+        average = summary["avg_safety_score"]
+        logger.info("Avg safety score: %s", f"{average:.1f}" if average is not None else "—")
+        print_analysis(results)
 
     return 0
 

@@ -66,6 +66,9 @@ function setWorkspaceSubmissionState(state) {
 const diseaseCache = { list: null };
 let diseaseSelectControl = null;
 let dashboardRefreshing = false;
+// True only when the server reports DEMO_MODE. Gates the non-persisting
+// Compare preview path, which is the only write-shaped route demo mode allows.
+let demoModeActive = false;
 
 const DASHBOARD_MODULE_REGISTRY = {
     kg: 'knowledge_graph',
@@ -3223,19 +3226,24 @@ function renderNosoGraphCompareResult(result) {
     const curationWarnings = (result.curation_warnings || []).map(item => `<li>${escapeHtml(item.message || item)}</li>`).join('');
     const statusLabel = result.status === 'comparable' ? 'Comparison ready' : 'Sparse comparison ready';
     const conditionChips = conditions.map(item => `<span class="condition-comparison-condition"><strong>${escapeHtml(item.label)}</strong><code>${escapeHtml(item.curie)}</code></span>`).join('');
+    // A preview has no run id, so its exports are POSTs against the preview
+    // contract rather than links to a persisted run.
+    const isPreview = result.preview === true || !result.run_id;
+    const exportActions = isPreview
+        ? `<button type="button" class="btn btn-secondary btn-sm" data-preview-export="json">Export JSON</button>
+           <button type="button" class="btn btn-secondary btn-sm" data-preview-export="markdown">Export Markdown</button>`
+        : `<a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/json" download="nosograph-comparison-${escapeHtml(result.run_id)}.json">Export JSON</a>
+           <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/markdown" download="nosograph-comparison-${escapeHtml(result.run_id)}.md">Export Markdown</a>`;
     container.innerHTML = `
         <header class="condition-comparison-report-header">
             <div><p class="condition-comparison-eyebrow">${escapeHtml(statusLabel)}</p><h3>Evidence state comparison</h3><p>${conditions.length} conditions · ${result.dimensions?.length || 0} dimensions · no universal similarity score</p></div>
-            <div class="condition-comparison-export-actions">
-                <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/json" download="nosograph-comparison-${escapeHtml(result.run_id)}.json">Export JSON</a>
-                <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/markdown" download="nosograph-comparison-${escapeHtml(result.run_id)}.md">Export Markdown</a>
-            </div>
+            <div class="condition-comparison-export-actions">${exportActions}</div>
         </header>
         <div class="condition-comparison-condition-list" aria-label="Compared conditions">${conditionChips}</div>
         ${curationWarnings ? `<details class="condition-comparison-warning-summary"><summary>${result.curation_warnings.length} curation warning${result.curation_warnings.length === 1 ? '' : 's'}</summary><ul>${curationWarnings}</ul></details>` : ''}
         <div class="condition-comparison-tabs" role="tablist" aria-label="Comparison dimensions">${tabs}</div>
         <div class="condition-comparison-tab-panels">${panels || '<p class="condition-comparison-placeholder">No dimension results returned.</p>'}</div>
-        <p class="condition-comparison-meta">Run <code>${escapeHtml(result.run_id)}</code> · fingerprint <code>${escapeHtml(result.claim_set_fingerprint || 'n/a')}</code> · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
+        <p class="condition-comparison-meta">${isPreview ? 'preview (not persisted)' : `Run <code>${escapeHtml(result.run_id)}</code>`} · fingerprint <code>${escapeHtml(result.claim_set_fingerprint || 'n/a')}</code> · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
         <p class="condition-comparison-disclaimer">${disclaimer}</p>`;
     bindComparisonResultActions(container);
 }
@@ -3339,6 +3347,42 @@ function bindComparisonResultActions(container) {
         event.preventDefault();
         void openEvidenceExplorer(link.dataset.comparisonClaimId);
     }));
+    // Preview exports have no persisted run to link to, so they POST the same
+    // preview request and save the response as a file.
+    container.querySelectorAll('[data-preview-export]').forEach(button => button.addEventListener('click', event => {
+        void exportComparisonPreview(container, event.currentTarget.dataset.previewExport, event.currentTarget);
+    }));
+}
+
+async function exportComparisonPreview(container, format, button) {
+    const conditions = selectedComparisonConditions();
+    const dimensions = selectedComparisonDimensions();
+    if (!conditions.length) return;
+    const original = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Preparing…';
+    try {
+        const response = await fetch('/api/v1/nosograph/comparisons/preview/export?format=' + encodeURIComponent(format), {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ condition_curies: conditions, dimensions }),
+        });
+        if (!response.ok) throw new Error('Preview export failed');
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = format === 'markdown' ? 'nosograph-comparison-preview.md' : 'nosograph-comparison-preview.json';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        showToast(error.message, 'error');
+    } finally {
+        button.disabled = false;
+        button.textContent = original;
+    }
 }
 
 function selectedComparisonDimensions() {
@@ -3366,7 +3410,12 @@ async function compareConditions() {
     setConditionComparisonBusy(true);
     container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Running NosoGraph compare…</p>';
     try {
-        const result = await apiFetch('/api/v1/nosograph/comparisons', {
+        // Demo mode blocks the persisted endpoint by design, so the public
+        // demo uses the non-persisting preview route instead.
+        const endpoint = demoModeActive
+            ? '/api/v1/nosograph/comparisons/preview'
+            : '/api/v1/nosograph/comparisons';
+        const result = await apiFetch(endpoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ condition_curies: conditions, dimensions }),
@@ -4679,6 +4728,44 @@ function setStatsLoading(loading) {
     });
 }
 
+/**
+ * Reveal the public demo banner when the API reports DEMO_MODE.
+ *
+ * The banner is server-owned: it only appears if the running instance is the
+ * read-only public demo, so a normal self-host never claims to be one.
+ */
+async function loadDemoModeBanner() {
+    const banner = document.getElementById('demo-banner');
+    try {
+        const meta = await apiFetch('/api/demo_mode');
+        demoModeActive = Boolean(meta && meta.demo_mode === true);
+        if (!demoModeActive || !banner) {
+            if (banner) banner.hidden = true;
+            return;
+        }
+        // /api/ready carries the dataset date and snapshot version together,
+        // which is what the banner labels; fall back to the metadata endpoint.
+        let version = meta.snapshot_version || '';
+        let date = '';
+        try {
+            const ready = await apiFetch('/api/ready');
+            const demo = ready && ready.demo;
+            if (demo && demo.demo_mode === true) {
+                version = demo.snapshot_version || version;
+                date = demo.dataset_date || '';
+            }
+        } catch { /* readiness is best-effort for the banner */ }
+        const dateEl = document.getElementById('demo-banner-date');
+        const versionEl = document.getElementById('demo-banner-version');
+        if (dateEl) dateEl.textContent = date || '—';
+        if (versionEl) versionEl.textContent = version || '—';
+        banner.hidden = false;
+    } catch {
+        demoModeActive = false;
+        if (banner) banner.hidden = true;
+    }
+}
+
 function animateStatValue(el, value) {
     if (!el) return;
     el.classList.remove('is-loading');
@@ -4954,10 +5041,6 @@ function setupDashboardActions() {
                 if (value) void openEvidenceExplorer(value);
                 break;
             }
-            case 'evidence-filter-change': {
-                if (activeEvidenceClaimId) void loadEvidenceExplorerClaim(activeEvidenceClaimId);
-                break;
-            }
             default: break;
         }
     });
@@ -4967,6 +5050,11 @@ function setupDashboardActions() {
         if (!control) return;
         if (control.dataset.action === 'disease-change') onDiseaseChange(control.value);
         if (control.dataset.action === 'workspace-trends-render') renderWorkspaceTrends();
+        // Selects fire change, not click: the evidence filters only re-query
+        // the claim when handled here.
+        if (control.dataset.action === 'evidence-filter-change' && activeEvidenceClaimId) {
+            void loadEvidenceExplorerClaim(activeEvidenceClaimId);
+        }
     });
 
     document.addEventListener('submit', event => {
@@ -5228,6 +5316,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadDiseaseSelector();
     updateDiseaseDisplay();
     await checkAPIStatus();
+    await loadDemoModeBanner();
     await loadPlatformStats();
     await refreshModuleMetadata();
     initKGExplorer();
@@ -5241,14 +5330,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     void loadCorpusStatus();
     handleUniversalDeepLinks();
     loadExportGrid();
-    loadWorkspaceAuth();
-    loadWorkspaceHistory();
-    loadWorkspaceTrends();
-    loadWorkspaceNotificationSettings();
-    loadWorkspaceAlerts();
+    // The public demo has no workspace: skip the workspace fetches entirely
+    // rather than issuing requests the demo policy answers with 403.
+    if (!demoModeActive) {
+        loadWorkspaceAuth();
+        loadWorkspaceHistory();
+        loadWorkspaceTrends();
+        loadWorkspaceNotificationSettings();
+        loadWorkspaceAlerts();
+    }
     if (linkedParams.get('digest_key')) window.setTimeout(previewWorkspaceDigest, 250);
+
+    // Readiness signal: the dashboard chrome is wired and initial fetches have
+    // settled. Automation and integration tests wait on this instead of a timer.
+    document.body.dataset.booted = 'true';
 
     setInterval(checkAPIStatus, 30000);
     setInterval(loadPlatformStats, 60000);
-    setInterval(loadWorkspaceAlerts, 60000);
+    if (!demoModeActive) setInterval(loadWorkspaceAlerts, 60000);
 });

@@ -93,22 +93,27 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
+        "dexamethasone",
+        "tacrolimus anhydrous",
+    ],
+    "low_risk": [
         "amitriptyline",
         "baclofen",
+        "gabapentin",
+        "ketoprofen",
+    ],
+    "undetermined_risk": [
         "cabergoline",
         "clomiphene",
         "clomiphene citrate",
-        "dexamethasone",
+        "gonadorelin",
+        "gonadorelin acetate",
         "ketamine",
-        "ketoprofen",
         "loperamide",
         "naloxone",
         "ospemifene",
         "oxybutynin",
-        "tacrolimus anhydrous",
-    ],
-    "low_risk": [
-        "gabapentin",
+        "triptorelin",
     ],
 }
 

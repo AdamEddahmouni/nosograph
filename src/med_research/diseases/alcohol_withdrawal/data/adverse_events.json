@@ -1,0 +1,135 @@
+{
+  "schema_version": "1",
+  "disease_id": "alcohol_withdrawal",
+  "source": "class_level_inference_from_disease_drug_catalog",
+  "coverage_level": "partial",
+  "curated_inputs": [
+    "disease_drug_catalog"
+  ],
+  "inferred_inputs": [
+    "drug_class_adverse_event_patterns",
+    "drug_class_tier_mapping",
+    "drug_symptom_overlap"
+  ],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments.",
+    "Adverse-event lists are class-level summaries, not label-derived contraindications or pharmacovigilance counts.",
+    "Validate current labels and patient-specific contraindications before use.",
+    "2 drug(s) have no recognisable pharmacologic class and no adverse-effect text: their empty adverse-event lists mean 'not known', not 'none'.",
+    "1 drug(s) are classified undetermined_risk: their absence from a risk tier is a gap in inference, not evidence of safety.",
+    "No curated symptom list was available, so disease_overlap_ae is empty."
+  ],
+  "default_profile": {
+    "common_ae": [
+      "bradycardia",
+      "cold extremities",
+      "confusion",
+      "dizziness",
+      "fatigue",
+      "somnolence"
+    ],
+    "severe_ae": [
+      "bronchospasm",
+      "dependence",
+      "heart block",
+      "hypoglycaemia",
+      "respiratory depression"
+    ],
+    "disease_overlap_ae": [],
+    "black_box_warnings": [],
+    "severity_burden": 0,
+    "chronic_use_safety": 10,
+    "disease_specific_risk": 1.7,
+    "monitoring_required": "Class-level inference only: verify current labels and disease-specific contraindications before use.",
+    "evidence_grade": "inferred_class_default"
+  },
+  "drug_safety_tiers": {
+    "high_risk": [],
+    "moderate_risk": [
+      "prazosin"
+    ],
+    "low_risk": [
+      "baclofen",
+      "chlordiazepoxide",
+      "gabapentin",
+      "levetiracetam",
+      "lorazepam"
+    ],
+    "undetermined_risk": [
+      "oxytocin"
+    ]
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL701",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL2",
+      "common_ae": [
+        "fatigue",
+        "bradycardia",
+        "cold extremities"
+      ],
+      "severe_ae": [
+        "bronchospasm",
+        "heart block",
+        "hypoglycaemia"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL451",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL580",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL940",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    }
+  ]
+}

@@ -77,3 +77,34 @@ def seeded_biomed_db(biomed_repository: BiomedicalRepository):
 def client(seeded_biomed_db):
     with TestClient(app) as test_client:
         yield test_client
+
+
+@pytest.fixture(scope="session")
+def demo_snapshot(tmp_path_factory) -> tuple[Path, Path, str]:
+    """Build one disposable fixture-backed snapshot for demo-mode client tests."""
+    from scripts.build_demo_snapshot import build_demo_snapshot, manifest_path_for
+
+    output = tmp_path_factory.mktemp("public-demo") / "biomedical.sqlite3"
+    build_demo_snapshot(output, fixture_root=FIXTURES)
+    manifest = manifest_path_for(output)
+    import json
+
+    version = json.loads(manifest.read_text(encoding="utf-8"))["snapshot_version"]
+    return output, manifest, version
+
+
+@pytest.fixture
+def demo_env(monkeypatch, demo_snapshot):
+    """Configure a valid isolated public-demo environment for one test."""
+    output, manifest, version = demo_snapshot
+    monkeypatch.setenv("DEMO_MODE", "true")
+    monkeypatch.setenv("DEMO_SNAPSHOT_PATH", str(output))
+    monkeypatch.setenv("DEMO_SNAPSHOT_MANIFEST", str(manifest))
+    monkeypatch.setenv("DEMO_SNAPSHOT_VERSION", version)
+
+
+@pytest.fixture
+def demo_client(demo_env):
+    """Client whose app lifespan runs with demo mode enabled."""
+    with TestClient(app) as test_client:
+        yield test_client

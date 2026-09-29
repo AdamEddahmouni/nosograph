@@ -67,10 +67,11 @@ CAR_T_SCORES = {
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
     "high_risk": [],
-    "moderate_risk": [
+    "moderate_risk": [],
+    "low_risk": [],
+    "undetermined_risk": [
         "lenvatinib",
     ],
-    "low_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

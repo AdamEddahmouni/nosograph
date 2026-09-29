@@ -97,6 +97,32 @@ class CompareV2Result(BaseModel):
     disclaimer: str = ""
 
 
+class CompareV2PreviewResult(BaseModel):
+    """Non-persisting Compare V2 result used by the public read-only demo.
+
+    Identical in shape to :class:`CompareV2Result` except that ``run_id`` is
+    always ``None`` and ``preview`` marks the response as never having been
+    written to the research-run store.
+    """
+
+    model_config = ConfigDict(frozen=True)
+
+    run_id: UUID | None = None
+    preview: bool = True
+    result_schema_version: str = COMPARE_RESULT_SCHEMA_VERSION
+    status: CompareStatus
+    condition_curies: list[str] = Field(default_factory=list)
+    condition_labels: dict[str, str] = Field(default_factory=dict)
+    dimensions: list[str] = Field(default_factory=list)
+    dimension_results: list[DimensionComparison] = Field(default_factory=list)
+    curation_warnings: list[CompareWarning] = Field(default_factory=list)
+    snapshot_ids: list[UUID] = Field(default_factory=list)
+    claim_set_fingerprint: str = ""
+    algorithm_id: str = "nosograph-compare-v2"
+    algorithm_version: str = "2.0.0"
+    disclaimer: str = ""
+
+
 class MissingDataReason(str, Enum):
     KNOWN_ABSENT = "KNOWN_ABSENT"
     NOT_RECORDED = "NOT_RECORDED"
