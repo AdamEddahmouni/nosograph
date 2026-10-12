@@ -25,7 +25,7 @@ anyio==4.14.2
     #   watchfiles
 asgiref==3.12.1
     # via opentelemetry-instrumentation-asgi
-ast-serialize==0.8.0
+ast-serialize==0.12.1
     # via mypy
 attrs==26.1.0
     # via aiohttp
@@ -165,7 +165,7 @@ kombu[redis]==5.6.2
     # via celery
 kubernetes==36.0.3
     # via chromadb
-librt==0.15.0
+librt==0.16.0
     # via mypy
 llvmlite==0.48.0
     # via
@@ -191,7 +191,7 @@ multidict==6.7.1
     # via
     #   aiohttp
     #   yarl
-mypy==2.3.0
+mypy==2.4.0
     # via -r requirements-dev.in
 mypy-extensions==1.1.0
     # via mypy
@@ -336,7 +336,7 @@ pillow==12.3.0
     # via
     #   matplotlib
     #   rdkit
-pip-tools==7.6.1
+pip-tools==7.6.2
     # via -r requirements-dev.in
 playwright==1.62.0
     # via -r requirements-dev.in
@@ -430,7 +430,7 @@ rich==15.0.0
     # via
     #   chromadb
     #   typer
-ruff==0.16.3
+ruff==0.16.10
     # via -r requirements-dev.in
 safetensors==0.8.0
     # via transformers
