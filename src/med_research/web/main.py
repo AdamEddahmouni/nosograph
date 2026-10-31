@@ -55,7 +55,11 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     setup_logging(level=logging.DEBUG if DEBUG else logging.INFO)
     import os
 
-    if os.environ.get("DEMO_REQUIRE_MODE", "").strip().lower() in {"1", "true", "yes", "on"} and not is_demo_mode():
+    if (
+        os.environ.get("DEMO_REQUIRE_MODE", "").strip().lower()
+        in {"1", "true", "yes", "on"}
+        and not is_demo_mode()
+    ):
         raise RuntimeError("Public demo image requires DEMO_MODE=true (read-only).")
 
     if not DEBUG and not os.environ.get("API_KEY") and not is_demo_mode():
