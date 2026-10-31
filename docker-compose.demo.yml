@@ -29,7 +29,6 @@ services:
       - DEMO_SNAPSHOT_PATH=/app/data/demo/biomedical.sqlite3
       - DEMO_SNAPSHOT_MANIFEST=/app/data/demo/biomedical.manifest.json
       - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:8000}
-      - API_KEY=${API_KEY:-}
       - DASHBOARD_CSP_MODE=enforce
       - RATE_LIMIT_REQUESTS=${RATE_LIMIT_REQUESTS:-60}
       - RATE_LIMIT_WINDOW=${RATE_LIMIT_WINDOW:-60}
