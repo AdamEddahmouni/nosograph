@@ -821,7 +821,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
     serve = sub.add_parser("serve", help="Start the web API server")
     serve.add_argument("--host", default="0.0.0.0")  # nosec B104 - overridable bind; see web/config.py
-    serve.add_argument("--port", type=int, default=8000)
+    serve.add_argument("--port", type=int, default=None)
     serve.add_argument("--reload", action="store_true")
 
     test = sub.add_parser("test", help="Run the test suite")
