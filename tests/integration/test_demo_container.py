@@ -164,3 +164,10 @@ def test_demo_workflow_checks_runtime_mode_and_secrets() -> None:
     assert "if: ${{ secrets." not in workflow
     assert "HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}" in workflow
     assert '["demo"]["demo_mode"] is True' in workflow
+
+
+def test_demo_docker_context_excludes_secrets() -> None:
+    dockerignore = (ROOT / ".dockerignore").read_text(encoding="utf-8")
+    assert ".env\n" in dockerignore
+    assert ".env.*\n" in dockerignore
+    assert ".superpowers/" in dockerignore
