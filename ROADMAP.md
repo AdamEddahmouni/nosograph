@@ -64,7 +64,7 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 | Item | Status |
 |------|--------|
-| Public read-only demo (`DEMO_MODE`, safe dataset) | `DEMO_MODE` **implemented** as a local/self-host opt-in (default off). **Not deployed.** No hosted public app. Snapshot dataset / `nosograph demo` still PLANNED (snapshot-backed reads + non-persisting preview approach preserved from closed #103). |
+| Public read-only demo (`DEMO_MODE`, safe dataset) | `DEMO_MODE` + fixture snapshot builder / `nosograph demo` **implemented** for local/self-host (default off). Compose **`demo`** profile documented. **Not deployed** — no hosted public app. |
 | Source sync expansion (HPOA, MONDO, ClinicalTrials.gov) | Importers exist; **sync registration** still PLANNED (Open Targets is the registered sync source) |
 | Phenopacket export prototype | PLANNED / `NOT_IMPLEMENTED` |
 | Python SDK (OpenAPI-generated) | PLANNED |

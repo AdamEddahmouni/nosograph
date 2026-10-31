@@ -17,6 +17,7 @@ from med_research.biomed.nosograph_compare.service import (
     CompareRunNotFoundError,
     NosoGraphCompareService,
 )
+from med_research.biomed.store_readiness import require_schema_initialized
 from med_research.web.dependencies_biomed import BiomedicalRepositoryDep
 from med_research.web.models.universal import (
     AnalyticsSharedMechanismView,
@@ -79,6 +80,7 @@ def get_condition(
     curie: str,
     repository: BiomedicalRepositoryDep,
 ) -> ConditionSummary:
+    require_schema_initialized(repository)
     summary = universal_service.get_condition(repository, normalize_curie(curie))
     if summary is None:
         raise HTTPException(status_code=404, detail=f"Condition '{curie}' not found")
@@ -91,6 +93,7 @@ def get_condition_hierarchy(
     repository: BiomedicalRepositoryDep,
     depth: int = Query(1, ge=0, le=3),
 ) -> ConditionHierarchy:
+    require_schema_initialized(repository)
     hierarchy = universal_service.get_hierarchy(repository, normalize_curie(curie), depth=depth)
     if hierarchy is None:
         raise HTTPException(status_code=404, detail=f"Condition '{curie}' not found")
@@ -124,6 +127,7 @@ def get_claim(
     claim_id: UUID,
     repository: BiomedicalRepositoryDep,
 ) -> ClaimDetailView:
+    require_schema_initialized(repository)
     detail = universal_service.get_claim_detail(repository, claim_id)
     if detail is None:
         raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
@@ -142,6 +146,7 @@ def get_claim_evidence(
     limit: int = Query(50, ge=1, le=200),
     offset: int = Query(0, ge=0),
 ) -> PagedResponse[ClaimEvidenceDetailView]:
+    require_schema_initialized(repository)
     if repository.get_claim_by_id(claim_id) is None:
         raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
     return universal_service.list_claim_evidence(
@@ -163,6 +168,7 @@ def get_related_claims(
     repository: BiomedicalRepositoryDep,
     limit: int = Query(20, ge=1, le=100),
 ) -> list[RelatedClaimView]:
+    require_schema_initialized(repository)
     if repository.get_claim_by_id(claim_id) is None:
         raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
     return universal_service.list_related_claims(repository, claim_id, limit=limit)
@@ -173,6 +179,7 @@ def get_claim_provenance(
     claim_id: UUID,
     repository: BiomedicalRepositoryDep,
 ) -> list[ClaimProvenanceStepView]:
+    require_schema_initialized(repository)
     if repository.get_claim_by_id(claim_id) is None:
         raise HTTPException(status_code=404, detail=f"Claim '{claim_id}' not found")
     return universal_service.get_claim_provenance(repository, claim_id)
@@ -279,6 +286,7 @@ def get_snapshot_report(
     snapshot_id: UUID,
     repository: BiomedicalRepositoryDep,
 ) -> ImportReportView:
+    require_schema_initialized(repository)
     report = universal_service.get_import_report(repository, snapshot_id)
     if report is None:
         raise HTTPException(status_code=404, detail=f"Snapshot '{snapshot_id}' not found")

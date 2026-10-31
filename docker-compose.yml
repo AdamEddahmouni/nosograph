@@ -5,6 +5,11 @@
 #   docker compose --profile full up --build
 #   open http://localhost:8000
 #
+# Read-only demo (local fixture snapshot; not a hosted public app):
+#   docker compose --profile demo run --rm pipeline demo build
+#   docker compose --profile demo up web-demo --build
+#   open http://localhost:8000
+#
 # Image tag `med-research:latest` is an internal/compatibility name (Python
 # distribution `med-research`), not public product branding. Compose project
 # name is `nosograph` so evaluation containers are nosograph-* rather than
@@ -147,6 +152,51 @@ services:
     profiles:
       - full
 
+  # ── Web API (read-only demo profile) ─────────────────────────────────
+  web-demo:
+    build:
+      context: .
+      args:
+        DOCKER_SKIP_DISEASE_VALIDATE: ${DOCKER_SKIP_DISEASE_VALIDATE:-1}
+    image: med-research:latest
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"
+    environment:
+      - PORT=${PORT:-8000}
+      - DEBUG=${DEBUG:-true}
+      - API_KEY=${API_KEY:-}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:8000}
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - REDIS_RATE_LIMIT_URL=redis://redis:6379/0
+      - USE_CACHE=true
+      - DASHBOARD_CSP_MODE=${DASHBOARD_CSP_MODE:-enforce}
+      - DEMO_MODE=true
+      - BIOMEDICAL_DB_PATH=/app/data/demo/biomedical.sqlite3
+      - RATE_LIMIT_FAIL_CLOSED=${RATE_LIMIT_FAIL_CLOSED:-false}
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import os, urllib.request; urllib.request.urlopen(f'http://127.0.0.1:{os.environ.get(\"PORT\", \"8000\")}/api/health', timeout=3)",
+        ]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+    volumes:
+      - ./data:/app/data
+    profiles:
+      - demo
+
   # ── CLI pipeline ──────────────────────────────────────────────────────
   pipeline:
     build:
@@ -159,6 +209,7 @@ services:
       - ./data:/app/data
     profiles:
       - cli
+      - demo
 
 volumes:
   redis-data:
