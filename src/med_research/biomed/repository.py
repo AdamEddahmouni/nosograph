@@ -160,6 +160,11 @@ class BiomedicalRepository:
     def initialize(self) -> None:
         self.database.initialize()
 
+    def is_schema_initialized(self) -> bool:
+        from med_research.biomed.store_readiness import is_schema_initialized
+
+        return is_schema_initialized(self.database)
+
     def transaction(self) -> AbstractContextManager[sqlite3.Connection]:
         return self.database.transaction()
 
