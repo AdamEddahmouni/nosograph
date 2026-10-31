@@ -33,14 +33,14 @@ external connectors, LLM extraction, and persisted comparison runs.
 1. Create or sign in to a Heroku account.
 2. Confirm the GitHub Student Developer Pack Heroku offer is active (if using
    the student credit).
-3. Create the Heroku app (`heroku apps:create <app-name>`).
+3. Create the Heroku app (`heroku apps:create <app-name>`). The demo image sets `DEMO_REQUIRE_MODE=true`, `DEMO_MODE=true`, and `DEBUG=false`; startup refuses to run if the read-only mode is disabled.
 4. Configure the app config vars:
    - `DEBUG=false`
    - `DEMO_MODE=true`
    - `DEMO_SNAPSHOT_PATH=/app/data/demo/biomedical.sqlite3`
    - `DEMO_SNAPSHOT_MANIFEST=/app/data/demo/biomedical.manifest.json`
    - `CORS_ORIGINS=https://<app-name>.herokuapp.com` (never `*`)
-   - `API_KEY=<strong random secret>` (operator secret; never shown to users)
+   - Leave `API_KEY` unset for the public demo; setting it would block anonymous Compare-preview POST requests. The demo middleware blocks mutations and the biomedical snapshot opens read-only.
    - `DASHBOARD_CSP_MODE=enforce`
    - `RATE_LIMIT_REQUESTS=60`, `RATE_LIMIT_WINDOW=60`
 5. Add `HEROKU_API_KEY` and `HEROKU_APP_NAME` as GitHub repository secrets —
@@ -96,7 +96,7 @@ If Heroku is unavailable, deploy the same image to Azure Container Apps:
    --image nosograph-demo:latest --ingress external --target-port 8000`
    (or push to an Azure Container Registry first).
 2. Set the same env vars as the Heroku step, with `CORS_ORIGINS` pointing at
-   the public ingress URL and `API_KEY` as an operator secret.
+   the public ingress URL. Leave `API_KEY` unset for public preview.
 3. Configure **scale-to-zero** (minimum replicas = 0) and one replica max.
 4. Cost: see the current Container Apps free grant and per-request pricing;
    monitor credits in the Azure portal. Explicit shutdown:
@@ -118,7 +118,6 @@ fixtures via `scripts/build_demo_snapshot.py`. To refresh:
 
 - **Cost monitoring:** check the provider dashboard weekly; the demo should
   stay near zero cost when idle (scale-to-zero or destroy when unused).
-- **Secrets:** `API_KEY` and any provider tokens live only in the platform
-  config/secret store; never in the image or repository.
+- **Secrets:** Provider tokens live only in the platform secret store; never in the image or repository. The public demo needs no application `API_KEY`.
 - **Incident response:** the demo is read-only and stateless; recovery is
   rebuild-and-redeploy of the immutable image.
