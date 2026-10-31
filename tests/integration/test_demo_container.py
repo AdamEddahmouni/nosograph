@@ -44,6 +44,9 @@ def _strip_yaml_comments(text: str) -> str:
 def test_demo_image_bakes_snapshot_and_stays_non_root() -> None:
     dockerfile = (ROOT / "Dockerfile.demo").read_text(encoding="utf-8")
     assert "build_demo_snapshot.py" in dockerfile
+    assert "DEMO_REQUIRE_MODE=true" in dockerfile
+    assert "DEMO_MODE=true" in dockerfile
+    assert "DEBUG=false" in dockerfile
     assert "DEMO_SNAPSHOT_PATH=" in dockerfile
     assert "DEMO_SNAPSHOT_MANIFEST=" in dockerfile
     assert "USER appuser" in dockerfile
@@ -151,3 +154,12 @@ def test_demo_container_boots_read_only_without_redis() -> None:
             timeout=120,
             capture_output=True,
         )
+
+
+def test_demo_workflow_checks_runtime_mode_and_secrets() -> None:
+    workflow = (ROOT / ".github" / "workflows" / "demo-deploy.yml").read_text(
+        encoding="utf-8"
+    )
+    assert "if: ${{ secrets." not in workflow
+    assert "HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}" in workflow
+    assert '["demo"]["demo_mode"] is True' in workflow
