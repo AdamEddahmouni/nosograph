@@ -1,0 +1,173 @@
+{
+  "schema_version": "1",
+  "disease_id": "ovulation",
+  "source": "class_level_inference_from_disease_drug_catalog",
+  "coverage_level": "partial",
+  "curated_inputs": [
+    "disease_drug_catalog"
+  ],
+  "inferred_inputs": [
+    "drug_class_adverse_event_patterns",
+    "drug_class_tier_mapping",
+    "drug_symptom_overlap"
+  ],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments.",
+    "Adverse-event lists are class-level summaries, not label-derived contraindications or pharmacovigilance counts.",
+    "Validate current labels and patient-specific contraindications before use.",
+    "11 drug(s) have no recognisable pharmacologic class and no adverse-effect text: their empty adverse-event lists mean 'not known', not 'none'.",
+    "11 drug(s) are classified undetermined_risk: their absence from a risk tier is a gap in inference, not evidence of safety.",
+    "No curated symptom list was available, so disease_overlap_ae is empty."
+  ],
+  "default_profile": {
+    "common_ae": [
+      "abdominal pain",
+      "confusion",
+      "constipation",
+      "dizziness",
+      "dyspepsia",
+      "headache",
+      "hyperglycaemia",
+      "hypertension",
+      "insomnia",
+      "nausea",
+      "somnolence",
+      "tremor"
+    ],
+    "severe_ae": [
+      "adrenal suppression",
+      "dependence",
+      "gastrointestinal bleeding",
+      "immunosuppression",
+      "nephrotoxicity",
+      "neurotoxicity",
+      "osteoporosis",
+      "qt prolongation",
+      "respiratory depression",
+      "sepsis",
+      "serotonin syndrome"
+    ],
+    "disease_overlap_ae": [],
+    "black_box_warnings": [],
+    "severity_burden": 0,
+    "chronic_use_safety": 10,
+    "disease_specific_risk": 2.5,
+    "monitoring_required": "Class-level inference only: verify current labels and disease-specific contraindications before use.",
+    "evidence_grade": "inferred_class_default"
+  },
+  "drug_safety_tiers": {
+    "high_risk": [],
+    "moderate_risk": [
+      "dexamethasone",
+      "tacrolimus anhydrous"
+    ],
+    "low_risk": [
+      "amitriptyline",
+      "baclofen",
+      "gabapentin",
+      "ketoprofen"
+    ],
+    "undetermined_risk": [
+      "cabergoline",
+      "clomiphene",
+      "clomiphene citrate",
+      "gonadorelin",
+      "gonadorelin acetate",
+      "ketamine",
+      "loperamide",
+      "naloxone",
+      "ospemifene",
+      "oxybutynin",
+      "triptorelin"
+    ]
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL571",
+      "common_ae": [
+        "dyspepsia",
+        "nausea",
+        "abdominal pain"
+      ],
+      "severe_ae": [
+        "gastrointestinal bleeding",
+        "nephrotoxicity"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL629",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL701",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL269732",
+      "common_ae": [
+        "tremor",
+        "headache",
+        "hypertension"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "sepsis",
+        "neurotoxicity"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL384467",
+      "common_ae": [
+        "hyperglycaemia",
+        "weight gain",
+        "insomnia",
+        "dyspepsia"
+      ],
+      "severe_ae": [
+        "adrenal suppression",
+        "osteoporosis",
+        "immunosuppression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL940",
+      "common_ae": [
+        "somnolence",
+        "dizziness",
+        "confusion"
+      ],
+      "severe_ae": [
+        "respiratory depression",
+        "dependence"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    }
+  ]
+}

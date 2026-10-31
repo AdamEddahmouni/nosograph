@@ -1,15 +1,37 @@
-"""Shared disease-derived display context for reports and exports."""
+"""Shared disease-derived display context and output paths for reports."""
 
 from __future__ import annotations
 
+import os
 from collections.abc import Mapping
 from html import escape
+from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
 from med_research.diseases.base import Disease
 
 if TYPE_CHECKING:
     from med_research.pipeline.provenance import ProvenanceMetadata
+
+REPORT_DIR_ENV_VAR = "MED_RESEARCH_REPORT_DIR"
+
+
+def report_output_dir(module_dir: Path) -> Path:
+    """Resolve a report directory, mirroring pipeline paths under an override."""
+    module_dir = Path(module_dir)
+    override = os.environ.get(REPORT_DIR_ENV_VAR)
+    if not override:
+        module_dir.mkdir(parents=True, exist_ok=True)
+        return module_dir
+
+    root = Path(override)
+    try:
+        relative = module_dir.resolve().relative_to(Path(__file__).resolve().parent)
+    except ValueError:
+        relative = Path(module_dir.name)
+    output = root / relative
+    output.mkdir(parents=True, exist_ok=True)
+    return output
 
 
 def provenance_footer_html(provenance: ProvenanceMetadata | Mapping[str, Any] | None) -> str:

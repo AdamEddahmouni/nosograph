@@ -1112,7 +1112,12 @@ class TestCliCoverageBoost:
         monkeypatch.setattr(network_analyzer, "print_analysis", lambda *a, **k: None)
         monkeypatch.setattr(
             "med_research.pipeline.adverse_events.profiler.get_safety_summary",
-            lambda **kwargs: {"total_drugs": 0, "avg_safety_score": 0.0},
+            lambda **kwargs: {
+                "total_drugs": 0,
+                "scored_drugs": 0,
+                "unscored_drugs": 0,
+                "avg_safety_score": None,
+            },
         )
         monkeypatch.setattr(
             "med_research.pipeline.adverse_events.profiler.print_analysis",
@@ -1812,8 +1817,10 @@ class TestExportRouterExtended:
         assert "report" in resp.text
 
     def test_export_report_uses_module_root_fallback(self, client, tmp_path, monkeypatch):
+        from med_research.pipeline.reporting import REPORT_DIR_ENV_VAR
         from med_research.web.routers import export as export_mod
 
+        monkeypatch.delenv(REPORT_DIR_ENV_VAR, raising=False)
         module_root = tmp_path / "car_t_predictor"
         module_root.mkdir()
         (module_root / "report.html").write_text("<html>cart</html>", encoding="utf-8")
@@ -1821,6 +1828,47 @@ class TestExportRouterExtended:
 
         resp = client.get("/api/export/report/cart")
         assert resp.status_code == 200
+        assert "cart" in resp.text
+
+    def test_export_report_prefers_configured_report_directory(self, client, tmp_path, monkeypatch):
+        from med_research.pipeline.reporting import REPORT_DIR_ENV_VAR
+        from med_research.web.routers import export as export_mod
+
+        source_module_root = tmp_path / "pipeline" / "drug_repurposing"
+        source_module_root.mkdir(parents=True)
+        (source_module_root / "report.html").write_text("<html>source</html>", encoding="utf-8")
+
+        report_root = tmp_path / "isolated-reports"
+        override_module_root = report_root / "drug_repurposing"
+        override_module_root.mkdir(parents=True)
+        (override_module_root / "report.html").write_text("<html>override</html>", encoding="utf-8")
+
+        monkeypatch.setattr(export_mod, "PIPELINE_DIR", tmp_path / "pipeline")
+        monkeypatch.setenv(REPORT_DIR_ENV_VAR, str(report_root))
+
+        resp = client.get("/api/export/report/repurpose")
+
+        assert resp.status_code == 200
+        assert "override" in resp.text
+        assert "source" not in resp.text
+
+    def test_export_report_falls_back_when_configured_report_is_missing(
+        self, client, tmp_path, monkeypatch
+    ):
+        from med_research.pipeline.reporting import REPORT_DIR_ENV_VAR
+        from med_research.web.routers import export as export_mod
+
+        module_root = tmp_path / "pipeline" / "car_t_predictor"
+        module_root.mkdir(parents=True)
+        (module_root / "report.html").write_text("<html>source fallback</html>", encoding="utf-8")
+
+        monkeypatch.setattr(export_mod, "PIPELINE_DIR", tmp_path / "pipeline")
+        monkeypatch.setenv(REPORT_DIR_ENV_VAR, str(tmp_path / "isolated-reports"))
+
+        resp = client.get("/api/export/report/cart")
+
+        assert resp.status_code == 200
+        assert "source fallback" in resp.text
 
     def test_list_export_modules_marks_availability(self, client, tmp_path, monkeypatch):
         from med_research.web.routers import export as export_mod

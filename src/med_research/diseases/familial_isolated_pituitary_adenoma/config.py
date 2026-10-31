@@ -73,8 +73,10 @@ DRUG_SAFETY_RISK = {
         "dexamethasone",
     ],
     "low_risk": [
+        "lanreotide",
         "metformin",
     ],
+    "undetermined_risk": [],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -93,15 +93,17 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
-        "baclofen",
-        "chlordiazepoxide",
-        "levetiracetam",
-        "lorazepam",
         "prazosin",
     ],
     "low_risk": [
+        "baclofen",
+        "chlordiazepoxide",
         "gabapentin",
         "levetiracetam",
+        "lorazepam",
+    ],
+    "undetermined_risk": [
+        "oxytocin",
     ],
 }
 

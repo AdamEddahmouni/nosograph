@@ -566,19 +566,19 @@ def test_semantic_search_report_provenance():
             "synergy",
             "cmd_synergy",
             "synergy_pairs",
-            "src/med_research/pipeline/drug_synergy/report.html",
+            "drug_synergy/report.html",
         ),
         (
             "expression",
             "cmd_expression",
             "expression_results",
-            "src/med_research/pipeline/gene_expression/report.html",
+            "gene_expression/report.html",
         ),
         (
             "cross-disease",
             "cmd_cross_disease",
             "cross_disease_analysis",
-            "src/med_research/pipeline/cross_disease/report.html",
+            "cross_disease/report.html",
         ),
     ],
 )
@@ -589,6 +589,7 @@ def test_cli_export_html_includes_provenance_footer(
     report_rel_path,
     monkeypatch,
     request,
+    report_dir,
 ):
     """CLI --export-html should produce reports with a provenance footer.
 
@@ -613,7 +614,7 @@ def test_cli_export_html_includes_provenance_footer(
     engine_result = request.getfixturevalue(engine_fixture)
     monkeypatch.setattr(patch_target, lambda **kwargs: engine_result)
 
-    report_path = PROJECT_ROOT / report_rel_path
+    report_path = report_dir / report_rel_path
     report_path.unlink(missing_ok=True)
 
     args = ["--export-html", "--top", "5", "--disease", "ra"]

@@ -40,3 +40,12 @@ data/
 .venv-wheel/
 site/
 test-artifacts/
+
+# Local environment secrets and scratch outputs (never bake into demo image)
+.env
+.env.*
+!.env.example
+.superpowers/
+.tmp-demo/
+.pytest-tmp/
+artifacts/

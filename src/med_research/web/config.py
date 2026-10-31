@@ -25,6 +25,35 @@ def parse_demo_mode(value: str | None = None) -> bool:
 
 
 DEMO_MODE = parse_demo_mode()
+
+# Public snapshot-backed demo. Keep false for normal self-hosting.
+DEMO_SNAPSHOT_VERSION = os.environ.get("DEMO_SNAPSHOT_VERSION", "")
+DEFAULT_DEMO_SNAPSHOT_PATH = Path("/app/demo-data/biomedical.sqlite3")
+
+
+def parse_demo_snapshot_path(value: str | None = None) -> Path:
+    """Resolve DEMO_SNAPSHOT_PATH from an explicit value or the environment."""
+    if value is None:
+        value = os.environ.get("DEMO_SNAPSHOT_PATH", str(DEFAULT_DEMO_SNAPSHOT_PATH))
+    return Path(value)
+
+
+DEMO_SNAPSHOT_PATH = parse_demo_snapshot_path()
+DEMO_SNAPSHOT_MANIFEST = os.environ.get(
+    "DEMO_SNAPSHOT_MANIFEST",
+    str(DEMO_SNAPSHOT_PATH.with_name(DEMO_SNAPSHOT_PATH.stem + ".manifest.json")),
+)
+
+
+def parse_demo_snapshot_manifest(value: str | None = None) -> Path:
+    """Resolve the manifest path, keeping it adjacent to the configured database by default."""
+    if value is None:
+        value = os.environ.get("DEMO_SNAPSHOT_MANIFEST")
+        if value is None:
+            value = str(parse_demo_snapshot_path().with_name("biomedical.manifest.json"))
+    return Path(value)
+
+
 OPENAPI_ENABLED = (
     os.environ.get(
         "OPENAPI_ENABLED",

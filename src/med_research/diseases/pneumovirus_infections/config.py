@@ -72,18 +72,22 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
+        "rituximab",
+        "theophylline",
+    ],
+    "low_risk": [
+        "hydroxychloroquine",
+    ],
+    "undetermined_risk": [
+        "anakinra",
+        "bulevirtide",
         "danirixin",
         "ibalizumab",
         "imiquimod",
         "maraviroc",
         "ribavirin",
         "ritonavir",
-        "rituximab",
-        "theophylline",
         "tocilizumab",
-    ],
-    "low_risk": [
-        "hydroxychloroquine",
     ],
 }
 

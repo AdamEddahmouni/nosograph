@@ -11,7 +11,7 @@ from med_research.pipeline.adapter_options import AdapterOptions
 from med_research.pipeline.base import BasePipelineModule
 from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
-from med_research.pipeline.reporting import render_report
+from med_research.pipeline.reporting import render_report, report_output_dir
 from med_research.pipeline.results import CrisprResult
 
 
@@ -43,8 +43,7 @@ class CrisprModule(BasePipelineModule[CrisprResult]):
         *,
         provenance: ProvenanceMetadata | None = None,
     ) -> Path:
-        output_dir = Path("dist/reports")
-        output_dir.mkdir(parents=True, exist_ok=True)
+        output_dir = report_output_dir(Path("dist/reports"))
         report_path = output_dir / f"crispr_{disease_id}.html"
 
         prov = provenance or self.build_provenance(disease_id)

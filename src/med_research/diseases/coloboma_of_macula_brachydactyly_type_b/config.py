@@ -93,14 +93,20 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
-        "acetaminophen",
         "dexamethasone",
-        "midazolam",
-        "midazolam hydrochloride",
         "roflumilast",
         "rolipram",
     ],
-    "low_risk": [],
+    "low_risk": [
+        "acetaminophen",
+        "midazolam",
+        "midazolam hydrochloride",
+    ],
+    "undetermined_risk": [
+        "alteplase",
+        "onabotulinumtoxina",
+        "tenecteplase",
+    ],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Any, Mapping
 
 from med_research.pipeline.provenance import ProvenanceMetadata
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 try:
     import matplotlib
@@ -39,7 +39,7 @@ def generate_screening_report(
 ) -> str:
     """Generate an HTML report from virtual screening results."""
 
-    output_path = Path(__file__).parent / "screening_report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "screening_report.html"
     context = disease_context(disease_id)
     stats = results["stats"]
     coverage = results.get("coverage", {})

@@ -1,0 +1,281 @@
+{
+  "schema_version": "1",
+  "disease_id": "x_linked_dominant_intellectual_disability_epilepsy_syndrome",
+  "source": "class_level_inference_from_disease_drug_catalog",
+  "coverage_level": "partial",
+  "curated_inputs": [
+    "disease_drug_catalog"
+  ],
+  "inferred_inputs": [
+    "drug_class_adverse_event_patterns",
+    "drug_class_tier_mapping",
+    "drug_symptom_overlap"
+  ],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments.",
+    "Adverse-event lists are class-level summaries, not label-derived contraindications or pharmacovigilance counts.",
+    "Validate current labels and patient-specific contraindications before use.",
+    "11 drug(s) have no recognisable pharmacologic class and no adverse-effect text: their empty adverse-event lists mean 'not known', not 'none'.",
+    "11 drug(s) are classified undetermined_risk: their absence from a risk tier is a gap in inference, not evidence of safety.",
+    "No curated symptom list was available, so disease_overlap_ae is empty."
+  ],
+  "default_profile": {
+    "common_ae": [
+      "constipation",
+      "diarrhoea",
+      "dizziness",
+      "dyspepsia",
+      "fatigue",
+      "headache",
+      "hyperglycaemia",
+      "infusion related reaction",
+      "insomnia",
+      "nausea",
+      "somnolence",
+      "tachycardia"
+    ],
+    "severe_ae": [
+      "adrenal suppression",
+      "cardiac arrhythmia",
+      "cardiac conduction disturbance",
+      "hepatitis b reactivation",
+      "hypertension",
+      "immunosuppression",
+      "osteoporosis",
+      "progressive multifocal leukoencephalopathy",
+      "psychiatric events",
+      "qt prolongation",
+      "respiratory depression",
+      "sepsis",
+      "serotonin syndrome",
+      "weight loss"
+    ],
+    "disease_overlap_ae": [],
+    "black_box_warnings": [],
+    "severity_burden": 0,
+    "chronic_use_safety": 10,
+    "disease_specific_risk": 2.2,
+    "monitoring_required": "Class-level inference only: verify current labels and disease-specific contraindications before use.",
+    "evidence_grade": "inferred_class_default"
+  },
+  "drug_safety_tiers": {
+    "high_risk": [],
+    "moderate_risk": [
+      "mifepristone",
+      "osoresnontrine",
+      "rituximab"
+    ],
+    "low_risk": [
+      "aripiprazole",
+      "brexpiprazole",
+      "dexmedetomidine",
+      "haloperidol",
+      "lamotrigine",
+      "olanzapine",
+      "paliperidone",
+      "quetiapine",
+      "risperidone",
+      "trifluoperazine hydrochloride"
+    ],
+    "undetermined_risk": [
+      "amantadine",
+      "amantadine hydrochloride",
+      "bremelanotide acetate",
+      "cannabidiol",
+      "chlorpromazine",
+      "galantamine",
+      "galantamine hydrobromide",
+      "gts-21",
+      "ketamine",
+      "naltrexone",
+      "valproic acid"
+    ]
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL741",
+      "common_ae": [
+        "dizziness",
+        "somnolence",
+        "nausea"
+      ],
+      "severe_ae": [
+        "cardiac conduction disturbance",
+        "respiratory depression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL85",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1621",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL778",
+      "common_ae": [
+        "tremor",
+        "tachycardia",
+        "headache"
+      ],
+      "severe_ae": [
+        "cardiac arrhythmia",
+        "hypertension"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1257040",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1276308",
+      "common_ae": [
+        "hyperglycaemia",
+        "weight gain",
+        "insomnia",
+        "dyspepsia"
+      ],
+      "severe_ae": [
+        "adrenal suppression",
+        "osteoporosis",
+        "immunosuppression"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL54",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL716",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1112",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL2105760",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL4206492",
+      "common_ae": [
+        "nausea",
+        "diarrhoea",
+        "headache"
+      ],
+      "severe_ae": [
+        "weight loss",
+        "psychiatric events"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL715",
+      "common_ae": [
+        "headache",
+        "dizziness",
+        "constipation"
+      ],
+      "severe_ae": [
+        "qt prolongation",
+        "serotonin syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL1201576",
+      "common_ae": [
+        "infusion related reaction",
+        "fatigue",
+        "nausea"
+      ],
+      "severe_ae": [
+        "progressive multifocal leukoencephalopathy",
+        "sepsis",
+        "hepatitis b reactivation"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    }
+  ]
+}
