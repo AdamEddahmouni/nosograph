@@ -49,6 +49,7 @@ def test_demo_image_bakes_snapshot_and_stays_non_root() -> None:
     assert "DEBUG=false" in dockerfile
     assert "DEMO_SNAPSHOT_PATH=" in dockerfile
     assert "DEMO_SNAPSHOT_MANIFEST=" in dockerfile
+    assert "os.environ.get('PORT', '8000')" in dockerfile
     assert "USER appuser" in dockerfile
     assert "pip install --no-deps -e ." in dockerfile
 
