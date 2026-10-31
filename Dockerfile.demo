@@ -32,7 +32,12 @@ RUN pip install --no-deps -e .
 # Bake the immutable fixture-backed snapshot into the image. The manifest is
 # written next to the database by build_demo_snapshot.py; startup validates
 # both and refuses to boot if they are missing or inconsistent.
-ENV DEMO_SNAPSHOT_PATH=/app/data/demo/biomedical.sqlite3 \
+ENV DEMO_REQUIRE_MODE=true \
+    DEMO_MODE=true \
+    DEBUG=false \
+    DASHBOARD_CSP_MODE=enforce \
+    OPENAPI_ENABLED=false \
+    DEMO_SNAPSHOT_PATH=/app/data/demo/biomedical.sqlite3 \
     DEMO_SNAPSHOT_MANIFEST=/app/data/demo/biomedical.manifest.json
 RUN python scripts/build_demo_snapshot.py --output "$DEMO_SNAPSHOT_PATH"
 
