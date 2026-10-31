@@ -8,7 +8,7 @@
 #   docker compose -f docker-compose.demo.yml down
 #
 # Production notes:
-#   - Set DEBUG=false, DEMO_MODE=true, and a strong operator API_KEY.
+#   - The image enforces DEMO_MODE=true and DEBUG=false; keep API_KEY unset for public preview.
 #   - CORS_ORIGINS must list the public origin (no wildcard for the demo).
 #   - The platform-injected PORT (e.g. Heroku) is honored via ${PORT}.
 
