@@ -81,6 +81,19 @@ Equivalent:
 python -m pytest tests/ -m "unit and not network and not slow" -q
 ```
 
+### Windows and restricted temp directories
+
+pytest creates `tmp_path` fixtures under the system temp directory. On
+locked-down Windows hosts that path can return `PermissionError` (for example
+`...\Temp\pytest-of-<user>`). Point the run at a writable directory instead:
+
+```bash
+python -m pytest tests/ -m "unit and not network and not slow"   --basetemp=../noso-pytest-tmp
+```
+
+This is an environment workaround, not a test change: do not skip the affected
+tests. The repository-local `.pytest_tmp/` artifact is git-ignored.
+
 Fast unit tests (excluding `slow` and `integration`):
 
 ```bash
