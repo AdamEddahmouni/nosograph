@@ -158,9 +158,7 @@ def test_demo_container_boots_read_only_without_redis() -> None:
 
 
 def test_demo_workflow_checks_runtime_mode_and_secrets() -> None:
-    workflow = (ROOT / ".github" / "workflows" / "demo-deploy.yml").read_text(
-        encoding="utf-8"
-    )
+    workflow = (ROOT / ".github" / "workflows" / "demo-deploy.yml").read_text(encoding="utf-8")
     assert "if: ${{ secrets." not in workflow
     assert "HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}" in workflow
     assert '["demo"]["demo_mode"] is True' in workflow
