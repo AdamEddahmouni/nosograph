@@ -50,7 +50,11 @@ def parse_demo_snapshot_manifest(value: str | None = None) -> Path:
     if value is None:
         value = os.environ.get("DEMO_SNAPSHOT_MANIFEST")
         if value is None:
-            value = str(parse_demo_snapshot_path().with_name("biomedical.manifest.json"))
+            # Keep the manifest adjacent to the configured database. Deriving
+            # the name from the database stem (not a fixed "biomedical") means
+            # a custom DEMO_SNAPSHOT_PATH still finds its own manifest.
+            database_path = parse_demo_snapshot_path()
+            value = str(database_path.with_name(f"{database_path.stem}.manifest.json"))
     return Path(value)
 
 

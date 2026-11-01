@@ -89,3 +89,20 @@ def test_demo_mode_metadata_is_read_only(demo_client):
     response = demo_client.post("/api/demo_mode", json={"demo_mode": False})
     assert response.status_code == 403
     assert response.json() == DEMO_READ_ONLY
+
+
+def test_manifest_default_follows_custom_snapshot_filename(monkeypatch, tmp_path):
+    """A custom DEMO_SNAPSHOT_PATH must not point at a fixed-named manifest."""
+    from med_research.web.config import parse_demo_snapshot_manifest
+
+    monkeypatch.delenv("DEMO_SNAPSHOT_MANIFEST", raising=False)
+    monkeypatch.setenv("DEMO_SNAPSHOT_PATH", str(tmp_path / "lupus-demo.sqlite3"))
+    assert parse_demo_snapshot_manifest() == tmp_path / "lupus-demo.manifest.json"
+
+
+def test_manifest_explicit_env_wins_over_derived_default(monkeypatch, tmp_path):
+    from med_research.web.config import parse_demo_snapshot_manifest
+
+    monkeypatch.setenv("DEMO_SNAPSHOT_PATH", str(tmp_path / "lupus-demo.sqlite3"))
+    monkeypatch.setenv("DEMO_SNAPSHOT_MANIFEST", str(tmp_path / "explicit.json"))
+    assert parse_demo_snapshot_manifest() == tmp_path / "explicit.json"
