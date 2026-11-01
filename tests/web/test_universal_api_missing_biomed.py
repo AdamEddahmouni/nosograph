@@ -79,6 +79,19 @@ def test_biomed_pathways_returns_empty_payload(uninitialized_biomed_client) -> N
     assert body["total_paths"] == 0
     assert body["paths"] == []
     assert body["store_state"]["status"] == "uninitialized"
+    assert "biomed init" in body["store_state"]["initialization_hint"]
+
+
+def test_biomed_target_prioritization_returns_empty_payload(uninitialized_biomed_client) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get("/api/v1/biomed/target-prioritization/MONDO:0007915")
+    assert response.status_code == 200
+    body = response.json()
+    assert body["disease_curie"] == "MONDO:0007915"
+    assert body["total_targets"] == 0
+    assert body["rankings"] == []
+    assert body["store_state"]["status"] == "uninitialized"
+    assert "biomed init" in body["store_state"]["initialization_hint"]
 
 
 def test_initialized_empty_store_still_serves_lists(uninitialized_biomed_client) -> None:
