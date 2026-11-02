@@ -77,6 +77,7 @@ class AnalyticsStatsView(BaseModel):
     total_snapshots: int
     entity_type_distribution: dict[str, int] = Field(default_factory=dict)
     predicate_distribution: dict[str, int] = Field(default_factory=dict)
+    store_state: BiomedicalStoreStateView | None = None
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
 
 
@@ -100,7 +101,9 @@ class AnalyticsSharedMechanismView(BaseModel):
     condition_b: str
     shared_pathways: list[str]
     shared_genes: list[str]
-    jaccard_similarity: float
+    # ``None`` means "not computed" (store uninitialized); 0.0 is a real result.
+    jaccard_similarity: float | None
+    store_state: BiomedicalStoreStateView | None = None
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
 
 
@@ -119,6 +122,7 @@ class AnalyticsSubgraphView(BaseModel):
     root_curie: str
     edges: list[AnalyticsSubgraphEdgeView]
     edge_count: int
+    store_state: BiomedicalStoreStateView | None = None
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
 
 

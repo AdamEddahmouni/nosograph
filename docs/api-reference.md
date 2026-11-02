@@ -131,6 +131,25 @@ Versioned read-only condition endpoints backed by the canonical biomedical store
 | GET | `/api/v1/biomed/pathways` | Find claim paths between an entity pair (`max_depth` 1–5, `limit` 1–50) |
 | GET | `/api/v1/biomed/target-prioritization/{disease_curie}` | Rank targets for a disease by supporting/contradictory evidence and normalized centrality (`top_k` 1–50) |
 
+#### Uninitialized store responses
+
+List and aggregate routes stay `200 OK` when the canonical store has not been initialized, but they carry an explicit readiness marker so an empty result is never read as absence of evidence:
+
+```json
+{
+  "items": [],
+  "total": 0,
+  "store_state": {
+    "status": "uninitialized",
+    "initialization_hint": "Initialize the canonical biomedical store with `python -m med_research.cli biomed init` ..."
+  }
+}
+```
+
+That covers `/api/v1/conditions/search`, `/api/v1/snapshots`, and the biomedical analytics routes above. `store_state` is absent or `null` once the store is initialized, so a missing marker means the store itself is ready and a zero or empty value is a real computed result. Similarity values that were not computed are `null`, not `0.0`; the cross-disease matrix returns an empty `matrix` rather than an all-zero square, because zero overlap is a finding and an unbuilt store is not.
+
+Single-resource routes (`/api/v1/conditions/{curie}`, `/api/v1/claims/{claim_id}`, and `/api/v1/analytics/targets/{curie}`) instead return `503` with `error_type: "BiomedicalStoreNotReadyError"` and the same `store_state` object, because their response body is a bare resource or list that cannot carry the marker.
+
 Compare V2 responses include `result_schema_version`, canonical condition and entity labels, exact claim IDs per condition, coverage, warnings, snapshot IDs, and a deterministic claim-set fingerprint. Result-schema versioning is independent of the biomedical algorithm version.
 
 Examples:
