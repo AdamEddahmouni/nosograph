@@ -9,8 +9,10 @@ CLI or daemon is unavailable.
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
+import socket
 import subprocess
 import time
 import urllib.request
@@ -91,10 +93,8 @@ def test_demo_snapshot_builder_is_offline_and_reproducible(tmp_path) -> None:
     assert output.stat().st_size > 0
 
 
-@pytest.mark.integration
-@pytest.mark.slow
-def test_demo_container_boots_read_only_without_redis() -> None:
-    """End-to-end Docker smoke: build, boot, health/ready, blocked job POST."""
+def _require_docker() -> None:
+    """Skip the runtime smoke when the Docker CLI or daemon is unavailable."""
     if shutil.which("docker") is None:
         pytest.skip("docker CLI not available")
     probe = subprocess.run(
@@ -106,6 +106,20 @@ def test_demo_container_boots_read_only_without_redis() -> None:
     )
     if probe.returncode != 0:
         pytest.skip("docker daemon not available")
+
+
+def _free_tcp_port() -> int:
+    """Reserve an unused loopback port for the injected-PORT smoke."""
+    with socket.socket() as sock:
+        sock.bind(("127.0.0.1", 0))
+        return int(sock.getsockname()[1])
+
+
+@pytest.mark.integration
+@pytest.mark.slow
+def test_demo_container_boots_read_only_without_redis() -> None:
+    """End-to-end Docker smoke: build, boot, health/ready, blocked job POST."""
+    _require_docker()
 
     compose_file = ROOT / "docker-compose.demo.yml"
     subprocess.run(
@@ -154,6 +168,100 @@ def test_demo_container_boots_read_only_without_redis() -> None:
             check=False,
             timeout=120,
             capture_output=True,
+        )
+
+
+@pytest.mark.integration
+@pytest.mark.slow
+def test_demo_container_honours_platform_injected_port() -> None:
+    """Hosting platforms inject PORT; app, probes, and healthcheck must follow."""
+    _require_docker()
+    port = _free_tcp_port()
+    image = f"nosograph-demo-altport:{os.getpid()}"
+    container = f"nosograph-demo-altport-{os.getpid()}"
+    base = f"http://127.0.0.1:{port}"
+
+    subprocess.run(
+        ["docker", "build", "-f", "Dockerfile.demo", "-t", image, "."],
+        cwd=ROOT,
+        check=True,
+        timeout=900,
+        capture_output=True,
+    )
+    subprocess.run(["docker", "rm", "-f", container], check=False, capture_output=True)
+    subprocess.run(
+        [
+            "docker",
+            "run",
+            "-d",
+            "--name",
+            container,
+            "-e",
+            f"PORT={port}",
+            "-p",
+            f"127.0.0.1:{port}:{port}",
+            image,
+        ],
+        check=True,
+        timeout=120,
+        capture_output=True,
+    )
+    try:
+        deadline = time.monotonic() + 180
+        last_error: Exception | None = None
+        while time.monotonic() < deadline:
+            try:
+                with urllib.request.urlopen(f"{base}/api/health", timeout=5) as response:
+                    assert response.status == 200
+                break
+            except Exception as exc:  # noqa: BLE001 - container still starting
+                last_error = exc
+                time.sleep(5)
+        else:
+            pytest.fail(f"Demo container did not answer on PORT={port}: {last_error}")
+
+        with urllib.request.urlopen(f"{base}/api/ready", timeout=10) as response:
+            ready = json.loads(response.read().decode("utf-8"))
+        assert ready["status"] == "ok"
+        assert ready["demo"]["demo_mode"] is True
+        assert ready["demo"]["snapshot_version"].startswith("demo-")
+
+        # The image HEALTHCHECK resolves the same injected PORT.
+        status = "unknown"
+        deadline = time.monotonic() + 180
+        while time.monotonic() < deadline:
+            status = subprocess.run(
+                ["docker", "inspect", "--format", "{{.State.Health.Status}}", container],
+                check=True,
+                capture_output=True,
+                text=True,
+                timeout=30,
+            ).stdout.strip()
+            if status == "healthy":
+                break
+            time.sleep(5)
+        else:
+            pytest.fail(f"Container healthcheck never passed with PORT={port}: {status}")
+
+        request = urllib.request.Request(
+            f"{base}/api/jobs",
+            data=b'{"module": "docking", "disease_id": "sle"}',
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        try:
+            urllib.request.urlopen(request, timeout=10)
+        except urllib.error.HTTPError as exc:
+            assert exc.code == 403
+            assert json.loads(exc.read().decode("utf-8"))["code"] == "demo_read_only"
+        else:
+            pytest.fail("Demo container accepted a job submission on the injected port")
+    finally:
+        subprocess.run(
+            ["docker", "rm", "-f", container], check=False, timeout=120, capture_output=True
+        )
+        subprocess.run(
+            ["docker", "rmi", "-f", image], check=False, timeout=120, capture_output=True
         )
 
 
