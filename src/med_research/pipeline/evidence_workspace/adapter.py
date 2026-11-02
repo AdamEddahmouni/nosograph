@@ -13,6 +13,7 @@ from med_research.pipeline.evidence_workspace.schemas import EvidenceDossier, Re
 from med_research.pipeline.evidence_workspace.sources import EvidenceSource
 from med_research.pipeline.provenance import ProvenanceMetadata, build_provenance
 from med_research.pipeline.registry import register_module
+from med_research.pipeline.reporting import report_output_dir
 
 
 def _default_question(disease_id: str) -> str:
@@ -81,7 +82,7 @@ class EvidenceWorkspaceModule(BasePipelineModule[EvidenceDossier]):
             manifest["provenance"] = provenance
             dossier = results.model_copy(update={"manifest": manifest})
 
-        output = Path(__file__).parent / f"report_{disease_id}.html"
+        output = report_output_dir(Path(__file__).parent) / f"report_{disease_id}.html"
         return write_html(dossier, output)
 
     def build_provenance(

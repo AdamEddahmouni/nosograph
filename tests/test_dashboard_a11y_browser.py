@@ -18,7 +18,6 @@ playwright = pytest.importorskip("playwright.sync_api")
 Browser = playwright.Browser
 Page = playwright.Page
 expect = playwright.expect
-sync_playwright = playwright.sync_playwright
 
 PROJECT_ROOT = Path(__file__).parents[1]
 STATIC_DIR = PROJECT_ROOT / "src" / "med_research" / "web" / "static"
@@ -59,17 +58,6 @@ def static_server() -> str:
         server.shutdown()
         thread.join(timeout=5)
         server.server_close()
-
-
-@pytest.fixture(scope="session")
-def browser() -> Browser:
-    try:
-        with sync_playwright() as playwright_context:
-            browser = playwright_context.chromium.launch(headless=True)
-            yield browser
-            browser.close()
-    except Exception as exc:
-        pytest.skip(f"Playwright Chromium is not available: {exc}")
 
 
 @pytest.fixture

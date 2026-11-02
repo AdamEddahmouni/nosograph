@@ -127,11 +127,18 @@ def _entity_search_count_sql(type_clause: str) -> str:
 
 
 def _entity_search_rows_sql(type_clause: str) -> str:
+    # One row per entity. Joining entity_revisions directly fans out over every
+    # historical label (demo snapshots import both MONDO and the legacy profile
+    # for the same CURIE), so the label is resolved with the same "latest
+    # revision" rule as get_entity: active snapshot first, then newest revision.
     return (
         f"SELECT DISTINCT e.id, e.primary_curie, e.entity_type, e.created_in_snapshot_id, "
-        f"COALESCE(r.label, e.primary_curie) AS label FROM entities e "
+        f"COALESCE((SELECT r.label FROM entity_revisions r "
+        f"LEFT JOIN active_snapshots a ON a.snapshot_id = r.snapshot_id "
+        f"WHERE r.entity_id = e.id "
+        f"ORDER BY CASE WHEN a.snapshot_id IS NOT NULL THEN 0 ELSE 1 END, r.id DESC "
+        f"LIMIT 1), e.primary_curie) AS label FROM entities e "
         f"JOIN entity_names n ON n.entity_id = e.id "
-        f"LEFT JOIN entity_revisions r ON r.entity_id = e.id "
         f"WHERE n.name_normalized LIKE ? {type_clause} "  # nosec B608
         f"ORDER BY label COLLATE NOCASE, e.primary_curie LIMIT ? OFFSET ?"
     )
@@ -154,8 +161,8 @@ def _snapshot_list_sql(where: str) -> str:
 
 # Dynamic INSERT/SELECT fragments use typed model field names, not user input.
 class BiomedicalRepository:
-    def __init__(self, path: Path) -> None:
-        self.database = BiomedicalDatabase(path)
+    def __init__(self, path: Path, *, read_only: bool = False) -> None:
+        self.database = BiomedicalDatabase(path, read_only=read_only)
 
     def initialize(self) -> None:
         self.database.initialize()

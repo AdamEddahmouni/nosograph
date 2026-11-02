@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from med_research.pipeline.provenance import ProvenanceMetadata
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 try:
     import matplotlib
@@ -37,7 +37,7 @@ def generate_ml_report(
     provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate an HTML report from ML prediction results."""
-    output_path = Path(__file__).parent / "ml_report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "ml_report.html"
 
     metrics = results.get("model_metrics", {})
     top = results.get("top_untargeted", [])

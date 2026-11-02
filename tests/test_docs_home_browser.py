@@ -31,7 +31,6 @@ pytest.importorskip("mkdocs")
 
 Browser = playwright.Browser
 Page = playwright.Page
-sync_playwright = playwright.sync_playwright
 
 PROJECT_ROOT = Path(__file__).parents[1]
 
@@ -71,23 +70,6 @@ def docs_server() -> str:
             server.shutdown()
             thread.join(timeout=5)
             server.server_close()
-
-
-@pytest.fixture(scope="session")
-def browser() -> Browser:
-    # Repo convention: one session browser per browser-test module. Note this
-    # makes browser modules mutually exclusive within a single pytest process
-    # (a second sync_playwright() raises "Sync API inside the asyncio loop"
-    # while another module's session browser is alive) — run browser modules
-    # in separate invocations, as the verification gates do. The skip here
-    # degrades that situation gracefully instead of erroring.
-    try:
-        with sync_playwright() as playwright_context:
-            browser = playwright_context.chromium.launch(headless=True)
-            yield browser
-            browser.close()
-    except Exception as exc:
-        pytest.skip(f"Playwright Chromium is not available: {exc}")
 
 
 @pytest.fixture

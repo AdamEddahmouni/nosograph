@@ -1,0 +1,124 @@
+{
+  "schema_version": "1",
+  "disease_id": "selective_iga_deficiency_disease",
+  "source": "class_level_inference_from_disease_drug_catalog",
+  "coverage_level": "partial",
+  "curated_inputs": [
+    "disease_drug_catalog"
+  ],
+  "inferred_inputs": [
+    "drug_class_adverse_event_patterns",
+    "drug_class_tier_mapping",
+    "drug_symptom_overlap"
+  ],
+  "limitations": [
+    "Safety scores are research heuristics, not individualized clinical risk assessments.",
+    "Adverse-event lists are class-level summaries, not label-derived contraindications or pharmacovigilance counts.",
+    "Validate current labels and patient-specific contraindications before use.",
+    "2 drug(s) have no recognisable pharmacologic class and no adverse-effect text: their empty adverse-event lists mean 'not known', not 'none'.",
+    "No curated symptom list was available, so disease_overlap_ae is empty."
+  ],
+  "default_profile": {
+    "common_ae": [
+      "fatigue",
+      "headache",
+      "hypertension",
+      "mucositis",
+      "myelosuppression",
+      "nausea",
+      "tremor"
+    ],
+    "severe_ae": [
+      "hepatotoxicity",
+      "myelosuppression",
+      "nephrotoxicity",
+      "neurotoxicity",
+      "sepsis",
+      "tumour lysis syndrome"
+    ],
+    "disease_overlap_ae": [],
+    "black_box_warnings": [],
+    "severity_burden": 3.3,
+    "chronic_use_safety": 6.7,
+    "disease_specific_risk": 10,
+    "monitoring_required": "Class-level inference only: verify current labels and disease-specific contraindications before use.",
+    "evidence_grade": "inferred_class_default"
+  },
+  "drug_safety_tiers": {
+    "high_risk": [
+      "alemtuzumab",
+      "fludarabine phosphate"
+    ],
+    "moderate_risk": [
+      "cyclosporine",
+      "mycophenolate mofetil",
+      "sirolimus",
+      "tacrolimus anhydrous"
+    ],
+    "low_risk": [],
+    "undetermined_risk": []
+  },
+  "profiles": [
+    {
+      "drug_id": "CHEMBL1096882",
+      "common_ae": [
+        "nausea",
+        "fatigue",
+        "mucositis",
+        "myelosuppression"
+      ],
+      "severe_ae": [
+        "myelosuppression",
+        "hepatotoxicity",
+        "tumour lysis syndrome"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL160",
+      "common_ae": [
+        "tremor",
+        "headache",
+        "hypertension"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "sepsis",
+        "neurotoxicity"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL269732",
+      "common_ae": [
+        "tremor",
+        "headache",
+        "hypertension"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "sepsis",
+        "neurotoxicity"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    },
+    {
+      "drug_id": "CHEMBL413",
+      "common_ae": [
+        "tremor",
+        "headache",
+        "hypertension"
+      ],
+      "severe_ae": [
+        "nephrotoxicity",
+        "sepsis",
+        "neurotoxicity"
+      ],
+      "disease_overlap_ae": [],
+      "evidence_grade": "inferred_class_default"
+    }
+  ]
+}

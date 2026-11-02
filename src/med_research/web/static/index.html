@@ -59,6 +59,18 @@
         </nav>
         </header>
 
+        <!-- Public demo banner. Hidden unless the API reports DEMO_MODE. -->
+        <div class="demo-banner" id="demo-banner" hidden>
+            <span class="demo-banner-tag">PUBLIC DEMO</span>
+            <span class="demo-banner-copy">
+                Fixed research snapshot — deterministic results, nothing you do here is saved.
+            </span>
+            <span class="demo-banner-meta">
+                <span class="demo-banner-field">DATA DATE: <span id="demo-banner-date">—</span></span>
+                <span class="demo-banner-field">SNAPSHOT <span id="demo-banner-version">—</span></span>
+            </span>
+        </div>
+
         <main id="main-content" class="container" tabindex="-1">
 
             <!-- ── Hero ──────────────────────────────────────────────── -->

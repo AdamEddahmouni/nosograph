@@ -13,7 +13,14 @@ from med_research import __version__
 from med_research.diseases.base import Disease
 from med_research.diseases.identifiers import CI_VALIDATED_DISEASES
 from med_research.pipeline.gateway import pipeline_gateway
-from med_research.web.config import CELERY_BROKER_URL, WORKSPACE_DB_PATH
+from med_research.web.config import (
+    CELERY_BROKER_URL,
+    WORKSPACE_DB_PATH,
+    parse_demo_snapshot_manifest,
+    parse_demo_snapshot_path,
+)
+from med_research.web.demo_mode import is_demo_mode
+from med_research.web.demo_snapshot import DemoSnapshotValidationError, validate_demo_snapshot
 from med_research.web.dependencies import (
     get_candidates,
     get_kg_drugs,
@@ -24,6 +31,7 @@ from med_research.web.dependencies import (
 from med_research.web.disease_params import resolve_optional_query_disease
 from med_research.web.models import (
     CoverageSummary,
+    DemoModeMetadata,
     DiseaseInfo,
     DiseasesResponse,
     HealthResponse,
@@ -95,9 +103,77 @@ def _check_knowledge_graph() -> dict[str, str]:
         return {"status": "error", "detail": str(exc)}
 
 
+@router.get("/api/demo_mode", response_model=DemoModeMetadata)
+async def demo_mode_metadata() -> DemoModeMetadata:
+    """Public metadata describing the current demo boundary.
+
+    This endpoint is read-only and intentionally does not expose operator secrets,
+    feature flags, or deployment internals.
+    """
+    import os as _os
+
+    demo = is_demo_mode()
+    snapshot_path = parse_demo_snapshot_path()
+    return DemoModeMetadata(
+        demo_mode=demo,
+        snapshot_path=(_os.environ.get("DEMO_SNAPSHOT_PATH", str(snapshot_path)) if demo else ""),
+        snapshot_version=_os.environ.get("DEMO_SNAPSHOT_VERSION", "") if demo else "",
+    )
+
+
 @router.get("/api/ready", response_model=ReadyResponse)
 async def ready() -> JSONResponse | dict[str, Any]:
-    """Readiness probe — verifies Redis, Celery, workspace DB, and KG preload."""
+    """Readiness probe — verifies Redis, Celery, workspace DB, and KG preload.
+
+    When the process is running in demo mode, the response also carries a small
+    ``demo`` block with snapshot lineage and the supported demo disease IDs, and
+    skips the self-hosted dependency probes the demo image does not ship.
+    """
+    import os as _os
+
+    if is_demo_mode():
+        database_path = parse_demo_snapshot_path()
+        manifest_path = parse_demo_snapshot_manifest()
+        try:
+            snapshot = validate_demo_snapshot(database_path, manifest_path)
+            manifest = snapshot.manifest
+            components = {
+                "snapshot": {"status": "ok"},
+            }
+            demo_fields: dict[str, Any] = {
+                "demo_mode": True,
+                "snapshot_version": manifest["snapshot_version"],
+                "dataset_date": manifest.get("generated_at", ""),
+                "supported_disease_ids": manifest.get("supported_disease_ids", []),
+            }
+            return JSONResponse(
+                status_code=200,
+                content={
+                    "status": "ok",
+                    "version": __version__,
+                    "timestamp": datetime.now().isoformat(),
+                    "components": components,
+                    "demo": demo_fields,
+                },
+            )
+        except DemoSnapshotValidationError as exc:
+            logger.warning("Demo snapshot readiness check failed: %s", exc)
+            return JSONResponse(
+                status_code=503,
+                content={
+                    "status": "error",
+                    "version": __version__,
+                    "timestamp": datetime.now().isoformat(),
+                    "components": {
+                        "snapshot": {"status": "error", "detail": "Demo snapshot validation failed"}
+                    },
+                    "demo": {
+                        "demo_mode": True,
+                        "snapshot_version": _os.environ.get("DEMO_SNAPSHOT_VERSION", ""),
+                    },
+                },
+            )
+
     components = {
         "redis": _check_redis(),
         "celery": _check_celery(),
@@ -117,6 +193,9 @@ async def ready() -> JSONResponse | dict[str, Any]:
         "components": components,
     }
     status_code = 200 if overall == "ok" else 503
+    # Always report demo state so clients can branch on one field.
+    payload["demo"] = {"demo_mode": False}
+
     return JSONResponse(status_code=status_code, content=payload)
 
 

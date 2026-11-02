@@ -39,6 +39,9 @@ def test_dockerignore_excludes_runtime_data_directory() -> None:
         if line.strip() and not line.strip().startswith("#")
     ]
     assert "data/" in lines
+    # The repository-local pytest temp dir uses an underscore; a hyphen-only
+    # ignore rule would still copy a potentially unreadable artifact.
+    assert ".pytest_tmp/" in lines
 
 
 def test_compose_keeps_internal_image_tag_and_public_project_name() -> None:
@@ -46,3 +49,10 @@ def test_compose_keeps_internal_image_tag_and_public_project_name() -> None:
     assert re.search(r"(?m)^name:\s*nosograph\s*$", text)
     assert "image: med-research:latest" in text
     assert "compatibility" in text.lower() or "internal" in text.lower()
+
+
+def test_dockerfile_healthcheck_uses_runtime_port() -> None:
+    """A platform-injected PORT must not leave the healthcheck on 8000."""
+    text = (ROOT / "Dockerfile").read_text(encoding="utf-8")
+    assert "os.environ.get('PORT', '8000')" in text
+    assert "127.0.0.1:8000" not in text

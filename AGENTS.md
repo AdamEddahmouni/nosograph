@@ -67,6 +67,12 @@ if it exists only locally or unpushed. GitHub Pages is not the app.
 - Playwright browser tests (`tests/test_evidence_workspace_browser.py`, slow
   tier) need a browser: `python -m playwright install chromium` (one-off; cached
   in `~/.cache/ms-playwright`).
+- Browser modules share one session-scoped Playwright session
+  (`tests/conftest.py::browser`). Never open a private `sync_playwright()` in a
+  browser test module: the sync API keeps its asyncio loop marked as running, so
+  a second session in the same xdist worker errors at fixture setup with
+  "It looks like you are using Playwright Sync API inside the asyncio loop".
+  The slow tier runs every browser module in one `pytest -m slow` invocation.
 - Local pre-push gate: `make ci-local` (ruff check/format, lock verify,
   lock-check, license policy audit, import/metadata/font checks, serial offline
   pytest). It does **not** run `make typecheck` or Playwright.

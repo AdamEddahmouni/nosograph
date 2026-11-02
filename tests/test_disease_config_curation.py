@@ -1,6 +1,7 @@
 """Parametrized curation contract tests for all seven disease configs."""
 
 import re
+from pathlib import Path
 
 import pytest
 
@@ -91,6 +92,69 @@ def test_profiler_reads_drug_safety_risk_for_ra():
     risk = _load_disease_specific_risk("ra")
     assert risk["high_risk"]
     assert any("infliximab" in item.lower() for item in risk["high_risk"])
+
+
+def test_curated_configs_have_no_shadowed_assignments():
+    """A second assignment to the same name means a derived block was appended
+    alongside a curated one; the later block silently wins at import time and
+    discards curated data. This happened to asthma's drug-safety table.
+    """
+    from scripts.populate_disease_configs import _duplicate_assignments
+
+    for disease_id in (*DISEASE_IDS, "asthma"):
+        text = (Path("src") / "med_research" / "diseases" / disease_id / "config.py").read_text(
+            encoding="utf-8"
+        )
+        assert not _duplicate_assignments(text), (
+            f"{disease_id}: duplicate top-level assignments shadow earlier blocks"
+        )
+
+
+def test_asthma_curated_drug_safety_table_is_effective():
+    """The hand-curated asthma table must not be shadowed by a derived one.
+
+    Aspirin/NSAID sensitivity and non-selective beta-blocker bronchospasm are
+    the defining drug-safety facts of asthma, so they must survive in the table
+    that the profiler actually reads.
+    """
+    risk = Disease("asthma").get_disease_risk_config()
+    high = " ".join(risk.get("high_risk", [])).lower()
+    assert "aspirin" in high
+    assert "nsaid" in high
+    assert "beta" in high or "propranolol" in high
+
+
+def test_duplicate_assignment_detector():
+    from scripts.populate_disease_configs import _duplicate_assignments
+
+    assert _duplicate_assignments("FOO = 1\nBAR = 2\n") == []
+    assert _duplicate_assignments("FOO = 1\nBAR = 2\nFOO = 3\n") == ["FOO"]
+    # nested/indented assignments are not module-level reassignments
+    assert _duplicate_assignments("FOO = {\n    'a': 1,\n}\n") == []
+
+
+def test_write_config_sections_scopes_writes_to_the_scaffold_target(tmp_path):
+    """A derived-block refresh must not rewrite the checked-in config of the
+    same disease id. Scaffolding into a temporary tree previously re-resolved
+    the real ``src/`` path and rewrote ``crohns_disease/config.py`` (LF -> CRLF
+    on Windows) as a side effect of the test suite.
+    """
+    import shutil
+
+    from scripts.populate_disease_configs import write_config_sections
+
+    repo_dir = Path("src") / "med_research" / "diseases" / "crohns_disease"
+    original = (repo_dir / "config.py").read_bytes()
+    target = tmp_path / "crohns_disease"
+    shutil.copytree(repo_dir, target, ignore=shutil.ignore_patterns("__pycache__"))
+
+    write_config_sections("crohns_disease", sections=("risk",), disease_dir=target)
+
+    rewritten = (target / "config.py").read_bytes()
+    assert b"DRUG_SAFETY_RISK = {" in rewritten
+    # Byte-identical newlines across platforms: no CRLF translation on Windows.
+    assert b"\r\n" not in rewritten
+    assert (repo_dir / "config.py").read_bytes() == original
 
 
 def test_enrichment_disease_gene_list_helper():

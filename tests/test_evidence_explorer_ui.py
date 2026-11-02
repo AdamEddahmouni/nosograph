@@ -39,9 +39,9 @@ from med_research.web.main import app
 
 playwright = pytest.importorskip("playwright.sync_api")
 
+Browser = playwright.Browser
 Page = playwright.Page
 expect = playwright.expect
-sync_playwright = playwright.sync_playwright
 
 PROJECT_ROOT = Path(__file__).parents[1]
 STATIC_DIR = PROJECT_ROOT / "src" / "med_research" / "web" / "static"
@@ -355,11 +355,14 @@ def explorer_static_server():
 
 
 @pytest.fixture(scope="session")
-def explorer_browser():
-    with sync_playwright() as playwright_instance:
-        browser = playwright_instance.chromium.launch(headless=True)
-        yield browser
-        browser.close()
+def explorer_browser(browser: Browser) -> Browser:
+    """Alias of the worker-wide session browser.
+
+    A private ``sync_playwright()`` here collides with any other browser
+    module scheduled on the same xdist worker and errors at fixture setup
+    with Playwright's "Sync API inside the asyncio loop" message.
+    """
+    return browser
 
 
 @pytest.fixture
@@ -508,6 +511,7 @@ def test_evidence_explorer_deep_link_renders_claim(explorer_page: Page, explorer
     expect(explorer_page.get_by_role("heading", name="Contradictory evidence")).to_be_visible()
     expect(explorer_page.get_by_text("Fixture supporting evidence")).to_be_visible()
     expect(explorer_page.get_by_text("Synthetic contradictory fixture")).to_be_visible()
+    expect(explorer_page.get_by_text("Research use only.", exact=True)).to_be_visible()
 
 
 def test_evidence_explorer_shows_species_context(explorer_page: Page, explorer_static_server):
@@ -522,6 +526,93 @@ def test_evidence_explorer_mobile_width_smoke(explorer_page: Page, explorer_stat
     base = explorer_static_server.replace("/index.html", "")
     explorer_page.goto(f"{base}/index.html?claim_id={FIXTURE_CLAIM_ID}#evidence-explorer")
     expect(explorer_page.locator(".evidence-claim-header")).to_be_visible()
+
+
+def test_analytics_distinguishes_uncomputed_similarity_from_zero(explorer_page: Page) -> None:
+    """A null Jaccard is not computed; a real 0.0 is a measured zero."""
+    panel = explorer_page.locator("#shared-mech-result")
+
+    explorer_page.evaluate(
+        """() => renderSharedMechanisms({
+            condition_a: 'MONDO:0007915',
+            condition_b: 'MONDO:0004992',
+            jaccard_similarity: null,
+            shared_pathways: [],
+            shared_genes: [],
+            store_state: {
+                status: 'uninitialized',
+                initialization_hint: 'Run: python -m med_research.cli biomed init',
+            },
+        })"""
+    )
+    expect(panel.locator(".shared-mech-score")).to_have_text("—")
+    expect(panel).to_contain_text("Jaccard overlap not computed")
+    expect(panel).to_contain_text("not initialized")
+    expect(panel).to_contain_text("biomed init")
+    expect(panel).not_to_contain_text("0%")
+
+    explorer_page.evaluate(
+        """() => renderSharedMechanisms({
+            condition_a: 'MONDO:0007915',
+            condition_b: 'MONDO:0004992',
+            jaccard_similarity: 0.0,
+            shared_pathways: [],
+            shared_genes: [],
+            store_state: {status: 'ready'},
+        })"""
+    )
+    expect(panel.locator(".shared-mech-score")).to_have_text("0%")
+    expect(panel).to_contain_text("Jaccard Overlap Index")
+    expect(panel).to_contain_text("No direct shared pathways reported.")
+    expect(panel).not_to_contain_text("not initialized")
+
+
+def test_similarity_matrix_marks_missing_cells_as_not_computed(explorer_page: Page) -> None:
+    """Missing cells stay unmeasured; computed zeros render as 0%."""
+    container = explorer_page.locator("#matrix-result")
+
+    explorer_page.evaluate(
+        """() => renderCrossDiseaseMatrix({
+            conditions: ['MONDO:0000001', 'MONDO:0000002'],
+            matrix: [[1.0, null], [null, 1.0]],
+            details: {},
+            store_state: {status: 'ready'},
+        })"""
+    )
+    table = container.locator("table")
+    expect(table).to_be_visible()
+    cells = table.locator("tbody td")
+    expect(cells).to_have_count(4)
+    expect(cells.nth(0)).to_contain_text("100%")
+    expect(cells.nth(1)).to_contain_text("—")
+    expect(cells.nth(1)).not_to_contain_text("0%")
+    expect(container).not_to_contain_text("NaN")
+    expect(container).not_to_contain_text("undefined")
+
+    explorer_page.evaluate(
+        """() => renderCrossDiseaseMatrix({
+            conditions: ['MONDO:0000001', 'MONDO:0000002'],
+            matrix: [[1.0, 0.0], [0.0, 1.0]],
+            details: {},
+            store_state: {status: 'ready'},
+        })"""
+    )
+    expect(table.locator("tbody td").nth(1)).to_contain_text("0%")
+
+    explorer_page.evaluate(
+        """() => renderCrossDiseaseMatrix({
+            conditions: [],
+            matrix: [],
+            details: {},
+            store_state: {
+                status: 'uninitialized',
+                initialization_hint: 'Run: python -m med_research.cli biomed init',
+            },
+        })"""
+    )
+    expect(container).to_contain_text("Similarity matrix not computed")
+    expect(container).to_contain_text("biomed init")
+    expect(container).not_to_contain_text("NaN")
 
 
 def _select_compare_conditions(page: Page) -> None:
@@ -627,3 +718,8 @@ def test_compare_dimension_tabs_support_keyboard_navigation(
     expect(gene).to_have_attribute("aria-selected", "true")
     expect(explorer_page.locator("#comparison-panel-gene")).to_be_visible()
     expect(explorer_page.locator("#comparison-panel-phenotype")).to_be_hidden()
+
+
+def test_explorer_browser_reuses_the_shared_session(explorer_browser, browser) -> None:
+    """Opening a per-module Playwright session is the browser-CI defect."""
+    assert explorer_browser is browser

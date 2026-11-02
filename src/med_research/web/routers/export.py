@@ -6,12 +6,14 @@ tooling (notebooks, dashboards, papers) can consume the data directly.
 """
 
 import json
+import os
 from pathlib import Path
 from typing import Any
 
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
 
+from med_research.pipeline.reporting import REPORT_DIR_ENV_VAR, report_output_dir
 from med_research.web.config import PIPELINE_DIR
 
 router = APIRouter(prefix="/api/export", tags=["Export"])
@@ -130,6 +132,11 @@ def export_module_report(module: str) -> FileResponse:
     if entry is None:
         raise HTTPException(status_code=404, detail=f"No report export for module: {module}")
     report_name, module_dir = entry
+
+    if os.environ.get(REPORT_DIR_ENV_VAR):
+        configured_path = report_output_dir(PIPELINE_DIR / module_dir) / report_name
+        if configured_path.exists():
+            return FileResponse(configured_path, media_type="text/html", filename=report_name)
 
     path = _module_data_dir(module_dir) / report_name
     # Some reports land in the module root instead of data/

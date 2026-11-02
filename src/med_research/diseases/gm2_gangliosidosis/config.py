@@ -92,10 +92,12 @@ CAR_T_SCORES = {
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
     "high_risk": [],
-    "moderate_risk": [
-        "miglustat",
-    ],
+    "moderate_risk": [],
     "low_risk": [],
+    "undetermined_risk": [
+        "miglustat",
+        "trenonacog alfa",
+    ],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Annotated
+from typing import Annotated, Literal
 from uuid import UUID
 
 from fastapi import APIRouter, HTTPException, Query, Response
@@ -35,6 +35,8 @@ from med_research.web.models.universal import (
     ConditionSummary,
     EntitySummaryView,
     ImportReportView,
+    NosoGraphComparePreviewRequest,
+    NosoGraphComparePreviewResultView,
     NosoGraphCompareRequest,
     NosoGraphCompareResultView,
     NosoGraphCompareV2Request,
@@ -48,6 +50,7 @@ from med_research.web.services import (
     nosograph_compare_service,
     universal_service,
 )
+from med_research.web.services.biomed_store_readiness import uninitialized_store_state
 from med_research.web.services.nosograph_compare_export import (
     render_json as render_compare_json,
 )
@@ -263,6 +266,51 @@ def export_nosograph_comparison_markdown(
     )
 
 
+def _preview_compare_view(
+    payload: NosoGraphComparePreviewRequest, repository: BiomedicalRepositoryDep
+) -> NosoGraphComparePreviewResultView:
+    try:
+        result = NosoGraphCompareService(repository).compare_many_preview(
+            payload.condition_curies,
+            dimensions=payload.dimensions,
+        )
+        return nosograph_compare_service.to_compare_preview_view(result)
+    except BiomedicalValidationError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@router.post("/nosograph/comparisons/preview", response_model=NosoGraphComparePreviewResultView)
+def nosograph_compare_preview(
+    payload: NosoGraphComparePreviewRequest,
+    repository: BiomedicalRepositoryDep,
+) -> NosoGraphComparePreviewResultView:
+    return _preview_compare_view(payload, repository)
+
+
+@router.post("/nosograph/comparisons/preview/export")
+def export_nosograph_comparison_preview(
+    payload: NosoGraphComparePreviewRequest,
+    repository: BiomedicalRepositoryDep,
+    format: Literal["json", "markdown"] = Query(...),
+) -> Response:
+    result = _preview_compare_view(payload, repository)
+    if format == "json":
+        return Response(
+            content=render_compare_json(result),
+            media_type="application/json",
+            headers={
+                "Content-Disposition": 'attachment; filename="nosograph-comparison-preview.json"'
+            },
+        )
+    return Response(
+        content=render_compare_markdown(result),
+        media_type="text/markdown",
+        headers={"Content-Disposition": 'attachment; filename="nosograph-comparison-preview.md"'},
+    )
+
+
 @router.get("/snapshots", response_model=PagedResponse[SnapshotSummary])
 def list_snapshots(
     repository: BiomedicalRepositoryDep,
@@ -327,6 +375,14 @@ def get_comparison_run(
 def get_analytics_stats(
     repository: BiomedicalRepositoryDep,
 ) -> AnalyticsStatsView:
+    if not repository.is_schema_initialized():
+        return AnalyticsStatsView(
+            total_entities=0,
+            total_claims=0,
+            total_evidence=0,
+            total_snapshots=0,
+            store_state=uninitialized_store_state(),
+        )
     engine = DuckDBBiomedicalEngine(repository.database.path)
     stats = engine.get_summary_statistics()
     return AnalyticsStatsView(
@@ -345,6 +401,9 @@ def prioritize_targets(
     repository: BiomedicalRepositoryDep,
     top_k: int = Query(20, ge=1, le=100),
 ) -> list[AnalyticsTargetView]:
+    # A bare list cannot carry ``store_state``: an empty list on an uninitialized
+    # store would read as "no prioritized targets exist for this condition".
+    require_schema_initialized(repository)
     engine = DuckDBBiomedicalEngine(repository.database.path)
     norm_curie = normalize_curie(curie)
     targets = engine.prioritize_targets_vectorized(norm_curie, top_k=top_k)
@@ -369,9 +428,18 @@ def get_shared_mechanisms(
     left_curie: str = Query(...),
     right_curie: str = Query(...),
 ) -> AnalyticsSharedMechanismView:
-    engine = DuckDBBiomedicalEngine(repository.database.path)
     left = normalize_curie(left_curie)
     right = normalize_curie(right_curie)
+    if not repository.is_schema_initialized():
+        return AnalyticsSharedMechanismView(
+            condition_a=left,
+            condition_b=right,
+            shared_pathways=[],
+            shared_genes=[],
+            jaccard_similarity=None,
+            store_state=uninitialized_store_state(),
+        )
+    engine = DuckDBBiomedicalEngine(repository.database.path)
     res = engine.compute_shared_mechanisms(left, right)
     return AnalyticsSharedMechanismView(
         condition_a=res.condition_a,
@@ -389,8 +457,15 @@ def get_subgraph(
     max_hops: int = Query(2, ge=1, le=4),
     limit: int = Query(100, ge=1, le=500),
 ) -> AnalyticsSubgraphView:
-    engine = DuckDBBiomedicalEngine(repository.database.path)
     norm_curie = normalize_curie(curie)
+    if not repository.is_schema_initialized():
+        return AnalyticsSubgraphView(
+            root_curie=norm_curie,
+            edges=[],
+            edge_count=0,
+            store_state=uninitialized_store_state(),
+        )
+    engine = DuckDBBiomedicalEngine(repository.database.path)
     edges = engine.find_multi_hop_subgraph(norm_curie, max_hops=max_hops, limit=limit)
     return AnalyticsSubgraphView(
         root_curie=norm_curie,
