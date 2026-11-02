@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
-from typing import AsyncGenerator
+from typing import Any, AsyncGenerator
 from uuid import UUID
 
 from celery.result import AsyncResult
@@ -32,7 +32,7 @@ async def _event_generator(job_id: str) -> AsyncGenerator[str, None]:
             serialized_progress = json.dumps(progress_info, default=str) if progress_info else ""
 
             if state != last_state or serialized_progress != last_progress:
-                payload: dict[str, str | dict[str, str]] = {
+                payload: dict[str, Any] = {
                     "job_id": job_id,
                     "status": state,
                 }

@@ -1,21 +1,25 @@
 import json
 from pathlib import Path
+from typing import Any, cast
 
 # Load allele definitions (compact JSON) relative to this file
 _ALLELE_DEF_PATH = Path(__file__).parent / "allele_definitions.json"
 
 
-def _load_definitions():
+def _load_definitions() -> dict[str, Any]:
     if not _ALLELE_DEF_PATH.is_file():
         raise FileNotFoundError(f"Allele definitions not found at {_ALLELE_DEF_PATH}")
     with open(_ALLELE_DEF_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+        data = json.load(f)
+    if not isinstance(data, dict):
+        raise ValueError("Allele definitions must be a JSON object")
+    return cast(dict[str, Any], data)
 
 
 DEFINITIONS = _load_definitions()
 
 
-def parse_star_allele(gene: str, allele_str: str):
+def parse_star_allele(gene: str, allele_str: str) -> dict[str, str | list[str]]:
     """Parse a star‑allele string for a given gene.
     Example inputs::
         gene = "CYP2D6"

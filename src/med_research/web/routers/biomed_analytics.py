@@ -2,12 +2,13 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, cast
 
 from fastapi import APIRouter, Query
 
 from med_research.biomed.graph_analytics import BiomedicalGraphAnalytics
 from med_research.web.dependencies_biomed import BiomedicalRepositoryDep
+from med_research.web.services.biomed_store_readiness import uninitialized_store_state
 
 router = APIRouter(prefix="/api/v1/biomed", tags=["Biomedical Analytics"])
 
@@ -22,13 +23,15 @@ def find_claim_pathways(
 ) -> dict[str, Any]:
     """Find claim-based path connections between two biomedical entities using BFS."""
     if not repository.is_schema_initialized():
+        # Distinguish "no paths found" from "store not built yet": silent empty
+        # results on an uninitialized store would read as absence of evidence.
         return {
             "start_curie": start_curie,
             "target_curie": target_curie,
             "max_depth": max_depth,
             "total_paths": 0,
             "paths": [],
-            "store_state": {"status": "uninitialized"},
+            "store_state": uninitialized_store_state().model_dump(),
         }
     analytics = BiomedicalGraphAnalytics(repository)
     paths = analytics.find_shortest_paths(
@@ -67,7 +70,7 @@ def prioritize_targets(
             "disease_curie": disease_curie,
             "total_targets": 0,
             "rankings": [],
-            "store_state": {"status": "uninitialized"},
+            "store_state": uninitialized_store_state().model_dump(),
         }
     analytics = BiomedicalGraphAnalytics(repository)
     scores = analytics.prioritize_disease_targets(disease_curie=disease_curie, top_k=top_k)
@@ -110,7 +113,7 @@ def get_target_structure(
     """Retrieve 3D protein structure, AlphaFold pLDDT scores, domain boundaries, and binding pocket details."""
     from med_research.pipeline.structure_3d.engine import get_target_3d_structure
 
-    return get_target_3d_structure(target_id=target_identifier)
+    return cast(dict[str, Any], get_target_3d_structure(target_id=target_identifier))
 
 
 @router.get("/analytics/summary")

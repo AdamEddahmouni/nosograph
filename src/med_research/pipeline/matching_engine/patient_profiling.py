@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import random
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, cast
 
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, field_validator
@@ -32,7 +32,7 @@ class PatientFeatureVector(BaseModel):
 
     @field_validator("organ_function", mode="before")
     @classmethod
-    def coerce_numeric(cls, v):
+    def coerce_numeric(cls, v: Any) -> Dict[str, float] | Any:
         # Ensure numeric values are floats
         if isinstance(v, dict):
             return {k: float(val) for k, val in v.items()}
@@ -58,13 +58,16 @@ class SyntheticPatientGenerator:
     categorical lists.
     """
 
-    def __init__(self, config_path: Path | str):
+    def __init__(self, config_path: Path | str) -> None:
         self.config = self._load_config(config_path)
 
     @staticmethod
     def _load_config(path: Path | str) -> Dict[str, Any]:
         with open(path, "r", encoding="utf-8") as fp:
-            return yaml.safe_load(fp)
+            loaded = yaml.safe_load(fp)
+        if not isinstance(loaded, dict):
+            return {}
+        return cast(Dict[str, Any], loaded)
 
     def _sample_numeric(self, spec: Dict[str, float]) -> float:
         return random.uniform(float(spec["min"]), float(spec["max"]))

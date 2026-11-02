@@ -63,6 +63,15 @@ See [README.md](README.md) for alternative install paths and CLI usage.
 - Fill out the pull request template checklist
 - Ensure GitHub Actions `Tests` passes on your PR (public repos receive free hosted runners). `Tests` includes `typecheck` via the aggregator `needs:` list, so a red mypy ratchet fails the required check. Required approvals remain 0.
 
+### Typecheck scope policy
+
+`make typecheck` runs mypy over an explicit file list in the `Makefile` — it is a ratchet, not a directory walk:
+
+- The list covers every tracked `src/med_research` module **except** the generated `src/med_research/diseases/<slug>/` scaffold tree (~20,800 mechanically generated per-disease `config.py`/`__init__.py` files). Shared disease infrastructure (`diseases/base.py`, `diseases/coverage.py`, `diseases/schemas.py`, `diseases/harvest_registry.py`, `diseases/validation_batch.py`) **is** on the list.
+- Scaffolds are excluded because they are generated artifacts curated through validation (`disease validate`), not hand-written code; adding them would balloon CI runtime without catching meaningful regressions. Extend the scaffold tree through the curation tooling instead of editing configs by hand (see [docs/disease-curation.md](docs/disease-curation.md)).
+- **Do not remove files from the list.** If you add a new source module, add it to the list in the same PR and keep it strict (no new `# type: ignore` unless the error is understood and commented). Run `make typecheck` locally before pushing.
+- CI runs this list strictly in the `typecheck` job (no `continue-on-error`), and the `Tests` aggregator makes it merge-blocking.
+
 ## Security
 
 Do **not** open public issues for security vulnerabilities. See [SECURITY.md](SECURITY.md) for the private reporting process.

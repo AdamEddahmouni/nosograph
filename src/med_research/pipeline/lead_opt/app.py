@@ -1,5 +1,6 @@
 import uuid
 from pathlib import Path
+from typing import Any
 
 from flask import Flask, jsonify, render_template, request, send_file
 
@@ -12,7 +13,7 @@ app = Flask(
 )
 
 # In‑memory job store (job_id -> {'status': 'pending'/'running'/'done'/'error', 'result': None})
-job_store = {}
+job_store: dict[str, dict[str, Any]] = {}
 
 
 @app.route("/")

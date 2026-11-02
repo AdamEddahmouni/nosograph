@@ -1016,13 +1016,14 @@ def populate_scaffolded_config(disease_id: str) -> Path | None:
         raise ConfigurationError(f"Cannot load populate script at {script_path}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    return module.write_config_sections(disease_id)
+    written = module.write_config_sections(disease_id)
+    return written if isinstance(written, Path) else None
 
 
 def _diseases_root() -> Path:
     import med_research.diseases as diseases_pkg
 
-    return Path(diseases_pkg.__file__).parent
+    return Path(str(diseases_pkg.__file__)).parent
 
 
 def _collect_sources(
@@ -2290,7 +2291,7 @@ def load_disease_registry(
         raise FileNotFoundError(f"Disease registry not found at {registry_path}")
     with open(registry_path, encoding="utf-8") as fh:
         data = json.load(fh)
-    return data.get("diseases", [])
+    return cast(list[dict[Any, Any]], data.get("diseases", []))
 
 
 def save_disease_registry(

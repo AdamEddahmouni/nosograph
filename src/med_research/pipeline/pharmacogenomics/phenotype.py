@@ -1,13 +1,17 @@
 import json
 from pathlib import Path
+from typing import Any, cast
 
 # Load allele definitions (same as in parser)
 _DEF_PATH = Path(__file__).parent / "allele_definitions.json"
 
 
-def _load_definitions():
+def _load_definitions() -> dict[str, Any]:
     with open(_DEF_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+        data = json.load(f)
+    if not isinstance(data, dict):
+        raise ValueError("Allele definitions must be a JSON object")
+    return cast(dict[str, Any], data)
 
 
 DEFINITIONS = _load_definitions()
@@ -16,10 +20,10 @@ DEFINITIONS = _load_definitions()
 # Simplified activity score thresholds based on CPIC guidelines
 def _activity_score(gene: str, alleles: list[str]) -> float:
     gene_defs = DEFINITIONS[gene]["alleles"]
-    return sum(gene_defs[a]["activity"] for a in alleles)
+    return sum(float(gene_defs[a]["activity"]) for a in alleles)
 
 
-def phenotype_from_alleles(gene: str, alleles: list[str]):
+def phenotype_from_alleles(gene: str, alleles: list[str]) -> str:
     """Return CPIC phenotype string for a gene based on allele activity scores.
     Mapping (simplified):
     - 0.0 → Poor Metabolizer
