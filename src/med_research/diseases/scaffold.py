@@ -1749,6 +1749,29 @@ def _scrub_pathway_components(
     return scrubbed
 
 
+_SAFE_PRUNE_BACKUP_ID = re.compile(r"[a-z0-9][a-z0-9_]*\Z")
+
+
+def _prune_backup_path(backup_dir: Path, disease_id: str) -> Path:
+    """Return a backup path guaranteed to stay inside ``backup_dir``.
+
+    ``refresh_disease`` sanitizes the ids it receives, but the write sink keeps
+    its own invariant: the id must be a single lowercase slug (no separators,
+    drive letters, UNC prefixes, or ``..``), and the resolved file must remain
+    inside the resolved backup directory.
+    """
+    if not _SAFE_PRUNE_BACKUP_ID.fullmatch(disease_id):
+        raise ValueError(f"Refusing to build a prune backup for unsafe id: {disease_id!r}")
+    backup_dir.mkdir(parents=True, exist_ok=True)
+    # Microseconds so two prunes in the same second never clobber each other's backup.
+    path = backup_dir / f"pruned_{disease_id}_{datetime.now():%Y%m%d_%H%M%S_%f}.json"
+    try:
+        path.resolve().relative_to(backup_dir.resolve())
+    except ValueError as e:
+        raise ValueError(f"Prune backup path escapes {backup_dir}: {path}") from e
+    return path
+
+
 def _write_prune_backup(
     data_dir: Path,
     disease_id: str,
@@ -1763,10 +1786,7 @@ def _write_prune_backup(
     Records each pruned gene's pre-prune pathway membership so ``restore`` can
     re-attach it exactly — the prune's pathway scrub is fully reversible.
     """
-    backup_dir = data_dir / "backups"
-    backup_dir.mkdir(parents=True, exist_ok=True)
-    # Microseconds so two prunes in the same second never clobber each other's backup.
-    backup_path = backup_dir / f"pruned_{disease_id}_{datetime.now():%Y%m%d_%H%M%S_%f}.json"
+    backup_path = _prune_backup_path(data_dir / "backups", disease_id)
     pathway_memberships = {
         gid: [p["id"] for p in existing_pathways if gid in (p.get("key_components") or [])]
         for gid in sorted(pruned_gene_ids)
