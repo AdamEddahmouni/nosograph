@@ -201,4 +201,3 @@ The first demo is ready when:
 5. Deployment, cost limits, shutdown, and snapshot-refresh instructions are
    documented.
 6. The offline suite, relevant API tests, and browser smoke tests pass.
-
