@@ -3472,6 +3472,16 @@ async function loadDuckDBGraphSummary() {
 
     try {
         const data = await apiFetch('/api/v1/biomed/analytics/summary');
+        if (data.store_state?.status === 'uninitialized') {
+            // Zero counters would read as "the store is built and empty".
+            [entEl, claimsEl, evEl, snapEl].forEach(el => { if (el) el.textContent = '—'; });
+            if (distEl) {
+                const hint = data.store_state.initialization_hint
+                    || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.';
+                distEl.innerHTML = `<span class="condition-empty">Statistics not computed: the canonical biomedical store is not initialized. ${escapeHtml(hint)}</span>`;
+            }
+            return;
+        }
         if (entEl) entEl.textContent = (data.total_entities || 0).toLocaleString();
         if (claimsEl) claimsEl.textContent = (data.total_claims || 0).toLocaleString();
         if (evEl) evEl.textContent = (data.total_evidence || 0).toLocaleString();
@@ -3519,6 +3529,12 @@ function renderGraphPathways(res) {
     if (!container) return;
 
     if (!res || !res.paths || !res.paths.length) {
+        if (res?.store_state?.status === 'uninitialized') {
+            const hint = res.store_state.initialization_hint
+                || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.';
+            container.innerHTML = `<p class="condition-comparison-placeholder">Pathways not computed: the canonical biomedical store is not initialized. ${escapeHtml(hint)}</p>`;
+            return;
+        }
         container.innerHTML = `<p class="condition-comparison-placeholder">No claim pathways found between ${escapeHtml(res.start_curie || '')} and ${escapeHtml(res.target_curie || '')} within depth ${res.max_depth || 3}.</p>`;
         return;
     }
@@ -3958,20 +3974,34 @@ function renderSharedMechanisms(res) {
     const container = document.getElementById('shared-mech-result');
     if (!container) return;
 
-    const jaccardPct = Math.round((res.jaccard_similarity || 0) * 100);
+    // null means the similarity was never computed (uninitialized store);
+    // 0.0 is a real finding that these conditions share no measured biology.
+    const computed = Number.isFinite(res.jaccard_similarity);
+    const jaccardPct = computed ? Math.round(res.jaccard_similarity * 100) : null;
+    const uninitialized = res.store_state?.status === 'uninitialized';
+    const readiness = uninitialized
+        ? `<p class="condition-explorer-placeholder">Canonical biomedical store is not initialized. ${escapeHtml(res.store_state.initialization_hint || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.')}</p>`
+        : '';
+    const emptyPathways = uninitialized
+        ? '<span class="condition-empty">Not computed — the canonical biomedical store is not initialized.</span>'
+        : '<span class="condition-empty">No direct shared pathways reported.</span>';
+    const emptyGenes = uninitialized
+        ? '<span class="condition-empty">Not computed — the canonical biomedical store is not initialized.</span>'
+        : '<span class="condition-empty">No direct shared target genes reported.</span>';
     const pathways = (res.shared_pathways || []).map(p => `<span class="condition-chip" style="background:rgba(245,158,11,0.12);color:#f59e0b;border-color:rgba(245,158,11,0.25);">${escapeHtml(p)}</span>`).join('');
     const genes = (res.shared_genes || []).map(g => `<span class="condition-chip" style="background:rgba(74,222,128,0.12);color:#4ade80;border-color:rgba(74,222,128,0.25);">${escapeHtml(g)}</span>`).join('');
 
     container.innerHTML = `
         <div class="shared-mech-panel">
+            ${readiness}
             <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
                 <div>
                     <h4 style="margin:0 0 4px;font-size:0.95rem;">${escapeHtml(res.condition_a)} &amp; ${escapeHtml(res.condition_b)}</h4>
                     <span style="font-size:0.75rem;color:var(--text-muted);">Vectorized DuckDB Pathway &amp; Target Intersection</span>
                 </div>
                 <div style="text-align:right;">
-                    <div class="shared-mech-score">${jaccardPct}%</div>
-                    <span style="font-size:0.7rem;color:var(--text-muted);">Jaccard Overlap Index</span>
+                    <div class="shared-mech-score">${computed ? `${jaccardPct}%` : '—'}</div>
+                    <span style="font-size:0.7rem;color:var(--text-muted);">${computed ? 'Jaccard Overlap Index' : 'Jaccard overlap not computed'}</span>
                 </div>
             </div>
 
@@ -3979,14 +4009,14 @@ function renderSharedMechanisms(res) {
                 <div style="font-size:0.75rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;margin-bottom:6px;">
                     Shared Pathways (${(res.shared_pathways || []).length})
                 </div>
-                <div class="condition-chip-list">${pathways || '<span class="condition-empty">No direct shared pathways reported.</span>'}</div>
+                <div class="condition-chip-list">${pathways || emptyPathways}</div>
             </div>
 
             <div>
                 <div style="font-size:0.75rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;margin-bottom:6px;">
                     Shared Associated Targets (${(res.shared_genes || []).length})
                 </div>
-                <div class="condition-chip-list">${genes || '<span class="condition-empty">No direct shared target genes reported.</span>'}</div>
+                <div class="condition-chip-list">${genes || emptyGenes}</div>
             </div>
         </div>
     `;
@@ -4021,6 +4051,13 @@ function renderCrossDiseaseMatrix(res) {
     const matrix = res.matrix || [];
     const details = res.details || {};
 
+    if (res.store_state?.status === 'uninitialized') {
+        const hint = res.store_state.initialization_hint
+            || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.';
+        container.innerHTML = `<p class="condition-comparison-placeholder">Similarity matrix not computed: the canonical biomedical store is not initialized. ${escapeHtml(hint)}</p>`;
+        return;
+    }
+
     if (!conditions.length || !matrix.length) {
         container.innerHTML = '<p class="condition-comparison-placeholder">No similarity data returned for the requested diseases.</p>';
         return;
@@ -4030,11 +4067,14 @@ function renderCrossDiseaseMatrix(res) {
 
     const bodyRows = conditions.map((rowC, rIdx) => {
         const rowCells = conditions.map((colC, cIdx) => {
-            const val = matrix[rIdx] ? (matrix[rIdx][cIdx] ?? 0) : 0;
-            const pct = Math.round(val * 100);
+            // A missing cell is uncomputed, not a measured 0.0 overlap.
+            const raw = matrix[rIdx] ? matrix[rIdx][cIdx] : null;
+            const computed = Number.isFinite(raw);
+            const val = computed ? raw : null;
+            const pct = computed ? Math.round(val * 100) : null;
             const isDiag = rIdx === cIdx;
-            const bgAlpha = isDiag ? 0.35 : Math.max(0.08, val * 0.7);
-            const color = isDiag ? '#38bdf8' : (pct >= 50 ? '#4ade80' : (pct >= 20 ? '#fbbf24' : '#94a3b8'));
+            const bgAlpha = computed ? (isDiag ? 0.35 : Math.max(0.08, val * 0.7)) : 0.04;
+            const color = !computed ? 'var(--text-muted)' : (isDiag ? '#38bdf8' : (pct >= 50 ? '#4ade80' : (pct >= 20 ? '#fbbf24' : '#94a3b8')));
             const pairKey = `${rowC}___${colC}`;
             const detail = details[pairKey] || {};
             const sharedP = (detail.shared_pathways || []).length;
@@ -4042,9 +4082,9 @@ function renderCrossDiseaseMatrix(res) {
 
             return `
                 <td style="padding:6px;text-align:center;background:rgba(56,189,248,${bgAlpha});cursor:pointer;border:1px solid var(--border);"
-                    title="${escapeHtml(rowC)} ↔ ${escapeHtml(colC)}: ${pct}% Jaccard (${sharedP} pathways, ${sharedG} genes)"
+                    title="${escapeHtml(rowC)} ↔ ${escapeHtml(colC)}: ${computed ? `${pct}% Jaccard` : 'not computed'} (${sharedP} pathways, ${sharedG} genes)"
                     data-pair-key="${escapeHtml(pairKey)}">
-                    <span style="font-weight:700;font-size:0.78rem;color:${color};">${pct}%</span>
+                    <span style="font-weight:700;font-size:0.78rem;color:${color};">${computed ? `${pct}%` : '—'}</span>
                 </td>
             `;
         }).join('');
