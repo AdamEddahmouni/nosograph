@@ -13,6 +13,21 @@ Use [Docker](docker.md) or [installation](install.md). Fixture-backed and snapsh
 
 Label anything fixture-backed as a snapshot. Do not imply live coverage.
 
+## Quick start (read-only demo)
+
+Build the small **ci_validated-focused** fixture snapshot, then serve with `DEMO_MODE` enabled:
+
+```bash
+nosograph demo build
+nosograph demo serve --host 127.0.0.1 --port 8000
+```
+
+Open http://127.0.0.1:8000/. This is a **local** read-only instance, not a product hosted by the project.
+
+With Docker Compose, use the **`demo`** profile (see [Docker](docker.md#read-only-demo-profile)).
+
+Operator details: [local demo operator notes](../deployment/local-demo-operator.md) (repository copy; not a claim of a public URL).
+
 ## `DEMO_MODE` (opt-in, default off)
 
 `DEMO_MODE` is a **local/self-host guard** so a future public demo cannot accidentally expose writes, jobs, LLM, or live gather routes.
@@ -22,13 +37,14 @@ Label anything fixture-backed as a snapshot. Do not imply live coverage.
 | unset / `false` / `0` / `no` | Normal local/self-host (default). |
 | `true` / `1` / `yes` / `on` | Read-only: mutations, `/api/jobs`, workspace writes, admin, cache, LLM, evidence gather, monitor, agent, and persisted Compare POSTs return `403 demo_read_only`. WebSockets close. |
 
-This flag does **not** deploy an app, does not load a public dataset, and does not enable GitHub Pages as a demo. Keep it `false` unless you are operating an intentional read-only instance.
+This flag does **not** deploy an app, does not load a public dataset by itself, and does not enable GitHub Pages as a demo. Pair `DEMO_MODE=true` with `BIOMEDICAL_DB_PATH` pointing at a built demo snapshot (or use `nosograph demo serve`).
 
 ```bash
 # .env — leave off for ordinary local use
 DEMO_MODE=false
+BIOMEDICAL_DB_PATH=data/biomedical.sqlite3
 ```
 
-## Hosted demo (design)
+## Hosted demo (design only)
 
-See [public hosted demo](../deployment/public-demo.md) for the snapshot-first design. A `nosograph demo` command and a public URL are still deferred. Track hosting as a follow-up; do not ship an open proxy.
+See [public hosted demo](../deployment/public-demo.md) for snapshot-first **design** notes. A public URL requires explicit operator deploy and is **not** offered by merging code alone. Do not ship an open proxy.

@@ -8,6 +8,7 @@ from fastapi import APIRouter, Query
 
 from med_research.biomed.graph_analytics import BiomedicalGraphAnalytics
 from med_research.web.dependencies_biomed import BiomedicalRepositoryDep
+from med_research.web.services.biomed_store_readiness import uninitialized_store_state
 
 router = APIRouter(prefix="/api/v1/biomed", tags=["Biomedical Analytics"])
 
@@ -21,6 +22,17 @@ def find_claim_pathways(
     limit: int = Query(10, ge=1, le=50),
 ) -> dict[str, Any]:
     """Find claim-based path connections between two biomedical entities using BFS."""
+    if not repository.is_schema_initialized():
+        # Distinguish "no paths found" from "store not built yet": silent empty
+        # results on an uninitialized store would read as absence of evidence.
+        return {
+            "start_curie": start_curie,
+            "target_curie": target_curie,
+            "max_depth": max_depth,
+            "total_paths": 0,
+            "paths": [],
+            "store_state": uninitialized_store_state().model_dump(),
+        }
     analytics = BiomedicalGraphAnalytics(repository)
     paths = analytics.find_shortest_paths(
         start_curie=start_curie,
@@ -53,6 +65,13 @@ def prioritize_targets(
     """Rank disease targets based on canonical claim evidence, graph centrality, and 3D AlphaFold structure."""
     from med_research.pipeline.structure_3d.engine import get_target_3d_structure
 
+    if not repository.is_schema_initialized():
+        return {
+            "disease_curie": disease_curie,
+            "total_targets": 0,
+            "rankings": [],
+            "store_state": uninitialized_store_state().model_dump(),
+        }
     analytics = BiomedicalGraphAnalytics(repository)
     scores = analytics.prioritize_disease_targets(disease_curie=disease_curie, top_k=top_k)
 

@@ -1,5 +1,7 @@
 """Public demo metadata and readiness surface."""
 
+from med_research.demo.snapshot import SUPPORTED_DISEASE_IDS
+
 DEMO_READ_ONLY = {
     "code": "demo_read_only",
     "detail": "This operation is disabled in the public read-only demo.",
@@ -36,16 +38,8 @@ def test_ready_includes_demo_fields_when_demo_mode_is_on(demo_client, demo_snaps
         demo["dataset_date"]
         == __import__("json").loads(demo_snapshot[1].read_text(encoding="utf-8"))["generated_at"]
     )
-    assert demo["supported_disease_ids"] == [
-        "sle",
-        "ra",
-        "ibd",
-        "ms",
-        "ss",
-        "ssc",
-        "t1d",
-        "ad",
-    ]
+    assert demo["supported_disease_ids"] == list(SUPPORTED_DISEASE_IDS)
+    assert len(SUPPORTED_DISEASE_IDS) == 8
     assert body["components"]["snapshot"]["status"] == "ok"
 
 

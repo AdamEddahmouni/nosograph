@@ -8,6 +8,8 @@ from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
+from med_research.biomed.errors import BiomedicalStoreNotReadyError
+from med_research.biomed.store_readiness import BIOMED_STORE_INIT_HINT
 from med_research.exceptions import (
     ConfigurationError,
     DataValidationError,
@@ -15,6 +17,7 @@ from med_research.exceptions import (
     MedResearchError,
     ModuleNotAvailableError,
 )
+from med_research.web.models.universal import BiomedicalStoreStateView
 
 logger = logging.getLogger(__name__)
 
@@ -64,6 +67,23 @@ async def med_research_error_handler(_request: Request, exc: MedResearchError) -
     return _error_response(500, exc)
 
 
+async def biomedical_store_not_ready_handler(
+    _request: Request, exc: BiomedicalStoreNotReadyError
+) -> JSONResponse:
+    hint = str(exc) or BIOMED_STORE_INIT_HINT
+    return JSONResponse(
+        status_code=503,
+        content={
+            "detail": hint,
+            "error_type": type(exc).__name__,
+            "store_state": BiomedicalStoreStateView(
+                status="uninitialized",
+                initialization_hint=hint,
+            ).model_dump(),
+        },
+    )
+
+
 def register_error_handlers(app: FastAPI) -> None:
     """Register typed exception handlers on a FastAPI application."""
     app.add_exception_handler(RequestValidationError, request_validation_error_handler)  # type: ignore[arg-type]
@@ -72,3 +92,7 @@ def register_error_handlers(app: FastAPI) -> None:
     app.add_exception_handler(ModuleNotAvailableError, module_not_available_handler)  # type: ignore[arg-type]
     app.add_exception_handler(ConfigurationError, configuration_error_handler)  # type: ignore[arg-type]
     app.add_exception_handler(MedResearchError, med_research_error_handler)  # type: ignore[arg-type]
+    app.add_exception_handler(
+        BiomedicalStoreNotReadyError,
+        biomedical_store_not_ready_handler,  # type: ignore[arg-type]
+    )

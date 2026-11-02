@@ -16,3 +16,7 @@ class RunTransitionError(BiomedicalError):
 
 class EntityNotFoundError(BiomedicalError):
     """Raised when an entity CURIE or UUID cannot be found."""
+
+
+class BiomedicalStoreNotReadyError(BiomedicalError):
+    """Raised when the canonical biomedical store file or schema is not initialized."""

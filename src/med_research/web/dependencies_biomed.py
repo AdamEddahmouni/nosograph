@@ -14,14 +14,17 @@ from med_research.web.demo_mode import is_demo_mode
 
 @lru_cache(maxsize=1)
 def _default_repository() -> BiomedicalRepository:
-    # In demo mode the repository is opened read-only against the immutable
-    # snapshot, so no process can write to the shipped dataset.
+    """Open the configured store path without creating or initializing it.
+
+    In demo mode the repository is opened read-only against the immutable
+    snapshot, so no process can write to the shipped dataset. Outside demo
+    mode, operators run ``biomed init`` explicitly; read routes degrade to
+    typed empty states until the store file and schema exist (see issue #65 /
+    Phase 4 WS3). Repository construction must never create an absent store.
+    """
     demo = is_demo_mode()
     database_path = parse_demo_snapshot_path() if demo else BIOMEDICAL_DB_PATH
-    repository = BiomedicalRepository(database_path, read_only=demo)
-    if not demo:
-        repository.initialize()
-    return repository
+    return BiomedicalRepository(database_path, read_only=demo)
 
 
 def get_biomedical_repository() -> BiomedicalRepository:

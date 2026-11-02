@@ -51,6 +51,17 @@ No new authentication system is introduced. This is not a multi-tenant SaaS.
 
 4. Open the dashboard at `http://localhost:8000`.
 
+### Read-only demo profile (local)
+
+Fixture-backed snapshot + `DEMO_MODE=true`. This does **not** publish a hosted demo.
+
+```bash
+docker compose --profile demo run --rm pipeline demo build
+docker compose --profile demo up web-demo --build
+```
+
+See [Demo](getting-started/demo.md). Operator notes live in the repository at `docs/deployment/local-demo-operator.md` (excluded from GitHub Pages).
+
 ## Environment variables
 
 | Variable | Local default | Production recommendation |

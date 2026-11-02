@@ -61,6 +61,13 @@ class ResearchDisclaimer(BaseModel):
     schema_version: str = "1.0"
 
 
+class BiomedicalStoreStateView(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    status: Literal["uninitialized", "ready"]
+    initialization_hint: str = ""
+
+
 class AnalyticsStatsView(BaseModel):
     model_config = ConfigDict(frozen=True)
 
@@ -233,6 +240,7 @@ class PagedResponse(BaseModel, Generic[T]):
     limit: int
     offset: int
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
+    store_state: BiomedicalStoreStateView | None = None
 
 
 ComparisonStatusLiteral = Literal["comparable", "insufficient_data"]

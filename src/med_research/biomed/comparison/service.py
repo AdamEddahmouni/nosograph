@@ -17,6 +17,7 @@ from med_research.biomed.comparison.models import (
 from med_research.biomed.identifiers import fingerprint_json, normalize_curie
 from med_research.biomed.models import ResearchRun, ResearchRunCreate, RunStatus
 from med_research.biomed.repository import BiomedicalRepository
+from med_research.biomed.store_readiness import require_schema_initialized
 
 _SOFTWARE_VERSION = "2.0.0"
 _RUN_TYPE = "condition_comparison"
@@ -37,6 +38,7 @@ class ConditionComparisonService:
         right_curie: str,
         config: SimilarityConfig,
     ) -> ComparisonResult:
+        require_schema_initialized(self._repository)
         left = normalize_curie(left_curie)
         right = normalize_curie(right_curie)
         left_fp = build_fingerprint(self._repository, left)

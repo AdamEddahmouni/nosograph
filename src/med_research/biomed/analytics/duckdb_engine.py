@@ -11,6 +11,15 @@ import duckdb
 
 logger = logging.getLogger(__name__)
 
+_EMPTY_SUMMARY: dict[str, Any] = {
+    "total_entities": 0,
+    "total_claims": 0,
+    "total_evidence": 0,
+    "total_snapshots": 0,
+    "entity_type_distribution": {},
+    "predicate_distribution": {},
+}
+
 
 @dataclass(frozen=True)
 class PathResult:
@@ -48,11 +57,25 @@ class DuckDBBiomedicalEngine:
         self.db_path = Path(db_path).resolve()
         self._con: duckdb.DuckDBPyConnection | None = None
 
+    def _sqlite_attached(self) -> bool:
+        if not self.db_path.is_file():
+            return False
+        try:
+            import sqlite3
+
+            with sqlite3.connect(self.db_path) as connection:
+                version = connection.execute("PRAGMA user_version").fetchone()[0]
+            from med_research.biomed.schema import SCHEMA_VERSION
+
+            return int(version) >= SCHEMA_VERSION
+        except sqlite3.Error:
+            return False
+
     def _get_connection(self) -> duckdb.DuckDBPyConnection:
         if self._con is None:
             self._con = duckdb.connect(":memory:")
             # Attach SQLite database in read-only mode for zero-copy vectorized execution
-            if self.db_path.exists():
+            if self._sqlite_attached():
                 sqlite_path_str = str(self.db_path).replace("\\", "/")
                 self._con.execute(f"ATTACH '{sqlite_path_str}' AS bio (TYPE sqlite, READ_ONLY)")
         return self._con
@@ -64,6 +87,8 @@ class DuckDBBiomedicalEngine:
 
     def get_summary_statistics(self) -> dict[str, Any]:
         """Compute aggregate counts and distributions across the biomedical knowledge graph."""
+        if not self._sqlite_attached():
+            return dict(_EMPTY_SUMMARY)
         con = self._get_connection()
         try:
             r_ent = con.execute("SELECT COUNT(*) FROM bio.entities").fetchone()
@@ -96,7 +121,7 @@ class DuckDBBiomedicalEngine:
             }
         except Exception as err:
             logger.warning("DuckDB get_summary_statistics error: %s", err)
-            return {"error": str(err)}
+            return dict(_EMPTY_SUMMARY)
 
     def prioritize_targets_vectorized(
         self,

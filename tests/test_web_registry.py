@@ -1320,8 +1320,12 @@ class TestExportRouterUnit:
         assert "corrupt" in resp.json()["detail"].lower()
 
     def test_export_report_not_found(self, client, monkeypatch):
+        from med_research.pipeline.reporting import REPORT_DIR_ENV_VAR
         from med_research.web.routers import export as export_mod
 
+        # The session report-dir override would otherwise resolve a report
+        # written by an earlier test in this worker.
+        monkeypatch.delenv(REPORT_DIR_ENV_VAR, raising=False)
         monkeypatch.setattr(export_mod, "PIPELINE_DIR", export_mod.Path("/nonexistent/pipeline"))
         resp = client.get("/api/export/report/repurpose")
         assert resp.status_code == 404

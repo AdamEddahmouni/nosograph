@@ -46,6 +46,8 @@ class BiomedicalGraphAnalytics:
         limit: int = 10,
     ) -> list[GraphPath]:
         """Find claim paths connecting start_curie to target_curie using BFS."""
+        if not self.repo.is_schema_initialized():
+            return []
         if start_curie == target_curie:
             return [GraphPath(nodes=[start_curie], predicates=[], score=1.0)]
 
@@ -101,6 +103,8 @@ class BiomedicalGraphAnalytics:
         top_k: int = 10,
     ) -> list[TargetPrioritizationScore]:
         """Rank disease targets based on claim evidence support and graph degree centrality."""
+        if not self.repo.is_schema_initialized():
+            return []
         results: list[TargetPrioritizationScore] = []
 
         with self.repo.database.connect() as conn:
