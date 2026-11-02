@@ -28,9 +28,9 @@ from med_research.web.main import app
 
 playwright = pytest.importorskip("playwright.sync_api")
 
+Browser = playwright.Browser
 Page = playwright.Page
 expect = playwright.expect
-sync_playwright = playwright.sync_playwright
 
 PROJECT_ROOT = Path(__file__).parents[1]
 FIXTURES = PROJECT_ROOT / "tests" / "fixtures" / "biomed"
@@ -94,11 +94,15 @@ def demo_server(demo_browser_env) -> str:
 
 
 @pytest.fixture(scope="session")
-def demo_browser():
-    with sync_playwright() as playwright_context:
-        browser = playwright_context.chromium.launch(headless=True)
-        yield browser
-        browser.close()
+def demo_browser(browser: Browser) -> Browser:
+    """Alias of the worker-wide session browser.
+
+    A private ``sync_playwright()`` here would raise Playwright's
+    "Sync API inside the asyncio loop" error whenever another browser module is
+    still holding the worker's session (xdist ``--dist=loadscope``), which is
+    exactly how the A3 slow suite lost this module.
+    """
+    return browser
 
 
 def _get_json(url: str) -> dict:
@@ -125,12 +129,39 @@ def _discover_claim_id(base: str) -> str:
             continue
         if fallback is None:
             fallback = claim_id
-        evidence = _get_json(f"{base}/api/v1/claims/{claim_id}/evidence?limit=100")
-        rows = evidence.get("items") or []
+        rows = _evidence_items(base, claim_id)
         directions = {row.get("direction") for row in rows}
         if directions == {"supporting"}:
             return claim_id
     return fallback or items[0]["claim_id"]
+
+
+def _evidence_items(base: str, claim_id: str) -> list[dict]:
+    evidence = _get_json(f"{base}/api/v1/claims/{claim_id}/evidence?limit=100")
+    return evidence.get("items") or []
+
+
+def _provenance_sources(rows: list[dict]) -> set[str]:
+    return {
+        step["resource_name"]
+        for row in rows
+        for step in (row.get("provenance") or [])
+        if step.get("resource_name")
+    }
+
+
+def _discover_claim_with_evidence_source(base: str, source_name: str) -> str | None:
+    """Find a claim whose evidence provenance names ``source_name``.
+
+    The demo snapshot mixes legacy-curated claims with HPOA phenotype evidence;
+    the claim the direction filter walks is not guaranteed to be HPOA-backed.
+    """
+    claims = _get_json(f"{base}/api/v1/conditions/{SUPPORTED_CONDITION_CURIE}/claims?limit=100")
+    for item in claims.get("items") or []:
+        claim_id = item["claim_id"]
+        if source_name in _provenance_sources(_evidence_items(base, claim_id)):
+            return claim_id
+    return None
 
 
 def _is_mutation_request(url: str) -> bool:
@@ -215,7 +246,14 @@ def test_demo_browser_public_flow(demo_browser, demo_server) -> None:
         expect(page.locator("#evidence-explorer-filters")).to_be_visible()
         expect(page.locator(".evidence-card")).to_have_count(1)
         expect(page.locator("#evidence-provenance-title")).to_be_visible()
-        expect(page.locator(".evidence-provenance-chain").first).to_contain_text("hpoa")
+        # Provenance must name the resource the API attributes the evidence to.
+        # The walk's claim is legacy-curated; HPOA-backed provenance is pinned
+        # separately by test_demo_browser_shows_hpoa_provenance.
+        sources = _provenance_sources(_evidence_items(base, claim_id))
+        assert sources, "Demo evidence must carry provenance steps"
+        chain = page.locator(".evidence-card .evidence-provenance-chain").first
+        for source in sorted(sources):
+            expect(chain).to_contain_text(source)
 
         # Filter evidence by direction and confirm the list narrows.
         page.select_option("#evidence-filter-direction", "supporting")
@@ -250,6 +288,30 @@ def test_demo_browser_public_flow(demo_browser, demo_server) -> None:
         assert mutation_requests == [], (
             f"Mutation-capable requests fired in demo mode: {mutation_requests}"
         )
+    finally:
+        context.close()
+
+
+def test_demo_browser_reuses_the_shared_session(demo_browser, browser) -> None:
+    """Opening a per-module Playwright session is the browser-CI defect."""
+    assert demo_browser is browser
+
+
+def test_demo_browser_shows_hpoa_provenance(demo_browser, demo_server) -> None:
+    """HPOA-sourced phenotype evidence keeps its source in the timeline."""
+    base = demo_server
+    claim_id = _discover_claim_with_evidence_source(base, "hpoa")
+    assert claim_id, "Demo snapshot must expose HPOA-backed evidence"
+
+    context = demo_browser.new_context()
+    page = context.new_page()
+    try:
+        page.goto(f"{base}/index.html?claim_id={claim_id}#evidence-explorer")
+        page.wait_for_function("() => document.body.dataset.booted === 'true'")
+        expect(page.locator("#evidence-explorer-title")).to_be_visible()
+        card = page.locator(".evidence-card", has_text="Source: hpoa").first
+        expect(card).to_be_visible()
+        expect(card.locator(".evidence-provenance-chain")).to_contain_text("hpoa")
     finally:
         context.close()
 

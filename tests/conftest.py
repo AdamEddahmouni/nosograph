@@ -19,6 +19,37 @@ pytest_plugins = [
     "tests.biomed.comparison.conftest",
 ]
 
+
+@pytest.fixture(scope="session")
+def playwright_session():
+    """One Playwright sync session per pytest worker process.
+
+    The sync API pumps its protocol dispatcher on an asyncio loop and leaves
+    that loop marked as running for as long as the ``sync_playwright()``
+    context is alive. Entering a second session in the same thread therefore
+    raises "It looks like you are using Playwright Sync API inside the asyncio
+    loop".
+
+    ``pytest-xdist --dist=loadscope`` (the repository default) can schedule
+    several browser modules on one worker, and session-scoped fixtures outlive
+    their module, so every browser fixture shares this single session instead
+    of opening a private one.
+    """
+    playwright_api = pytest.importorskip("playwright.sync_api")
+    with playwright_api.sync_playwright() as session:
+        yield session
+
+
+@pytest.fixture(scope="session")
+def browser(playwright_session):
+    """Headless Chromium shared by every browser test module in this worker."""
+    browser_instance = playwright_session.chromium.launch(headless=True)
+    try:
+        yield browser_instance
+    finally:
+        browser_instance.close()
+
+
 # Disable the in-memory API rate limiter during tests. The web API suite
 # issues 100+ requests per session and would otherwise be throttled with
 # 429 responses mid-run. This runs before any test module (including
