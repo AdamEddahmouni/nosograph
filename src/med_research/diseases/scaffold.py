@@ -1003,8 +1003,12 @@ SCREENING_PROFILE = {{}}
 # ── Orchestration ────────────────────────────────────────────────────────
 
 
-def populate_scaffolded_config(disease_id: str) -> Path | None:
-    """Derive CAR_T_SCORES, DRUG_SAFETY_RISK, and SCREENING_PROFILE from KG JSON."""
+def populate_scaffolded_config(disease_id: str, *, disease_dir: Path | None = None) -> Path | None:
+    """Derive CAR_T_SCORES, DRUG_SAFETY_RISK, and SCREENING_PROFILE from KG JSON.
+
+    ``disease_dir`` must follow the scaffold target so an isolated scaffold
+    (tests, bulk harvest) never rewrites a same-named checked-in disease config.
+    """
     if disease_id == "sle":
         return None
     import importlib.util
@@ -1016,7 +1020,9 @@ def populate_scaffolded_config(disease_id: str) -> Path | None:
         raise ConfigurationError(f"Cannot load populate script at {script_path}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    written = module.write_config_sections(disease_id)
+    written = module.write_config_sections(
+        disease_id, disease_dir=disease_dir or (_diseases_root() / disease_id)
+    )
     return written if isinstance(written, Path) else None
 
 
@@ -1197,8 +1203,10 @@ def scaffold_disease(
     # ── Write files ───────────────────────────────────────────────────
     root.mkdir(parents=True, exist_ok=True)
     data_dir.mkdir(parents=True, exist_ok=True)
-    (root / "__init__.py").write_text("", encoding="utf-8")
-    (root / "config.py").write_text(generate_config_py(disease_id, display_name), encoding="utf-8")
+    (root / "__init__.py").write_text("", encoding="utf-8", newline="\n")
+    (root / "config.py").write_text(
+        generate_config_py(disease_id, display_name), encoding="utf-8", newline="\n"
+    )
     for fname, payload in (
         ("genes.json", genes_json),
         ("drugs.json", drugs_json),
@@ -1207,11 +1215,11 @@ def scaffold_disease(
         ("profile.json", profile_json),
     ):
         (data_dir / fname).write_text(
-            json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+            json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8", newline="\n"
         )
 
     try:
-        populate_scaffolded_config(disease_id)
+        populate_scaffolded_config(disease_id, disease_dir=root)
         logger.info(
             "✅ Populated CAR_T_SCORES, DRUG_SAFETY_RISK, and SCREENING_PROFILE for %s",
             disease_id,
@@ -1656,7 +1664,9 @@ def refresh_disease(
             ("relationships.json", relationships),
         ):
             (data_dir / fname).write_text(
-                json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+                json.dumps(payload, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+                newline="\n",
             )
 
     summary = {
@@ -1773,7 +1783,9 @@ def _write_prune_backup(
         "drugs": [d for d in existing_drugs if d["id"] in pruned_drug_ids],
         "pathway_memberships": pathway_memberships,
     }
-    backup_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    backup_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8", newline="\n"
+    )
     return backup_path
 
 
@@ -1933,7 +1945,9 @@ def restore_disease(
             ("relationships.json", relationships),
         ):
             (data_dir / fname).write_text(
-                json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+                json.dumps(payload, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+                newline="\n",
             )
 
     summary = {
@@ -2303,7 +2317,7 @@ def save_disease_registry(
         registry_path = _diseases_root() / "disease_registry.json"
     payload = {"diseases": diseases}
     registry_path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n"
     )
     return registry_path
 

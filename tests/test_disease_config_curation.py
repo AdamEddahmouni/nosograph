@@ -133,6 +133,30 @@ def test_duplicate_assignment_detector():
     assert _duplicate_assignments("FOO = {\n    'a': 1,\n}\n") == []
 
 
+def test_write_config_sections_scopes_writes_to_the_scaffold_target(tmp_path):
+    """A derived-block refresh must not rewrite the checked-in config of the
+    same disease id. Scaffolding into a temporary tree previously re-resolved
+    the real ``src/`` path and rewrote ``crohns_disease/config.py`` (LF -> CRLF
+    on Windows) as a side effect of the test suite.
+    """
+    import shutil
+
+    from scripts.populate_disease_configs import write_config_sections
+
+    repo_dir = Path("src") / "med_research" / "diseases" / "crohns_disease"
+    original = (repo_dir / "config.py").read_bytes()
+    target = tmp_path / "crohns_disease"
+    shutil.copytree(repo_dir, target, ignore=shutil.ignore_patterns("__pycache__"))
+
+    write_config_sections("crohns_disease", sections=("risk",), disease_dir=target)
+
+    rewritten = (target / "config.py").read_bytes()
+    assert b"DRUG_SAFETY_RISK = {" in rewritten
+    # Byte-identical newlines across platforms: no CRLF translation on Windows.
+    assert b"\r\n" not in rewritten
+    assert (repo_dir / "config.py").read_bytes() == original
+
+
 def test_enrichment_disease_gene_list_helper():
     from med_research.pipeline.bioinformatics.enrichment import load_disease_gene_list
 

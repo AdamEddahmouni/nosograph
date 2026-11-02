@@ -491,6 +491,8 @@ def test_scaffold_existing_raises_without_overwrite(tmp_path):
 def test_scaffold_id_is_sanitized(tmp_path):
     # target_dir is an exact write destination; the sanitized id is applied
     # when no target_dir is given (i.e. to the real diseases/ tree).
+    tracked_config = Path("src/med_research/diseases/crohns_disease/config.py")
+    tracked_before = tracked_config.read_bytes()
     summary = scaffold.scaffold_disease(
         "Crohn's Disease",
         name="Crohn's disease",
@@ -500,6 +502,9 @@ def test_scaffold_id_is_sanitized(tmp_path):
     assert summary["disease_id"] == "crohns_disease"
     assert (tmp_path / "__init__.py").exists()
     assert summary["files"][0].startswith(str(tmp_path))
+    # Scaffolding a same-named id into a temp tree must not rewrite the
+    # checked-in disease config through the derived-block refresh.
+    assert tracked_config.read_bytes() == tracked_before
 
 
 # ── Refresh (merge into existing module) ────────────────────────────────

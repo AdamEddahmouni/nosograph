@@ -365,12 +365,19 @@ def write_config_sections(
     disease_id: str,
     dry_run: bool = False,
     sections: Sequence[str] = ("car_t", "risk", "screening"),
+    *,
+    disease_dir: Path | None = None,
 ) -> Path:
     """Replace CAR_T_SCORES, risk, and screening blocks in config.py.
 
     ``sections`` limits which blocks are rewritten, so a caller that only wants
     the drug-safety derivation cannot clobber a hand-curated CAR-T or screening
     section. Non-SLE diseases only.
+
+    ``disease_dir`` scopes both reads and the write. Callers that scaffold into
+    an isolated tree (tests, bulk harvests) must pass it, otherwise a
+    derived-block refresh silently rewrites the checked-in config of a
+    same-named disease in ``src/``.
     """
     if disease_id == "sle":
         raise ValueError("SLE config is manually curated; use --report only for sle")
@@ -380,8 +387,13 @@ def write_config_sections(
     if unknown:
         raise ValueError(f"Unknown config section(s): {sorted(unknown)}")
 
-    data_dir = SRC / "med_research" / "diseases" / disease_id / "data"
-    config_path = SRC / "med_research" / "diseases" / disease_id / "config.py"
+    base = (
+        Path(disease_dir)
+        if disease_dir is not None
+        else SRC / "med_research" / "diseases" / disease_id
+    )
+    data_dir = base / "data"
+    config_path = base / "config.py"
 
     text = config_path.read_text(encoding="utf-8")
     if "car_t" in wanted:
@@ -459,7 +471,10 @@ def write_config_sections(
         )
 
     if not dry_run:
-        config_path.write_text(text, encoding="utf-8")
+        # newline="\n" keeps output byte-identical across platforms; the default
+        # text-mode newline translation rewrites LF files as CRLF on Windows and
+        # turns a no-op config sync into a whole-file diff in the checkout.
+        config_path.write_text(text, encoding="utf-8", newline="\n")
     return config_path
 
 
