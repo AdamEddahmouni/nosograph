@@ -65,6 +65,11 @@ DEFAULT_PORT = 8000
 OWNER_LABEL = "dev.nosograph.smoke"
 IS_WINDOWS = os.name == "nt"
 
+#: Exit codes are part of the harness contract documented in the module docstring.
+EXIT_OK = 0
+EXIT_FAILED = 1
+EXIT_ENVIRONMENT = 3
+
 
 @dataclass
 class CommandResult:
@@ -319,6 +324,7 @@ def _finish(
     image_origin: str,
     report: Path | None,
     extra: dict[str, Any] | None = None,
+    exit_code: int | None = None,
 ) -> int:
     failures = [
         check["name"] for check in checks if not check["ok"] and check.get("required", True)
@@ -345,7 +351,9 @@ def _finish(
             report.write_text(text + "\n", encoding="utf-8")
         except OSError as exc:
             print(f"[docker-smoke] WARNING: could not write report: {exc}", file=sys.stderr)
-    return 0 if payload["ok"] else 1
+    if exit_code is not None:
+        return exit_code
+    return EXIT_OK if payload["ok"] else EXIT_FAILED
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -435,8 +443,16 @@ def main(argv: list[str] | None = None) -> int:
             docker.describe(500) if not docker.ok else "available",
         )
         if not daemon_ok:
+            # A missing docker CLI or an unreachable daemon is an environment
+            # problem, not a failed check, and is reported with its own exit
+            # code so a caller can tell "cannot run here" from "ran and failed".
             return _finish(
-                checks, image=image, port=port, image_origin=image_origin, report=args.report
+                checks,
+                image=image,
+                port=port,
+                image_origin=image_origin,
+                report=args.report,
+                exit_code=EXIT_ENVIRONMENT,
             )
 
         if not args.no_build:

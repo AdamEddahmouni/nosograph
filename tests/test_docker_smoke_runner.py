@@ -11,6 +11,7 @@ grandchild inherits the handles.
 from __future__ import annotations
 
 import importlib.util
+import json
 import sys
 import time
 from pathlib import Path
@@ -95,3 +96,38 @@ def test_no_build_without_an_image_fails_fast() -> None:
 def test_build_only_and_no_build_are_mutually_exclusive() -> None:
     with pytest.raises(SystemExit):
         docker_smoke.main(["--build-only", "--no-build", "--image", "x:y"])
+
+
+def test_environment_failure_uses_its_own_exit_code(capsys) -> None:
+    """A missing CLI or unreachable daemon is exit 3, not a failed check.
+
+    The module docstring promises 0 for a clean run, 3 when the docker CLI or
+    daemon cannot be reached, and 1 for a failed check. Without this guard the
+    environment case collapsed into 1, so a caller could not tell "cannot run
+    here" from "ran and failed" -- which is exactly what a hosted runner needs
+    to distinguish before it reports a build failure.
+    """
+    assert docker_smoke.EXIT_ENVIRONMENT == 3
+
+    checks = [
+        {
+            "name": "docker_daemon",
+            "phase": "environment",
+            "ok": False,
+            "required": True,
+            "detail": "cannot connect to the Docker daemon",
+        }
+    ]
+    finish_kwargs = {"image": "none:latest", "port": 8000, "image_origin": "reused", "report": None}
+
+    assert (
+        docker_smoke._finish(checks, exit_code=docker_smoke.EXIT_ENVIRONMENT, **finish_kwargs) == 3
+    )
+    payload = json.loads(capsys.readouterr().out)
+    assert payload["ok"] is False
+    assert payload["failures"] == ["docker_daemon"]
+
+    # An ordinary failed check is still 1, and a clean run is still 0.
+    assert docker_smoke._finish(checks, **finish_kwargs) == 1
+    passing = [{**checks[0], "ok": True, "detail": "available"}]
+    assert docker_smoke._finish(passing, **finish_kwargs) == 0
