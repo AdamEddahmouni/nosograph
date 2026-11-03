@@ -61,6 +61,20 @@
     --transition: var(--ng-fast) var(--ng-ease);
 }
 
+/* ── Dashboard-local primitives (app-only) ───────────────────────────────
+   tokens.css is a parity-locked pair with docs/stylesheets/tokens.css
+   (tests/test_design_tokens.py asserts identical names and values), so
+   dashboard-only measurements live here instead of diverging that file.
+   Consumed by the rules below; never by JS-injected inline styles. */
+:root {
+    --ng-dash-tap: 44px;              /* touch-target floor (WCAG 2.5.5 / 2.5.8) */
+    --ng-dash-gutter: clamp(0.875rem, 2.5vw, 1.5rem);
+    --ng-dash-shell-max: 1560px;      /* wide-desktop reading measure */
+    --ng-dash-table-min: 620px;       /* narrowest legible comparison matrix */
+    --ng-dash-print-ink: rgb(0 0 0);
+    --ng-dash-print-rule: rgb(122 132 148);
+}
+
 /* ── Base ──────────────────────────────────────────────────────────────── */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -91,10 +105,30 @@ img { max-width: 100%; }
 
 /* ── Focus + skip link (WCAG 2.4.11: ring token is 3:1 on the chassis) ─── */
 a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible,
-textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible,
+[role="button"]:focus-visible, [role="tab"]:focus-visible,
+[role="option"]:focus-visible, [role="menuitem"]:focus-visible,
+[contenteditable="true"]:focus-visible, .nav-link:focus-visible,
+.condition-claim-link:focus-visible, .evidence-related-item:focus-visible {
     outline: var(--ng-focus-ring-width) solid var(--ng-focus-ring);
     outline-offset: var(--ng-focus-ring-offset);
     border-radius: var(--ng-radius-xs);
+}
+
+/* Non-native controls must not lose the ring to a hover-only border rule. */
+.nav-select:focus-visible,
+.ts-wrapper.focus .ts-control:focus-visible {
+    outline: var(--ng-focus-ring-width) solid var(--ng-focus-ring);
+    outline-offset: 1px;
+}
+
+/* Scrollable data regions are reachable and visibly focused (WCAG 2.1.1). */
+.corpus-table-wrap:focus-visible,
+.condition-comparison-table-wrap:focus-visible,
+.workspace-trend-table-scroll:focus-visible,
+.cd-card:focus-visible {
+    outline: var(--ng-focus-ring-width) solid var(--ng-focus-ring);
+    outline-offset: 2px;
 }
 
 .skip-link {
@@ -360,6 +394,19 @@ textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
 }
 .nav-link:hover { color: var(--ng-ink); background: var(--ng-hover); }
 .nav-link.active { color: var(--ng-ink); background: var(--ng-active); }
+/* Active navigation is announced (aria-current) and underlined, so the state
+   never depends on a background tint alone. */
+.nav-link[aria-current="page"],
+.nav-link[aria-current="true"],
+.nav-link[aria-current="location"],
+.nav-link[aria-current="step"],
+.condition-result-item[aria-current="true"] {
+    color: var(--ng-ink);
+    background: var(--ng-active);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
 .nav-links--tools .nav-link { font-size: var(--ng-text-micro); color: var(--ng-ink-muted); }
 .nav-instance {
     margin-left: auto;
@@ -2531,6 +2578,103 @@ footer .footer-note { color: var(--ng-ink-muted); max-width: 640px; margin: 6px 
     overflow-x: auto;
 }
 
+/* The shared `input:focus, select:focus, textarea:focus` rule sets
+   `outline: none` at equal specificity and comes later in this file, which
+   silently cancelled the :focus-visible ring above. Restore the ring for
+   keyboard users with a higher-specificity selector; pointer users keep the
+   existing border/box-shadow affordance. */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: var(--ng-focus-ring-width) solid var(--ng-focus-ring);
+    outline-offset: var(--ng-focus-ring-offset);
+}
+
+/* ── State signalling: never colour alone (WCAG 1.4.1) ────────────────────
+   Every state carries a second channel — glyph, border style, or hatch — so
+   it survives greyscale, colour-vision deficiency, and forced-colors mode. */
+.workspace-result.loading::before,
+.module-result.loading::before,
+.kg-loading::before,
+.sat-loading-box::before {
+    content: "◴";
+    margin-right: 6px;
+    color: var(--ng-info);
+}
+
+.workspace-result.error::before,
+.module-result.error::before,
+.sat-error-box::before,
+.agent-error::before,
+.condition-comparison-error::before,
+#workspace-submit-status[data-state="failure"]::before {
+    content: "⚠";
+    margin-right: 6px;
+    font-weight: 700;
+}
+
+.sat-empty::before,
+.manage-empty::before,
+.evidence-explorer-placeholder::before,
+.condition-explorer-placeholder::before,
+.condition-comparison-placeholder:not(.condition-comparison-error)::before {
+    content: "∅";
+    margin-right: 6px;
+    opacity: 0.75;
+}
+
+.workspace-result.loading,
+.module-result.loading,
+.kg-loading,
+.sat-loading-box {
+    border-left: var(--ng-border-w-accent) solid var(--ng-info);
+}
+
+.workspace-result.error,
+.module-result.error,
+.sat-error-box {
+    border-left: var(--ng-border-w-accent) solid var(--ng-error);
+}
+
+/* Coverage and curation states: shape + label, not hue alone. */
+.coverage-badge.coverage-full::before { content: "●"; margin-right: 5px; font-size: 0.85em; }
+.coverage-badge.coverage-partial::before { content: "◐"; margin-right: 5px; font-size: 0.85em; }
+.coverage-badge.coverage-unsupported::before { content: "△"; margin-right: 5px; font-size: 0.85em; }
+
+/* Scientific missingness: NOT_RECORDED is hatched and circled, KNOWN_ABSENT
+   is slashed — absence of evidence must not read like evidence of absence. */
+.condition-state-cell.state-known-absent > strong::before { content: "⊘ "; }
+.condition-state-cell.state-not-recorded > strong::before { content: "○ "; }
+.condition-state-cell.state-not-recorded {
+    background-image: repeating-linear-gradient(
+        135deg,
+        transparent 0 6px,
+        color-mix(in srgb, var(--ng-ev-unasserted) 14%, transparent) 6px 7px
+    );
+}
+.condition-evidence-chip.supporting::before { content: "● "; }
+.condition-evidence-chip.contradictory::before { content: "◆ "; }
+
+/* Evidence cards restate direction in border style, not only in colour. */
+.evidence-card[data-polarity="contradicts"] { border-left-style: double; border-left-width: 5px; }
+.evidence-card[data-polarity="inconclusive"] { border-left-style: dashed; }
+.evidence-card[data-polarity="unasserted"] { border-left-style: dotted; }
+
+/* ── Dense data: horizontal scroll belongs to the region, never the page ── */
+.module-result, .workspace-result, .analytics-stack, #condition-comparison-result,
+#pathways-result, #target-rank-result, #shared-mech-result, #matrix-result,
+#dossier-result, .condition-explorer-detail, .workspace-graph-detail,
+.workspace-result-columns > * { min-width: 0; max-width: 100%; }
+
+#matrix-result, #pathways-result, #target-rank-result, #shared-mech-result {
+    overflow-x: auto;
+}
+
+.matrix-table { min-width: var(--ng-dash-table-min); }
+
+.corpus-table-wrap, .condition-comparison-table-wrap, .workspace-trend-table-scroll,
+.cd-card { -webkit-overflow-scrolling: touch; }
+
 /* ── Keyframes ─────────────────────────────────────────────────────────── */
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes popIn { from { opacity: 0; transform: scale(0.97) translateY(6px); } to { opacity: 1; transform: scale(1) translateY(0); } }
@@ -2608,6 +2752,25 @@ footer .footer-note { color: var(--ng-ink-muted); max-width: 640px; margin: 6px 
     .satellite-title { padding-left: 0; border-left: 0; }
     .main-content { margin: 1.25rem auto; padding: 0 0.9rem; }
     .spatial-metrics { grid-template-columns: 1fr; }
+
+    /* Touch targets: primary controls reach the 44px floor on phones. */
+    .btn, .btn-sm, .nav-link, .nav-toggle, .nav-select, .tier-filter-pill,
+    .workspace-controls input, .workspace-controls select,
+    .condition-explorer-toolbar input, .condition-explorer-toolbar select,
+    .corpus-filter-bar input, .corpus-filter-bar select, .corpus-filter-bar button {
+        min-height: var(--ng-dash-tap);
+    }
+    .ts-wrapper.nav-select-ts .ts-control { min-height: var(--ng-dash-tap); }
+    /* Icon-only controls need the full floor in both axes. */
+    .nav-toggle, .nav-status {
+        min-width: var(--ng-dash-tap);
+        min-height: var(--ng-dash-tap);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    input[type="checkbox"], input[type="radio"] { min-width: 24px; min-height: 24px; }
+    .workspace-check, .workspace-alert-check { min-height: var(--ng-dash-tap); }
 }
 
 @media (max-width: 560px) {
@@ -2624,13 +2787,105 @@ footer .footer-note { color: var(--ng-ink-muted); max-width: 640px; margin: 6px 
     .chat-agent { margin-right: 0; }
 }
 
+/* ── Narrow phones (360-class): single column, no page overflow ────────── */
+@media (max-width: 420px) {
+    .nav-primary { padding: 0 10px; gap: 8px; }
+    /* The wordmark is decorative beside the labelled logo mark. */
+    .nav-title { display: none; }
+    .nav-disease-wrap { flex: 1 1 auto; min-width: 0; }
+    .container { padding: 12px 10px 8px; }
+    .hero { padding: 16px 0 12px; }
+    .hero h1 { font-size: 1.75rem; }
+    .hero-actions { width: 100%; max-width: none; }
+    .stat-card { padding: 10px 12px; }
+    .workspace-result, .workspace-history-shell { margin-left: 10px; margin-right: 10px; }
+    .stats-grid, .stats-grid-platform, .stats-grid-disease, .modules-grid,
+    .workspace-result-columns, .workspace-summary-grid, .evidence-summary-grid,
+    .condition-comparison-bar-row { grid-template-columns: 1fr; }
+    .condition-comparison-bar-row { gap: 4px; }
+    .workspace-intro, .condition-explorer-intro, .evidence-explorer-intro,
+    .condition-comparison-intro, .evidence-claim-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* ── Wide desktop (1920-class): spend the extra measure, don't stretch ─── */
+@media (min-width: 1600px) {
+    .container {
+        max-width: var(--ng-dash-shell-max);
+        padding-left: var(--ng-dash-gutter);
+        padding-right: var(--ng-dash-gutter);
+    }
+    .stats-grid-disease { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .modules-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .hero .subtitle { max-width: 78ch; }
+}
+
 /* ── Reduced motion: all nonessential motion off ───────────────────────── */
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
+        animation-delay: 0s !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+        transition-delay: 0s !important;
         scroll-behavior: auto !important;
+    }
+    /* The loading shimmer is decorative; the state stays visible without it. */
+    .stat-card.is-loading .stat-value {
+        animation: none !important;
+        background: var(--ng-surface-alt);
+    }
+}
+
+/* ── Print / PDF export: keep the evidence, drop the chrome ────────────── */
+@media print {
+    @page { margin: 12mm; }
+
+    html, body {
+        background: rgb(255 255 255) !important;
+        color: var(--ng-dash-print-ink) !important;
+        font-size: 10.5pt;
+    }
+
+    .top-nav, .skip-link, footer, .demo-banner, .hero-actions, .btn,
+    .nav-meta, .workspace-form, .workspace-actions, .workspace-history-shell,
+    .workspace-alerts, .workspace-trends, .workspace-evidence-graph,
+    .corpus-filter-bar, .corpus-pagination, .corpus-gaps-footer,
+    #jobs, .structure-modal, .modal-backdrop, .spinner {
+        display: none !important;
+    }
+
+    .container { max-width: none; padding: 0; }
+    section[id], h2[id], div[id="export-card"] { scroll-margin-top: 0; }
+
+    .workspace-shell, .corpus-browser-shell, .condition-explorer-shell,
+    .evidence-explorer-shell, .condition-comparison-shell, .module-card {
+        border: 1px solid var(--ng-dash-print-rule) !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+    }
+
+    table { width: 100% !important; border-collapse: collapse !important; }
+    th, td {
+        border: 1px solid var(--ng-dash-print-rule) !important;
+        background: rgb(255 255 255) !important;
+        color: var(--ng-dash-print-ink) !important;
+    }
+    thead { display: table-header-group; }
+    tr, .evidence-card, .condition-claim,
+    .evidence-provenance-chain li { break-inside: avoid; }
+
+    a[href^="http"]:not([href*="nosograph"])::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+
+    /* Glyph and hatch state channels must survive the printer. */
+    .evidence-polarity-badge::before {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }

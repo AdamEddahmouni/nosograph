@@ -17,7 +17,7 @@
 
         <!-- ── Navigation ───────────────────────────────────────────── -->
         <header>
-        <nav class="top-nav" id="top-nav">
+        <nav class="top-nav" id="top-nav" aria-label="Primary">
             <div class="nav-primary">
                 <div class="nav-brand">
                     <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">☰</button>
@@ -33,7 +33,7 @@
                     <a href="/api/health" class="nav-link nav-status" id="api-status" title="API Status" aria-label="API status">●</a>
                 </div>
             </div>
-            <div class="nav-menu" id="nav-menu">
+            <div class="nav-menu" id="nav-menu" role="group" aria-label="Sections and research tools">
                 <div class="nav-links nav-links--sections">
                     <a href="#evidence-workspace" class="nav-link" data-nav="evidence-workspace">Workspace</a>
                     <a href="#modules" class="nav-link" data-nav="modules">Modules</a>
@@ -799,7 +799,7 @@
                 </div>
 
                 <!-- Table Container -->
-                <div class="corpus-table-wrap">
+                <div class="corpus-table-wrap" role="region" aria-label="Disease corpus table" tabindex="0">
                     <table class="corpus-table">
                         <thead>
                             <tr>
