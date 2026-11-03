@@ -6,6 +6,7 @@ They do not re-assert :focus-visible CSS, which is covered statically.
 
 from __future__ import annotations
 
+import json
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -150,6 +151,35 @@ CORPUS_FIXTURE_ROWS = [
 ]
 
 
+def _corpus_status_payload() -> dict:
+    return {
+        "diseases": CORPUS_FIXTURE_ROWS,
+        "total_matching": len(CORPUS_FIXTURE_ROWS),
+        "aggregate": {},
+        "top_config_gaps": [],
+    }
+
+
+def _open_dashboard(page: Page, static_server: str) -> None:
+    """Load the dashboard with the corpus-status fetch answered deterministically.
+
+    The static test server has no API, so the page's own bootstrap fetch would
+    otherwise reject asynchronously and overwrite whatever the test rendered --
+    turning these assertions into a race. Answering it keeps the bootstrap on
+    its success path, which is the path a real deployment takes.
+    """
+    payload = json.dumps(_corpus_status_payload())
+    page.route(
+        "**/api/system/corpus-status*",
+        lambda route: route.fulfill(status=200, content_type="application/json", body=payload),
+    )
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    page.wait_for_function(
+        f"() => document.querySelectorAll('.corpus-table tbody tr').length === "
+        f"{len(CORPUS_FIXTURE_ROWS)}"
+    )
+
+
 def _render_corpus_rows(page: Page) -> None:
     """Exercise the real corpus render path with a deterministic fixture."""
     page.evaluate(
@@ -196,7 +226,7 @@ def test_compact_corpus_table_keeps_table_semantics_and_column_labels(
 ) -> None:
     """The phone presentation keeps <table>/<th scope> and labels each cell."""
     page.set_viewport_size({"width": 390, "height": 844})
-    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    _open_dashboard(page, static_server)
     _render_corpus_rows(page)
 
     table = page.get_by_role(
@@ -236,7 +266,7 @@ def test_compact_corpus_table_keeps_table_semantics_and_column_labels(
 
 
 def test_missing_counts_are_not_rendered_as_zero(page: Page, static_server: str) -> None:
-    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    _open_dashboard(page, static_server)
     _render_corpus_rows(page)
     second_row = page.locator(".corpus-table tbody tr").nth(1)
     # symptom_count is absent from the fixture, so the row must say so.
@@ -248,7 +278,7 @@ def test_missing_counts_are_not_rendered_as_zero(page: Page, static_server: str)
 
 def test_scroll_region_responds_to_end_and_home_keys(page: Page, static_server: str) -> None:
     page.set_viewport_size({"width": 390, "height": 844})
-    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    _open_dashboard(page, static_server)
     _render_corpus_rows(page)
     region = page.locator("#corpus-table-wrap")
     expect(region).to_have_attribute("aria-describedby", "corpus-table-hint")
@@ -276,7 +306,7 @@ def test_scroll_region_responds_to_end_and_home_keys(page: Page, static_server: 
 
 
 def test_table_states_are_announced_and_distinguishable(page: Page, static_server: str) -> None:
-    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    _open_dashboard(page, static_server)
 
     page.evaluate("() => announceCorpusTableState('loading', 'Loading disease corpus data…')")
     expect(page.locator("#corpus-table-status")).to_have_text("Loading disease corpus data…")
@@ -294,7 +324,7 @@ def test_table_states_are_announced_and_distinguishable(page: Page, static_serve
 
 
 def test_empty_corpus_filter_is_a_distinct_empty_state(page: Page, static_server: str) -> None:
-    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    _open_dashboard(page, static_server)
     page.evaluate("() => renderCorpusTable([])")
     expect(page.locator(".corpus-table .table-state--empty")).to_have_count(1)
     expect(page.locator(".corpus-table .table-state--error")).to_have_count(0)
