@@ -1,0 +1,51 @@
+{
+  "disease_curie": "MONDO:0000001",
+  "disease_label": "Synthetic fixture condition",
+  "phenotypes": [
+    {
+      "hpo_id": "HP:0000002",
+      "hpo_label": "Synthetic phenotype two",
+      "direction": "supporting",
+      "frequency": "1/7",
+      "notes": "synthetic annotation supplied by a fixture",
+      "sources": [
+        {
+          "source_id": "synthetic-hpoa",
+          "source_record_id": "HPOA:0000002",
+          "version": "2026-01-01",
+          "checksum": "sha256:aaaa",
+          "attribution": "synthetic fixture"
+        }
+      ]
+    },
+    {
+      "hpo_id": "HP:0000003",
+      "direction": "contradictory",
+      "sources": [
+        {
+          "source_id": "synthetic-literature",
+          "source_record_id": "PMID:00000002"
+        }
+      ]
+    },
+    {
+      "hpo_id": "HP:0000001",
+      "hpo_label": "Synthetic phenotype one",
+      "direction": "supporting",
+      "sources": [
+        {
+          "source_id": "synthetic-literature",
+          "source_record_id": "PMID:00000001",
+          "version": "2026-01-01",
+          "checksum": "sha256:cccc"
+        },
+        {
+          "source_id": "synthetic-hpoa",
+          "source_record_id": "HPOA:0000001",
+          "version": "2026-01-01",
+          "checksum": "sha256:bbbb"
+        }
+      ]
+    }
+  ]
+}

@@ -38,7 +38,7 @@ description: Why NosoGraph builds on standard biomedical ontologies — MONDO, H
 | HPO term IDs | STABLE |
 | FHIR Condition export | NOT_IMPLEMENTED |
 | OMOP concept mapping | NOT_IMPLEMENTED |
-| Phenopackets | NOT_IMPLEMENTED |
+| Phenopackets | EXPERIMENTAL |
 
 ## Curation rules
 
