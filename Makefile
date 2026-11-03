@@ -119,6 +119,9 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/biomed/nosograph_compare/engine.py \
 	src/med_research/biomed/nosograph_compare/models.py \
 	src/med_research/biomed/nosograph_compare/service.py \
+	src/med_research/biomed/phenopacket/__init__.py \
+	src/med_research/biomed/phenopacket/export.py \
+	src/med_research/biomed/phenopacket/models.py \
 	src/med_research/biomed/repository.py \
 	src/med_research/biomed/schema.py \
 	src/med_research/biomed/sync/__init__.py \
@@ -128,6 +131,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/biomed/sync/registry.py \
 	src/med_research/biomed/sync/sources/__init__.py \
 	src/med_research/biomed/sync/sources/hpoa.py \
+	src/med_research/biomed/sync/sources/mondo.py \
 	src/med_research/biomed/sync/sources/opentargets.py \
 	src/med_research/cache.py \
 	src/med_research/cli.py \
