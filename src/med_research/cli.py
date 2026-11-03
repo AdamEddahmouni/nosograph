@@ -487,6 +487,38 @@ def _build_parser() -> argparse.ArgumentParser:
         type=Path,
         help="Write report to file (default: data/reports/disease_batch_status.json)",
     )
+    decov = disease_sub.add_parser(
+        "evidence-coverage",
+        help="Inspect recorded evidence and provenance coverage for disease modules",
+    )
+    decov.add_argument(
+        "--tier",
+        choices=["L2", "L3", "ci_validated", "reference", "all"],
+        help="Corpus slice to inspect (default: the reference diseases)",
+    )
+    decov.add_argument(
+        "--disease",
+        action="append",
+        dest="disease_ids",
+        metavar="ID",
+        help="Inspect a specific disease module (repeatable)",
+    )
+    decov.add_argument("--limit", type=int, help="Maximum modules to inspect")
+    decov.add_argument(
+        "--sample",
+        type=int,
+        metavar="N",
+        help="Deterministically sample N modules from the selected slice",
+    )
+    decov.add_argument("--seed", type=int, default=0, help="Sampling seed (default: 0)")
+    decov.add_argument("--json", action="store_true", help="Print the full report as JSON")
+    decov.add_argument(
+        "--output",
+        type=Path,
+        help=(
+            "Write the report to this path (default: data/reports/evidence_coverage_report.json)"
+        ),
+    )
 
     # ── Knowledge Graph ────────────────────────────────────────────────
     kg = sub.add_parser("kg", help="Build and export the knowledge graph")
@@ -1078,6 +1110,36 @@ def cmd_disease(args):
             print(json.dumps(report, indent=2))
         else:
             print(f"Report written to {output}")
+        return 0
+
+    if args.disease_action == "evidence-coverage":
+        import json
+
+        from med_research.diseases.evidence_coverage import (
+            build_evidence_coverage_report,
+            render_summary,
+            write_evidence_coverage_report,
+        )
+
+        report = build_evidence_coverage_report(
+            disease_ids=getattr(args, "disease_ids", None),
+            tier_filter=getattr(args, "tier", None),
+            limit=getattr(args, "limit", None),
+            sample_size=getattr(args, "sample", None),
+            sample_seed=getattr(args, "seed", 0),
+        )
+        output = getattr(args, "output", None)
+        if output is not None:
+            written = write_evidence_coverage_report(report, Path(output))
+            logger.info(f"Report written to {written}")
+        if getattr(args, "json", False):
+            print(json.dumps(report, indent=2, ensure_ascii=False))
+        else:
+            print(render_summary(report))
+        scope_errors = report["scope"]["errors"]
+        if scope_errors:
+            logger.error(f"{len(scope_errors)} module(s) failed to load; see scope.errors")
+            return 1
         return 0
 
     if args.disease_action == "coverage":
