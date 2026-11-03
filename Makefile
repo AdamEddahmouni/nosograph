@@ -137,6 +137,8 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/cli.py \
 	src/med_research/diseases/base.py \
 	src/med_research/diseases/coverage.py \
+	src/med_research/diseases/curation_state.py \
+	src/med_research/diseases/evidence_coverage.py \
 	src/med_research/diseases/harvest_registry.py \
 	src/med_research/diseases/schemas.py \
 	src/med_research/diseases/validation_batch.py \

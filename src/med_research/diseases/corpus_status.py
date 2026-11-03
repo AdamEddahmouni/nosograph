@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any, Optional, cast
 
 from med_research.diseases.base import Disease
+from med_research.diseases.curation_state import classify_curation_state
 from med_research.diseases.registry_quality import is_blocked_slug
 from med_research.diseases.tier_model import aggregate_tiers, compute_tier
 
@@ -58,9 +59,14 @@ def build_corpus_status(
             symptom_count = len(symptoms) if isinstance(symptoms, list) else 0
             if symptom_count:
                 symptoms_populated += 1
+            curation_state, curation_markers = classify_curation_state(
+                did, disease.data_dir.parent, disease.profile.description or ""
+            )
             row: dict[str, Any] = {
                 "disease_id": did,
                 "name": disease.profile.name,
+                "curation_state": curation_state,
+                "curation_markers": curation_markers,
                 "tier": tier,
                 "strict_pass": strict_pass,
                 "gene_count": counts["genes"],
