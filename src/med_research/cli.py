@@ -345,6 +345,27 @@ def _build_parser() -> argparse.ArgumentParser:
     dval.add_argument(
         "--strict", action="store_true", help="Exit non-zero when config gaps are found (for CI)"
     )
+    dval.add_argument(
+        "--tier",
+        choices=["L2", "L3", "ci_validated", "reference", "all"],
+        default="all",
+        help="Corpus slice for --all (default: all)",
+    )
+    dval.add_argument(
+        "--sample",
+        type=int,
+        metavar="N",
+        help="Deterministically sample N modules from the selected slice",
+    )
+    dval.add_argument(
+        "--seed", type=int, default=0, help="Sampling seed (default: 0; deterministic)"
+    )
+    dval.add_argument(
+        "--json",
+        type=Path,
+        dest="json_path",
+        help="Write a structured validation report to this path",
+    )
     dvalbatch = disease_sub.add_parser(
         "validate-batch",
         help="Run strict batch validation with machine-readable failure classification",
@@ -357,6 +378,15 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     dvalbatch.add_argument(
         "--limit", type=int, help="Maximum number of diseases to validate in this run"
+    )
+    dvalbatch.add_argument(
+        "--sample",
+        type=int,
+        metavar="N",
+        help="Deterministically sample N modules from the selected slice",
+    )
+    dvalbatch.add_argument(
+        "--seed", type=int, default=0, help="Sampling seed (default: 0; deterministic)"
     )
     dvalbatch.add_argument(
         "--output",
@@ -1054,9 +1084,52 @@ def cmd_disease(args):
         return 0
 
     if args.disease_action == "validate":
+        from med_research.diseases.validation_batch import (
+            EXIT_OK,
+            EXIT_USAGE,
+            EXIT_VALIDATION_FAILED,
+            run_strict_validation_batch,
+            write_validation_report,
+        )
+
         if not args.all and not args.disease_id:
             logger.error("❌ disease validate needs a disease_id or --all")
-            return 2
+            return EXIT_USAGE
+
+        structured = args.all and (
+            args.json_path is not None or args.sample is not None or args.tier != "all"
+        )
+        if structured:
+            report = run_strict_validation_batch(
+                tier_filter=args.tier,
+                sample_size=args.sample,
+                sample_seed=args.seed,
+            )
+            summary = report["summary"]
+            logger.info(
+                "\nValidation (%s): %s/%s passed (%.1f%%)",
+                args.tier,
+                summary["passed"],
+                summary["total"],
+                summary["pass_rate"] * 100,
+            )
+            if summary["sampled"]:
+                logger.info(
+                    "  deterministic sample of %s from tier %s (seed %s)",
+                    summary["total"],
+                    args.tier,
+                    summary["sample_seed"],
+                )
+            if summary["excluded_blocked"]:
+                logger.info("  excluded %s blocked slug(s)", summary["excluded_blocked"])
+            if summary["failure_groups"]:
+                logger.warning("  failing checks by field:")
+                for field, count in summary["failure_groups"].items():
+                    logger.info("    %-28s %s", field, count)
+            if args.json_path is not None:
+                out = write_validation_report(report, args.json_path)
+                logger.info("Report written to %s", out)
+            return EXIT_VALIDATION_FAILED if summary["failed"] else EXIT_OK
 
         if args.all:
             # Validate every disease module in one pass — the cheap CI check.
@@ -1117,6 +1190,8 @@ def cmd_disease(args):
 
     if args.disease_action == "validate-batch":
         from med_research.diseases.validation_batch import (
+            EXIT_OK,
+            EXIT_VALIDATION_FAILED,
             run_strict_validation_batch,
             write_validation_report,
         )
@@ -1127,6 +1202,8 @@ def cmd_disease(args):
             tier_filter=tier,
             limit=args.limit,
             disease_ids=explicit,
+            sample_size=args.sample,
+            sample_seed=args.seed,
         )
         out = write_validation_report(report, args.output)
         summary = report["summary"]
@@ -1137,14 +1214,20 @@ def cmd_disease(args):
             summary["total"],
             summary["pass_rate"] * 100,
         )
+        if summary["sampled"]:
+            logger.info("  deterministic sample (seed %s)", summary["sample_seed"])
+        if summary["excluded_blocked"]:
+            logger.info("  excluded %s blocked slug(s)", summary["excluded_blocked"])
         if summary["failed"]:
             logger.warning("  %s module(s) failed strict validation", summary["failed"])
             for failure_class, count in summary.get("failure_classes", {}).items():
                 logger.info("    %s: %s", failure_class, count)
+            for field, count in summary.get("failure_groups", {}).items():
+                logger.info("    field %s: %s", field, count)
         logger.info("Report written to %s", out)
         if args.strict and summary["failed"] > 0:
-            return 1
-        return 0
+            return EXIT_VALIDATION_FAILED
+        return EXIT_OK
 
     if args.disease_action == "add":
         import tempfile
