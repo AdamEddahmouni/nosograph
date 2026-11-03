@@ -2817,13 +2817,29 @@ const corpusBrowserState = {
     limit: 25,
     tier: '',
     gap: '',
+    curation: '',
     search: '',
     sortBy: 'disease_id',
     sortDesc: false,
     searchTimer: null,
     totalMatching: 0,
+    // Evidence coverage is measured per visible page only. Rows outside the
+    // measured page stay unmeasured rather than reporting a zero we never
+    // computed.
+    evidence: new Map(),
+    evidenceStatus: 'idle',
     initialized: false,
 };
+
+const CURATION_LABELS = {
+    curated: 'Curated',
+    generated: 'Generated',
+    unknown: 'Unclassified',
+};
+
+function curationLabel(state) {
+    return CURATION_LABELS[state] || CURATION_LABELS.unknown;
+}
 
 const DISEASE_TO_MONDO_MAP = {
     sle: 'MONDO:0007915',
@@ -2868,15 +2884,18 @@ async function loadCorpusStatus(resetPage = false) {
         });
         if (corpusBrowserState.tier) params.append('tier', corpusBrowserState.tier);
         if (corpusBrowserState.gap) params.append('gap', corpusBrowserState.gap);
+        if (corpusBrowserState.curation) params.append('curation', corpusBrowserState.curation);
         if (corpusBrowserState.search) params.append('search', corpusBrowserState.search);
 
         const data = await apiFetch(`/api/system/corpus-status?${params.toString()}`);
         corpusBrowserState.totalMatching = data.total_matching || 0;
+        corpusBrowserState.curationCounts = data.curation_counts || null;
 
         renderCorpusTierCards(data.aggregate || {});
         renderCorpusGapFilter(data.top_config_gaps || []);
         renderCorpusGapsBreakdown(data.top_config_gaps || []);
         renderCorpusTable(data.diseases || []);
+        void loadCorpusEvidence(data.diseases || []);
         announceCorpusTableState('loaded', `Loaded ${corpusBrowserState.totalMatching.toLocaleString()} disease modules.`);
 
         const start = corpusBrowserState.totalMatching === 0 ? 0 : offset + 1;
@@ -2950,7 +2969,7 @@ function renderCorpusTable(diseases) {
     const tbody = document.getElementById('corpus-table-body');
     if (!tbody) return;
     if (!diseases || !diseases.length) {
-        tbody.innerHTML = tableStateRow('No disease modules matched your filter criteria.', 'empty', 7);
+        tbody.innerHTML = tableStateRow('No disease modules matched your filter criteria.', 'empty', 8);
         labelTableCells(tbody.closest('table'));
         return;
     }
@@ -2982,8 +3001,10 @@ function renderCorpusTable(diseases) {
         const mondoCurie = d.mondo_curie || DISEASE_TO_MONDO_MAP[d.disease_id] || '—';
         const efoId = d.efo_id || '—';
 
+        const curation = d.curation_state || 'unknown';
+
         return `
-            <tr>
+            <tr data-corpus-row="${escapeHtml(d.disease_id)}">
                 <td><span class="corpus-tier-badge ${escapeHtml(tier)}">${escapeHtml(tier)}</span></td>
                 <td>
                     <div class="corpus-row-title">${escapeHtml(d.name || d.disease_id)}</div>
@@ -3004,9 +3025,14 @@ function renderCorpusTable(diseases) {
                     <span class="corpus-symptom-count${symptoms ? ' is-recorded' : ''}">${escapeHtml(symptomLabel)}</span>
                 </td>
                 <td>${gaps || '<span class="corpus-gap-none">None (Complete)</span>'}${extraGaps}</td>
+                <td class="corpus-cell-evidence" data-evidence-for="${escapeHtml(d.disease_id)}">
+                    <span class="corpus-curation-badge ${escapeHtml(curation)}">${escapeHtml(curationLabel(curation))}</span>
+                    <div class="corpus-evidence-line" data-evidence-line data-state="pending">Measuring…</div>
+                </td>
                 <td class="corpus-cell-actions">
-                    <div>
+                    <div class="corpus-action-group">
                         <button type="button" class="btn btn-secondary btn-sm" data-action="corpus-select-disease" data-disease="${escapeHtml(d.disease_id)}">Select</button>
+                        <button type="button" class="btn btn-secondary btn-sm" data-action="corpus-evidence-detail" data-disease="${escapeHtml(d.disease_id)}" aria-expanded="false">Evidence</button>
                     </div>
                 </td>
             </tr>
@@ -3034,6 +3060,190 @@ function renderCorpusTable(diseases) {
             }
         });
     });
+
+    tbody.querySelectorAll('[data-action="corpus-evidence-detail"]').forEach(btn => {
+        btn.addEventListener('click', () => toggleCorpusEvidenceDetail(btn));
+    });
+}
+
+const EVIDENCE_STATE_LABELS = {
+    present: 'Recorded',
+    known_absent: 'Explicitly empty',
+    not_recorded: 'Not recorded',
+    invalid: 'Unreadable',
+};
+
+/**
+ * Measure evidence coverage for the rows currently on screen.
+ *
+ * The corpus table is backed by a bounded sample, so this asks only for the
+ * visible page and never presents the result as a corpus-wide measurement.
+ */
+async function loadCorpusEvidence(diseases) {
+    const status = document.getElementById('corpus-evidence-status');
+    const ids = diseases.map(d => d.disease_id).filter(Boolean);
+    corpusBrowserState.evidence = new Map();
+    corpusBrowserState.evidenceReport = null;
+
+    if (!ids.length) {
+        corpusBrowserState.evidenceStatus = 'empty';
+        return;
+    }
+
+    corpusBrowserState.evidenceStatus = 'loading';
+    if (status) status.textContent = 'Measuring evidence coverage for the visible page…';
+
+    try {
+        const params = new URLSearchParams();
+        ids.forEach(id => params.append('disease', id));
+        const data = await apiFetch(`/api/system/evidence-coverage?${params.toString()}`);
+        const report = data.report || {};
+        (report.per_disease || []).forEach(row => {
+            if (row && row.disease_id) corpusBrowserState.evidence.set(row.disease_id, row);
+        });
+        corpusBrowserState.evidenceReport = report;
+        corpusBrowserState.evidenceStatus = 'loaded';
+        applyCorpusEvidence();
+        if (status) {
+            const scope = report.scope || {};
+            const population = Number(scope.population_modules || 0).toLocaleString();
+            status.textContent = `Evidence coverage measured for ${corpusBrowserState.evidence.size} modules on this page of a ${population}-module registry. This is not a full-corpus measurement.`;
+        }
+    } catch (error) {
+        corpusBrowserState.evidenceStatus = 'failed';
+        applyCorpusEvidence();
+        if (status) {
+            status.textContent = 'Evidence coverage could not be measured; curation labels still come from the corpus readiness report.';
+        }
+    }
+}
+
+/** Fill the per-row evidence cells from the measured page, leaving gaps explicit. */
+function applyCorpusEvidence() {
+    document.querySelectorAll('[data-evidence-for]').forEach(cell => {
+        const line = cell.querySelector('[data-evidence-line]');
+        if (!line) return;
+        const row = corpusBrowserState.evidence.get(cell.dataset.evidenceFor);
+        if (!row) {
+            const failed = corpusBrowserState.evidenceStatus === 'failed';
+            line.dataset.state = failed ? 'failed' : 'unmeasured';
+            line.textContent = failed ? 'Coverage unavailable' : 'Not measured';
+            line.title = failed
+                ? 'The evidence-coverage request failed for this page.'
+                : 'Evidence coverage is measured only for the page it was requested for.';
+            return;
+        }
+        const provenance = row.provenance || {};
+        const total = Number(provenance.evidence_records || 0);
+        const cited = Number(provenance.present || 0);
+        const empty = Number(provenance.known_absent || 0);
+        const absent = Number(provenance.not_recorded || 0);
+        line.dataset.state = cited > 0 ? 'recorded' : (total > 0 ? 'uncited' : 'empty');
+        line.textContent = total
+            ? `${cited.toLocaleString()} / ${total.toLocaleString()} records cite a source`
+            : 'No evidence records';
+        // The empty-versus-absent distinction is the point of the report, so it
+        // is surfaced verbatim instead of being folded into a single gap count.
+        line.title = total
+            ? `Explicitly empty: ${empty.toLocaleString()}; citation field absent: ${absent.toLocaleString()}. A missing citation is not evidence of absence.`
+            : 'This module records no evidence-bearing records to cite.';
+    });
+}
+
+function renderEvidenceDetail(row) {
+    if (!row) {
+        return '<p class="corpus-detail-empty">Evidence coverage was not measured for this module in this view. It is measured only for the page it was requested for.</p>';
+    }
+
+    const provenance = row.provenance || {};
+    const categories = row.categories || {};
+    const categoryRows = Object.entries(categories).map(([key, entry]) => {
+        const state = entry.state || 'not_recorded';
+        const records = typeof entry.records === 'number' ? entry.records.toLocaleString() : '—';
+        let provenanceLabel = '—';
+        if (entry.provenance === 'not_applicable') {
+            provenanceLabel = 'Not applicable';
+        } else if (entry.provenance && typeof entry.provenance === 'object') {
+            provenanceLabel = `${Number(entry.provenance.present || 0).toLocaleString()} cited`;
+        }
+        return `<tr><th scope="row">${escapeHtml(entry.label || key)}</th><td>${escapeHtml(EVIDENCE_STATE_LABELS[state] || state)}</td><td>${records}</td><td>${escapeHtml(provenanceLabel)}</td></tr>`;
+    }).join('');
+
+    const failures = ((row.validation || {}).failures) || [];
+    const failureItems = failures.length
+        ? `<ul class="corpus-detail-list">${failures.map(f => `<li><code>${escapeHtml(f.field)}</code>: ${escapeHtml(f.status)} <span class="corpus-detail-class">${escapeHtml(f.class)}</span></li>`).join('')}</ul>`
+        : '<p class="corpus-detail-ok">Every strict validation check passes for this module.</p>';
+
+    const limitations = row.limitations || [];
+    const limitationItems = limitations.length
+        ? `<ul class="corpus-detail-list">${limitations.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
+        : '';
+
+    const schemes = provenance.by_scheme || {};
+    const schemeText = Object.keys(schemes).length
+        ? Object.entries(schemes).map(([k, v]) => `${escapeHtml(k)}=${Number(v).toLocaleString()}`).join(', ')
+        : 'none recorded';
+
+    return `
+        <div class="corpus-detail-head">
+            <strong>${escapeHtml(row.name || row.disease_id)}</strong>
+            <span class="corpus-detail-meta">${escapeHtml(curationLabel(row.curation_state))} · readiness ${escapeHtml(row.readiness_tier || '—')}${row.ci_validated ? ' · CI-validated' : ''}</span>
+        </div>
+        <table class="corpus-detail-table">
+            <caption class="workspace-sr-only">Recorded evidence by category for ${escapeHtml(row.disease_id)}</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">Presence</th><th scope="col">Records</th><th scope="col">Provenance</th></tr></thead>
+            <tbody>${categoryRows}</tbody>
+        </table>
+        <p class="corpus-detail-summary">
+            ${Number(provenance.present || 0).toLocaleString()} of ${Number(provenance.evidence_records || 0).toLocaleString()} evidence records cite a source;
+            ${Number(provenance.known_absent || 0).toLocaleString()} are explicitly empty and
+            ${Number(provenance.not_recorded || 0).toLocaleString()} have no citation field at all.
+            Identifier schemes: ${schemeText}.
+        </p>
+        <h4 class="corpus-detail-heading">Missing data</h4>
+        ${failureItems}
+        <h4 class="corpus-detail-heading">Limitations</h4>
+        ${limitationItems || '<p class="corpus-detail-ok">No limitations recorded.</p>'}
+    `;
+}
+
+function closeCorpusEvidenceDetail(detail, btn) {
+    if (detail._escapeHandler) {
+        document.removeEventListener('keydown', detail._escapeHandler, true);
+        delete detail._escapeHandler;
+    }
+    detail.remove();
+    btn.setAttribute('aria-expanded', 'false');
+    btn.focus();
+}
+
+function toggleCorpusEvidenceDetail(btn) {
+    const diseaseId = btn.dataset.disease;
+    const rowEl = btn.closest('tr');
+    if (!diseaseId || !rowEl) return;
+
+    const existing = rowEl.nextElementSibling;
+    if (existing && existing.classList && existing.classList.contains('corpus-detail-row')) {
+        closeCorpusEvidenceDetail(existing, btn);
+        return;
+    }
+
+    const detail = document.createElement('tr');
+    detail.className = 'corpus-detail-row';
+    detail.innerHTML = `<td colspan="8"><div class="corpus-detail-body">${renderEvidenceDetail(corpusBrowserState.evidence.get(diseaseId))}</div></td>`;
+    rowEl.after(detail);
+    btn.setAttribute('aria-expanded', 'true');
+    btn.focus();
+
+    // Focus stays on the trigger, so Escape has to be observed at document
+    // level; listening on the inserted row would never receive the key.
+    const onKeyDown = event => {
+        if (event.key !== 'Escape') return;
+        event.stopPropagation();
+        closeCorpusEvidenceDetail(detail, btn);
+    };
+    detail._escapeHandler = onKeyDown;
+    document.addEventListener('keydown', onKeyDown, true);
 }
 
 function initCorpusBrowser() {
@@ -3079,6 +3289,16 @@ function initCorpusBrowser() {
     if (gapSelect) {
         gapSelect.addEventListener('change', () => {
             corpusBrowserState.gap = gapSelect.value;
+            void loadCorpusStatus(true);
+        });
+    }
+
+    // Curation filter dropdown: switches between curated modules, generated
+    // scaffolds, and the whole sample.
+    const curationSelect = document.getElementById('corpus-curation-filter');
+    if (curationSelect) {
+        curationSelect.addEventListener('change', () => {
+            corpusBrowserState.curation = curationSelect.value;
             void loadCorpusStatus(true);
         });
     }

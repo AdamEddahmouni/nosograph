@@ -2206,6 +2206,79 @@ footer .footer-note { color: var(--ng-ink-muted); max-width: 640px; margin: 6px 
 .corpus-gap-none { color: var(--ng-success); font-size: 0.75rem; }
 .corpus-cell-actions { text-align: right; }
 .corpus-cell-actions > div { display: flex; gap: 4px; justify-content: flex-end; }
+.corpus-action-group { flex-wrap: wrap; }
+
+/* ── Curation state and evidence coverage ────────────────────────────────
+   Every state below carries a text label or glyph, so nothing depends on
+   colour alone. "Unclassified" is a real answer, not an error state. */
+.corpus-evidence-note {
+    margin: 0 0 12px;
+    padding: 10px 12px;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--ng-ink-muted);
+    background: color-mix(in srgb, var(--ng-info) 6%, transparent);
+    border: 1px solid color-mix(in srgb, var(--ng-info) 18%, transparent);
+    border-radius: var(--ng-radius-sm);
+}
+
+.corpus-curation-badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: var(--ng-radius-pill);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: var(--ng-font-mono);
+    border: 1px solid transparent;
+}
+.corpus-curation-badge.curated {
+    background: color-mix(in srgb, var(--ng-success) 12%, transparent);
+    color: var(--ng-success);
+    border-color: color-mix(in srgb, var(--ng-success) 30%, transparent);
+}
+.corpus-curation-badge.generated {
+    background: color-mix(in srgb, var(--ng-provenance) 12%, transparent);
+    color: var(--ng-provenance);
+    border-color: color-mix(in srgb, var(--ng-provenance) 30%, transparent);
+}
+.corpus-curation-badge.unknown {
+    background: color-mix(in srgb, var(--ng-warning) 12%, transparent);
+    color: var(--ng-warning);
+    border-color: color-mix(in srgb, var(--ng-warning) 30%, transparent);
+}
+
+.corpus-evidence-line { margin-top: 4px; font-size: 0.72rem; line-height: 1.35; color: var(--ng-ink-muted); }
+.corpus-evidence-line[data-state="recorded"] { color: var(--ng-ink-soft); }
+.corpus-evidence-line[data-state="uncited"] { color: var(--ng-warning); }
+.corpus-evidence-line[data-state="unmeasured"],
+.corpus-evidence-line[data-state="pending"] { color: var(--ng-ink-muted); font-style: italic; }
+.corpus-evidence-line[data-state="failed"] { color: var(--ng-error); }
+
+/* Expandable evidence detail row */
+.corpus-detail-row > td {
+    padding: 0;
+    background: color-mix(in srgb, var(--ng-surface-alt) 70%, transparent);
+}
+.corpus-detail-body {
+    padding: 14px 16px 18px;
+    border-left: 3px solid color-mix(in srgb, var(--ng-info) 45%, transparent);
+    text-align: left;
+}
+.corpus-detail-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+.corpus-detail-meta { font-size: 0.72rem; color: var(--ng-ink-muted); font-family: var(--ng-font-mono); }
+.corpus-detail-table { width: 100%; border-collapse: collapse; font-size: 0.76rem; margin-bottom: 10px; }
+.corpus-detail-table th,
+.corpus-detail-table td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--ng-border); vertical-align: top; }
+.corpus-detail-table thead th { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ng-ink-muted); }
+.corpus-detail-summary { font-size: 0.76rem; line-height: 1.5; color: var(--ng-ink-soft); margin: 0 0 10px; }
+.corpus-detail-heading { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ng-ink-muted); margin: 12px 0 4px; }
+.corpus-detail-list { margin: 0; padding-left: 18px; font-size: 0.75rem; line-height: 1.5; color: var(--ng-ink-soft); }
+.corpus-detail-list li { margin-bottom: 2px; }
+.corpus-detail-class { font-family: var(--ng-font-mono); font-size: 0.68rem; color: var(--ng-ink-muted); }
+.corpus-detail-ok { font-size: 0.75rem; color: var(--ng-success); margin: 0; }
+.corpus-detail-empty { font-size: 0.78rem; color: var(--ng-ink-muted); margin: 0; }
 
 /* Table state rows: loading, empty, and error each carry a glyph and wording,
    so the state never depends on colour alone. */

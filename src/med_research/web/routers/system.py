@@ -388,6 +388,9 @@ async def disease_registry() -> DiseasesResponse:
 async def corpus_status(
     tier: str | None = Query(None, description="Optional tier filter (L3, L2, L1, L0, blocked)"),
     gap: str | None = Query(None, description="Optional config gap filter"),
+    curation: str | None = Query(
+        None, description="Optional curation-state filter (curated, generated, unknown)"
+    ),
     search: str | None = Query(None, description="Search by disease ID or name"),
     limit: int = Query(50, ge=1, le=500),
     offset: int = Query(0, ge=0),
@@ -404,10 +407,13 @@ async def corpus_status(
         report = build_corpus_status(limit=50, include_symptom_source=False)
     aggregate = report.get("aggregate", {})
     gap_counts: dict[str, int] = {}
+    curation_counts: dict[str, int] = {"curated": 0, "generated": 0, "unknown": 0}
     per_disease = report.get("per_disease", [])
     for row in per_disease:
         for g in row.get("config_gaps", []):
             gap_counts[g] = gap_counts.get(g, 0) + 1
+        state = str(row.get("curation_state") or "unknown")
+        curation_counts[state] = curation_counts.get(state, 0) + 1
     top_gaps = sorted(gap_counts.items(), key=lambda item: item[1], reverse=True)[:10]
 
     filtered = per_disease
@@ -417,6 +423,13 @@ async def corpus_status(
     if gap:
         target_gap = gap.strip()
         filtered = [r for r in filtered if target_gap in r.get("config_gaps", [])]
+    if curation:
+        target_curation = curation.strip().lower()
+        filtered = [
+            r
+            for r in filtered
+            if str(r.get("curation_state") or "unknown").lower() == target_curation
+        ]
     if search:
         s = search.strip().lower()
         filtered = [
@@ -449,12 +462,81 @@ async def corpus_status(
 
     return {
         "aggregate": aggregate,
+        "curation_counts": dict(sorted(curation_counts.items())),
         "top_config_gaps": [{"field": k, "count": v} for k, v in top_gaps],
         "report_path": str(DEFAULT_STATUS_PATH),
         "total_matching": total_matching,
         "limit": limit,
         "offset": offset,
         "diseases": paginated,
+    }
+
+
+@router.get("/api/system/evidence-coverage")
+async def evidence_coverage(
+    disease: Annotated[
+        list[str] | None, Query(description="Disease id to measure directly (repeatable)")
+    ] = None,
+    tier: Annotated[
+        str | None, Query(description="Optional tier filter over the corpus sample")
+    ] = None,
+    search: Annotated[str | None, Query(description="Search by disease ID or name")] = None,
+    limit: Annotated[int, Query(ge=1, le=50)] = 25,
+    offset: Annotated[int, Query(ge=0)] = 0,
+) -> dict[str, Any]:
+    """Measure recorded evidence coverage for the diseases currently on screen.
+
+    The corpus table is backed by a bounded sample report, so this endpoint never
+    claims a full-corpus measurement. Coverage is computed only for the requested
+    page (a few milliseconds per module) and is always fresh; a row the caller did
+    not ask for is reported as unmeasured rather than as zero coverage.
+    """
+    from med_research.diseases.corpus_status import DEFAULT_STATUS_PATH, load_status_report
+    from med_research.diseases.evidence_coverage import build_evidence_coverage_report
+
+    if disease:
+        selected = [item for item in dict.fromkeys(disease) if item]
+        report = build_evidence_coverage_report(disease_ids=selected)
+        return {
+            "report": report,
+            "sample": {
+                "source": "explicit",
+                "total_matching": len(selected),
+                "limit": len(selected),
+                "offset": 0,
+                "population_modules": report["scope"]["population_modules"],
+            },
+        }
+
+    cached = load_status_report(DEFAULT_STATUS_PATH)
+    per_disease = cached.get("per_disease", []) if cached else []
+    rows = [row for row in per_disease if isinstance(row, dict) and row.get("disease_id")]
+    if tier:
+        target = tier.strip().lower()
+        rows = [row for row in rows if str(row.get("tier", "")).lower() == target]
+    if search:
+        needle = search.strip().lower()
+        rows = [
+            row
+            for row in rows
+            if needle in str(row.get("disease_id", "")).lower()
+            or needle in str(row.get("name", "")).lower()
+        ]
+    rows.sort(key=lambda row: str(row.get("disease_id", "")))
+    page = rows[offset : offset + limit]
+    selected = [str(row["disease_id"]) for row in page]
+    report = build_evidence_coverage_report(disease_ids=selected)
+    return {
+        "report": report,
+        "sample": {
+            "source": "data/reports/disease_batch_status.json",
+            "total_matching": len(rows),
+            "sample_rows": len(per_disease),
+            "measured": len(selected),
+            "limit": limit,
+            "offset": offset,
+            "population_modules": report["scope"]["population_modules"],
+        },
     }
 
 

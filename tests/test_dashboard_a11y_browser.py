@@ -235,9 +235,10 @@ def test_compact_corpus_table_keeps_table_semantics_and_column_labels(
     )
     expect(table).to_be_visible()
     # Semantics are unchanged: real header cells, still scoped to their column.
-    expect(table.locator("th[scope='col']")).to_have_count(7)
+    # Eight columns now include curation state and evidence coverage.
+    expect(table.locator("th[scope='col']")).to_have_count(8)
     expect(table.locator("tbody tr")).to_have_count(2)
-    expect(table.locator("tbody tr").first.locator("th, td")).to_have_count(7)
+    expect(table.locator("tbody tr").first.locator("th, td")).to_have_count(8)
 
     derived = page.evaluate(
         """() => {
@@ -263,6 +264,149 @@ def test_compact_corpus_table_keeps_table_semantics_and_column_labels(
         "el => getComputedStyle(el).fontSize"
     )
     assert desktop_size != "0px"
+
+
+def test_corpus_rows_label_curation_state_without_inventing_it(
+    page: Page, static_server: str
+) -> None:
+    """A generated module and an unmarked module stay distinguishable.
+
+    The fixture carries no ``curation_state``, which is exactly what the corpus
+    report looks like for a module with no generator marker. The row must say
+    "Unclassified" rather than guess "Generated" or "Curated".
+    """
+    _open_dashboard(page, static_server)
+    page.evaluate(
+        "rows => renderCorpusTable(rows)",
+        [
+            {
+                "disease_id": "made_up_module",
+                "name": "Made Up",
+                "tier": "L1",
+                "curation_state": "generated",
+            },
+            {"disease_id": "sle", "name": "Lupus", "tier": "L3", "curation_state": "curated"},
+            {"disease_id": "mystery", "name": "Mystery", "tier": "L0"},
+        ],
+    )
+    rows = page.locator(".corpus-table tbody tr")
+    expect(rows.nth(0)).to_contain_text("Generated")
+    expect(rows.nth(1)).to_contain_text("Curated")
+    expect(rows.nth(2)).to_contain_text("Unclassified")
+    # Each curation badge carries a text label, never colour alone.
+    assert page.evaluate(
+        "() => Array.from(document.querySelectorAll('.corpus-curation-badge')).every(b => b.textContent.trim().length > 0)"
+    )
+
+
+def test_evidence_cell_distinguishes_unmeasured_empty_and_cited(
+    page: Page, static_server: str
+) -> None:
+    """Unmeasured pages must not read as zero coverage."""
+    _open_dashboard(page, static_server)
+    page.evaluate(
+        "rows => renderCorpusTable(rows)",
+        [
+            {"disease_id": "sle", "name": "Lupus", "tier": "L3"},
+            {"disease_id": "other", "name": "Other", "tier": "L1"},
+        ],
+    )
+
+    # Reset to the genuinely unmeasured state: the page's own init load fails
+    # without an API, which is a different (and separately tested) state.
+    page.evaluate(
+        "() => { corpusBrowserState.evidence = new Map(); corpusBrowserState.evidenceStatus = 'idle'; applyCorpusEvidence(); }"
+    )
+
+    # Nothing measured yet: every cell says so instead of showing 0.
+    expect(page.locator("[data-evidence-line]")).to_have_count(2)
+    for index in range(2):
+        expect(page.locator("[data-evidence-line]").nth(index)).to_have_attribute(
+            "data-state", "unmeasured"
+        )
+        expect(page.locator("[data-evidence-line]").nth(index)).to_have_text("Not measured")
+
+    page.evaluate(
+        """() => {
+            corpusBrowserState.evidenceStatus = 'loaded';
+            corpusBrowserState.evidence.set('sle', {
+                disease_id: 'sle',
+                provenance: { evidence_records: 10, present: 4, known_absent: 5, not_recorded: 1 },
+            });
+            applyCorpusEvidence();
+        }"""
+    )
+    measured = page.locator('[data-evidence-for="sle"] [data-evidence-line]')
+    expect(measured).to_have_text("4 / 10 records cite a source")
+    expect(measured).to_have_attribute("data-state", "recorded")
+    # The empty-versus-absent split is exposed, not collapsed into one number.
+    title = measured.get_attribute("title")
+    assert "Explicitly empty: 5" in title
+    assert "field absent: 1" in title
+
+    # A module with no evidence records is not described as a citation gap.
+    page.evaluate(
+        """() => {
+            corpusBrowserState.evidence.set('other', {
+                disease_id: 'other',
+                provenance: { evidence_records: 0, present: 0, known_absent: 0, not_recorded: 0 },
+            });
+            applyCorpusEvidence();
+        }"""
+    )
+    expect(page.locator('[data-evidence-for="other"] [data-evidence-line]')).to_have_text(
+        "No evidence records"
+    )
+
+
+def test_evidence_detail_expands_is_labelled_and_closes_on_escape(
+    page: Page, static_server: str
+) -> None:
+    _open_dashboard(page, static_server)
+    page.evaluate(
+        "rows => renderCorpusTable(rows)",
+        [{"disease_id": "sle", "name": "Lupus", "tier": "L3", "curation_state": "curated"}],
+    )
+    page.evaluate(
+        """() => {
+            corpusBrowserState.evidence.set('sle', {
+                disease_id: 'sle',
+                name: 'Systemic Lupus Erythematosus',
+                curation_state: 'curated',
+                readiness_tier: 'L3',
+                ci_validated: true,
+                categories: {
+                    genetics: { label: 'Gene associations', state: 'present', records: 38, provenance: { present: 36 } },
+                    pharmacology: { label: 'Drug records', state: 'known_absent', records: 0, provenance: { present: 0 } },
+                    relationships: { label: 'Knowledge-graph relationships', state: 'present', records: 122, provenance: 'not_applicable' },
+                },
+                provenance: { evidence_records: 74, present: 70, known_absent: 3, not_recorded: 1, by_scheme: { PMID: 145, NCT: 1 } },
+                validation: { passed: false, failures: [{ field: 'DRUG_SAFETY_RISK', status: 'empty', class: 'MISSING_REQUIRED_DATA' }] },
+                limitations: ['A missing citation is not evidence of absence.'],
+            });
+            applyCorpusEvidence();
+        }"""
+    )
+
+    trigger = page.locator('[data-action="corpus-evidence-detail"]').first
+    expect(trigger).to_have_attribute("aria-expanded", "false")
+    trigger.click()
+
+    expect(trigger).to_have_attribute("aria-expanded", "true")
+    detail = page.locator(".corpus-detail-row")
+    expect(detail).to_have_count(1)
+    expect(detail).to_contain_text("Gene associations")
+    expect(detail).to_contain_text("Explicitly empty")
+    # Relationship provenance is not applicable, never reported as a gap.
+    expect(detail).to_contain_text("Not applicable")
+    expect(detail).to_contain_text("DRUG_SAFETY_RISK")
+    expect(detail).to_contain_text("A missing citation is not evidence of absence.")
+    # Real table semantics inside the detail.
+    expect(detail.locator("th[scope='row']")).to_have_count(3)
+
+    page.keyboard.press("Escape")
+    expect(page.locator(".corpus-detail-row")).to_have_count(0)
+    expect(trigger).to_have_attribute("aria-expanded", "false")
 
 
 def test_missing_counts_are_not_rendered_as_zero(page: Page, static_server: str) -> None:

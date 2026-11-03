@@ -726,7 +726,13 @@
                     <div>
                         <span class="workspace-kicker">OPERATOR · CORPUS READINESS &amp; QUALITY</span>
                         <h2 id="corpus-status-title">Disease Corpus Health &amp; Tier Browser</h2>
-                        <p>Explore 10,404 disease modules across L0–L3 validation tiers, track data completeness, and inspect curation gaps.</p>
+                        <p>
+                            10,404 disease modules are registered. This browser reads a
+                            <strong>500-module readiness sample</strong>, so the counts on this
+                            panel describe that sample and are not corpus-wide totals. Curated and
+                            generated modules are labelled separately because they carry different
+                            evidence.
+                        </p>
                     </div>
                     <div class="corpus-head-actions">
                         <button type="button" class="btn btn-secondary btn-sm" id="corpus-refresh-btn">↻ Refresh Corpus</button>
@@ -738,7 +744,7 @@
                     <div class="corpus-tier-card tier-all active" data-tier="">
                         <div class="tier-header"><span class="tier-label">All Modules</span><span class="tier-code">ALL</span></div>
                         <div class="tier-count" id="tier-count-all">…</div>
-                        <div class="tier-desc">Total registered diseases</div>
+                        <div class="tier-desc">Modules in this sample</div>
                     </div>
                     <div class="corpus-tier-card tier-l3" data-tier="L3">
                         <div class="tier-header"><span class="tier-label">Tier L3</span><span class="tier-code">L3</span></div>
@@ -786,6 +792,12 @@
                     <select id="corpus-gap-filter" class="corpus-select" aria-label="Filter by missing config gap">
                         <option value="">All Configuration Gaps</option>
                     </select>
+                    <select id="corpus-curation-filter" class="corpus-select" aria-label="Filter by curation state">
+                        <option value="">Curated + generated</option>
+                        <option value="curated">Curated only</option>
+                        <option value="generated">Generated only</option>
+                        <option value="unknown">Unclassified only</option>
+                    </select>
                     <select id="corpus-sort-by" class="corpus-select" aria-label="Sort by">
                         <option value="disease_id">Sort: Disease ID</option>
                         <option value="name">Sort: Name</option>
@@ -802,9 +814,17 @@
                 <p class="workspace-sr-only" id="corpus-table-hint">Scrollable table. Use the arrow keys to scroll it, and Home or End to jump to the start or end.</p>
                 <p class="workspace-sr-only" id="corpus-table-status" role="status" aria-live="polite"></p>
                 <p class="workspace-sr-only" id="corpus-table-alert" role="alert"></p>
+                <p class="workspace-sr-only" id="corpus-evidence-status" role="status" aria-live="polite"></p>
+                <p class="corpus-evidence-note" id="corpus-evidence-note">
+                    <strong>Curation &amp; evidence.</strong> “Curated” marks a hand-maintained module;
+                    “generated” marks scaffold output from <code>disease add</code>; “unclassified” means
+                    no generator marker was found. “Citations” counts records that carry a recorded
+                    reference identifier — an empty value and an absent field are reported separately,
+                    and a missing citation does not mean the evidence does not exist.
+                </p>
                 <div class="corpus-table-wrap" id="corpus-table-wrap" role="region" aria-label="Disease corpus table" aria-describedby="corpus-table-hint" tabindex="0">
                     <table class="corpus-table">
-                        <caption class="workspace-sr-only">Disease modules with readiness tier, identifier alignment, entity counts, recorded symptoms, and configuration gaps.</caption>
+                        <caption class="workspace-sr-only">Disease modules with readiness tier, identifier alignment, entity counts, recorded symptoms, configuration gaps, curation state, and evidence coverage.</caption>
                         <thead>
                             <tr>
                                 <th scope="col" style="width:70px;">Tier</th>
@@ -813,12 +833,13 @@
                                 <th scope="col" style="width:180px;">Entities (Genes / Drugs / Pathways)</th>
                                 <th scope="col">Symptoms</th>
                                 <th scope="col">Config Gaps</th>
-                                <th scope="col" style="text-align:right;width:140px;">Actions</th>
+                                <th scope="col" style="width:190px;">Curation &amp; Evidence</th>
+                                <th scope="col" style="text-align:right;width:200px;">Actions</th>
                             </tr>
                         </thead>
                         <tbody id="corpus-table-body">
                             <tr class="table-state-row">
-                                <td colspan="7" class="table-state table-state--loading">Loading disease corpus data…</td>
+                                <td colspan="8" class="table-state table-state--loading">Loading disease corpus data…</td>
                             </tr>
                         </tbody>
                     </table>
