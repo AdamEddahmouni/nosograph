@@ -15,7 +15,7 @@ Machine-readable registry: [`data/sources/registry.yaml`](https://github.com/Ada
 |--------|--------|----------|-------------------|---------------|
 | MONDO | Disease ontology | IDs, hierarchy | `STABLE` import | CC-BY-4.0 |
 | HPO | Phenotypes | Comparison, annotations | `STABLE` import | HPO-custom |
-| HPOA | Phenotype associations | Symptom harvest | `STABLE` import | HPO-custom |
+| HPOA | Phenotype associations | Symptom harvest, registered sync source | `STABLE` import · sync `EXPERIMENTAL` | HPO-custom |
 | GO | Function/process | Pathways | `STABLE` import | CC-BY-4.0 |
 | Reactome | Pathways | Pathways | `STABLE` import | CC-BY-4.0 |
 | Uberon | Anatomy | Anatomy | `STABLE` import | CC-BY-4.0 |
@@ -35,7 +35,7 @@ Machine-readable registry: [`data/sources/registry.yaml`](https://github.com/Ada
 
 `STABLE`, `BETA`, and `EXPERIMENTAL` describe NosoGraph's integration maturity. They do not rank upstream scientific quality, source prestige, reproducibility, or clinical validity. Live, fixture-backed, and experimental behavior depends on the code path; CI is often fixture-backed, and connectors are not continuously updated feeds by default.
 
-Open Targets synchronization is an experimental vertical slice with a dry-run path. Source synchronization belongs in advanced workflows; it is not required for the first-time tutorial.
+Open Targets synchronization is an experimental vertical slice with a dry-run path. HPOA is registered in the same sync lifecycle for operator-supplied annotation files: there is no download automation, the artifact must be placed at `data/bulk/hpoa/*.tsv` (or passed explicitly), and version provenance comes from an explicit `VERSION` pin or a local artifact-mtime token rather than an invented upstream release. Source synchronization belongs in advanced workflows; it is not required for the first-time tutorial.
 
 ## Terms and provenance
 

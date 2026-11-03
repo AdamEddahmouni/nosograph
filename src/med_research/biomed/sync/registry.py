@@ -47,14 +47,14 @@ SOURCE_MATRIX: tuple[SourceMatrixEntry, ...] = (
     SourceMatrixEntry(
         source="hpoa",
         domain="disease-phenotype annotations",
-        adapter="HpoAnnotationAdapter",
-        access="local TSV artifact",
-        version_mechanism="artifact mtime / operator pin",
+        adapter="HpoAnnotationAdapter + HpoaSyncSource",
+        access="operator-supplied local TSV artifact (no download automation)",
+        version_mechanism="VERSION pin, else artifact mtime token",
         license="HPO-custom",
-        cache="snapshot checksum",
-        transforms="HAS_PHENOTYPE claims + supporting evidence",
-        provenance="ClaimEvidence.source_record_id",
-        tests="tests/biomed/imports/test_hpoa_adapter.py",
+        cache="snapshot checksum + SyncProvenance",
+        transforms="HAS_PHENOTYPE claims + supporting/contradictory evidence",
+        provenance="SyncReport + ClaimEvidence.source_record_id",
+        tests="tests/biomed/sync/test_hpoa_sync.py",
     ),
     SourceMatrixEntry(
         source="go",
@@ -179,5 +179,10 @@ SOURCE_MATRIX: tuple[SourceMatrixEntry, ...] = (
 )
 
 
+# Declared sync inventory; keep in step with ``sync.lifecycle._SYNC_SOURCES``.
+SYNCABLE_SOURCES: tuple[str, ...] = ("hpoa", "open_targets")
+
+
 def list_syncable_sources() -> list[str]:
-    return ["open_targets"]
+    """Return the registered sync sources in deterministic order."""
+    return sorted(SYNCABLE_SOURCES)

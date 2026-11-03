@@ -15,6 +15,7 @@ from med_research.biomed.sync.models import (
     SyncStatus,
 )
 from med_research.biomed.sync.registry import list_syncable_sources
+from med_research.biomed.sync.sources.hpoa import HpoaSyncSource
 from med_research.biomed.sync.sources.opentargets import OpenTargetsSyncSource
 from med_research.logging_config import get_logger
 
@@ -24,6 +25,7 @@ if TYPE_CHECKING:
 logger = get_logger(__name__)
 
 _SYNC_SOURCES: dict[str, SyncSource] = {
+    "hpoa": HpoaSyncSource(),
     "open_targets": OpenTargetsSyncSource(),
 }
 
