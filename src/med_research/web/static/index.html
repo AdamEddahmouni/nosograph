@@ -799,22 +799,26 @@
                 </div>
 
                 <!-- Table Container -->
-                <div class="corpus-table-wrap" role="region" aria-label="Disease corpus table" tabindex="0">
+                <p class="workspace-sr-only" id="corpus-table-hint">Scrollable table. Use the arrow keys to scroll it, and Home or End to jump to the start or end.</p>
+                <p class="workspace-sr-only" id="corpus-table-status" role="status" aria-live="polite"></p>
+                <p class="workspace-sr-only" id="corpus-table-alert" role="alert"></p>
+                <div class="corpus-table-wrap" id="corpus-table-wrap" role="region" aria-label="Disease corpus table" aria-describedby="corpus-table-hint" tabindex="0">
                     <table class="corpus-table">
+                        <caption class="workspace-sr-only">Disease modules with readiness tier, identifier alignment, entity counts, recorded symptoms, and configuration gaps.</caption>
                         <thead>
                             <tr>
-                                <th style="width:70px;">Tier</th>
-                                <th>Disease Name &amp; Module ID</th>
-                                <th>Curie &amp; EFO</th>
-                                <th style="width:180px;">Entities (Genes / Drugs / Pathways)</th>
-                                <th>Symptoms</th>
-                                <th>Config Gaps</th>
-                                <th style="text-align:right;width:140px;">Actions</th>
+                                <th scope="col" style="width:70px;">Tier</th>
+                                <th scope="col">Disease Name &amp; Module ID</th>
+                                <th scope="col">Curie &amp; EFO</th>
+                                <th scope="col" style="width:180px;">Entities (Genes / Drugs / Pathways)</th>
+                                <th scope="col">Symptoms</th>
+                                <th scope="col">Config Gaps</th>
+                                <th scope="col" style="text-align:right;width:140px;">Actions</th>
                             </tr>
                         </thead>
                         <tbody id="corpus-table-body">
-                            <tr>
-                                <td colspan="7" style="text-align:center;padding:24px;color:var(--text-muted);">Loading disease corpus data…</td>
+                            <tr class="table-state-row">
+                                <td colspan="7" class="table-state table-state--loading">Loading disease corpus data…</td>
                             </tr>
                         </tbody>
                     </table>

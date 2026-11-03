@@ -34,6 +34,9 @@ const activeJobs = {};
 const activeSockets = {};
 let workspaceSubmissionActive = false;
 let workspaceReviews = {};
+// Set when a run disables the focused submit button; the button gets focus
+// back once the run settles, so the keyboard user is not left on <body>.
+let submitFocusReturnPending = false;
 
 function setWorkspaceSubmissionState(state) {
     const form = document.getElementById('workspace-form');
@@ -46,8 +49,15 @@ function setWorkspaceSubmissionState(state) {
     if (result && active) result.setAttribute('aria-busy', 'true');
     if (result && !active) result.removeAttribute('aria-busy');
     if (submit) {
+        // Disabling the focused control silently drops focus to <body>. Record
+        // that the user was there and hand it back when the run settles.
+        if (active && document.activeElement === submit) submitFocusReturnPending = true;
         submit.disabled = active;
         submit.setAttribute('aria-busy', String(active));
+        if (!active && submitFocusReturnPending) {
+            submitFocusReturnPending = false;
+            submit.focus();
+        }
     }
     if (status) {
         const messages = {
@@ -184,6 +194,50 @@ function escapeHtml(text) {
 // media query, so pick the behavior in JS at call time.
 function ngScrollBehavior() {
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+}
+
+// ── Focus continuity ─────────────────────────────────────────────────────
+// A re-render replaces nodes and a disabled control drops focus; in both cases
+// the keyboard user lands on <body>. These helpers re-point focus at a stable
+// identity once the DOM has settled, and give up quietly when the control is
+// genuinely gone (for example a row filtered out of a table).
+
+function focusSelectorFor(element) {
+    if (!element || !(element instanceof Element)) return '';
+    if (element.id) return `#${CSS.escape(element.id)}`;
+    const control = element.closest('[data-action]');
+    if (!control || !control.dataset.action) return '';
+    const action = `[data-action="${CSS.escape(control.dataset.action)}"]`;
+    if (!control.dataset.disease) return action;
+    return `${action}[data-disease="${CSS.escape(control.dataset.disease)}"]`;
+}
+
+function restoreFocus(selector) {
+    if (!selector) return false;
+    const target = document.querySelector(selector);
+    if (!target || !target.isConnected || typeof target.focus !== 'function') return false;
+    target.focus();
+    return document.activeElement === target;
+}
+
+// ── Navigation state ─────────────────────────────────────────────────────
+
+// Exactly one navigation item carries the current state. The class (styling)
+// and aria-current (assistive technology) are derived from the same id in one
+// place so they cannot drift apart or leave two items claiming to be current.
+function setActiveNavLink(sectionId) {
+    let active = null;
+    document.querySelectorAll('.nav-link[data-nav]').forEach(link => {
+        const isActive = link.dataset.nav === sectionId;
+        link.classList.toggle('active', isActive);
+        if (isActive) {
+            link.setAttribute('aria-current', 'true');
+            active = link;
+        } else {
+            link.removeAttribute('aria-current');
+        }
+    });
+    return active;
 }
 
 function workspaceDateLabel(value) {
@@ -2637,6 +2691,127 @@ async function loadBiomedImportStatus() {
 }
 
 // ── Corpus Health & Tier Browser State & Logic ───────────────────────────
+// ── Responsive data tables ───────────────────────────────────────────────
+// Column headers stay real <th scope> cells and the table keeps its native
+// semantics at every width. The compact (narrow-viewport) presentation only
+// borrows the rendered header text as a per-cell data-label, so a cell can be
+// read on its own once the header row is no longer beside it. Labels are
+// derived from the live header row, never hardcoded, so they cannot drift.
+
+function headerLabelsFor(table) {
+    const headerRow = table && table.tHead && table.tHead.rows[0];
+    if (!headerRow) return [];
+    return Array.from(headerRow.cells).map(cell => (cell.textContent || '').trim());
+}
+
+function labelTableCells(table) {
+    if (!table) return;
+    const labels = headerLabelsFor(table);
+    if (!labels.length) return;
+    Array.from(table.tBodies).forEach(body => {
+        Array.from(body.rows).forEach(row => {
+            // A row whose cell count does not match the header (colspan/rowspan
+            // state rows) has no unambiguous column for a label.
+            if (row.cells.length !== labels.length) return;
+            Array.from(row.cells).forEach((cell, index) => {
+                if (labels[index]) cell.dataset.label = labels[index];
+            });
+        });
+    });
+}
+
+function labelDataTables(root = document) {
+    if (!root || typeof root.querySelectorAll !== 'function') return;
+    root.querySelectorAll('table').forEach(labelTableCells);
+}
+
+// Render paths rebuild tables from many entry points. One rAF-debounced
+// observer keeps their compact labels in step without pushing the obligation
+// into every render function. It watches childList only, so its own attribute
+// writes cannot re-trigger it.
+function observeDataTables(root) {
+    if (!root || typeof MutationObserver === 'undefined') return;
+    let queued = false;
+    const observer = new MutationObserver(() => {
+        if (queued) return;
+        queued = true;
+        window.requestAnimationFrame(() => {
+            queued = false;
+            labelDataTables(root);
+        });
+    });
+    observer.observe(root, { childList: true, subtree: true });
+}
+
+// ── Announced table state ────────────────────────────────────────────────
+// Loading, empty, and error are distinct states, each carried by wording and a
+// glyph as well as colour. The announcement lives outside the table: a <td>
+// may not take a live-region role without breaking cell semantics.
+
+const TABLE_STATE_CLASS = {
+    loading: 'table-state table-state--loading',
+    empty: 'table-state table-state--empty',
+    error: 'table-state table-state--error',
+};
+
+function tableStateRow(message, state, columns) {
+    const cls = TABLE_STATE_CLASS[state] || TABLE_STATE_CLASS.empty;
+    return `<tr class="table-state-row"><td colspan="${columns}" class="${cls}">${escapeHtml(message)}</td></tr>`;
+}
+
+function announceCorpusTableState(state, message) {
+    const tableBody = document.getElementById('corpus-table-body');
+    const wrap = document.getElementById('corpus-table-wrap');
+    const status = document.getElementById('corpus-table-status');
+    const alert = document.getElementById('corpus-table-alert');
+    if (tableBody && state !== 'loaded') {
+        tableBody.innerHTML = tableStateRow(message, state, 7);
+    }
+    if (wrap) wrap.setAttribute('aria-busy', String(state === 'loading'));
+    if (state === 'error') {
+        if (alert) alert.textContent = message;
+        if (status) status.textContent = '';
+        return;
+    }
+    if (status) status.textContent = message;
+    if (alert) alert.textContent = '';
+}
+
+// ── Keyboard scrolling for scrollable regions ────────────────────────────
+// A scroll region is reachable by Tab; arrow keys then scroll it and Home/End
+// jump to the ends. Keys are left alone when focus is inside the region's own
+// controls, and motion stays instantaneous so reduced-motion is honoured.
+
+const SCROLL_REGION_SELECTOR = [
+    '.corpus-table-wrap',
+    '.condition-comparison-table-wrap',
+    '.workspace-trend-table-scroll',
+    '[data-scroll-region]',
+].join(', ');
+
+function handleScrollRegionKeydown(event) {
+    if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    const region = target.closest(SCROLL_REGION_SELECTOR);
+    // Only when the region itself is focused, never a control inside it.
+    if (!region || region !== target) return;
+    const step = Math.max(40, Math.round(region.clientHeight * 0.8));
+    switch (event.key) {
+        case 'ArrowDown': region.scrollTop += step; break;
+        case 'ArrowUp': region.scrollTop -= step; break;
+        case 'ArrowRight': region.scrollLeft += step; break;
+        case 'ArrowLeft': region.scrollLeft -= step; break;
+        case 'Home': region.scrollTop = 0; region.scrollLeft = 0; break;
+        case 'End': region.scrollTop = region.scrollHeight; region.scrollLeft = region.scrollWidth; break;
+        default: return;
+    }
+    event.preventDefault();
+}
+
+// Stable identity of the corpus control a re-render must return focus to.
+let corpusFocusSelector = '';
+
 const corpusBrowserState = {
     page: 1,
     limit: 25,
@@ -2680,7 +2855,7 @@ async function loadCorpusStatus(resetPage = false) {
     const nextBtn = document.getElementById('corpus-next-page');
 
     if (tableBody) {
-        tableBody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:24px;color:var(--text-muted);"><span class="spinner"></span> Loading disease corpus data…</td></tr>';
+        announceCorpusTableState('loading', 'Loading disease corpus data…');
     }
 
     try {
@@ -2702,6 +2877,7 @@ async function loadCorpusStatus(resetPage = false) {
         renderCorpusGapFilter(data.top_config_gaps || []);
         renderCorpusGapsBreakdown(data.top_config_gaps || []);
         renderCorpusTable(data.diseases || []);
+        announceCorpusTableState('loaded', `Loaded ${corpusBrowserState.totalMatching.toLocaleString()} disease modules.`);
 
         const start = corpusBrowserState.totalMatching === 0 ? 0 : offset + 1;
         const end = Math.min(offset + corpusBrowserState.limit, corpusBrowserState.totalMatching);
@@ -2718,9 +2894,7 @@ async function loadCorpusStatus(resetPage = false) {
             nextBtn.disabled = corpusBrowserState.page >= maxPage;
         }
     } catch (error) {
-        if (tableBody) {
-            tableBody.innerHTML = `<tr><td colspan="7" style="text-align:center;padding:24px;color:var(--ng-error);">Failed to load corpus status: ${escapeHtml(error.message)}</td></tr>`;
-        }
+        announceCorpusTableState('error', `Failed to load corpus status: ${error.message}`);
     }
 }
 
@@ -2776,23 +2950,34 @@ function renderCorpusTable(diseases) {
     const tbody = document.getElementById('corpus-table-body');
     if (!tbody) return;
     if (!diseases || !diseases.length) {
-        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:24px;color:var(--text-muted);">No disease modules matched your filter criteria.</td></tr>';
+        tbody.innerHTML = tableStateRow('No disease modules matched your filter criteria.', 'empty', 7);
+        labelTableCells(tbody.closest('table'));
         return;
     }
+
+    // Unknown counts stay unknown: a missing count renders as an em dash and is
+    // left out of the bar scaling. Coercing it to 0 would read as an asserted
+    // zero, which the corpus data does not claim.
+    const num = (value) => (typeof value === 'number' && Number.isFinite(value) ? value : null);
+    const shown = (value) => (value === null ? '—' : String(value));
 
     const rows = diseases.map(d => {
         const tier = d.tier || 'L0';
         const gaps = (d.config_gaps || []).slice(0, 3).map(g => `<span class="corpus-gap-tag">${escapeHtml(g)}</span>`).join('');
         const extraGaps = (d.config_gaps || []).length > 3 ? `<span class="corpus-gap-tag">+${(d.config_gaps.length - 3)}</span>` : '';
-        const genes = d.gene_count || 0;
-        const drugs = d.drug_count || 0;
-        const pathways = d.pathway_count || 0;
-        const symptoms = d.symptom_count || 0;
+        const genes = num(d.gene_count);
+        const drugs = num(d.drug_count);
+        const pathways = num(d.pathway_count);
+        const symptoms = num(d.symptom_count);
 
-        const maxEntities = Math.max(1, genes, drugs, pathways);
-        const genePct = Math.min(100, Math.round((genes / maxEntities) * 100));
-        const drugPct = Math.min(100, Math.round((drugs / maxEntities) * 100));
-        const pathPct = Math.min(100, Math.round((pathways / maxEntities) * 100));
+        const maxEntities = Math.max(1, genes || 0, drugs || 0, pathways || 0);
+        const genePct = genes === null ? 0 : Math.min(100, Math.round((genes / maxEntities) * 100));
+        const drugPct = drugs === null ? 0 : Math.min(100, Math.round((drugs / maxEntities) * 100));
+        const pathPct = pathways === null ? 0 : Math.min(100, Math.round((pathways / maxEntities) * 100));
+
+        // "None recorded" is a recorded zero; NOT_RECORDED is a missing field.
+        const symptomLabel = symptoms === null ? 'NOT_RECORDED'
+            : symptoms ? `${symptoms.toLocaleString()} recorded` : 'None recorded';
 
         const mondoCurie = d.mondo_curie || DISEASE_TO_MONDO_MAP[d.disease_id] || '—';
         const efoId = d.efo_id || '—';
@@ -2801,28 +2986,26 @@ function renderCorpusTable(diseases) {
             <tr>
                 <td><span class="corpus-tier-badge ${escapeHtml(tier)}">${escapeHtml(tier)}</span></td>
                 <td>
-                    <div style="font-weight:700;color:var(--text);">${escapeHtml(d.name || d.disease_id)}</div>
-                    <code style="font-size:0.72rem;color:var(--text-muted);">${escapeHtml(d.disease_id)}</code>
+                    <div class="corpus-row-title">${escapeHtml(d.name || d.disease_id)}</div>
+                    <code class="corpus-row-id">${escapeHtml(d.disease_id)}</code>
                 </td>
                 <td>
-                    <div style="font-size:0.75rem;"><strong style="color:var(--accent);">${escapeHtml(mondoCurie)}</strong></div>
-                    <div style="font-size:0.7rem;color:var(--text-muted);">${escapeHtml(efoId)}</div>
+                    <div class="corpus-curie"><strong>${escapeHtml(mondoCurie)}</strong></div>
+                    <div class="corpus-efo">${escapeHtml(efoId)}</div>
                 </td>
                 <td>
-                    <div style="display:flex;flex-direction:column;gap:3px;font-size:0.72rem;">
-                        <div class="corpus-metric-bar"><span style="width:42px;color:#4ade80;">G: ${genes}</span><div class="corpus-mini-bar"><span style="width:${genePct}%;background:#4ade80;"></span></div></div>
-                        <div class="corpus-metric-bar"><span style="width:42px;color:#60a5fa;">D: ${drugs}</span><div class="corpus-mini-bar"><span style="width:${drugPct}%;background:#60a5fa;"></span></div></div>
-                        <div class="corpus-metric-bar"><span style="width:42px;color:#f59e0b;">P: ${pathways}</span><div class="corpus-mini-bar"><span style="width:${pathPct}%;background:#f59e0b;"></span></div></div>
+                    <div class="corpus-metric-list">
+                        <div class="corpus-metric-bar corpus-metric-bar--gene"><span class="corpus-metric-label">G: ${shown(genes)}</span><div class="corpus-mini-bar"><span style="width:${genePct}%"></span></div></div>
+                        <div class="corpus-metric-bar corpus-metric-bar--drug"><span class="corpus-metric-label">D: ${shown(drugs)}</span><div class="corpus-mini-bar"><span style="width:${drugPct}%"></span></div></div>
+                        <div class="corpus-metric-bar corpus-metric-bar--pathway"><span class="corpus-metric-label">P: ${shown(pathways)}</span><div class="corpus-mini-bar"><span style="width:${pathPct}%"></span></div></div>
                     </div>
                 </td>
                 <td>
-                    <span style="font-size:0.78rem;font-weight:600;color:${symptoms ? 'var(--ng-success)' : 'var(--text-muted)'};">
-                        ${symptoms ? `${symptoms} recorded` : '—'}
-                    </span>
+                    <span class="corpus-symptom-count${symptoms ? ' is-recorded' : ''}">${escapeHtml(symptomLabel)}</span>
                 </td>
-                <td>${gaps || '<span style="color:#4ade80;font-size:0.75rem;">None (Complete)</span>'}${extraGaps}</td>
-                <td style="text-align:right;">
-                    <div style="display:flex;gap:4px;justify-content:flex-end;">
+                <td>${gaps || '<span class="corpus-gap-none">None (Complete)</span>'}${extraGaps}</td>
+                <td class="corpus-cell-actions">
+                    <div>
                         <button type="button" class="btn btn-secondary btn-sm" data-action="corpus-select-disease" data-disease="${escapeHtml(d.disease_id)}">Select</button>
                     </div>
                 </td>
@@ -2831,11 +3014,21 @@ function renderCorpusTable(diseases) {
     }).join('');
 
     tbody.innerHTML = rows;
+    labelTableCells(tbody.closest('table'));
+
+    // The swap destroyed the control the user activated. Give focus back to the
+    // equivalent button for the same row when it still exists.
+    if (corpusFocusSelector) {
+        const selector = corpusFocusSelector;
+        corpusFocusSelector = '';
+        restoreFocus(selector);
+    }
 
     tbody.querySelectorAll('[data-action="corpus-select-disease"]').forEach(btn => {
         btn.addEventListener('click', () => {
             const did = btn.dataset.disease;
             if (did) {
+                corpusFocusSelector = focusSelectorFor(btn);
                 void refreshDashboardForDisease(did);
                 showToast(`Switched active disease to ${did}`, 'success');
             }
@@ -4327,6 +4520,11 @@ function showToast(message, type = 'success') {
     }
     const toast = document.createElement('div');
     toast.className = `toast ${type}`;
+    // Each toast announces itself on insertion: an error is assertive so it is
+    // not missed, everything else is polite. The container deliberately has no
+    // live region of its own, otherwise every message would be announced twice.
+    toast.setAttribute('role', type === 'error' ? 'alert' : 'status');
+    if (type !== 'error') toast.setAttribute('aria-live', 'polite');
     toast.innerHTML = escapeHtml(message);
     container.appendChild(toast);
     setTimeout(() => {
@@ -4934,6 +5132,9 @@ async function refreshDashboardForDisease(diseaseId) {
 }
 
 function setupNavUi() {
+    // The nav links are in-page anchors, so "true" is the aria-current token
+    // (the state is "the current location in this document").
+
     const toggle = document.getElementById('nav-toggle');
     const menu = document.getElementById('nav-menu');
     if (toggle && menu) {
@@ -4968,9 +5169,7 @@ function setupNavUi() {
 
     const updateActiveNav = () => {
         const hash = window.location.hash.replace('#', '') || 'evidence-workspace';
-        document.querySelectorAll('.nav-link[data-nav]').forEach(link => {
-            link.classList.toggle('active', link.dataset.nav === hash);
-        });
+        setActiveNavLink(hash);
     };
     window.addEventListener('hashchange', updateActiveNav);
     updateActiveNav();
@@ -5358,6 +5557,12 @@ async function loadMultiDiseaseNetwork() {
 document.addEventListener('DOMContentLoaded', async () => {
     setupDashboardActions();
     setupNavUi();
+    // Install the table labelling and scroll-region keyboard support before any
+    // network work: a failing fetch must not cost the page its non-network
+    // accessibility wiring for the rest of the session.
+    labelDataTables();
+    observeDataTables(document.getElementById('main-content') || document.body);
+    document.addEventListener('keydown', handleScrollRegionKeydown);
     const linkedParams = new URLSearchParams(window.location.search);
     await loadDiseaseSelector();
     updateDiseaseDisplay();

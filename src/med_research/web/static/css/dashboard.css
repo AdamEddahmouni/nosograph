@@ -2186,6 +2186,37 @@ footer .footer-note { color: var(--ng-ink-muted); max-width: 640px; margin: 6px 
 .corpus-metric-bar { display: flex; align-items: center; gap: 6px; }
 .corpus-mini-bar { flex: 1; height: 4px; background: var(--ng-bg); border-radius: 2px; overflow: hidden; min-width: 40px; max-width: 80px; }
 .corpus-mini-bar > span { display: block; height: 100%; background: var(--ng-teal); }
+/* Corpus row presentation — colour and weight live here as tokens instead of
+   JS-injected inline styles, so the row cannot drift from the token layer. */
+.corpus-row-title { font-weight: 700; color: var(--ng-ink); }
+.corpus-row-id { font-size: 0.72rem; color: var(--ng-ink-muted); }
+.corpus-curie { font-size: 0.75rem; }
+.corpus-curie > strong { color: var(--ng-teal); }
+.corpus-efo { font-size: 0.7rem; color: var(--ng-ink-muted); }
+.corpus-metric-list { display: flex; flex-direction: column; gap: 3px; font-size: 0.72rem; }
+.corpus-metric-label { width: 42px; font-variant-numeric: tabular-nums; }
+.corpus-metric-bar--gene .corpus-metric-label { color: var(--ng-data-6); }
+.corpus-metric-bar--gene .corpus-mini-bar > span { background: var(--ng-data-6); }
+.corpus-metric-bar--drug .corpus-metric-label { color: var(--ng-data-2); }
+.corpus-metric-bar--drug .corpus-mini-bar > span { background: var(--ng-data-2); }
+.corpus-metric-bar--pathway .corpus-metric-label { color: var(--ng-data-4); }
+.corpus-metric-bar--pathway .corpus-mini-bar > span { background: var(--ng-data-4); }
+.corpus-symptom-count { font-size: 0.78rem; font-weight: 600; color: var(--ng-ink-muted); }
+.corpus-symptom-count.is-recorded { color: var(--ng-success); }
+.corpus-gap-none { color: var(--ng-success); font-size: 0.75rem; }
+.corpus-cell-actions { text-align: right; }
+.corpus-cell-actions > div { display: flex; gap: 4px; justify-content: flex-end; }
+
+/* Table state rows: loading, empty, and error each carry a glyph and wording,
+   so the state never depends on colour alone. */
+.table-state { padding: 24px 14px; text-align: center; }
+.table-state--loading { color: var(--ng-ink-muted); }
+.table-state--loading::before { content: "◌ "; font-family: var(--ng-font-mono); }
+.table-state--empty { color: var(--ng-ink-muted); }
+.table-state--empty::before { content: "○ "; }
+.table-state--error { color: var(--ng-error); border-left: 3px double var(--ng-error); text-align: left; }
+.table-state--error::before { content: "⚠ "; }
+
 .corpus-pagination {
     display: flex;
     justify-content: space-between;
@@ -2638,6 +2669,7 @@ textarea:focus-visible {
 
 /* Coverage and curation states: shape + label, not hue alone. */
 .coverage-badge.coverage-full::before { content: "●"; margin-right: 5px; font-size: 0.85em; }
+.coverage-badge.coverage-full::before { content: "✔"; margin-right: 5px; font-size: 0.85em; }
 .coverage-badge.coverage-partial::before { content: "◐"; margin-right: 5px; font-size: 0.85em; }
 .coverage-badge.coverage-unsupported::before { content: "△"; margin-right: 5px; font-size: 0.85em; }
 
@@ -2785,6 +2817,36 @@ textarea:focus-visible {
     .sat-results-head { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
     .chat-user { margin-left: 0; }
     .chat-agent { margin-right: 0; }
+}
+
+/* ── Compact data tables (phones) ─────────────────────────────────────────
+   <table>, <th scope>, and the header/content association are unchanged at
+   every width: header cells are visually collapsed but stay in the
+   accessibility tree (font-size, not display:none), so a screen reader still
+   announces the column name from the association. Each body cell then
+   repeats its own column name as generated content from data-label (set from
+   the rendered header row in JS), so a sighted reader can still tell what a
+   value belongs to. Generated content adds no duplicate text to the DOM. */
+@media (max-width: 560px) {
+    .corpus-table-wrap { max-height: none; }
+    .corpus-table { min-width: var(--ng-dash-table-min); }
+    .corpus-table th {
+        position: static;
+        padding: 0;
+        border: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+    .corpus-table td { padding: 8px 10px; }
+    .corpus-table td[data-label]::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 2px;
+        font: 700 0.62rem/1.4 var(--ng-font-mono);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--ng-ink-muted);
+    }
 }
 
 /* ── Narrow phones (360-class): single column, no page overflow ────────── */
