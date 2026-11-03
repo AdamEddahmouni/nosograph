@@ -29,6 +29,10 @@ RUN if [ "$DOCKER_SKIP_DISEASE_VALIDATE" != "1" ]; then \
 RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
 
+# Platforms inject PORT at runtime; the app, this default, and the probe below
+# must all resolve the same value. `serve` reads PORT through web.config.
+ENV PORT=8000
+
 EXPOSE 8000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \

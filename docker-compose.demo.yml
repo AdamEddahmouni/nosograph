@@ -25,6 +25,7 @@ services:
     environment:
       - PORT=${PORT:-8000}
       - DEBUG=false
+      - DEMO_REQUIRE_MODE=true
       - DEMO_MODE=true
       - DEMO_SNAPSHOT_PATH=/app/data/demo/biomedical.sqlite3
       - DEMO_SNAPSHOT_MANIFEST=/app/data/demo/biomedical.manifest.json

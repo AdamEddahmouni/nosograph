@@ -174,7 +174,14 @@ services:
       - REDIS_RATE_LIMIT_URL=redis://redis:6379/0
       - USE_CACHE=true
       - DASHBOARD_CSP_MODE=${DASHBOARD_CSP_MODE:-enforce}
+      # Read-only demo identity: the image refuses to boot without DEMO_MODE.
+      - DEMO_REQUIRE_MODE=true
       - DEMO_MODE=true
+      # `pipeline demo build` writes data/demo/biomedical.sqlite3 into ./data,
+      # which is mounted at /app/data. Both the snapshot and its manifest must
+      # point there or startup validation fails on the container default path.
+      - DEMO_SNAPSHOT_PATH=/app/data/demo/biomedical.sqlite3
+      - DEMO_SNAPSHOT_MANIFEST=/app/data/demo/biomedical.manifest.json
       - BIOMEDICAL_DB_PATH=/app/data/demo/biomedical.sqlite3
       - RATE_LIMIT_FAIL_CLOSED=${RATE_LIMIT_FAIL_CLOSED:-false}
     depends_on:
