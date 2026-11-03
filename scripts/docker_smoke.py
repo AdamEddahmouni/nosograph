@@ -185,8 +185,32 @@ def _run(
     return result
 
 
-def _record(checks: list[dict[str, Any]], name: str, phase: str, ok: bool, detail: str) -> bool:
-    checks.append({"name": name, "phase": phase, "ok": ok, "detail": detail})
+def _record(
+    checks: list[dict[str, Any]],
+    name: str,
+    phase: str,
+    ok: bool,
+    detail: str,
+    *,
+    required: bool = True,
+) -> bool:
+    """Record a check. ``required=False`` is observed but never fatal.
+
+    A bare container legitimately answers ``503`` on ``/api/ready`` because it
+    ships no Redis, Celery worker, or database. The status must still be
+    reported truthfully -- an earlier revision tested ``bool(payload["status"])``
+    and therefore recorded ``status=error`` as a pass -- but only
+    ``--require-ready`` turns it into a failure.
+    """
+    checks.append(
+        {
+            "name": name,
+            "phase": phase,
+            "ok": ok,
+            "required": required,
+            "detail": detail,
+        }
+    )
     return ok
 
 
@@ -230,11 +254,26 @@ def _wait_for_health(base: str, timeout: float) -> tuple[bool, str]:
 
 
 def _container_logs(container: str, *, timeout: float, echo: bool) -> str:
-    proc = _run(["docker", "logs", "--tail", "40", container], timeout=timeout, echo=echo)
+    proc = _run(["docker", "logs", "--tail", "80", container], timeout=timeout, echo=echo)
     text = (proc.stdout or "") + (proc.stderr or "")
     if proc.timed_out:
         text += f"\n[logs unavailable: {proc.describe(200)}]"
-    return text.strip()[-2000:]
+    lines = [line.rstrip() for line in text.splitlines() if line.strip()]
+    # A failed startup is usually a repeated traceback plus one cause line at the
+    # end. Keep the tail bounded but make the actual cause easy to find.
+    cause = [
+        line
+        for line in lines
+        if any(
+            marker in line
+            for marker in ("RuntimeError:", "ValueError:", "Error:", "ERROR:", "Traceback")
+        )
+    ]
+    if cause:
+        # A repeated FastAPI lifespan traceback can dwarf the one line that
+        # matters; lead with the cause and keep the line count as context.
+        return "\n".join([f"({len(lines)} log lines; final causes)", *cause[-3:]])[-2000:]
+    return "\n".join(lines[-25:])[-2000:]
 
 
 def _image_created(image: str, *, timeout: float, echo: bool) -> str:
@@ -281,13 +320,19 @@ def _finish(
     report: Path | None,
     extra: dict[str, Any] | None = None,
 ) -> int:
-    failures = [check["name"] for check in checks if not check["ok"]]
+    failures = [
+        check["name"] for check in checks if not check["ok"] and check.get("required", True)
+    ]
+    observed_not_ok = [
+        check["name"] for check in checks if not check["ok"] and not check.get("required", True)
+    ]
     payload: dict[str, Any] = {
         "ok": bool(checks) and not failures,
         "image": image,
         "image_origin": image_origin,
         "port": port,
         "failures": failures,
+        "observed_not_ok": observed_not_ok,
         "checks": checks,
     }
     if extra:
@@ -481,6 +526,19 @@ def main(argv: list[str] | None = None) -> int:
                     demo_mode = value.strip().lower() in {"1", "true", "yes", "on"}
         if not any(item.startswith("DEBUG=") for item in args.env):
             env_flags.extend(["-e", "DEBUG=false" if demo_mode else "DEBUG=true"])
+        # `--demo` used to set only DEBUG=false, which the startup guard refuses:
+        # with no DEMO_MODE and no API_KEY the app fails closed by design. The
+        # documented demo contract (docker-compose.demo.yml) sets both flags.
+        if demo_mode:
+            if not any(item.startswith("DEMO_MODE=") for item in args.env):
+                env_flags.extend(["-e", "DEMO_MODE=true"])
+            if not any(item.startswith("DEMO_REQUIRE_MODE=") for item in args.env):
+                env_flags.extend(["-e", "DEMO_REQUIRE_MODE=true"])
+        elif not any(item.startswith("API_KEY=") for item in args.env):
+            # A throwaway local key, not a secret: DEBUG=false requires one, and
+            # the container is published only on 127.0.0.1 for the duration of
+            # this run. `--env API_KEY=...` overrides it.
+            env_flags.extend(["-e", "API_KEY=nosograph-smoke-not-a-real-secret"])
         if not any(item.startswith("CORS_ORIGINS=") for item in args.env):
             # Same-origin dashboard; keeps DEBUG=false startup validation quiet
             # without weakening the explicit-origin requirement in production.
@@ -533,13 +591,32 @@ def main(argv: list[str] | None = None) -> int:
             ready_payload = json.loads(ready_body)
         except json.JSONDecodeError:
             ready_payload = {}
-        ready_ok = ready_status == 200 if args.require_ready else bool(ready_payload.get("status"))
+        ready_status_value = str(ready_payload.get("status", "unknown"))
+        ready_detail = f"HTTP {ready_status} status={ready_status_value}"
+        if ready_status != 200:
+            components = ready_payload.get("checks") or ready_payload.get("components") or {}
+            if isinstance(components, dict) and components:
+                not_ok = sorted(
+                    name
+                    for name, value in components.items()
+                    if not (isinstance(value, dict) and value.get("status") in {"ok", None})
+                )
+                if not_ok:
+                    ready_detail += f" not_ok={','.join(not_ok)}"
+            elif ready_body.strip():
+                ready_detail += f" body={ready_body.strip()[:200]}"
+            if not args.require_ready:
+                ready_detail += (
+                    " (expected without Redis/Celery/database; pass --require-ready "
+                    "to make readiness fatal)"
+                )
         _record(
             checks,
             "ready_probe",
             "runtime",
-            ready_ok,
-            f"HTTP {ready_status} status={ready_payload.get('status', 'unknown')}",
+            ready_status == 200,
+            ready_detail,
+            required=args.require_ready,
         )
 
         if demo_mode:

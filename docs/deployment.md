@@ -198,6 +198,9 @@ standard library, prints one JSON object, and always removes the container in a
 # Full image: build, boot on 8080, require liveness
 python scripts/docker_smoke.py --port 8080
 
+# Verify only that the image builds, on a hard time bound
+python scripts/docker_smoke.py --build-only --image nosograph-smoke:local --build-timeout 900
+
 # Existing demo image: assert the read-only guards as well
 python scripts/docker_smoke.py --no-build --image nosograph-demo:latest --demo
 
@@ -210,13 +213,43 @@ python scripts/docker_smoke.py --require-ready
 | `--port` | Injected `PORT`; `0` picks a free loopback port |
 | `--image` | Tag to build and run (default `nosograph-smoke:<port>`) |
 | `--dockerfile` | Dockerfile for the build (default `Dockerfile`) |
-| `--timeout` | Readiness timeout in seconds |
+| `--target` | Build stage to build, so a cached runtime stage is reused |
+| `--timeout` | Application readiness timeout in seconds |
+| `--build-timeout` | Hard bound for the image build (default 900 s) |
+| `--daemon-timeout` | Hard bound for `docker info` (default 60 s) |
+| `--cleanup-timeout` | Hard bound for each container/image removal |
+| `--build-only` | Verify the build and stop; mutually exclusive with `--no-build` |
 | `--no-build` | Reuse an existing image (requires `--image`) |
 | `--validate-diseases` | Run the full-registry strict validation during the build. Off by default because that gate walks 10k+ modules and exits non-zero on generated scaffolds by design; the default build passes `DOCKER_SKIP_DISEASE_VALIDATE=1`. |
-| `--demo` | Also require `403 demo_read_only` on job submission and cache admin |
+| `--demo` | Mirror the demo contract (`DEBUG=false`, `DEMO_MODE=true`, `DEMO_REQUIRE_MODE=true`) and require `403 demo_read_only` on job submission and cache admin |
 | `--require-ready` | Fail unless `/api/ready` returns `200` |
 | `--env KEY=VALUE` | Extra container environment (repeatable) |
+| `--report PATH` | Also write the JSON report to `PATH` |
+| `--verbose` | Echo command diagnostics to stderr |
 | `--keep` | Leave the container and image behind for inspection |
+
+Every command the harness runs is bounded. Output is captured through
+temporary files rather than pipes, because `subprocess.run(capture_output=True,
+timeout=...)` does not bound a hung `docker build` — on timeout CPython kills
+the direct child and then re-reads the pipes with no timeout, so a grandchild
+holding the inherited write handle blocks forever. On a timeout the harness
+kills the whole process tree, records `timed_out`, and returns.
+
+Containers are named with a per-run token and labelled
+`dev.nosograph.smoke=1`; only those are ever removed. Unrelated containers are
+never touched. A reused `--no-build` image is reported as
+`image_origin: "reused"` with its creation timestamp, so a cached image is
+never presented as built from the current source tree.
+
+A check with `required: false` (``/api/ready`` unless `--require-ready` is
+passed) is reported truthfully in `observed_not_ok` without failing the run: a
+bare container legitimately answers `503` because it ships no Redis, Celery
+worker, or database. Deep-link the report to the failing components — the
+detail names them (for example `not_ok=celery,redis,workspace_db`).
+
+`--demo` expects the demo image. Point it at `--dockerfile Dockerfile.demo` (or
+`--no-build --image nosograph-demo:latest`), because the demo contract requires
+the snapshot baked in at build time.
 
 The smoke test proves the container starts and answers on the injected port. It
 does **not** prove a hosted deployment exists, and it does not replace
