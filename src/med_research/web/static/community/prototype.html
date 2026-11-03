@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Static, synthetic, read-only prototype of a disease-linked community experience surface for NosoGraph. Not deployed, not a submission form, not evidence.">
+    <title>Community experience prototype (synthetic, read-only) — NosoGraph</title>
+    <link rel="stylesheet" href="../css/tokens.css">
+    <style>
+        /* ==================================================================
+           Community prototype styles — deliberately self-contained.
+
+           This file does not load dashboard.css: the prototype is a
+           standalone static artefact, not a dashboard module. It consumes the
+           shared token layer (tokens.css) and re-declares a small, local
+           `--ng-comm-*` primitive layer so the page still renders sensibly if
+           the token sheet is unavailable (for example when opened from disk).
+
+           Nothing here may imply that a post is evidence.
+           ================================================================== */
+
+        :root {
+            --ng-comm-surface: var(--ng-surface, #ffffff);
+            --ng-comm-surface-alt: var(--ng-surface-alt, #eef3f9);
+            --ng-comm-bg: var(--ng-bg, #f8fbff);
+            --ng-comm-ink: var(--ng-ink, #122344);
+            --ng-comm-ink-soft: var(--ng-ink-soft, #40516e);
+            --ng-comm-ink-muted: var(--ng-ink-muted, #5b6b85);
+            --ng-comm-border: var(--ng-border, #cbd6e5);
+            --ng-comm-border-strong: var(--ng-border-strong, #9eafc6);
+            --ng-comm-warning: var(--ng-warning, #9a5d00);
+            --ng-comm-error: var(--ng-error, #b42318);
+            --ng-comm-info: var(--ng-info, #1f5fae);
+            --ng-comm-link: var(--ng-link, #1f5fae);
+            --ng-comm-focus-ring: var(--ng-focus-ring, #0e7c6b);
+            --ng-comm-focus-ring-width: var(--ng-focus-ring-width, 3px);
+            --ng-comm-focus-ring-offset: var(--ng-focus-ring-offset, 2px);
+            --ng-comm-font-text: var(--ng-font-text, "Inter", "Segoe UI", Roboto, Arial, sans-serif);
+            --ng-comm-font-mono: var(--ng-font-mono, "JetBrains Mono", Consolas, monospace);
+            --ng-comm-text-sm: var(--ng-text-sm, 0.8125rem);
+            --ng-comm-text-md: var(--ng-text-md, 0.875rem);
+            --ng-comm-text-base: var(--ng-text-base, 1rem);
+            --ng-comm-text-h1: clamp(1.5rem, 1.25rem + 1.2vw, 2rem);
+            --ng-comm-sp-8: var(--ng-sp-8, 8px);
+            --ng-comm-sp-12: var(--ng-sp-12, 12px);
+            --ng-comm-sp-16: var(--ng-sp-16, 16px);
+            --ng-comm-sp-24: var(--ng-sp-24, 24px);
+            --ng-comm-sp-32: var(--ng-sp-32, 32px);
+            --ng-comm-radius-sm: var(--ng-radius-sm, 4px);
+            --ng-comm-radius-md: var(--ng-radius-md, 8px);
+            --ng-comm-radius-pill: var(--ng-radius-pill, 999px);
+            --ng-comm-tap: 44px;
+            --ng-comm-reading: 72ch;
+            --ng-comm-gutter: clamp(1rem, 4vw, 2rem);
+            --ng-comm-ease: var(--ng-ease, cubic-bezier(0.22, 0.61, 0.36, 1));
+            --ng-comm-fast: var(--ng-fast, 160ms);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: var(--ng-comm-bg);
+            color: var(--ng-comm-ink);
+            font-family: var(--ng-comm-font-text);
+            font-size: var(--ng-comm-text-base);
+            line-height: 1.65;
+            /* Mobile-first: never allow horizontal scrolling. */
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.25;
+            margin: 0 0 var(--ng-comm-sp-12);
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: var(--ng-comm-text-h1);
+        }
+
+        h2 {
+            font-size: 1.125rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            margin: 0 0 var(--ng-comm-sp-12);
+            max-width: var(--ng-comm-reading);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            color: var(--ng-comm-link);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        /* ---- Focus: visible ring on every interactive control ---- */
+        a:focus-visible,
+        button:focus-visible,
+        select:focus-visible,
+        input:focus-visible,
+        [role="button"]:focus-visible,
+        .comm-skip-link:focus-visible {
+            outline: var(--ng-comm-focus-ring-width) solid var(--ng-comm-focus-ring);
+            outline-offset: var(--ng-comm-focus-ring-offset);
+            border-radius: 2px;
+        }
+
+        .comm-skip-link {
+            position: absolute;
+            left: var(--ng-comm-sp-8);
+            top: -100px;
+            z-index: 1000;
+            padding: var(--ng-comm-sp-12) var(--ng-comm-sp-16);
+            background: var(--ng-comm-surface);
+            border: 2px solid var(--ng-comm-border-strong);
+            border-radius: var(--ng-comm-radius-md);
+            transition: top var(--ng-comm-fast) var(--ng-comm-ease);
+        }
+
+        .comm-skip-link:focus {
+            top: var(--ng-comm-sp-8);
+        }
+
+        /* ---- Persistent "this is not evidence" banner ---- */
+        .comm-banner {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: var(--ng-comm-sp-12) var(--ng-comm-gutter);
+            background: var(--ng-comm-surface-alt);
+            border-bottom: 2px solid var(--ng-comm-warning);
+            font-size: var(--ng-comm-text-md);
+        }
+
+        .comm-banner__inner {
+            max-width: 82rem;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--ng-comm-sp-8);
+            align-items: baseline;
+        }
+
+        .comm-banner__label {
+            flex: 0 0 auto;
+            padding: 2px var(--ng-comm-sp-8);
+            border: 1px solid var(--ng-comm-warning);
+            border-radius: var(--ng-comm-radius-pill);
+            font-family: var(--ng-comm-font-mono);
+            font-size: var(--ng-comm-text-sm);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--ng-comm-warning);
+        }
+
+        /* ---- Page chassis ---- */
+        .comm-header,
+        .comm-main,
+        .comm-footer {
+            max-width: 82rem;
+            margin: 0 auto;
+            padding: 0 var(--ng-comm-gutter);
+        }
+
+        .comm-header {
+            padding-top: var(--ng-comm-sp-24);
+            padding-bottom: var(--ng-comm-sp-16);
+        }
+
+        .comm-eyebrow {
+            margin: 0 0 var(--ng-comm-sp-8);
+            font-family: var(--ng-comm-font-mono);
+            font-size: var(--ng-comm-text-sm);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--ng-comm-ink-muted);
+        }
+
+        .comm-lede {
+            font-size: 1.0625rem;
+            color: var(--ng-comm-ink-soft);
+        }
+
+        /* ---- Panels ---- */
+        .comm-panel {
+            margin: 0 0 var(--ng-comm-sp-24);
+            padding: var(--ng-comm-sp-16);
+            background: var(--ng-comm-surface);
+            border: 1px solid var(--ng-comm-border);
+            border-left: 4px solid var(--ng-comm-info);
+            border-radius: var(--ng-comm-radius-md);
+        }
+
+        .comm-panel--privacy {
+            border-left-color: var(--ng-comm-warning);
+        }
+
+        .comm-panel__title {
+            margin-top: 0;
+        }
+
+        .comm-panel ul {
+            list-style: disc outside;
+            padding-left: 1.25rem;
+            max-width: var(--ng-comm-reading);
+        }
+
+        .comm-panel li {
+            margin-bottom: var(--ng-comm-sp-8);
+        }
+
+        /* ---- Filters ---- */
+        .comm-filters {
+            display: flex;
+            flex-direction: column;
+            gap: var(--ng-comm-sp-12);
+            margin: 0 0 var(--ng-comm-sp-16);
+        }
+
+        .comm-field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 0;
+        }
+
+        .comm-field > label {
+            font-weight: 600;
+            font-size: var(--ng-comm-text-md);
+        }
+
+        .comm-field select {
+            min-height: var(--ng-comm-tap);
+            padding: 0 var(--ng-comm-sp-12);
+            font: inherit;
+            font-size: var(--ng-comm-text-base);
+            color: var(--ng-comm-ink);
+            background: var(--ng-comm-surface);
+            border: 1px solid var(--ng-comm-border-strong);
+            border-radius: var(--ng-comm-radius-md);
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .comm-field__hint {
+            font-size: var(--ng-comm-text-sm);
+            color: var(--ng-comm-ink-muted);
+        }
+
+        .comm-count {
+            margin: 0 0 var(--ng-comm-sp-12);
+            font-family: var(--ng-comm-font-mono);
+            font-size: var(--ng-comm-text-sm);
+            color: var(--ng-comm-ink-soft);
+        }
+
+        /* ---- Post list ---- */
+        .comm-posts {
+            display: flex;
+            flex-direction: column;
+            gap: var(--ng-comm-sp-16);
+        }
+
+        .comm-post {
+            padding: var(--ng-comm-sp-16);
+            background: var(--ng-comm-surface);
+            border: 1px solid var(--ng-comm-border);
+            border-radius: var(--ng-comm-radius-md);
+        }
+
+        .comm-post__meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--ng-comm-sp-8);
+            align-items: center;
+            margin: 0 0 var(--ng-comm-sp-8);
+        }
+
+        .comm-post__disease {
+            font-family: var(--ng-comm-font-mono);
+            font-size: var(--ng-comm-text-sm);
+            padding: 2px var(--ng-comm-sp-8);
+            border: 1px solid var(--ng-comm-border-strong);
+            border-radius: var(--ng-comm-radius-pill);
+            color: var(--ng-comm-ink-soft);
+        }
+
+        /* Synthetic badge: dashed border + explicit word, never colour alone. */
+        .comm-post__synthetic {
+            font-family: var(--ng-comm-font-mono);
+            font-size: var(--ng-comm-text-sm);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 2px var(--ng-comm-sp-8);
+            border: 2px dashed var(--ng-comm-error);
+            border-radius: var(--ng-comm-radius-sm, 4px);
+            color: var(--ng-comm-error);
+        }
+
+        .comm-post__theme {
+            margin: 0 0 var(--ng-comm-sp-8);
+            font-size: var(--ng-comm-text-md);
+            font-weight: 600;
+            color: var(--ng-comm-ink-soft);
+        }
+
+        .comm-post__body {
+            margin: 0 0 var(--ng-comm-sp-12);
+        }
+
+        .comm-post__footer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--ng-comm-sp-12);
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* ---- Moderation state: glyph + words, never colour alone ---- */
+        .comm-state {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--ng-comm-font-mono);
+            font-size: var(--ng-comm-text-sm);
+            padding: 2px var(--ng-comm-sp-8);
+            border-radius: var(--ng-comm-radius-pill);
+            border: 1px solid currentColor;
+        }
+
+        .comm-state::before {
+            font-size: 0.9em;
+            line-height: 1;
+        }
+
+        .comm-state--published::before {
+            content: "\25CF";
+        }
+
+        .comm-state--pending_review::before {
+            content: "\25D0";
+        }
+
+        .comm-state--hidden_insufficient_context::before {
+            content: "\2298";
+        }
+
+        .comm-state--published {
+            color: var(--ng-comm-ink-soft);
+            border-style: solid;
+        }
+
+        .comm-state--pending_review {
+            color: var(--ng-comm-warning);
+            border-style: dashed;
+        }
+
+        .comm-state--hidden_insufficient_context {
+            color: var(--ng-comm-ink-muted);
+            border-style: dotted;
+        }
+
+        .comm-post--hidden {
+            border-style: dashed;
+        }
+
+        .comm-post--hidden .comm-post__body {
+            font-style: italic;
+            color: var(--ng-comm-ink-muted);
+        }
+
+        /* ---- Buttons ---- */
+        .comm-button {
+            min-height: var(--ng-comm-tap);
+            min-width: var(--ng-comm-tap);
+            padding: 0 var(--ng-comm-sp-16);
+            font: inherit;
+            font-size: var(--ng-comm-text-md);
+            color: var(--ng-comm-ink);
+            background: var(--ng-comm-surface);
+            border: 1px solid var(--ng-comm-border-strong);
+            border-radius: var(--ng-comm-radius-md);
+            cursor: pointer;
+        }
+
+        .comm-button[aria-pressed="true"] {
+            background: var(--ng-comm-surface-alt);
+            border-style: dashed;
+            border-width: 2px;
+        }
+
+        /* Text prefix keeps the pressed state legible without colour. */
+        .comm-button[aria-pressed="true"]::before {
+            content: "\2713 ";
+        }
+
+        .comm-status {
+            min-height: 1.5em;
+            margin: var(--ng-comm-sp-12) 0 0;
+            font-size: var(--ng-comm-text-md);
+            color: var(--ng-comm-ink-soft);
+        }
+
+        .comm-empty {
+            padding: var(--ng-comm-sp-16);
+            border: 1px dashed var(--ng-comm-border-strong);
+            border-radius: var(--ng-comm-radius-md);
+            color: var(--ng-comm-ink-muted);
+        }
+
+        .comm-empty::before {
+            content: "\25CB  ";
+            font-family: var(--ng-comm-font-mono);
+        }
+
+        /* ---- Footer ---- */
+        .comm-footer {
+            padding-top: var(--ng-comm-sp-16);
+            padding-bottom: var(--ng-comm-sp-32);
+            margin-top: var(--ng-comm-sp-32);
+            border-top: 1px solid var(--ng-comm-border);
+            font-size: var(--ng-comm-text-sm);
+            color: var(--ng-comm-ink-muted);
+        }
+
+        /* ---- Wider viewports: two filters side by side ---- */
+        @media (min-width: 640px) {
+            .comm-filters {
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+
+            .comm-field {
+                flex: 1 1 16rem;
+            }
+        }
+
+        /* ---- Reduced motion ---- */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.001ms !important;
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+            }
+
+            .comm-skip-link {
+                transition: none;
+            }
+        }
+
+        /* ---- Increased contrast ---- */
+        @media (prefers-contrast: more) {
+            .comm-panel,
+            .comm-post,
+            .comm-button,
+            .comm-field select {
+                border-width: 2px;
+                border-color: var(--ng-comm-ink);
+            }
+
+            .comm-banner {
+                border-bottom-width: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="comm-skip-link" href="#comm-main">Skip to prototype content</a>
+
+    <div class="comm-banner" role="region" aria-label="Scientific boundary notice">
+        <div class="comm-banner__inner">
+            <span class="comm-banner__label">Not evidence</span>
+            <span>
+                Community experience is not scientific evidence. Every post below is a
+                fabricated placeholder written for layout testing — not an observation
+                from a real person — and nothing here can support, contradict, or weight a
+                biomedical claim.
+            </span>
+        </div>
+    </div>
+
+    <header class="comm-header">
+        <p class="comm-eyebrow">NosoGraph · local prototype · not deployed</p>
+        <h1>Community experience prototype</h1>
+        <p class="comm-lede">
+            A static, read-only sketch of how disease-linked lived-experience posts could be
+            presented <em>alongside</em> — never inside — the evidence model. There is no
+            account system, no submission endpoint, and no storage. Everything on this page
+            is synthetic.
+        </p>
+    </header>
+
+    <main class="comm-main" id="comm-main">
+        <section class="comm-panel comm-panel--privacy" aria-labelledby="comm-privacy-title">
+            <h2 class="comm-panel__title" id="comm-privacy-title">
+                Privacy and consent — read this first
+            </h2>
+            <p>
+                Privacy architecture has not been assessed. This prototype does not collect,
+                transmit, or store anything: it is a static file with no account, no
+                submission endpoint, and no database behind it.
+            </p>
+            <ul>
+                <li>
+                    Complete anonymity is not claimed or verified. Local file access, browser
+                    history, and any hosting layer that served this file would each record
+                    metadata that has not been reviewed.
+                </li>
+                <li>
+                    There is no consent capture here, because there is nothing to consent to:
+                    no text you type is saved or sent, and the only input is a filter control.
+                    If the filter controls are used, the choice lives in this tab's memory and
+                    disappears on reload.
+                </li>
+                <li>
+                    Do not paste personal health information anywhere on this page. It is not
+                    designed to receive it and cannot protect it.
+                </li>
+                <li>
+                    Real submissions, moderation, reporting, and retention are all
+                    unimplemented. Before any public deployment, this surface needs a threat
+                    model, a data-retention policy, a moderation duty-of-care plan, and
+                    independent privacy review.
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="comm-filter-title">
+            <h2 id="comm-filter-title">Filter synthetic posts</h2>
+
+            <div class="comm-filters">
+                <div class="comm-field">
+                    <label for="comm-disease-filter">Disease</label>
+                    <select id="comm-disease-filter">
+                        <option value="all">All diseases in this prototype</option>
+                    </select>
+                    <span class="comm-field__hint">
+                        Disease labels come from the prototype's own fixture list, not from the
+                        curated registry.
+                    </span>
+                </div>
+
+                <div class="comm-field">
+                    <label for="comm-state-filter">Moderation state</label>
+                    <select id="comm-state-filter">
+                        <option value="all">All moderation states</option>
+                        <option value="published">published</option>
+                        <option value="pending_review">pending_review</option>
+                        <option value="hidden_insufficient_context">hidden_insufficient_context</option>
+                    </select>
+                    <span class="comm-field__hint">
+                        Hidden posts stay visible to the reader in this prototype so the state
+                        is inspectable rather than silent.
+                    </span>
+                </div>
+            </div>
+
+            <p class="comm-count" id="comm-result-count" role="status" aria-live="polite">
+                Showing 0 synthetic posts.
+            </p>
+
+            <ul class="comm-posts" id="comm-posts" aria-labelledby="comm-filter-title"></ul>
+
+            <p class="comm-status" id="comm-report-status" role="status" aria-live="polite"></p>
+
+            <noscript>
+                <p class="comm-empty">
+                    This prototype renders its synthetic posts with JavaScript. No post data
+                    is fetched from a server; the list is embedded in
+                    <code>prototype.js</code>.
+                </p>
+            </noscript>
+        </section>
+    </main>
+
+    <footer class="comm-footer">
+        <p>
+            Prototype only. Not deployed. No public submissions are enabled. Community
+            experience is not scientific evidence, and this page is not part of the NosoGraph
+            evidence model, Compare, or Evidence Explorer.
+        </p>
+        <p>
+            Research software, not medical advice. See
+            <a href="../../../../../docs/concepts/community-prototype.md">the prototype notes</a>
+            for scope, safety boundaries, and what a real implementation would still require.
+        </p>
+    </footer>
+
+    <script src="prototype.js"></script>
+</body>
+</html>
