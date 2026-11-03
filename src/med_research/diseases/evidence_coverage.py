@@ -471,6 +471,24 @@ def inspect_disease(disease_id: str) -> dict[str, Any]:
     }
 
 
+def _stable_sample(ids: Sequence[str], *, sample_size: int, sample_seed: int) -> list[str]:
+    """Return a version-stable sample ordered by a seeded content hash.
+
+    ``random.sample`` is avoided because hash ordering of
+    ``sha256(f"{seed}:{disease_id}")`` is reproducible across processes,
+    platforms, and Python versions. The validation gate orders its sample the
+    same way; the helper is repeated here so this report has no import-time
+    dependency on a module that may not carry it.
+    """
+    if sample_size <= 0:
+        return []
+    ordered = sorted(
+        ids,
+        key=lambda disease_id: hashlib.sha256(f"{sample_seed}:{disease_id}".encode()).hexdigest(),
+    )
+    return ordered[:sample_size]
+
+
 def _resolve_targets(
     *,
     disease_ids: Sequence[str] | None,
@@ -496,11 +514,7 @@ def _resolve_targets(
     candidates = [did for did in candidates if not is_blocked_slug(did)]
 
     if sample_size is not None:
-        from med_research.diseases.validation_batch import _deterministic_sample
-
-        candidates = _deterministic_sample(
-            candidates, sample_size=sample_size, sample_seed=sample_seed
-        )
+        candidates = _stable_sample(candidates, sample_size=sample_size, sample_seed=sample_seed)
     if limit is not None:
         candidates = candidates[: max(limit, 0)]
     return candidates, selection, excluded_blocked
