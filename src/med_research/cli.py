@@ -702,6 +702,28 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Print the machine-readable sync report",
     )
 
+    biomed_phenopacket = biomed_sub.add_parser(
+        "phenopacket",
+        help=(
+            "Export disease-level phenotype evidence as a JSON bundle "
+            "(experimental; not a patient Phenopacket)"
+        ),
+    )
+    biomed_phenopacket.add_argument(
+        "--input",
+        type=Path,
+        required=True,
+        help="Input JSON describing the disease and its phenotype evidence",
+    )
+    biomed_phenopacket.add_argument(
+        "--output",
+        type=Path,
+        help=(
+            "Write the canonical JSON bundle here instead of stdout. Identical "
+            "inputs produce identical bytes."
+        ),
+    )
+
     biomed_migrate = biomed_sub.add_parser(
         "migrate",
         help="Migrate curated legacy disease projections into the canonical store",
@@ -1916,6 +1938,8 @@ def cmd_biomed(args: Any) -> int:
         return cmd_biomed_compare(args)
     if action == "analytics":
         return cmd_biomed_analytics(args)
+    if action == "phenopacket":
+        return cmd_biomed_phenopacket(args)
     logger.error("Unknown biomed action: %s", action)
     return 1
 
@@ -2182,6 +2206,36 @@ def cmd_biomed_sync(args: Any) -> int:
         if report.error:
             logger.error("Sync error: %s", report.error)
     return 0 if report.status is SyncStatus.COMPLETED else 1
+
+
+def cmd_biomed_phenopacket(args: Any) -> int:
+    """Export disease-level phenotype evidence as a JSON bundle."""
+    import json
+
+    from med_research.biomed.phenopacket import PhenopacketExportError, export_bundle
+
+    try:
+        payload = json.loads(Path(args.input).read_text(encoding="utf-8"))
+    except OSError as exc:
+        logger.error("Cannot read input %s: %s", args.input, exc)
+        return 1
+    except json.JSONDecodeError as exc:
+        logger.error("Input %s is not valid JSON: %s", args.input, exc)
+        return 1
+
+    try:
+        text = export_bundle(payload, path=args.output)
+    except PhenopacketExportError as exc:
+        logger.error("Export rejected (%d problem(s)):", len(exc.messages))
+        for message in exc.messages:
+            logger.error("  - %s", message)
+        return 1
+
+    if args.output:
+        logger.info("Wrote phenotype evidence bundle to %s", args.output)
+    else:
+        print(text, end="")
+    return 0
 
 
 def cmd_biomed_compare(args: Any) -> int:

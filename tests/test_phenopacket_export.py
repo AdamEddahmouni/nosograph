@@ -323,3 +323,59 @@ def test_export_bundle_writes_the_same_bytes_it_returns(tmp_path: Path) -> None:
 def test_payload_type_error_is_explicit() -> None:
     with pytest.raises(TypeError, match="payload must be a mapping"):
         build_bundle(["not", "a", "mapping"])  # type: ignore[arg-type]
+
+
+# ---------------------------------------------------------------------------
+# CLI surface
+# ---------------------------------------------------------------------------
+
+
+def _cli(*argv: str) -> int:
+    from med_research.cli import cmd_biomed
+    from tests.cli_helpers import run_cli_handler
+
+    return run_cli_handler(cmd_biomed, "biomed", "phenopacket", *argv)
+
+
+def test_cli_writes_the_canonical_bundle(tmp_path: Path) -> None:
+    target = tmp_path / "out" / "bundle.json"
+
+    exit_code = _cli("--input", str(FIXTURE_DIR / "valid_input.json"), "--output", str(target))
+
+    assert exit_code == 0
+    expected = export_bundle(_load("valid_input.json"))
+    assert target.read_text(encoding="utf-8") == expected
+
+
+def test_cli_prints_to_stdout_without_output_path(capsys: pytest.CaptureFixture[str]) -> None:
+    exit_code = _cli("--input", str(FIXTURE_DIR / "valid_input.json"))
+
+    assert exit_code == 0
+    assert capsys.readouterr().out == export_bundle(_load("valid_input.json"))
+
+
+def test_cli_reports_every_validation_problem_and_writes_nothing(
+    tmp_path: Path, caplog: pytest.LogCaptureFixture
+) -> None:
+    target = tmp_path / "never.json"
+
+    exit_code = _cli(
+        "--input", str(FIXTURE_DIR / "invalid_missing_provenance.json"), "--output", str(target)
+    )
+
+    assert exit_code == 1
+    assert not target.exists()
+    assert "Export rejected" in caplog.text
+
+
+def test_cli_missing_input_file_is_a_clean_failure(tmp_path: Path) -> None:
+    exit_code = _cli("--input", str(tmp_path / "absent.json"))
+
+    assert exit_code == 1
+
+
+def test_cli_invalid_json_is_a_clean_failure(tmp_path: Path) -> None:
+    broken = tmp_path / "broken.json"
+    broken.write_text("{not json", encoding="utf-8")
+
+    assert _cli("--input", str(broken)) == 1

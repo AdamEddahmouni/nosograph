@@ -96,6 +96,20 @@ Rules enforced on every export:
 
 ## Usage
 
+From the CLI. Exit status is `0` on success, `1` for an unreadable file, invalid
+JSON, or any validation problem, and every validation problem is printed rather
+than only the first:
+
+```bash
+# Write the canonical bundle to a file.
+med-research biomed phenopacket --input evidence.json --output out/phenotypes.json
+
+# Or print it to stdout.
+med-research biomed phenopacket --input evidence.json
+```
+
+From Python:
+
 ```python
 from med_research.biomed.phenopacket import build_bundle, export_bundle
 
