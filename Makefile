@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts check-public-site license-check sbom
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test docker-smoke clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts check-public-site license-check sbom
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -127,6 +127,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/biomed/sync/models.py \
 	src/med_research/biomed/sync/registry.py \
 	src/med_research/biomed/sync/sources/__init__.py \
+	src/med_research/biomed/sync/sources/hpoa.py \
 	src/med_research/biomed/sync/sources/opentargets.py \
 	src/med_research/cache.py \
 	src/med_research/cli.py \
@@ -134,6 +135,7 @@ typecheck:  ## Run mypy on the expanded type-check scope
 	src/med_research/diseases/coverage.py \
 	src/med_research/diseases/harvest_registry.py \
 	src/med_research/diseases/schemas.py \
+	src/med_research/diseases/validation_batch.py \
 	src/med_research/exceptions.py \
 	src/med_research/logging_config.py \
 	src/med_research/pipeline/__init__.py \
@@ -448,6 +450,9 @@ docker-up:  ## Start the web API server in Docker (full profile)
 
 docker-test:  ## Run tests inside Docker
 	docker compose run --rm pipeline test
+
+docker-smoke:  ## Build the app image and verify health/readiness on an injected PORT
+	python scripts/docker_smoke.py --port 8123
 
 check-public-metadata:  ## Verify README / CITATION / version consistency
 	python scripts/check_public_metadata.py
