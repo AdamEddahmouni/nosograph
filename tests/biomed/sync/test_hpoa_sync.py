@@ -174,8 +174,8 @@ def test_diff_detects_checksum_change(artifact: Path) -> None:
 
 
 def test_sync_registration_includes_hpoa() -> None:
-    assert list_syncable_sources() == ["hpoa", "open_targets"]
-    assert list_sources() == ["hpoa", "open_targets"]
+    assert list_syncable_sources() == ["hpoa", "mondo", "open_targets"]
+    assert list_sources() == ["hpoa", "mondo", "open_targets"]
     assert get_sync_source("hpoa").source_id == "hpoa"
 
     row = next(entry for entry in SOURCE_MATRIX if entry.source == "hpoa")

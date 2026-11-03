@@ -23,14 +23,14 @@ SOURCE_MATRIX: tuple[SourceMatrixEntry, ...] = (
     SourceMatrixEntry(
         source="mondo",
         domain="disease ontology",
-        adapter="MondoAdapter",
-        access="local OBO-JSON artifact",
-        version_mechanism="meta.version in artifact",
+        adapter="MondoAdapter + MondoSyncSource",
+        access="operator-supplied local OBO-JSON artifact (no download automation)",
+        version_mechanism="meta.version in artifact, else VERSION pin",
         license="CC-BY-4.0",
-        cache="snapshot checksum in SQLite",
-        transforms="entities, IS_A claims, xrefs",
-        provenance="ResourceSnapshot + ImportReport fingerprint",
-        tests="tests/biomed/imports/test_mondo_adapter.py",
+        cache="snapshot checksum in SQLite + SyncProvenance",
+        transforms="condition entities, IS_A claims, published xrefs, obsolescence metadata",
+        provenance="ResourceSnapshot + SyncReport fingerprint",
+        tests="tests/biomed/sync/test_mondo_sync.py",
     ),
     SourceMatrixEntry(
         source="hp / hpo",
@@ -180,7 +180,7 @@ SOURCE_MATRIX: tuple[SourceMatrixEntry, ...] = (
 
 
 # Declared sync inventory; keep in step with ``sync.lifecycle._SYNC_SOURCES``.
-SYNCABLE_SOURCES: tuple[str, ...] = ("hpoa", "open_targets")
+SYNCABLE_SOURCES: tuple[str, ...] = ("hpoa", "mondo", "open_targets")
 
 
 def list_syncable_sources() -> list[str]:
