@@ -52,7 +52,7 @@ Removed implicit `disease=sle` defaults from CLI entry points, Evidence Workspac
 |----------|-----------|-------|
 | `Disease("sle")` in docstrings/examples | DOCUMENTATION_EXAMPLE | |
 | SLE-specific adverse-event legacy fallback in `base.py` | LEGITIMATE_DISEASE_DATA for curated SLE module | |
-| `CURATED_CONSENSUS_DISEASES` in geo.py | LEGITIMATE_DISEASE_DATA (expression corpus) | |
+| `CURATED_CONSENSUS_DISEASES` in geo.py | LEGITIMATE_DISEASE_DATA (curated literature consensus) | |
 | Pipeline internal `def foo(disease_id="sle")` when only called with explicit args | deferred; callers now pass explicit disease | TEST_FIXTURE / internal |
 | Celery task signatures with `disease_id="sle"` | tasks always invoked with explicit disease from API jobs | |
 
@@ -64,7 +64,7 @@ Removed implicit `disease=sle` defaults from CLI entry points, Evidence Workspac
 | **L0** | No usable KG data |
 | **L1** | Partial KG and/or config gaps; strict validation fails |
 | **L2** | Strict validation pass — pipeline-ready (~88 in cached 500-disease scan) |
-| **L3** | Research-ready (expression consensus or deep curation) |
+| **L3** | Research-ready (curated literature consensus or deep curation) |
 | **ci_validated** | Subset of L2/L3: eight core modules in every PR CI gate |
 | **blocked** | Non-disease slug or load failure |
 

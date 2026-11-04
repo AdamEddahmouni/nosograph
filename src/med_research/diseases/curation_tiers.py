@@ -8,6 +8,18 @@ from med_research.diseases.identifiers import CI_VALIDATED_DISEASES
 
 CurationTier = Literal["scaffold", "L0", "L1", "L2", "L3", "ci_validated", "blocked"]
 
+#: Short human labels for product surfaces. The tier code stays ``L3`` for
+#: API and cache compatibility; the label states what the tier actually is.
+CURATION_TIER_LABELS: dict[str, str] = {
+    "scaffold": "Auto-generated scaffold",
+    "L0": "No knowledge-graph data",
+    "L1": "Partial knowledge graph",
+    "L2": "Pipeline-ready (strict validation)",
+    "L3": "Curated literature consensus",
+    "ci_validated": "CI-validated core module",
+    "blocked": "Blocked",
+}
+
 CURATION_TIER_DEFINITIONS: dict[str, str] = {
     "scaffold": (
         "Auto-generated module from public KBs; KG entities present but config "
@@ -16,7 +28,12 @@ CURATION_TIER_DEFINITIONS: dict[str, str] = {
     "L0": "No usable knowledge-graph data (missing profile/genes/drugs/pathways/relationships).",
     "L1": "Partial KG and/or config gaps; strict validation fails.",
     "L2": "Strict validation pass — pipeline-ready. The public L2=88 figure is an n=500 sample, not a corpus target.",
-    "L3": "Expression-consensus membership (CURATED_CONSENSUS_DISEASES, 23 ids). Public L3=2 is an n=500 sample.",
+    "L3": (
+        "Hand-curated literature consensus (CURATED_CONSENSUS_DISEASES, 23 ids): "
+        "expert-selected gene lists, not a computed GEO differential-expression "
+        "analysis. Study-level accessions are not recorded. Public L3=2 is an "
+        "n=500 sample."
+    ),
     "ci_validated": (
         "One of eight core modules (sle, ra, ms, ss, ssc, t1d, ibd, ad) validated "
         "with ``med-research disease validate --strict`` on every CI run."
@@ -66,6 +83,9 @@ def tier_summary_row(disease_id: str, readiness_tier: str, **extra: Any) -> dict
         "ci_validated": disease_id in CI_VALIDATED_DISEASES,
         "tier_definition": CURATION_TIER_DEFINITIONS.get(
             effective, CURATION_TIER_DEFINITIONS.get(readiness_tier, "")
+        ),
+        "tier_label": CURATION_TIER_LABELS.get(
+            effective, CURATION_TIER_LABELS.get(readiness_tier, "")
         ),
         **extra,
     }

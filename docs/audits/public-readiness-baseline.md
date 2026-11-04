@@ -48,7 +48,7 @@ data/                      # Runtime DBs (gitignored); reports under data/report
 | **L0** | Majority of 10k+ | Open Targets scaffold; incomplete KG/config |
 | **L1** | Subset | Partial KG or config gaps |
 | **L2** | ~45 promoted + 18 legacy curated | Strict validation pass (symptoms, queries, CAR-T, safety) |
-| **L3** | 23 (`CURATED_CONSENSUS_DISEASES`) | L2 + hand-curated GEO expression consensus |
+| **L3** | 23 (`CURATED_CONSENSUS_DISEASES`) | L2 + hand-curated literature consensus (study accessions not recorded) |
 | **CI gate** | 8 only | `sle`, `ra`, `ibd`, `ms`, `ss`, `ssc`, `t1d`, `ad` |
 
 **Important:** README baseline overclaimed “10,403+ disease modules” as research-ready. Scaffold count ≠ curated count.

@@ -9,7 +9,7 @@ The disease registry is **large in count but shallow in curation depth**. Public
 
 1. **Registry modules** — MONDO-aligned slugs, mostly Open Targets bulk scaffolds  
 2. **Pipeline-ready (L2)** — ~45 promoted + 18 legacy hand-curated modules  
-3. **Expression-curated (L3)** — 23 modules with disease-specific GEO consensus (no SLE signature reuse)
+3. **Curated literature consensus (L3)** — 23 modules with disease-specific hand-curated gene lists (no SLE signature reuse; study accessions not recorded)
 
 ## Original curated eight (CI gate)
 

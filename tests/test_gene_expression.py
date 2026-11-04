@@ -461,14 +461,24 @@ def test_build_consensus_signature():
     studies = [{"accession": "GSE100001"}, {"accession": "GSE100002"}]
     sig = build_consensus_signature(studies, disease="sle", min_occurrence=2)
 
-    assert sig["source"] == "geo_consensus"
+    assert sig["source"] == "curated_literature_consensus"
+    assert sig["evidence_basis"] == "expert_curated_literature_consensus"
     assert sig["coverage"] == "curated"
     assert sig["num_studies_used"] == 2
     assert len(sig["upregulated"]) > 0
     assert len(sig["downregulated"]) > 0
     assert all("fold_change" in v for v in sig["upregulated"].values())
     assert all("confidence" in v for v in sig["upregulated"].values())
-    assert sig["study_ids"] == ["GSE100001", "GSE100002"]
+    assert sig["study_ids"] == []
+    assert sig["requested_study_accessions"] == ["GSE100001", "GSE100002"]
+    assert sig["provenance"]["consensus_derived_from_studies"] is False
+    assert sig["provenance"]["study_accessions_recorded"] is False
+    entry = sig["upregulated"]["IRF5"]
+    assert entry["effect_direction"] == "upregulated"
+    assert entry["effect_size"] == {"metric": "fold_change", "value": entry["fold_change"]}
+    assert entry["source"] == "curated_literature_consensus"
+    assert entry["study_accessions"] == []
+    assert entry["provenance_status"] == "study_accessions_not_recorded"
 
 
 def test_build_consensus_signature_ra():
@@ -593,7 +603,7 @@ def test_signature_manager_curated():
     from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="curated")
-    assert sig["source"] == "curated_consensus"
+    assert sig["source"] == "curated_literature_consensus"
     assert sig["coverage"] == "curated"
     assert len(sig["upregulated"]) > 0
     assert len(sig["downregulated"]) > 0
@@ -612,7 +622,7 @@ def test_get_signature_fallback(monkeypatch):
     from med_research.pipeline.gene_expression.signature import get_signature
 
     sig = get_signature(disease="sle", source="auto")
-    assert sig["source"] == "curated_consensus"
+    assert sig["source"] == "curated_literature_consensus"
     assert len(sig["upregulated"]) > 0
 
 
@@ -690,7 +700,7 @@ def test_cli_geo_flag(monkeypatch):
     from med_research.pipeline.gene_expression.correlator import _normalize_signature
 
     up_genes, down_genes, sig_source, num_studies = _normalize_signature(sig)
-    assert sig_source in ("curated_consensus", "geo_consensus", "geo_fallback")
+    assert sig_source in ("curated_literature_consensus", "geo_consensus", "geo_fallback")
     assert len(up_genes) > 0
     assert len(down_genes) > 0
 
@@ -701,11 +711,11 @@ def test_expression_report_with_signature_source():
 
     results = compute_all_correlations()
     path = generate_html_report(
-        results[:5], signature_source="curated_consensus", num_studies=0, tissue="broad"
+        results[:5], signature_source="curated_literature_consensus", num_studies=0, tissue="broad"
     )
     content = Path(path).read_text(encoding="utf-8")
     assert "Expression Signature Source" in content
-    assert "curated_consensus" in content
+    assert "curated_literature_consensus" in content
     Path(path).unlink(missing_ok=True)
 
 
@@ -726,6 +736,8 @@ L3_WAVE_DISEASES = (
     "t2d",
     "als",
 )
+
+ORIGINAL_CONSENSUS_DISEASES = ("sle", "ra", "ibd", "ms", "ss", "ssc", "t1d", "ad")
 
 L3_TISSUE_CASES = (
     ("nsclc", "lung", "EGFR", "CDKN2A"),
@@ -752,10 +764,40 @@ def test_wave_l3_curated_signature_manager(disease_id):
 
     sig = get_signature(disease=disease_id, source="curated")
     assert sig["coverage"] == "curated"
-    assert sig["source"] == "curated_consensus"
+    assert sig["source"] == "curated_literature_consensus"
     assert sig["upregulated"]
     assert sig["downregulated"]
     assert "IRF5" not in sig["upregulated"]
+
+
+@pytest.mark.parametrize("disease_id", ORIGINAL_CONSENSUS_DISEASES + L3_WAVE_DISEASES)
+def test_every_consensus_gene_carries_provenance(disease_id):
+    from med_research.pipeline.gene_expression.geo import build_consensus_signature
+
+    sig = build_consensus_signature(
+        [{"accession": "GSE_TEST"}], disease=disease_id, min_occurrence=1
+    )
+    assert sig["source"] == "curated_literature_consensus"
+    assert sig["coverage"] == "curated"
+    assert sig["study_ids"] == []
+    assert sig["requested_study_accessions"] == ["GSE_TEST"]
+    assert sig["provenance"]["consensus_derived_from_studies"] is False
+    assert sig["provenance"]["study_accessions_recorded"] is False
+    assert sig["provenance"]["study_accessions"] == []
+
+    for direction, bucket in (
+        ("upregulated", sig["upregulated"]),
+        ("downregulated", sig["downregulated"]),
+    ):
+        for gene, entry in bucket.items():
+            assert entry["effect_direction"] == direction, gene
+            assert entry["source"] == "curated_literature_consensus", gene
+            assert entry["study_accessions"] == [], gene
+            assert entry["provenance_status"] == "study_accessions_not_recorded", gene
+            assert entry["effect_size"] == {
+                "metric": "fold_change",
+                "value": entry["fold_change"],
+            }, gene
 
 
 @pytest.mark.parametrize("disease_id", L3_WAVE_DISEASES)

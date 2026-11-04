@@ -269,9 +269,10 @@ def _verify_metric_invariants(errors: list[str]) -> None:
         errors.append(
             "l2_strict_validated must remain metric_kind: sample (n=500), not full-corpus."
         )
-    if "l3_expression_curated: sample" not in yaml_text:
+    if "l3_curated_literature_consensus: sample" not in yaml_text:
         errors.append(
-            "l3_expression_curated must remain metric_kind: sample (n=500), not full-corpus."
+            "l3_curated_literature_consensus must remain metric_kind: sample (n=500), "
+            "not full-corpus."
         )
     if "n=500" not in yaml_text:
         errors.append(

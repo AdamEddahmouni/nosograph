@@ -89,14 +89,14 @@ Evidence records support claims; they are not automatic proof. Supporting, contr
 | On-disk module directories | 10,406 |
 | Harvest catalog entries | 10,391 |
 | Strict L2-validated modules (n=500 sample) | 88 |
-| L3 expression-curated (n=500 sample) | 2 |
+| L3 curated literature consensus (n=500 sample) | 2 |
 | Expression-consensus membership | 23 |
 | Reference modules | 6 |
 | CI-validated modules | 8 |
 | Registered pipeline adapters | 25 |
 | Offline tests selected in the v0.2.1 suite | 2,445 |
 
-Values come from [`docs/generated/public-status.yaml`](docs/generated/public-status.yaml). **Discoverable ≠ harvest JSON ≠ curation depth.** Most modules are Open Targets scaffolds. L2=88 and L3=2 are an n=500 alphabetical sample, not a full-corpus count; the expression-consensus set is 23. The stale public figure 10,407 was discoverable (10,404) plus the 3-id blocklist (including a test-only fixture). Regenerate live counts with `python scripts/refresh_public_status.py`. See [coverage](docs/data/coverage.md).
+Values come from [`docs/generated/public-status.yaml`](docs/generated/public-status.yaml). **Discoverable ≠ harvest JSON ≠ curation depth.** Most modules are Open Targets scaffolds. L2=88 and L3=2 are an n=500 alphabetical sample, not a full-corpus count; the consensus set is 23. L3 is a hand-curated **literature consensus**, not a computed expression analysis; per-gene study accessions are not recorded. The stale public figure 10,407 was discoverable (10,404) plus the 3-id blocklist (including a test-only fixture). Regenerate live counts with `python scripts/refresh_public_status.py`. See [coverage](docs/data/coverage.md).
 
 ## Contributing
 

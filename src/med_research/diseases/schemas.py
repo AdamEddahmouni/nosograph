@@ -27,6 +27,17 @@ class _LosslessModel(BaseModel):
 # ── TypedDict pilots (dict-based loaders; mirror Pydantic models below) ──
 
 
+class VariantDict(TypedDict, total=False):
+    """Dict shape for a variant nested in a gene record."""
+
+    id: str
+    name: str
+    clinvar_id: str
+    hgvs: str
+    clinical_significance: str
+    references: list[str]
+
+
 class GeneDict(TypedDict, total=False):
     """Dict shape for genes.json entries — mirrors :class:`Gene`."""
 
@@ -40,6 +51,7 @@ class GeneDict(TypedDict, total=False):
     category: str
     sle_evidence: str
     disease_evidence: str
+    variants: list[VariantDict]
 
 
 class DrugDict(TypedDict, total=False):
@@ -100,6 +112,17 @@ class RelationshipType(str, Enum):
     TREATS = "TREATS"
 
 
+class Variant(_LosslessModel):
+    """Variant-level provenance nested inside a gene record."""
+
+    id: str
+    name: str
+    clinvar_id: str
+    hgvs: str = ""
+    clinical_significance: str = ""
+    references: list[str] = Field(default_factory=list)
+
+
 class Gene(_LosslessModel):
     id: str
     name: str
@@ -111,6 +134,7 @@ class Gene(_LosslessModel):
     category: str = ""
     sle_evidence: str = ""
     disease_evidence: str = ""
+    variants: list[Variant] = Field(default_factory=list)
 
 
 class GenesFile(BaseModel):

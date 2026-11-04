@@ -23,6 +23,9 @@ python scripts/populate_disease_configs.py <id> --check --strict
 # Schema and relationship integrity
 python -m med_research.cli disease validate <id> --strict
 
+# Provenance density for gene, drug, and pathway records
+python -m med_research.cli disease evidence-coverage --disease <id> --require-evidence
+
 # Module readiness (expression, screening, KG, etc.)
 python -m med_research.cli disease coverage <id>
 ```
@@ -61,7 +64,7 @@ Scaffolds carry OpenTargets-derived genes/drugs/pathways/relationships plus gene
 | **L0** | Scaffold only — missing KG JSON files |
 | **L1** | KG present (`genes.json`, etc.) but config gaps remain |
 | **L2** | Pipeline-ready — passes strict validation (symptoms, CAR-T, safety when drugs exist, screening profile) |
-| **L3** | Expression-curated — hand-curated GEO consensus (`CURATED_CONSENSUS_DISEASES`: original 8; Wave 3/4 slice `nsclc`, `pancreatic_ductal_adenocarcinoma`, `glioblastoma`, `cystic_fibrosis`, `sickle_cell_anemia`, `heart_failure`, `non_alcoholic_fatty_liver_disease`; second batch `melanoma`, `colorectal_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `copd`, `asthma`, `t2d`, `als`) |
+| **L3** | Curated literature consensus — hand-curated gene list, study accessions not recorded (`CURATED_CONSENSUS_DISEASES`: original 8; Wave 3/4 slice `nsclc`, `pancreatic_ductal_adenocarcinoma`, `glioblastoma`, `cystic_fibrosis`, `sickle_cell_anemia`, `heart_failure`, `non_alcoholic_fatty_liver_disease`; second batch `melanoma`, `colorectal_cancer`, `breast_cancer`, `acute_myeloid_leukemia`, `copd`, `asthma`, `t2d`, `als`) |
 
 Check corpus-wide status: `python -m med_research.cli disease corpus-status` or `make corpus-status`. Baseline metrics: `make corpus-baseline`.
 
@@ -82,7 +85,7 @@ Run with `--check --strict` in CI and before merging curation PRs. Fix failures 
 Each disease module needs its own consensus gene lists — never reuse SLE signatures for other diseases.
 
 1. Add `*_CONSENSUS_GENES` dicts with `upregulated` / `downregulated` entries (`fold_change` + `confidence`).
-2. Register the disease in `CURATED_CONSENSUS_DISEASES` and `DISEASE_CONSENSUS_GENES`.
+2. Register the disease in `CURATED_CONSENSUS_DISEASES` and `DISEASE_CONSENSUS_GENES`. Record the literature basis in the curation PR: per-gene study accessions are not stored yet, and exports report them as `study_accessions_not_recorded` rather than implying a computed analysis.
 3. Add optional tissue filters in `DISEASE_TISSUE_SPECIFIC_GENES` (e.g. MS `lesion`, SS `salivary`, T1D `islet`).
 4. Add GEO search terms in `DISEASE_SEARCH_TERMS` for each tissue category.
 5. Verify: `build_consensus_signature([{"accession": "TEST"}], disease="<id>")` returns `coverage: curated` with non-empty gene lists.
@@ -128,7 +131,9 @@ SCREENING_PROFILE = {
 
 Before marking a disease module research-ready:
 
-- [ ] `disease validate <id> --strict` passes
+- [ ] `disease validate <id> --strict --require-evidence` passes
+- [ ] Gene, drug, and pathway records carry at least one resolvable identifier (80% per-module target; reference and CI-validated sets currently exceed it)
+- [ ] Variant-level records carry a ClinVar ID where available, and `make check-references` resolves every declared PMID/DOI/ClinVar ID
 - [ ] `disease coverage <id>` shows expression module **full/ready** (not `not_curated`)
 - [ ] `populate_disease_configs.py <id> --check --strict` passes
 - [ ] Expression consensus genes are disease-specific (no SLE gene reuse)

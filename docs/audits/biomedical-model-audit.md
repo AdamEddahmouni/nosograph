@@ -32,7 +32,7 @@ Implemented in `diseases/tier_model.py` and `pipeline/gene_expression/geo.py`.
 | L0 | Scaffold missing KG files | PROTOTYPE |
 | L1 | Partial KG/config | EXPERIMENTAL |
 | L2 | Strict validation pass | BETA (research-ready pipeline inputs) |
-| L3 | L2 + curated GEO consensus | BETA (expression module fully curated) |
+| L3 | L2 + curated literature consensus (study accessions not recorded) | BETA (hand-curated gene list) |
 
 **L3 curated set (23):** `sle`, `ra`, `ibd`, `ms`, `ss`, `ssc`, `t1d`, `ad`, plus Wave 3/4 oncology/metabolic slice (see `CURATED_CONSENSUS_DISEASES` in `geo.py`).
 

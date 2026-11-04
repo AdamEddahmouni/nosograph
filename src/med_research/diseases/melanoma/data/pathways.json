@@ -1,188 +1,83 @@
 {
   "pathways": [
     {
-      "id": "cell-cycle",
-      "name": "Cell Cycle Regulation",
-      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
-      "key_components": [
-        "CCND1",
-        "CDK4",
-        "CDKN2A",
-        "CDKAL1",
-        "RB1"
-      ],
-      "therapeutic_targets": [
-        "CCND1",
-        "CDK4",
-        "CDKN2A",
-        "CDKAL1",
-        "RB1"
-      ],
-      "references": []
-    },
-    {
-      "id": "dna-repair",
-      "name": "DNA Repair",
-      "description": "Homologous recombination, mismatch repair, and base excision pathways preserving genome integrity.",
-      "key_components": [
-        "ATM",
-        "ATR",
-        "BRCA2",
-        "CHEK2",
-        "TP53",
-        "PARP1"
-      ],
-      "therapeutic_targets": [
-        "ATM",
-        "ATR",
-        "BRCA2",
-        "CHEK2",
-        "TP53",
-        "PARP1"
-      ],
-      "references": []
-    },
-    {
-      "id": "immune-checkpoint",
-      "name": "Immune Checkpoint Signaling",
-      "description": "Co-inhibitory receptor signaling (PD-1/CTLA-4/TIGIT/LAG-3) that restrains T cell responses.",
-      "key_components": [
-        "CD274",
-        "CTLA4",
-        "PDCD1"
-      ],
-      "therapeutic_targets": [
-        "CD274",
-        "CTLA4",
-        "PDCD1"
-      ],
-      "references": []
-    },
-    {
       "id": "mapk-erk",
-      "name": "MAPK / ERK Signaling",
-      "description": "RAS-RAF-MEK-ERK cascade coupling growth factor receptors to proliferation and differentiation.",
+      "name": "MAPK-ERK Signaling",
+      "description": "BRAF, NRAS, NF1, and KIT lesions converge on MAPK-ERK activation in melanoma.",
       "key_components": [
         "BRAF",
-        "MAP2K1",
-        "MAP2K2",
         "NRAS",
-        "RAF1",
-        "FGFR1",
-        "FGFR2",
-        "FGFR4"
-      ],
-      "therapeutic_targets": [
-        "BRAF",
-        "MAP2K1",
-        "MAP2K2",
-        "NRAS",
-        "RAF1",
-        "FGFR1",
-        "FGFR2",
-        "FGFR4"
-      ],
-      "references": []
-    },
-    {
-      "id": "mast-cell",
-      "name": "Mast Cell / IgE Signaling",
-      "description": "FcεRI-mediated mast cell activation and degranulation in allergic disease.",
-      "key_components": [
+        "NF1",
         "KIT"
       ],
       "therapeutic_targets": [
+        "BRAF",
+        "MAP2K1"
+      ],
+      "references": [
+        "PMID:37627054"
+      ]
+    },
+    {
+      "id": "pi3k-akt",
+      "name": "PI3K-AKT Signaling",
+      "description": "PI3K-AKT signaling is promoted by PTEN loss and receptor tyrosine kinase activation.",
+      "key_components": [
+        "PTEN",
         "KIT"
       ],
-      "references": []
-    },
-    {
-      "id": "pi3k-akt-mtor",
-      "name": "PI3K / AKT / mTOR Signaling",
-      "description": "Growth and survival signaling through PI3K-AKT-mTOR; a major oncology and immunology target hub.",
-      "key_components": [
-        "MTOR",
+      "therapeutic_targets": [
         "PTEN"
       ],
-      "therapeutic_targets": [
-        "MTOR",
-        "PTEN"
-      ],
-      "references": []
+      "references": [
+        "PMID:27188223"
+      ]
     },
     {
-      "id": "tnf-signaling",
-      "name": "TNF Signaling",
-      "description": "Tumor necrosis factor receptor superfamily signaling; central to many autoimmune and inflammatory diseases.",
+      "id": "melanogenesis",
+      "name": "Melanogenesis",
+      "description": "MITF and MC1R regulate melanin synthesis and pigment-cell biology.",
       "key_components": [
-        "FAS"
+        "MITF",
+        "MC1R"
       ],
       "therapeutic_targets": [
-        "FAS"
+        "MITF"
       ],
-      "references": []
+      "references": [
+        "PMID:38445351"
+      ]
     },
     {
-      "id": "vegf-angiogenesis",
-      "name": "VEGF / Angiogenesis",
-      "description": "Vascular endothelial growth factor signaling driving angiogenesis and vascular permeability.",
+      "id": "pd1-pdl1",
+      "name": "PD-1/PD-L1 Checkpoint",
+      "description": "PD-1/PD-L1 signaling suppresses anti-melanoma T-cell responses.",
       "key_components": [
-        "KDR"
+        "PDCD1",
+        "CD274"
       ],
       "therapeutic_targets": [
-        "KDR"
+        "PDCD1"
       ],
-      "references": []
+      "references": [
+        "PMID:32185706"
+      ]
     },
     {
-      "id": "xenobiotic-metabolism",
-      "name": "Xenobiotic Metabolism",
-      "description": "Cytochrome P450 and conjugating enzymes governing drug metabolism and toxicity.",
+      "id": "ctla4",
+      "name": "CTLA-4 Checkpoint",
+      "description": "CTLA-4 signaling limits T-cell priming and is the target of ipilimumab.",
       "key_components": [
-        "CYP1B1"
-      ],
-      "therapeutic_targets": [
-        "CYP1B1"
-      ],
-      "references": []
-    },
-    {
-      "id": "tcr-signaling",
-      "name": "T Cell Receptor Signaling",
-      "description": "TCR signal transduction and T cell activation; a therapeutic hub in autoimmunity.",
-      "key_components": [
-        "CTLA4"
+        "CTLA4",
+        "CD80",
+        "CD86"
       ],
       "therapeutic_targets": [
         "CTLA4"
       ],
-      "references": []
-    },
-    {
-      "id": "type1-ifn",
-      "name": "Type I Interferon Pathway",
-      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
-      "key_components": [
-        "IFNAR1",
-        "IRF4"
-      ],
-      "therapeutic_targets": [
-        "IFNAR1",
-        "IRF4"
-      ],
-      "references": []
-    },
-    {
-      "id": "wnt-signaling",
-      "name": "Wnt Signaling",
-      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
-      "key_components": [
-        "LRP1B"
-      ],
-      "therapeutic_targets": [
-        "LRP1B"
-      ],
-      "references": []
+      "references": [
+        "PMID:35621637"
+      ]
     }
   ]
 }

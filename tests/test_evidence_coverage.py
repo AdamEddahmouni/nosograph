@@ -228,6 +228,31 @@ def test_by_scheme_counts_references_not_records(
     assert row["provenance"]["by_scheme"] == {"PMID": 2, "REACTOME": 1}
 
 
+def test_coverage_surfaces_resolvable_and_evidence_density(
+    monkeypatch: pytest.MonkeyPatch, tmp_path: Path
+) -> None:
+    root = _module(tmp_path, "alpha")
+    _write(
+        root,
+        "genes.json",
+        {
+            "genes": [
+                {"id": "G1", "references": ["PMID:1"]},
+                {"id": "G2", "references": ["curator note"]},
+                {"id": "G3", "references": []},
+            ]
+        },
+    )
+    _install(monkeypatch, {"alpha": {"root": root}})
+
+    row = inspect_disease("alpha")
+    assert row["provenance"]["resolvable"] == 1
+    assert row["evidence"]["records"] == 3
+    assert row["evidence"]["evidenced"] == 1
+    assert row["evidence"]["passes"] is False
+    assert row["evidence"]["structurally_valid"] is True
+
+
 # ── Scaffold identification ─────────────────────────────────────────────────
 
 

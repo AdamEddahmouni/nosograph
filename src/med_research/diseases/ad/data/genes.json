@@ -8,7 +8,10 @@
       "disease_evidence": "Strong genetic risk factor (OR ~3.0 for single e4 allele, ~12.0 for homozygotes); impairs amyloid-beta clearance.",
       "odds_ratio": 3.7,
       "category": "Lipid Metabolism & Transport",
-      "references": ["PMID:8127022", "PMID:28723891"]
+      "references": [
+        "PMID:8127022",
+        "PMID:28723891"
+      ]
     },
     {
       "id": "APP",
@@ -18,7 +21,23 @@
       "disease_evidence": "Autosomal dominant causative mutations in early-onset AD; gene duplication causes AD in Down syndrome.",
       "odds_ratio": 5.2,
       "category": "Amyloid Cascade",
-      "references": ["PMID:1901377", "PMID:16333293"]
+      "references": [
+        "PMID:1901377",
+        "PMID:16333293",
+        "CLINVAR:18106"
+      ],
+      "variants": [
+        {
+          "id": "APP-A673V",
+          "name": "Ala673Val",
+          "clinvar_id": "18106",
+          "hgvs": "NM_000484.4:c.2018C>T (p.Ala673Val)",
+          "clinical_significance": "Pathogenic",
+          "references": [
+            "CLINVAR:18106"
+          ]
+        }
+      ]
     },
     {
       "id": "MAPT",
@@ -28,7 +47,10 @@
       "disease_evidence": "Primary component of neurofibrillary tangles; correlates directly with cognitive decline severity.",
       "odds_ratio": 2.1,
       "category": "Tau Pathology / Microtubules",
-      "references": ["PMID:9634238", "PMID:33677618"]
+      "references": [
+        "PMID:9634238",
+        "PMID:33677618"
+      ]
     },
     {
       "id": "PSEN1",
@@ -38,7 +60,9 @@
       "disease_evidence": "Most common cause of autosomal dominant early-onset familial Alzheimer's disease (>200 mutations).",
       "odds_ratio": 6.0,
       "category": "Amyloid Cascade",
-      "references": ["PMID:7545936"]
+      "references": [
+        "PMID:7545936"
+      ]
     },
     {
       "id": "PSEN2",
@@ -48,7 +72,9 @@
       "disease_evidence": "Causative mutations identified in early-onset familial AD families (e.g. Volga German AD lineage).",
       "odds_ratio": 4.5,
       "category": "Amyloid Cascade",
-      "references": ["PMID:7544491"]
+      "references": [
+        "PMID:7544491"
+      ]
     },
     {
       "id": "TREM2",
@@ -58,7 +84,10 @@
       "disease_evidence": "R47H and loss-of-function variants confer 2-4x increased risk for late-onset AD.",
       "odds_ratio": 2.9,
       "category": "Microglial / Neuroinflammation",
-      "references": ["PMID:23148264", "PMID:23148265"]
+      "references": [
+        "PMID:23148264",
+        "PMID:23148265"
+      ]
     },
     {
       "id": "BACE1",
@@ -68,7 +97,9 @@
       "disease_evidence": "Primary enzyme generating Abeta peptide; therapeutic inhibition target.",
       "odds_ratio": 1.8,
       "category": "Amyloid Cascade",
-      "references": ["PMID:10531056"]
+      "references": [
+        "PMID:10531056"
+      ]
     },
     {
       "id": "CLU",
@@ -78,7 +109,9 @@
       "disease_evidence": "GWAS locus associated with late-onset AD risk; modulates amyloid deposition.",
       "odds_ratio": 1.16,
       "category": "Lipid Metabolism & Transport",
-      "references": ["PMID:19734902"]
+      "references": [
+        "PMID:19734902"
+      ]
     },
     {
       "id": "CR1",
@@ -88,7 +121,9 @@
       "disease_evidence": "GWAS confirmed risk locus for late-onset AD.",
       "odds_ratio": 1.18,
       "category": "Microglial / Neuroinflammation",
-      "references": ["PMID:19734903"]
+      "references": [
+        "PMID:19734903"
+      ]
     },
     {
       "id": "PICALM",
@@ -98,7 +133,9 @@
       "disease_evidence": "Top GWAS candidate modulating endocytic Abeta uptake and clearance.",
       "odds_ratio": 1.15,
       "category": "Endocytosis & Synaptic Plasticity",
-      "references": ["PMID:19734902"]
+      "references": [
+        "PMID:19734902"
+      ]
     },
     {
       "id": "BIN1",
@@ -108,7 +145,9 @@
       "disease_evidence": "Second strongest late-onset AD GWAS locus after APOE.",
       "odds_ratio": 1.22,
       "category": "Endocytosis & Synaptic Plasticity",
-      "references": ["PMID:20543847"]
+      "references": [
+        "PMID:20543847"
+      ]
     },
     {
       "id": "CD33",
@@ -118,7 +157,9 @@
       "disease_evidence": "GWAS risk locus; CD33 inhibition promotes microglial plaque clearance.",
       "odds_ratio": 1.12,
       "category": "Microglial / Neuroinflammation",
-      "references": ["PMID:21552263"]
+      "references": [
+        "PMID:21552263"
+      ]
     }
   ]
 }

@@ -7,10 +7,12 @@ description: Inspect the evidence NosoGraph disease modules record and whether i
 `evidence-coverage` answers a narrow question: **what evidence does a disease
 module record, and does that evidence carry provenance?**
 
-It is not a quality score, a scientific-validity score, or a readiness gate. A
-module with no recorded citation is not a module proven to lack support, and a
-module with many citations is not a module whose claims were verified. Nothing
-in this workflow dereferences, ranks, or grades a source.
+It is not a quality score or a scientific-validity score. It does report a
+provenance-density gate: whether each gene, drug, and pathway record carries at
+least one resolvable identifier. A module with no recorded citation is not a
+module proven to lack support, and a module with many citations is not a module
+whose claims were verified. Nothing in this workflow dereferences, ranks, or
+grades a source.
 
 For registry breadth and validation subsets, see [coverage](coverage.md). For
 the strict validation gate, see [validation](../using/validation.md). For the
@@ -49,6 +51,15 @@ Record-level categories are read from the module's `data/` JSON files:
 | `pathways` | `pathways.json` | `references` |
 | `relationships` | `relationships.json` | none in schema |
 
+Variant-level ClinVar provenance is nested in gene records. Each entry in a
+gene's `variants` list carries a ClinVar variation ID, HGVS expression, and
+clinical significance; the same ID is also listed in the gene's `references` as
+`CLINVAR:<id>`. This keeps the evidence denominator at the gene-record level
+while preserving variant-level identifiers. Curated variant records currently
+cover CFTR, BRAF/NRAS/KIT, C1QA/C2, IFNGR1, SOD1, KCNJ11/PPARG, HLA-DRB1, NOD2,
+and APP. Modules without an unambiguous disease-specific ClinVar record are
+left without variant entries rather than assigned an unrelated risk allele.
+
 Relationship edges carry no citation field in the current schema. These are
 structural assertions, so their provenance is reported as
 `"provenance": "not_applicable"` and the edges are **excluded from the
@@ -85,8 +96,27 @@ Anything else is reported as `OTHER` (an unrecognised leading prefix) or
 silently dropped. Embedded identifiers count: a free-text citation such as
 `"ACR 2024 Abstract; REGENCY Trial (NCT04252599)"` contributes an `NCT` scheme.
 
-**Identifiers are never dereferenced and never scored.** A recorded citation is
-not a verified citation.
+**The coverage report never dereferences or scores identifiers.** A recorded
+citation is not a verified citation. Resolution is a separate, explicit check:
+`python scripts/check_reference_identifiers.py --tier both` verifies PMIDs,
+DOIs, and ClinVar IDs against NCBI and the DOI Handle API and fails CI on a
+dead identifier.
+
+## Evidence-density gate
+
+The report includes an `evidence` block per module and in the aggregate. A
+record is evidenced only when its `references` list contains a recognised
+identifier scheme; the record's own `id` is not evidence. Free-text notes are
+reported as `UNCLASSIFIED` and do not count.
+
+A module passes when at least **80%** (`EVIDENCE_DENSITY_TARGET`) of its gene,
+drug, and pathway records are evidenced. Zero records cannot pass. Aggregate
+`gate_passes` requires every measured module to pass.
+
+`--require-evidence` turns a failed gate into exit status 1. It is separate from
+`--strict`: a structurally valid module can fail the evidence gate, and a
+structurally broken module can still be evidenced. Use both when both contracts
+are required.
 
 ## Sampling versus full population
 
@@ -151,6 +181,7 @@ nosograph disease evidence-coverage --tier reference --limit 6
 | `--seed` | Sampling seed (default `0`; deterministic) |
 | `--limit` | Cap modules measured after sampling |
 | `--json` / `--output` | Write the machine-readable report to a path |
+| `--require-evidence` | Exit non-zero if any measured module misses the 80% density target |
 
 Without `--tier`, `--disease`, or `--sample`, the run measures the reference
 diseases and reports `coverage_basis` accordingly.
@@ -198,6 +229,7 @@ The aggregate block carries the headline counts:
 | `aggregate.provenance.by_scheme` | Reference identifiers grouped by scheme |
 | `aggregate.provenance.without_provenance` | `known_absent` + `not_recorded` |
 | `aggregate.validation` | Strict-validation pass count and grouped failure classes |
+| `aggregate.evidence` | Gate block: `records`, `evidenced`, `density`, `target`, `passes`, `modules_passing`, `modules_failing`, `gate_passes` |
 
 `without_provenance` is a count of records with no recorded citation **split**
 by `known_absent` versus `not_recorded`. Read the two separately: one is a
@@ -208,7 +240,9 @@ gene, drug, and pathway collections.
 `per_disease` repeats this detail per module, including a capped
 `unprovenanced` list (`UNPROVENANCED_LIST_LIMIT` = 25);
 `unprovenanced_truncated` flags that the list is capped, so consult it before
-reading the list as exhaustive. Aggregate counts are never capped.
+reading the list as exhaustive. Aggregate counts are never capped. Each
+`per_disease` row also carries an `evidence` block with the same fields plus
+`structurally_valid`.
 
 ## Measurement limitations
 

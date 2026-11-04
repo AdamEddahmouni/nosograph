@@ -48,7 +48,7 @@ NosoGraph public-readiness transformation completed Waves 0–5: baseline audit,
 - Evidence Workspace (multi-source adapters, deterministic claims)
 - Universal Biomedical Store + ontology imports
 - ~45 promoted L2 disease modules + original 8 CI-validated
-- 23 L3 expression-curated modules
+- 23 L3 curated literature consensus modules (hand-curated gene lists; study accessions not recorded)
 - Live connectors (Open Targets, GTEx, ChEMBL, UniProt, bioRxiv)
 - Multi-disease KG network analytics, repurposing, screening pipelines
 

@@ -346,6 +346,11 @@ def _build_parser() -> argparse.ArgumentParser:
         "--strict", action="store_true", help="Exit non-zero when config gaps are found (for CI)"
     )
     dval.add_argument(
+        "--require-evidence",
+        action="store_true",
+        help="Exit non-zero when the evidence-density target is not met (separate from --strict)",
+    )
+    dval.add_argument(
         "--tier",
         choices=["L2", "L3", "ci_validated", "reference", "all"],
         default="all",
@@ -397,6 +402,16 @@ def _build_parser() -> argparse.ArgumentParser:
         "--strict",
         action="store_true",
         help="Exit non-zero when any module fails validation (for CI)",
+    )
+    dvalbatch.add_argument(
+        "--require-evidence",
+        action="store_true",
+        help="Exit non-zero when any module misses the evidence-density target",
+    )
+    dvalbatch.add_argument(
+        "--no-evidence",
+        action="store_true",
+        help="Skip evidence-density assessment (structural validation only)",
     )
     dvalbatch.add_argument(
         "disease_ids",
@@ -512,6 +527,11 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     decov.add_argument("--seed", type=int, default=0, help="Sampling seed (default: 0)")
     decov.add_argument("--json", action="store_true", help="Print the full report as JSON")
+    decov.add_argument(
+        "--require-evidence",
+        action="store_true",
+        help="Exit non-zero when any measured module misses the evidence-density target",
+    )
     decov.add_argument(
         "--output",
         type=Path,
@@ -1136,6 +1156,16 @@ def cmd_disease(args):
             print(json.dumps(report, indent=2, ensure_ascii=False))
         else:
             print(render_summary(report))
+        if getattr(args, "require_evidence", False):
+            evidence = report["aggregate"].get("evidence", {})
+            if not evidence.get("gate_passes", False):
+                logger.error(
+                    "Evidence-density gate failed: %s of %s modules meet the %.0f%% target",
+                    evidence.get("modules_passing", 0),
+                    report["aggregate"]["diseases"],
+                    float(evidence.get("target", 0.8)) * 100,
+                )
+                return 1
         scope_errors = report["scope"]["errors"]
         if scope_errors:
             logger.error(f"{len(scope_errors)} module(s) failed to load; see scope.errors")
@@ -1168,6 +1198,7 @@ def cmd_disease(args):
         return 0
 
     if args.disease_action == "validate":
+        from med_research.diseases.evidence_gate import assess_disease
         from med_research.diseases.validation_batch import (
             EXIT_OK,
             EXIT_USAGE,
@@ -1181,13 +1212,17 @@ def cmd_disease(args):
             return EXIT_USAGE
 
         structured = args.all and (
-            args.json_path is not None or args.sample is not None or args.tier != "all"
+            args.json_path is not None
+            or args.sample is not None
+            or args.tier != "all"
+            or args.require_evidence
         )
         if structured:
             report = run_strict_validation_batch(
                 tier_filter=args.tier,
                 sample_size=args.sample,
                 sample_seed=args.seed,
+                require_evidence=args.require_evidence,
             )
             summary = report["summary"]
             logger.info(
@@ -1210,9 +1245,20 @@ def cmd_disease(args):
                 logger.warning("  failing checks by field:")
                 for field, count in summary["failure_groups"].items():
                     logger.info("    %-28s %s", field, count)
+            logger.info(
+                "  structural: %s/%s; evidenced: %s/%s (density %.1f%%, target %.0f%%)",
+                summary["structurally_valid"],
+                summary["total"],
+                summary["evidenced"],
+                summary["evidence_assessed"],
+                summary["evidence_density"] * 100,
+                summary["evidence_target"] * 100,
+            )
             if args.json_path is not None:
                 out = write_validation_report(report, args.json_path)
                 logger.info("Report written to %s", out)
+            if args.require_evidence and not summary.get("evidence_gate_passed"):
+                return EXIT_VALIDATION_FAILED
             return EXIT_VALIDATION_FAILED if summary["failed"] else EXIT_OK
 
         if args.all:
@@ -1259,17 +1305,40 @@ def cmd_disease(args):
             logger.error(f"❌ {e}")
             return 1
         logger.info(f"\nValidating {disease.profile.name} ({disease.disease_id})...")
+        checks = disease.validate()
         ok = True
-        for field, status in disease.validate().items():
+        for field, status in checks.items():
             mark = "✅" if status == "ok" else "⚠️ "
             if status != "ok":
                 ok = False
             logger.info(f"  {mark} {field}: {status}")
+
+        evidence = assess_disease(disease)
+        logger.info(
+            "\nStructural validity: %s; evidence: %s/%s records carry a resolvable "
+            "identifier (%.1f%%, target %.0f%%) — %s",
+            "PASS" if ok else "FAIL",
+            evidence["evidenced"],
+            evidence["records"],
+            evidence["density"] * 100,
+            evidence["target"] * 100,
+            "PASS" if evidence["passes"] else "FAIL",
+        )
         if ok:
             logger.info("\n[OK] Config complete.")
         else:
             logger.warning("\n[WARN] Fill the gaps above before running the full pipeline.")
-            return 1 if args.strict else 0
+            if args.strict:
+                return 1
+        if args.require_evidence and not evidence["passes"]:
+            logger.warning(
+                "Evidence-density gate failed: %s of %s records carry a resolvable "
+                "identifier (target %.0f%%).",
+                evidence["evidenced"],
+                evidence["records"],
+                evidence["target"] * 100,
+            )
+            return 1
         return 0
 
     if args.disease_action == "validate-batch":
@@ -1288,15 +1357,24 @@ def cmd_disease(args):
             disease_ids=explicit,
             sample_size=args.sample,
             sample_seed=args.seed,
+            include_evidence=not args.no_evidence,
+            require_evidence=args.require_evidence,
         )
         out = write_validation_report(report, args.output)
         summary = report["summary"]
         logger.info(
-            "\nBatch validation (%s): %s/%s passed (%.1f%%)",
+            "\nBatch validation (%s): %s/%s structurally valid (%.1f%%)",
             tier,
             summary["passed"],
             summary["total"],
             summary["pass_rate"] * 100,
+        )
+        logger.info(
+            "  evidenced: %s/%s (density %.1f%%, target %.0f%%)",
+            summary["evidenced"],
+            summary["evidence_assessed"],
+            summary["evidence_density"] * 100,
+            summary["evidence_target"] * 100,
         )
         if summary["sampled"]:
             logger.info("  deterministic sample (seed %s)", summary["sample_seed"])
@@ -1310,6 +1388,8 @@ def cmd_disease(args):
                 logger.info("    field %s: %s", field, count)
         logger.info("Report written to %s", out)
         if args.strict and summary["failed"] > 0:
+            return EXIT_VALIDATION_FAILED
+        if args.require_evidence and not summary.get("evidence_gate_passed"):
             return EXIT_VALIDATION_FAILED
         return EXIT_OK
 

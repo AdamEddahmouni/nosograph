@@ -14,6 +14,11 @@ from med_research.diseases.curation_tiers import (
     FAILURE_CLASS_DEFINITIONS,
     FailureClass,
 )
+from med_research.diseases.evidence_gate import (
+    EVIDENCE_DENSITY_TARGET,
+    assess_disease,
+    summarize_evidence,
+)
 from med_research.diseases.identifiers import CI_VALIDATED_DISEASES, REFERENCE_DISEASES
 from med_research.diseases.registry_quality import is_blocked_slug
 from med_research.diseases.tier_model import KG_FIELDS
@@ -165,8 +170,18 @@ def run_strict_validation_batch(
     disease_ids: list[str] | None = None,
     sample_size: int | None = None,
     sample_seed: int = 0,
+    include_evidence: bool = True,
+    require_evidence: bool = False,
 ) -> dict[str, Any]:
-    """Validate a corpus slice and emit classified, grouped failures."""
+    """Validate a corpus slice and emit structural and evidence results separately.
+
+    ``passed`` remains the structural validation result for compatibility. A
+    module is ``evidenced`` only when at least
+    :data:`~med_research.diseases.evidence_gate.EVIDENCE_DENSITY_TARGET` of its
+    gene, drug, and pathway records carry a resolvable identifier. The two
+    results never collapse into one another: a structurally valid module can
+    be unevidenced, and a structurally broken module can still be evidenced.
+    """
     targets, excluded_blocked = select_validation_targets(
         tier_filter=tier_filter,
         limit=limit,
@@ -178,8 +193,12 @@ def run_strict_validation_batch(
     entries: list[dict[str, Any]] = []
     failure_counts: dict[str, int] = {key: 0 for key in FAILURE_CLASS_DEFINITIONS}
     failure_groups: dict[str, int] = {}
-    passed = 0
-    failed = 0
+    structurally_valid = 0
+    structurally_failed = 0
+    evidence_assessed = 0
+    evidenced = 0
+    evidence_records = 0
+    evidence_with_identifiers = 0
 
     def record_failure(field: str, status: str, failure_class: FailureClass) -> dict[str, str]:
         failure_counts[failure_class] += 1
@@ -192,39 +211,94 @@ def run_strict_validation_batch(
             checks = disease.validate()
             name = disease.profile.name
         except Exception as exc:
-            failed += 1
+            structurally_failed += 1
+            evidence = summarize_evidence(
+                0,
+                0,
+                structurally_valid=False,
+                assessed=False,
+                errors={"module": f"{type(exc).__name__}: {exc}"},
+            )
             entries.append(
                 {
                     "disease_id": did,
                     "name": did,
                     "passed": False,
+                    "structurally_valid": False,
+                    "evidenced": False,
                     "failures": [record_failure("module", str(exc), "VALIDATOR_BUG")],
+                    "evidence": evidence,
                 }
             )
             continue
 
         bad = {field: status for field, status in checks.items() if status != "ok"}
-        if not bad:
-            passed += 1
-            entries.append({"disease_id": did, "name": name, "passed": True, "failures": []})
-            continue
-
-        failed += 1
+        strict_pass = not bad
         failures = [
             record_failure(field, status, classify_failure(field, status))
             for field, status in bad.items()
         ]
-        entries.append({"disease_id": did, "name": name, "passed": False, "failures": failures})
+        if strict_pass:
+            structurally_valid += 1
+        else:
+            structurally_failed += 1
+
+        if include_evidence:
+            evidence = assess_disease(disease)
+        else:
+            evidence = summarize_evidence(
+                0,
+                0,
+                structurally_valid=strict_pass,
+                assessed=False,
+            )
+        evidence["structurally_valid"] = strict_pass
+
+        if evidence.get("assessed"):
+            evidence_assessed += 1
+            evidence_records += int(evidence["records"])
+            evidence_with_identifiers += int(evidence["evidenced"])
+            if evidence["passes"]:
+                evidenced += 1
+
+        entries.append(
+            {
+                "disease_id": did,
+                "name": name,
+                "passed": strict_pass,
+                "structurally_valid": strict_pass,
+                "evidenced": bool(evidence["passes"]) if evidence.get("assessed") else None,
+                "failures": failures,
+                "evidence": evidence,
+            }
+        )
 
     total = len(targets)
+    overall_evidence = summarize_evidence(
+        evidence_records,
+        evidence_with_identifiers,
+        structurally_valid=total > 0 and structurally_valid == total,
+    )
+    evidence_gate_passed = (
+        bool(include_evidence) and total > 0 and evidence_assessed == total and evidenced == total
+    )
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "tier_filter": tier_filter,
         "summary": {
             "total": total,
-            "passed": passed,
-            "failed": failed,
-            "pass_rate": round(passed / max(total, 1), 4),
+            "passed": structurally_valid,
+            "failed": structurally_failed,
+            "pass_rate": round(structurally_valid / max(total, 1), 4),
+            "structurally_valid": structurally_valid,
+            "structurally_failed": structurally_failed,
+            "evidenced": evidenced,
+            "not_evidenced": evidence_assessed - evidenced,
+            "evidence_assessed": evidence_assessed,
+            "evidence_target": EVIDENCE_DENSITY_TARGET,
+            "evidence_density": overall_evidence["density"],
+            "evidence_gate_enabled": require_evidence,
+            "evidence_gate_passed": evidence_gate_passed if include_evidence else None,
             "sampled": sample_size is not None,
             "sample_size": sample_size,
             "sample_seed": sample_seed,

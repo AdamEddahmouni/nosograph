@@ -1,116 +1,79 @@
 {
   "pathways": [
     {
-      "id": "cardiac-ion-channel",
-      "name": "Cardiac Ion Channel / Conduction",
-      "description": "Voltage-gated sodium, potassium, and calcium channels governing cardiac excitability.",
+      "id": "chloride-transport",
+      "name": "Chloride and Bicarbonate Transport",
+      "description": "CFTR-mediated chloride and bicarbonate secretion, with SLC26A9 as a modifier anion channel.",
       "key_components": [
-        "CACNA1A",
-        "KCNQ2"
+        "CFTR",
+        "SLC26A9"
       ],
       "therapeutic_targets": [
-        "CACNA1A",
-        "KCNQ2"
+        "CFTR"
       ],
-      "references": []
+      "references": [
+        "PMID:19708126"
+      ]
     },
     {
-      "id": "cell-cycle",
-      "name": "Cell Cycle Regulation",
-      "description": "Cyclin-CDK machinery controlling cell division; a backbone of oncology target discovery.",
+      "id": "epithelial-sodium-channel",
+      "name": "Epithelial Sodium Channel",
+      "description": "ENaC-driven sodium absorption dehydrates the airway surface when CFTR function is lost.",
       "key_components": [
-        "CDKL5"
+        "SCNN1A"
       ],
       "therapeutic_targets": [
-        "CDKL5"
+        "SCNN1A"
       ],
-      "references": []
-    },
-    {
-      "id": "complement",
-      "name": "Complement Cascade",
-      "description": "Classical, lectin, and alternative complement pathways for opsonization, lysis, and immune complex clearance.",
-      "key_components": [
-        "SERPING1"
-      ],
-      "therapeutic_targets": [
-        "SERPING1"
-      ],
-      "references": []
-    },
-    {
-      "id": "glucose-metabolism",
-      "name": "Glucose Metabolism / Insulin Secretion",
-      "description": "Pancreatic β-cell function, insulin secretion, and glycemic control.",
-      "key_components": [
-        "SLC2A1"
-      ],
-      "therapeutic_targets": [
-        "SLC2A1"
-      ],
-      "references": []
-    },
-    {
-      "id": "wnt-signaling",
-      "name": "Wnt Signaling",
-      "description": "Canonical Wnt/β-catenin signaling controlling cell fate, proliferation, and tissue regeneration.",
-      "key_components": [
-        "CTNNB1"
-      ],
-      "therapeutic_targets": [
-        "CTNNB1"
-      ],
-      "references": []
-    },
-    {
-      "id": "hepcidin-iron",
-      "name": "Hepcidin / Iron Homeostasis",
-      "description": "Hepcidin-ferroportin axis regulating systemic iron balance.",
-      "key_components": [
-        "HFE"
-      ],
-      "therapeutic_targets": [
-        "HFE"
-      ],
-      "references": []
+      "references": [
+        "PMID:33810137"
+      ]
     },
     {
       "id": "tgf-beta",
-      "name": "TGF-β Signaling",
-      "description": "Transforming growth factor beta signaling controlling fibrosis, immune tolerance, and tumor suppression.",
+      "name": "TGF-beta Signaling",
+      "description": "TGF-beta signaling promotes airway remodeling and modifies cystic fibrosis lung disease severity.",
       "key_components": [
         "TGFB1"
       ],
       "therapeutic_targets": [
         "TGFB1"
       ],
-      "references": []
+      "references": [
+        "PMID:18292811"
+      ]
     },
     {
-      "id": "thyroid-hormone",
-      "name": "Thyroid Hormone Signaling",
-      "description": "Thyroid hormone synthesis, transport, and nuclear receptor signaling.",
+      "id": "inflammatory-cytokine",
+      "name": "Inflammatory Cytokine Signaling",
+      "description": "TNF and CXCL8 drive neutrophil-predominant airway inflammation in cystic fibrosis.",
       "key_components": [
-        "TGFB1"
+        "TNF",
+        "CXCL8"
       ],
       "therapeutic_targets": [
-        "TGFB1"
+        "TNF",
+        "CXCL8"
       ],
-      "references": []
+      "references": [
+        "PMID:16622779",
+        "PMID:29085059"
+      ]
     },
     {
-      "id": "type1-ifn",
-      "name": "Type I Interferon Pathway",
-      "description": "IFN-α/β production and signaling through IFNAR; drives the interferon gene signature in autoimmune disease.",
+      "id": "mucus-obstruction",
+      "name": "Mucus Obstruction",
+      "description": "Defective ion transport produces dehydrated mucus that obstructs airways and sustains infection.",
       "key_components": [
-        "IFNGR1",
-        "IFNGR2"
+        "CFTR",
+        "SCNN1A"
       ],
       "therapeutic_targets": [
-        "IFNGR1",
-        "IFNGR2"
+        "CFTR"
       ],
-      "references": []
+      "references": [
+        "PMID:31715083"
+      ]
     }
   ]
 }

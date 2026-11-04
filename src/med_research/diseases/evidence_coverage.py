@@ -30,7 +30,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -46,6 +45,13 @@ from med_research.diseases.curation_tiers import (
     FAILURE_CLASS_DEFINITIONS,
     tier_summary_row,
 )
+from med_research.diseases.evidence_gate import (
+    EVIDENCE_DENSITY_TARGET,
+    KNOWN_REFERENCE_SCHEMES,
+    is_resolvable_reference,
+    summarize_evidence,
+)
+from med_research.diseases.evidence_gate import reference_schemes as _reference_schemes
 from med_research.diseases.identifiers import REFERENCE_DISEASES
 from med_research.diseases.registry_quality import is_blocked_slug
 from med_research.diseases.tier_model import compute_tier
@@ -65,34 +71,9 @@ CategoryState = PresenceState
 #: Re-exported here for report consumers.
 
 
-#: Reference prefixes recognised by the provenance breakdown. Anything else is
-#: reported as ``OTHER``/``UNCLASSIFIED`` rather than silently dropped.
-KNOWN_REFERENCE_SCHEMES: frozenset[str] = frozenset(
-    {
-        "PMID",
-        "PMC",
-        "DOI",
-        "NCT",
-        "REACTOME",
-        "KEGG",
-        "OMIM",
-        "MONDO",
-        "EFO",
-        "HP",
-        "ORPHA",
-        "CHEMBL",
-        "DRUGBANK",
-        "UNIPROT",
-        "CLINVAR",
-        "GO",
-    }
-)
-
-_LEADING_SCHEME = re.compile(r"^([A-Za-z][A-Za-z0-9]{1,15})\s*[:_]")
-_EMBEDDED_SCHEME = re.compile(
-    r"\b(PMID|NCT|DOI|CLINVAR|ORPHA|CHEMBL|DRUGBANK)\s*[:_]?\s*\d",
-    re.IGNORECASE,
-)
+#: Recognised identifier schemes are defined in
+#: :mod:`med_research.diseases.evidence_gate`, so the report and the validation
+#: gate can never disagree about what counts as provenance.
 
 #: Cap on per-disease unprovenanced record listings, so a large module cannot
 #: produce an unbounded report. The aggregate counts are never capped.
@@ -192,30 +173,6 @@ def _presence_state(value: Any) -> PresenceState:
     return "present"
 
 
-def _reference_schemes(reference: Any) -> list[str]:
-    """Return the identifier schemes a single reference string declares.
-
-    The leading token wins when it is a recognised prefix; embedded identifiers
-    are added too, because free-text citations such as
-    ``"ACR 2024 Abstract; REGENCY Trial (NCT04252599)"`` do carry a resolvable
-    trial identifier. Unrecognised text is reported as ``UNCLASSIFIED`` instead
-    of being treated as provenance.
-    """
-    text = str(reference).strip()
-    if not text:
-        return ["UNCLASSIFIED"]
-    schemes: list[str] = []
-    leading = _LEADING_SCHEME.match(text)
-    if leading:
-        token = leading.group(1).upper()
-        schemes.append(token if token in KNOWN_REFERENCE_SCHEMES else "OTHER")
-    for embedded in _EMBEDDED_SCHEME.findall(text):
-        token = embedded.upper()
-        if token not in schemes:
-            schemes.append(token)
-    return schemes or ["UNCLASSIFIED"]
-
-
 def _load_records(disease: Disease, category: _RecordCategory) -> tuple[CategoryState, list[dict]]:
     """Load a data-file collection and classify its presence."""
     path = disease.data_dir / category.filename
@@ -241,6 +198,7 @@ def _provenance_summary(records: list[dict], field: str) -> dict[str, Any]:
     """Summarise record-level provenance for one collection."""
     counts = {"present": 0, "known_absent": 0, "not_recorded": 0, "invalid": 0}
     references = 0
+    resolvable = 0
     by_scheme: dict[str, int] = {}
     unprovenanced: list[dict[str, str]] = []
     unprovenanced_total = 0
@@ -259,6 +217,8 @@ def _provenance_summary(records: list[dict], field: str) -> dict[str, Any]:
         counts[state] += 1
         if state == "present":
             values = raw if isinstance(raw, list) else [raw]
+            if any(is_resolvable_reference(value) for value in values):
+                resolvable += 1
             for value in values:
                 references += 1
                 for scheme in _reference_schemes(value):
@@ -277,6 +237,8 @@ def _provenance_summary(records: list[dict], field: str) -> dict[str, Any]:
         "records": len(records),
         **counts,
         "references": references,
+        "resolvable": resolvable,
+        "without_resolvable_identifier": len(records) - resolvable,
         "by_scheme": dict(sorted(by_scheme.items())),
         "unprovenanced": unprovenanced,
         "unprovenanced_truncated": unprovenanced_total > UNPROVENANCED_LIST_LIMIT,
@@ -350,6 +312,7 @@ def inspect_disease(disease_id: str) -> dict[str, Any]:
         "not_recorded": 0,
         "invalid": 0,
         "references": 0,
+        "resolvable": 0,
     }
     by_scheme: dict[str, int] = {}
     unprovenanced: list[dict[str, str]] = []
@@ -373,6 +336,7 @@ def inspect_disease(disease_id: str) -> dict[str, Any]:
             for key in ("present", "known_absent", "not_recorded", "invalid"):
                 provenance_totals[key] += summary[key]
             provenance_totals["references"] += summary["references"]
+            provenance_totals["resolvable"] += summary["resolvable"]
             for scheme, count in summary["by_scheme"].items():
                 by_scheme[scheme] = by_scheme.get(scheme, 0) + count
             unprovenanced.extend(
@@ -458,9 +422,16 @@ def inspect_disease(disease_id: str) -> dict[str, Any]:
             "by_scheme": dict(sorted(by_scheme.items())),
             "without_provenance": provenance_totals["known_absent"]
             + provenance_totals["not_recorded"],
+            "without_resolvable_identifier": provenance_totals["evidence_records"]
+            - provenance_totals["resolvable"],
             "unprovenanced": unprovenanced[:UNPROVENANCED_LIST_LIMIT],
             "unprovenanced_truncated": len(unprovenanced) > UNPROVENANCED_LIST_LIMIT,
         },
+        "evidence": summarize_evidence(
+            provenance_totals["evidence_records"],
+            provenance_totals["resolvable"],
+            structurally_valid=strict_pass,
+        ),
         "validation": {
             "passed": strict_pass,
             "failures": failures,
@@ -575,11 +546,13 @@ def build_evidence_coverage_report(
         "not_recorded": 0,
         "invalid": 0,
         "references": 0,
+        "resolvable": 0,
     }
     by_scheme: dict[str, int] = {}
     failure_classes: dict[str, int] = {}
     failure_groups: dict[str, int] = {}
     passed = 0
+    evidenced_modules = 0
     scaffolds = 0
     curation_counts: dict[str, int] = {"generated": 0, "curated": 0, "unknown": 0}
 
@@ -588,6 +561,7 @@ def build_evidence_coverage_report(
         scaffolds += 1 if row["is_scaffold"] else 0
         curation_counts[row["curation_state"]] = curation_counts.get(row["curation_state"], 0) + 1
         passed += 1 if row["validation"]["passed"] else 0
+        evidenced_modules += 1 if row["evidence"]["passes"] else 0
         for key, entry in row["categories"].items():
             state = entry["state"]
             bucket = category_states.setdefault(
@@ -638,6 +612,8 @@ def build_evidence_coverage_report(
                 **provenance,
                 "by_scheme": dict(sorted(by_scheme.items())),
                 "without_provenance": provenance["known_absent"] + provenance["not_recorded"],
+                "without_resolvable_identifier": provenance["evidence_records"]
+                - provenance["resolvable"],
             },
             "validation": {
                 "passed": passed,
@@ -646,6 +622,16 @@ def build_evidence_coverage_report(
                 "failure_groups": dict(
                     sorted(failure_groups.items(), key=lambda kv: (-kv[1], kv[0]))
                 ),
+            },
+            "evidence": {
+                **summarize_evidence(
+                    provenance["evidence_records"],
+                    provenance["resolvable"],
+                    structurally_valid=measured > 0 and passed == measured,
+                ),
+                "modules_passing": evidenced_modules,
+                "modules_failing": measured - evidenced_modules,
+                "gate_passes": measured > 0 and evidenced_modules == measured,
             },
         },
         "failure_class_definitions": FAILURE_CLASS_DEFINITIONS,
@@ -702,7 +688,12 @@ def render_summary(report: dict[str, Any]) -> str:
     ]
     if total_records:
         share = 100.0 * recorded / total_records
+        resolvable = provenance.get("resolvable", 0)
+        resolvable_share = 100.0 * resolvable / total_records
         lines.append(f"Records with a recorded citation: {recorded} ({share:.1f}%)")
+        lines.append(
+            f"Records with a resolvable identifier: {resolvable} ({resolvable_share:.1f}%)"
+        )
     lines.append(f"Records explicitly empty: {provenance['known_absent']}")
     lines.append(f"Records with no citation field: {provenance['not_recorded']}")
     if provenance["invalid"]:
@@ -714,6 +705,15 @@ def render_summary(report: dict[str, Any]) -> str:
     lines += ["", "Validation", "----------"]
     validation = aggregate["validation"]
     lines.append(f"Passing strict validation: {validation['passed']}/{aggregate['diseases']}")
+    evidence = aggregate.get("evidence") or {}
+    if evidence.get("records"):
+        lines.append(
+            f"Evidenced modules (>= {evidence['target']:.0%} density): "
+            f"{evidence['modules_passing']}/{aggregate['diseases']}"
+        )
+        lines.append(
+            f"Evidence density: {evidence['density']:.1%} (target {evidence['target']:.0%})"
+        )
     if validation["failure_classes"]:
         grouped = ", ".join(f"{k}={v}" for k, v in validation["failure_classes"].items())
         lines.append(f"Failure classes: {grouped}")
@@ -758,6 +758,7 @@ def write_evidence_coverage_report(
 
 __all__ = [
     "DEFAULT_DISEASE_IDS",
+    "EVIDENCE_DENSITY_TARGET",
     "FAILURE_CLASS_DEFINITIONS",
     "GENERATOR_MARKER",
     "KNOWN_REFERENCE_SCHEMES",

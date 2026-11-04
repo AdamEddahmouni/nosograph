@@ -2,12 +2,23 @@
 
 import pytest
 
+from med_research.diseases.curation_tiers import (
+    CURATION_TIER_DEFINITIONS,
+    CURATION_TIER_LABELS,
+)
 from med_research.diseases.tier_model import compute_tier
 
 
 def test_l3_for_curated_consensus() -> None:
     checks = {field: "ok" for field in ("genes", "drugs", "pathways", "relationships", "profile")}
     assert compute_tier("sle", checks) == "L3"
+
+
+def test_l3_is_labelled_curated_literature_consensus() -> None:
+    assert CURATION_TIER_LABELS["L3"] == "Curated literature consensus"
+    definition = CURATION_TIER_DEFINITIONS["L3"]
+    assert "literature consensus" in definition
+    assert "not a computed" in definition
 
 
 @pytest.mark.parametrize(

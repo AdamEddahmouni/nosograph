@@ -54,6 +54,9 @@ jobs:
       - name: Check public metadata consistency
         run: python scripts/check_public_metadata.py
 
+      - name: Check reference identifiers resolve
+        run: python scripts/check_reference_identifiers.py --tier both
+
       - name: Check harvest catalog vs on-disk modules
         run: python scripts/check_registry_harvest.py
 
@@ -172,11 +175,11 @@ jobs:
       - name: Verify curated disease configs (not full 10k registry)
         run: |
           for id in sle ra ibd ms ss ssc t1d ad; do
-            python -m med_research.cli disease validate "$id" --strict
+            python -m med_research.cli disease validate "$id" --strict --require-evidence
           done
 
-      - name: Validate reference disease batch (strict)
-        run: python -m med_research.cli disease validate-batch --tier reference --strict
+      - name: Validate reference disease batch (strict + evidence)
+        run: python -m med_research.cli disease validate-batch --tier reference --strict --require-evidence
 
       # Platform-core and corpus-readiness modules are already selected by the
       # offline pytest gate above. Re-running them here was duplicate wall-clock.
