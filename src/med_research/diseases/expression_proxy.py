@@ -11,9 +11,7 @@ from med_research.logging_config import get_logger
 
 logger = get_logger(__name__)
 
-LIMITATIONS_TEXT = (
-    "Expression uses Open Targets genetics association proxy; not literature-curated GEO consensus."
-)
+LIMITATIONS_TEXT = "Expression uses Open Targets genetics association proxy; not the curated literature consensus used for L3."
 
 # Dynamically registered proxy consensus signatures (disease_id -> up/down gene dicts)
 PROXY_CONSENSUS_GENES: dict[str, dict[str, dict[str, dict[str, float]]]] = {}

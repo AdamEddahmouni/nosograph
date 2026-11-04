@@ -38,7 +38,7 @@ Required config fields for L2:
 | L0 | Missing core KG JSON files |
 | L1 | Partial KG or config gaps |
 | L2 | Strict validation pass |
-| L3 | L2 + entry in `CURATED_CONSENSUS_DISEASES` (hand-curated GEO expression) |
+| L3 | L2 + entry in `CURATED_CONSENSUS_DISEASES` (hand-curated literature consensus; study accessions not recorded) |
 
 Implementation: `diseases/tier_model.py`, `pipeline/gene_expression/geo.py`.
 
@@ -76,4 +76,4 @@ SQLite (default `data/evidence_workspace.sqlite3`):
 - **10,404** discoverable modules — broad registry coverage, not equivalent to curation depth (see [coverage](../data/coverage.md))
 - **8** CI-validated curated diseases (original set)
 - **{{NG_L2_STRICT_VALIDATED}}** strict L2-validated modules (n=500 sample)
-- **2** L3 expression-curated modules (n=500 sample; consensus membership is 23)
+- **2** L3 curated literature consensus modules (n=500 sample; consensus membership is 23)

@@ -1,924 +1,296 @@
 {
   "genes": [
     {
-      "id": "CDKN2A",
-      "name": "cyclin dependent kinase inhibitor 2A",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.79",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MITF",
-      "name": "melanocyte inducing transcription factor",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.73",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "PTEN",
-      "name": "phosphatase and tensin homolog",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.69",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
       "id": "BRAF",
       "name": "B-Raf proto-oncogene, serine/threonine kinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.67",
+      "chromosome": "7",
+      "function": "Serine/threonine kinase in the MAPK pathway.",
+      "disease_evidence": "BRAF V600 mutations activate MAPK signaling in roughly half of cutaneous melanomas.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "STK11",
-      "name": "serine/threonine kinase 11",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.66",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CDK4",
-      "name": "cyclin dependent kinase 4",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.62",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CYP1B1",
-      "name": "cytochrome P450 family 1 subfamily B member 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.57",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "TYR",
-      "name": "tyrosinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.56",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MC1R",
-      "name": "melanocortin 1 receptor",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.56",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "KLF4",
-      "name": "KLF transcription factor 4",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.55",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MAP2K1",
-      "name": "mitogen-activated protein kinase kinase 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.52",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "OCA2",
-      "name": "OCA2 melanosomal transmembrane protein",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.52",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:37627054",
+        "CLINVAR:13961",
+        "CLINVAR:375941",
+        "DOI:10.3390/cancers15164026"
+      ],
+      "category": "MAPK",
+      "variants": [
+        {
+          "id": "BRAF-V600E",
+          "name": "Val600Glu",
+          "clinvar_id": "13961",
+          "hgvs": "NM_004333.6:c.1799T>A (p.Val600Glu)",
+          "clinical_significance": "Conflicting classifications of pathogenicity",
+          "references": [
+            "CLINVAR:13961"
+          ]
+        },
+        {
+          "id": "BRAF-V600K",
+          "name": "Val600Lys",
+          "clinvar_id": "375941",
+          "hgvs": "NM_004333.6:c.1798_1799delinsAA (p.Val600Lys)",
+          "clinical_significance": "Uncertain significance",
+          "references": [
+            "CLINVAR:375941"
+          ]
+        }
+      ]
     },
     {
       "id": "NRAS",
       "name": "NRAS proto-oncogene, GTPase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.51",
+      "chromosome": "1",
+      "function": "Small GTPase that activates RAF-MEK-ERK signaling.",
+      "disease_evidence": "Activating NRAS mutations drive MAPK signaling in melanoma.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "STN1",
-      "name": "STN1 subunit of CST complex",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.51",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MX2",
-      "name": "MX dynamin like GTPase 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.51",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MTAP",
-      "name": "methylthioadenosine phosphorylase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.51",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "TP53",
-      "name": "tumor protein p53",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.51",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "FMN1",
-      "name": "formin 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.51",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "TYRP1",
-      "name": "tyrosinase related protein 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.50",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "RAC1",
-      "name": "Rac family small GTPase 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.50",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "RAF1",
-      "name": "Raf-1 proto-oncogene, serine/threonine kinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.50",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "TERT",
-      "name": "telomerase reverse transcriptase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.50",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CLPTM1L",
-      "name": "CLPTM1 like",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.49",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MAP2K2",
-      "name": "mitogen-activated protein kinase kinase 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.49",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MKLN1",
-      "name": "muskelin 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.49",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CDKAL1",
-      "name": "CDKAL1 threonylcarbamoyladenosine tRNA methylthiotransferase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.48",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "SLC45A2",
-      "name": "solute carrier family 45 member 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.48",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "KDR",
-      "name": "kinase insert domain receptor",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.48",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "FLT4",
-      "name": "fms related receptor tyrosine kinase 4",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.48",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "KIAA0930",
-      "name": "KIAA0930",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.48",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:34571969",
+        "CLINVAR:73058",
+        "CLINVAR:13900"
+      ],
+      "category": "MAPK",
+      "variants": [
+        {
+          "id": "NRAS-Q61K",
+          "name": "Gln61Lys",
+          "clinvar_id": "73058",
+          "hgvs": "NM_002524.5:c.181C>A (p.Gln61Lys)",
+          "clinical_significance": "Conflicting classifications of pathogenicity",
+          "references": [
+            "CLINVAR:73058"
+          ]
+        },
+        {
+          "id": "NRAS-Q61R",
+          "name": "Gln61Arg",
+          "clinvar_id": "13900",
+          "hgvs": "NM_002524.5:c.182A>G (p.Gln61Arg)",
+          "clinical_significance": "Pathogenic",
+          "references": [
+            "CLINVAR:13900"
+          ]
+        }
+      ]
     },
     {
       "id": "NF1",
       "name": "neurofibromin 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.48",
+      "chromosome": "17",
+      "function": "RAS GTPase-activating protein that negatively regulates RAS.",
+      "disease_evidence": "NF1 loss activates RAS-MAPK signaling in melanoma.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "PLXNB2",
-      "name": "plexin B2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.48",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "FLG",
-      "name": "filaggrin",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.47",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "ARID2",
-      "name": "AT-rich interaction domain 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.46",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "ERBB4",
-      "name": "erb-b2 receptor tyrosine kinase 4",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.46",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "PDGFRB",
-      "name": "platelet derived growth factor receptor beta",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.46",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MED13L",
-      "name": "mediator complex subunit 13L",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.46",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CSF3R",
-      "name": "colony stimulating factor 3 receptor",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.46",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "RB1",
-      "name": "RB transcriptional corepressor 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.45",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:34571969"
+      ],
+      "category": "MAPK"
     },
     {
       "id": "KIT",
       "name": "KIT proto-oncogene, receptor tyrosine kinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.45",
+      "chromosome": "4",
+      "function": "Receptor tyrosine kinase that activates MAPK and PI3K signaling.",
+      "disease_evidence": "KIT mutations occur in acral and mucosal melanomas.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:34571969",
+        "CLINVAR:375914"
+      ],
+      "category": "RTK",
+      "variants": [
+        {
+          "id": "KIT-V560D",
+          "name": "Val560Asp",
+          "clinvar_id": "375914",
+          "hgvs": "NM_000222.3:c.1679T>A (p.Val560Asp)",
+          "clinical_significance": "Likely pathogenic",
+          "references": [
+            "CLINVAR:375914"
+          ]
+        }
+      ]
     },
     {
-      "id": "PPP6C",
-      "name": "protein phosphatase 6 catalytic subunit",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.45",
+      "id": "CDKN2A",
+      "name": "cyclin dependent kinase inhibitor 2A",
+      "chromosome": "9",
+      "function": "p16 tumor suppressor that inhibits CDK4/6 and cell-cycle progression.",
+      "disease_evidence": "CDKN2A germline variants predispose to melanoma.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:32249949"
+      ],
+      "category": "Cell cycle"
     },
     {
-      "id": "FGFR1",
-      "name": "fibroblast growth factor receptor 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.45",
+      "id": "MITF",
+      "name": "melanocyte inducing transcription factor",
+      "chromosome": "3",
+      "function": "Lineage transcription factor that regulates melanocyte differentiation and pigment genes.",
+      "disease_evidence": "MITF amplification and dysregulation contribute to melanoma biology.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:33759772"
+      ],
+      "category": "Lineage"
+    },
+    {
+      "id": "TERT",
+      "name": "telomerase reverse transcriptase",
+      "chromosome": "5",
+      "function": "Catalytic subunit of telomerase that maintains telomere length.",
+      "disease_evidence": "TERT promoter mutations are common in melanoma and support replicative immortality.",
+      "odds_ratio": null,
+      "references": [
+        "PMID:32346746"
+      ],
+      "category": "Immortalization"
+    },
+    {
+      "id": "PTEN",
+      "name": "phosphatase and tensin homolog",
+      "chromosome": "10",
+      "function": "Lipid phosphatase that opposes PI3K-AKT signaling.",
+      "disease_evidence": "PTEN loss promotes PI3K-AKT signaling and melanoma progression.",
+      "odds_ratio": null,
+      "references": [
+        "PMID:32249949"
+      ],
+      "category": "PI3K"
     },
     {
       "id": "BAP1",
-      "name": "BRCA1 associated deubiquitinase 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.45",
+      "name": "BRCA1 associated protein 1",
+      "chromosome": "3",
+      "function": "Deubiquitinase involved in chromatin remodeling and DNA repair.",
+      "disease_evidence": "BAP1 germline variants predispose to uveal and cutaneous melanoma.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:32249949"
+      ],
+      "category": "Chromatin"
+    },
+    {
+      "id": "MC1R",
+      "name": "melanocortin 1 receptor",
+      "chromosome": "16",
+      "function": "G-protein-coupled receptor that regulates melanin synthesis and pigmentation.",
+      "disease_evidence": "MC1R variants determine pigmentation and melanoma risk.",
+      "odds_ratio": null,
+      "references": [
+        "PMID:32249949"
+      ],
+      "category": "Pigmentation"
+    },
+    {
+      "id": "CDK4",
+      "name": "cyclin dependent kinase 4",
+      "chromosome": "12",
+      "function": "Cyclin-dependent kinase that drives the G1/S cell-cycle transition.",
+      "disease_evidence": "CDK4 amplification or germline mutation promotes melanoma cell-cycle progression.",
+      "odds_ratio": null,
+      "references": [
+        "PMID:32249949",
+        "PMID:34571969"
+      ],
+      "category": "Cell cycle"
+    },
+    {
+      "id": "MAP2K1",
+      "name": "mitogen-activated protein kinase kinase 1",
+      "chromosome": "15",
+      "function": "MEK1 kinase in the RAS-RAF-MEK-ERK signaling pathway.",
+      "disease_evidence": "MAP2K1 mutations activate MAPK signaling in melanoma.",
+      "odds_ratio": null,
+      "references": [
+        "PMID:34571969"
+      ],
+      "category": "MAPK"
+    },
+    {
+      "id": "RB1",
+      "name": "RB transcriptional corepressor 1",
+      "chromosome": "13",
+      "function": "Retinoblastoma tumor suppressor that restrains the G1/S transition.",
+      "disease_evidence": "RB1 loss or germline mutation contributes to melanoma development.",
+      "odds_ratio": null,
+      "references": [
+        "PMID:32249949",
+        "PMID:34571969"
+      ],
+      "category": "Cell cycle"
     },
     {
       "id": "MET",
       "name": "MET proto-oncogene, receptor tyrosine kinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.45",
+      "chromosome": "7",
+      "function": "Receptor tyrosine kinase that activates RAS and PI3K signaling.",
+      "disease_evidence": "MET dysregulation contributes to melanoma progression and therapy resistance.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "FGFR2",
-      "name": "fibroblast growth factor receptor 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.45",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "TP63",
-      "name": "tumor protein p63",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "FGFR4",
-      "name": "fibroblast growth factor receptor 4",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CBL",
-      "name": "Cbl proto-oncogene",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "IDH1",
-      "name": "isocitrate dehydrogenase (NADP(+)) 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "PDGFRA",
-      "name": "platelet derived growth factor receptor alpha",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "PBRM1",
-      "name": "polybromo 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "AKAP12",
-      "name": "A-kinase anchoring protein 12",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "ERBB2",
-      "name": "erb-b2 receptor tyrosine kinase 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "HGF",
-      "name": "hepatocyte growth factor",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.44",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "ERBB3",
-      "name": "erb-b2 receptor tyrosine kinase 3",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.43",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:34571969"
+      ],
+      "category": "RTK"
     },
     {
       "id": "CD274",
       "name": "CD274 molecule",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.43",
+      "chromosome": "9",
+      "function": "PD-L1 immune checkpoint ligand that suppresses T-cell responses.",
+      "disease_evidence": "MITF-driven CD274/PD-L1 expression promotes immune tolerance in melanocytes.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "DNMT3A",
-      "name": "DNA methyltransferase 3 alpha",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.42",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "PARP1",
-      "name": "poly(ADP-ribose) polymerase 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.42",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "TUBB3",
-      "name": "tubulin beta 3 class III",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.42",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "FAS",
-      "name": "Fas cell surface death receptor",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.42",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "GNAQ",
-      "name": "G protein subunit alpha q",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.72",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:42594873"
+      ],
+      "category": "Immune checkpoint"
     },
     {
       "id": "CTLA4",
       "name": "cytotoxic T-lymphocyte associated protein 4",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.71",
+      "chromosome": "2",
+      "function": "Inhibitory receptor on T cells that restrains costimulatory signaling.",
+      "disease_evidence": "CTLA4 is an immune checkpoint target in melanoma.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "GNA11",
-      "name": "G protein subunit alpha 11",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.71",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "POT1",
-      "name": "protection of telomeres 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.71",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MBD4",
-      "name": "methyl-CpG binding domain 4, DNA glycosylase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.71",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "SF3B1",
-      "name": "splicing factor 3b subunit 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.70",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "IRF4",
-      "name": "interferon regulatory factor 4",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.69",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "BRCA2",
-      "name": "BRCA2 DNA repair associated",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.69",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:34571969"
+      ],
+      "category": "Immune checkpoint"
     },
     {
       "id": "ATM",
       "name": "ATM serine/threonine kinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.66",
+      "chromosome": "11",
+      "function": "DNA damage response kinase that coordinates cell-cycle checkpoints and repair.",
+      "disease_evidence": "ATM alterations contribute to melanoma DNA-damage response defects.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "LRP1B",
-      "name": "LDL receptor related protein 1B",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.66",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "TET2",
-      "name": "tet methylcytosine dioxygenase 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.65",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "POLE",
-      "name": "DNA polymerase epsilon, catalytic subunit",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.64",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "DDX3X",
-      "name": "DEAD-box helicase 3 X-linked",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.64",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "FOXP1",
-      "name": "forkhead box P1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.64",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "SETD2",
-      "name": "SET domain containing 2, histone lysine methyltransferase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.64",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:34571969"
+      ],
+      "category": "DNA repair"
     },
     {
       "id": "CCND1",
       "name": "cyclin D1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.63",
+      "chromosome": "11",
+      "function": "Cyclin D1 activates CDK4/6 to drive the G1/S transition.",
+      "disease_evidence": "CCND1 amplification promotes melanoma cell-cycle progression.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "ROS1",
-      "name": "ROS proto-oncogene 1, receptor tyrosine kinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.63",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "PDCD1",
-      "name": "programmed cell death 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.63",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MTOR",
-      "name": "mechanistic target of rapamycin kinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.63",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "H3-3B",
-      "name": "H3.3 histone B",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.63",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "TRRAP",
-      "name": "transformation/transcription domain associated protein",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.63",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "IL2RA",
-      "name": "interleukin 2 receptor subunit alpha",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.62",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "IKZF1",
-      "name": "IKAROS family zinc finger 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.62",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "FAT1",
-      "name": "FAT atypical cadherin 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.62",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "DICER1",
-      "name": "dicer 1, ribonuclease III",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.62",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:34571969"
+      ],
+      "category": "Cell cycle"
     },
     {
       "id": "MDM2",
       "name": "MDM2 proto-oncogene",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.61",
+      "chromosome": "12",
+      "function": "E3 ubiquitin ligase that negatively regulates p53.",
+      "disease_evidence": "MDM2 amplification attenuates p53 signaling in melanoma.",
       "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "IFNAR1",
-      "name": "interferon alpha and beta receptor subunit 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.61",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "MECOM",
-      "name": "MDS1 and EVI1 complex locus",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.61",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "WRN",
-      "name": "WRN RecQ like helicase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.61",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CHEK2",
-      "name": "checkpoint kinase 2",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.61",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "ATR",
-      "name": "ATR checkpoint kinase",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.61",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
-    },
-    {
-      "id": "CUX1",
-      "name": "cut like homeobox 1",
-      "chromosome": "",
-      "function": "",
-      "disease_evidence": "Open Targets association score 0.61",
-      "odds_ratio": null,
-      "references": [],
-      "category": ""
+      "references": [
+        "PMID:34571969"
+      ],
+      "category": "Cell cycle"
     }
   ]
 }

@@ -6,8 +6,6 @@ Tests cover:
   - Section builders with various input combinations
 """
 
-from pathlib import Path
-
 import pytest
 
 pytestmark = pytest.mark.unit
@@ -291,13 +289,8 @@ class TestGenerateBioinformaticsReport:
     ):
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -310,13 +303,8 @@ class TestGenerateBioinformaticsReport:
     def test_report_is_valid_html(self, sample_enrichment, sample_gene_list, tmp_path, monkeypatch):
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -341,13 +329,8 @@ class TestGenerateBioinformaticsReport:
     ):
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -367,13 +350,8 @@ class TestGenerateBioinformaticsReport:
     ):
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -392,13 +370,8 @@ class TestGenerateBioinformaticsReport:
     ):
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report(
             hub_scores=sample_hub_scores,
@@ -444,13 +417,8 @@ class TestGenerateBioinformaticsReport:
             "n_missing": 0,
         }
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report(
             gwas_results=gwas_results,
@@ -466,13 +434,8 @@ class TestGenerateBioinformaticsReport:
         """Report should still generate even with no data."""
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report()
         content = out_path.read_text(encoding="utf-8")
@@ -484,13 +447,8 @@ class TestGenerateBioinformaticsReport:
     def test_report_contains_disclaimer(self, tmp_path, monkeypatch):
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report()
         content = out_path.read_text(encoding="utf-8")
@@ -502,13 +460,8 @@ class TestGenerateBioinformaticsReport:
         """Report with enrichment data should contain the dot plot image."""
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -522,13 +475,8 @@ class TestGenerateBioinformaticsReport:
     def test_report_contains_nav_links(self, tmp_path, monkeypatch):
         import med_research.pipeline.bioinformatics.report as report_module
 
-        out_path = tmp_path / "bioinformatics_report.html"
-
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setenv("MED_RESEARCH_REPORT_DIR", str(tmp_path))
+        out_path = tmp_path / "bioinformatics" / "bioinformatics_report.html"
 
         report_module.generate_bioinformatics_report()
         content = out_path.read_text(encoding="utf-8")

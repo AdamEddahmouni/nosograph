@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from med_research.pipeline.provenance import ProvenanceMetadata
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 
 def generate_html_report(
@@ -148,7 +148,7 @@ def generate_html_report(
         provenance=provenance,
     )
 
-    out_path = Path(__file__).parent / "report.html"
+    out_path = report_output_dir(Path(__file__).parent) / "report.html"
     out_path.write_text(html, encoding="utf-8")
     return str(out_path)
 

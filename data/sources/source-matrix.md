@@ -4,7 +4,7 @@ Machine-readable registry: `data/sources/registry.yaml`. Sync lifecycle: `docs/a
 
 | Source | Domain | Adapter | Access | Version | License | Cache | Transforms | Provenance | Tests |
 |--------|--------|---------|--------|---------|---------|-------|------------|------------|-------|
-| mondo | disease ontology | `MondoAdapter` | local OBO-JSON | meta.version | CC-BY-4.0 | snapshot checksum | entities, IS_A, xrefs | ResourceSnapshot | `test_mondo_adapter.py` |
+| **mondo** | disease ontology | `MondoAdapter` + `MondoSyncSource` | operator-supplied local OBO-JSON | meta.version, else VERSION pin | CC-BY-4.0 | snapshot checksum + SyncProvenance | condition entities, IS_A, published xrefs, obsolescence metadata | ResourceSnapshot + SyncReport | `test_mondo_sync.py` |
 | hp / hpo | phenotype ontology | `HpoOntologyAdapter` | local OBO-JSON | meta.version | HPO-custom | snapshot checksum | phenotype hierarchy | ResourceSnapshot | `test_hpo_adapter.py` |
 | hpoa | disease-phenotype | `HpoAnnotationAdapter` | local TSV | operator pin | HPO-custom | snapshot checksum | HAS_PHENOTYPE + evidence | ClaimEvidence | `test_hpoa_adapter.py` |
 | go | gene function | `GOImportAdapter` | local JSON | meta.version | CC-BY-4.0 | snapshot checksum | GO terms | ResourceSnapshot | `test_go_adapter.py` |
@@ -18,4 +18,4 @@ Machine-readable registry: `data/sources/registry.yaml`. Sync lifecycle: `docs/a
 | chembl / pubchem | compounds | import/live adapters | JSON or API | release | EBI/NCBI | snapshot/live | interventions | ResourceSnapshot | `test_live_api_adapters.py` |
 | legacy modules | disease KG | `LegacyMigrationAdapter` | repo JSON | git commit | Apache-2.0 | legacy snapshot | relationship claims | parity report | `test_adapter.py` |
 
-**Vertical slice:** Open Targets (`biomed sync open_targets`) — end-to-end versioning, checksum verification, diff, provenance fingerprint, deterministic normalize.
+**Vertical slices:** Open Targets (`biomed sync open_targets`) and HPOA (`biomed sync hpoa`) — end-to-end versioning, checksum verification, diff, provenance fingerprint, deterministic normalize. MONDO (`biomed sync mondo`) is registered as an experimental slice with the same lifecycle.

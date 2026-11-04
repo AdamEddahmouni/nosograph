@@ -91,14 +91,17 @@ CAR_T_SCORES = {
 
 # ── Drug safety tiers (used by adverse_events/profiler.py) ───────────────
 DRUG_SAFETY_RISK = {
-    "high_risk": [],
-    "moderate_risk": [
-        "cilastatin",
-        "doxycycline",
-        "pantoprazole",
+    "high_risk": [
         "pazufloxacin",
     ],
+    "moderate_risk": [],
     "low_risk": [],
+    "undetermined_risk": [
+        "cilastatin",
+        "doxycycline",
+        "heparin",
+        "pantoprazole",
+    ],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

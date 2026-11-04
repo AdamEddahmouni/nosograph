@@ -491,6 +491,8 @@ def test_scaffold_existing_raises_without_overwrite(tmp_path):
 def test_scaffold_id_is_sanitized(tmp_path):
     # target_dir is an exact write destination; the sanitized id is applied
     # when no target_dir is given (i.e. to the real diseases/ tree).
+    tracked_config = Path("src/med_research/diseases/crohns_disease/config.py")
+    tracked_before = tracked_config.read_bytes()
     summary = scaffold.scaffold_disease(
         "Crohn's Disease",
         name="Crohn's disease",
@@ -500,6 +502,9 @@ def test_scaffold_id_is_sanitized(tmp_path):
     assert summary["disease_id"] == "crohns_disease"
     assert (tmp_path / "__init__.py").exists()
     assert summary["files"][0].startswith(str(tmp_path))
+    # Scaffolding a same-named id into a temp tree must not rewrite the
+    # checked-in disease config through the derived-block refresh.
+    assert tracked_config.read_bytes() == tracked_before
 
 
 # ── Refresh (merge into existing module) ────────────────────────────────
@@ -981,6 +986,249 @@ def test_refresh_prune_nothing_to_prune_skips_confirm(tmp_path):
     assert summary["prune"]["genes"] == []
     assert summary["prune"]["drugs"] == []
     assert summary["prune"]["backup"] is None
+
+
+# ── Path safety: prune backups stay inside the module (CodeQL #67) ──────
+
+
+def _path_gene(gene_id: str) -> dict:
+    return {
+        "id": gene_id,
+        "name": gene_id.title(),
+        "chromosome": "",
+        "function": "",
+        "disease_evidence": "curated",
+        "odds_ratio": None,
+        "references": [],
+        "category": "Curated",
+    }
+
+
+def _path_drug(drug_id: str) -> dict:
+    return {
+        "id": drug_id,
+        "name": drug_id.title(),
+        "type": "",
+        "target": "",
+        "mechanism": "",
+        "approval": "",
+        "route": "",
+        "efficacy": "",
+        "references": [],
+        "category": "",
+        "disease_evidence": "curated",
+    }
+
+
+def _path_pathway(components: list[str]) -> dict:
+    return {
+        "id": "pw-1",
+        "name": "Pathway One",
+        "description": "Curated pathway",
+        "key_components": list(components),
+        "therapeutic_targets": list(components),
+        "references": [],
+    }
+
+
+def _path_module(tmp_path):
+    """Minimal on-disk disease module: no network, no scaffold_disease call."""
+    root = tmp_path / "module"
+    data = root / "data"
+    data.mkdir(parents=True)
+    (root / "__init__.py").write_text("", encoding="utf-8")
+    (data / "profile.json").write_text(
+        json.dumps({"id": "prune_paths", "name": "Prune Paths"}), encoding="utf-8"
+    )
+    (data / "genes.json").write_text(
+        json.dumps({"genes": [_path_gene("KEEP"), _path_gene("ORPHAN")]}), encoding="utf-8"
+    )
+    (data / "drugs.json").write_text(
+        json.dumps({"drugs": [_path_drug("KEEPDRUG"), _path_drug("ORPHANDRUG")]}),
+        encoding="utf-8",
+    )
+    (data / "pathways.json").write_text(
+        json.dumps({"pathways": [_path_pathway(["KEEP", "ORPHAN"])]}), encoding="utf-8"
+    )
+    (data / "relationships.json").write_text(json.dumps({"relationships": []}), encoding="utf-8")
+    return root
+
+
+def _path_sources(name: str = "Prune Paths") -> dict:
+    """Sources that report only the KEEP entities, so prune has work to do."""
+    return {
+        "efo_id": "EFO_0001370",
+        "name": name,
+        "genes": {"genes": [_path_gene("KEEP")]},
+        "drugs": {"drugs": [_path_drug("KEEPDRUG")]},
+        "pathways": {"pathways": [_path_pathway(["KEEP"])]},
+        "ot_targets": [],
+        "gwas_genes": [],
+        "reactome_hits": [],
+    }
+
+
+def test_prune_backup_lands_in_module_backups_dir(tmp_path, monkeypatch):
+    """A normal id writes one well-formed backup inside data/backups/."""
+    root = _path_module(tmp_path)
+    monkeypatch.setattr(scaffold, "_collect_sources", lambda **_: _path_sources())
+
+    summary = scaffold.refresh_disease(
+        "prune_paths", target_dir=root, prune=True, confirm=lambda plan: True
+    )
+
+    backup = Path(summary["prune"]["backup"])
+    backup_dir = (root / "data" / "backups").resolve()
+    assert backup.resolve().parent == backup_dir
+    assert backup.name.startswith("pruned_prune_paths_")
+    assert backup.suffix == ".json"
+    payload = json.loads(backup.read_text(encoding="utf-8"))
+    assert payload["disease_id"] == "prune_paths"
+    assert [g["id"] for g in payload["genes"]] == ["ORPHAN"]
+    assert [d["id"] for d in payload["drugs"]] == ["ORPHANDRUG"]
+
+
+@pytest.mark.parametrize("bad_id", ["../../outside", "../secret", "disease/../../../outside"])
+def test_prune_public_entry_contains_posix_traversal(tmp_path, monkeypatch, bad_id):
+    """Traversal ids normalize to a slug; the backup never leaves the module."""
+    root = _path_module(tmp_path)
+    sentinel = tmp_path / "outside" / "sentinel.txt"
+    sentinel.parent.mkdir()
+    sentinel.write_text("untouched", encoding="utf-8")
+    monkeypatch.setattr(scaffold, "_collect_sources", lambda **_: _path_sources())
+
+    summary = scaffold.refresh_disease(
+        bad_id, target_dir=root, prune=True, confirm=lambda plan: True
+    )
+
+    backup = Path(summary["prune"]["backup"])
+    assert backup.resolve().is_relative_to((root / "data" / "backups").resolve())
+    assert summary["disease_id"] == scaffold.sanitize_id(bad_id)
+    assert sentinel.read_text(encoding="utf-8") == "untouched"
+
+
+@pytest.mark.parametrize(
+    "bad_id", ["..\\..\\outside", "C:\\temp\\outside", "\\\\server\\share\\outside"]
+)
+def test_prune_public_entry_contains_windows_traversal(tmp_path, monkeypatch, bad_id):
+    """Backslashes, drive letters and UNC prefixes cannot redirect the write."""
+    root = _path_module(tmp_path)
+    monkeypatch.setattr(scaffold, "_collect_sources", lambda **_: _path_sources())
+
+    summary = scaffold.refresh_disease(
+        bad_id, target_dir=root, prune=True, confirm=lambda plan: True
+    )
+
+    backup = Path(summary["prune"]["backup"])
+    assert backup.resolve().is_relative_to((root / "data" / "backups").resolve())
+    assert summary["disease_id"] == scaffold.sanitize_id(bad_id)
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        ("Crohn's disease", "crohns_disease"),
+        ("a/b", "a_b"),
+        ("a\\b", "a_b"),
+        ("a:b", "a_b"),
+        ("a..b", "a_b"),
+        ("a\x00b", "a_b"),
+        ("\u00dcn\u00efcode", "n_code"),
+        ("", "disease"),
+        ("///", "disease"),
+        ("..", "disease"),
+        ("%2e%2e%2f", "2e_2e_2f"),
+        ("T2D", "t2d"),
+    ],
+)
+def test_sanitize_id_yields_a_single_path_component(raw, expected):
+    """The documented normalization contract holds for hostile inputs."""
+    slug = scaffold.sanitize_id(raw)
+    assert slug == expected
+    assert slug.isascii() and all(c.isalnum() or c == "_" for c in slug)
+    assert not slug.startswith("_") and not slug.endswith("_")
+
+
+def test_empty_identifier_uses_documented_disease_fallback(tmp_path, monkeypatch):
+    """Empty input maps to 'disease'; module existence still gates the write."""
+    root = _path_module(tmp_path)
+    monkeypatch.setattr(scaffold, "_collect_sources", lambda **_: _path_sources())
+
+    summary = scaffold.refresh_disease("", target_dir=root, prune=True, confirm=lambda plan: True)
+
+    assert summary["disease_id"] == "disease"
+    assert Path(summary["prune"]["backup"]).name.startswith("pruned_disease_")
+
+
+@pytest.mark.parametrize(
+    "bad_id",
+    [
+        "../../outside",
+        "..\\..\\outside",
+        "C:\\temp\\outside",
+        "disease/../../../outside",
+        "a\x00b",
+    ],
+)
+def test_write_prune_backup_rejects_traversal_ids(tmp_path, bad_id):
+    """The private sink enforces its own invariant, independent of callers."""
+    data_dir = tmp_path / "module" / "data"
+    outside = tmp_path / "outside"
+    outside.mkdir(parents=True)
+    sentinel = outside / "sentinel.txt"
+    sentinel.write_text("untouched", encoding="utf-8")
+
+    with pytest.raises(ValueError):
+        scaffold._write_prune_backup(
+            data_dir,
+            bad_id,
+            existing_genes=[_path_gene("ORPHAN")],
+            existing_drugs=[_path_drug("ORPHANDRUG")],
+            existing_pathways=[_path_pathway(["ORPHAN"])],
+            pruned_gene_ids={"ORPHAN"},
+            pruned_drug_ids={"ORPHANDRUG"},
+        )
+
+    assert sentinel.read_text(encoding="utf-8") == "untouched"
+    assert not (outside / "backups").exists()
+
+
+def test_prune_backup_round_trips_through_restore(tmp_path, monkeypatch):
+    """Path hardening must not break the normal backup -> restore flow."""
+    root = _path_module(tmp_path)
+    monkeypatch.setattr(scaffold, "_collect_sources", lambda **_: _path_sources())
+
+    summary = scaffold.refresh_disease(
+        "prune_paths", target_dir=root, prune=True, confirm=lambda plan: True
+    )
+    backup = Path(summary["prune"]["backup"])
+    restored = scaffold.restore_disease("prune_paths", backup_path=backup, target_dir=root)
+
+    assert restored["restored"] == {"genes": ["ORPHAN"], "drugs": ["ORPHANDRUG"]}
+    genes = json.loads((root / "data" / "genes.json").read_text(encoding="utf-8"))["genes"]
+    assert {g["id"] for g in genes} == {"KEEP", "ORPHAN"}
+
+
+def test_symlinked_backups_dir_is_followed_within_caller_root(tmp_path, monkeypatch):
+    """A pre-existing symlink is caller-created layout, not a privilege boundary."""
+    root = _path_module(tmp_path)
+    backups = root / "data" / "backups"
+    if backups.exists():
+        shutil.rmtree(backups)
+    target = tmp_path / "linked_backups"
+    target.mkdir()
+    try:
+        backups.symlink_to(target, target_is_directory=True)
+    except (OSError, NotImplementedError) as exc:  # Windows needs Developer Mode
+        pytest.skip(f"symlinks unavailable on this platform: {exc}")
+    monkeypatch.setattr(scaffold, "_collect_sources", lambda **_: _path_sources())
+
+    summary = scaffold.refresh_disease(
+        "prune_paths", target_dir=root, prune=True, confirm=lambda plan: True
+    )
+
+    backup = Path(summary["prune"]["backup"])
+    assert backup.resolve().is_relative_to(target.resolve())
 
 
 # ── CLI wiring ───────────────────────────────────────────────────────────

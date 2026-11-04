@@ -105,3 +105,133 @@ def test_initialized_empty_store_still_serves_lists(uninitialized_biomed_client)
     body = response.json()
     assert body["items"] == []
     assert body.get("store_state") is None
+
+
+ANALYTICS_PAIR = "MONDO:0007915,MONDO:0008383"
+
+
+def test_biomed_analytics_summary_carries_store_state(uninitialized_biomed_client) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get("/api/v1/biomed/analytics/summary")
+    assert response.status_code == 200
+    body = response.json()
+    assert body["store_state"]["status"] == "uninitialized"
+    assert "biomed init" in body["store_state"]["initialization_hint"]
+
+
+def test_biomed_shared_mechanisms_reports_uncomputed_similarity(
+    uninitialized_biomed_client,
+) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get(
+        "/api/v1/biomed/analytics/shared-mechanisms",
+        params={"curie_a": "MONDO:0007915", "curie_b": "MONDO:0008383"},
+    )
+    assert response.status_code == 200
+    body = response.json()
+    assert body["shared_pathways"] == []
+    assert body["shared_genes"] == []
+    # 0.0 would assert "these conditions share no biology"; None means not computed.
+    assert body["jaccard_similarity"] is None
+    assert body["store_state"]["status"] == "uninitialized"
+
+
+def test_biomed_subgraph_carries_store_state(uninitialized_biomed_client) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get(
+        "/api/v1/biomed/analytics/subgraph", params={"start_curie": "MONDO:0007915"}
+    )
+    assert response.status_code == 200
+    body = response.json()
+    assert body["total_edges"] == 0
+    assert body["edges"] == []
+    assert body["store_state"]["status"] == "uninitialized"
+
+
+def test_biomed_matrix_is_not_presented_as_computed(uninitialized_biomed_client) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get("/api/v1/biomed/analytics/matrix", params={"curies": ANALYTICS_PAIR})
+    assert response.status_code == 200
+    body = response.json()
+    assert body["matrix"] == []
+    assert body["details"] == {}
+    assert body["store_state"]["status"] == "uninitialized"
+
+
+def test_biomed_druggability_carries_store_state_without_internal_error(
+    uninitialized_biomed_client,
+) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get("/api/v1/biomed/analytics/druggability")
+    assert response.status_code == 200
+    body = response.json()
+    assert body["distribution"] == {}
+    assert body["total_categories"] == 0
+    assert "error" not in body
+    assert body["store_state"]["status"] == "uninitialized"
+
+
+def test_typed_analytics_stats_carries_store_state(uninitialized_biomed_client) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get("/api/v1/analytics/stats")
+    assert response.status_code == 200
+    body = response.json()
+    assert body["total_entities"] == 0
+    assert body["store_state"]["status"] == "uninitialized"
+
+
+def test_typed_analytics_shared_mechanisms_reports_uncomputed_similarity(
+    uninitialized_biomed_client,
+) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get(
+        "/api/v1/analytics/shared-mechanisms",
+        params={"left_curie": "MONDO:0007915", "right_curie": "MONDO:0008383"},
+    )
+    assert response.status_code == 200
+    body = response.json()
+    assert body["jaccard_similarity"] is None
+    assert body["store_state"]["status"] == "uninitialized"
+
+
+def test_typed_analytics_subgraph_carries_store_state(uninitialized_biomed_client) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get("/api/v1/analytics/subgraph/MONDO:0007915")
+    assert response.status_code == 200
+    body = response.json()
+    assert body["edge_count"] == 0
+    assert body["edges"] == []
+    assert body["store_state"]["status"] == "uninitialized"
+
+
+def test_typed_analytics_targets_returns_typed_not_ready(uninitialized_biomed_client) -> None:
+    client, _ = uninitialized_biomed_client
+    response = client.get("/api/v1/analytics/targets/MONDO:0007915")
+    assert response.status_code == 503
+    body = response.json()
+    assert body["error_type"] == "BiomedicalStoreNotReadyError"
+    assert body["store_state"]["status"] == "uninitialized"
+
+
+def test_initialized_store_keeps_computed_zero_similarity(
+    uninitialized_biomed_client,
+) -> None:
+    """An initialized-but-empty store is a real result and carries no readiness marker."""
+    client, db_path = uninitialized_biomed_client
+    repository = BiomedicalRepository(db_path)
+    repository.initialize()
+    app.dependency_overrides[get_biomedical_repository] = lambda: repository
+
+    response = client.get(
+        "/api/v1/analytics/shared-mechanisms",
+        params={"left_curie": "MONDO:0007915", "right_curie": "MONDO:0008383"},
+    )
+    assert response.status_code == 200
+    body = response.json()
+    assert body["jaccard_similarity"] == 0.0
+    assert body.get("store_state") is None
+
+    stats = client.get("/api/v1/analytics/stats")
+    assert stats.status_code == 200
+    assert stats.json()["total_entities"] == 0
+    assert stats.json().get("store_state") is None

@@ -263,12 +263,12 @@ SCREENING_PROFILE = {
         "inflammasome",
     ],
     "reference_drug_ids": [
-        "CHEMBL25",
-        "CHEMBL25",
-        "CHEMBL651",
-        "CHEMBL1467",
-        "CHEMBL468",
-        "CHEMBL1201564",
+        "CHEMBL64",
+        "CHEMBL374478",
+        "CHEMBL614",
+        "CHEMBL44884",
+        "CHEMBL376488",
+        "CHEMBL227875",
     ],
     "weights": {
         "binding_estimate": 0.25,

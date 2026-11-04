@@ -148,57 +148,6 @@ CAR_T_SCORES = {
         "WDR36": 4.0,
     },
 }
-DRUG_SAFETY_RISK = {
-    "high_risk": [
-        "etanercept",
-        "interferon beta-1a",
-    ],
-    "moderate_risk": [
-        "abediterol",
-        "adriforant",
-        "alendronic acid",
-        "amg-157",
-        "aminophylline",
-        "beclomethasone dipropionate",
-        "budesonide",
-        "cholecalciferol",
-        "colchicine",
-        "ephedrine hydrochloride",
-        "ephedrine sulfate",
-        "epinephrine",
-        "fevipiprant",
-        "fingolimod",
-        "fluticasone propionate",
-        "formoterol",
-        "formoterol fumarate",
-        "glycopyrrolate",
-        "glycopyrronium",
-        "ipratropium bromide",
-        "lebrikizumab",
-        "lenzilumab",
-        "methacholine",
-        "methylprednisolone",
-        "montelukast sodium",
-        "omalizumab",
-        "prednisolone",
-        "prednisone",
-        "reslizumab",
-        "roflumilast",
-        "salmeterol xinafoate",
-        "secukinumab",
-        "sitaxentan",
-        "tezepelumab",
-        "theophylline",
-        "tiotropium bromide",
-        "tofimilast",
-        "vilanterol",
-        "zileuton",
-    ],
-    "low_risk": [],
-}
-
-DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK
-DRUG_INDUCED_LUPUS_RISK = DRUG_SAFETY_RISK
 
 SCREENING_PROFILE = {
     "strategy_id": "asthma-screening-v1",

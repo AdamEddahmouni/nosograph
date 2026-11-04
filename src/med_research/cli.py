@@ -345,6 +345,32 @@ def _build_parser() -> argparse.ArgumentParser:
     dval.add_argument(
         "--strict", action="store_true", help="Exit non-zero when config gaps are found (for CI)"
     )
+    dval.add_argument(
+        "--require-evidence",
+        action="store_true",
+        help="Exit non-zero when the evidence-density target is not met (separate from --strict)",
+    )
+    dval.add_argument(
+        "--tier",
+        choices=["L2", "L3", "ci_validated", "reference", "all"],
+        default="all",
+        help="Corpus slice for --all (default: all)",
+    )
+    dval.add_argument(
+        "--sample",
+        type=int,
+        metavar="N",
+        help="Deterministically sample N modules from the selected slice",
+    )
+    dval.add_argument(
+        "--seed", type=int, default=0, help="Sampling seed (default: 0; deterministic)"
+    )
+    dval.add_argument(
+        "--json",
+        type=Path,
+        dest="json_path",
+        help="Write a structured validation report to this path",
+    )
     dvalbatch = disease_sub.add_parser(
         "validate-batch",
         help="Run strict batch validation with machine-readable failure classification",
@@ -359,6 +385,15 @@ def _build_parser() -> argparse.ArgumentParser:
         "--limit", type=int, help="Maximum number of diseases to validate in this run"
     )
     dvalbatch.add_argument(
+        "--sample",
+        type=int,
+        metavar="N",
+        help="Deterministically sample N modules from the selected slice",
+    )
+    dvalbatch.add_argument(
+        "--seed", type=int, default=0, help="Sampling seed (default: 0; deterministic)"
+    )
+    dvalbatch.add_argument(
         "--output",
         type=Path,
         help="Write JSON report to this path (default: data/reports/validation_batch_report.json)",
@@ -367,6 +402,16 @@ def _build_parser() -> argparse.ArgumentParser:
         "--strict",
         action="store_true",
         help="Exit non-zero when any module fails validation (for CI)",
+    )
+    dvalbatch.add_argument(
+        "--require-evidence",
+        action="store_true",
+        help="Exit non-zero when any module misses the evidence-density target",
+    )
+    dvalbatch.add_argument(
+        "--no-evidence",
+        action="store_true",
+        help="Skip evidence-density assessment (structural validation only)",
     )
     dvalbatch.add_argument(
         "disease_ids",
@@ -420,6 +465,35 @@ def _build_parser() -> argparse.ArgumentParser:
     dbulk.add_argument("--skip-reactome", action="store_true", help="Skip Reactome fetch")
     dbulk.add_argument("--overwrite", action="store_true", help="Regenerate existing modules")
 
+    dbackfill = disease_sub.add_parser(
+        "backfill",
+        help="Fill scaffolded config gaps from local data (symptoms, drug safety)",
+    )
+    dbackfill.add_argument(
+        "--symptoms",
+        action="store_true",
+        help="Fill empty SYMPTOMS lists from HPO / Open Targets phenotypes",
+    )
+    dbackfill.add_argument(
+        "--safety",
+        action="store_true",
+        help="Derive DRUG_SAFETY_RISK and write data/adverse_events.json",
+    )
+    dbackfill.add_argument("--all", action="store_true", help="Run every backfill step")
+    dbackfill.add_argument("--limit", type=int, help="Maximum modules to process")
+    dbackfill.add_argument("--disease-ids", nargs="+", help="Explicit disease ids to process")
+    dbackfill.add_argument(
+        "--workers", type=int, default=1, help="Parallel workers for the symptom step"
+    )
+    dbackfill.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Rewrite adverse_events.json files that already exist",
+    )
+    dbackfill.add_argument(
+        "--dry-run", action="store_true", help="Report what would change without writing"
+    )
+
     dcorpus = disease_sub.add_parser("corpus-status", help="Show corpus readiness tier report")
     dcorpus.add_argument("--json", action="store_true", help="Emit JSON report")
     dcorpus.add_argument("--limit", type=int, help="Limit diseases scanned")
@@ -427,6 +501,43 @@ def _build_parser() -> argparse.ArgumentParser:
         "--output",
         type=Path,
         help="Write report to file (default: data/reports/disease_batch_status.json)",
+    )
+    decov = disease_sub.add_parser(
+        "evidence-coverage",
+        help="Inspect recorded evidence and provenance coverage for disease modules",
+    )
+    decov.add_argument(
+        "--tier",
+        choices=["L2", "L3", "ci_validated", "reference", "all"],
+        help="Corpus slice to inspect (default: the reference diseases)",
+    )
+    decov.add_argument(
+        "--disease",
+        action="append",
+        dest="disease_ids",
+        metavar="ID",
+        help="Inspect a specific disease module (repeatable)",
+    )
+    decov.add_argument("--limit", type=int, help="Maximum modules to inspect")
+    decov.add_argument(
+        "--sample",
+        type=int,
+        metavar="N",
+        help="Deterministically sample N modules from the selected slice",
+    )
+    decov.add_argument("--seed", type=int, default=0, help="Sampling seed (default: 0)")
+    decov.add_argument("--json", action="store_true", help="Print the full report as JSON")
+    decov.add_argument(
+        "--require-evidence",
+        action="store_true",
+        help="Exit non-zero when any measured module misses the evidence-density target",
+    )
+    decov.add_argument(
+        "--output",
+        type=Path,
+        help=(
+            "Write the report to this path (default: data/reports/evidence_coverage_report.json)"
+        ),
     )
 
     # ── Knowledge Graph ────────────────────────────────────────────────
@@ -643,6 +754,28 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Print the machine-readable sync report",
     )
 
+    biomed_phenopacket = biomed_sub.add_parser(
+        "phenopacket",
+        help=(
+            "Export disease-level phenotype evidence as a JSON bundle "
+            "(experimental; not a patient Phenopacket)"
+        ),
+    )
+    biomed_phenopacket.add_argument(
+        "--input",
+        type=Path,
+        required=True,
+        help="Input JSON describing the disease and its phenotype evidence",
+    )
+    biomed_phenopacket.add_argument(
+        "--output",
+        type=Path,
+        help=(
+            "Write the canonical JSON bundle here instead of stdout. Identical "
+            "inputs produce identical bytes."
+        ),
+    )
+
     biomed_migrate = biomed_sub.add_parser(
         "migrate",
         help="Migrate curated legacy disease projections into the canonical store",
@@ -794,7 +927,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
     serve = sub.add_parser("serve", help="Start the web API server")
     serve.add_argument("--host", default="0.0.0.0")  # nosec B104 - overridable bind; see web/config.py
-    serve.add_argument("--port", type=int, default=8000)
+    serve.add_argument("--port", type=int, default=None)
     serve.add_argument("--reload", action="store_true")
 
     demo = sub.add_parser(
@@ -999,6 +1132,46 @@ def cmd_disease(args):
             print(f"Report written to {output}")
         return 0
 
+    if args.disease_action == "evidence-coverage":
+        import json
+
+        from med_research.diseases.evidence_coverage import (
+            build_evidence_coverage_report,
+            render_summary,
+            write_evidence_coverage_report,
+        )
+
+        report = build_evidence_coverage_report(
+            disease_ids=getattr(args, "disease_ids", None),
+            tier_filter=getattr(args, "tier", None),
+            limit=getattr(args, "limit", None),
+            sample_size=getattr(args, "sample", None),
+            sample_seed=getattr(args, "seed", 0),
+        )
+        output = getattr(args, "output", None)
+        if output is not None:
+            written = write_evidence_coverage_report(report, Path(output))
+            logger.info(f"Report written to {written}")
+        if getattr(args, "json", False):
+            print(json.dumps(report, indent=2, ensure_ascii=False))
+        else:
+            print(render_summary(report))
+        if getattr(args, "require_evidence", False):
+            evidence = report["aggregate"].get("evidence", {})
+            if not evidence.get("gate_passes", False):
+                logger.error(
+                    "Evidence-density gate failed: %s of %s modules meet the %.0f%% target",
+                    evidence.get("modules_passing", 0),
+                    report["aggregate"]["diseases"],
+                    float(evidence.get("target", 0.8)) * 100,
+                )
+                return 1
+        scope_errors = report["scope"]["errors"]
+        if scope_errors:
+            logger.error(f"{len(scope_errors)} module(s) failed to load; see scope.errors")
+            return 1
+        return 0
+
     if args.disease_action == "coverage":
         import json
 
@@ -1025,9 +1198,68 @@ def cmd_disease(args):
         return 0
 
     if args.disease_action == "validate":
+        from med_research.diseases.evidence_gate import assess_disease
+        from med_research.diseases.validation_batch import (
+            EXIT_OK,
+            EXIT_USAGE,
+            EXIT_VALIDATION_FAILED,
+            run_strict_validation_batch,
+            write_validation_report,
+        )
+
         if not args.all and not args.disease_id:
             logger.error("❌ disease validate needs a disease_id or --all")
-            return 2
+            return EXIT_USAGE
+
+        structured = args.all and (
+            args.json_path is not None
+            or args.sample is not None
+            or args.tier != "all"
+            or args.require_evidence
+        )
+        if structured:
+            report = run_strict_validation_batch(
+                tier_filter=args.tier,
+                sample_size=args.sample,
+                sample_seed=args.seed,
+                require_evidence=args.require_evidence,
+            )
+            summary = report["summary"]
+            logger.info(
+                "\nValidation (%s): %s/%s passed (%.1f%%)",
+                args.tier,
+                summary["passed"],
+                summary["total"],
+                summary["pass_rate"] * 100,
+            )
+            if summary["sampled"]:
+                logger.info(
+                    "  deterministic sample of %s from tier %s (seed %s)",
+                    summary["total"],
+                    args.tier,
+                    summary["sample_seed"],
+                )
+            if summary["excluded_blocked"]:
+                logger.info("  excluded %s blocked slug(s)", summary["excluded_blocked"])
+            if summary["failure_groups"]:
+                logger.warning("  failing checks by field:")
+                for field, count in summary["failure_groups"].items():
+                    logger.info("    %-28s %s", field, count)
+            logger.info(
+                "  structural: %s/%s; evidenced: %s/%s (density %.1f%%, target %.0f%%)",
+                summary["structurally_valid"],
+                summary["total"],
+                summary["evidenced"],
+                summary["evidence_assessed"],
+                summary["evidence_density"] * 100,
+                summary["evidence_target"] * 100,
+            )
+            if args.json_path is not None:
+                out = write_validation_report(report, args.json_path)
+                logger.info("Report written to %s", out)
+            if args.require_evidence and not summary.get("evidence_gate_passed"):
+                return EXIT_VALIDATION_FAILED
+            return EXIT_VALIDATION_FAILED if summary["failed"] else EXIT_OK
 
         if args.all:
             # Validate every disease module in one pass — the cheap CI check.
@@ -1073,21 +1305,46 @@ def cmd_disease(args):
             logger.error(f"❌ {e}")
             return 1
         logger.info(f"\nValidating {disease.profile.name} ({disease.disease_id})...")
+        checks = disease.validate()
         ok = True
-        for field, status in disease.validate().items():
+        for field, status in checks.items():
             mark = "✅" if status == "ok" else "⚠️ "
             if status != "ok":
                 ok = False
             logger.info(f"  {mark} {field}: {status}")
+
+        evidence = assess_disease(disease)
+        logger.info(
+            "\nStructural validity: %s; evidence: %s/%s records carry a resolvable "
+            "identifier (%.1f%%, target %.0f%%) — %s",
+            "PASS" if ok else "FAIL",
+            evidence["evidenced"],
+            evidence["records"],
+            evidence["density"] * 100,
+            evidence["target"] * 100,
+            "PASS" if evidence["passes"] else "FAIL",
+        )
         if ok:
             logger.info("\n[OK] Config complete.")
         else:
             logger.warning("\n[WARN] Fill the gaps above before running the full pipeline.")
-            return 1 if args.strict else 0
+            if args.strict:
+                return 1
+        if args.require_evidence and not evidence["passes"]:
+            logger.warning(
+                "Evidence-density gate failed: %s of %s records carry a resolvable "
+                "identifier (target %.0f%%).",
+                evidence["evidenced"],
+                evidence["records"],
+                evidence["target"] * 100,
+            )
+            return 1
         return 0
 
     if args.disease_action == "validate-batch":
         from med_research.diseases.validation_batch import (
+            EXIT_OK,
+            EXIT_VALIDATION_FAILED,
             run_strict_validation_batch,
             write_validation_report,
         )
@@ -1098,24 +1355,43 @@ def cmd_disease(args):
             tier_filter=tier,
             limit=args.limit,
             disease_ids=explicit,
+            sample_size=args.sample,
+            sample_seed=args.seed,
+            include_evidence=not args.no_evidence,
+            require_evidence=args.require_evidence,
         )
         out = write_validation_report(report, args.output)
         summary = report["summary"]
         logger.info(
-            "\nBatch validation (%s): %s/%s passed (%.1f%%)",
+            "\nBatch validation (%s): %s/%s structurally valid (%.1f%%)",
             tier,
             summary["passed"],
             summary["total"],
             summary["pass_rate"] * 100,
         )
+        logger.info(
+            "  evidenced: %s/%s (density %.1f%%, target %.0f%%)",
+            summary["evidenced"],
+            summary["evidence_assessed"],
+            summary["evidence_density"] * 100,
+            summary["evidence_target"] * 100,
+        )
+        if summary["sampled"]:
+            logger.info("  deterministic sample (seed %s)", summary["sample_seed"])
+        if summary["excluded_blocked"]:
+            logger.info("  excluded %s blocked slug(s)", summary["excluded_blocked"])
         if summary["failed"]:
             logger.warning("  %s module(s) failed strict validation", summary["failed"])
             for failure_class, count in summary.get("failure_classes", {}).items():
                 logger.info("    %s: %s", failure_class, count)
+            for field, count in summary.get("failure_groups", {}).items():
+                logger.info("    field %s: %s", field, count)
         logger.info("Report written to %s", out)
         if args.strict and summary["failed"] > 0:
-            return 1
-        return 0
+            return EXIT_VALIDATION_FAILED
+        if args.require_evidence and not summary.get("evidence_gate_passed"):
+            return EXIT_VALIDATION_FAILED
+        return EXIT_OK
 
     if args.disease_action == "add":
         import tempfile
@@ -1198,6 +1474,79 @@ def cmd_disease(args):
             return 1
         print_bulk_harvest_summary(report)
         return 1 if report["failed"] and not report["succeeded"] else 0
+
+    if args.disease_action == "backfill":
+        from med_research.diseases.safety_scaffold import (
+            write_adverse_events_file,
+            write_risk_config_section,
+        )
+        from med_research.diseases.symptom_harvester import harvest_all_symptoms
+
+        do_symptoms = bool(args.all or args.symptoms)
+        do_safety = bool(args.all or args.safety)
+        if not do_symptoms and not do_safety:
+            logger.error("❌ backfill needs --symptoms, --safety, or --all")
+            return 2
+        if args.dry_run:
+            logger.info("🔍 dry run — no files will be written")
+
+        ids = list(args.disease_ids) if args.disease_ids else None
+        errors: list[str] = []
+        if do_symptoms:
+            report = harvest_all_symptoms(
+                write=not args.dry_run,
+                limit=args.limit,
+                disease_ids=ids,
+                workers=args.workers,
+            )
+            logger.info(
+                "\n🩺 Symptom backfill: %s/%s populated (%s)",
+                report["populated"],
+                report["total"],
+                report["by_source"],
+            )
+
+        if do_safety:
+            from med_research.diseases.scaffold import load_disease_registry, sanitize_id
+
+            targets = ids
+            if targets is None:
+                targets = [sanitize_id(e.get("id", "")) for e in load_disease_registry()]
+            if args.limit:
+                targets = targets[: args.limit]
+
+            risk_written: list[str] = []
+            ae_written: list[str] = []
+            skipped: list[str] = []
+            for disease_id in targets:
+                try:
+                    path = write_risk_config_section(disease_id, dry_run=args.dry_run)
+                    if path is not None:
+                        risk_written.append(disease_id)
+                    ae_path = write_adverse_events_file(
+                        disease_id,
+                        overwrite=args.overwrite,
+                        dry_run=args.dry_run,
+                    )
+                    if ae_path is not None:
+                        ae_written.append(disease_id)
+                    if path is None and ae_path is None:
+                        skipped.append(disease_id)
+                except Exception as exc:  # keep going: one bad module must not abort a corpus run
+                    errors.append(f"{disease_id}: {exc}")
+            logger.info(
+                "\n🛡️  Safety backfill: risk block written for %s, "
+                "adverse_events.json for %s, unchanged %s, errors %s",
+                len(risk_written),
+                len(ae_written),
+                len(skipped),
+                len(errors),
+            )
+            for line in errors[:20]:
+                logger.warning("    %s", line)
+            if len(errors) > 20:
+                logger.warning("    … and %s more", len(errors) - 20)
+        return 1 if errors else 0
 
     if args.disease_action == "refresh":
         from med_research.diseases.scaffold import (
@@ -1551,19 +1900,24 @@ def cmd_safety(args):
         results = [profile]
         logger.info(f"\n🛡️  Safety Profile: {profile['drug_name']}")
         logger.info(f"   Disease:                  {args.disease}")
-        logger.info(f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}")
-        logger.info(
-            f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Severity Burden:           {profile.get('severity_burden_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Chronic Use Safety:        {profile.get('chronic_use_safety_score', 'N/A')}/10"
-        )
-        logger.info(
-            f"   Disease-Specific Risk:     {profile.get('disease_specific_risk_score', 'N/A')}/10"
-        )
+        if profile.get("score_status") == "insufficient_evidence":
+            logger.info("   Safety Score:             Insufficient evidence.")
+        else:
+            logger.info(
+                f"   Composite Safety Score:   {profile.get('composite_safety_score', 'N/A')}"
+            )
+            logger.info(
+                f"   Disease Symptom Overlap:  {profile.get('disease_symptom_overlap_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Severity Burden:         {profile.get('severity_burden_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Chronic Use Safety:      {profile.get('chronic_use_safety_score', 'N/A')}/10"
+            )
+            logger.info(
+                f"   Disease-Specific Risk:   {profile.get('disease_specific_risk_score', 'N/A')}/10"
+            )
         logger.info(f"   Black Box Warnings:        {profile.get('black_box_warnings', [])}")
         logger.info(f"   Disease Overlap AEs:       {profile.get('disease_overlap_ae', [])}")
     else:
@@ -1571,10 +1925,16 @@ def cmd_safety(args):
         if not result.success:
             return _exit_from_result(result, context="Safety analysis")
         results = result.data or []
-        summary = get_safety_summary(disease_id=args.disease)
+        summary = get_safety_summary(disease_id=args.disease, results=results)
         logger.info(f"Total drugs ({args.disease}): {summary['total_drugs']}")
-        logger.info(f"Avg safety score: {summary['avg_safety_score']:.1f}")
-        print_analysis(results[:15])
+        logger.info(
+            "Scored drugs: %s | Insufficient evidence: %s",
+            summary["scored_drugs"],
+            summary["unscored_drugs"],
+        )
+        average = summary["avg_safety_score"]
+        logger.info("Avg safety score: %s", f"{average:.1f}" if average is not None else "—")
+        print_analysis(results)
 
     return 0
 
@@ -1720,6 +2080,8 @@ def cmd_biomed(args: Any) -> int:
         return cmd_biomed_compare(args)
     if action == "analytics":
         return cmd_biomed_analytics(args)
+    if action == "phenopacket":
+        return cmd_biomed_phenopacket(args)
     logger.error("Unknown biomed action: %s", action)
     return 1
 
@@ -1986,6 +2348,36 @@ def cmd_biomed_sync(args: Any) -> int:
         if report.error:
             logger.error("Sync error: %s", report.error)
     return 0 if report.status is SyncStatus.COMPLETED else 1
+
+
+def cmd_biomed_phenopacket(args: Any) -> int:
+    """Export disease-level phenotype evidence as a JSON bundle."""
+    import json
+
+    from med_research.biomed.phenopacket import PhenopacketExportError, export_bundle
+
+    try:
+        payload = json.loads(Path(args.input).read_text(encoding="utf-8"))
+    except OSError as exc:
+        logger.error("Cannot read input %s: %s", args.input, exc)
+        return 1
+    except json.JSONDecodeError as exc:
+        logger.error("Input %s is not valid JSON: %s", args.input, exc)
+        return 1
+
+    try:
+        text = export_bundle(payload, path=args.output)
+    except PhenopacketExportError as exc:
+        logger.error("Export rejected (%d problem(s)):", len(exc.messages))
+        for message in exc.messages:
+            logger.error("  - %s", message)
+        return 1
+
+    if args.output:
+        logger.info("Wrote phenotype evidence bundle to %s", args.output)
+    else:
+        print(text, end="")
+    return 0
 
 
 def cmd_biomed_compare(args: Any) -> int:

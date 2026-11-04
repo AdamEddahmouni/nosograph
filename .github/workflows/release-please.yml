@@ -1,0 +1,40 @@
+name: Release Please
+
+# Maintains a release pull request from Conventional Commits on master.
+# Merging that (human-approved) release PR is what publishes a release:
+# version bump -> CHANGELOG.md -> git tag -> GitHub Release.
+#
+# This workflow never releases directly from an arbitrary push. See RELEASING.md.
+#
+# Token: falls back to the default GITHUB_TOKEN so the workflow works out of the
+# box. GitHub deliberately does NOT start workflow runs for events raised by
+# GITHUB_TOKEN, so the release PR opened with it will not run `Tests` or
+# `Documentation`. Add a `RELEASE_PLEASE_TOKEN` repository secret (fine-grained
+# PAT or GitHub App installation token with contents + pull-requests write) to
+# make the release PR run the required checks normally.
+
+on:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-please-${{ github.ref }}
+  # Never cancel a run halfway through opening/updating the release PR.
+  cancel-in-progress: false
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Run Release Please
+        uses: googleapis/release-please-action@v4
+        with:
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN || secrets.GITHUB_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json

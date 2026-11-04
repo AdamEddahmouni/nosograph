@@ -6,6 +6,7 @@ They do not re-assert :focus-visible CSS, which is covered statically.
 
 from __future__ import annotations
 
+import json
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -18,7 +19,6 @@ playwright = pytest.importorskip("playwright.sync_api")
 Browser = playwright.Browser
 Page = playwright.Page
 expect = playwright.expect
-sync_playwright = playwright.sync_playwright
 
 PROJECT_ROOT = Path(__file__).parents[1]
 STATIC_DIR = PROJECT_ROOT / "src" / "med_research" / "web" / "static"
@@ -59,17 +59,6 @@ def static_server() -> str:
         server.shutdown()
         thread.join(timeout=5)
         server.server_close()
-
-
-@pytest.fixture(scope="session")
-def browser() -> Browser:
-    try:
-        with sync_playwright() as playwright_context:
-            browser = playwright_context.chromium.launch(headless=True)
-            yield browser
-            browser.close()
-    except Exception as exc:
-        pytest.skip(f"Playwright Chromium is not available: {exc}")
 
 
 @pytest.fixture
@@ -133,6 +122,390 @@ def test_prefers_reduced_motion_shortens_transitions(page: Page, static_server: 
     raw = duration.strip().lower()
     seconds = float(raw[:-2]) / 1000.0 if raw.endswith("ms") else float(raw.rstrip("s"))
     assert seconds < 0.05
+
+
+CORPUS_FIXTURE_ROWS = [
+    {
+        "disease_id": "sle",
+        "name": "Systemic lupus erythematosus",
+        "tier": "L3",
+        "mondo_curie": "MONDO:0007915",
+        "efo_id": "MONDO_0007915",
+        "gene_count": 42,
+        "drug_count": 7,
+        "pathway_count": 3,
+        "symptom_count": 12,
+        "config_gaps": [],
+    },
+    {
+        "disease_id": "ra",
+        "name": "Rheumatoid arthritis",
+        "tier": "L2",
+        "mondo_curie": "MONDO:0008383",
+        "gene_count": 30,
+        "drug_count": 5,
+        "pathway_count": 2,
+        # Missing, not zero: the row must not claim an asserted count of 0.
+        "config_gaps": ["biomarkers"],
+    },
+]
+
+
+def _corpus_status_payload() -> dict:
+    return {
+        "diseases": CORPUS_FIXTURE_ROWS,
+        "total_matching": len(CORPUS_FIXTURE_ROWS),
+        "aggregate": {},
+        "top_config_gaps": [],
+    }
+
+
+def _open_dashboard(page: Page, static_server: str) -> None:
+    """Load the dashboard with the corpus-status fetch answered deterministically.
+
+    The static test server has no API, so the page's own bootstrap fetch would
+    otherwise reject asynchronously and overwrite whatever the test rendered --
+    turning these assertions into a race. Answering it keeps the bootstrap on
+    its success path, which is the path a real deployment takes.
+    """
+    payload = json.dumps(_corpus_status_payload())
+    page.route(
+        "**/api/system/corpus-status*",
+        lambda route: route.fulfill(status=200, content_type="application/json", body=payload),
+    )
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    page.wait_for_function(
+        f"() => document.querySelectorAll('.corpus-table tbody tr').length === "
+        f"{len(CORPUS_FIXTURE_ROWS)}"
+    )
+
+
+def _render_corpus_rows(page: Page) -> None:
+    """Exercise the real corpus render path with a deterministic fixture."""
+    page.evaluate(
+        "rows => renderCorpusTable(rows)",
+        CORPUS_FIXTURE_ROWS,
+    )
+
+
+def test_navigation_aria_current_moves_to_exactly_one_item(page: Page, static_server: str) -> None:
+    """Exactly one nav item is current, before and after navigation."""
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+
+    expect(page.locator(".nav-link[aria-current]")).to_have_count(1)
+    expect(page.locator('.nav-link[data-nav="evidence-workspace"]')).to_have_attribute(
+        "aria-current", "true"
+    )
+
+    page.locator('.nav-link[data-nav="modules"]').click()
+    page.wait_for_function("() => window.location.hash === '#modules'")
+
+    expect(page.locator(".nav-link[aria-current]")).to_have_count(1)
+    expect(page.locator('.nav-link[data-nav="modules"]')).to_have_attribute("aria-current", "true")
+    expect(page.locator('.nav-link[data-nav="evidence-workspace"]')).not_to_have_attribute(
+        "aria-current", "true"
+    )
+    # The styling class and the announced state stay in step.
+    active_class = page.evaluate("() => document.querySelectorAll('.nav-link.active').length")
+    assert active_class == 1
+
+
+def test_navigation_state_survives_reduced_motion(page: Page, static_server: str) -> None:
+    page.emulate_media(reduced_motion="reduce")
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    page.locator('.nav-link[data-nav="corpus-status"]').click()
+    page.wait_for_function("() => window.location.hash === '#corpus-status'")
+    expect(page.locator(".nav-link[aria-current]")).to_have_count(1)
+    expect(page.locator('.nav-link[data-nav="corpus-status"]')).to_have_attribute(
+        "aria-current", "true"
+    )
+
+
+def test_compact_corpus_table_keeps_table_semantics_and_column_labels(
+    page: Page, static_server: str
+) -> None:
+    """The phone presentation keeps <table>/<th scope> and labels each cell."""
+    page.set_viewport_size({"width": 390, "height": 844})
+    _open_dashboard(page, static_server)
+    _render_corpus_rows(page)
+
+    table = page.get_by_role(
+        "table",
+        name="Disease modules with readiness tier",
+    )
+    expect(table).to_be_visible()
+    # Semantics are unchanged: real header cells, still scoped to their column.
+    # Eight columns now include curation state and evidence coverage.
+    expect(table.locator("th[scope='col']")).to_have_count(8)
+    expect(table.locator("tbody tr")).to_have_count(2)
+    expect(table.locator("tbody tr").first.locator("th, td")).to_have_count(8)
+
+    derived = page.evaluate(
+        """() => {
+            const table = document.querySelector('.corpus-table');
+            const headers = Array.from(table.tHead.rows[0].cells)
+                .map(cell => cell.textContent.trim());
+            const labels = Array.from(table.tBodies[0].rows[0].cells)
+                .map(cell => cell.dataset.label || '');
+            return { headers, labels };
+        }"""
+    )
+    assert derived["labels"] == derived["headers"]
+    assert "Tier" in derived["labels"]
+
+    # The compact presentation is active only at phone widths.
+    phone_size = page.locator(".corpus-table th").first.evaluate(
+        "el => getComputedStyle(el).fontSize"
+    )
+    assert phone_size == "0px"
+
+    page.set_viewport_size({"width": 1440, "height": 900})
+    desktop_size = page.locator(".corpus-table th").first.evaluate(
+        "el => getComputedStyle(el).fontSize"
+    )
+    assert desktop_size != "0px"
+
+
+def test_corpus_rows_label_curation_state_without_inventing_it(
+    page: Page, static_server: str
+) -> None:
+    """A generated module and an unmarked module stay distinguishable.
+
+    The fixture carries no ``curation_state``, which is exactly what the corpus
+    report looks like for a module with no generator marker. The row must say
+    "Unclassified" rather than guess "Generated" or "Curated".
+    """
+    _open_dashboard(page, static_server)
+    page.evaluate(
+        "rows => renderCorpusTable(rows)",
+        [
+            {
+                "disease_id": "made_up_module",
+                "name": "Made Up",
+                "tier": "L1",
+                "curation_state": "generated",
+            },
+            {"disease_id": "sle", "name": "Lupus", "tier": "L3", "curation_state": "curated"},
+            {"disease_id": "mystery", "name": "Mystery", "tier": "L0"},
+        ],
+    )
+    rows = page.locator(".corpus-table tbody tr")
+    expect(rows.nth(0)).to_contain_text("Generated")
+    expect(rows.nth(1)).to_contain_text("Curated")
+    expect(rows.nth(2)).to_contain_text("Unclassified")
+    # Each curation badge carries a text label, never colour alone.
+    assert page.evaluate(
+        "() => Array.from(document.querySelectorAll('.corpus-curation-badge')).every(b => b.textContent.trim().length > 0)"
+    )
+
+
+def test_evidence_cell_distinguishes_unmeasured_empty_and_cited(
+    page: Page, static_server: str
+) -> None:
+    """Unmeasured pages must not read as zero coverage."""
+    _open_dashboard(page, static_server)
+    page.evaluate(
+        "rows => renderCorpusTable(rows)",
+        [
+            {"disease_id": "sle", "name": "Lupus", "tier": "L3"},
+            {"disease_id": "other", "name": "Other", "tier": "L1"},
+        ],
+    )
+
+    # Reset to the genuinely unmeasured state: the page's own init load fails
+    # without an API, which is a different (and separately tested) state.
+    page.evaluate(
+        "() => { corpusBrowserState.evidence = new Map(); corpusBrowserState.evidenceStatus = 'idle'; applyCorpusEvidence(); }"
+    )
+
+    # Nothing measured yet: every cell says so instead of showing 0.
+    expect(page.locator("[data-evidence-line]")).to_have_count(2)
+    for index in range(2):
+        expect(page.locator("[data-evidence-line]").nth(index)).to_have_attribute(
+            "data-state", "unmeasured"
+        )
+        expect(page.locator("[data-evidence-line]").nth(index)).to_have_text("Not measured")
+
+    page.evaluate(
+        """() => {
+            corpusBrowserState.evidenceStatus = 'loaded';
+            corpusBrowserState.evidence.set('sle', {
+                disease_id: 'sle',
+                provenance: { evidence_records: 10, present: 4, known_absent: 5, not_recorded: 1 },
+            });
+            applyCorpusEvidence();
+        }"""
+    )
+    measured = page.locator('[data-evidence-for="sle"] [data-evidence-line]')
+    expect(measured).to_have_text("4 / 10 records cite a source")
+    expect(measured).to_have_attribute("data-state", "recorded")
+    # The empty-versus-absent split is exposed, not collapsed into one number.
+    title = measured.get_attribute("title")
+    assert "Explicitly empty: 5" in title
+    assert "field absent: 1" in title
+
+    # A module with no evidence records is not described as a citation gap.
+    page.evaluate(
+        """() => {
+            corpusBrowserState.evidence.set('other', {
+                disease_id: 'other',
+                provenance: { evidence_records: 0, present: 0, known_absent: 0, not_recorded: 0 },
+            });
+            applyCorpusEvidence();
+        }"""
+    )
+    expect(page.locator('[data-evidence-for="other"] [data-evidence-line]')).to_have_text(
+        "No evidence records"
+    )
+
+
+def test_evidence_detail_expands_is_labelled_and_closes_on_escape(
+    page: Page, static_server: str
+) -> None:
+    _open_dashboard(page, static_server)
+    page.evaluate(
+        "rows => renderCorpusTable(rows)",
+        [{"disease_id": "sle", "name": "Lupus", "tier": "L3", "curation_state": "curated"}],
+    )
+    page.evaluate(
+        """() => {
+            corpusBrowserState.evidence.set('sle', {
+                disease_id: 'sle',
+                name: 'Systemic Lupus Erythematosus',
+                curation_state: 'curated',
+                readiness_tier: 'L3',
+                ci_validated: true,
+                categories: {
+                    genetics: { label: 'Gene associations', state: 'present', records: 38, provenance: { present: 36 } },
+                    pharmacology: { label: 'Drug records', state: 'known_absent', records: 0, provenance: { present: 0 } },
+                    relationships: { label: 'Knowledge-graph relationships', state: 'present', records: 122, provenance: 'not_applicable' },
+                },
+                provenance: { evidence_records: 74, present: 70, known_absent: 3, not_recorded: 1, by_scheme: { PMID: 145, NCT: 1 } },
+                validation: { passed: false, failures: [{ field: 'DRUG_SAFETY_RISK', status: 'empty', class: 'MISSING_REQUIRED_DATA' }] },
+                limitations: ['A missing citation is not evidence of absence.'],
+            });
+            applyCorpusEvidence();
+        }"""
+    )
+
+    trigger = page.locator('[data-action="corpus-evidence-detail"]').first
+    expect(trigger).to_have_attribute("aria-expanded", "false")
+    trigger.click()
+
+    expect(trigger).to_have_attribute("aria-expanded", "true")
+    detail = page.locator(".corpus-detail-row")
+    expect(detail).to_have_count(1)
+    expect(detail).to_contain_text("Gene associations")
+    expect(detail).to_contain_text("Explicitly empty")
+    # Relationship provenance is not applicable, never reported as a gap.
+    expect(detail).to_contain_text("Not applicable")
+    expect(detail).to_contain_text("DRUG_SAFETY_RISK")
+    expect(detail).to_contain_text("A missing citation is not evidence of absence.")
+    # Real table semantics inside the detail.
+    expect(detail.locator("th[scope='row']")).to_have_count(3)
+
+    page.keyboard.press("Escape")
+    expect(page.locator(".corpus-detail-row")).to_have_count(0)
+    expect(trigger).to_have_attribute("aria-expanded", "false")
+
+
+def test_missing_counts_are_not_rendered_as_zero(page: Page, static_server: str) -> None:
+    _open_dashboard(page, static_server)
+    _render_corpus_rows(page)
+    second_row = page.locator(".corpus-table tbody tr").nth(1)
+    # symptom_count is absent from the fixture, so the row must say so.
+    expect(second_row).to_contain_text("NOT_RECORDED")
+    expect(second_row).not_to_contain_text("0 recorded")
+    first_row = page.locator(".corpus-table tbody tr").first
+    expect(first_row).to_contain_text("12 recorded")
+
+
+def test_scroll_region_responds_to_end_and_home_keys(page: Page, static_server: str) -> None:
+    page.set_viewport_size({"width": 390, "height": 844})
+    _open_dashboard(page, static_server)
+    _render_corpus_rows(page)
+    region = page.locator("#corpus-table-wrap")
+    expect(region).to_have_attribute("aria-describedby", "corpus-table-hint")
+    region.focus()
+    metrics = page.evaluate(
+        """() => {
+            const wrap = document.getElementById('corpus-table-wrap');
+            return wrap.scrollWidth - wrap.clientWidth;
+        }"""
+    )
+    assert metrics > 0, "fixture table must overflow at phone width"
+
+    page.keyboard.press("End")
+    end_left = page.evaluate("() => document.getElementById('corpus-table-wrap').scrollLeft")
+    assert end_left > 0
+
+    page.keyboard.press("Home")
+    home_position = page.evaluate(
+        """() => {
+            const wrap = document.getElementById('corpus-table-wrap');
+            return { left: wrap.scrollLeft, top: wrap.scrollTop };
+        }"""
+    )
+    assert home_position == {"left": 0, "top": 0}
+
+
+def test_table_states_are_announced_and_distinguishable(page: Page, static_server: str) -> None:
+    _open_dashboard(page, static_server)
+
+    page.evaluate("() => announceCorpusTableState('loading', 'Loading disease corpus data…')")
+    expect(page.locator("#corpus-table-status")).to_have_text("Loading disease corpus data…")
+    expect(page.locator("#corpus-table-alert")).to_be_empty()
+    expect(page.locator("#corpus-table-wrap")).to_have_attribute("aria-busy", "true")
+    expect(page.locator(".corpus-table .table-state--loading")).to_have_count(1)
+
+    page.evaluate("() => announceCorpusTableState('error', 'Failed to load corpus status: boom')")
+    # Errors go to the assertive region only, so the state is never ambiguous.
+    expect(page.locator("#corpus-table-alert")).to_have_text("Failed to load corpus status: boom")
+    expect(page.locator("#corpus-table-status")).to_be_empty()
+    expect(page.locator("#corpus-table-wrap")).to_have_attribute("aria-busy", "false")
+    expect(page.locator(".corpus-table .table-state--error")).to_have_count(1)
+    expect(page.locator(".corpus-table .table-state--loading")).to_have_count(0)
+
+
+def test_empty_corpus_filter_is_a_distinct_empty_state(page: Page, static_server: str) -> None:
+    _open_dashboard(page, static_server)
+    page.evaluate("() => renderCorpusTable([])")
+    expect(page.locator(".corpus-table .table-state--empty")).to_have_count(1)
+    expect(page.locator(".corpus-table .table-state--error")).to_have_count(0)
+
+
+def test_focus_returns_to_submit_after_workspace_state_change(
+    page: Page, static_server: str
+) -> None:
+    """Disabling the focused submit button must not strand focus on <body>."""
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+    page.evaluate("() => document.getElementById('workspace-submit').focus()")
+    assert page.evaluate("() => document.activeElement.id") == "workspace-submit"
+
+    page.evaluate("() => setWorkspaceSubmissionState('running')")
+    assert page.evaluate("() => document.activeElement.id") != "workspace-submit"
+    expect(page.locator("#workspace-submit")).to_have_attribute("aria-busy", "true")
+
+    page.evaluate("() => setWorkspaceSubmissionState('success')")
+    page.wait_for_function(
+        "() => document.activeElement && document.activeElement.id === 'workspace-submit'"
+    )
+    expect(page.locator("#workspace-submit-status")).to_contain_text("dossier ready")
+
+
+def test_errors_are_announced_and_not_only_colour_coded(page: Page, static_server: str) -> None:
+    page.goto(f"{static_server}/index.html", wait_until="domcontentloaded")
+
+    page.evaluate("() => showToast('Corpus reload failed', 'error')")
+    error_toast = page.locator("#toast-container .toast.error")
+    expect(error_toast).to_have_count(1)
+    expect(error_toast).to_have_attribute("role", "alert")
+
+    page.evaluate("() => showToast('Disease switched', 'success')")
+    success_toast = page.locator("#toast-container .toast.success")
+    expect(success_toast).to_have_count(1)
+    expect(success_toast).to_have_attribute("role", "status")
+    expect(error_toast).to_have_attribute("role", "alert")
 
 
 def _max_seconds(raw: str) -> float:

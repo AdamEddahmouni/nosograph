@@ -1,6 +1,7 @@
 """FastAPI application entry point for the NosoGraph API."""
 
 import logging
+import os
 import sys
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
@@ -26,8 +27,12 @@ from med_research.web.config import (
     DEBUG,
     HOST,
     OPENAPI_ENABLED,
-    PORT,
+    parse_demo_snapshot_manifest,
+    parse_demo_snapshot_path,
+    resolve_port,
+    validate_runtime_config,
 )
+from med_research.web.demo_mode import is_demo_mode
 from med_research.web.error_handlers import register_error_handlers
 from med_research.web.middleware import (
     AuthMiddleware,
@@ -42,6 +47,12 @@ REPO_ROOT = Path(__file__).parent.parent.parent.parent
 PIPELINE_DIR = Path(__file__).parent.parent / "pipeline"
 logger = logging.getLogger(__name__)
 
+# A running process resolves its configuration once, at import. Passing this
+# snapshot to startup validation keeps the verdict tied to the values the app was
+# constructed with, instead of whatever a later ``os.environ`` mutation (or a
+# module reload in tests) happens to leave behind.
+_STARTUP_ENV: dict[str, str] = dict(os.environ)
+
 
 # ── Lifespan (startup / shutdown) ─────────────────────────────────────────
 
@@ -50,22 +61,53 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     """Pre-load the knowledge graph on startup for faster first request."""
     setup_logging(level=logging.DEBUG if DEBUG else logging.INFO)
-    import os
 
-    if not DEBUG and not os.environ.get("API_KEY"):
+    if os.environ.get("DEMO_REQUIRE_MODE", "").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }:
+        if not is_demo_mode():
+            raise RuntimeError("Public demo image requires DEMO_MODE=true (read-only).")
+        if DEBUG:
+            raise RuntimeError("Public demo image requires DEBUG=false.")
+
+    problems = validate_runtime_config(_STARTUP_ENV)
+    if problems:
+        raise RuntimeError("Invalid NosoGraph configuration:\n  - " + "\n  - ".join(problems))
+
+    if not DEBUG and not os.environ.get("API_KEY") and not is_demo_mode():
         raise RuntimeError(
             "API_KEY must be set when DEBUG=false. "
             "Set API_KEY in production deployments or enable DEBUG=true for local development."
         )
-    logger.info("Pre-loading knowledge graph...")
-    from med_research.web.dependencies import get_knowledge_graph
 
-    G = get_knowledge_graph()
-    logger.info(
-        "Knowledge graph loaded: %s nodes, %s edges",
-        G.number_of_nodes(),
-        G.number_of_edges(),
-    )
+    if is_demo_mode():
+        # Refuse to boot on a missing or inconsistent snapshot: the demo has no
+        # fallback dataset, and a half-valid snapshot would silently change the
+        # numbers a visitor sees.
+        from med_research.web.demo_snapshot import validate_demo_snapshot
+
+        snapshot = validate_demo_snapshot(
+            parse_demo_snapshot_path(),
+            parse_demo_snapshot_manifest(),
+        )
+        logger.info(
+            "Demo snapshot validated: %s (%s)",
+            snapshot.database_path,
+            snapshot.manifest["snapshot_version"],
+        )
+    else:
+        logger.info("Pre-loading knowledge graph...")
+        from med_research.web.dependencies import get_knowledge_graph
+
+        G = get_knowledge_graph()
+        logger.info(
+            "Knowledge graph loaded: %s nodes, %s edges",
+            G.number_of_nodes(),
+            G.number_of_edges(),
+        )
 
     yield
 
@@ -154,7 +196,7 @@ if __name__ == "__main__":
     uvicorn.run(
         "med_research.web.main:app",
         host=HOST,
-        port=PORT,
+        port=resolve_port(),
         reload=DEBUG,
         log_level="info",
     )

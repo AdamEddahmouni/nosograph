@@ -17,8 +17,8 @@ NosoGraph is open-source research software for connecting biomedical knowledge, 
 | On-disk module directories | 10,406 | full-corpus (includes 2 blocked slugs) |
 | Harvest catalog entries | 10,391 | full-corpus (`disease_registry.json`) |
 | Strict L2-validated modules | 88 | **n=500 sample** |
-| L3 expression-curated (sample) | 2 | **n=500 sample** (`ad`, `acute_myeloid_leukemia`) |
-| L3 consensus membership | 23 | full-corpus (`CURATED_CONSENSUS_DISEASES`) |
+| L3 curated literature consensus (sample) | 2 | **n=500 sample** (`ad`, `acute_myeloid_leukemia`); hand-curated gene list, study accessions not recorded |
+| L3 consensus membership | 23 | full-corpus (`CURATED_CONSENSUS_DISEASES`); curated literature consensus |
 | Reference modules | 6 | full-corpus |
 | CI-validated modules | 8 | full-corpus; hosted CI `--strict` |
 | Registered pipeline adapters | 25 | full-corpus (`list_modules()`) |

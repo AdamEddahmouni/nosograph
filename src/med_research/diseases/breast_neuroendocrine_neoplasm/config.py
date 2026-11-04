@@ -67,14 +67,16 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
-        "anastrozole",
-        "leflunomide",
-        "palbociclib",
         "pertuzumab",
-        "remifentanil",
         "trastuzumab",
     ],
     "low_risk": [],
+    "undetermined_risk": [
+        "anastrozole",
+        "leflunomide",
+        "palbociclib",
+        "remifentanil",
+    ],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

@@ -77,6 +77,7 @@ class AnalyticsStatsView(BaseModel):
     total_snapshots: int
     entity_type_distribution: dict[str, int] = Field(default_factory=dict)
     predicate_distribution: dict[str, int] = Field(default_factory=dict)
+    store_state: BiomedicalStoreStateView | None = None
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
 
 
@@ -100,7 +101,9 @@ class AnalyticsSharedMechanismView(BaseModel):
     condition_b: str
     shared_pathways: list[str]
     shared_genes: list[str]
-    jaccard_similarity: float
+    # ``None`` means "not computed" (store uninitialized); 0.0 is a real result.
+    jaccard_similarity: float | None
+    store_state: BiomedicalStoreStateView | None = None
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
 
 
@@ -119,6 +122,7 @@ class AnalyticsSubgraphView(BaseModel):
     root_curie: str
     edges: list[AnalyticsSubgraphEdgeView]
     edge_count: int
+    store_state: BiomedicalStoreStateView | None = None
     disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
 
 
@@ -423,6 +427,15 @@ class NosoGraphCompareV2Request(BaseModel):
     dimensions: list[str] | None = None
 
 
+class NosoGraphComparePreviewRequest(BaseModel):
+    """Request body for the non-persisting Compare preview used by the public demo."""
+
+    model_config = ConfigDict(frozen=True)
+
+    condition_curies: list[str]
+    dimensions: list[str] | None = None
+
+
 class CompareWarningView(BaseModel):
     model_config = ConfigDict(frozen=True)
 
@@ -479,6 +492,27 @@ class NosoGraphCompareV2ResultView(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     run_id: UUID
+    result_schema_version: str
+    status: ComparisonStatusLiteral
+    condition_curies: list[str] = Field(default_factory=list)
+    condition_labels: dict[str, str] = Field(default_factory=dict)
+    dimensions: list[str] = Field(default_factory=list)
+    dimension_results: list[DimensionComparisonView] = Field(default_factory=list)
+    curation_warnings: list[CompareWarningView] = Field(default_factory=list)
+    snapshot_ids: list[UUID] = Field(default_factory=list)
+    claim_set_fingerprint: str = ""
+    algorithm_id: str = "nosograph-compare-v2"
+    algorithm_version: str = "2.0.0"
+    disclaimer: ResearchDisclaimer = Field(default_factory=ResearchDisclaimer)
+
+
+class NosoGraphComparePreviewResultView(BaseModel):
+    """Preview response shape: identical to the V2 view but never carries a run id."""
+
+    model_config = ConfigDict(frozen=True)
+
+    run_id: UUID | None = None
+    preview: bool = True
     result_schema_version: str
     status: ComparisonStatusLiteral
     condition_curies: list[str] = Field(default_factory=list)

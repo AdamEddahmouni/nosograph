@@ -15,13 +15,19 @@ This page describes repository coverage metadata, not clinical coverage or scien
 | On-disk module directories | 10,406 | Directories with `__init__.py` and `config.py`, **including** two blocked GO-like slugs | Filesystem | same script | full-corpus |
 | Harvest catalog entries | 10,391 | Unique `id` values in `disease_registry.json` | `src/med_research/diseases/disease_registry.json` | `python scripts/reconcile_harvest_registry.py` then refresh | full-corpus |
 | Strict L2-validated | 88 | Strict-validation pass in an **n=500 alphabetical** `list_all()` sample | v0.2.1 sampled status report | `nosograph disease corpus-status --limit 500` (sample) or full-corpus `--tier L2 --strict` (expensive, not the public figure) | sample |
-| L3 expression-curated (public) | 2 | Consensus members that fall inside that same n=500 window (`ad`, `acute_myeloid_leukemia`) | same sample | same | sample |
-| L3 consensus membership | 23 | `CURATED_CONSENSUS_DISEASES`; `compute_tier()` assigns L3 to every member | `pipeline/gene_expression/geo.py` | refresh script (set size) | full-corpus |
+| L3 curated literature consensus (public) | 2 | Consensus members that fall inside that same n=500 window (`ad`, `acute_myeloid_leukemia`) | same sample | same | sample |
+| L3 consensus membership | 23 | `CURATED_CONSENSUS_DISEASES`; `compute_tier()` assigns L3 to every member. Hand-curated literature consensus, not a computed expression analysis | `pipeline/gene_expression/geo.py` | refresh script (set size) | full-corpus |
 | Reference | 6 | `REFERENCE_DISEASES` | `diseases/identifiers.py` | code constant | full-corpus |
 | CI-validated | 8 | `CI_VALIDATED_DISEASES`; hosted CI runs `disease validate --strict` on each | `identifiers.py` + `.github/workflows/test.yml` | code constant | full-corpus |
 | Registered pipeline adapters | 25 | `pipeline.registry.list_modules()` | adapter catalog | refresh script | full-corpus |
 
 The historical public figure **10,407** was discoverable (10,404) plus the three-id blocklist (`positive_regulation_of_ovulation`, `sensory_perception_of_sound`, and the `zz_scaffold_test` fixture that is not a committed directory). It is not a live counter.
+
+Evidence density is a separate gate from structural readiness. The checked-out
+reference and CI-validated sets currently exceed the 80% record-level target:
+100% (167/167) and 89.0% (439/493) of their gene, drug, and pathway records
+carry a resolvable identifier. Run `nosograph disease evidence-coverage --tier
+reference --require-evidence` for live counts; see [evidence coverage](evidence-coverage.md).
 
 ## Harvest catalog vs discovery
 
@@ -38,6 +44,7 @@ python scripts/reconcile_harvest_registry.py --check   # CI drift gate
 
 - **L2=88** is an n=500 sample. It is not “88 of 88 of the whole registry.”
 - **L3=2** is that sample intersecting consensus membership. The consensus set is **23**. `compute_tier()` short-circuits consensus members to L3; it does **not** require L2 ∩ consensus.
+- **L3 is a curated literature consensus, not a computed differential-expression analysis.** Per-gene `source`, `effect_direction`, and `effect_size` are recorded; `study_accessions` is explicitly empty (`study_accessions_not_recorded`) because no study-level accessions were captured.
 - Full-corpus L2-strict is **not** the public metric. Regenerating it is expensive (`nosograph disease validate-batch --tier L2 --strict`).
 
 ## Pipelines
@@ -52,6 +59,7 @@ python scripts/check_public_metadata.py
 python scripts/check_registry_harvest.py
 nosograph disease corpus-status
 nosograph disease validate-batch --tier ci_validated --strict
+nosograph disease evidence-coverage --tier reference --require-evidence
 ```
 
 Do not use `disease validate --all --strict` as a green merge gate: the 10k scaffolds are expected to fail. Hosted CI validates the eight CI-validated ids plus the reference batch.

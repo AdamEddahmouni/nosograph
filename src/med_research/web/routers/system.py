@@ -13,7 +13,14 @@ from med_research import __version__
 from med_research.diseases.base import Disease
 from med_research.diseases.identifiers import CI_VALIDATED_DISEASES
 from med_research.pipeline.gateway import pipeline_gateway
-from med_research.web.config import CELERY_BROKER_URL, WORKSPACE_DB_PATH
+from med_research.web.config import (
+    CELERY_BROKER_URL,
+    WORKSPACE_DB_PATH,
+    parse_demo_snapshot_manifest,
+    parse_demo_snapshot_path,
+)
+from med_research.web.demo_mode import is_demo_mode
+from med_research.web.demo_snapshot import DemoSnapshotValidationError, validate_demo_snapshot
 from med_research.web.dependencies import (
     get_candidates,
     get_kg_drugs,
@@ -24,6 +31,7 @@ from med_research.web.dependencies import (
 from med_research.web.disease_params import resolve_optional_query_disease
 from med_research.web.models import (
     CoverageSummary,
+    DemoModeMetadata,
     DiseaseInfo,
     DiseasesResponse,
     HealthResponse,
@@ -95,9 +103,77 @@ def _check_knowledge_graph() -> dict[str, str]:
         return {"status": "error", "detail": str(exc)}
 
 
+@router.get("/api/demo_mode", response_model=DemoModeMetadata)
+async def demo_mode_metadata() -> DemoModeMetadata:
+    """Public metadata describing the current demo boundary.
+
+    This endpoint is read-only and intentionally does not expose operator secrets,
+    feature flags, or deployment internals.
+    """
+    import os as _os
+
+    demo = is_demo_mode()
+    snapshot_path = parse_demo_snapshot_path()
+    return DemoModeMetadata(
+        demo_mode=demo,
+        snapshot_path=(_os.environ.get("DEMO_SNAPSHOT_PATH", str(snapshot_path)) if demo else ""),
+        snapshot_version=_os.environ.get("DEMO_SNAPSHOT_VERSION", "") if demo else "",
+    )
+
+
 @router.get("/api/ready", response_model=ReadyResponse)
 async def ready() -> JSONResponse | dict[str, Any]:
-    """Readiness probe — verifies Redis, Celery, workspace DB, and KG preload."""
+    """Readiness probe — verifies Redis, Celery, workspace DB, and KG preload.
+
+    When the process is running in demo mode, the response also carries a small
+    ``demo`` block with snapshot lineage and the supported demo disease IDs, and
+    skips the self-hosted dependency probes the demo image does not ship.
+    """
+    import os as _os
+
+    if is_demo_mode():
+        database_path = parse_demo_snapshot_path()
+        manifest_path = parse_demo_snapshot_manifest()
+        try:
+            snapshot = validate_demo_snapshot(database_path, manifest_path)
+            manifest = snapshot.manifest
+            components = {
+                "snapshot": {"status": "ok"},
+            }
+            demo_fields: dict[str, Any] = {
+                "demo_mode": True,
+                "snapshot_version": manifest["snapshot_version"],
+                "dataset_date": manifest.get("generated_at", ""),
+                "supported_disease_ids": manifest.get("supported_disease_ids", []),
+            }
+            return JSONResponse(
+                status_code=200,
+                content={
+                    "status": "ok",
+                    "version": __version__,
+                    "timestamp": datetime.now().isoformat(),
+                    "components": components,
+                    "demo": demo_fields,
+                },
+            )
+        except DemoSnapshotValidationError as exc:
+            logger.warning("Demo snapshot readiness check failed: %s", exc)
+            return JSONResponse(
+                status_code=503,
+                content={
+                    "status": "error",
+                    "version": __version__,
+                    "timestamp": datetime.now().isoformat(),
+                    "components": {
+                        "snapshot": {"status": "error", "detail": "Demo snapshot validation failed"}
+                    },
+                    "demo": {
+                        "demo_mode": True,
+                        "snapshot_version": _os.environ.get("DEMO_SNAPSHOT_VERSION", ""),
+                    },
+                },
+            )
+
     components = {
         "redis": _check_redis(),
         "celery": _check_celery(),
@@ -117,6 +193,9 @@ async def ready() -> JSONResponse | dict[str, Any]:
         "components": components,
     }
     status_code = 200 if overall == "ok" else 503
+    # Always report demo state so clients can branch on one field.
+    payload["demo"] = {"demo_mode": False}
+
     return JSONResponse(status_code=status_code, content=payload)
 
 
@@ -309,6 +388,9 @@ async def disease_registry() -> DiseasesResponse:
 async def corpus_status(
     tier: str | None = Query(None, description="Optional tier filter (L3, L2, L1, L0, blocked)"),
     gap: str | None = Query(None, description="Optional config gap filter"),
+    curation: str | None = Query(
+        None, description="Optional curation-state filter (curated, generated, unknown)"
+    ),
     search: str | None = Query(None, description="Search by disease ID or name"),
     limit: int = Query(50, ge=1, le=500),
     offset: int = Query(0, ge=0),
@@ -325,10 +407,13 @@ async def corpus_status(
         report = build_corpus_status(limit=50, include_symptom_source=False)
     aggregate = report.get("aggregate", {})
     gap_counts: dict[str, int] = {}
+    curation_counts: dict[str, int] = {"curated": 0, "generated": 0, "unknown": 0}
     per_disease = report.get("per_disease", [])
     for row in per_disease:
         for g in row.get("config_gaps", []):
             gap_counts[g] = gap_counts.get(g, 0) + 1
+        state = str(row.get("curation_state") or "unknown")
+        curation_counts[state] = curation_counts.get(state, 0) + 1
     top_gaps = sorted(gap_counts.items(), key=lambda item: item[1], reverse=True)[:10]
 
     filtered = per_disease
@@ -338,6 +423,13 @@ async def corpus_status(
     if gap:
         target_gap = gap.strip()
         filtered = [r for r in filtered if target_gap in r.get("config_gaps", [])]
+    if curation:
+        target_curation = curation.strip().lower()
+        filtered = [
+            r
+            for r in filtered
+            if str(r.get("curation_state") or "unknown").lower() == target_curation
+        ]
     if search:
         s = search.strip().lower()
         filtered = [
@@ -370,12 +462,81 @@ async def corpus_status(
 
     return {
         "aggregate": aggregate,
+        "curation_counts": dict(sorted(curation_counts.items())),
         "top_config_gaps": [{"field": k, "count": v} for k, v in top_gaps],
         "report_path": str(DEFAULT_STATUS_PATH),
         "total_matching": total_matching,
         "limit": limit,
         "offset": offset,
         "diseases": paginated,
+    }
+
+
+@router.get("/api/system/evidence-coverage")
+async def evidence_coverage(
+    disease: Annotated[
+        list[str] | None, Query(description="Disease id to measure directly (repeatable)")
+    ] = None,
+    tier: Annotated[
+        str | None, Query(description="Optional tier filter over the corpus sample")
+    ] = None,
+    search: Annotated[str | None, Query(description="Search by disease ID or name")] = None,
+    limit: Annotated[int, Query(ge=1, le=50)] = 25,
+    offset: Annotated[int, Query(ge=0)] = 0,
+) -> dict[str, Any]:
+    """Measure recorded evidence coverage for the diseases currently on screen.
+
+    The corpus table is backed by a bounded sample report, so this endpoint never
+    claims a full-corpus measurement. Coverage is computed only for the requested
+    page (a few milliseconds per module) and is always fresh; a row the caller did
+    not ask for is reported as unmeasured rather than as zero coverage.
+    """
+    from med_research.diseases.corpus_status import DEFAULT_STATUS_PATH, load_status_report
+    from med_research.diseases.evidence_coverage import build_evidence_coverage_report
+
+    if disease:
+        selected = [item for item in dict.fromkeys(disease) if item]
+        report = build_evidence_coverage_report(disease_ids=selected)
+        return {
+            "report": report,
+            "sample": {
+                "source": "explicit",
+                "total_matching": len(selected),
+                "limit": len(selected),
+                "offset": 0,
+                "population_modules": report["scope"]["population_modules"],
+            },
+        }
+
+    cached = load_status_report(DEFAULT_STATUS_PATH)
+    per_disease = cached.get("per_disease", []) if cached else []
+    rows = [row for row in per_disease if isinstance(row, dict) and row.get("disease_id")]
+    if tier:
+        target = tier.strip().lower()
+        rows = [row for row in rows if str(row.get("tier", "")).lower() == target]
+    if search:
+        needle = search.strip().lower()
+        rows = [
+            row
+            for row in rows
+            if needle in str(row.get("disease_id", "")).lower()
+            or needle in str(row.get("name", "")).lower()
+        ]
+    rows.sort(key=lambda row: str(row.get("disease_id", "")))
+    page = rows[offset : offset + limit]
+    selected = [str(row["disease_id"]) for row in page]
+    report = build_evidence_coverage_report(disease_ids=selected)
+    return {
+        "report": report,
+        "sample": {
+            "source": "data/reports/disease_batch_status.json",
+            "total_matching": len(rows),
+            "sample_rows": len(per_disease),
+            "measured": len(selected),
+            "limit": limit,
+            "offset": offset,
+            "population_modules": report["scope"]["population_modules"],
+        },
     }
 
 

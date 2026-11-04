@@ -119,7 +119,7 @@ SCREENING_PROFILE = {
         "tyrosine kinase",
     ],
     "reference_drug_ids": [
-        "CHEMBL2105741",
+        "CHEMBL2103875",
         "CHEMBL2146883",
         "CHEMBL3187723",
         "CHEMBL2108738",

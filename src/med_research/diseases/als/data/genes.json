@@ -12,7 +12,24 @@
       "disease_evidence": "First identified genetic cause of familial ALS.",
       "gwas_pvalue": 1e-80,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:38967083",
+        "DOI:10.1097/WCO.0000000000001294",
+        "CLINVAR:1343332"
+      ],
+      "variants": [
+        {
+          "id": "SOD1-I150M",
+          "name": "Ile150Met",
+          "clinvar_id": "1343332",
+          "hgvs": "NM_000454.5:c.450T>G (p.Ile150Met)",
+          "clinical_significance": "Likely pathogenic",
+          "references": [
+            "CLINVAR:1343332"
+          ]
+        }
+      ]
     },
     {
       "id": "C9orf72",
@@ -24,7 +41,10 @@
       "disease_evidence": "Most frequent genetic cause of ALS and frontotemporal dementia.",
       "gwas_pvalue": 1e-120,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:32526057"
+      ]
     },
     {
       "id": "TARDBP",
@@ -36,7 +56,10 @@
       "disease_evidence": "Major component of ubiquitinated protein inclusions in ALS.",
       "gwas_pvalue": 1e-90,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:38967083"
+      ]
     },
     {
       "id": "FUS",
@@ -48,7 +71,10 @@
       "disease_evidence": "RNA-binding protein implicated in juvenile and familial ALS.",
       "gwas_pvalue": 1e-60,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:38967083"
+      ]
     }
   ]
 }

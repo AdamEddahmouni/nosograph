@@ -1,17 +1,152 @@
 """Web API configuration — loaded from environment with sensible defaults."""
 
 import os
+from collections.abc import Mapping
 from pathlib import Path
+from typing import TYPE_CHECKING, Any
 
 from med_research import __version__
 
 PROJECT_ROOT = Path(__file__).parent.parent
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 
+# Freeze the environment this module resolved at import time. Startup validation
+# must describe the configuration the running process actually loaded; re-reading
+# ``os.environ`` would let a later mutation change the verdict for a process that
+# already resolved (and is serving with) the original values.
+_STARTUP_ENV: dict[str, str] = dict(os.environ)
+
 # ── Server ────────────────────────────────────────────────────────────────
 HOST = os.environ.get("HOST", "0.0.0.0")  # nosec B104 - bind address is env-overridable
-PORT = int(os.environ.get("PORT", "8000"))
+
+# Hosting platforms (Heroku, Railway, Fly, Cloud Run, App Runner) inject PORT.
+# The default is documented here once so the Dockerfiles, compose files, and
+# probes all agree on it.
+DEFAULT_PORT = 8000
+PORT_MIN = 1
+PORT_MAX = 65535
+
+_PORT_RESOLUTION_ERROR: str | None = None
+
+
+def _env_source(env: Mapping[str, str] | None) -> Mapping[str, str]:
+    return _STARTUP_ENV if env is None else env
+
+
+def _is_truthy(raw: str | None) -> bool:
+    return (raw or "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def resolve_port(env: Mapping[str, str] | None = None) -> int:
+    """Resolve the listen port from ``PORT``, defaulting to ``DEFAULT_PORT``.
+
+    Raises ``ValueError`` for a non-integer or out-of-range value instead of
+    silently binding a different port than the platform asked for.
+    """
+    raw = _env_source(env).get("PORT")
+    if raw is None or not str(raw).strip():
+        return DEFAULT_PORT
+    text = str(raw).strip()
+    try:
+        port = int(text)
+    except ValueError:
+        raise ValueError(
+            f"PORT must be an integer between {PORT_MIN} and {PORT_MAX}; got {text!r}"
+        ) from None
+    if not PORT_MIN <= port <= PORT_MAX:
+        raise ValueError(f"PORT must be an integer between {PORT_MIN} and {PORT_MAX}; got {port}")
+    return port
+
+
+def _initial_port() -> int:
+    """Best-effort module-level PORT for import compatibility (cli.py imports it).
+
+    An invalid ``PORT`` is never hidden: it is recorded here, reported by
+    ``validate_runtime_config()``, and re-raised by ``RUNTIME_PORT`` and
+    ``resolve_port()``. Startup fails before serving requests.
+    """
+    global _PORT_RESOLUTION_ERROR
+    try:
+        return resolve_port()
+    except ValueError as exc:
+        _PORT_RESOLUTION_ERROR = str(exc)
+        return DEFAULT_PORT
+
+
+PORT = _initial_port()
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
+
+
+if TYPE_CHECKING:
+    # Populated at runtime by the module-level ``__getattr__`` below so an
+    # invalid PORT raises ValueError on access instead of at import time.
+    RUNTIME_PORT: int
+
+
+def __getattr__(name: str) -> Any:
+    if name == "RUNTIME_PORT":
+        return resolve_port()
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
+
+def validate_runtime_config(env: Mapping[str, str] | None = None) -> list[str]:
+    """Return actionable runtime-configuration problems (empty list = valid).
+
+    Checks are deliberately aggregated so one startup error lists every
+    problem, rather than stopping at the first. ``env`` defaults to the
+    environment resolved when this module was imported; passing a mapping keeps
+    the check pure and testable.
+    """
+    source = _env_source(env)
+    problems: list[str] = []
+
+    try:
+        resolve_port(source)
+    except ValueError as exc:
+        problems.append(str(exc))
+    if env is None and _PORT_RESOLUTION_ERROR and _PORT_RESOLUTION_ERROR not in problems:
+        problems.append(_PORT_RESOLUTION_ERROR)
+
+    if env is None:
+        # Live process: honour the module values imported from os.environ.
+        debug, demo = DEBUG, DEMO_MODE
+    else:
+        # Pure check: an explicit mapping is the whole environment.
+        debug = _is_truthy(source.get("DEBUG"))
+        demo = _is_truthy(source.get("DEMO_MODE"))
+
+    if not debug and not demo and not (source.get("API_KEY") or "").strip():
+        problems.append(
+            "API_KEY must be set when DEBUG=false. Set API_KEY in production deployments "
+            "or enable DEBUG=true for local development."
+        )
+
+    cors_raw = source.get("CORS_ORIGINS")
+    if not debug:
+        # Unset means "use the documented default"; an explicitly empty value is
+        # a deployment mistake and is rejected.
+        cors_values = CORS_ORIGINS if cors_raw is None else cors_raw.split(",")
+        origins = [origin.strip() for origin in cors_values if origin.strip()]
+        if not origins:
+            problems.append(
+                "CORS_ORIGINS must list at least one explicit origin when DEBUG=false "
+                "(an empty value disables browser clients)."
+            )
+        elif "*" in origins:
+            problems.append(
+                "CORS_ORIGINS must not contain '*' when DEBUG=false; list the exact origins "
+                "that may call the API."
+            )
+
+    if demo:
+        for flag in ("DEMO_ALLOW_WRITES", "ALLOW_WRITES", "DEMO_WRITE_ENABLED"):
+            if _is_truthy(source.get(flag)):
+                problems.append(
+                    f"DEMO_MODE is read-only; {flag} must be false or unset "
+                    "(refusing write-enabled demo configuration)."
+                )
+
+    return problems
 
 
 def parse_demo_mode(value: str | None = None) -> bool:
@@ -25,6 +160,40 @@ def parse_demo_mode(value: str | None = None) -> bool:
 
 
 DEMO_MODE = parse_demo_mode()
+
+
+# Public snapshot-backed demo. Keep false for normal self-hosting.
+DEMO_SNAPSHOT_VERSION = os.environ.get("DEMO_SNAPSHOT_VERSION", "")
+DEFAULT_DEMO_SNAPSHOT_PATH = Path("/app/demo-data/biomedical.sqlite3")
+
+
+def parse_demo_snapshot_path(value: str | None = None) -> Path:
+    """Resolve DEMO_SNAPSHOT_PATH from an explicit value or the environment."""
+    if value is None:
+        value = os.environ.get("DEMO_SNAPSHOT_PATH", str(DEFAULT_DEMO_SNAPSHOT_PATH))
+    return Path(value)
+
+
+DEMO_SNAPSHOT_PATH = parse_demo_snapshot_path()
+DEMO_SNAPSHOT_MANIFEST = os.environ.get(
+    "DEMO_SNAPSHOT_MANIFEST",
+    str(DEMO_SNAPSHOT_PATH.with_name(DEMO_SNAPSHOT_PATH.stem + ".manifest.json")),
+)
+
+
+def parse_demo_snapshot_manifest(value: str | None = None) -> Path:
+    """Resolve the manifest path, keeping it adjacent to the configured database by default."""
+    if value is None:
+        value = os.environ.get("DEMO_SNAPSHOT_MANIFEST")
+        if value is None:
+            # Keep the manifest adjacent to the configured database. Deriving
+            # the name from the database stem (not a fixed "biomedical") means
+            # a custom DEMO_SNAPSHOT_PATH still finds its own manifest.
+            database_path = parse_demo_snapshot_path()
+            value = str(database_path.with_name(f"{database_path.stem}.manifest.json"))
+    return Path(value)
+
+
 OPENAPI_ENABLED = (
     os.environ.get(
         "OPENAPI_ENABLED",

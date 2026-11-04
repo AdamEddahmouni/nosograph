@@ -1,8 +1,13 @@
 """
 Expression Signature Manager
 
-Manages both hardcoded curated signatures and GEO-derived dynamic signatures.
-Provides a unified interface for signature retrieval with fallback logic.
+Manages curated literature-consensus signatures and GEO-derived dynamic
+signatures. Provides a unified interface for signature retrieval with fallback
+logic.
+
+Curated signatures are hand-curated gene lists; they are not computed
+meta-analyses and carry no per-gene study accessions. Callers should read the
+``provenance`` block rather than treating ``fold_change`` as a measured effect.
 """
 
 import logging
@@ -61,18 +66,22 @@ def _get_curated_signature(disease: str = "sle") -> dict:
     """Return the hand-curated consensus signature for a disease."""
     from med_research.pipeline.gene_expression.geo import (
         CURATED_CONSENSUS_DISEASES,
+        CURATED_LITERATURE_CONSENSUS,
         build_consensus_signature,
     )
 
     disease_key = disease.strip().lower()
     if disease_key not in CURATED_CONSENSUS_DISEASES:
         return {
-            "source": "curated_consensus",
+            "source": CURATED_LITERATURE_CONSENSUS,
+            "evidence_basis": "not_curated",
             "num_studies_used": 0,
             "disease": disease_key,
             "coverage": "not_curated",
             "upregulated": {},
             "downregulated": {},
+            "study_accessions": [],
+            "provenance_status": "study_accessions_not_recorded",
         }
 
     sig = build_consensus_signature(
@@ -80,8 +89,13 @@ def _get_curated_signature(disease: str = "sle") -> dict:
         disease=disease_key,
         min_occurrence=1,
     )
-    sig["source"] = "curated_consensus"
+    sig["source"] = CURATED_LITERATURE_CONSENSUS
+    sig["evidence_basis"] = "expert_curated_literature_consensus"
     sig["num_studies_used"] = 0
+    # The sentinel accession is not a study; do not present it as one.
+    sig["study_ids"] = []
+    sig["requested_study_accessions"] = []
+    sig["provenance"]["study_accessions"] = []
     return sig
 
 

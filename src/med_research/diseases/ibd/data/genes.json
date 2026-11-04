@@ -9,9 +9,33 @@
       "odds_ratio": 3.5,
       "references": [
         "PMID:11385576",
-        "PMID:11385577"
+        "PMID:11385577",
+        "CLINVAR:4691",
+        "CLINVAR:4693"
       ],
-      "category": "Pattern Recognition / Epithelial Barrier"
+      "category": "Pattern Recognition / Epithelial Barrier",
+      "variants": [
+        {
+          "id": "NOD2-L1007fs",
+          "name": "Leu1007fs",
+          "clinvar_id": "4691",
+          "hgvs": "NM_022162.3:c.3019dup (p.Leu1007fs)",
+          "clinical_significance": "Conflicting classifications of pathogenicity; association",
+          "references": [
+            "CLINVAR:4691"
+          ]
+        },
+        {
+          "id": "NOD2-R675W",
+          "name": "Arg675Trp",
+          "clinvar_id": "4693",
+          "hgvs": "NM_001370466.1:c.2023C>T (p.Arg675Trp)",
+          "clinical_significance": "Conflicting classifications of pathogenicity; association",
+          "references": [
+            "CLINVAR:4693"
+          ]
+        }
+      ]
     },
     {
       "id": "ATG16L1",

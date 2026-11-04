@@ -362,6 +362,26 @@ CURATED_CONSENSUS_DISEASES = frozenset(
     }
 )
 
+#: Provenance vocabulary for the hand-curated consensus gene lists.
+#:
+#: These lists are expert-curated from the literature. They are *not* a
+#: reproducible differential-expression meta-analysis: no study accession,
+#: per-study statistic, or sample size is recorded alongside the genes. The
+#: constants below make that limitation machine-readable instead of leaving a
+#: bare fold-change number that a reader could mistake for a computed result.
+CURATED_LITERATURE_CONSENSUS = "curated_literature_consensus"
+CONSENSUS_EFFECT_SIZE_METRIC = "fold_change"
+CONSENSUS_STUDY_ACCESSIONS_RECORDED = False
+CONSENSUS_LIMITATIONS: tuple[str, ...] = (
+    "Gene membership, direction, and fold-change values are expert-curated from "
+    "the literature; they are not computed from the GEO studies passed to "
+    "build_consensus_signature.",
+    "Per-study accessions, effect sizes, and statistics are not recorded for "
+    "these entries, so the consensus is not independently reproducible from "
+    "this repository.",
+    "A gene's presence is a curation statement, not a claim that every study reports it.",
+)
+
 
 def _proxy_consensus_diseases() -> frozenset[str]:
     """L2 proxy tier diseases registered at runtime by expression_proxy."""
@@ -750,8 +770,6 @@ CF_CONSENSUS_GENES = {
         "SLC11A1": {"fold_change": 2.1, "confidence": 0.87},
         "IFNGR1": {"fold_change": 1.9, "confidence": 0.85},
         "KCNN4": {"fold_change": 2.0, "confidence": 0.86},
-        "NR3C1": {"fold_change": 1.8, "confidence": 0.84},
-        "IFNGR2": {"fold_change": 1.7, "confidence": 0.83},
     },
     "downregulated": {
         "CFTR": {"fold_change": 3.4, "confidence": 0.97},
@@ -1470,6 +1488,25 @@ def fetch_expression_data(accession: str) -> dict:
     }
 
 
+def _consensus_gene_entry(info: dict[str, Any], effect_direction: str) -> dict[str, Any]:
+    """Return one consensus gene record with explicit provenance metadata.
+
+    ``fold_change`` and ``confidence`` remain for backward compatibility. The
+    added fields state what the number is (a curated effect size), which
+    direction it applies to, and that no study accessions were recorded.
+    """
+    fold_change = info["fold_change"]
+    return {
+        "fold_change": fold_change,
+        "confidence": info["confidence"],
+        "effect_direction": effect_direction,
+        "effect_size": {"metric": CONSENSUS_EFFECT_SIZE_METRIC, "value": fold_change},
+        "source": CURATED_LITERATURE_CONSENSUS,
+        "study_accessions": [],
+        "provenance_status": "study_accessions_not_recorded",
+    }
+
+
 def build_consensus_signature(
     studies: list, disease: str = "sle", min_occurrence: int = 2, tissue: Optional[str] = None
 ) -> dict:
@@ -1537,7 +1574,7 @@ def build_consensus_signature(
             "downregulated": down_scaled,
             "study_ids": [s.get("accession", "") for s in studies[:min_occurrence]],
             "note": (
-                "Expression uses Open Targets genetics proxy; not literature-curated GEO consensus."
+                "Expression uses Open Targets genetics proxy; not the curated literature consensus used for L3."
             ),
         }
 
@@ -1576,30 +1613,44 @@ def build_consensus_signature(
     up_scaled = {}
     for gene, info in up_genes.items():
         if info["confidence"] >= 0.80:
-            up_scaled[gene] = {
-                "fold_change": info["fold_change"],
-                "confidence": round(min(0.99, info["confidence"] * confidence_scale), 2),
-            }
+            entry = _consensus_gene_entry(info, "upregulated")
+            entry["confidence"] = round(min(0.99, info["confidence"] * confidence_scale), 2)
+            up_scaled[gene] = entry
 
     down_scaled = {}
     for gene, info in down_genes.items():
         if info["confidence"] >= 0.80:
-            down_scaled[gene] = {
-                "fold_change": info["fold_change"],
-                "confidence": round(min(0.99, info["confidence"] * confidence_scale), 2),
-            }
+            entry = _consensus_gene_entry(info, "downregulated")
+            entry["confidence"] = round(min(0.99, info["confidence"] * confidence_scale), 2)
+            down_scaled[gene] = entry
 
-    study_ids = [s.get("accession", "") for s in studies[:min_occurrence]]
+    requested_accessions = [
+        s.get("accession", "") for s in studies[:min_occurrence] if s.get("accession")
+    ]
 
     return {
-        "source": "geo_consensus",
+        "source": CURATED_LITERATURE_CONSENSUS,
+        "evidence_basis": "expert_curated_literature_consensus",
         "num_studies_used": num_studies,
         "tissue_category": tissue or "broad",
         "disease": disease_key,
         "coverage": "curated",
         "upregulated": up_scaled,
         "downregulated": down_scaled,
-        "study_ids": study_ids,
+        # The curated gene list is not derived from the requested studies, so
+        # they are recorded separately rather than presented as its basis.
+        "study_ids": [],
+        "requested_study_accessions": requested_accessions,
+        "provenance": {
+            "source": CURATED_LITERATURE_CONSENSUS,
+            "consensus_derived_from_studies": False,
+            "study_accessions_recorded": CONSENSUS_STUDY_ACCESSIONS_RECORDED,
+            "study_accessions": [],
+            "effect_size_metric": CONSENSUS_EFFECT_SIZE_METRIC,
+            "reproducible_from_repository": False,
+            "limitations": list(CONSENSUS_LIMITATIONS),
+        },
+        "limitations": list(CONSENSUS_LIMITATIONS),
     }
 
 

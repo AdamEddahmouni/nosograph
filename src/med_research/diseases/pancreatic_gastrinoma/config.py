@@ -46,10 +46,12 @@ CAR_T_SCORES = {
 DRUG_SAFETY_RISK = {
     "high_risk": [],
     "moderate_risk": [
-        "bevacizumab",
         "temsirolimus",
     ],
     "low_risk": [],
+    "undetermined_risk": [
+        "bevacizumab",
+    ],
 }
 
 DISEASE_SPECIFIC_RISK = DRUG_SAFETY_RISK

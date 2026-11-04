@@ -34,6 +34,9 @@ const activeJobs = {};
 const activeSockets = {};
 let workspaceSubmissionActive = false;
 let workspaceReviews = {};
+// Set when a run disables the focused submit button; the button gets focus
+// back once the run settles, so the keyboard user is not left on <body>.
+let submitFocusReturnPending = false;
 
 function setWorkspaceSubmissionState(state) {
     const form = document.getElementById('workspace-form');
@@ -46,8 +49,15 @@ function setWorkspaceSubmissionState(state) {
     if (result && active) result.setAttribute('aria-busy', 'true');
     if (result && !active) result.removeAttribute('aria-busy');
     if (submit) {
+        // Disabling the focused control silently drops focus to <body>. Record
+        // that the user was there and hand it back when the run settles.
+        if (active && document.activeElement === submit) submitFocusReturnPending = true;
         submit.disabled = active;
         submit.setAttribute('aria-busy', String(active));
+        if (!active && submitFocusReturnPending) {
+            submitFocusReturnPending = false;
+            submit.focus();
+        }
     }
     if (status) {
         const messages = {
@@ -66,6 +76,9 @@ function setWorkspaceSubmissionState(state) {
 const diseaseCache = { list: null };
 let diseaseSelectControl = null;
 let dashboardRefreshing = false;
+// True only when the server reports DEMO_MODE. Gates the non-persisting
+// Compare preview path, which is the only write-shaped route demo mode allows.
+let demoModeActive = false;
 
 const DASHBOARD_MODULE_REGISTRY = {
     kg: 'knowledge_graph',
@@ -181,6 +194,50 @@ function escapeHtml(text) {
 // media query, so pick the behavior in JS at call time.
 function ngScrollBehavior() {
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+}
+
+// ── Focus continuity ─────────────────────────────────────────────────────
+// A re-render replaces nodes and a disabled control drops focus; in both cases
+// the keyboard user lands on <body>. These helpers re-point focus at a stable
+// identity once the DOM has settled, and give up quietly when the control is
+// genuinely gone (for example a row filtered out of a table).
+
+function focusSelectorFor(element) {
+    if (!element || !(element instanceof Element)) return '';
+    if (element.id) return `#${CSS.escape(element.id)}`;
+    const control = element.closest('[data-action]');
+    if (!control || !control.dataset.action) return '';
+    const action = `[data-action="${CSS.escape(control.dataset.action)}"]`;
+    if (!control.dataset.disease) return action;
+    return `${action}[data-disease="${CSS.escape(control.dataset.disease)}"]`;
+}
+
+function restoreFocus(selector) {
+    if (!selector) return false;
+    const target = document.querySelector(selector);
+    if (!target || !target.isConnected || typeof target.focus !== 'function') return false;
+    target.focus();
+    return document.activeElement === target;
+}
+
+// ── Navigation state ─────────────────────────────────────────────────────
+
+// Exactly one navigation item carries the current state. The class (styling)
+// and aria-current (assistive technology) are derived from the same id in one
+// place so they cannot drift apart or leave two items claiming to be current.
+function setActiveNavLink(sectionId) {
+    let active = null;
+    document.querySelectorAll('.nav-link[data-nav]').forEach(link => {
+        const isActive = link.dataset.nav === sectionId;
+        link.classList.toggle('active', isActive);
+        if (isActive) {
+            link.setAttribute('aria-current', 'true');
+            active = link;
+        } else {
+            link.removeAttribute('aria-current');
+        }
+    });
+    return active;
 }
 
 function workspaceDateLabel(value) {
@@ -2634,18 +2691,155 @@ async function loadBiomedImportStatus() {
 }
 
 // ── Corpus Health & Tier Browser State & Logic ───────────────────────────
+// ── Responsive data tables ───────────────────────────────────────────────
+// Column headers stay real <th scope> cells and the table keeps its native
+// semantics at every width. The compact (narrow-viewport) presentation only
+// borrows the rendered header text as a per-cell data-label, so a cell can be
+// read on its own once the header row is no longer beside it. Labels are
+// derived from the live header row, never hardcoded, so they cannot drift.
+
+function headerLabelsFor(table) {
+    const headerRow = table && table.tHead && table.tHead.rows[0];
+    if (!headerRow) return [];
+    return Array.from(headerRow.cells).map(cell => (cell.textContent || '').trim());
+}
+
+function labelTableCells(table) {
+    if (!table) return;
+    const labels = headerLabelsFor(table);
+    if (!labels.length) return;
+    Array.from(table.tBodies).forEach(body => {
+        Array.from(body.rows).forEach(row => {
+            // A row whose cell count does not match the header (colspan/rowspan
+            // state rows) has no unambiguous column for a label.
+            if (row.cells.length !== labels.length) return;
+            Array.from(row.cells).forEach((cell, index) => {
+                if (labels[index]) cell.dataset.label = labels[index];
+            });
+        });
+    });
+}
+
+function labelDataTables(root = document) {
+    if (!root || typeof root.querySelectorAll !== 'function') return;
+    root.querySelectorAll('table').forEach(labelTableCells);
+}
+
+// Render paths rebuild tables from many entry points. One rAF-debounced
+// observer keeps their compact labels in step without pushing the obligation
+// into every render function. It watches childList only, so its own attribute
+// writes cannot re-trigger it.
+function observeDataTables(root) {
+    if (!root || typeof MutationObserver === 'undefined') return;
+    let queued = false;
+    const observer = new MutationObserver(() => {
+        if (queued) return;
+        queued = true;
+        window.requestAnimationFrame(() => {
+            queued = false;
+            labelDataTables(root);
+        });
+    });
+    observer.observe(root, { childList: true, subtree: true });
+}
+
+// ── Announced table state ────────────────────────────────────────────────
+// Loading, empty, and error are distinct states, each carried by wording and a
+// glyph as well as colour. The announcement lives outside the table: a <td>
+// may not take a live-region role without breaking cell semantics.
+
+const TABLE_STATE_CLASS = {
+    loading: 'table-state table-state--loading',
+    empty: 'table-state table-state--empty',
+    error: 'table-state table-state--error',
+};
+
+function tableStateRow(message, state, columns) {
+    const cls = TABLE_STATE_CLASS[state] || TABLE_STATE_CLASS.empty;
+    return `<tr class="table-state-row"><td colspan="${columns}" class="${cls}">${escapeHtml(message)}</td></tr>`;
+}
+
+function announceCorpusTableState(state, message) {
+    const tableBody = document.getElementById('corpus-table-body');
+    const wrap = document.getElementById('corpus-table-wrap');
+    const status = document.getElementById('corpus-table-status');
+    const alert = document.getElementById('corpus-table-alert');
+    if (tableBody && state !== 'loaded') {
+        tableBody.innerHTML = tableStateRow(message, state, 7);
+    }
+    if (wrap) wrap.setAttribute('aria-busy', String(state === 'loading'));
+    if (state === 'error') {
+        if (alert) alert.textContent = message;
+        if (status) status.textContent = '';
+        return;
+    }
+    if (status) status.textContent = message;
+    if (alert) alert.textContent = '';
+}
+
+// ── Keyboard scrolling for scrollable regions ────────────────────────────
+// A scroll region is reachable by Tab; arrow keys then scroll it and Home/End
+// jump to the ends. Keys are left alone when focus is inside the region's own
+// controls, and motion stays instantaneous so reduced-motion is honoured.
+
+const SCROLL_REGION_SELECTOR = [
+    '.corpus-table-wrap',
+    '.condition-comparison-table-wrap',
+    '.workspace-trend-table-scroll',
+    '[data-scroll-region]',
+].join(', ');
+
+function handleScrollRegionKeydown(event) {
+    if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    const region = target.closest(SCROLL_REGION_SELECTOR);
+    // Only when the region itself is focused, never a control inside it.
+    if (!region || region !== target) return;
+    const step = Math.max(40, Math.round(region.clientHeight * 0.8));
+    switch (event.key) {
+        case 'ArrowDown': region.scrollTop += step; break;
+        case 'ArrowUp': region.scrollTop -= step; break;
+        case 'ArrowRight': region.scrollLeft += step; break;
+        case 'ArrowLeft': region.scrollLeft -= step; break;
+        case 'Home': region.scrollTop = 0; region.scrollLeft = 0; break;
+        case 'End': region.scrollTop = region.scrollHeight; region.scrollLeft = region.scrollWidth; break;
+        default: return;
+    }
+    event.preventDefault();
+}
+
+// Stable identity of the corpus control a re-render must return focus to.
+let corpusFocusSelector = '';
+
 const corpusBrowserState = {
     page: 1,
     limit: 25,
     tier: '',
     gap: '',
+    curation: '',
     search: '',
     sortBy: 'disease_id',
     sortDesc: false,
     searchTimer: null,
     totalMatching: 0,
+    // Evidence coverage is measured per visible page only. Rows outside the
+    // measured page stay unmeasured rather than reporting a zero we never
+    // computed.
+    evidence: new Map(),
+    evidenceStatus: 'idle',
     initialized: false,
 };
+
+const CURATION_LABELS = {
+    curated: 'Curated',
+    generated: 'Generated',
+    unknown: 'Unclassified',
+};
+
+function curationLabel(state) {
+    return CURATION_LABELS[state] || CURATION_LABELS.unknown;
+}
 
 const DISEASE_TO_MONDO_MAP = {
     sle: 'MONDO:0007915',
@@ -2677,7 +2871,7 @@ async function loadCorpusStatus(resetPage = false) {
     const nextBtn = document.getElementById('corpus-next-page');
 
     if (tableBody) {
-        tableBody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:24px;color:var(--text-muted);"><span class="spinner"></span> Loading disease corpus data…</td></tr>';
+        announceCorpusTableState('loading', 'Loading disease corpus data…');
     }
 
     try {
@@ -2690,15 +2884,19 @@ async function loadCorpusStatus(resetPage = false) {
         });
         if (corpusBrowserState.tier) params.append('tier', corpusBrowserState.tier);
         if (corpusBrowserState.gap) params.append('gap', corpusBrowserState.gap);
+        if (corpusBrowserState.curation) params.append('curation', corpusBrowserState.curation);
         if (corpusBrowserState.search) params.append('search', corpusBrowserState.search);
 
         const data = await apiFetch(`/api/system/corpus-status?${params.toString()}`);
         corpusBrowserState.totalMatching = data.total_matching || 0;
+        corpusBrowserState.curationCounts = data.curation_counts || null;
 
         renderCorpusTierCards(data.aggregate || {});
         renderCorpusGapFilter(data.top_config_gaps || []);
         renderCorpusGapsBreakdown(data.top_config_gaps || []);
         renderCorpusTable(data.diseases || []);
+        void loadCorpusEvidence(data.diseases || []);
+        announceCorpusTableState('loaded', `Loaded ${corpusBrowserState.totalMatching.toLocaleString()} disease modules.`);
 
         const start = corpusBrowserState.totalMatching === 0 ? 0 : offset + 1;
         const end = Math.min(offset + corpusBrowserState.limit, corpusBrowserState.totalMatching);
@@ -2715,9 +2913,7 @@ async function loadCorpusStatus(resetPage = false) {
             nextBtn.disabled = corpusBrowserState.page >= maxPage;
         }
     } catch (error) {
-        if (tableBody) {
-            tableBody.innerHTML = `<tr><td colspan="7" style="text-align:center;padding:24px;color:var(--ng-error);">Failed to load corpus status: ${escapeHtml(error.message)}</td></tr>`;
-        }
+        announceCorpusTableState('error', `Failed to load corpus status: ${error.message}`);
     }
 }
 
@@ -2773,54 +2969,70 @@ function renderCorpusTable(diseases) {
     const tbody = document.getElementById('corpus-table-body');
     if (!tbody) return;
     if (!diseases || !diseases.length) {
-        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:24px;color:var(--text-muted);">No disease modules matched your filter criteria.</td></tr>';
+        tbody.innerHTML = tableStateRow('No disease modules matched your filter criteria.', 'empty', 8);
+        labelTableCells(tbody.closest('table'));
         return;
     }
+
+    // Unknown counts stay unknown: a missing count renders as an em dash and is
+    // left out of the bar scaling. Coercing it to 0 would read as an asserted
+    // zero, which the corpus data does not claim.
+    const num = (value) => (typeof value === 'number' && Number.isFinite(value) ? value : null);
+    const shown = (value) => (value === null ? '—' : String(value));
 
     const rows = diseases.map(d => {
         const tier = d.tier || 'L0';
         const gaps = (d.config_gaps || []).slice(0, 3).map(g => `<span class="corpus-gap-tag">${escapeHtml(g)}</span>`).join('');
         const extraGaps = (d.config_gaps || []).length > 3 ? `<span class="corpus-gap-tag">+${(d.config_gaps.length - 3)}</span>` : '';
-        const genes = d.gene_count || 0;
-        const drugs = d.drug_count || 0;
-        const pathways = d.pathway_count || 0;
-        const symptoms = d.symptom_count || 0;
+        const genes = num(d.gene_count);
+        const drugs = num(d.drug_count);
+        const pathways = num(d.pathway_count);
+        const symptoms = num(d.symptom_count);
 
-        const maxEntities = Math.max(1, genes, drugs, pathways);
-        const genePct = Math.min(100, Math.round((genes / maxEntities) * 100));
-        const drugPct = Math.min(100, Math.round((drugs / maxEntities) * 100));
-        const pathPct = Math.min(100, Math.round((pathways / maxEntities) * 100));
+        const maxEntities = Math.max(1, genes || 0, drugs || 0, pathways || 0);
+        const genePct = genes === null ? 0 : Math.min(100, Math.round((genes / maxEntities) * 100));
+        const drugPct = drugs === null ? 0 : Math.min(100, Math.round((drugs / maxEntities) * 100));
+        const pathPct = pathways === null ? 0 : Math.min(100, Math.round((pathways / maxEntities) * 100));
+
+        // "None recorded" is a recorded zero; NOT_RECORDED is a missing field.
+        const symptomLabel = symptoms === null ? 'NOT_RECORDED'
+            : symptoms ? `${symptoms.toLocaleString()} recorded` : 'None recorded';
 
         const mondoCurie = d.mondo_curie || DISEASE_TO_MONDO_MAP[d.disease_id] || '—';
         const efoId = d.efo_id || '—';
 
+        const curation = d.curation_state || 'unknown';
+
         return `
-            <tr>
+            <tr data-corpus-row="${escapeHtml(d.disease_id)}">
                 <td><span class="corpus-tier-badge ${escapeHtml(tier)}">${escapeHtml(tier)}</span></td>
                 <td>
-                    <div style="font-weight:700;color:var(--text);">${escapeHtml(d.name || d.disease_id)}</div>
-                    <code style="font-size:0.72rem;color:var(--text-muted);">${escapeHtml(d.disease_id)}</code>
+                    <div class="corpus-row-title">${escapeHtml(d.name || d.disease_id)}</div>
+                    <code class="corpus-row-id">${escapeHtml(d.disease_id)}</code>
                 </td>
                 <td>
-                    <div style="font-size:0.75rem;"><strong style="color:var(--accent);">${escapeHtml(mondoCurie)}</strong></div>
-                    <div style="font-size:0.7rem;color:var(--text-muted);">${escapeHtml(efoId)}</div>
+                    <div class="corpus-curie"><strong>${escapeHtml(mondoCurie)}</strong></div>
+                    <div class="corpus-efo">${escapeHtml(efoId)}</div>
                 </td>
                 <td>
-                    <div style="display:flex;flex-direction:column;gap:3px;font-size:0.72rem;">
-                        <div class="corpus-metric-bar"><span style="width:42px;color:#4ade80;">G: ${genes}</span><div class="corpus-mini-bar"><span style="width:${genePct}%;background:#4ade80;"></span></div></div>
-                        <div class="corpus-metric-bar"><span style="width:42px;color:#60a5fa;">D: ${drugs}</span><div class="corpus-mini-bar"><span style="width:${drugPct}%;background:#60a5fa;"></span></div></div>
-                        <div class="corpus-metric-bar"><span style="width:42px;color:#f59e0b;">P: ${pathways}</span><div class="corpus-mini-bar"><span style="width:${pathPct}%;background:#f59e0b;"></span></div></div>
+                    <div class="corpus-metric-list">
+                        <div class="corpus-metric-bar corpus-metric-bar--gene"><span class="corpus-metric-label">G: ${shown(genes)}</span><div class="corpus-mini-bar"><span style="width:${genePct}%"></span></div></div>
+                        <div class="corpus-metric-bar corpus-metric-bar--drug"><span class="corpus-metric-label">D: ${shown(drugs)}</span><div class="corpus-mini-bar"><span style="width:${drugPct}%"></span></div></div>
+                        <div class="corpus-metric-bar corpus-metric-bar--pathway"><span class="corpus-metric-label">P: ${shown(pathways)}</span><div class="corpus-mini-bar"><span style="width:${pathPct}%"></span></div></div>
                     </div>
                 </td>
                 <td>
-                    <span style="font-size:0.78rem;font-weight:600;color:${symptoms ? 'var(--ng-success)' : 'var(--text-muted)'};">
-                        ${symptoms ? `${symptoms} recorded` : '—'}
-                    </span>
+                    <span class="corpus-symptom-count${symptoms ? ' is-recorded' : ''}">${escapeHtml(symptomLabel)}</span>
                 </td>
-                <td>${gaps || '<span style="color:#4ade80;font-size:0.75rem;">None (Complete)</span>'}${extraGaps}</td>
-                <td style="text-align:right;">
-                    <div style="display:flex;gap:4px;justify-content:flex-end;">
+                <td>${gaps || '<span class="corpus-gap-none">None (Complete)</span>'}${extraGaps}</td>
+                <td class="corpus-cell-evidence" data-evidence-for="${escapeHtml(d.disease_id)}">
+                    <span class="corpus-curation-badge ${escapeHtml(curation)}">${escapeHtml(curationLabel(curation))}</span>
+                    <div class="corpus-evidence-line" data-evidence-line data-state="pending">Measuring…</div>
+                </td>
+                <td class="corpus-cell-actions">
+                    <div class="corpus-action-group">
                         <button type="button" class="btn btn-secondary btn-sm" data-action="corpus-select-disease" data-disease="${escapeHtml(d.disease_id)}">Select</button>
+                        <button type="button" class="btn btn-secondary btn-sm" data-action="corpus-evidence-detail" data-disease="${escapeHtml(d.disease_id)}" aria-expanded="false">Evidence</button>
                     </div>
                 </td>
             </tr>
@@ -2828,16 +3040,210 @@ function renderCorpusTable(diseases) {
     }).join('');
 
     tbody.innerHTML = rows;
+    labelTableCells(tbody.closest('table'));
+
+    // The swap destroyed the control the user activated. Give focus back to the
+    // equivalent button for the same row when it still exists.
+    if (corpusFocusSelector) {
+        const selector = corpusFocusSelector;
+        corpusFocusSelector = '';
+        restoreFocus(selector);
+    }
 
     tbody.querySelectorAll('[data-action="corpus-select-disease"]').forEach(btn => {
         btn.addEventListener('click', () => {
             const did = btn.dataset.disease;
             if (did) {
+                corpusFocusSelector = focusSelectorFor(btn);
                 void refreshDashboardForDisease(did);
                 showToast(`Switched active disease to ${did}`, 'success');
             }
         });
     });
+
+    tbody.querySelectorAll('[data-action="corpus-evidence-detail"]').forEach(btn => {
+        btn.addEventListener('click', () => toggleCorpusEvidenceDetail(btn));
+    });
+}
+
+const EVIDENCE_STATE_LABELS = {
+    present: 'Recorded',
+    known_absent: 'Explicitly empty',
+    not_recorded: 'Not recorded',
+    invalid: 'Unreadable',
+};
+
+/**
+ * Measure evidence coverage for the rows currently on screen.
+ *
+ * The corpus table is backed by a bounded sample, so this asks only for the
+ * visible page and never presents the result as a corpus-wide measurement.
+ */
+async function loadCorpusEvidence(diseases) {
+    const status = document.getElementById('corpus-evidence-status');
+    const ids = diseases.map(d => d.disease_id).filter(Boolean);
+    corpusBrowserState.evidence = new Map();
+    corpusBrowserState.evidenceReport = null;
+
+    if (!ids.length) {
+        corpusBrowserState.evidenceStatus = 'empty';
+        return;
+    }
+
+    corpusBrowserState.evidenceStatus = 'loading';
+    if (status) status.textContent = 'Measuring evidence coverage for the visible page…';
+
+    try {
+        const params = new URLSearchParams();
+        ids.forEach(id => params.append('disease', id));
+        const data = await apiFetch(`/api/system/evidence-coverage?${params.toString()}`);
+        const report = data.report || {};
+        (report.per_disease || []).forEach(row => {
+            if (row && row.disease_id) corpusBrowserState.evidence.set(row.disease_id, row);
+        });
+        corpusBrowserState.evidenceReport = report;
+        corpusBrowserState.evidenceStatus = 'loaded';
+        applyCorpusEvidence();
+        if (status) {
+            const scope = report.scope || {};
+            const population = Number(scope.population_modules || 0).toLocaleString();
+            status.textContent = `Evidence coverage measured for ${corpusBrowserState.evidence.size} modules on this page of a ${population}-module registry. This is not a full-corpus measurement.`;
+        }
+    } catch (error) {
+        corpusBrowserState.evidenceStatus = 'failed';
+        applyCorpusEvidence();
+        if (status) {
+            status.textContent = 'Evidence coverage could not be measured; curation labels still come from the corpus readiness report.';
+        }
+    }
+}
+
+/** Fill the per-row evidence cells from the measured page, leaving gaps explicit. */
+function applyCorpusEvidence() {
+    document.querySelectorAll('[data-evidence-for]').forEach(cell => {
+        const line = cell.querySelector('[data-evidence-line]');
+        if (!line) return;
+        const row = corpusBrowserState.evidence.get(cell.dataset.evidenceFor);
+        if (!row) {
+            const failed = corpusBrowserState.evidenceStatus === 'failed';
+            line.dataset.state = failed ? 'failed' : 'unmeasured';
+            line.textContent = failed ? 'Coverage unavailable' : 'Not measured';
+            line.title = failed
+                ? 'The evidence-coverage request failed for this page.'
+                : 'Evidence coverage is measured only for the page it was requested for.';
+            return;
+        }
+        const provenance = row.provenance || {};
+        const total = Number(provenance.evidence_records || 0);
+        const cited = Number(provenance.present || 0);
+        const empty = Number(provenance.known_absent || 0);
+        const absent = Number(provenance.not_recorded || 0);
+        line.dataset.state = cited > 0 ? 'recorded' : (total > 0 ? 'uncited' : 'empty');
+        line.textContent = total
+            ? `${cited.toLocaleString()} / ${total.toLocaleString()} records cite a source`
+            : 'No evidence records';
+        // The empty-versus-absent distinction is the point of the report, so it
+        // is surfaced verbatim instead of being folded into a single gap count.
+        line.title = total
+            ? `Explicitly empty: ${empty.toLocaleString()}; citation field absent: ${absent.toLocaleString()}. A missing citation is not evidence of absence.`
+            : 'This module records no evidence-bearing records to cite.';
+    });
+}
+
+function renderEvidenceDetail(row) {
+    if (!row) {
+        return '<p class="corpus-detail-empty">Evidence coverage was not measured for this module in this view. It is measured only for the page it was requested for.</p>';
+    }
+
+    const provenance = row.provenance || {};
+    const categories = row.categories || {};
+    const categoryRows = Object.entries(categories).map(([key, entry]) => {
+        const state = entry.state || 'not_recorded';
+        const records = typeof entry.records === 'number' ? entry.records.toLocaleString() : '—';
+        let provenanceLabel = '—';
+        if (entry.provenance === 'not_applicable') {
+            provenanceLabel = 'Not applicable';
+        } else if (entry.provenance && typeof entry.provenance === 'object') {
+            provenanceLabel = `${Number(entry.provenance.present || 0).toLocaleString()} cited`;
+        }
+        return `<tr><th scope="row">${escapeHtml(entry.label || key)}</th><td>${escapeHtml(EVIDENCE_STATE_LABELS[state] || state)}</td><td>${records}</td><td>${escapeHtml(provenanceLabel)}</td></tr>`;
+    }).join('');
+
+    const failures = ((row.validation || {}).failures) || [];
+    const failureItems = failures.length
+        ? `<ul class="corpus-detail-list">${failures.map(f => `<li><code>${escapeHtml(f.field)}</code>: ${escapeHtml(f.status)} <span class="corpus-detail-class">${escapeHtml(f.class)}</span></li>`).join('')}</ul>`
+        : '<p class="corpus-detail-ok">Every strict validation check passes for this module.</p>';
+
+    const limitations = row.limitations || [];
+    const limitationItems = limitations.length
+        ? `<ul class="corpus-detail-list">${limitations.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
+        : '';
+
+    const schemes = provenance.by_scheme || {};
+    const schemeText = Object.keys(schemes).length
+        ? Object.entries(schemes).map(([k, v]) => `${escapeHtml(k)}=${Number(v).toLocaleString()}`).join(', ')
+        : 'none recorded';
+
+    return `
+        <div class="corpus-detail-head">
+            <strong>${escapeHtml(row.name || row.disease_id)}</strong>
+            <span class="corpus-detail-meta">${escapeHtml(curationLabel(row.curation_state))} · readiness ${escapeHtml(row.readiness_tier || '—')}${row.ci_validated ? ' · CI-validated' : ''}</span>
+        </div>
+        <table class="corpus-detail-table">
+            <caption class="workspace-sr-only">Recorded evidence by category for ${escapeHtml(row.disease_id)}</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">Presence</th><th scope="col">Records</th><th scope="col">Provenance</th></tr></thead>
+            <tbody>${categoryRows}</tbody>
+        </table>
+        <p class="corpus-detail-summary">
+            ${Number(provenance.present || 0).toLocaleString()} of ${Number(provenance.evidence_records || 0).toLocaleString()} evidence records cite a source;
+            ${Number(provenance.known_absent || 0).toLocaleString()} are explicitly empty and
+            ${Number(provenance.not_recorded || 0).toLocaleString()} have no citation field at all.
+            Identifier schemes: ${schemeText}.
+        </p>
+        <h4 class="corpus-detail-heading">Missing data</h4>
+        ${failureItems}
+        <h4 class="corpus-detail-heading">Limitations</h4>
+        ${limitationItems || '<p class="corpus-detail-ok">No limitations recorded.</p>'}
+    `;
+}
+
+function closeCorpusEvidenceDetail(detail, btn) {
+    if (detail._escapeHandler) {
+        document.removeEventListener('keydown', detail._escapeHandler, true);
+        delete detail._escapeHandler;
+    }
+    detail.remove();
+    btn.setAttribute('aria-expanded', 'false');
+    btn.focus();
+}
+
+function toggleCorpusEvidenceDetail(btn) {
+    const diseaseId = btn.dataset.disease;
+    const rowEl = btn.closest('tr');
+    if (!diseaseId || !rowEl) return;
+
+    const existing = rowEl.nextElementSibling;
+    if (existing && existing.classList && existing.classList.contains('corpus-detail-row')) {
+        closeCorpusEvidenceDetail(existing, btn);
+        return;
+    }
+
+    const detail = document.createElement('tr');
+    detail.className = 'corpus-detail-row';
+    detail.innerHTML = `<td colspan="8"><div class="corpus-detail-body">${renderEvidenceDetail(corpusBrowserState.evidence.get(diseaseId))}</div></td>`;
+    rowEl.after(detail);
+    btn.setAttribute('aria-expanded', 'true');
+    btn.focus();
+
+    // Focus stays on the trigger, so Escape has to be observed at document
+    // level; listening on the inserted row would never receive the key.
+    const onKeyDown = event => {
+        if (event.key !== 'Escape') return;
+        event.stopPropagation();
+        closeCorpusEvidenceDetail(detail, btn);
+    };
+    detail._escapeHandler = onKeyDown;
+    document.addEventListener('keydown', onKeyDown, true);
 }
 
 function initCorpusBrowser() {
@@ -2883,6 +3289,16 @@ function initCorpusBrowser() {
     if (gapSelect) {
         gapSelect.addEventListener('change', () => {
             corpusBrowserState.gap = gapSelect.value;
+            void loadCorpusStatus(true);
+        });
+    }
+
+    // Curation filter dropdown: switches between curated modules, generated
+    // scaffolds, and the whole sample.
+    const curationSelect = document.getElementById('corpus-curation-filter');
+    if (curationSelect) {
+        curationSelect.addEventListener('change', () => {
+            corpusBrowserState.curation = curationSelect.value;
             void loadCorpusStatus(true);
         });
     }
@@ -3229,19 +3645,24 @@ function renderNosoGraphCompareResult(result) {
     const curationWarnings = (result.curation_warnings || []).map(item => `<li>${escapeHtml(item.message || item)}</li>`).join('');
     const statusLabel = result.status === 'comparable' ? 'Comparison ready' : 'Sparse comparison ready';
     const conditionChips = conditions.map(item => `<span class="condition-comparison-condition"><strong>${escapeHtml(item.label)}</strong><code>${escapeHtml(item.curie)}</code></span>`).join('');
+    // A preview has no run id, so its exports are POSTs against the preview
+    // contract rather than links to a persisted run.
+    const isPreview = result.preview === true || !result.run_id;
+    const exportActions = isPreview
+        ? `<button type="button" class="btn btn-secondary btn-sm" data-preview-export="json">Export JSON</button>
+           <button type="button" class="btn btn-secondary btn-sm" data-preview-export="markdown">Export Markdown</button>`
+        : `<a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/json" download="nosograph-comparison-${escapeHtml(result.run_id)}.json">Export JSON</a>
+           <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/markdown" download="nosograph-comparison-${escapeHtml(result.run_id)}.md">Export Markdown</a>`;
     container.innerHTML = `
         <header class="condition-comparison-report-header">
             <div><p class="condition-comparison-eyebrow">${escapeHtml(statusLabel)}</p><h3>Evidence state comparison</h3><p>${conditions.length} conditions · ${result.dimensions?.length || 0} dimensions · no universal similarity score</p></div>
-            <div class="condition-comparison-export-actions">
-                <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/json" download="nosograph-comparison-${escapeHtml(result.run_id)}.json">Export JSON</a>
-                <a class="btn btn-secondary btn-sm" href="/api/v1/nosograph/comparisons/${encodeURIComponent(result.run_id)}/exports/markdown" download="nosograph-comparison-${escapeHtml(result.run_id)}.md">Export Markdown</a>
-            </div>
+            <div class="condition-comparison-export-actions">${exportActions}</div>
         </header>
         <div class="condition-comparison-condition-list" aria-label="Compared conditions">${conditionChips}</div>
         ${curationWarnings ? `<details class="condition-comparison-warning-summary"><summary>${result.curation_warnings.length} curation warning${result.curation_warnings.length === 1 ? '' : 's'}</summary><ul>${curationWarnings}</ul></details>` : ''}
         <div class="condition-comparison-tabs" role="tablist" aria-label="Comparison dimensions">${tabs}</div>
         <div class="condition-comparison-tab-panels">${panels || '<p class="condition-comparison-placeholder">No dimension results returned.</p>'}</div>
-        <p class="condition-comparison-meta">Run <code>${escapeHtml(result.run_id)}</code> · fingerprint <code>${escapeHtml(result.claim_set_fingerprint || 'n/a')}</code> · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
+        <p class="condition-comparison-meta">${isPreview ? 'preview (not persisted)' : `Run <code>${escapeHtml(result.run_id)}</code>`} · fingerprint <code>${escapeHtml(result.claim_set_fingerprint || 'n/a')}</code> · ${escapeHtml(result.algorithm_id)} v${escapeHtml(result.algorithm_version)}</p>
         <p class="condition-comparison-disclaimer">${disclaimer}</p>`;
     bindComparisonResultActions(container);
 }
@@ -3345,6 +3766,42 @@ function bindComparisonResultActions(container) {
         event.preventDefault();
         void openEvidenceExplorer(link.dataset.comparisonClaimId);
     }));
+    // Preview exports have no persisted run to link to, so they POST the same
+    // preview request and save the response as a file.
+    container.querySelectorAll('[data-preview-export]').forEach(button => button.addEventListener('click', event => {
+        void exportComparisonPreview(container, event.currentTarget.dataset.previewExport, event.currentTarget);
+    }));
+}
+
+async function exportComparisonPreview(container, format, button) {
+    const conditions = selectedComparisonConditions();
+    const dimensions = selectedComparisonDimensions();
+    if (!conditions.length) return;
+    const original = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Preparing…';
+    try {
+        const response = await fetch('/api/v1/nosograph/comparisons/preview/export?format=' + encodeURIComponent(format), {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ condition_curies: conditions, dimensions }),
+        });
+        if (!response.ok) throw new Error('Preview export failed');
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = format === 'markdown' ? 'nosograph-comparison-preview.md' : 'nosograph-comparison-preview.json';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        showToast(error.message, 'error');
+    } finally {
+        button.disabled = false;
+        button.textContent = original;
+    }
 }
 
 function selectedComparisonDimensions() {
@@ -3372,7 +3829,12 @@ async function compareConditions() {
     setConditionComparisonBusy(true);
     container.innerHTML = '<p class="condition-comparison-placeholder"><span class="spinner"></span> Running NosoGraph compare…</p>';
     try {
-        const result = await apiFetch('/api/v1/nosograph/comparisons', {
+        // Demo mode blocks the persisted endpoint by design, so the public
+        // demo uses the non-persisting preview route instead.
+        const endpoint = demoModeActive
+            ? '/api/v1/nosograph/comparisons/preview'
+            : '/api/v1/nosograph/comparisons';
+        const result = await apiFetch(endpoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ condition_curies: conditions, dimensions }),
@@ -3423,6 +3885,16 @@ async function loadDuckDBGraphSummary() {
 
     try {
         const data = await apiFetch('/api/v1/biomed/analytics/summary');
+        if (data.store_state?.status === 'uninitialized') {
+            // Zero counters would read as "the store is built and empty".
+            [entEl, claimsEl, evEl, snapEl].forEach(el => { if (el) el.textContent = '—'; });
+            if (distEl) {
+                const hint = data.store_state.initialization_hint
+                    || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.';
+                distEl.innerHTML = `<span class="condition-empty">Statistics not computed: the canonical biomedical store is not initialized. ${escapeHtml(hint)}</span>`;
+            }
+            return;
+        }
         if (entEl) entEl.textContent = (data.total_entities || 0).toLocaleString();
         if (claimsEl) claimsEl.textContent = (data.total_claims || 0).toLocaleString();
         if (evEl) evEl.textContent = (data.total_evidence || 0).toLocaleString();
@@ -3470,6 +3942,12 @@ function renderGraphPathways(res) {
     if (!container) return;
 
     if (!res || !res.paths || !res.paths.length) {
+        if (res?.store_state?.status === 'uninitialized') {
+            const hint = res.store_state.initialization_hint
+                || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.';
+            container.innerHTML = `<p class="condition-comparison-placeholder">Pathways not computed: the canonical biomedical store is not initialized. ${escapeHtml(hint)}</p>`;
+            return;
+        }
         container.innerHTML = `<p class="condition-comparison-placeholder">No claim pathways found between ${escapeHtml(res.start_curie || '')} and ${escapeHtml(res.target_curie || '')} within depth ${res.max_depth || 3}.</p>`;
         return;
     }
@@ -3909,20 +4387,34 @@ function renderSharedMechanisms(res) {
     const container = document.getElementById('shared-mech-result');
     if (!container) return;
 
-    const jaccardPct = Math.round((res.jaccard_similarity || 0) * 100);
+    // null means the similarity was never computed (uninitialized store);
+    // 0.0 is a real finding that these conditions share no measured biology.
+    const computed = Number.isFinite(res.jaccard_similarity);
+    const jaccardPct = computed ? Math.round(res.jaccard_similarity * 100) : null;
+    const uninitialized = res.store_state?.status === 'uninitialized';
+    const readiness = uninitialized
+        ? `<p class="condition-explorer-placeholder">Canonical biomedical store is not initialized. ${escapeHtml(res.store_state.initialization_hint || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.')}</p>`
+        : '';
+    const emptyPathways = uninitialized
+        ? '<span class="condition-empty">Not computed — the canonical biomedical store is not initialized.</span>'
+        : '<span class="condition-empty">No direct shared pathways reported.</span>';
+    const emptyGenes = uninitialized
+        ? '<span class="condition-empty">Not computed — the canonical biomedical store is not initialized.</span>'
+        : '<span class="condition-empty">No direct shared target genes reported.</span>';
     const pathways = (res.shared_pathways || []).map(p => `<span class="condition-chip" style="background:rgba(245,158,11,0.12);color:#f59e0b;border-color:rgba(245,158,11,0.25);">${escapeHtml(p)}</span>`).join('');
     const genes = (res.shared_genes || []).map(g => `<span class="condition-chip" style="background:rgba(74,222,128,0.12);color:#4ade80;border-color:rgba(74,222,128,0.25);">${escapeHtml(g)}</span>`).join('');
 
     container.innerHTML = `
         <div class="shared-mech-panel">
+            ${readiness}
             <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
                 <div>
                     <h4 style="margin:0 0 4px;font-size:0.95rem;">${escapeHtml(res.condition_a)} &amp; ${escapeHtml(res.condition_b)}</h4>
                     <span style="font-size:0.75rem;color:var(--text-muted);">Vectorized DuckDB Pathway &amp; Target Intersection</span>
                 </div>
                 <div style="text-align:right;">
-                    <div class="shared-mech-score">${jaccardPct}%</div>
-                    <span style="font-size:0.7rem;color:var(--text-muted);">Jaccard Overlap Index</span>
+                    <div class="shared-mech-score">${computed ? `${jaccardPct}%` : '—'}</div>
+                    <span style="font-size:0.7rem;color:var(--text-muted);">${computed ? 'Jaccard Overlap Index' : 'Jaccard overlap not computed'}</span>
                 </div>
             </div>
 
@@ -3930,14 +4422,14 @@ function renderSharedMechanisms(res) {
                 <div style="font-size:0.75rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;margin-bottom:6px;">
                     Shared Pathways (${(res.shared_pathways || []).length})
                 </div>
-                <div class="condition-chip-list">${pathways || '<span class="condition-empty">No direct shared pathways reported.</span>'}</div>
+                <div class="condition-chip-list">${pathways || emptyPathways}</div>
             </div>
 
             <div>
                 <div style="font-size:0.75rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;margin-bottom:6px;">
                     Shared Associated Targets (${(res.shared_genes || []).length})
                 </div>
-                <div class="condition-chip-list">${genes || '<span class="condition-empty">No direct shared target genes reported.</span>'}</div>
+                <div class="condition-chip-list">${genes || emptyGenes}</div>
             </div>
         </div>
     `;
@@ -3972,6 +4464,13 @@ function renderCrossDiseaseMatrix(res) {
     const matrix = res.matrix || [];
     const details = res.details || {};
 
+    if (res.store_state?.status === 'uninitialized') {
+        const hint = res.store_state.initialization_hint
+            || 'Run: python -m med_research.cli biomed init, then import fixtures or sync sources.';
+        container.innerHTML = `<p class="condition-comparison-placeholder">Similarity matrix not computed: the canonical biomedical store is not initialized. ${escapeHtml(hint)}</p>`;
+        return;
+    }
+
     if (!conditions.length || !matrix.length) {
         container.innerHTML = '<p class="condition-comparison-placeholder">No similarity data returned for the requested diseases.</p>';
         return;
@@ -3981,11 +4480,14 @@ function renderCrossDiseaseMatrix(res) {
 
     const bodyRows = conditions.map((rowC, rIdx) => {
         const rowCells = conditions.map((colC, cIdx) => {
-            const val = matrix[rIdx] ? (matrix[rIdx][cIdx] ?? 0) : 0;
-            const pct = Math.round(val * 100);
+            // A missing cell is uncomputed, not a measured 0.0 overlap.
+            const raw = matrix[rIdx] ? matrix[rIdx][cIdx] : null;
+            const computed = Number.isFinite(raw);
+            const val = computed ? raw : null;
+            const pct = computed ? Math.round(val * 100) : null;
             const isDiag = rIdx === cIdx;
-            const bgAlpha = isDiag ? 0.35 : Math.max(0.08, val * 0.7);
-            const color = isDiag ? '#38bdf8' : (pct >= 50 ? '#4ade80' : (pct >= 20 ? '#fbbf24' : '#94a3b8'));
+            const bgAlpha = computed ? (isDiag ? 0.35 : Math.max(0.08, val * 0.7)) : 0.04;
+            const color = !computed ? 'var(--text-muted)' : (isDiag ? '#38bdf8' : (pct >= 50 ? '#4ade80' : (pct >= 20 ? '#fbbf24' : '#94a3b8')));
             const pairKey = `${rowC}___${colC}`;
             const detail = details[pairKey] || {};
             const sharedP = (detail.shared_pathways || []).length;
@@ -3993,9 +4495,9 @@ function renderCrossDiseaseMatrix(res) {
 
             return `
                 <td style="padding:6px;text-align:center;background:rgba(56,189,248,${bgAlpha});cursor:pointer;border:1px solid var(--border);"
-                    title="${escapeHtml(rowC)} ↔ ${escapeHtml(colC)}: ${pct}% Jaccard (${sharedP} pathways, ${sharedG} genes)"
+                    title="${escapeHtml(rowC)} ↔ ${escapeHtml(colC)}: ${computed ? `${pct}% Jaccard` : 'not computed'} (${sharedP} pathways, ${sharedG} genes)"
                     data-pair-key="${escapeHtml(pairKey)}">
-                    <span style="font-weight:700;font-size:0.78rem;color:${color};">${pct}%</span>
+                    <span style="font-weight:700;font-size:0.78rem;color:${color};">${computed ? `${pct}%` : '—'}</span>
                 </td>
             `;
         }).join('');
@@ -4238,6 +4740,11 @@ function showToast(message, type = 'success') {
     }
     const toast = document.createElement('div');
     toast.className = `toast ${type}`;
+    // Each toast announces itself on insertion: an error is assertive so it is
+    // not missed, everything else is polite. The container deliberately has no
+    // live region of its own, otherwise every message would be announced twice.
+    toast.setAttribute('role', type === 'error' ? 'alert' : 'status');
+    if (type !== 'error') toast.setAttribute('aria-live', 'polite');
     toast.innerHTML = escapeHtml(message);
     container.appendChild(toast);
     setTimeout(() => {
@@ -4685,6 +5192,44 @@ function setStatsLoading(loading) {
     });
 }
 
+/**
+ * Reveal the public demo banner when the API reports DEMO_MODE.
+ *
+ * The banner is server-owned: it only appears if the running instance is the
+ * read-only public demo, so a normal self-host never claims to be one.
+ */
+async function loadDemoModeBanner() {
+    const banner = document.getElementById('demo-banner');
+    try {
+        const meta = await apiFetch('/api/demo_mode');
+        demoModeActive = Boolean(meta && meta.demo_mode === true);
+        if (!demoModeActive || !banner) {
+            if (banner) banner.hidden = true;
+            return;
+        }
+        // /api/ready carries the dataset date and snapshot version together,
+        // which is what the banner labels; fall back to the metadata endpoint.
+        let version = meta.snapshot_version || '';
+        let date = '';
+        try {
+            const ready = await apiFetch('/api/ready');
+            const demo = ready && ready.demo;
+            if (demo && demo.demo_mode === true) {
+                version = demo.snapshot_version || version;
+                date = demo.dataset_date || '';
+            }
+        } catch { /* readiness is best-effort for the banner */ }
+        const dateEl = document.getElementById('demo-banner-date');
+        const versionEl = document.getElementById('demo-banner-version');
+        if (dateEl) dateEl.textContent = date || '—';
+        if (versionEl) versionEl.textContent = version || '—';
+        banner.hidden = false;
+    } catch {
+        demoModeActive = false;
+        if (banner) banner.hidden = true;
+    }
+}
+
 function animateStatValue(el, value) {
     if (!el) return;
     el.classList.remove('is-loading');
@@ -4807,6 +5352,9 @@ async function refreshDashboardForDisease(diseaseId) {
 }
 
 function setupNavUi() {
+    // The nav links are in-page anchors, so "true" is the aria-current token
+    // (the state is "the current location in this document").
+
     const toggle = document.getElementById('nav-toggle');
     const menu = document.getElementById('nav-menu');
     if (toggle && menu) {
@@ -4841,9 +5389,7 @@ function setupNavUi() {
 
     const updateActiveNav = () => {
         const hash = window.location.hash.replace('#', '') || 'evidence-workspace';
-        document.querySelectorAll('.nav-link[data-nav]').forEach(link => {
-            link.classList.toggle('active', link.dataset.nav === hash);
-        });
+        setActiveNavLink(hash);
     };
     window.addEventListener('hashchange', updateActiveNav);
     updateActiveNav();
@@ -4960,10 +5506,6 @@ function setupDashboardActions() {
                 if (value) void openEvidenceExplorer(value);
                 break;
             }
-            case 'evidence-filter-change': {
-                if (activeEvidenceClaimId) void loadEvidenceExplorerClaim(activeEvidenceClaimId);
-                break;
-            }
             default: break;
         }
     });
@@ -4973,6 +5515,11 @@ function setupDashboardActions() {
         if (!control) return;
         if (control.dataset.action === 'disease-change') onDiseaseChange(control.value);
         if (control.dataset.action === 'workspace-trends-render') renderWorkspaceTrends();
+        // Selects fire change, not click: the evidence filters only re-query
+        // the claim when handled here.
+        if (control.dataset.action === 'evidence-filter-change' && activeEvidenceClaimId) {
+            void loadEvidenceExplorerClaim(activeEvidenceClaimId);
+        }
     });
 
     document.addEventListener('submit', event => {
@@ -5230,10 +5777,17 @@ async function loadMultiDiseaseNetwork() {
 document.addEventListener('DOMContentLoaded', async () => {
     setupDashboardActions();
     setupNavUi();
+    // Install the table labelling and scroll-region keyboard support before any
+    // network work: a failing fetch must not cost the page its non-network
+    // accessibility wiring for the rest of the session.
+    labelDataTables();
+    observeDataTables(document.getElementById('main-content') || document.body);
+    document.addEventListener('keydown', handleScrollRegionKeydown);
     const linkedParams = new URLSearchParams(window.location.search);
     await loadDiseaseSelector();
     updateDiseaseDisplay();
     await checkAPIStatus();
+    await loadDemoModeBanner();
     await loadPlatformStats();
     await refreshModuleMetadata();
     initKGExplorer();
@@ -5247,14 +5801,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     void loadCorpusStatus();
     handleUniversalDeepLinks();
     loadExportGrid();
-    loadWorkspaceAuth();
-    loadWorkspaceHistory();
-    loadWorkspaceTrends();
-    loadWorkspaceNotificationSettings();
-    loadWorkspaceAlerts();
+    // The public demo has no workspace: skip the workspace fetches entirely
+    // rather than issuing requests the demo policy answers with 403.
+    if (!demoModeActive) {
+        loadWorkspaceAuth();
+        loadWorkspaceHistory();
+        loadWorkspaceTrends();
+        loadWorkspaceNotificationSettings();
+        loadWorkspaceAlerts();
+    }
     if (linkedParams.get('digest_key')) window.setTimeout(previewWorkspaceDigest, 250);
+
+    // Readiness signal: the dashboard chrome is wired and initial fetches have
+    // settled. Automation and integration tests wait on this instead of a timer.
+    document.body.dataset.booted = 'true';
 
     setInterval(checkAPIStatus, 30000);
     setInterval(loadPlatformStats, 60000);
-    setInterval(loadWorkspaceAlerts, 60000);
+    if (!demoModeActive) setInterval(loadWorkspaceAlerts, 60000);
 });

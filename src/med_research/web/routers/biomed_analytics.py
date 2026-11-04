@@ -13,6 +13,11 @@ from med_research.web.services.biomed_store_readiness import uninitialized_store
 router = APIRouter(prefix="/api/v1/biomed", tags=["Biomedical Analytics"])
 
 
+def _uninitialized() -> dict[str, Any]:
+    """Readiness payload for empty results that could be misread as negative evidence."""
+    return uninitialized_store_state().model_dump()
+
+
 @router.get("/pathways")
 def find_claim_pathways(
     repository: BiomedicalRepositoryDep,
@@ -121,6 +126,17 @@ def get_graph_summary(
     repository: BiomedicalRepositoryDep,
 ) -> dict[str, Any]:
     """Get high-throughput DuckDB summary statistics across the canonical knowledge store."""
+    if not repository.is_schema_initialized():
+        # Zero counts on an uninitialized store would read as "no evidence exists".
+        return {
+            "total_entities": 0,
+            "total_claims": 0,
+            "total_evidence": 0,
+            "total_snapshots": 0,
+            "entity_type_distribution": {},
+            "predicate_distribution": {},
+            "store_state": _uninitialized(),
+        }
     analytics = BiomedicalGraphAnalytics(repository)
     engine = analytics.get_duckdb_engine()
     return engine.get_summary_statistics()
@@ -133,6 +149,16 @@ def get_shared_mechanisms(
     curie_b: str = Query(..., description="Condition B CURIE (e.g. MONDO:0008383)"),
 ) -> dict[str, Any]:
     """Calculate shared biological pathways, genes, and Jaccard similarity between two conditions."""
+    if not repository.is_schema_initialized():
+        # A computed 0.0 would falsely assert "these conditions share no biology".
+        return {
+            "condition_a": curie_a,
+            "condition_b": curie_b,
+            "shared_pathways": [],
+            "shared_genes": [],
+            "jaccard_similarity": None,
+            "store_state": _uninitialized(),
+        }
     analytics = BiomedicalGraphAnalytics(repository)
     engine = analytics.get_duckdb_engine()
     res = engine.compute_shared_mechanisms(curie_a=curie_a, curie_b=curie_b)
@@ -153,6 +179,14 @@ def get_multi_hop_subgraph(
     limit: int = Query(50, ge=1, le=200),
 ) -> dict[str, Any]:
     """Extract a multi-hop neighborhood subgraph around a starting node."""
+    if not repository.is_schema_initialized():
+        return {
+            "start_curie": start_curie,
+            "max_hops": max_hops,
+            "total_edges": 0,
+            "edges": [],
+            "store_state": _uninitialized(),
+        }
     analytics = BiomedicalGraphAnalytics(repository)
     engine = analytics.get_duckdb_engine()
     paths = engine.find_multi_hop_subgraph(start_curie=start_curie, max_hops=max_hops, limit=limit)
@@ -182,6 +216,14 @@ def get_cross_disease_matrix(
 ) -> dict[str, Any]:
     """Compute an N x N cross-disease biological similarity matrix via DuckDB."""
     curie_list = [c.strip() for c in curies.split(",") if c.strip()]
+    if not repository.is_schema_initialized():
+        # No matrix is computed; an all-zero square would look like measured similarity.
+        return {
+            "conditions": curie_list,
+            "matrix": [],
+            "details": {},
+            "store_state": _uninitialized(),
+        }
     analytics = BiomedicalGraphAnalytics(repository)
     engine = analytics.get_duckdb_engine()
     return engine.compute_cross_disease_matrix(curie_list)
@@ -193,6 +235,13 @@ def get_druggability_analytics(
     disease_curie: str | None = Query(None, description="Optional condition CURIE"),
 ) -> dict[str, Any]:
     """Compute target druggability and evidence predicate distributions via DuckDB."""
+    if not repository.is_schema_initialized():
+        return {
+            "disease_curie": disease_curie or "global",
+            "distribution": {},
+            "total_categories": 0,
+            "store_state": _uninitialized(),
+        }
     analytics = BiomedicalGraphAnalytics(repository)
     engine = analytics.get_duckdb_engine()
     return engine.get_druggability_distribution(disease_curie=disease_curie)

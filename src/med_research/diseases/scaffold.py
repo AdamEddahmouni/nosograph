@@ -1003,8 +1003,12 @@ SCREENING_PROFILE = {{}}
 # ── Orchestration ────────────────────────────────────────────────────────
 
 
-def populate_scaffolded_config(disease_id: str) -> Path | None:
-    """Derive CAR_T_SCORES, DRUG_SAFETY_RISK, and SCREENING_PROFILE from KG JSON."""
+def populate_scaffolded_config(disease_id: str, *, disease_dir: Path | None = None) -> Path | None:
+    """Derive CAR_T_SCORES, DRUG_SAFETY_RISK, and SCREENING_PROFILE from KG JSON.
+
+    ``disease_dir`` must follow the scaffold target so an isolated scaffold
+    (tests, bulk harvest) never rewrites a same-named checked-in disease config.
+    """
     if disease_id == "sle":
         return None
     import importlib.util
@@ -1016,7 +1020,9 @@ def populate_scaffolded_config(disease_id: str) -> Path | None:
         raise ConfigurationError(f"Cannot load populate script at {script_path}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    written = module.write_config_sections(disease_id)
+    written = module.write_config_sections(
+        disease_id, disease_dir=disease_dir or (_diseases_root() / disease_id)
+    )
     return written if isinstance(written, Path) else None
 
 
@@ -1197,8 +1203,10 @@ def scaffold_disease(
     # ── Write files ───────────────────────────────────────────────────
     root.mkdir(parents=True, exist_ok=True)
     data_dir.mkdir(parents=True, exist_ok=True)
-    (root / "__init__.py").write_text("", encoding="utf-8")
-    (root / "config.py").write_text(generate_config_py(disease_id, display_name), encoding="utf-8")
+    (root / "__init__.py").write_text("", encoding="utf-8", newline="\n")
+    (root / "config.py").write_text(
+        generate_config_py(disease_id, display_name), encoding="utf-8", newline="\n"
+    )
     for fname, payload in (
         ("genes.json", genes_json),
         ("drugs.json", drugs_json),
@@ -1207,11 +1215,11 @@ def scaffold_disease(
         ("profile.json", profile_json),
     ):
         (data_dir / fname).write_text(
-            json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+            json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8", newline="\n"
         )
 
     try:
-        populate_scaffolded_config(disease_id)
+        populate_scaffolded_config(disease_id, disease_dir=root)
         logger.info(
             "✅ Populated CAR_T_SCORES, DRUG_SAFETY_RISK, and SCREENING_PROFILE for %s",
             disease_id,
@@ -1656,7 +1664,9 @@ def refresh_disease(
             ("relationships.json", relationships),
         ):
             (data_dir / fname).write_text(
-                json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+                json.dumps(payload, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+                newline="\n",
             )
 
     summary = {
@@ -1739,6 +1749,24 @@ def _scrub_pathway_components(
     return scrubbed
 
 
+_ALLOWED_BACKUP_ID_CHARS = frozenset("abcdefghijklmnopqrstuvwxyz0123456789_")
+
+
+def _is_safe_backup_id(disease_id: str) -> bool:
+    """True when ``disease_id`` is a single lowercase slug filename component.
+
+    ``refresh_disease`` sanitizes the ids it receives, but the write sink keeps
+    its own invariant: only ``a-z``, ``0-9`` and ``_`` are accepted, the first
+    character must be a letter or digit, and the id must be non-empty. That
+    rules out separators, drive letters, UNC prefixes, ``..`` and hidden-file
+    names without relying on the caller's sanitizer, and it needs no filesystem
+    call of its own — a valid id can only ever be one filename component.
+    """
+    if not disease_id or disease_id[0] == "_":
+        return False
+    return all(ch in _ALLOWED_BACKUP_ID_CHARS for ch in disease_id)
+
+
 def _write_prune_backup(
     data_dir: Path,
     disease_id: str,
@@ -1753,6 +1781,8 @@ def _write_prune_backup(
     Records each pruned gene's pre-prune pathway membership so ``restore`` can
     re-attach it exactly — the prune's pathway scrub is fully reversible.
     """
+    if not _is_safe_backup_id(disease_id):
+        raise ValueError(f"Refusing to write a prune backup for unsafe id: {disease_id!r}")
     backup_dir = data_dir / "backups"
     backup_dir.mkdir(parents=True, exist_ok=True)
     # Microseconds so two prunes in the same second never clobber each other's backup.
@@ -1773,7 +1803,9 @@ def _write_prune_backup(
         "drugs": [d for d in existing_drugs if d["id"] in pruned_drug_ids],
         "pathway_memberships": pathway_memberships,
     }
-    backup_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    backup_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8", newline="\n"
+    )
     return backup_path
 
 
@@ -1933,7 +1965,9 @@ def restore_disease(
             ("relationships.json", relationships),
         ):
             (data_dir / fname).write_text(
-                json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8"
+                json.dumps(payload, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+                newline="\n",
             )
 
     summary = {
@@ -2303,7 +2337,7 @@ def save_disease_registry(
         registry_path = _diseases_root() / "disease_registry.json"
     payload = {"diseases": diseases}
     registry_path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n"
     )
     return registry_path
 

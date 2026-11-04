@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from med_research.pipeline.provenance import ProvenanceMetadata
+from med_research.pipeline.reporting import report_output_dir
 
 try:
     import matplotlib
@@ -63,7 +64,7 @@ def generate_ct_report(
     provenance: ProvenanceMetadata | Mapping[str, Any] | None = None,
 ) -> str:
     """Generate an HTML report from disease-specific trial results."""
-    output_path = Path(__file__).parent / "ct_report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "ct_report.html"
     from med_research.pipeline.reporting import disease_context, render_report
 
     context = disease_context(disease_id)

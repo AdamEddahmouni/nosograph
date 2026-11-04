@@ -60,6 +60,13 @@ docker compose --profile demo run --rm pipeline demo build
 docker compose --profile demo up web-demo --build
 ```
 
+`pipeline demo build` writes `data/demo/biomedical.sqlite3` and its manifest into
+the mounted `./data` directory. The `web-demo` service sets
+`DEMO_SNAPSHOT_PATH`/`DEMO_SNAPSHOT_MANIFEST` to those `/app/data/demo/...`
+paths and `DEMO_REQUIRE_MODE=true`; startup refuses to boot if the snapshot is
+missing or inconsistent. The single-container `docker-compose.demo.yml` bakes the
+snapshot into the image instead.
+
 See [Demo](getting-started/demo.md). Operator notes live in the repository at `docs/deployment/local-demo-operator.md` (excluded from GitHub Pages).
 
 ## Environment variables
@@ -87,14 +94,61 @@ The platform uses two complementary auth layers:
 
 2. **Researcher sessions** — Evidence Workspace routes require login via `/api/auth/login` (`AUTH_MODE=local`) or a trusted reverse proxy (`AUTH_MODE=proxy`).
 
-## Health checks
+## Port contract
 
-| Endpoint | Purpose |
-|----------|---------|
-| `GET /api/health` | Liveness — process is running |
-| `GET /api/ready` | Readiness — Redis, Celery, workspace DB, and KG preload |
+The application resolves its listen port from `PORT` in one place
+(`med_research.web.config.resolve_port`):
 
-Docker Compose configures a healthcheck on the `web` service using `/api/health`.
+| Value | Result |
+|-------|--------|
+| unset / empty | `8000` (`DEFAULT_PORT`) |
+| integer `1`–`65535` | that port, everywhere |
+| non-integer, `0`, negative, or `>65535` | startup fails with an actionable error |
+
+Both Dockerfiles declare `ENV PORT=8000` and run `serve --host 0.0.0.0` with no
+hard-coded port. Both Compose files publish, listen on, and probe the same
+`${PORT:-8000}` value, so a platform that injects `PORT` (Heroku, Railway, Fly,
+Cloud Run, App Runner) needs no Dockerfile override. Bind the host publish to
+loopback when the instance is not meant to be reachable beyond the machine.
+
+Do not set `PORT` in `.env` for Compose *and* pass a different `--port` to the
+CLI at the same time; the environment value wins and the mismatch is a common
+source of "container is healthy but nothing answers on my expected port".
+
+## Health and readiness probes
+
+| Endpoint | Purpose | Dependency-aware |
+|----------|---------|------------------|
+| `GET /api/health` | Liveness — the process is running | No. It never touches Redis, Celery, or the database, so a dependency outage cannot restart a healthy container. |
+| `GET /api/ready` | Readiness — safe to send traffic | Yes. Checks Redis, Celery, workspace DB, and KG preload; returns `503` unless every component is `ok`. In demo mode it validates the baked snapshot instead and skips the probes the demo image does not ship. |
+
+Docker Compose configures the container healthcheck against `/api/health`, and
+the injected `PORT` is used in the probe URL. Use `/api/ready` for load-balancer
+target groups: a `503` means "do not route traffic yet", not "restart me".
+
+## Environment validation
+
+Startup validates the environment once and raises a single error listing **every**
+problem, not only the first. Each of these is rejected:
+
+| Condition | Why it fails |
+|-----------|--------------|
+| `DEBUG=false` and no `API_KEY` | Would expose mutation/admin routes without authentication |
+| `PORT` not an integer in `1`–`65535` | Would bind a different port than the platform routed to |
+| `CORS_ORIGINS` explicitly empty when `DEBUG=false` | Browser clients are silently disabled (unset falls back to the documented default) |
+| `CORS_ORIGINS` contains `*` when `DEBUG=false` | Wildcard origins with credentialed requests |
+| `DEMO_MODE=true` with `DEMO_ALLOW_WRITES` / `ALLOW_WRITES` / `DEMO_WRITE_ENABLED` | The read-only demo refuses write-enabled configuration; no write path is added |
+
+`DEMO_MODE=true` exempts the `API_KEY` requirement because the demo middleware
+rejects mutating routes regardless of credentials. Validate the same rules
+without starting the app:
+
+```bash
+python -c "from med_research.web.config import validate_runtime_config; print(validate_runtime_config())"
+```
+
+An empty list means valid. The check is pure when passed a mapping, which is how
+the unit tests exercise it.
 
 ## Faster Docker builds
 
@@ -133,6 +187,99 @@ python -m med_research.cli biomed import hpoa --artifact /path/to/phenotype.hpoa
 
 For test/demo data, `make biomed-import-fixtures` loads the minimal checked-in fixture bundle; `make biomed-verify` validates checksums and active store snapshots.
 
+## Container smoke test
+
+`scripts/docker_smoke.py` builds (or reuses) one image, boots it with an
+injected `PORT`, and verifies the probes on that port. It uses only the Python
+standard library, prints one JSON object, and always removes the container in a
+`finally` block, including when a check fails.
+
+```bash
+# Full image: build, boot on 8080, require liveness
+python scripts/docker_smoke.py --port 8080
+
+# Verify only that the image builds, on a hard time bound
+python scripts/docker_smoke.py --build-only --image nosograph-smoke:local --build-timeout 900
+
+# Existing demo image: assert the read-only guards as well
+python scripts/docker_smoke.py --no-build --image nosograph-demo:latest --demo
+
+# Require readiness too (the full image needs Redis for that)
+python scripts/docker_smoke.py --require-ready
+```
+
+| Flag | Meaning |
+|------|---------|
+| `--port` | Injected `PORT`; `0` picks a free loopback port |
+| `--image` | Tag to build and run (default `nosograph-smoke:<port>`) |
+| `--dockerfile` | Dockerfile for the build (default `Dockerfile`) |
+| `--target` | Build stage to build, so a cached runtime stage is reused |
+| `--timeout` | Application readiness timeout in seconds |
+| `--build-timeout` | Hard bound for the image build (default 900 s) |
+| `--daemon-timeout` | Hard bound for `docker info` (default 60 s) |
+| `--cleanup-timeout` | Hard bound for each container/image removal |
+| `--build-only` | Verify the build and stop; mutually exclusive with `--no-build` |
+| `--no-build` | Reuse an existing image (requires `--image`) |
+| `--validate-diseases` | Run the full-registry strict validation during the build. Off by default because that gate walks 10k+ modules and exits non-zero on generated scaffolds by design; the default build passes `DOCKER_SKIP_DISEASE_VALIDATE=1`. |
+| `--demo` | Mirror the demo contract (`DEBUG=false`, `DEMO_MODE=true`, `DEMO_REQUIRE_MODE=true`) and require `403 demo_read_only` on job submission and cache admin |
+| `--require-ready` | Fail unless `/api/ready` returns `200` |
+| `--env KEY=VALUE` | Extra container environment (repeatable) |
+| `--report PATH` | Also write the JSON report to `PATH` |
+| `--verbose` | Echo command diagnostics to stderr |
+| `--keep` | Leave the container and image behind for inspection |
+
+Every command the harness runs is bounded. Output is captured through
+temporary files rather than pipes, because `subprocess.run(capture_output=True,
+timeout=...)` does not bound a hung `docker build` — on timeout CPython kills
+the direct child and then re-reads the pipes with no timeout, so a grandchild
+holding the inherited write handle blocks forever. On a timeout the harness
+kills the whole process tree, records `timed_out`, and returns.
+
+Containers are named with a per-run token and labelled
+`dev.nosograph.smoke=1`; only those are ever removed. Unrelated containers are
+never touched. A reused `--no-build` image is reported as
+`image_origin: "reused"` with its creation timestamp, so a cached image is
+never presented as built from the current source tree.
+
+A check with `required: false` (``/api/ready`` unless `--require-ready` is
+passed) is reported truthfully in `observed_not_ok` without failing the run: a
+bare container legitimately answers `503` because it ships no Redis, Celery
+worker, or database. Deep-link the report to the failing components — the
+detail names them (for example `not_ok=celery,redis,workspace_db`).
+
+`--demo` expects the demo image. Point it at `--dockerfile Dockerfile.demo` (or
+`--no-build --image nosograph-demo:latest`), because the demo contract requires
+the snapshot baked in at build time.
+
+The smoke test proves the container starts and answers on the injected port. It
+does **not** prove a hosted deployment exists, and it does not replace
+`/api/ready` monitoring in the target environment.
+
+## Staging checklist (provider-neutral)
+
+Nothing in this repository is deployed, and no paid infrastructure is created by
+the project. If you choose to run a staging instance, treat each row as a
+separate decision:
+
+| Layer | What staging needs | Notes |
+|-------|--------------------|-------|
+| Documentation site | Static MkDocs hosting (GitHub Pages today) | Documentation only. It does not serve the FastAPI app. |
+| Application | Container host that honours an injected `PORT` | Must support a long-running process, not only static/edge functions. Healthcheck against `/api/health`; route traffic on `/api/ready`. |
+| Background worker | Same image, `celery -A med_research.web.tasks.analysis_tasks worker` | Async jobs stay `PENDING` without it. Scale separately from the web process. |
+| Scheduler | Same image, `celery ... beat` | Only needed for the weekly digest. Run exactly one. |
+| Redis | Managed or private Redis reachable from app and worker | Required for the queue, results, and the distributed rate limiter. App falls back to an in-memory limiter (fail-open) if Redis is down. Do not expose Redis to the internet. |
+| Persistent data | Volume mounted at `/app/data` | Holds `biomedical.sqlite3`, `evidence_workspace.sqlite3`, and pipeline outputs. Losing it loses run history and the imported store. |
+| Secrets | Platform secret store, injected at runtime | `API_KEY`, `AUTH_SESSION_SECRET`, broker URL, SMTP credentials. Never bake them into the image or commit `.env`. |
+| Monitoring | Uptime check on `/api/health`, alert on `/api/ready` failures and worker queue depth | Liveness and readiness mean different things; alert on them separately. |
+| TLS / proxy | Reverse proxy terminating TLS in front of the app | Keep `CORS_ORIGINS` on the public origin. If `AUTH_MODE=proxy`, set `AUTH_TRUSTED_PROXY_IPS` to the proxy addresses only. |
+| Demo instance (optional) | `Dockerfile.demo` or the `demo` profile | Read-only by construction. Do not mount writable `./data` into the single-container image. |
+
+Before promoting a staging build, run `make ci-local`, the browser tier, and
+`python scripts/docker_smoke.py --demo` against the demo image, or
+`python scripts/docker_smoke.py --dockerfile Dockerfile.demo --demo --no-build --image <tag>`
+when the demo image was built separately. Use `--validate-diseases` when the
+build-time curation gate itself is what you are verifying.
+
 ## Research-only policy
 
 This platform is for **public biomedical knowledge and computational research**. Do not store or process patient-identifiable data (PHI). See [SECURITY.md](https://github.com/AdamEddahmouni/nosograph/blob/master/SECURITY.md) and [data licensing](legal/data-licenses.md).
@@ -141,7 +288,9 @@ This platform is for **public biomedical knowledge and computational research**.
 
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
-| Web container exits on start | `DEBUG=false` without `API_KEY` | Set `API_KEY` or `DEBUG=true` in `.env` |
+| Web container exits on start | Invalid runtime configuration (usually `DEBUG=false` without `API_KEY`) | The startup error lists every problem; fix all of them, or set `API_KEY` / `DEBUG=true` in `.env` |
+| Web container exits with a `PORT` error | Injected or Compose `PORT` is not an integer in `1`–`65535` | Unset it or set a valid port; do not rely on a silent fallback |
+| Healthcheck passes but the port is unreachable | Host publish and `PORT` disagree | Use the same `${PORT}` for publish, listen, and probe |
 | Jobs stay `PENDING` | Worker not running | `docker compose --profile full up worker` |
 | `429 Too Many Requests` | Rate limit hit | Raise `RATE_LIMIT_REQUESTS` or wait |
 | `/api/ready` returns 503 | Redis/Celery unreachable | Check `redis` service and broker URLs |

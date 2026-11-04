@@ -262,3 +262,92 @@ def test_safety_cli_single_drug(caplog):
 
     assert exit_code == 0
     assert "Safety Profile" in caplog.text
+
+
+def test_safety_cli_displays_insufficient_evidence(caplog, monkeypatch):
+    import logging
+
+    from med_research.cli import cmd_safety
+    from med_research.pipeline.adverse_events import profiler
+    from tests.cli_helpers import run_cli_handler
+
+    monkeypatch.setattr(
+        profiler,
+        "get_drug_profile",
+        lambda *_args, **_kwargs: {
+            "drug_name": "AMIODARONE",
+            "score_status": "insufficient_evidence",
+            "composite_safety_score": None,
+            "disease_symptom_overlap_score": None,
+            "severity_burden_score": None,
+            "chronic_use_safety_score": None,
+            "disease_specific_risk_score": None,
+            "black_box_warnings": [],
+            "disease_overlap_ae": [],
+        },
+    )
+
+    with caplog.at_level(logging.INFO):
+        exit_code = run_cli_handler(
+            cmd_safety,
+            "safety",
+            "--disease",
+            "cardiac_arrest",
+            "--drug",
+            "CHEMBL633",
+        )
+
+    assert exit_code == 0
+    assert "Insufficient evidence" in caplog.text
+    assert "None/10" not in caplog.text
+
+
+def test_safety_report_displays_unscored_drug_without_numeric_values(monkeypatch, tmp_path):
+    from med_research.pipeline.adverse_events import report
+    from med_research.pipeline.adverse_events.profiler import compute_adverse_event_score
+
+    scored = compute_adverse_event_score(
+        {
+            "drug_id": "scored-drug",
+            "drug_name": "Scored Drug",
+            "severity_burden": 3,
+            "chronic_use_safety": 7,
+            "disease_specific_risk": 0,
+            "disease_overlap_ae": [],
+            "severe_ae": [],
+            "black_box_warnings": [],
+        },
+        disease_id="cardiac_arrest",
+    )
+    unscored = {
+        **scored,
+        "drug_id": "unknown-drug",
+        "drug_name": "Unknown Drug",
+        "score_status": "insufficient_evidence",
+    }
+    for field in (
+        "disease_symptom_overlap_score",
+        "disease_overlap_score",
+        "lupus_symptom_overlap_score",
+        "severity_burden_score",
+        "chronic_use_safety_score",
+        "disease_specific_risk_score",
+        "dil_risk_score",
+        "composite_safety_score",
+    ):
+        unscored[field] = None
+
+    monkeypatch.setattr(report, "report_output_dir", lambda _path: tmp_path)
+    output = Path(report.generate_html_report([scored, unscored], disease_id="cardiac_arrest"))
+    html = output.read_text(encoding="utf-8")
+    output.unlink()
+
+    assert "Scored Drug" in html
+    assert "Unknown Drug" in html
+    assert "Insufficient evidence" in html
+    assert "Average Safety Score (1 scored)" in html
+    assert "Insufficient Evidence (1 unscored)" in html
+    assert "Total Drugs Profiled" in html
+    assert "None/10" not in html
+    highlights = html.split("Top 10 Safest Drugs", 1)[-1].split("Complete Safety Rankings", 1)[0]
+    assert "Unknown Drug" not in highlights

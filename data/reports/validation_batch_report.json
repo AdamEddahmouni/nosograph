@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-08-21T01:06:24.688608+00:00",
-  "tier_filter": "reference",
+  "generated_at": "2026-11-04T01:09:17.970061+00:00",
+  "tier_filter": "ci_validated",
   "summary": {
-    "total": 6,
-    "passed": 6,
+    "total": 8,
+    "passed": 8,
     "failed": 0,
     "pass_rate": 1.0,
-    "failure_classes": {}
+    "structurally_valid": 8,
+    "structurally_failed": 0,
+    "evidenced": 8,
+    "not_evidenced": 0,
+    "evidence_assessed": 8,
+    "evidence_target": 0.8,
+    "evidence_density": 0.8905,
+    "evidence_gate_enabled": true,
+    "evidence_gate_passed": true,
+    "sampled": false,
+    "sample_size": null,
+    "sample_seed": 0,
+    "excluded_blocked": 0,
+    "failure_classes": {},
+    "failure_groups": {}
   },
   "failure_class_definitions": {
     "SCHEMA": "JSON or pydantic schema validation failed for a KG or config artifact.",
@@ -21,40 +35,356 @@
   },
   "entries": [
     {
+      "disease_id": "ad",
+      "name": "Alzheimer's Disease",
+      "passed": true,
+      "structurally_valid": true,
+      "evidenced": true,
+      "failures": [],
+      "evidence": {
+        "assessed": true,
+        "scope": "gene, drug, and pathway records",
+        "definition": "A record is evidenced when its `references` list contains at least one recognised identifier scheme (for example PMID, DOI, CLINVAR, NCT, or CHEMBL). The record's own `id` is not counted: it identifies the entity, not the evidence for the claim.",
+        "records": 23,
+        "evidenced": 23,
+        "without_resolvable_identifier": 0,
+        "density": 1.0,
+        "target": 0.8,
+        "passes": true,
+        "structurally_valid": true,
+        "errors": {},
+        "by_collection": {
+          "drugs": {
+            "records": 6,
+            "evidenced": 6,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "genes": {
+            "records": 12,
+            "evidenced": 12,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "pathways": {
+            "records": 5,
+            "evidenced": 5,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          }
+        }
+      }
+    },
+    {
+      "disease_id": "ibd",
+      "name": "Inflammatory Bowel Disease",
+      "passed": true,
+      "structurally_valid": true,
+      "evidenced": true,
+      "failures": [],
+      "evidence": {
+        "assessed": true,
+        "scope": "gene, drug, and pathway records",
+        "definition": "A record is evidenced when its `references` list contains at least one recognised identifier scheme (for example PMID, DOI, CLINVAR, NCT, or CHEMBL). The record's own `id` is not counted: it identifies the entity, not the evidence for the claim.",
+        "records": 67,
+        "evidenced": 55,
+        "without_resolvable_identifier": 12,
+        "density": 0.8209,
+        "target": 0.8,
+        "passes": true,
+        "structurally_valid": true,
+        "errors": {},
+        "by_collection": {
+          "drugs": {
+            "records": 21,
+            "evidenced": 21,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "genes": {
+            "records": 37,
+            "evidenced": 25,
+            "without_resolvable_identifier": 12,
+            "density": 0.6757,
+            "passes": false
+          },
+          "pathways": {
+            "records": 9,
+            "evidenced": 9,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          }
+        }
+      }
+    },
+    {
+      "disease_id": "ms",
+      "name": "Multiple Sclerosis",
+      "passed": true,
+      "structurally_valid": true,
+      "evidenced": true,
+      "failures": [],
+      "evidence": {
+        "assessed": true,
+        "scope": "gene, drug, and pathway records",
+        "definition": "A record is evidenced when its `references` list contains at least one recognised identifier scheme (for example PMID, DOI, CLINVAR, NCT, or CHEMBL). The record's own `id` is not counted: it identifies the entity, not the evidence for the claim.",
+        "records": 70,
+        "evidenced": 61,
+        "without_resolvable_identifier": 9,
+        "density": 0.8714,
+        "target": 0.8,
+        "passes": true,
+        "structurally_valid": true,
+        "errors": {},
+        "by_collection": {
+          "drugs": {
+            "records": 20,
+            "evidenced": 20,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "genes": {
+            "records": 41,
+            "evidenced": 32,
+            "without_resolvable_identifier": 9,
+            "density": 0.7805,
+            "passes": false
+          },
+          "pathways": {
+            "records": 9,
+            "evidenced": 9,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          }
+        }
+      }
+    },
+    {
+      "disease_id": "ra",
+      "name": "Rheumatoid Arthritis",
+      "passed": true,
+      "structurally_valid": true,
+      "evidenced": true,
+      "failures": [],
+      "evidence": {
+        "assessed": true,
+        "scope": "gene, drug, and pathway records",
+        "definition": "A record is evidenced when its `references` list contains at least one recognised identifier scheme (for example PMID, DOI, CLINVAR, NCT, or CHEMBL). The record's own `id` is not counted: it identifies the entity, not the evidence for the claim.",
+        "records": 71,
+        "evidenced": 64,
+        "without_resolvable_identifier": 7,
+        "density": 0.9014,
+        "target": 0.8,
+        "passes": true,
+        "structurally_valid": true,
+        "errors": {},
+        "by_collection": {
+          "drugs": {
+            "records": 24,
+            "evidenced": 24,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "genes": {
+            "records": 39,
+            "evidenced": 32,
+            "without_resolvable_identifier": 7,
+            "density": 0.8205,
+            "passes": true
+          },
+          "pathways": {
+            "records": 8,
+            "evidenced": 8,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          }
+        }
+      }
+    },
+    {
       "disease_id": "sle",
       "name": "Systemic Lupus Erythematosus",
       "passed": true,
-      "failures": []
+      "structurally_valid": true,
+      "evidenced": true,
+      "failures": [],
+      "evidence": {
+        "assessed": true,
+        "scope": "gene, drug, and pathway records",
+        "definition": "A record is evidenced when its `references` list contains at least one recognised identifier scheme (for example PMID, DOI, CLINVAR, NCT, or CHEMBL). The record's own `id` is not counted: it identifies the entity, not the evidence for the claim.",
+        "records": 74,
+        "evidenced": 74,
+        "without_resolvable_identifier": 0,
+        "density": 1.0,
+        "target": 0.8,
+        "passes": true,
+        "structurally_valid": true,
+        "errors": {},
+        "by_collection": {
+          "drugs": {
+            "records": 26,
+            "evidenced": 26,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "genes": {
+            "records": 38,
+            "evidenced": 38,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "pathways": {
+            "records": 10,
+            "evidenced": 10,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          }
+        }
+      }
     },
     {
-      "disease_id": "cystic_fibrosis",
-      "name": "Cystic fibrosis",
+      "disease_id": "ss",
+      "name": "Sjögren's Syndrome",
       "passed": true,
-      "failures": []
+      "structurally_valid": true,
+      "evidenced": true,
+      "failures": [],
+      "evidence": {
+        "assessed": true,
+        "scope": "gene, drug, and pathway records",
+        "definition": "A record is evidenced when its `references` list contains at least one recognised identifier scheme (for example PMID, DOI, CLINVAR, NCT, or CHEMBL). The record's own `id` is not counted: it identifies the entity, not the evidence for the claim.",
+        "records": 61,
+        "evidenced": 56,
+        "without_resolvable_identifier": 5,
+        "density": 0.918,
+        "target": 0.8,
+        "passes": true,
+        "structurally_valid": true,
+        "errors": {},
+        "by_collection": {
+          "drugs": {
+            "records": 18,
+            "evidenced": 18,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "genes": {
+            "records": 36,
+            "evidenced": 31,
+            "without_resolvable_identifier": 5,
+            "density": 0.8611,
+            "passes": true
+          },
+          "pathways": {
+            "records": 7,
+            "evidenced": 7,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          }
+        }
+      }
     },
     {
-      "disease_id": "tuberculosis",
-      "name": "Tuberculosis",
+      "disease_id": "ssc",
+      "name": "Systemic Sclerosis (Scleroderma)",
       "passed": true,
-      "failures": []
+      "structurally_valid": true,
+      "evidenced": true,
+      "failures": [],
+      "evidence": {
+        "assessed": true,
+        "scope": "gene, drug, and pathway records",
+        "definition": "A record is evidenced when its `references` list contains at least one recognised identifier scheme (for example PMID, DOI, CLINVAR, NCT, or CHEMBL). The record's own `id` is not counted: it identifies the entity, not the evidence for the claim.",
+        "records": 69,
+        "evidenced": 57,
+        "without_resolvable_identifier": 12,
+        "density": 0.8261,
+        "target": 0.8,
+        "passes": true,
+        "structurally_valid": true,
+        "errors": {},
+        "by_collection": {
+          "drugs": {
+            "records": 18,
+            "evidenced": 18,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "genes": {
+            "records": 43,
+            "evidenced": 31,
+            "without_resolvable_identifier": 12,
+            "density": 0.7209,
+            "passes": false
+          },
+          "pathways": {
+            "records": 8,
+            "evidenced": 8,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          }
+        }
+      }
     },
     {
-      "disease_id": "melanoma",
-      "name": "Melanoma",
+      "disease_id": "t1d",
+      "name": "Type 1 Diabetes",
       "passed": true,
-      "failures": []
-    },
-    {
-      "disease_id": "als",
-      "name": "Amyotrophic Lateral Sclerosis",
-      "passed": true,
-      "failures": []
-    },
-    {
-      "disease_id": "t2d",
-      "name": "Type 2 Diabetes",
-      "passed": true,
-      "failures": []
+      "structurally_valid": true,
+      "evidenced": true,
+      "failures": [],
+      "evidence": {
+        "assessed": true,
+        "scope": "gene, drug, and pathway records",
+        "definition": "A record is evidenced when its `references` list contains at least one recognised identifier scheme (for example PMID, DOI, CLINVAR, NCT, or CHEMBL). The record's own `id` is not counted: it identifies the entity, not the evidence for the claim.",
+        "records": 58,
+        "evidenced": 49,
+        "without_resolvable_identifier": 9,
+        "density": 0.8448,
+        "target": 0.8,
+        "passes": true,
+        "structurally_valid": true,
+        "errors": {},
+        "by_collection": {
+          "drugs": {
+            "records": 16,
+            "evidenced": 16,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          },
+          "genes": {
+            "records": 34,
+            "evidenced": 25,
+            "without_resolvable_identifier": 9,
+            "density": 0.7353,
+            "passes": false
+          },
+          "pathways": {
+            "records": 8,
+            "evidenced": 8,
+            "without_resolvable_identifier": 0,
+            "density": 1.0,
+            "passes": true
+          }
+        }
+      }
     }
   ]
 }

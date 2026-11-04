@@ -27,6 +27,9 @@ exclude_docs: |
   project/openssf-readiness.md
   project/release-notes-template.md
   project/zenodo-setup.md
+  # Local publication-state records; not part of the published documentation
+  project/wave2-publication-manifest.md
+  project/wave3-publication-manifest.md
   architecture/commercialization-boundaries.md
   architecture/decisions/
   # Internal engineering design for a future hosted demo (not an offered product)
@@ -132,6 +135,7 @@ nav:
           - API reference: api-reference.md
           - Source sync: using/source-sync.md
           - Validation: using/validation.md
+          - Phenotype evidence export: using/phenopacket-export.md
   - Understand:
       - Diseases: concepts/diseases.md
       - Disease registry: concepts/registry.md
@@ -143,9 +147,11 @@ nav:
       - Hypotheses: concepts/hypotheses.md
       - Graphs vs ontologies: concepts/graph-vs-ontology.md
       - MONDO and HPO: concepts/mondo-hpo.md
+      - Community prototype: concepts/community-prototype.md
       - Data & sources:
           - Sources: data/sources.md
           - Coverage: data/coverage.md
+          - Evidence coverage: data/evidence-coverage.md
           - Data provenance: data/provenance.md
           - Update cadence: data/update-cadence.md
           - Licensing: data/licensing.md

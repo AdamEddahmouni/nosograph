@@ -179,7 +179,7 @@ Defer: ORPHA standalone (cover via MONDO), NCBI Taxonomy (low near-term leverage
 | scaffold | Auto-generated KG skeleton | None required | None expected |
 | L1 | Partial KG; strict fails | Optional | Minimal |
 | L2 | Strict pass; pipeline-ready | Required strict | Config + KG complete |
-| L3 | Research-ready | Strict + expression consensus OR deep manual review | Multi-source claims preferred |
+| L3 | Research-ready | Strict + curated literature consensus OR deep manual review | Multi-source claims preferred |
 | ci_validated | L2/L3 ∩ 8 core PR gate | Every PR | Reference quality |
 
 **Reference disease strategy:** Deepen existing reference set (`sle`, `cystic_fibrosis`, `tuberculosis`, `melanoma`, `als`, `t2d`) plus add **one** deep L3 module per major class only where an existing module qualifies — do not add diseases to fill categories.

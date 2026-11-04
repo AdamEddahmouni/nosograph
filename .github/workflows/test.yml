@@ -54,6 +54,9 @@ jobs:
       - name: Check public metadata consistency
         run: python scripts/check_public_metadata.py
 
+      - name: Check reference identifiers resolve
+        run: python scripts/check_reference_identifiers.py --tier both
+
       - name: Check harvest catalog vs on-disk modules
         run: python scripts/check_registry_harvest.py
 
@@ -172,11 +175,11 @@ jobs:
       - name: Verify curated disease configs (not full 10k registry)
         run: |
           for id in sle ra ibd ms ss ssc t1d ad; do
-            python -m med_research.cli disease validate "$id" --strict
+            python -m med_research.cli disease validate "$id" --strict --require-evidence
           done
 
-      - name: Validate reference disease batch (strict)
-        run: python -m med_research.cli disease validate-batch --tier reference --strict
+      - name: Validate reference disease batch (strict + evidence)
+        run: python -m med_research.cli disease validate-batch --tier reference --strict --require-evidence
 
       # Platform-core and corpus-readiness modules are already selected by the
       # offline pytest gate above. Re-running them here was duplicate wall-clock.
@@ -277,11 +280,6 @@ jobs:
       - name: Run slow tests (live external API calls)
         run: python -m pytest tests/ -m slow -v --tb=short
 
-      - name: Strict validate full L2 corpus
-        run: |
-          python -m med_research.cli disease validate-batch --tier L2 --strict \
-            --output data/reports/validation_l2_full.json
-
       - name: Upload Playwright failure diagnostics
         if: always()
         uses: actions/upload-artifact@v7
@@ -289,4 +287,41 @@ jobs:
           name: playwright-browser-diagnostics
           path: test-artifacts/browser/
           if-no-files-found: ignore
+          retention-days: 14
+
+  corpus-validation:
+    # Scientific gate kept independent of slow-tests: a Playwright failure must
+    # never skip strict corpus validation, and a corpus failure must not be
+    # hidden behind browser diagnostics.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-lock.txt
+          pip install -e .
+
+      - name: Strict validate full L2 corpus
+        run: |
+          python -m med_research.cli disease validate-batch --tier L2 --strict \
+            --output data/reports/validation_l2_full.json
+
+      - name: Upload L2 validation report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: l2-corpus-validation
+          path: data/reports/validation_l2_full.json
+          if-no-files-found: warn
           retention-days: 14

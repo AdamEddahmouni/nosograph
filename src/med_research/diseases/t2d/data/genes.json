@@ -12,7 +12,11 @@
       "disease_evidence": "Strongest common genetic locus associated with T2D risk.",
       "gwas_pvalue": 1e-150,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:34016596",
+        "DOI:10.2337/db20-0573"
+      ]
     },
     {
       "id": "PPARG",
@@ -24,7 +28,23 @@
       "disease_evidence": "Master regulator of adipogenesis and insulin sensitivity.",
       "gwas_pvalue": 1e-80,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:30207237",
+        "CLINVAR:1686090"
+      ],
+      "variants": [
+        {
+          "id": "PPARG-c.1181-2A>T",
+          "name": "Splice acceptor",
+          "clinvar_id": "1686090",
+          "hgvs": "NM_138711.6:c.1181-2A>T",
+          "clinical_significance": "Pathogenic",
+          "references": [
+            "CLINVAR:1686090"
+          ]
+        }
+      ]
     },
     {
       "id": "KCNJ11",
@@ -36,7 +56,23 @@
       "disease_evidence": "Encodes Kir6.2 subunit of beta-cell KATP channel.",
       "gwas_pvalue": 1e-60,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:40487603",
+        "CLINVAR:3241788"
+      ],
+      "variants": [
+        {
+          "id": "KCNJ11-F123fs",
+          "name": "Phe123fs",
+          "clinvar_id": "3241788",
+          "hgvs": "NM_000525.4:c.368del (p.Phe123fs)",
+          "clinical_significance": "Likely pathogenic",
+          "references": [
+            "CLINVAR:3241788"
+          ]
+        }
+      ]
     },
     {
       "id": "SLC30A8",
@@ -48,7 +84,10 @@
       "disease_evidence": "Zinc transporter ZnT8 critical for insulin crystallization.",
       "gwas_pvalue": 1e-50,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:26214053"
+      ]
     },
     {
       "id": "GLP1R",
@@ -60,7 +99,10 @@
       "disease_evidence": "Primary therapeutic target for incretin mimetics.",
       "gwas_pvalue": 1e-90,
       "chromosome": "unknown",
-      "function": "unknown"
+      "function": "unknown",
+      "references": [
+        "PMID:37430117"
+      ]
     }
   ]
 }
