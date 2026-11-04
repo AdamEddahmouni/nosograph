@@ -113,9 +113,33 @@
       "odds_ratio": 1.3,
       "references": [
         "PMID:12833157",
-        "PMID:16418742"
+        "PMID:16418742",
+        "CLINVAR:590790",
+        "CLINVAR:590889"
       ],
-      "category": "Citrullination / Autoantigen Generation"
+      "category": "Citrullination / Autoantigen Generation",
+      "variants": [
+        {
+          "id": "PADI4-c.341-15T>C",
+          "name": "Splice region variant",
+          "clinvar_id": "590790",
+          "hgvs": "NM_012387.3:c.341-15T>C",
+          "clinical_significance": "association",
+          "references": [
+            "CLINVAR:590790"
+          ]
+        },
+        {
+          "id": "PADI4-g.17157671G>T",
+          "name": "Genomic association variant",
+          "clinvar_id": "590889",
+          "hgvs": "NC_000001.11:g.17157671G>T",
+          "clinical_significance": "association",
+          "references": [
+            "CLINVAR:590889"
+          ]
+        }
+      ]
     },
     {
       "id": "FCGR2A",

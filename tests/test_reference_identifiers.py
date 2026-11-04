@@ -146,6 +146,7 @@ def test_curated_variant_records_have_clinvar_provenance() -> None:
         "ms",
         "ibd",
         "ad",
+        "ra",
     )
 
     for disease_id in curated:
@@ -158,3 +159,11 @@ def test_curated_variant_records_have_clinvar_provenance() -> None:
                 assert variant["hgvs"]
                 assert variant["clinical_significance"]
                 assert f"CLINVAR:{variant['clinvar_id']}" in gene["references"]
+
+
+def test_ra_padi4_records_are_explicit_association_variants() -> None:
+    genes = Disease("ra").load_genes()["genes"]
+    padi4 = next(gene for gene in genes if gene["id"] == "PADI4")
+
+    assert {variant["clinvar_id"] for variant in padi4["variants"]} == {"590790", "590889"}
+    assert all(variant["clinical_significance"] == "association" for variant in padi4["variants"])

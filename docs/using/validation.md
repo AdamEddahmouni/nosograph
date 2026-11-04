@@ -55,9 +55,12 @@ python scripts/check_reference_identifiers.py --tier both
 PMIDs and ClinVar IDs are batched through NCBI E-utilities; DOIs use the DOI
 Handle API. The command exits `1` if any identifier is dead, or if an upstream
 failure prevents a definitive answer after retries. `--json PATH` writes the
-per-identifier report with every disease/collection/record location.The hosted `lint` job runs this check, so a dead identifier is merge-blocking.
+per-identifier report with every disease/collection/record location. The hosted `lint` job runs this check, so a dead identifier is merge-blocking.
 A separate `Reference identifier audit` workflow also runs it every Monday at
-04:00 UTC and on manual dispatch, uploading the JSON report as an artifact.
+04:00 UTC and on manual dispatch, uploading the JSON report as an artifact. If
+the audit fails, the workflow opens or updates a single
+`[automated] Reference identifier audit failed` issue with the run link; repeat
+failures add comments instead of creating duplicate issues.
 
 The check is intentionally online-only and is not part of `make ci-local`,
 which must remain offline. Use `make check-references` locally when network

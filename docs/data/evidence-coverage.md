@@ -57,8 +57,10 @@ clinical significance; the same ID is also listed in the gene's `references` as
 `CLINVAR:<id>`. This keeps the evidence denominator at the gene-record level
 while preserving variant-level identifiers. Curated variant records currently
 cover CFTR, BRAF/NRAS/KIT, C1QA/C2, IFNGR1, SOD1, KCNJ11/PPARG, HLA-DRB1, NOD2,
-and APP. Modules without an unambiguous disease-specific ClinVar record are
-left without variant entries rather than assigned an unrelated risk allele.
+PADI4, and APP. The RA PADI4 entries are explicitly `association` records, not
+pathogenicity claims. SS, SSC, and T1D remain without variant entries because
+no unambiguous disease-specific ClinVar record was found; modules without such
+a record are left empty rather than assigned an unrelated risk allele.
 
 Relationship edges carry no citation field in the current schema. These are
 structural assertions, so their provenance is reported as
