@@ -23,14 +23,13 @@ anyio==4.14.2
     #   httpx
     #   starlette
     #   watchfiles
-asgiref==3.12.1
-    # via opentelemetry-instrumentation-asgi
 ast-serialize==0.8.0
     # via mypy
 attrs==26.1.0
-    # via aiohttp
-backoff==2.2.1
-    # via posthog
+    # via
+    #   aiohttp
+    #   jsonschema
+    #   referencing
 bcrypt==5.0.0
     # via chromadb
 billiard==4.2.4
@@ -51,9 +50,7 @@ certifi==2026.10.19
     #   requests
 charset-normalizer==3.4.9
     # via requests
-chroma-hnswlib==0.7.6
-    # via chromadb
-chromadb==0.6.3
+chromadb==1.5.9
     # via -r requirements-dev.in
 click==8.4.2
     # via
@@ -84,8 +81,6 @@ cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink
     # via torch
 cycler==0.12.1
     # via matplotlib
-distro==1.9.0
-    # via posthog
 duckdb==1.5.5
     # via -r requirements.in
 durationpy==0.10
@@ -93,9 +88,7 @@ durationpy==0.10
 execnet==2.1.2
     # via pytest-xdist
 fastapi==0.141.1
-    # via
-    #   -r requirements.in
-    #   chromadb
+    # via -r requirements.in
 filelock==3.32.2
     # via
     #   huggingface-hub
@@ -159,6 +152,10 @@ jinja2==3.1.6
     #   torch
 joblib==1.5.3
     # via scikit-learn
+jsonschema==4.26.0
+    # via chromadb
+jsonschema-specifications==2025.9.1
+    # via jsonschema
 kiwisolver==1.5.0
     # via matplotlib
 kombu[redis]==5.6.2
@@ -207,7 +204,6 @@ numpy==2.4.6
     # via
     #   -r requirements.in
     #   biopython
-    #   chroma-hnswlib
     #   chromadb
     #   contourpy
     #   gseapy
@@ -273,22 +269,11 @@ opentelemetry-api==1.44.0
     # via
     #   chromadb
     #   opentelemetry-exporter-otlp-proto-grpc
-    #   opentelemetry-instrumentation
-    #   opentelemetry-instrumentation-asgi
-    #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-sdk
     #   opentelemetry-semantic-conventions
 opentelemetry-exporter-otlp-proto-common==1.44.0
     # via opentelemetry-exporter-otlp-proto-grpc
 opentelemetry-exporter-otlp-proto-grpc==1.44.0
-    # via chromadb
-opentelemetry-instrumentation==0.65b0
-    # via
-    #   opentelemetry-instrumentation-asgi
-    #   opentelemetry-instrumentation-fastapi
-opentelemetry-instrumentation-asgi==0.65b0
-    # via opentelemetry-instrumentation-fastapi
-opentelemetry-instrumentation-fastapi==0.65b0
     # via chromadb
 opentelemetry-proto==1.44.0
     # via
@@ -299,15 +284,7 @@ opentelemetry-sdk==1.44.0
     #   chromadb
     #   opentelemetry-exporter-otlp-proto-grpc
 opentelemetry-semantic-conventions==0.65b0
-    # via
-    #   opentelemetry-instrumentation
-    #   opentelemetry-instrumentation-asgi
-    #   opentelemetry-instrumentation-fastapi
-    #   opentelemetry-sdk
-opentelemetry-util-http==0.65b0
-    # via
-    #   opentelemetry-instrumentation-asgi
-    #   opentelemetry-instrumentation-fastapi
+    # via opentelemetry-sdk
 orjson==3.11.9
     # via
     #   -r requirements.in
@@ -321,7 +298,6 @@ packaging==26.2
     #   kombu
     #   matplotlib
     #   onnxruntime
-    #   opentelemetry-instrumentation
     #   pytest
     #   shap
     #   transformers
@@ -344,8 +320,6 @@ pluggy==1.6.0
     # via
     #   pytest
     #   pytest-cov
-posthog==7.45.3
-    # via chromadb
 prompt-toolkit==3.0.52
     # via click-repl
 propcache==0.5.2
@@ -357,13 +331,18 @@ protobuf==7.35.1
     #   googleapis-common-protos
     #   onnxruntime
     #   opentelemetry-proto
+pybase64==1.5.1
+    # via chromadb
 pydantic==2.13.4
     # via
     #   -r requirements.in
     #   chromadb
     #   fastapi
+    #   pydantic-settings
 pydantic-core==2.46.4
     # via pydantic
+pydantic-settings==2.16.2
+    # via chromadb
 pyee==13.0.1
     # via playwright
 pygments==2.20.0
@@ -397,7 +376,9 @@ python-dateutil==2.9.0.post0
     #   matplotlib
     #   pandas
 python-dotenv==1.2.2
-    # via uvicorn
+    # via
+    #   pydantic-settings
+    #   uvicorn
 pyyaml==6.0.3
     # via
     #   chromadb
@@ -412,6 +393,10 @@ redis==6.4.0
     # via
     #   -r requirements.in
     #   kombu
+referencing==0.37.0
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
 regex==2026.7.19
     # via transformers
 requests==2.34.2
@@ -419,7 +404,6 @@ requests==2.34.2
     #   -r requirements.in
     #   gseapy
     #   kubernetes
-    #   posthog
     #   requests-oauthlib
     #   responses
 requests-oauthlib==2.0.0
@@ -430,6 +414,10 @@ rich==15.0.0
     # via
     #   chromadb
     #   typer
+rpds-py==2026.9.1
+    # via
+    #   jsonschema
+    #   referencing
 ruff==0.16.3
     # via -r requirements-dev.in
 safetensors==0.8.0
@@ -502,11 +490,12 @@ typing-extensions==4.16.0
     #   opentelemetry-exporter-otlp-proto-grpc
     #   opentelemetry-sdk
     #   opentelemetry-semantic-conventions
-    #   posthog
     #   pydantic
     #   pydantic-core
+    #   pydantic-settings
     #   pyee
     #   pytest-asyncio
+    #   referencing
     #   sentence-transformers
     #   shap
     #   starlette
@@ -516,6 +505,7 @@ typing-inspection==0.4.2
     # via
     #   fastapi
     #   pydantic
+    #   pydantic-settings
 tzdata==2026.3
     # via kombu
 tzlocal==5.4.4
@@ -548,8 +538,6 @@ websockets==17.1
     #   uvicorn
 wheel==0.47.0
     # via pip-tools
-wrapt==2.4.1
-    # via opentelemetry-instrumentation
 xgboost==3.2.0
     # via -r requirements.in
 yarl==1.24.5
