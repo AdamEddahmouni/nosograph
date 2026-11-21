@@ -1,0 +1,4 @@
+# NosoVolution film-only workspace
+Read `GROK_MASTER_EXECUTION_PROMPT.md`, `script/SHOT_MANIFEST.json` and `00_START_HERE.md` first. Deliver a finished video. Research use only; do not edit the NosoGraph repository or post publicly. No paid credits, API calls billed without approval, leaks, private clinical files, or unlicensed reference footage. All scene copy must be fact-checked. Assets in `design/` are reference and provisional unless otherwise marked.
+
+Agent sub-roles can coordinate: (1) identity/motion, (2) science/source and UI verification, (3) audio/license, (4) compositor/editor, (5) independent QA, with disjoint files and a single integration owner. Prefer at most 3 active workers on resource-constrained hardware; share intermediate frames and use small previews. The user directs launch decisions; final public posting requires approval.
