@@ -29,6 +29,12 @@
 
 > **Public alpha · research use only.** NosoGraph is not medical advice, a diagnostic system, or clinical decision support. No public hosted demo is deployed; use the local Docker evaluation or CLI.
 
+## NosoVolution — the proposed next chapter
+
+**NosoVolution** is the approved name for the broader scientific research program being planned around the existing NosoGraph evidence platform. Its ambitions include reproducible mathematical models, experimental methods, and cross-disciplinary discovery; **these future systems are not claimed to be shipped in the current public alpha**.
+
+Read the [NosoVolution master-program documentation](docs/nosovolution/README.md), [research catalog](docs/nosovolution/research/INTERACTIVE_ATLAS_REV5.html), and [public launch plan](docs/nosovolution/PUBLIC_LAUNCH_CHECKLIST.md). The current `nosograph` repository, `med-research` package, and legacy import compatibility remain unchanged.
+
 ## What you can do
 
 | Capability | What it provides | Maturity |
