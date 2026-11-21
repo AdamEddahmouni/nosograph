@@ -1,0 +1,14 @@
+:root {
+  --nv-ink: #102238;
+  --nv-blue: #6288A3;
+  --nv-paper: #F5F1E8;
+  --nv-graphite: #49535B;
+  --nv-copper: #8B7355;
+  --nv-serif: Georgia, "Times New Roman", serif;
+  --nv-sans: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+[data-theme="dark"] {
+  --nv-ink: #F5F1E8;
+  --nv-paper: #102238;
+}
+/* Concept tokens — no production brand system is implied by this file. */

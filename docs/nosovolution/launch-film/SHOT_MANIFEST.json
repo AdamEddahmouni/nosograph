@@ -1,0 +1,160 @@
+{
+  "project": "NosoVolution public launch film",
+  "version": "v1.0",
+  "duration_seconds": 40,
+  "frame_rate": 30,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "reference": "User-provided 40.0-second video, 1920x1080/30 fps",
+  "scenes": [
+    {
+      "id": "01",
+      "start": 0.0,
+      "end": 4.0,
+      "heading": "The symbol is constructed",
+      "onscreen": [
+        "NosoVolution"
+      ],
+      "visual": "A barely visible graphite dot becomes two compass circles. A central V is constructed with measured angles. The approved oVo mark resolves from geometric guides; the small growth detail receives a single muted-blue ink pass. The final wordmark typesets underneath.",
+      "motion": "Pencil guides -> drawn circular arcs -> ink shape -> gentle fade of construction geometry; no particle effects, logo bounce or glow.",
+      "sound": "Quiet compass point and paper friction; music begins with a held piano/felt-note texture.",
+      "status": "Approved brand direction; use finalized master logo artwork only",
+      "type": "identity",
+      "duration": 4.0
+    },
+    {
+      "id": "02",
+      "start": 4.0,
+      "end": 8.5,
+      "heading": "The research question",
+      "onscreen": [
+        "Medicine asks questions",
+        "no single source can answer."
+      ],
+      "visual": "On a clean manuscript spread, a medical question is written at left. On the right, restrained index lines emerge toward individually labeled study records, clinical research, and biological knowledge; use accurate source categories rather than fabricated journal titles.",
+      "motion": "Write-on serif headline; measured hairlines extend in two stages; small page numbers and diagram references fade in.",
+      "sound": "One subdued page turn and understated ticking strokes.",
+      "status": "General research framing; no claim of implementation",
+      "type": "problem",
+      "duration": 4.5
+    },
+    {
+      "id": "03",
+      "start": 8.5,
+      "end": 13.0,
+      "heading": "The evidence trail",
+      "onscreen": [
+        "A claim should lead",
+        "back to its evidence."
+      ],
+      "visual": "A precise vertical provenance diagram forms: Disease -> Typed claim -> Evidence relationship -> Study / source -> Provenance. A fine blue rule traces the path; show a tasteful crop of the REAL Evidence Explorer UI, if verified and available.",
+      "motion": "Sequential line draws; labels reveal individually; a restrained camera push <=2%.",
+      "sound": "Five soft mechanical ink clicks, never sci-fi UI beeps.",
+      "status": "Existing public-alpha functionality documented in README",
+      "type": "existing",
+      "duration": 4.5
+    },
+    {
+      "id": "04",
+      "start": 13.0,
+      "end": 18.0,
+      "heading": "Scientific uncertainty",
+      "onscreen": [
+        "Not every study agrees.",
+        "That matters."
+      ],
+      "visual": "Four calibrated research lanes labeled SUPPORTS, CONTRADICTS, INCONCLUSIVE, UNASSERTED. Under each, a fine ink line is marked with a different endpoint. A note reads: \"A claim is not proof.\"",
+      "motion": "Labels and line plots draw sequentially; no gamified certainty gauge or single universal confidence score.",
+      "sound": "Pencil stroke, slight harmonic tension, then resolution.",
+      "status": "Based on documented evidence direction and provenance semantics",
+      "type": "existing",
+      "duration": 5.0
+    },
+    {
+      "id": "05",
+      "start": 18.0,
+      "end": 22.5,
+      "heading": "Compare and question",
+      "onscreen": [
+        "Compare what is known.",
+        "See what remains missing."
+      ],
+      "visual": "Two to five condition dossiers line up like architectural elevations; common genes, phenotypes, pathway terms and explicitly missing data are differentiated. Integrate a real verified Compare V2 interface crop; annotate NOT RECORDED vs KNOWN ABSENT accurately.",
+      "motion": "Two specimen-like columns slide into register; translucent tracing paper reveals common and differing areas.",
+      "sound": "Soft registering-paper sound; music expands subtly.",
+      "status": "Existing Compare V2 functionality; do not show fictional app features as shipped",
+      "type": "existing",
+      "duration": 4.5
+    },
+    {
+      "id": "06",
+      "start": 22.5,
+      "end": 27.0,
+      "heading": "Scale, with context",
+      "onscreen": [
+        "10,404",
+        "discoverable disease modules",
+        "Public-alpha snapshot · Most are scaffolds."
+      ],
+      "visual": "A fine grid of 10,404 miniature cells accumulates to fill one rectangular sheet; a few cells receive blue indicators to distinguish deeper curation from catalog breadth. An explicit note prevents the viewer from equating catalog size with expert curation.",
+      "motion": "Count rolls 0 → 10,404 in ~2.5 seconds; grid populates with quiet sequential reveal; hold the qualification long enough to read.",
+      "sound": "Subtle quickening pen taps, then fall to silence for the caveat.",
+      "status": "Repository README snapshot dated 2026-08-22; re-verify before release",
+      "type": "metric",
+      "duration": 4.5
+    },
+    {
+      "id": "07",
+      "start": 27.0,
+      "end": 33.0,
+      "heading": "From platform to ambition",
+      "onscreen": [
+        "And the next question is bigger.",
+        "Evidence → Models → Simulations → Experiments",
+        "VISION / IN DEVELOPMENT"
+      ],
+      "visual": "Transition from the research registry to a precise working-notebook spread: a provenance graph becomes a model sketch, a simple documented equation, simulation output axes, then a registered computational experiment. Cross-section and mechanism drawings should be scientifically legible and not falsely passed off as results.",
+      "motion": "One continuous line travels through four nodes; each sheet mechanically flips into the next; the in-development label remains anchored.",
+      "sound": "Original restrained strings enter, with soft drafting instrument sounds.",
+      "status": "Aspirational roadmap; explicitly not currently shipped",
+      "type": "vision",
+      "duration": 6.0
+    },
+    {
+      "id": "08",
+      "start": 33.0,
+      "end": 36.0,
+      "heading": "Open and inspectable",
+      "onscreen": [
+        "Open to inspection.",
+        "Built to be challenged."
+      ],
+      "visual": "Cut to real GitHub repository detail, versioned source code, visible tests or documentation; make the real package name/repo path legible. No fake green CI badges, invented test outcomes, or live SaaS screenshot.",
+      "motion": "Precision snap zoom onto source file/version header; return to wide paper composition.",
+      "sound": "Music resolves; one dry keyboard/camera-cut sound.",
+      "status": "Actual public GitHub repo: AdamEddahmouni/nosograph",
+      "type": "existing",
+      "duration": 3.0
+    },
+    {
+      "id": "09",
+      "start": 36.0,
+      "end": 40.0,
+      "heading": "NosoVolution reveal and invitation",
+      "onscreen": [
+        "NosoVolution",
+        "A more connected way to investigate biology.",
+        "Explore the open-source foundation",
+        "github.com/AdamEddahmouni/nosograph"
+      ],
+      "visual": "The oVo emblem appears as the final ink drawing above the custom NosoVolution wordmark; subtle construction arcs and paper fiber remain, then settle. Small footer: \"Public alpha · Research use only\". Avoid implying the envisioned simulation ecosystem is already deployed.",
+      "motion": "No dramatic flash: 0.6 s mark reveal, 0.5 s wordmark, CTA holds ≥2.4 s. End on a still frame.",
+      "sound": "Simple original resolving piano chord with quiet natural tail.",
+      "status": "Brand launch + existing open-source foundation; repo is still nosograph",
+      "type": "cta",
+      "duration": 4.0
+    }
+  ]
+}
