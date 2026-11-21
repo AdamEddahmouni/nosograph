@@ -37,7 +37,7 @@ NosoGraph complements upstream resources such as MONDO, HPO/HPOA, PubMed, Clinic
 
 ## Current scope
 
-NosoGraph is **Public Alpha**. The CLI is the most stable task-oriented surface; the API and dashboard are Beta, Evidence Explorer is Public Alpha, Compare and Evidence Workspace are Beta, and Open Targets synchronization plus optional LLM enrichment are Experimental. A public hosted demo is planned but not deployed. FHIR, OMOP, and Phenopackets are not implemented.
+NosoGraph is **Public Alpha**. The CLI is the most stable task-oriented surface; the API and dashboard are Beta, Evidence Explorer is Public Alpha, Compare and Evidence Workspace are Beta, and Open Targets synchronization plus optional LLM enrichment are Experimental. A read-only public demo mode is implemented with a local single-container profile; a public hosted URL is not deployed. FHIR, OMOP, and Phenopackets are not implemented.
 
 The registry contains 10,407 modules, but registry breadth is not curation depth. Smaller explicitly tracked subsets carry validation or reference status; see [Current status](../project/status.md) and [coverage](../data/coverage.md).
 

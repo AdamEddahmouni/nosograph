@@ -32,7 +32,7 @@ These values come from [`public-status.yaml`](../generated/public-status.yaml). 
 | Evidence Workspace | `BETA` | Multi-source evidence, claims, and ranked research hypotheses. |
 | NosoGraph Compare | `BETA` | Deterministic 2-5-condition comparison with explicit missingness and exports. |
 | Open Targets synchronization | `EXPERIMENTAL` | A limited vertical sync slice and dry-run workflow. |
-| Public hosted demo | `PLANNED` | Not deployed. |
+| Public demo mode (`DEMO_MODE`) | `EXPERIMENTAL` | Read-only snapshot-backed demo with local single-container profile; hosting requires owner setup. |
 | Optional LLM enrichment | `EXPERIMENTAL` | Not required for deterministic core workflows. |
 | FHIR / OMOP / Phenopackets | `NOT_IMPLEMENTED` | No current interoperability implementation. |
 

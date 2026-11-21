@@ -21,13 +21,13 @@ This is an early-stage OSS project without a formal steering committee. Maintain
 ## Decision process
 
 1. **Routine changes:** PR review + passing CI (`make ci-local` equivalent).
-2. **API/CLI breaking changes:** Require CHANGELOG entry, migration notes, semver major bump.
+2. **API/CLI breaking changes:** Require migration notes and an explicit breaking-change marker (`!` or a `BREAKING CHANGE:` footer) in the commit. Pre-1.0 this bumps the MINOR version; MAJOR is reserved for compatibility commitments made at or after 1.0. See [RELEASING.md](RELEASING.md).
 3. **Security fixes:** Private advisory process per [SECURITY.md](SECURITY.md).
 4. **Governance changes:** PR with `[GOVERNANCE]` prefix and 7-day comment period.
 
 ## Release authority
 
-Maintainers cut releases per [RELEASING.md](RELEASING.md). No automated PyPI publish in CI.
+Maintainers approve releases by merging the automated release pull request described in [RELEASING.md](RELEASING.md); Release Please then produces the version bump, changelog entry, git tag, and GitHub Release. No automated PyPI publish in CI.
 
 ## Branding policy
 

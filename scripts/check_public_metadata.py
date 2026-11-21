@@ -174,11 +174,14 @@ def main() -> None:
     codemeta_text = _text("codemeta.json")
     codemeta = json.loads(codemeta_text)
     citation_version = _field(
-        "CITATION.cff", r"(?m)^version:\s*([\"']?[^\"'\n]+)", "CITATION.cff version"
+        # Stop at '#' so a trailing release-please marker comment is tolerated.
+        "CITATION.cff",
+        r"(?m)^version:\s*([\"']?[^\"'#\n]+)",
+        "CITATION.cff version",
     )
     preferred_version = _field(
         "CITATION.cff",
-        r"(?ms)^preferred-citation:.*?^\s+version:\s*([\"']?[^\"'\n]+)",
+        r"(?ms)^preferred-citation:.*?^\s+version:\s*([\"']?[^\"'#\n]+)",
         "CITATION.cff preferred-citation version",
     )
     readme = _text("README.md")

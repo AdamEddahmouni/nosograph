@@ -166,6 +166,7 @@ mypy-files.txt
 # Local scratch / demo / generated artifacts (never committed)
 .superpowers/
 .tmp-demo/
+.tmp-demo-*/
 artifacts/
 
 # CI-generated validation reports (recompute at release; see docs/audits/v2.3.0-release.md)

@@ -5,7 +5,7 @@ description: Operate NosoGraph locally or on a private server with Docker Compos
 
 # Self-Hosted Deployment
 
-This is the canonical deployment guide for local or privately operated NosoGraph instances. A public hosted demo is not deployed in v0.2.1. For first-time local setup, use [Installation](getting-started/install.md); for API routes, use the [API reference](api-reference.md).
+This is the canonical deployment guide for local or privately operated NosoGraph instances. A read-only public demo mode (`DEMO_MODE`) is implemented with a local single-container profile; a **public hosted URL is not deployed** — see [public demo deployment](deployment-demo.md). For first-time local setup, use [Installation](getting-started/install.md); for API routes, use the [API reference](api-reference.md).
 
 This guide covers running NosoGraph locally or on a private server with Docker Compose. For API details, see [api-reference.md](api-reference.md).
 

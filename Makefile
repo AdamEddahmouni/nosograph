@@ -1,4 +1,4 @@
-.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts check-public-site
+.PHONY: help test test-quiet test-fast test-offline test-unit test-integration test-integration-all test-slow test-browser test-cov lint lint-fix check-imports typecheck lock lock-check lock-verify ci-local venv-sync run-all kg repurpose bio literature docker-build docker-up docker-test clean install biomed-init biomed-verify docs-serve docs-build check-public-metadata check-public-fonts check-public-site commitlint release-plan release-check
 
 help:  ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -323,6 +323,21 @@ docs-build:  ## Build and verify the MkDocs documentation site
 	python scripts/check_public_fonts.py
 	python -m mkdocs build --strict
 	python scripts/check_public_site_consistency.py
+
+# ── Releases ─────────────────────────────────────────────────────────────
+# Release automation runs in CI (.github/workflows/release-please.yml); these
+# targets are the local/offline helpers. See RELEASING.md for the policy.
+
+commitlint:  ## Validate Conventional Commit messages since the last release tag
+	python scripts/check_commit_messages.py --since-last-release
+
+release-plan:  ## Preview the next release classification and version (offline, read-only)
+	python scripts/next_release.py
+
+release-check:  ## Pre-release gate: full ci-local gate plus the commit convention
+	$(MAKE) ci-local
+	python scripts/check_commit_messages.py --since-last-release
+	python scripts/next_release.py
 
 # ── Biomedical store ─────────────────────────────────────────────────────
 

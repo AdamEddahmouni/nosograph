@@ -2,10 +2,46 @@
 
 from __future__ import annotations
 
+import os
 from html import escape
+from pathlib import Path
 from typing import Any
 
 from med_research.diseases.base import Disease
+
+# Overrides where generated pipeline reports are written. Unset in production, so
+# reports keep landing beside the module that generates them.
+REPORT_DIR_ENV_VAR = "MED_RESEARCH_REPORT_DIR"
+
+_PIPELINE_ROOT = Path(__file__).resolve().parent
+
+
+def report_output_dir(default: str | Path) -> Path:
+    """Resolve the directory a generated report is written to.
+
+    Reports default to the directory of the module that generates them. Setting
+    ``MED_RESEARCH_REPORT_DIR`` redirects every pipeline report instead, under
+    the same relative subpath so each module keeps a directory of its own.
+
+    Tests rely on this: pytest-xdist runs different modules concurrently, so two
+    workers writing a fixed path can clobber the same file between a write and
+    the read-back assertion, and no test should leave generated reports in the
+    source tree. ``tests/conftest.py`` points every worker at a private root.
+
+    The directory is created if it does not exist.
+    """
+    override = os.environ.get(REPORT_DIR_ENV_VAR, "").strip()
+    resolved = Path(default)
+    if override:
+        try:
+            # Reports default to a directory inside the pipeline package, so
+            # mirroring that subpath keeps ``drug_synergy/report.html`` and
+            # ``cross_disease/report.html`` distinguishable under one root.
+            resolved = Path(override).expanduser() / resolved.resolve().relative_to(_PIPELINE_ROOT)
+        except ValueError:
+            resolved = Path(override).expanduser() / resolved.name
+    resolved.mkdir(parents=True, exist_ok=True)
+    return resolved
 
 
 def provenance_footer_html(provenance: dict[str, Any] | None) -> str:

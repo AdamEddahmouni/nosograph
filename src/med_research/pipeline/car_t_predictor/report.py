@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 
 def escape_html(value):
@@ -103,6 +103,6 @@ def generate_html_report(
         provenance=provenance,
     )
 
-    report_path = Path(__file__).parent / "report.html"
+    report_path = report_output_dir(Path(__file__).parent) / "report.html"
     report_path.write_text(html, encoding="utf-8")
     return str(report_path)

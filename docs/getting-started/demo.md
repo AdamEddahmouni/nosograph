@@ -1,20 +1,50 @@
 ---
 title: Demo
-description: How to evaluate NosoGraph locally and the status of a public hosted demo.
+description: The read-only public demo mode, how to run it locally, and the status of a hosted demo.
 ---
 
 # Demo
 
-There is **no public hosted demo** in v0.2.1.
+A read-only **public demo mode** (`DEMO_MODE`) is implemented for the v0.3.0 development line (after v0.2.1). It exposes the
+Condition Explorer, Evidence Explorer, snapshot/source metadata, and a
+non-persisting Compare preview against a fixed fixture-built snapshot, with
+all mutation, job, admin, and live-connector surfaces blocked server-side
+(`403 demo_read_only`).
 
-## Local evaluation
+A **public hosted demo is not deployed**; hosting requires owner setup. Until
+a hosted smoke test passes, there is no public URL to share.
 
-Use [Docker](docker.md) or [installation](install.md). Fixture-backed and snapshot paths are used in CI; live connectors may call public APIs if you enable them.
+## Run the demo locally (recommended)
 
-Label anything fixture-backed as a snapshot. Do not imply live coverage.
+The one-container profile needs no Redis or Celery:
 
-## Hosted demo (planned)
+```bash
+docker build -f Dockerfile.demo -t nosograph-demo .
+docker compose -f docker-compose.demo.yml up --build
+# open http://localhost:8000
+docker compose -f docker-compose.demo.yml down
+```
 
-Planned direction: a read-only, rate-limited, snapshot-backed service — designed but not implemented.
+The dashboard shows a `PUBLIC DEMO · FIXED RESEARCH SNAPSHOT` banner with the
+snapshot date; the disease picker is limited to the snapshot's supported
+diseases; Workspace, Jobs, admin, and live-connector controls are hidden and
+their endpoints return `403`.
 
-A `nosograph demo` command is deferred so it does not collide with the P2 Evidence Explorer work. Track it as a follow-up.
+## Run the demo without Docker
+
+```bash
+# from the repository root, with the venv active
+.venv/bin/python scripts/build_demo_snapshot.py --output /tmp/demo/biomedical.sqlite3
+export DEMO_MODE=true
+export DEMO_SNAPSHOT_PATH=/tmp/demo/biomedical.sqlite3
+export DEMO_SNAPSHOT_MANIFEST=/tmp/demo/biomedical.manifest.json
+export DEMO_SNAPSHOT_VERSION="$(python -c "import json;print(json.load(open('/tmp/demo/biomedical.manifest.json'))['snapshot_version'])")"
+python -m med_research.cli serve --host 127.0.0.1 --port 8000
+```
+
+## Hosted demo (not yet deployed)
+
+Deployment is documented in [deployment-demo](../deployment-demo.md): a
+manual-only GitHub Actions workflow deploys the immutable demo image to
+Heroku (Azure Container Apps as fallback), with cost monitoring and shutdown
+procedures. The public URL stays unclaimed until a hosted smoke test passes.

@@ -74,6 +74,7 @@ class EvidenceWorkspaceModule(BasePipelineModule[EvidenceDossier]):
         provenance: dict | None = None,
     ) -> Path:
         from med_research.pipeline.evidence_workspace.report import write_html
+        from med_research.pipeline.reporting import report_output_dir
 
         dossier = results
         if provenance is not None:
@@ -81,7 +82,7 @@ class EvidenceWorkspaceModule(BasePipelineModule[EvidenceDossier]):
             manifest["provenance"] = provenance
             dossier = results.model_copy(update={"manifest": manifest})
 
-        output = Path(__file__).parent / f"report_{disease_id}.html"
+        output = report_output_dir(Path(__file__).parent) / f"report_{disease_id}.html"
         return write_html(dossier, output)
 
     def build_provenance(

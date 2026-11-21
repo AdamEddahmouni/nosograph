@@ -58,11 +58,20 @@ Internal assessment: [Post-v2.3 roadmap assessment](docs/audits/post-v2.3-roadma
 
 ---
 
+## Completed (v0.3.0 tranche)
+
+- [x] **Public read-only demo (`DEMO_MODE`, safe dataset)** — implemented with an
+  immutable fixture snapshot, deny-by-default route policy, non-persisting
+  Compare preview + exports, dashboard banner/disease filtering, a
+  single-container local profile (no Redis/Celery), and browser smoke coverage.
+  **Status: implementation available; hosting requires owner setup** (runbook in
+  `docs/deployment-demo.md`). A public URL is not claimed until a hosted smoke
+  test passes.
+
 ## Next (P2 Wave 3–4)
 
 | Item | Status |
 |------|--------|
-| Public read-only demo (`DEMO_MODE`, safe dataset) | PLANNED |
 | Source sync expansion (HPOA, MONDO, ClinicalTrials.gov) | PLANNED |
 | Phenopacket export prototype | PLANNED |
 | Python SDK (OpenAPI-generated) | PLANNED |

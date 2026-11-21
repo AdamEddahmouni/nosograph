@@ -1789,14 +1789,41 @@ class TestAPIHardening:
         importlib.reload(config)
         assert config.OPENAPI_ENABLED is False
 
-    def test_internal_error_message_hidden_when_debug_false(self, monkeypatch):
+    def test_5xx_response_hides_internal_detail(self):
+        """Server errors must never echo exception text, whatever DEBUG is.
+
+        This redaction used to be gated on `DEBUG`, which leaked internal
+        exception messages (paths, query params, stack fragments) whenever
+        DEBUG was enabled. The handler no longer consults that flag, so the
+        invariant is unconditional and `error_handlers` deliberately exposes no
+        DEBUG symbol to patch.
+        """
         import json
 
         from med_research.exceptions import MedResearchError
         from med_research.web import error_handlers
 
-        monkeypatch.setattr(error_handlers, "DEBUG", False)
-        response = error_handlers._error_response(500, MedResearchError("secret internal detail"))
+        response = error_handlers._error_response(
+            500, MedResearchError("secret detail at /srv/data/biomedical.sqlite3")
+        )
         payload = json.loads(response.body)
+
         assert payload["detail"] == "An internal server error occurred."
         assert "secret" not in payload["detail"]
+        assert "biomedical.sqlite3" not in payload["detail"]
+        assert payload["error_type"] == "MedResearchError"
+
+    def test_4xx_response_keeps_actionable_detail(self):
+        """Client errors still describe what the caller has to fix."""
+        import json
+
+        from med_research.exceptions import DataValidationError
+        from med_research.web import error_handlers
+
+        response = error_handlers._error_response(
+            422, DataValidationError("disease_id is required")
+        )
+        payload = json.loads(response.body)
+
+        assert payload["detail"] == "disease_id is required"
+        assert payload["error_type"] == "DataValidationError"

@@ -46,7 +46,7 @@ NosoGraph supports exploratory research and computational hypothesis generation.
 
 ## Maturity
 
-NosoGraph v0.2.1 is Public Alpha. The CLI is stable; the API/dashboard, Evidence Workspace, and Compare workflow are beta; Evidence Explorer is a public-alpha surface; source sync remains experimental; and no public hosted demo is deployed.
+NosoGraph v0.2.1 is Public Alpha. The CLI is stable; the API/dashboard, Evidence Workspace, and Compare workflow are beta; Evidence Explorer is a public-alpha surface; source sync remains experimental; and a read-only demo mode is implemented locally while no public hosted URL is deployed.
 
 ## Do not say
 

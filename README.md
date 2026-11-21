@@ -27,7 +27,7 @@
 
 <img src="docs/assets/product/evidence-explorer.webp" alt="NosoGraph Evidence Explorer showing disease context, typed claims, evidence direction, and provenance" width="100%">
 
-> **Public alpha · research use only.** NosoGraph is not medical advice, a diagnostic system, or clinical decision support. No public hosted demo is deployed; use the local Docker evaluation or CLI.
+> **Public alpha · research use only.** NosoGraph is not medical advice, a diagnostic system, or clinical decision support. A read-only public demo mode (`DEMO_MODE`) is implemented with a single-container local profile (`docker compose -f docker-compose.demo.yml up`); a public hosted URL is not deployed — see [deployment](docs/deployment-demo.md).
 
 ## What you can do
 

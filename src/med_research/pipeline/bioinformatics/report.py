@@ -13,12 +13,11 @@ as a combined report when all modules have been run.
 import base64
 import io
 import math
-import os
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 try:
     import matplotlib
@@ -51,7 +50,7 @@ def generate_bioinformatics_report(
     Any combination of results can be provided — the report will
     only show sections for available data.
     """
-    output_path = Path(__file__).parent / "bioinformatics_report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "bioinformatics_report.html"
     context = disease_context(disease_id)
 
     # ── Enrichment section ───────────────────────────────────────────────
@@ -944,9 +943,10 @@ def _generate_ppi_interactive(ppi_graph: dict, hub_scores: list) -> str:
             title=f"STRING score: {score:.3f}",
         )
 
-    # Save standalone HTML
-    output_path = Path(__file__).parent / "data" / "ppi_interactive.html"
-    os.makedirs(output_path.parent, exist_ok=True)
+    # Save standalone HTML. This sits in ``data/`` rather than beside the report,
+    # so resolve it through the same override: the report links to it relatively
+    # and both paths have to move together.
+    output_path = report_output_dir(Path(__file__).parent / "data") / "ppi_interactive.html"
     net.save_graph(str(output_path))
 
     return str(output_path)

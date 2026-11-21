@@ -7,4 +7,4 @@ description: Compatibility entry point for the canonical NosoGraph self-hosted d
 
 The canonical [Self-hosted deployment](../deployment.md) guide covers Docker Compose, environment settings, API and researcher authentication boundaries, health checks, persistence, and production caveats.
 
-A public hosted demo is not deployed in v0.2.1. The deployment guide describes local or privately operated instances only.
+A public hosted demo URL is not deployed. The deployment guide describes local or privately operated instances; the read-only `DEMO_MODE` image and its hosting runbook live in [deployment-demo](../deployment-demo.md).

@@ -8,7 +8,7 @@ from pathlib import Path
 import pytest
 
 from med_research.pipeline.provenance import build_provenance
-from med_research.pipeline.reporting import disease_context
+from med_research.pipeline.reporting import disease_context, report_output_dir
 
 PROJECT_ROOT = Path(__file__).parent.parent
 
@@ -595,6 +595,10 @@ def test_cli_export_html_includes_provenance_footer(
     Runs the real ``cmd_*`` handler in-process (arg parsing -> dispatch ->
     adapter -> report) against the shared session engine fixture, so each
     engine computes once per process instead of once per CLI subprocess.
+
+    ``report_rel_path`` is the module's production output location; the
+    session-wide report redirect in ``tests/conftest.py`` moves it under a
+    per-worker root, so it is resolved through the same helper the writer uses.
     """
     from med_research.cli import cmd_cross_disease, cmd_expression, cmd_synergy
     from tests.cli_helpers import run_cli_handler
@@ -613,7 +617,8 @@ def test_cli_export_html_includes_provenance_footer(
     engine_result = request.getfixturevalue(engine_fixture)
     monkeypatch.setattr(patch_target, lambda **kwargs: engine_result)
 
-    report_path = PROJECT_ROOT / report_rel_path
+    default_path = PROJECT_ROOT / report_rel_path
+    report_path = report_output_dir(default_path.parent) / default_path.name
     report_path.unlink(missing_ok=True)
 
     args = ["--export-html", "--top", "5", "--disease", "ra"]

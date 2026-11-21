@@ -11,7 +11,7 @@ Generates a beautiful standalone HTML report with:
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 
 def generate_html_report(
@@ -22,7 +22,7 @@ def generate_html_report(
 ) -> str:
     """Generate a standalone HTML report and return the path."""
 
-    output_path = Path(__file__).parent / "report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "report.html"
 
     # Summary stats
     n_tier1 = sum(1 for p in scored_pairs if p["composite_score"] >= 8.0)

@@ -13,13 +13,13 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import render_report
+from med_research.pipeline.reporting import render_report, report_output_dir
 
 
 def generate_html_report(results: dict, *, provenance: dict | None = None) -> str:
     """Generate a standalone HTML report and return the path."""
 
-    output_path = Path(__file__).parent / "report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "report.html"
 
     d_summary = results["disease_summary"]
     disease_ids = sorted(d_summary.keys())

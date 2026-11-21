@@ -54,6 +54,32 @@ jobs:
       - name: Check public metadata consistency
         run: python scripts/check_public_metadata.py
 
+  # Advisory only. The commit convention is documented in RELEASING.md and is
+  # what the release tooling parses, but merge commits, bot commits, and
+  # dependabot PRs are exempted and violations surface as annotations instead
+  # of blocking a contributor. Run `make commitlint` locally for a hard gate.
+  commit-messages:
+    name: Commit messages (advisory)
+    if: github.event_name == 'pull_request'
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Validate Conventional Commits (advisory)
+        run: |
+          python scripts/check_commit_messages.py \
+            --range "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}" \
+            --advisory --github
+
   # Non-blocking until TECHNICAL_DEBT_ISSUES.md typing backlog is cleared.
   typecheck:
     runs-on: ubuntu-latest

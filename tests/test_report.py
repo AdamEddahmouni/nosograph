@@ -5,8 +5,6 @@ Tests cover:
   - generate_html_report(): output file creation, content validation
 """
 
-from pathlib import Path
-
 import pytest
 
 pytestmark = pytest.mark.unit
@@ -86,14 +84,7 @@ class TestGenerateHtmlReport:
 
         out_path = tmp_path / "report.html"
 
-        # Patch the output_path in generate_html_report to use tmp_path
-        original_path = report_module.Path
-
-        class PatchedPath(type(original_path)):
-            def __new__(cls, *args, **kwargs):
-                return original_path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
         assert out_path.exists()
@@ -107,11 +98,7 @@ class TestGenerateHtmlReport:
 
         out_path = tmp_path / "report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
         content = out_path.read_text(encoding="utf-8")
@@ -129,11 +116,7 @@ class TestGenerateHtmlReport:
 
         out_path = tmp_path / "report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
         content = out_path.read_text(encoding="utf-8")
@@ -150,11 +133,7 @@ class TestGenerateHtmlReport:
 
         out_path = tmp_path / "report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
         content = out_path.read_text(encoding="utf-8")
@@ -169,11 +148,7 @@ class TestGenerateHtmlReport:
 
         out_path = tmp_path / "report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
         content = out_path.read_text(encoding="utf-8")
@@ -189,11 +164,7 @@ class TestGenerateHtmlReport:
 
         out_path = tmp_path / "report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
         content = out_path.read_text(encoding="utf-8")
@@ -211,11 +182,7 @@ class TestGenerateHtmlReport:
 
         out_path = tmp_path / "report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_html_report(scored, untargeted, sample_genes, sample_graph)
         content = out_path.read_text(encoding="utf-8")

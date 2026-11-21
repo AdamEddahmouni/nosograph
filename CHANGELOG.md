@@ -2,6 +2,31 @@
 
 ## [Unreleased]
 
+### Added
+
+- Public read-only demo mode (`DEMO_MODE`) with a deny-by-default route policy
+  (`403 demo_read_only`), an immutable fixture-built biomedical snapshot with
+  startup validation, demo-aware `/api/ready` and `/api/demo_mode` metadata,
+  and a non-persisting Compare preview with deterministic JSON/Markdown exports.
+- Visible demo boundary in the dashboard: `PUBLIC DEMO · FIXED RESEARCH
+  SNAPSHOT` banner with snapshot date, disease picker filtered to supported
+  snapshot diseases, and Workspace/Jobs/admin controls hidden (server still
+  denies their requests).
+- Single-container local demo profile (`Dockerfile.demo` +
+  `docker-compose.demo.yml`) that runs the flagship read-only surfaces without
+  Redis or Celery.
+- Browser smoke coverage for the public demo flow
+  (`tests/test_demo_browser.py`) and container contract tests
+  (`tests/integration/test_demo_container.py`).
+- Deployment runbook (`docs/deployment-demo.md`) and a manual-only Heroku
+  deployment workflow (`.github/workflows/demo-deploy.yml`).
+
+### Fixed
+
+- Evidence Explorer filter controls now reload evidence on `change`, so
+  keyboard and programmatic selection applies filters (previously only a
+  `click` on the select triggered the reload).
+
 ## [0.2.1] — 2026-08-22
 
 **NosoGraph v0.2.1 — Stabilization**

@@ -12,4 +12,6 @@ The [v0.1.0 Public-Alpha Baseline](../release-notes/v0.1.0.md) remains the compa
 
 The v2.1.0–v2.4.0 repository tags are preserved as the legacy prototype lineage. They are historical records, not the current compatibility promise.
 
+Releases are prepared automatically from Conventional Commits on `master` by an automated release pull request, which a maintainer approves before the version bump, git tag, and GitHub Release are created. The contributor-facing policy lives in [Releases and versioning](../contributing/releasing.md); the maintainer runbook is [`RELEASING.md`](https://github.com/AdamEddahmouni/nosograph/blob/master/RELEASING.md).
+
 NosoGraph remains **Public Alpha**. Review the [public roadmap](roadmap.md) for planned and not-implemented surfaces.

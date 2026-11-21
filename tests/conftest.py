@@ -2,14 +2,17 @@
 Shared test fixtures for the Lupus Research Platform test suite.
 """
 
+import ctypes
 import json
 import logging
 import os
+import sys
 from pathlib import Path
 
 import pytest
 
 from med_research.pipeline.knowledge_graph.config import load_genes
+from med_research.pipeline.reporting import REPORT_DIR_ENV_VAR
 
 pytest_plugins = [
     "tests.evidence_http_fixtures",
@@ -28,6 +31,114 @@ os.environ["OPENAPI_ENABLED"] = "true"
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DR_DATA_DIR = PROJECT_ROOT / "src" / "med_research" / "pipeline" / "drug_repurposing" / "data"
+
+
+@pytest.fixture(scope="session", autouse=True)
+def _isolated_report_dir(tmp_path_factory):
+    """Point every generated pipeline report at a private, per-worker directory.
+
+    Report generators otherwise default to a fixed path beside the module that
+    produces them. Under pytest-xdist two workers can run different modules that
+    resolve to the *same* path, so one test can overwrite or delete the file
+    another has just written — a report read-back then fails depending on timing,
+    and every run litters the source tree with generated HTML.
+
+    ``tmp_path_factory`` is already unique per worker, and the directory name
+    records the worker id so the isolation is visible when debugging. The
+    redirect is session-wide because the writers are plain functions called
+    from dozens of modules, not fixtures with access to ``tmp_path``.
+    """
+    worker = os.environ.get("PYTEST_XDIST_WORKER", "main")
+    directory = tmp_path_factory.mktemp(f"reports-{worker}")
+    previous = os.environ.get(REPORT_DIR_ENV_VAR)
+    os.environ[REPORT_DIR_ENV_VAR] = str(directory)
+    yield directory
+    if previous is None:
+        os.environ.pop(REPORT_DIR_ENV_VAR, None)
+    else:
+        os.environ[REPORT_DIR_ENV_VAR] = previous
+
+
+@pytest.fixture
+def report_dir(_isolated_report_dir):
+    """The session's private report directory, for tests that assert on paths."""
+    return _isolated_report_dir
+
+
+# ``-n auto`` sizes the worker pool from CPU count alone. Each xdist worker is a
+# separate interpreter that imports the full scientific stack, so it holds several
+# hundred MB before running a single test (Windows spawns rather than forks, so
+# nothing is shared). A many-core machine with little free RAM therefore
+# oversubscribes memory, the OS kills a worker mid-test, and only the test it was
+# running is reported — which is why the failure set moves between runs instead of
+# reproducing. Bound the pool by what memory can actually hold.
+_WORKER_MEMORY_MB = 600
+_MASTER_RESERVE_MB = 1024
+
+
+def _available_memory_mb() -> int | None:
+    """Best-effort free physical memory in MiB, or None if it cannot be read."""
+    try:
+        if sys.platform == "win32":
+
+            class _MemoryStatusEx(ctypes.Structure):
+                _fields_ = [
+                    ("dwLength", ctypes.c_ulong),
+                    ("dwMemoryLoad", ctypes.c_ulong),
+                    ("ullTotalPhys", ctypes.c_ulonglong),
+                    ("ullAvailPhys", ctypes.c_ulonglong),
+                    ("ullTotalPageFile", ctypes.c_ulonglong),
+                    ("ullAvailPageFile", ctypes.c_ulonglong),
+                    ("ullTotalVirtual", ctypes.c_ulonglong),
+                    ("ullAvailVirtual", ctypes.c_ulonglong),
+                    ("ullAvailExtendedVirtual", ctypes.c_ulonglong),
+                ]
+
+            status = _MemoryStatusEx()
+            status.dwLength = ctypes.sizeof(_MemoryStatusEx)
+            if not ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(status)):
+                return None
+            return int(status.ullAvailPhys) // (1024 * 1024)
+
+        if sys.platform == "darwin":
+            pages = os.sysconf("SC_AVPHYS_PAGES")
+            return int(pages) * os.sysconf("SC_PAGE_SIZE") // (1024 * 1024)
+
+        with open("/proc/meminfo", encoding="utf-8") as meminfo:
+            for line in meminfo:
+                if line.startswith("MemAvailable:"):
+                    return int(line.split()[1]) // 1024
+    except (AttributeError, OSError, ValueError):
+        return None
+    return None
+
+
+def _xdist_worker_budget_workers() -> int | None:
+    """Workers that available memory can hold, or None when it is unknown."""
+    available_mb = _available_memory_mb()
+    if available_mb is None:
+        return None
+    return max(1, (available_mb - _MASTER_RESERVE_MB) // _WORKER_MEMORY_MB)
+
+
+@pytest.hookimpl(tryfirst=True)
+def pytest_xdist_auto_num_workers(config) -> int | None:
+    """Cap ``-n auto`` at what the machine's free memory can hold.
+
+    Returning None defers to xdist's own detection, so the pool only ever shrinks
+    relative to normal behaviour and CI keeps full parallelism when it has the RAM.
+    ``PYTEST_XDIST_AUTO_NUM_WORKERS`` (xdist's documented override) wins outright,
+    and an explicit ``-n`` is never second-guessed because this hook only runs for
+    ``auto``/``logical``.
+    """
+    if os.environ.get("PYTEST_XDIST_AUTO_NUM_WORKERS"):
+        return None
+
+    budget = _xdist_worker_budget_workers()
+    cpu_workers = os.cpu_count() or 1
+    if budget is None or budget >= cpu_workers:
+        return None
+    return budget
 
 
 @pytest.hookimpl(hookwrapper=True)

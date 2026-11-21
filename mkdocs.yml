@@ -29,7 +29,7 @@ exclude_docs: |
   project/zenodo-setup.md
   architecture/commercialization-boundaries.md
   architecture/decisions/
-  # Internal engineering design for a future hosted demo (not an offered product)
+  # Public demo design boundary (internal; runbook is published as deployment-demo.md)
   deployment/public-demo.md
   # Asset-directory READMEs are repository documentation, not site pages
   assets/brand/README.md
@@ -156,6 +156,7 @@ nav:
       - Local development: developers/local.md
       - Testing: developers/testing.md
       - Self-hosted deployment: deployment.md
+      - Public demo deployment: deployment-demo.md
   - Project:
       - Status: project/status.md
       - Roadmap: project/roadmap.md
@@ -170,6 +171,7 @@ nav:
           - Disease curation: contributing/curation.md
           - Data sources: contributing/sources.md
           - Governance: contributing/governance.md
+          - Releases and versioning: contributing/releasing.md
           - Good first issues: project/good-first-issues.md
 
 validation:

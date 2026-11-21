@@ -1,6 +1,8 @@
 # Public hosted demo (design)
 
-**Status:** NOT deployed. v0.2.0 still identifies the public hosted demo as future work.
+**Status:** implementation available; hosting requires owner setup. `DEMO_MODE`
+is implemented with a single-container local profile; **no public URL is
+deployed** until a hosted smoke test passes.
 
 ## Goals
 
@@ -24,6 +26,20 @@ Single small VM or one container: typically low tens of USD/month if always-on; 
 
 Showcase `sle`, `ra`, `ad` because they are CI-validated with richer fixtures—not because of popularity alone.
 
+## Implementation status
+
+- `DEMO_MODE` policy, Compare preview, and the fixture snapshot builder are
+  implemented and tested (`src/med_research/web/demo_mode.py`,
+  `src/med_research/web/demo_snapshot.py`, `scripts/build_demo_snapshot.py`).
+- The dashboard renders a demo banner and filters the disease picker to
+  supported snapshot diseases.
+- One-container local profile: `Dockerfile.demo` + `docker-compose.demo.yml`.
+- Browser smoke coverage: `tests/test_demo_browser.py`.
+- Deployment runbook (Heroku primary, Azure Container Apps fallback):
+  [deployment-demo](../deployment-demo.md).
+
 ## Next action
 
-Implement `DEMO_MODE` in a dedicated P2-aligned issue; do not ship an unsafe open proxy.
+Run the manual [demo-deploy](../deployment-demo.md) workflow once a Heroku
+account and repository secrets exist, then confirm `/api/health`, `/api/ready`,
+and the Compare preview path on the public URL before sharing it.

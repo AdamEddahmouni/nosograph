@@ -13,7 +13,7 @@ Rendered via the shared Jinja2 template infrastructure (templates/reports/).
 from datetime import datetime
 from pathlib import Path
 
-from med_research.pipeline.reporting import disease_context, render_report
+from med_research.pipeline.reporting import disease_context, render_report, report_output_dir
 
 
 def generate_html_report(
@@ -26,7 +26,7 @@ def generate_html_report(
     if not safety_results:
         raise ValueError("Cannot generate a safety report without scored results")
 
-    output_path = Path(__file__).parent / "report.html"
+    output_path = report_output_dir(Path(__file__).parent) / "report.html"
     context = disease_context(disease_id)
 
     if safety_results and safety_results[0].get("status") == "blocked":

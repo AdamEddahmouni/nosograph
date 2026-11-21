@@ -63,6 +63,47 @@ See [README.md](README.md) for alternative install paths and CLI usage.
 - Fill out the pull request template checklist
 - Ensure GitHub Actions `Tests` passes on your PR (public repos receive free hosted runners)
 
+## Commit messages
+
+Use [Conventional Commits](https://www.conventionalcommits.org/) for every
+commit. Release automation reads your subject line to decide the next version and
+to build the changelog, so the prefix is functional, not cosmetic.
+
+```
+<type>[(<scope>)][!]: <summary>
+
+feat(compare): add N-way comparison engine
+fix(web): stop leaking filesystem paths in /api/ready
+feat(api)!: require an explicit disease_id on comparison requests
+```
+
+Common types: `feat` (new functionality), `fix` (bug fix), `perf`, `refactor`,
+`docs`, `test`, `build`, `ci`, `chore`, `style`, `revert`. Only `feat` (`MINOR`)
+and `fix`/`perf` (`PATCH`) trigger a release on their own; documentation, tests,
+CI, formatting, and internal refactors normally do not.
+
+Mark a breaking change with `!` or a `BREAKING CHANGE:` footer and explain the
+migration. While the project is pre-1.0 that bumps the MINOR version.
+
+Check your work before pushing:
+
+```bash
+make commitlint   # every commit since the last release tag
+```
+
+The same check runs on pull requests as an advisory CI job, so it will not block
+you — but a well-formed subject is what produces a useful release note.
+
+## Releases
+
+You do **not** need to bump versions, edit `CHANGELOG.md`, or create tags. A
+maintainer merges an automated release pull request, which produces the version,
+changelog, tag, and GitHub Release.
+
+The full policy — versioning, pre-1.0 rules, prereleases, the release decision
+table, and the maintainer runbook — lives in [RELEASING.md](RELEASING.md).
+Preview what your commits would produce with `make release-plan`.
+
 ## Security
 
 Do **not** open public issues for security vulnerabilities. See [SECURITY.md](SECURITY.md) for the private reporting process.
@@ -110,6 +151,10 @@ New analysis modules, HTML reports, and user-facing exports must respect the act
 See [TECHNICAL_DEBT_ISSUES.md](TECHNICAL_DEBT_ISSUES.md) for the historical audit, resolved items, and remaining open work. Re-verify issues against the current tree before implementing large changes.
 
 For disease-module curation (validate, coverage, expression consensus, screening profiles), see [docs/disease-curation.md](docs/disease-curation.md).
+
+For the versioning policy, commit convention, release automation, and maintainer
+release checklist, see [RELEASING.md](RELEASING.md) and
+[docs/contributing/releasing.md](docs/contributing/releasing.md).
 
 For self-hosted deployment, see [docs/deployment.md](docs/deployment.md).
 

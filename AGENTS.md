@@ -39,6 +39,12 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
 - Use the `Makefile` targets: `make test-offline` (fast unit tier), `make test-integration`
   (needs Redis). Tests run under `pytest-xdist` (`-n auto` in `pyproject.toml` addopts); to run
   a single test serially, pass `-n 0` (NOT `-p no:xdist`, which breaks the `-n` addopt).
+- `-n auto` is capped to what free RAM can hold (see `pytest_xdist_auto_num_workers` in
+  `tests/conftest.py`): every worker is a separate interpreter holding ~600 MB of imported
+  scientific stack, so on a high-core/low-memory machine the CPU count can oversubscribe
+  memory and get a worker killed mid-test. The cap only ever lowers the count and falls back
+  to xdist's default when memory can't be read; override it with
+  `PYTEST_XDIST_AUTO_NUM_WORKERS=<n>`, and note an explicit `-n <n>` is never adjusted.
 - Playwright browser tests (`tests/test_evidence_workspace_browser.py`, slow tier) need a
   browser: `python -m playwright install chromium` (one-off; cached in `~/.cache/ms-playwright`).
 
@@ -53,3 +59,22 @@ than duplicating them. The notes below capture only non-obvious, environment-spe
   `TECHNICAL_DEBT_ISSUES.md` is cleared.
 - `disease validate --all --strict` is **not** a merge gate: the 10k scaffold registry is
   expected to exit non-zero. Hosted CI validates the original curated eight (`sle` … `ad`) only.
+
+### Releases and versioning
+- Releases are automated with Release Please from Conventional Commits on `master`.
+  Read [RELEASING.md](RELEASING.md) before touching anything release-related; the
+  contributor-facing summary is [docs/contributing/releasing.md](docs/contributing/releasing.md).
+- Write Conventional Commit subjects (`feat(scope): …`, `fix: …`, `docs: …`). The next
+  version is derived from the subject line: `feat` → MINOR, `fix`/`perf` → PATCH, a
+  `BREAKING CHANGE:` footer or `!` → MINOR while pre-1.0, everything else → no release.
+  Verify with `make commitlint`; preview classification and version with `make release-plan`.
+- Never hand-edit a version. `pyproject.toml` is the source of truth; the release PR
+  synchronizes `src/med_research/__init__.py`, `CITATION.cff`, `codemeta.json`, and
+  `docs/generated/public-status.yaml`. `scripts/check_public_metadata.py` fails on drift,
+  and the remaining prose surfaces are updated inside the release PR by a maintainer.
+- Do not create a release, push a tag, publish a package, or rewrite published tags,
+  release history, or released changelog sections unless a maintainer explicitly asks.
+- Treat the versioned public surface as a compatibility contract: `/api/v1` routes, the
+  CLI, environment variables, and serialized data formats.
+- Release automation lives in `release-please-config.json`, `.release-please-manifest.json`,
+  and `.github/workflows/release-please.yml`.

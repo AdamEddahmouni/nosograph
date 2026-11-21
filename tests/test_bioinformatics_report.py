@@ -6,8 +6,6 @@ Tests cover:
   - Section builders with various input combinations
 """
 
-from pathlib import Path
-
 import pytest
 
 pytestmark = pytest.mark.unit
@@ -293,11 +291,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -312,11 +306,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -343,11 +333,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -369,11 +355,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -394,11 +376,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report(
             hub_scores=sample_hub_scores,
@@ -446,11 +424,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report(
             gwas_results=gwas_results,
@@ -468,11 +442,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report()
         content = out_path.read_text(encoding="utf-8")
@@ -486,11 +456,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report()
         content = out_path.read_text(encoding="utf-8")
@@ -504,11 +470,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report(
             enrichment_results=sample_enrichment,
@@ -524,11 +486,7 @@ class TestGenerateBioinformaticsReport:
 
         out_path = tmp_path / "bioinformatics_report.html"
 
-        class PatchedPath(type(Path)):
-            def __new__(cls, *args, **kwargs):
-                return Path(out_path)
-
-        monkeypatch.setattr(report_module, "Path", PatchedPath)
+        monkeypatch.setattr(report_module, "report_output_dir", lambda _default: tmp_path)
 
         report_module.generate_bioinformatics_report()
         content = out_path.read_text(encoding="utf-8")

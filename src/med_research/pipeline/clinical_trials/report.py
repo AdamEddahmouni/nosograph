@@ -56,8 +56,13 @@ def generate_ct_report(
     results: dict, disease_id: str = "sle", *, provenance: dict | None = None
 ) -> str:
     """Generate an HTML report from disease-specific trial results."""
-    output_path = Path(__file__).parent / "ct_report.html"
-    from med_research.pipeline.reporting import disease_context, render_report
+    from med_research.pipeline.reporting import (
+        disease_context,
+        render_report,
+        report_output_dir,
+    )
+
+    output_path = report_output_dir(Path(__file__).parent) / "ct_report.html"
 
     context = disease_context(disease_id)
 
