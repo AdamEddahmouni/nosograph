@@ -25,7 +25,7 @@ Counts are historical program-catalog figures from Revision 5, not independently
 - [Current status and public-claims policy](PUBLIC_STATUS_AND_CLAIMS.md)
 - [Approved decisions and boundaries](DECISIONS_AND_GOVERNANCE.md)
 - [Research strategy, Revision 5](research/MASTER_PROGRAM_REV5.md)
-- [All 1,457 initiatives](research/ALL_1457_INITIATIVES.csv)
+- [All 1,457 initiatives — catalog export](research/ALL_1457_INITIATIVES_ATLAS_EXPORT.csv)
 - [Experiment protocols and flagship research charters](research/FOUR_FLAGSHIP_RESEARCH_CHARTERS.md)
 - [Dependency-linked work packages](research/ALL_200_WORK_PACKAGES.json)
 - [Initial engineering campaign](research/P0_P1_FIRST_ENGINEERING_CAMPAIGN.md)
